@@ -1,1 +1,139 @@
-x
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>에델슈타인 엿보기 — 알팡지지</title>
+<meta name="description" content="빅뱅 이후 개편으로 추가된 지역 에델슈타인의 맵과 출현 몬스터를 미리 살펴봅니다.">
+<link rel="canonical" href="https://alpang.gg/guide/edelstein/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="에델슈타인 엿보기 — 알팡지지">
+<meta property="og:description" content="빅뱅 이후 개편으로 추가된 지역 에델슈타인의 맵과 출현 몬스터를 미리 살펴봅니다.">
+<meta property="og:url" content="https://alpang.gg/guide/edelstein/">
+<style>
+  :root{{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}}
+  *{{margin:0;padding:0;box-sizing:border-box}}
+  body{{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}}
+  .wrap{{max-width:720px;margin:0 auto}}
+  .gnb{{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}}
+  .gnb .logo{{font-size:20px;font-weight:800;color:var(--text)}}
+  .gnb nav a{{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}}
+  .gnb nav a.on{{color:var(--accent-dark)}}
+  .intro{{text-align:center;padding:28px 0 4px}}
+  .intro h1{{font-size:28px;font-weight:800}} .intro h1 span{{color:var(--accent)}}
+  .intro .tag{{color:var(--sub);font-size:14px;margin-top:6px}}
+  .disc{{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:13.5px;color:var(--text);margin-top:16px;text-align:center}}
+  section.card{{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}}
+  h2{{font-size:16.5px;font-weight:800;margin-bottom:10px}}
+  p.body{{font-size:14.5px;margin-bottom:8px}}
+  .legend{{font-size:12.5px;color:var(--sub);margin-top:10px}}
+  table{{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}}
+  th{{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}}
+  td{{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}}
+  tr:last-child td{{border-bottom:none}}
+  td.num, th.num{{text-align:right;white-space:nowrap}}
+  .mname{{font-weight:800}}
+  .men{{display:block;font-size:11.5px;color:var(--sub);font-weight:600}}
+  .chip{{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:12px;margin:1px 2px 1px 0}}
+  .chip b{{color:var(--accent-dark)}}
+  .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}}
+  .mob{{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}}
+  .mob .nm{{font-size:16px;font-weight:800}}
+  .mob .en{{font-size:11.5px;color:var(--sub);font-weight:600}}
+  .mob .stat{{font-size:13px;margin-top:6px}}
+  .mob .stat b{{color:var(--accent-dark)}}
+  .mob .where{{font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}}
+  .cnt{{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:2px}}
+  footer{{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}}
+  @media (max-width:560px){{ table{{font-size:12.5px}} th,td{{padding:7px 6px}} .grid{{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}} }}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/status/">현황판</a></nav></div>
+  <div class="intro">
+    <h1>에델슈타인 <span>엿보기</span></h1>
+    <div class="tag">블랙윙의 광산 도시, 미리 구경하기</div>
+  </div>
+  <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+
+  <section class="card">
+    <h2>에델슈타인은 어떤 곳?</h2>
+    <p class="body">에델슈타인은 빅뱅 이후 개편 시기에 추가된 지역으로, 블랙윙이 점거한 광산 도시를 배경으로 합니다. 이 페이지에서는 수집된 에델슈타인 권역 맵 42곳 가운데 몬스터가 출현하는 28곳과, 거기서 만날 수 있는 몬스터 27종을 미리 엿봅니다.</p>
+  </section>
+  <section class="card">
+    <h2>몬스터가 출현하는 맵<span class="cnt">28곳</span></h2>
+    <table>
+      <tr><th>맵</th><th>출현 몬스터</th><th class="num">종류</th></tr>
+<tr><td><span class="mname">가로등길</span><span class="men">Streetlight Row</span></td><td><span class="chip">가로등 <b>Lv.25</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도 입구1</span><span class="men">Shaft Entrance 1</span></td><td><span class="chip">경비로봇 <b>Lv.67</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도 입구2</span><span class="men">Shaft Entrance 2</span></td><td><span class="chip">경비로봇 <b>Lv.67</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도1</span><span class="men">Shaft 1</span></td><td><span class="chip">라키 <b>Lv.70</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도2</span><span class="men">Shaft 2</span></td><td><span class="chip">빅 스파이더 <b>Lv.72</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도3</span><span class="men">Shaft 3</span></td><td><span class="chip">카트베어 <b>Lv.74</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">갱도4</span><span class="men">Shaft 4</span></td><td><span class="chip">경비로봇L <b>Lv.79</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">경계 심한 저택</span><span class="men">Guarded Mansion</span></td><td><span class="chip">저택 경비로봇 <b>Lv.27</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">광산 가는 길1</span><span class="men">Road to the Mine 1</span></td><td><span class="chip">순찰로봇S <b>Lv.28</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">광산 가는 길2</span><span class="men">Road to the Mine 2</span></td><td><span class="chip">안전제일 <b>Lv.31</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">광석길</span><span class="men">Ore Trail</span></td><td><span class="chip">큰 바위베어먹기 <b>Lv.35</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">너구리 소굴</span><span class="men">Raccoon Nest</span></td><td><span class="chip">라쿤 <b>Lv.76</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">바위길</span><span class="men">Rocky Road</span></td><td><span class="chip">아기 바위베어먹기 <b>Lv.33</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">뱀 나오는 길</span><span class="men">Serpent Path</span></td><td><span class="chip">구렁이 <b>Lv.18</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">수상쩍은 헤어샵</span><span class="men">Shady Hair Salon</span></td><td><span class="chip">파비오의 파이어봄 <b>Lv.30</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 공원1</span><span class="men">Edelstein Park</span></td><td><span class="chip">새싹 화분 <b>Lv.5</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 공원2</span><span class="men">Edelstein Park 2</span></td><td><span class="chip">나팔꽃 화분 <b>Lv.6</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 공원3</span><span class="men">Edelstein Park 3</span></td><td><span class="chip">포도주스병 <b>Lv.8</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 산책로1</span><span class="men">Edelstein Strolling Path</span></td><td><span class="chip">순찰로봇 <b>Lv.14</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 산책로2</span><span class="men">Edelstein Strolling Path 2</span></td><td><span class="chip">이상한 이정표 <b>Lv.16</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 산책로3</span><span class="men">Edelstein Strolling Path 3</span></td><td><span class="chip">물 도둑 <b>Lv.20</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">에델슈타인 산책로4</span><span class="men">Edelstein Strolling Path 4</span></td><td><span class="chip">더스트 박스 <b>Lv.22</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">위험! 임시공항</span><span class="men">Danger! Makeshift Airport</span></td><td><span class="chip">수상한 도적 <b>Lv.23</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">위험한 너구리 소굴</span><span class="men">Dangerous Raccoon Nest</span></td><td><span class="chip">라칸 <b>Lv.82</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">트레이닝 룸 A</span><span class="men">Training Room A</span></td><td><span class="chip">훈련로봇A <b>Lv.10</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">트레이닝 룸 B</span><span class="men">Training Room B</span></td><td><span class="chip">훈련로봇B <b>Lv.11</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">트레이닝 룸 C</span><span class="men">Training Room C</span></td><td><span class="chip">훈련로봇C <b>Lv.12</b></span></td><td class="num">1</td></tr>
+<tr><td><span class="mname">트레이닝 룸 D</span><span class="men">Training Room D</span></td><td><span class="chip">훈련로봇 0 <b>Lv.13</b></span></td><td class="num">1</td></tr>
+    </table>
+    <p class="legend">몬스터가 출현하지 않는 맵(마을·실내 등): 광산 입구 · 발전소 로비 · 발전소 보안대 · 비밀광장 · 수아르의 물 창고 · 숨겨진 포탈 · 에델슈타인 · 에델슈타인 의회 · 에델슈타인 임시공항 · 에델슈타인 헤어샵 · 울리카의 아지트 · 저택 · 제 1 광장 · 트레이닝 룸 입구</p>
+  </section>
+  <section class="card">
+    <h2>에델슈타인 몬스터<span class="cnt">27종</span></h2>
+    <div class="grid">
+<div class="mob"><div class="nm">새싹 화분</div><div class="en">Potted Sprout</div><div class="stat">레벨 <b>5</b> · HP <b>50</b></div><div class="where">출현: 에델슈타인 공원1</div></div>
+<div class="mob"><div class="nm">나팔꽃 화분</div><div class="en">Potted Morning Glory</div><div class="stat">레벨 <b>6</b> · HP <b>65</b></div><div class="where">출현: 에델슈타인 공원2</div></div>
+<div class="mob"><div class="nm">포도주스병</div><div class="en">Grape Juice Bottle</div><div class="stat">레벨 <b>8</b> · HP <b>110</b></div><div class="where">출현: 에델슈타인 공원3</div></div>
+<div class="mob"><div class="nm">훈련로봇A</div><div class="en">Training Robot A</div><div class="stat">레벨 <b>10</b> · HP <b>125</b></div><div class="where">출현: 트레이닝 룸 A</div></div>
+<div class="mob"><div class="nm">훈련로봇B</div><div class="en">Training Robot B</div><div class="stat">레벨 <b>11</b> · HP <b>150</b></div><div class="where">출현: 트레이닝 룸 B</div></div>
+<div class="mob"><div class="nm">훈련로봇C</div><div class="en">Training Robot C</div><div class="stat">레벨 <b>12</b> · HP <b>525</b></div><div class="where">출현: 트레이닝 룸 C</div></div>
+<div class="mob"><div class="nm">훈련로봇 0</div><div class="en">Training Robot O</div><div class="stat">레벨 <b>13</b> · HP <b>180</b></div><div class="where">출현: 트레이닝 룸 D</div></div>
+<div class="mob"><div class="nm">순찰로봇</div><div class="en">Patrol Robot</div><div class="stat">레벨 <b>14</b> · HP <b>225</b></div><div class="where">출현: 에델슈타인 산책로1</div></div>
+<div class="mob"><div class="nm">이상한 이정표</div><div class="en">Strange Sign</div><div class="stat">레벨 <b>16</b> · HP <b>275</b></div><div class="where">출현: 에델슈타인 산책로2</div></div>
+<div class="mob"><div class="nm">구렁이</div><div class="en">Serpent</div><div class="stat">레벨 <b>18</b> · HP <b>325</b></div><div class="where">출현: 뱀 나오는 길</div></div>
+<div class="mob"><div class="nm">물 도둑</div><div class="en">Water Thief Monster</div><div class="stat">레벨 <b>20</b> · HP <b>375</b></div><div class="where">출현: 에델슈타인 산책로3</div></div>
+<div class="mob"><div class="nm">더스트 박스</div><div class="en">Dust Box</div><div class="stat">레벨 <b>22</b> · HP <b>435</b></div><div class="where">출현: 에델슈타인 산책로4</div></div>
+<div class="mob"><div class="nm">수상한 도적</div><div class="en">Suspicious Thief</div><div class="stat">레벨 <b>23</b> · HP <b>930</b></div><div class="where">출현: 위험! 임시공항</div></div>
+<div class="mob"><div class="nm">가로등</div><div class="en">Streetlight</div><div class="stat">레벨 <b>25</b> · HP <b>525</b></div><div class="where">출현: 가로등길</div></div>
+<div class="mob"><div class="nm">저택 경비로봇</div><div class="en">Mansion Guard Robot</div><div class="stat">레벨 <b>27</b> · HP <b>1,300</b></div><div class="where">출현: 경계 심한 저택</div></div>
+<div class="mob"><div class="nm">순찰로봇S</div><div class="en">Patrol Robot S</div><div class="stat">레벨 <b>28</b> · HP <b>720</b></div><div class="where">출현: 광산 가는 길1</div></div>
+<div class="mob"><div class="nm">파비오의 파이어봄</div><div class="en">Fabio's Firebomb</div><div class="stat">레벨 <b>30</b> · HP <b>1,800</b></div><div class="where">출현: 수상쩍은 헤어샵</div></div>
+<div class="mob"><div class="nm">안전제일</div><div class="en">Safety First</div><div class="stat">레벨 <b>31</b> · HP <b>990</b></div><div class="where">출현: 광산 가는 길2</div></div>
+<div class="mob"><div class="nm">아기 바위베어먹기</div><div class="en">Baby Boulder Muncher</div><div class="stat">레벨 <b>33</b> · HP <b>1,200</b></div><div class="where">출현: 바위길</div></div>
+<div class="mob"><div class="nm">큰 바위베어먹기</div><div class="en">Big Boulder Muncher</div><div class="stat">레벨 <b>35</b> · HP <b>1,400</b></div><div class="where">출현: 광석길</div></div>
+<div class="mob"><div class="nm">경비로봇</div><div class="en">Guard Robot</div><div class="stat">레벨 <b>67</b> · HP <b>8,500</b></div><div class="where">출현: 갱도 입구1 · 갱도 입구2</div></div>
+<div class="mob"><div class="nm">라키</div><div class="en">Racoco</div><div class="stat">레벨 <b>70</b> · HP <b>10,000</b></div><div class="where">출현: 갱도1</div></div>
+<div class="mob"><div class="nm">빅 스파이더</div><div class="en">Big Spider</div><div class="stat">레벨 <b>72</b> · HP <b>12,000</b></div><div class="where">출현: 갱도2</div></div>
+<div class="mob"><div class="nm">카트베어</div><div class="en">Cart Bear</div><div class="stat">레벨 <b>74</b> · HP <b>14,000</b></div><div class="where">출현: 갱도3</div></div>
+<div class="mob"><div class="nm">라쿤</div><div class="en">Racaroni</div><div class="stat">레벨 <b>76</b> · HP <b>17,000</b></div><div class="where">출현: 너구리 소굴</div></div>
+<div class="mob"><div class="nm">경비로봇L</div><div class="en">Guard Robot L</div><div class="stat">레벨 <b>79</b> · HP <b>23,000</b></div><div class="where">출현: 갱도4</div></div>
+<div class="mob"><div class="nm">라칸</div><div class="en">Raco</div><div class="stat">레벨 <b>82</b> · HP <b>29,000</b></div><div class="where">출현: 위험한 너구리 소굴</div></div>
+    </div>
+    <p class="legend">레벨·HP와 출현 맵은 본진 기준 수집 데이터입니다.</p>
+  </section>
+  <footer>
+    알팡지지는 비공식 팬 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-10-14
+  </footer>
+</div>
+</body>
+</html>
