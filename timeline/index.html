@@ -16,7 +16,7 @@
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
   .wrap{max-width:720px;margin:0 auto}
-  .gnb{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line)}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
   .gnb nav a.on{color:var(--accent-dark)}
