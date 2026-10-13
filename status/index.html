@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>알팡 현황판 — 알팡지지</title>
+<meta name="description" content="알팡지지가 수집·정리한 데이터와 기록 현황을 숫자로 공개합니다.">
+<link rel="canonical" href="https://alpang.gg/status/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="알팡 현황판 — 알팡지지">
+<meta property="og:description" content="알팡지지가 수집·정리한 데이터와 기록 현황을 숫자로 공개합니다.">
+<meta property="og:url" content="https://alpang.gg/status/">
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--nf:#d8d2c4}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
+  .wrap{max-width:720px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:14px;margin-top:6px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:18px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .kpi .lb{font-size:12px;color:var(--sub);font-weight:700}
+  .kpi .vl{font-size:26px;font-weight:800;margin-top:2px} .kpi .vl small{font-size:13px;color:var(--sub);font-weight:600}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:16.5px;font-weight:800;margin-bottom:10px}
+  .row{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:13px}
+  .rname{flex:0 0 118px;font-weight:700}
+  .bar{flex:1;height:12px;background:#f1ede3;border-radius:99px;overflow:hidden;display:flex}
+  .bar .ok{background:var(--accent);height:100%} .bar .nf{background:var(--nf);height:100%}
+  .rnum{flex:0 0 148px;color:var(--sub);text-align:right}
+  .prog{margin:10px 0} .prog .pl{display:flex;justify-content:space-between;font-size:13.5px;font-weight:700}
+  .prog .track{height:10px;background:#f1ede3;border-radius:99px;overflow:hidden;margin-top:4px}
+  .prog .fill{height:100%;background:var(--accent)}
+  .legend{font-size:12px;color:var(--sub);margin-top:8px}
+  footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ .rname{flex-basis:86px} .rnum{flex-basis:118px;font-size:12px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/status/" class="on">현황판</a></nav></div>
+  <div class="intro">
+    <h1>알팡 <span>현황판</span></h1>
+    <div class="tag">우리가 지금까지 쌓은 데이터와 기록을 숫자로 공개합니다</div>
+  </div>
+  <div class="cards">
+    <div class="kpi"><div class="lb">수집한 맵</div><div class="vl">587<small> 곳</small></div></div>
+    <div class="kpi"><div class="lb">몬스터</div><div class="vl">175<small> 종</small></div></div>
+    <div class="kpi"><div class="lb">몬스터 출현 관계</div><div class="vl">329<small> 건</small></div></div>
+    <div class="kpi"><div class="lb">타임라인 기록</div><div class="vl">1<small> 건 · 발언 14개</small></div></div>
+    <div class="kpi"><div class="lb">확인된 발언 FAQ</div><div class="vl">8<small> 개</small></div></div>
+  </div>
+  <section class="card">
+    <h2>권역별 맵 수집 현황</h2>
+<div class="row"><span class="rname">오르비스</span><span class="bar"><span class="ok" style="width:100%"></span><span class="nf" style="width:0%"></span></span><span class="rnum">정상 72 · 확인불가 0 / 72</span></div>
+<div class="row"><span class="rname">리프레</span><span class="bar"><span class="ok" style="width:100%"></span><span class="nf" style="width:0%"></span></span><span class="rnum">정상 67 · 확인불가 0 / 67</span></div>
+<div class="row"><span class="rname">에델슈타인 권역</span><span class="bar"><span class="ok" style="width:95%"></span><span class="nf" style="width:5%"></span></span><span class="rnum">정상 42 · 확인불가 2 / 44</span></div>
+<div class="row"><span class="rname">빅토리아 로드</span><span class="bar"><span class="ok" style="width:33%"></span><span class="nf" style="width:67%"></span></span><span class="rnum">정상 33 · 확인불가 66 / 99</span></div>
+<div class="row"><span class="rname">루디브리엄</span><span class="bar"><span class="ok" style="width:85%"></span><span class="nf" style="width:15%"></span></span><span class="rnum">정상 126 · 확인불가 23 / 149</span></div>
+<div class="row"><span class="rname">105 대역 (뱀의 늪 일대)</span><span class="bar"><span class="ok" style="width:20%"></span><span class="nf" style="width:80%"></span></span><span class="rnum">정상 29 · 확인불가 117 / 146</span></div>
+    <p class="legend">주황 = 상세 데이터까지 확보 · 회색 = 목록에는 있으나 상세 조회가 되지 않는 맵 (실내·특수 맵에 많고, 원인은 확인 중). 기준은 본진 빅뱅 직후 데이터입니다.</p>
+  </section>
+  <section class="card">
+    <h2>데이터 완성도</h2>
+    <div class="prog"><div class="pl"><span>맵 한글 이름 연결</span><span>475/587 · 81%</span></div><div class="track"><div class="fill" style="width:81%"></div></div></div>
+    <div class="prog"><div class="pl"><span>몬스터 한글 이름 연결</span><span>165/175 · 94%</span></div><div class="track"><div class="fill" style="width:94%"></div></div></div>
+    <div class="prog"><div class="pl"><span>몬스터 상세 스탯 확보</span><span>98/175 · 56%</span></div><div class="track"><div class="fill" style="width:56%"></div></div></div>
+    <p class="legend">한글 이름은 본진 최신 버전 목록과 대조한 '표시명 후보'이며, 확정 표기는 서버 오픈 후 검증합니다. 모든 수치는 알팡 실서버 확인 전인 본진 기준 수집 데이터입니다.</p>
+  </section>
+  <footer>
+    알팡지지는 비공식 팬 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간 · 페이지 갱신일: 2026-10-13
+  </footer>
+</div>
+</body>
+</html>
