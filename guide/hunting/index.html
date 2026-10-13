@@ -1,1 +1,114 @@
-x
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>초반 사냥터 후보 비교 — 알팡지지</title>
+<meta name="description" content="빅토리아 아일랜드 초반 사냥터 후보를 출현 몬스터·레벨 범위·배치 규모로 비교합니다.">
+<link rel="canonical" href="https://alpang.gg/guide/hunting/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="초반 사냥터 후보 비교 — 알팡지지">
+<meta property="og:description" content="빅토리아 아일랜드 초반 사냥터 후보를 출현 몬스터·레벨 범위·배치 규모로 비교합니다.">
+<meta property="og:url" content="https://alpang.gg/guide/hunting/">
+<style>
+  :root{{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}}
+  *{{margin:0;padding:0;box-sizing:border-box}}
+  body{{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}}
+  .wrap{{max-width:720px;margin:0 auto}}
+  .gnb{{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}}
+  .gnb .logo{{font-size:20px;font-weight:800;color:var(--text)}}
+  .gnb nav a{{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}}
+  .gnb nav a.on{{color:var(--accent-dark)}}
+  .intro{{text-align:center;padding:28px 0 4px}}
+  .intro h1{{font-size:28px;font-weight:800}} .intro h1 span{{color:var(--accent)}}
+  .intro .tag{{color:var(--sub);font-size:14px;margin-top:6px}}
+  .disc{{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:13.5px;color:var(--text);margin-top:16px;text-align:center}}
+  section.card{{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}}
+  h2{{font-size:16.5px;font-weight:800;margin-bottom:10px}}
+  p.body{{font-size:14.5px;margin-bottom:8px}}
+  .legend{{font-size:12.5px;color:var(--sub);margin-top:10px}}
+  table{{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}}
+  th{{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}}
+  td{{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}}
+  tr:last-child td{{border-bottom:none}}
+  td.num, th.num{{text-align:right;white-space:nowrap}}
+  .mname{{font-weight:800}}
+  .men{{display:block;font-size:11.5px;color:var(--sub);font-weight:600}}
+  .chip{{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:12px;margin:1px 2px 1px 0}}
+  .chip b{{color:var(--accent-dark)}}
+  .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}}
+  .mob{{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}}
+  .mob .nm{{font-size:16px;font-weight:800}}
+  .mob .en{{font-size:11.5px;color:var(--sub);font-weight:600}}
+  .mob .stat{{font-size:13px;margin-top:6px}}
+  .mob .stat b{{color:var(--accent-dark)}}
+  .mob .where{{font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}}
+  .cnt{{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:2px}}
+  footer{{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}}
+  @media (max-width:560px){{ table{{font-size:12.5px}} th,td{{padding:7px 6px}} .grid{{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}} }}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/status/">현황판</a></nav></div>
+  <div class="intro">
+    <h1>초반 사냥터 <span>후보 비교</span></h1>
+    <div class="tag">어디서 사냥할지, 순위가 아니라 비교로 고르기</div>
+  </div>
+  <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+
+  <section class="card">
+    <h2>빅토리아 아일랜드 초반 사냥터 후보<span class="cnt">39곳</span></h2>
+    <p class="body">빅토리아 아일랜드 본토(헤네시스·엘리니아·페리온·커닝시티·리스항구·슬리피우드 일대) 맵 가운데 몬스터가 출현하는 맵을 모았습니다. 어느 곳이 가장 좋은지는 캐릭터와 장비에 따라 달라지므로 순위를 매기지 않고, 출현 몬스터와 배치 규모를 나란히 비교할 수 있게 정리했습니다. 출현 몬스터의 최저 레벨이 낮은 맵부터 정렬했습니다.</p>
+    <table>
+      <tr><th>맵</th><th>출현 몬스터</th><th class="num">종류</th><th class="num">레벨 범위</th><th class="num">배치 총량</th></tr>
+<tr><td><span class="mname">리스항구 외곽</span><span class="men">Right Around Lith Harbor</span></td><td><span class="chip">달팽이 <b>Lv.1</b></span><span class="chip">파란 달팽이 <b>Lv.2</b></span></td><td class="num">2</td><td class="num">Lv.1~2</td><td class="num">14</td></tr>
+<tr><td><span class="mname">드레이크의밥상</span><span class="men">Drake's Meal Table</span></td><td><span class="chip">Bob <b>Lv.2</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">3</td><td class="num">Lv.2~60</td><td class="num">37</td></tr>
+<tr><td><span class="mname">해질녘하늘</span><span class="men">Sunset Sky</span></td><td><span class="chip">빨간 달팽이 <b>Lv.5</b></span><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">슬라임 <b>Lv.7</b></span></td><td class="num">3</td><td class="num">Lv.5~7</td><td class="num">33</td></tr>
+<tr><td><span class="mname">헤네시스 북쪽언덕</span><span class="men">The Hill North of Henesys</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span></td><td class="num">1</td><td class="num">Lv.6~6</td><td class="num">20</td></tr>
+<tr><td><span class="mname">빛나는 숲의 통로</span><span class="men">Shining Forest Path</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">슬라임 <b>Lv.7</b></span></td><td class="num">2</td><td class="num">Lv.6~7</td><td class="num">17</td></tr>
+<tr><td><span class="mname">포자언덕</span><span class="men">Spore Hill</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">초록버섯 <b>Lv.7</b></span></td><td class="num">2</td><td class="num">Lv.6~7</td><td class="num">25</td></tr>
+<tr><td><span class="mname">헤네시스사냥터2</span><span class="men">Henesys Hunting Ground II</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">Strange Pig <b>Lv.7</b></span><span class="chip">돼지 <b>Lv.7</b></span><span class="chip">초록버섯 <b>Lv.7</b></span><span class="chip">Strange Orange Mushroom <b>Lv.8</b></span><span class="chip">Strange Ribbon Pig <b>Lv.10</b></span><span class="chip">리본 돼지 <b>Lv.10</b></span><span class="chip">Strange Green Mushroom <b>Lv.15</b></span></td><td class="num">8</td><td class="num">Lv.6~15</td><td class="num">43</td></tr>
+<tr><td><span class="mname">헤네시스사냥터3</span><span class="men">Henesys Hunting Ground III</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">초록버섯 <b>Lv.7</b></span><span class="chip">Strange Orange Mushroom <b>Lv.8</b></span><span class="chip">Strange Ribbon Pig <b>Lv.10</b></span><span class="chip">리본 돼지 <b>Lv.10</b></span><span class="chip">Strange Green Mushroom <b>Lv.15</b></span></td><td class="num">6</td><td class="num">Lv.6~15</td><td class="num">42</td></tr>
+<tr><td><span class="mname">솟아오른나무3</span><span class="men">The Tree That Grew III</span></td><td><span class="chip">초록버섯 <b>Lv.7</b></span><span class="chip">Strange Dark Stump <b>Lv.10</b></span><span class="chip">다크 스텀프 <b>Lv.10</b></span><span class="chip">Strange Green Mushroom <b>Lv.15</b></span></td><td class="num">4</td><td class="num">Lv.7~15</td><td class="num">43</td></tr>
+<tr><td><span class="mname">어두운통로</span><span class="men">Dark Cave</span></td><td><span class="chip">스티지 <b>Lv.11</b></span><span class="chip">뿔버섯 <b>Lv.13</b></span><span class="chip">좀비버섯 <b>Lv.15</b></span></td><td class="num">3</td><td class="num">Lv.11~15</td><td class="num">51</td></tr>
+<tr><td><span class="mname">방황의 늪</span><span class="men">The Swamp of Despair</span></td><td><span class="chip">주니어 네키 <b>Lv.19</b></span></td><td class="num">1</td><td class="num">Lv.19~19</td><td class="num">31</td></tr>
+<tr><td><span class="mname">와일드보어의 땅</span><span class="men">Wild Boar Land</span></td><td><span class="chip">와일드보어 <b>Lv.19</b></span><span class="chip">겁먹은 와일드보어 <b>Lv.20</b></span></td><td class="num">2</td><td class="num">Lv.19~20</td><td class="num">33</td></tr>
+<tr><td><span class="mname">골렘의 사원 입구</span><span class="men">Golem's Temple Entrance</span></td><td><span class="chip">스톤골렘 <b>Lv.20</b></span></td><td class="num">1</td><td class="num">Lv.20~20</td><td class="num">7</td></tr>
+<tr><td><span class="mname">수련장1</span><span class="men">Training Center 1</span></td><td><span class="chip">쉐도우 듀어러 <b>Lv.20</b></span></td><td class="num">1</td><td class="num">Lv.20~20</td><td class="num">21</td></tr>
+<tr><td><span class="mname">골렘의 사원1</span><span class="men">Golem's Temple 1</span></td><td><span class="chip">스톤골렘 <b>Lv.20</b></span><span class="chip">다크 스톤골렘 <b>Lv.23</b></span></td><td class="num">2</td><td class="num">Lv.20~23</td><td class="num">12</td></tr>
+<tr><td><span class="mname">슬리피던전4</span><span class="men">Sleepy Dungeon IV</span></td><td><span class="chip">스톤골렘 <b>Lv.20</b></span><span class="chip">다크 스톤골렘 <b>Lv.23</b></span></td><td class="num">2</td><td class="num">Lv.20~23</td><td class="num">10</td></tr>
+<tr><td><span class="mname">동쪽바위산2</span><span class="men">East Rocky Mountain II</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">동쪽바위산3</span><span class="men">East Rocky Mountain III</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">동쪽바위산4</span><span class="men">East Rocky Mountain IV</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">동쪽바위산5</span><span class="men">East Rocky Mountain V</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">동쪽바위산6</span><span class="men">East Rocky Mountain VI</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">동쪽바위산7</span><span class="men">East Rocky Mountain VII</span></td><td><span class="chip">콜드아이 <b>Lv.22</b></span></td><td class="num">1</td><td class="num">Lv.22~22</td><td class="num">17</td></tr>
+<tr><td><span class="mname">수련장2</span><span class="men">Training Center 2</span></td><td><span class="chip">자이언트 쉐도우 <b>Lv.25</b></span></td><td class="num">1</td><td class="num">Lv.25~25</td><td class="num">21</td></tr>
+<tr><td><span class="mname">무너진 골렘의 성터</span><span class="men">Golem's Castle Ruins</span></td><td><span class="chip">믹스골렘 <b>Lv.26</b></span></td><td class="num">1</td><td class="num">Lv.26~26</td><td class="num">15</td></tr>
+<tr><td><span class="mname">초기 발굴지역</span><span class="men">Initial Excavation Area</span></td><td><span class="chip">우드 마스크 <b>Lv.28</b></span></td><td class="num">1</td><td class="num">Lv.28~28</td><td class="num">18</td></tr>
+<tr><td><span class="mname">수련장3</span><span class="men">Training Center 3</span></td><td><span class="chip">쉐도우 블레이드 <b>Lv.30</b></span></td><td class="num">1</td><td class="num">Lv.30~30</td><td class="num">20</td></tr>
+<tr><td><span class="mname">조용한 습지</span><span class="men">Silent Swamp</span></td><td><span class="chip">카파 드레이크 <b>Lv.50</b></span></td><td class="num">1</td><td class="num">Lv.50~50</td><td class="num">22</td></tr>
+<tr><td><span class="mname">축축한 습지</span><span class="men">Humid Swamp</span></td><td><span class="chip">카파 드레이크 <b>Lv.50</b></span></td><td class="num">1</td><td class="num">Lv.50~50</td><td class="num">28</td></tr>
+<tr><td><span class="mname">빛이 들지 않는 곳</span><span class="men">Sunless Area</span></td><td><span class="chip">드레이크 <b>Lv.52</b></span></td><td class="num">1</td><td class="num">Lv.52~52</td><td class="num">21</td></tr>
+<tr><td><span class="mname">동굴 낭떠러지</span><span class="men">Cave Cliff</span></td><td><span class="chip">드레이크 <b>Lv.52</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span></td><td class="num">2</td><td class="num">Lv.52~54</td><td class="num">26</td></tr>
+<tr><td><span class="mname">차가운 바람</span><span class="men">Cold Wind</span></td><td><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">아이스 드레이크 <b>Lv.56</b></span></td><td class="num">2</td><td class="num">Lv.54~56</td><td class="num">35</td></tr>
+<tr><td><span class="mname">서늘한 동굴</span><span class="men">Chilly Cave</span></td><td><span class="chip">아이스 드레이크 <b>Lv.56</b></span><span class="chip">다크 드레이크 <b>Lv.58</b></span></td><td class="num">2</td><td class="num">Lv.56~58</td><td class="num">31</td></tr>
+<tr><td><span class="mname">동굴의 출구</span><span class="men">Cave Exit</span></td><td><span class="chip">다크 드레이크 <b>Lv.58</b></span></td><td class="num">1</td><td class="num">Lv.58~58</td><td class="num">19</td></tr>
+<tr><td><span class="mname">드레이크의 푸른동굴</span><span class="men">Blue Drake Cave</span></td><td><span class="chip">다크 드레이크 <b>Lv.58</b></span></td><td class="num">1</td><td class="num">Lv.58~58</td><td class="num">18</td></tr>
+<tr><td><span class="mname">신전의 입구</span><span class="men">Temple Entrance</span></td><td><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">1</td><td class="num">Lv.60~60</td><td class="num">8</td></tr>
+<tr><td><span class="mname">무너진 신전</span><span class="men">Collapsed Temple</span></td><td><span class="chip">타우로마시스 <b>Lv.62</b></span></td><td class="num">1</td><td class="num">Lv.62~62</td><td class="num">7</td></tr>
+<tr><td><span class="mname">끝없는 복도</span><span class="men">Endless Hallway</span></td><td><span class="chip">타우로마시스 <b>Lv.62</b></span><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">2</td><td class="num">Lv.62~64</td><td class="num">8</td></tr>
+<tr><td><span class="mname">음산한 신전</span><span class="men">Gloomy Temple</span></td><td><span class="chip">타우로마시스 <b>Lv.62</b></span><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">2</td><td class="num">Lv.62~64</td><td class="num">10</td></tr>
+<tr><td><span class="mname">금지된 제단</span><span class="men">Forbidden Altar</span></td><td><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">1</td><td class="num">Lv.64~64</td><td class="num">4</td></tr>
+    </table>
+    <p class="legend">배치 총량은 본진 기준 데이터에서 해당 맵에 배치된 몬스터 수의 합계입니다. 실제 사냥 효율은 리젠·지형·직업에 따라 달라질 수 있습니다. 한글 이름은 표시명 후보이며, 후보가 없는 맵은 영문명으로 표기했습니다.</p>
+  </section>
+  <footer>
+    알팡지지는 비공식 팬 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-10-14
+  </footer>
+</div>
+</body>
+</html>
