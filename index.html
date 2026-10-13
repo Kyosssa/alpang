@@ -20,7 +20,11 @@
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.65;padding:0 16px 48px}
   .wrap{max-width:720px;margin:0 auto}
-  header{padding:36px 0 20px;text-align:center}
+  .gnb{display:flex;justify-content:space-between;align-items:center;background:var(--blue);border:2px solid var(--line);box-shadow:3px 3px 0 rgba(0,0,0,.55);padding:10px 16px;margin-top:16px}
+  .gnb .logo{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:20px;color:#fff}
+  .gnb nav a{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;color:#fff;text-decoration:none;font-size:14px;margin-left:14px;padding:4px 10px;border:2px outset #7d9cc9;background:#2a4a85}
+  .gnb nav a.on{border-style:inset;background:#1f3866}
+  header{padding:28px 0 20px;text-align:center}
   header .logo{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:34px;letter-spacing:-0.5px}
   header .logo span{color:var(--accent)}
   header .tag{color:var(--sub);font-size:14px;margin-top:6px}
@@ -46,6 +50,7 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="gnb"><span class="logo">알팡지지 🍁</span><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a></nav></div>
 
   <header>
     <h1 class="logo">알팡<span>지지</span> 🍁</h1>
