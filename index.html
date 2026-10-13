@@ -33,9 +33,11 @@
   .s1{background:linear-gradient(120deg,#FF7E36,#FF9E57)}
   .s2{background:linear-gradient(120deg,#F06423,#FF8A4C)}
   .s3{background:linear-gradient(120deg,#E85D1F,#F5821F)}
-  .dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:8px}
-  .dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.45);cursor:pointer;padding:0}
-  .dots button.on{background:#fff;width:22px;border-radius:99px}
+  .dots{position:absolute;bottom:2px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:2px}
+  .pause-btn{position:absolute;right:14px;bottom:10px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.18);color:#fff;font-size:13px;cursor:pointer;line-height:1}
+  .dots button{width:44px;height:44px;border:none;background:transparent;cursor:pointer;padding:0;position:relative}
+  .dots button::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45);transition:width .3s}
+  .dots button.on::after{background:#fff;width:22px;border-radius:99px}
   .badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent-dark);margin-top:14px}
   .hero-note{text-align:center}
   /* 카테고리 그리드 */
@@ -46,7 +48,7 @@
   .cat p{font-size:13px;color:var(--sub);margin-top:3px;line-height:1.55}
   .cat .go{font-size:12.5px;font-weight:700;color:var(--accent-dark);margin-top:8px;display:block}
   .cat.soon{opacity:.75}
-  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  section{scroll-margin-top:80px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
   section h2{font-size:19px;font-weight:800;margin-bottom:12px}
   h2 .em{color:var(--accent)}
   p{font-size:15px;color:var(--text)}
@@ -62,7 +64,8 @@
   a{color:var(--accent-dark)}
   .cta{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
   footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
-  @media (max-width:560px){ .cats{grid-template-columns:1fr 1fr} .slide{padding:30px 22px 40px} .slide h2{font-size:21px} }
+  @media (max-width:560px){ .slide{padding:30px 22px 40px} .slide h2{font-size:21px} }
+  @media (max-width:400px){ .cats{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -88,6 +91,7 @@
       </a>
     </div>
     <div class="dots" id="dots"></div>
+    <button class="pause-btn" id="pauseBtn" aria-label="배너 자동 전환 정지">⏸</button>
   </div>
   <div class="hero-note"><span class="badge">비공식 팬 정보 사이트 · 오픈 준비 중</span></div>
 
@@ -166,12 +170,23 @@
     dotsBox.appendChild(b);
   }
   function paint(){ slides.style.transform = 'translateX(' + (-cur*100) + '%)';
-    for (var j = 0; j < n; j++) dotsBox.children[j].className = (j === cur ? 'on' : ''); }
+    for (var j = 0; j < n; j++) { dotsBox.children[j].className = (j === cur ? 'on' : '');
+      slides.children[j].tabIndex = (j === cur ? 0 : -1);
+      slides.children[j].setAttribute('aria-hidden', j === cur ? 'false' : 'true'); } }
   function go(i){ cur = (i + n) % n; paint(); }
-  function restart(){ if (timer) clearInterval(timer); timer = setInterval(function(){ go(cur+1); }, 5000); }
+  var paused = false;
+  function restart(){ if (timer) clearInterval(timer); if (!paused) timer = setInterval(function(){ go(cur+1); }, 5000); }
   var banner = document.getElementById('banner');
   banner.addEventListener('mouseenter', function(){ if (timer) clearInterval(timer); });
   banner.addEventListener('mouseleave', restart);
+  banner.addEventListener('focusin', function(){ if (timer) clearInterval(timer); });
+  banner.addEventListener('focusout', restart);
+  var pauseBtn = document.getElementById('pauseBtn');
+  pauseBtn.addEventListener('click', function(e){ e.preventDefault();
+    paused = !paused;
+    pauseBtn.textContent = paused ? '▶' : '⏸';
+    pauseBtn.setAttribute('aria-label', paused ? '배너 자동 전환 재개' : '배너 자동 전환 정지');
+    restart(); });
   paint(); restart();
 })();
 </script>
