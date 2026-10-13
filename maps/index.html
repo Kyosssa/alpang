@@ -1,1 +1,1710 @@
-x
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>맵 탐색 — 알팡지지</title>
+<meta name="description" content="본진 빅뱅 직후(GMS 95) 기준 정상 수집 맵 402곳을 권역별로 정리하고 출현 몬스터를 연결한 비공식 팬 탐색 페이지입니다.">
+<link rel="canonical" href="https://alpang.gg/maps/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="맵 탐색 — 알팡지지">
+<meta property="og:description" content="본진 빅뱅 직후(GMS 95) 기준 정상 수집 맵 402곳을 권역별로 정리하고 출현 몬스터를 연결한 비공식 팬 탐색 페이지입니다.">
+<meta property="og:url" content="https://alpang.gg/maps/">
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
+  .wrap{max-width:860px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:14px;margin-top:6px}
+  .intro .stats{font-size:13px;color:var(--sub);margin-top:8px}
+  .notice{font-size:13px;color:var(--sub);background:var(--accent-soft);border-radius:10px;padding:12px 16px;margin-top:16px;text-align:center}
+  .xlink{margin-top:14px;text-align:center}
+  .xlink a{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 18px;color:var(--accent-dark);font-weight:700;font-size:14px;text-decoration:none}
+  footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
+  a{color:var(--accent-dark)}
+</style>
+</head>
+<style>
+  .region{margin-top:26px}
+  .region h2{font-size:20px;font-weight:800;border-left:4px solid var(--accent);padding-left:10px;margin-bottom:10px}
+  .region h2 small{font-size:13px;color:var(--sub);font-weight:600}
+  .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+  .map{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .map h3{font-size:16px;font-weight:800}
+  .map .en{font-size:12.5px;color:var(--sub)}
+  .town{font-size:11px;font-weight:800;color:#fff;background:var(--accent);padding:2px 9px;border-radius:999px}
+  .street{font-size:11.5px;color:var(--sub)}
+  .map .mobs{margin-top:8px;border-top:1px solid #f0ece3;padding-top:8px}
+  .chip{display:inline-block;font-size:12.5px;background:#f7f4ee;border:1px solid var(--line);border-radius:999px;padding:1px 9px;margin:0 4px 4px 0}
+  .chip.none{color:var(--sub);background:none;border:none;padding:0}
+  @media (max-width:560px){ .list{grid-template-columns:1fr} }
+</style>
+<body>
+<div class="wrap">
+  <div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/status/">현황판</a></nav></div>
+  <div class="intro">
+    <h1>맵 <span>탐색</span></h1>
+    <div class="tag">정상 수집된 맵 402곳 · 권역별 정리</div>
+    <div class="stats">출현 몬스터는 수집된 출현 관계 기준입니다</div>
+  </div>
+  <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.</p>
+  <div class="xlink"><a href="/mobs/">👾 몬스터 도감 보러 가기</a></div>
+  <main>
+<section class="region">
+    <h2>빅토리아 로드 <small>33곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>궁수 수련장</h3><span class="en">Bowman Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">슬라임</span><span class="chip">리본 돼지</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>도적 수련장</h3><span class="en">Thief Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">스텀프</span><span class="chip">옥토퍼스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산2</h3><span class="en">East Rocky Mountain II</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산3</h3><span class="en">East Rocky Mountain III</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산4</h3><span class="en">East Rocky Mountain IV</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산5</h3><span class="en">East Rocky Mountain V</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산6</h3><span class="en">East Rocky Mountain VI</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동쪽바위산7</h3><span class="en">East Rocky Mountain VII</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">콜드아이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>마법사 수련장</h3><span class="en">Magician Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">슬라임</span><span class="chip">다크 스텀프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>비화원 아래층</h3><span class="en">The Secret Garden 1st Floor</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>비화원 위층</h3><span class="en">The Secret Garden 2nd Floor</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>비화원 지하</h3><span class="en">The Secret Garden Basement</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>비화원 지하감옥</h3><span class="en">The Secret Garden Underground Prison</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>설희의 방</h3><span class="en">Lady Syl&#x27;s Room</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>솟아오른나무3</h3><span class="en">The Tree That Grew III</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">초록버섯</span><span class="chip">Strange Dark Stump</span><span class="chip">다크 스텀프</span><span class="chip">Strange Green Mushroom</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>수련장1</h3><span class="en">Training Center 1</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">쉐도우 듀어러</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>수련장2</h3><span class="en">Training Center 2</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">자이언트 쉐도우</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>수련장3</h3><span class="en">Training Center 3</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">쉐도우 블레이드</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리니아</h3><span class="en">Ellinia</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리니아</h3><span class="en">Ellinia</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>왕연해의 대여된 수련장</h3><span class="en">Power B. Fore&#x27;s Borrowed Training Center </span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">수련생 스포아</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>왕연해의 스포아 수련장</h3><span class="en">Power B. Fore&#x27;s Spore Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">수련생 스포아</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>전사 수련장</h3><span class="en">Warrior Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">스텀프</span><span class="chip">다크 스텀프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>지하철매표소</h3><span class="en">Subway Ticketing Booth</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>커닝시티 뒷골목</h3><span class="en">Kerning City Back Alley</span><span class="town">마을</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해적 수련장</h3><span class="en">Pirate Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">돼지</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해적 수련장</h3><span class="en">Pirate Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">돼지</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해적 수련장</h3><span class="en">Pirate Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">돼지</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해적 수련장</h3><span class="en">Pirate Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">돼지</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해적 수련장</h3><span class="en">Pirate Training Center</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">돼지</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>해질녘하늘</h3><span class="en">Sunset Sky</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">빨간 달팽이</span><span class="chip">주황버섯</span><span class="chip">슬라임</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>헤네시스사냥터2</h3><span class="en">Henesys Hunting Ground II</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">주황버섯</span><span class="chip">Strange Pig</span><span class="chip">돼지</span><span class="chip">초록버섯</span><span class="chip">Strange Orange Mushroom</span><span class="chip">Strange Ribbon Pig</span><span class="chip">리본 돼지</span><span class="chip">Strange Green Mushroom</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>헤네시스사냥터3</h3><span class="en">Henesys Hunting Ground III</span><span class="street">Victoria Road</span></div>
+      <div class="mobs"><span class="chip">주황버섯</span><span class="chip">초록버섯</span><span class="chip">Strange Orange Mushroom</span><span class="chip">Strange Ribbon Pig</span><span class="chip">리본 돼지</span><span class="chip">Strange Green Mushroom</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>105 대역 (뱀의 늪 일대) <small>29곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>발록의 무덤</h3><span class="en">Balrog&#x27;s Tomb  </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>발록의 무덤</h3><span class="en">Balrog&#x27;s Tomb  </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>발록이 사라진 자리</h3><span class="en">Balrog&#x27;s Disappearance Site  </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>발록이 사라진 자리</h3><span class="en">Balrog&#x27;s Disappearance Site  </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>신전의 밑바닥</h3><span class="en">Bottom of the Temple </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>지하로 내려가는 길</h3><span class="en">Stairway to the Underground Temple  </span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트리스탄의 무덤</h3><span class="en">Tristan&#x27;s Tomb</span><span class="street">Balrog Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>금지된 제단</h3><span class="en">Forbidden Altar</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip">타우로스피어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>끝없는 복도</h3><span class="en">Endless Hallway</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip">타우로마시스</span><span class="chip">타우로스피어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>또 다른 문</h3><span class="en">Another Door</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>무너진 신전</h3><span class="en">Collapsed Temple</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip">타우로마시스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>신전의 입구</h3><span class="en">Temple Entrance</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip">와일드카고</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>음산한 신전</h3><span class="en">Gloomy Temple</span><span class="street">Cursed Temple</span></div>
+      <div class="mobs"><span class="chip">타우로마시스</span><span class="chip">타우로스피어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동굴 낭떠러지</h3><span class="en">Cave Cliff</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">드레이크</span><span class="chip">레드 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>동굴의 출구</h3><span class="en">Cave Exit</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">다크 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>드레이크의 푸른동굴</h3><span class="en">Blue Drake Cave</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">다크 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>빛이 들지 않는 곳</h3><span class="en">Sunless Area</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>서늘한 동굴</h3><span class="en">Chilly Cave</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">아이스 드레이크</span><span class="chip">다크 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>차가운 바람</h3><span class="en">Cold Wind</span><span class="street">Drake Cave</span></div>
+      <div class="mobs"><span class="chip">레드 드레이크</span><span class="chip">아이스 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>드레이크의밥상</h3><span class="en">Drake&#x27;s Meal Table</span><span class="street">Dungeon</span></div>
+      <div class="mobs"><span class="chip">Bob</span><span class="chip">레드 드레이크</span><span class="chip">와일드카고</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>슬리피던전4</h3><span class="en">Sleepy Dungeon IV</span><span class="street">Dungeon</span></div>
+      <div class="mobs"><span class="chip">스톤골렘</span><span class="chip">다크 스톤골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>슬리피우드</h3><span class="en">Sleepywood</span><span class="town">마을</span><span class="street">Dungeon</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>어두운통로</h3><span class="en">Dark Cave</span><span class="street">Dungeon</span></div>
+      <div class="mobs"><span class="chip">스티지</span><span class="chip">뿔버섯</span><span class="chip">좀비버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>슬리피우드</h3><span class="en">Sleepywood</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>슬리피우드 호텔로비</h3><span class="en">Sleepywood Hotel</span><span class="street">Sleepywood</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>회복사우나실&lt;고급&gt;</h3><span class="en">VIP Sauna</span><span class="street">Sleepywood</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>회복사우나실&lt;일반&gt;</h3><span class="en">Regular Sauna</span><span class="street">Sleepywood</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>조용한 습지</h3><span class="en">Silent Swamp</span><span class="street">Swamp</span></div>
+      <div class="mobs"><span class="chip">카파 드레이크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>축축한 습지</h3><span class="en">Humid Swamp</span><span class="street">Swamp</span></div>
+      <div class="mobs"><span class="chip">카파 드레이크</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>루디브리엄 <small>126곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>Exit of the Maze</h3><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Exit of the Maze</h3><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 1</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 10</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 11</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 12</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 13</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 14</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 15</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 16</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 2</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 3</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 4</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 5</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 6</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 7</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 8</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Ludibrium Maze 9</h3><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름발코니</h3><span class="en">Cloud Balcony</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름테라스&lt;1&gt;</h3><span class="en">Cloud Terrace&lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">브라운테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름테라스&lt;2&gt;</h3><span class="en">Cloud Terrace&lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">핑크테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름테라스&lt;3&gt;</h3><span class="en">Cloud Terrace&lt;3&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">더키 패밀리</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름테라스&lt;4&gt;</h3><span class="en">Cloud Terrace&lt;4&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">팬더테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름테라스&lt;5&gt;</h3><span class="en">Cloud Terrace&lt;5&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">장난감 목마</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뒤틀린 시간의 길&lt;1&gt;</h3><span class="en">Warped Path of Time&lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 버피</span><span class="chip">[★] 레이지 버피</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뒤틀린 시간의 길&lt;2&gt;</h3><span class="en">Warped Path of Time&lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 버푼</span><span class="chip">[★] 딥 버푼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뒤틀린 시간의 길&lt;3&gt;</h3><span class="en">Warped Path of Time&lt;3&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 파이렛</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뒤틀린 시간의 길&lt;4&gt;</h3><span class="en">Warped Path of Time&lt;4&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 바이킹</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뒤틀린 회랑</h3><span class="en">Warped Passage</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 게이트키퍼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디 펫 산책로</h3><span class="en">Ludibrium Pet Walkway</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄</h3><span class="en">Ludibrium</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄 마을</h3><span class="en">Ludibrium Village</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄 정거장 입구</h3><span class="en">Ludibrium Ticketing Place</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄무기방어구상점</h3><span class="en">Ludibrium Weapon Store</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄성형외과</h3><span class="en">Ludibrium Plastic Surgery</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄잡화상점</h3><span class="en">Ludibrium General Store</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄피부관리실</h3><span class="en">Ludibrium Skin Care</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>루디브리엄헤어샵</h3><span class="en">Ludibrium Hair Salon</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>매이션의 집</h3><span class="en">Mason&#x27;s House</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>빈집1</h3><span class="en">Empty House I</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>빈집2</h3><span class="en">Empty House II</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의 통로</h3><span class="en">Path of Time</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의갈림길</h3><span class="en">Crossroad of Time</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">티키</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의길&lt;1&gt;</h3><span class="en">The Path of Time &lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">플래툰 크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의길&lt;2&gt;</h3><span class="en">The Path of Time &lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의길&lt;3&gt;</h3><span class="en">The Path of Time &lt;3&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의길&lt;4&gt;</h3><span class="en">The Path of Time &lt;4&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시간의소용돌이</h3><span class="en">Whirlpool of Time</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">틱톡</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시계탑 깊은 곳</h3><span class="en">Deep Inside the Clocktower</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>시계탑의 근원</h3><span class="en">Origin of Clocktower</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 100층</h3><span class="en">Eos Tower 100th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 101층&lt;입장맵&gt;</h3><span class="en">Eos Tower 101st Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 10층</h3><span class="en">Eos Tower 10th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">스카이세이버</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 11층~30층</h3><span class="en">Eos Tower 11th - 30th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 1층</h3><span class="en">Eos Tower 1st Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">킹 블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 2층</h3><span class="en">Eos Tower 2nd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">킹 블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 31층</h3><span class="en">Eos Tower 31st Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">핑크세이버</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 32층</h3><span class="en">Eos Tower 32nd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">킹 블록퍼스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 33층</h3><span class="en">Eos Tower 33rd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록퍼스</span><span class="chip">킹 블록퍼스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 34층</h3><span class="en">Eos Tower 34th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록퍼스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 35층</h3><span class="en">Eos Tower 35th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">치크세이버</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 36층~65층</h3><span class="en">Eos Tower 36th - 65th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 3층</h3><span class="en">Eos Tower 3rd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">킹 블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 4층</h3><span class="en">Eos Tower 4th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록골렘</span><span class="chip">킹 블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 5층</h3><span class="en">Eos Tower 5th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록골렘</span><span class="chip">킹 블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 66층</h3><span class="en">Eos Tower 66th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">북치는 토끼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 67층</h3><span class="en">Eos Tower 67th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">북치는 토끼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 68층</h3><span class="en">Eos Tower 68th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">북치는 토끼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 69층</h3><span class="en">Eos Tower 69th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">북치는 토끼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 6층</h3><span class="en">Eos Tower 6th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 70층</h3><span class="en">Eos Tower 70th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">북치는 토끼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 71층~90층</h3><span class="en">Eos Tower 71st - 90th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 7층</h3><span class="en">Eos Tower 7th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 8층</h3><span class="en">Eos Tower 8th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블록골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 91층</h3><span class="en">Eos Tower 91st Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">처프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 92층</h3><span class="en">Eos Tower 92nd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">처프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 93층</h3><span class="en">Eos Tower 93rd Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">그린 트릭스터</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 94층</h3><span class="en">Eos Tower 94th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">트릭스터</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 95층</h3><span class="en">Eos Tower 95th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블랙 라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 96층</h3><span class="en">Eos Tower 96th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">블랙 라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 97층</h3><span class="en">Eos Tower 97th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">라츠</span><span class="chip">블랙 라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 98층</h3><span class="en">Eos Tower 98th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">라츠</span><span class="chip">블랙 라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 99층</h3><span class="en">Eos Tower 99th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">라츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 9층</h3><span class="en">Eos Tower 9th Floor</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">트위터</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에오스 탑 입구</h3><span class="en">Eos Tower Entrance</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리베이터&lt;루디브리엄행&gt;</h3><span class="en">Elevator &lt;To Ludibrium&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리베이터&lt;루디브리엄행&gt;</h3><span class="en">Elevator &lt;To Ludibrium&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리베이터&lt;아랫마을행&gt;</h3><span class="en">Elevator &lt;To Korean Folk Town&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리베이터&lt;아랫마을행&gt;</h3><span class="en">Elevator &lt;To Korean Folk Town&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잃어버린시간&lt;1&gt;</h3><span class="en">Lost Time &lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">플래툰 크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잃어버린시간&lt;2&gt;</h3><span class="en">Lost Time &lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 크로노스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잊혀진 시간의 길&lt;1&gt;</h3><span class="en">Forgotten Path of Time&lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 소울테니</span><span class="chip">[★] 마스터 소울테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잊혀진 시간의 길&lt;2&gt;</h3><span class="en">Forgotten Path of Time&lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 클라크</span><span class="chip">[★] 다크 클라크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잊혀진 시간의 길&lt;3&gt;</h3><span class="en">Forgotten Path of Time&lt;3&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 데스테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잊혀진 시간의 길&lt;4&gt;</h3><span class="en">Forgotten Path of Time&lt;4&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 팬텀워치</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>잊혀진 회랑</h3><span class="en">Forgotten Passage</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">[★] 타나토스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;1공정&gt;1구역</h3><span class="en">Toy Factory &lt;Process 1&gt; Zone 1</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;1공정&gt;2구역</h3><span class="en">Toy Factory &lt;Process 1&gt; Zone 2</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;1공정&gt;3구역</h3><span class="en">Toy Factory &lt;Process 1&gt; Zone 3</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;1공정&gt;5구역</h3><span class="en">Toy Factory &lt;Process 1&gt; Zone 5</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;1공정&gt;6구역</h3><span class="en">Toy Factory &lt;Process 1&gt; Zone 6</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;2공정&gt;1구역</h3><span class="en">Toy Factory &lt;Process 2&gt; Zone 1</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;2공정&gt;2구역</h3><span class="en">Toy Factory &lt;Process 2&gt; Zone 2</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;2공정&gt;4구역</h3><span class="en">Toy Factory &lt;Process 2&gt; Zone 3</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;2공정&gt;5구역</h3><span class="en">Toy Factory &lt;Process 2&gt; Zone 4</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;기계실&gt;</h3><span class="en">Toy Factory &lt;Aparatus Room&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;메인공정1&gt;</h3><span class="en">Toy Factory &lt;Main Process 1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">로보토이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>장난감공장&lt;메인공정2&gt;</h3><span class="en">Toy Factory &lt;Main Process 2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">마스터 로보</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;오르비스행&gt;</h3><span class="en">Station&lt;Orbis&gt;</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>지로큰과 페이의 집</h3><span class="en">Tara and Sarah&#x27;s House</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>출발하기전&lt;오르비스행&gt;</h3><span class="en">Before the Departure &lt;Orbis&gt;</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>카호의 집</h3><span class="en">Manager Karl&#x27;s House</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>코린의 집</h3><span class="en">Korin&#x27;s House</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>클로이의 집</h3><span class="en">Chloe&#x27;s House</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>테라스홀</h3><span class="en">Terrace Hall</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">브라운테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘발코니</h3><span class="en">Sky Terrace</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘테라스&lt;1&gt;</h3><span class="en">Sky Terrace&lt;1&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">브라운테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘테라스&lt;2&gt;</h3><span class="en">Sky Terrace&lt;2&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">핑크테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘테라스&lt;3&gt;</h3><span class="en">Sky Terrace&lt;3&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">더키 패밀리</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘테라스&lt;4&gt;</h3><span class="en">Sky Terrace&lt;4&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">팬더테니</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘테라스&lt;5&gt;</h3><span class="en">Sky Terrace&lt;5&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">장난감 목마</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>핼리오스 탑 100층</h3><span class="en">Helios Tower (100th Floor)</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">레츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>핼리오스 탑 2층</h3><span class="en">Helios Tower &lt;2nd Floor&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">레츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>핼리오스 탑 99층</h3><span class="en">Helios Tower &lt;99th Floor&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip">레츠</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>핼리오스 탑 도서관</h3><span class="en">Helios Tower &lt;Library&gt;</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>핼리오스 탑 입구</h3><span class="en">Helios Tower Entrance</span><span class="town">마을</span><span class="street">Ludibrium</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>오르비스 <small>72곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>검은빛의정원1</h3><span class="en">Garden of Darkness I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 루이넬</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>검은빛의정원2</h3><span class="en">Garden of Darkness II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">루이넬</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원1</h3><span class="en">Cloud Park I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스타픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원2</h3><span class="en">Cloud Park II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스타픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원3</h3><span class="en">Cloud Park III</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">루나픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원4</h3><span class="en">Cloud Park IV</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">루나픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원5</h3><span class="en">Cloud Park V</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">러스터픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>구름공원6</h3><span class="en">Cloud Park VI</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">러스터픽시</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>길드본부 &lt;영웅의 전당&gt;</h3><span class="en">Guild Headquarters &lt;Hall of Fame&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>노란빛의정원1</h3><span class="en">Garden of Yellow I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 라이오너</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>노란빛의정원2</h3><span class="en">Garden of Yellow II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">라이오너</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>노파의집</h3><span class="en">Old Man&#x27;s House</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>만남의 언덕</h3><span class="en">Top of the Hill</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>버려진화원</h3><span class="en">Disposed Flower Garden</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">네펜데스</span><span class="chip">다크 네펜데스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>붉은빛의정원1</h3><span class="en">Garden of Red I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 샐리온</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>붉은빛의정원2</h3><span class="en">Garden of Red II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">샐리온</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>산책로</h3><span class="en">Strolling Path</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">네펜데스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>산책로2</h3><span class="en">Strolling Path II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">다크 네펜데스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>세가지빛정원으로가는길</h3><span class="en">The Road to Garden of 3 Colors</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 그류핀</span><span class="chip">주니어 라이오너</span><span class="chip">주니어 샐리온</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>알 수 없는 탑&lt;퇴장맵&gt;</h3><span class="en">The Unknown Tower</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스</h3><span class="en">Orbis</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스 무기/방어구 상점</h3><span class="en">Orbis Weapon Store</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스 정거장 입구</h3><span class="en">Orbis Station Entrance</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스공원</h3><span class="en">Orbis Park</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스잡화상점</h3><span class="en">Orbis General Store</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;10층&gt;</h3><span class="en">Orbis Tower &lt;10th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">아이스 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;11층&gt;</h3><span class="en">Orbis Tower &lt;11th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">아이스 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;12층&gt;</h3><span class="en">Orbis Tower &lt;12th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">아이스 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;13층&gt;</h3><span class="en">Orbis Tower &lt;13th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">파이어 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;14층&gt;</h3><span class="en">Orbis Tower &lt;14th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">파이어 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;15층&gt;</h3><span class="en">Orbis Tower &lt;15th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">파이어 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;16층&gt;</h3><span class="en">Orbis Tower &lt;16th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;17층&gt;</h3><span class="en">Orbis Tower &lt;17th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;18층&gt;</h3><span class="en">Orbis Tower &lt;18th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;19층&gt;</h3><span class="en">Orbis Tower &lt;19th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;1층&gt;</h3><span class="en">Orbis Tower &lt;1st Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 페페</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;20층&gt;</h3><span class="en">Orbis Tower &lt;20th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 스톤볼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;2층&gt;</h3><span class="en">Orbis Tower &lt;2nd Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 페페</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;3층&gt;</h3><span class="en">Orbis Tower &lt;3rd Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">다크 리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;4층&gt;</h3><span class="en">Orbis Tower &lt;4th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">다크 리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;5층&gt;</h3><span class="en">Orbis Tower &lt;5th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">다크 리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;6층&gt;</h3><span class="en">Orbis Tower &lt;6th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">리티</span><span class="chip">다크 리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;7층&gt;</h3><span class="en">Orbis Tower &lt;7th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;8층&gt;</h3><span class="en">Orbis Tower &lt;8th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;9층&gt;</h3><span class="en">Orbis Tower &lt;9th Floor&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">리티</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;비밀의 방&gt;</h3><span class="en">Orbis Tower &lt;Hidden Room&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;은밀한방&gt;</h3><span class="en">Orbis Tower &lt;Secret Room&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;지하1층&gt;</h3><span class="en">Orbis Tower&lt;B1&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;지하2층&gt;</h3><span class="en">Orbis Tower&lt;B2&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">스쿠버 페페</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑&lt;휴즈의 연구실&gt;</h3><span class="en">Orbis Tower&lt;Hughes&#x27;s Laboratory&gt;</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>오르비스탑입구</h3><span class="en">Entrance to Orbis Tower</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;루디브리엄행&gt;</h3><span class="en">Station&lt;Ludibrium&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;리프레행&gt;</h3><span class="en">Cabin &lt;To Leafre&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;리프레행&gt;</h3><span class="en">Cabin &lt;To Leafre&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;무릉행&gt;</h3><span class="en">Cabin &lt;To Mu Lung&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;빅토리아행&gt;</h3><span class="en">Station &lt;Victoria Bound&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;아리안트행&gt;</h3><span class="en">Station &lt;To Ariant&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;아리안트행&gt;</h3><span class="en">Station &lt;To Ariant&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;에델슈타인행&gt;</h3><span class="en">Station &lt;Edelstein Bound&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장&lt;에레브행&gt;</h3><span class="en">Station</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;루디브리엄행&gt;</h3><span class="en">Station Pathway&lt;Ludibrium&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;리프레행&gt;</h3><span class="en">Cabin Path &lt;To Leafre&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;무릉행&gt;</h3><span class="en">Cabin Path &lt;To Mu Lung&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;빅토리아행&gt;</h3><span class="en">Station Passageway &lt;Victoria Bound&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;아리안트행&gt;</h3><span class="en">Station Tunnel &lt;To Ariant&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장통로&lt;에레브행&gt;</h3><span class="en">Station Hall</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>출발하기전&lt;루디브리엄행&gt;</h3><span class="en">Before the Departure &lt;Ludibrium&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>출발하기전&lt;빅토리아행&gt;</h3><span class="en">Pre-Departure &lt;Victoria Bound&gt;</span><span class="town">마을</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>푸른빛의정원1</h3><span class="en">Garden of Green I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">주니어 그류핀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>푸른빛의정원2</h3><span class="en">Garden of Green II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">그류핀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘계단1</h3><span class="en">Stairway to the Sky I</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">그류핀</span><span class="chip">라이오너</span><span class="chip">샐리온</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘계단2</h3><span class="en">Stairway to the Sky II</span><span class="street">Orbis</span></div>
+      <div class="mobs"><span class="chip">루이넬</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>리프레 <small>67곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>Crimson Sky Edge </h3><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">드래고니카</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Crimson Sky Nest </h3><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Crimson Sky Nest Entrance</h3><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>가파른 언덕</h3><span class="en">Steep Hill</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">헹키</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>검은 켄타우로스의 영역</h3><span class="en">The Area of Black Kentaurus</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">검은 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>그리프의 숲</h3><span class="en">Griffey Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">검은 켄타우로스</span><span class="chip">붉은 켄타우로스</span><span class="chip">그리프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>그리프의 숲</h3><span class="en">Griffey Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">검은 켄타우로스</span><span class="chip">붉은 켄타우로스</span><span class="chip">그리프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>나인스피릿의 둥지</h3><span class="en">Nine Spirit&#x27;s Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>남겨진 용의 둥지1</h3><span class="en">The Dragon Nest Left Behind</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">스켈레곤</span><span class="chip">스켈로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리프레</h3><span class="en">Leafre</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리프레 동쪽 숲</h3><span class="en">Leafre : East Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">비틀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리프레 서쪽 숲</h3><span class="en">West Leafre Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레쉬</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리프레 정거장 입구</h3><span class="en">Leafre Station Entrance</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리프레잡화상점</h3><span class="en">General Store</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>마뇽의 숲</h3><span class="en">Manon&#x27;s Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">푸른 켄타우로스</span><span class="chip">마뇽</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>마뇽의 숲</h3><span class="en">Manon&#x27;s Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">푸른 켄타우로스</span><span class="chip">마뇽</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>망가진 용의 둥지</h3><span class="en">Destroyed Dragon Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">뉴트주니어</span><span class="chip">뉴트주니어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>망자의 동굴</h3><span class="en">Cave of the Deceased</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>망자의 동굴</h3><span class="en">Cave of the Deceased</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>물과 어둠의 전장</h3><span class="en">Battlefield of Water and Darkness</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">검은 켄타우로스</span><span class="chip">푸른 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>미나르숲 동쪽 경계</h3><span class="en">Minar Forest : East Border</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">듀얼 비틀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>미나르숲 서쪽 경계</h3><span class="en">Minar Forest : West Border</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">다크 레쉬</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>불과 물의 전장</h3><span class="en">Battlefield of Fire and Water</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">붉은 켄타우로스</span><span class="chip">푸른 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>불과 어둠의 전장</h3><span class="en">Battlefield of Fire and Darkness</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">검은 켄타우로스</span><span class="chip">붉은 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>불타는 숲</h3><span class="en">The Burning Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">그린코니언</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>붉은 켄타우로스의 영역</h3><span class="en">The Area of Red Kentaurus</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">붉은 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>사라진 숲</h3><span class="en">The Forest That Disappeared</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">다크 코니언</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>사제의 숲</h3><span class="en">Forest of the Priest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>산양의 골짜기1</h3><span class="en">Valley of the Antelope</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">듀얼 버크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>생명의 동굴 입구</h3><span class="en">Cave of Life - Entrance</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>숲의 갈림길</h3><span class="en">Forest : Crossroad</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">버크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>심술쟁이의 숲</h3><span class="en">Cranky Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">호브</span><span class="chip">핀호브</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>야쿠네 집</h3><span class="en">Yaku&#x27;s House</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>와이번의 협곡</h3><span class="en">Wyvern Canyon</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레드 와이번</span><span class="chip">블루 와이번</span><span class="chip">다크 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 둥지 입구</h3><span class="en">Entrance to Dragon Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">다크 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 숲 입구</h3><span class="en">Entrance to Dragon Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">블루 드래곤터틀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 숲1</h3><span class="en">Dragon Forest I</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레드 드래곤터틀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 숲2</h3><span class="en">Dragon Forest II</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">리스튼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 숲3</h3><span class="en">Dragon Forest III</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">브레스튼</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>용의 협곡</h3><span class="en">The Dragon Canyon</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레드 와이번</span><span class="chip">블루 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>위험한 둥지 밑</h3><span class="en">Below the Dangerous Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>위험한 용의 둥지</h3><span class="en">Dangerous Dragon Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">네스트골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>이토네 집</h3><span class="en">Ito&#x27;s House</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>정거장</h3><span class="en">Station</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>죽은 용의 둥지</h3><span class="en">Nest of a Dead Dragon</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">스켈레곤</span><span class="chip">스켈로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공 지역 1</h3><span class="en">Crimson Sky 1 </span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">플라잉 호크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공 지역 2</h3><span class="en">Crimson Sky 2</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">플라잉 이글</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공 지역 끝자락</h3><span class="en">Crimson Sky 3 </span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">플라잉 레드 와이번</span><span class="chip">플라잉 블루 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공의 나루터</h3><span class="en">Crimson Sky Dock</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공의 둥지</h3><span class="en">Crimson Sky 5</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">플라잉 블랙 와이번</span><span class="chip">플라잉 그리프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공의 둥지 입구</h3><span class="en">Crimson Sky 4</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">플라잉 블루 와이번</span><span class="chip">플라잉 블랙 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공의 부활터</h3><span class="en">Crimson Sky Resurrection Site </span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>천공의 부활터</h3><span class="en">Crimson Sky Resurrection Site </span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>촌장의 집</h3><span class="en">Chief&#x27;s House</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>출발하기 전&lt;오르비스행&gt;</h3><span class="en">Before Takeoff &lt;To Orbis&gt;</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>쿠모네 집</h3><span class="en">Kumo&#x27;s House</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>큰 둥지 봉우리</h3><span class="en">Peak of the Big Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">스켈로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>털복숭이의 숲</h3><span class="en">Peach Monkey Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레쉬</span><span class="chip">다크 레쉬</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>투구벌레의 숲</h3><span class="en">Beetle Forest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">비틀</span><span class="chip">듀얼 비틀</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>팜의 집</h3><span class="en">Pam&#x27;s House</span><span class="town">마을</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>푸른 켄타우로스의 영역</h3><span class="en">The Area of Blue Kentaurus</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">푸른 켄타우로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘 둥지 입구</h3><span class="en">Entrance to Sky Nest</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">하프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘 둥지1</h3><span class="en">Sky Nest I</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">하프</span><span class="chip">블러드 하프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>하늘 둥지2</h3><span class="en">Sky Nest II</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">블러드 하프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>협곡의 갈림길</h3><span class="en">Canyon : Crossroad</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">레드 와이번</span><span class="chip">블루 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>협곡의 동쪽길</h3><span class="en">Canyon : East Road</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">다크 와이번</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>협곡의 서쪽길</h3><span class="en">Canyon : West Road</span><span class="street">Leafre</span></div>
+      <div class="mobs"><span class="chip">다크 와이번</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>에델슈타인 권역 <small>42곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>에델슈타인</h3><span class="en">Edelstein</span><span class="town">마을</span><span class="street">Black Wing Territory</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>가로등길</h3><span class="en">Streetlight Row</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">가로등</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>뱀 나오는 길</h3><span class="en">Serpent Path</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">구렁이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 공원1</h3><span class="en">Edelstein Park</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">새싹 화분</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 공원2</h3><span class="en">Edelstein Park 2</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">나팔꽃 화분</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 공원3</h3><span class="en">Edelstein Park 3</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">포도주스병</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 산책로1</h3><span class="en">Edelstein Strolling Path</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">순찰로봇</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 산책로2</h3><span class="en">Edelstein Strolling Path 2</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">이상한 이정표</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 산책로3</h3><span class="en">Edelstein Strolling Path 3</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">물 도둑</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 산책로4</h3><span class="en">Edelstein Strolling Path 4</span><span class="street">Concrete Road</span></div>
+      <div class="mobs"><span class="chip">더스트 박스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>광산 가는 길1</h3><span class="en">Road to the Mine 1</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip">순찰로봇S</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>광산 가는 길2</h3><span class="en">Road to the Mine 2</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip">안전제일</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>광산 입구</h3><span class="en">Mine Entrance</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>광석길</h3><span class="en">Ore Trail</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip">큰 바위베어먹기</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>바위길</h3><span class="en">Rocky Road</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip">아기 바위베어먹기</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>숨겨진 포탈</h3><span class="en">Hidden Portal</span><span class="street">Dry Road</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>경계 심한 저택</h3><span class="en">Guarded Mansion</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip">저택 경비로봇</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>수상쩍은 헤어샵</h3><span class="en">Shady Hair Salon</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip">파비오의 파이어봄</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>수아르의 물 창고</h3><span class="en">Surl&#x27;s Water Cellar</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 의회</h3><span class="en">Edelstein City Hall</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 임시공항</h3><span class="en">Edelstein Temporary Airport</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>에델슈타인 헤어샵</h3><span class="en">Edelstein Hair Salon</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>울리카의 아지트</h3><span class="en">Ulrika&#x27;s Hideout</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>위험! 임시공항</h3><span class="en">Danger! Makeshift Airport</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip">수상한 도적</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>저택</h3><span class="en">Mansion</span><span class="town">마을</span><span class="street">Edelstein</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>비밀광장</h3><span class="en">Secret Plaza</span><span class="town">마을</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트레이닝 룸 A</h3><span class="en">Training Room A</span><span class="town">마을</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip">훈련로봇A</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트레이닝 룸 B</h3><span class="en">Training Room B</span><span class="town">마을</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip">훈련로봇B</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트레이닝 룸 C</h3><span class="en">Training Room C</span><span class="town">마을</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip">훈련로봇C</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트레이닝 룸 D</h3><span class="en">Training Room D</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip">훈련로봇 0</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>트레이닝 룸 입구</h3><span class="en">Training Room Entrance</span><span class="town">마을</span><span class="street">Resistance Headquarters</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도 입구1</h3><span class="en">Shaft Entrance 1</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">경비로봇</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도 입구2</h3><span class="en">Shaft Entrance 2</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">경비로봇</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도1</h3><span class="en">Shaft 1</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">라키</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도2</h3><span class="en">Shaft 2</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">빅 스파이더</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도3</h3><span class="en">Shaft 3</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">카트베어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>갱도4</h3><span class="en">Shaft 4</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">경비로봇L</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>너구리 소굴</h3><span class="en">Raccoon Nest</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">라쿤</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>발전소 로비</h3><span class="en">Power Plant Lobby</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>발전소 보안대</h3><span class="en">Power Plant Security</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>위험한 너구리 소굴</h3><span class="en">Dangerous Raccoon Nest</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip">라칸</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>제 1 광장</h3><span class="en">First Square</span><span class="street">Verne Mine</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+    </div>
+  </section>
+<section class="region">
+    <h2>기타 권역 <small>33곳</small></h2>
+    <div class="list">
+<article class="map">
+      <div class="mhead"><h3>와일드보어의 땅</h3><span class="en">Wild Boar Land</span><span class="street">Burnt Land</span></div>
+      <div class="mobs"><span class="chip">와일드보어</span><span class="chip">겁먹은 와일드보어</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>엘리니아</h3><span class="en">Ellinia</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>초기 발굴지역</h3><span class="en">Initial Excavation Area</span><span class="street">Excavation Site</span></div>
+      <div class="mobs"><span class="chip">우드 마스크</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>골렘의 사원 입구</h3><span class="en">Golem&#x27;s Temple Entrance</span><span class="street">Golem&#x27;s Temple</span></div>
+      <div class="mobs"><span class="chip">스톤골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>골렘의 사원1</h3><span class="en">Golem&#x27;s Temple 1</span><span class="street">Golem&#x27;s Temple</span></div>
+      <div class="mobs"><span class="chip">스톤골렘</span><span class="chip">다크 스톤골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>무너진 골렘의 성터</h3><span class="en">Golem&#x27;s Castle Ruins</span><span class="street">Golem&#x27;s Temple</span></div>
+      <div class="mobs"><span class="chip">믹스골렘</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>헤네시스</h3><span class="en">Henesys</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>헤네시스 북쪽언덕</h3><span class="en">The Hill North of Henesys</span><span class="street">Henesys</span></div>
+      <div class="mobs"><span class="chip">주황버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>차원의 세계</h3><span class="en">Dimensional World</span><span class="street">Hidden Street</span></div>
+      <div class="mobs"><span class="chip">다크로드의 분신</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>커닝시티</h3><span class="en">Kerning City</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리스항구</h3><span class="en">Lith Harbor</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Andras Strolling Path</h3><span class="street">Mini Dungeon</span></div>
+      <div class="mobs"><span class="chip">다크 엑스텀프</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Goblin Cave 3</h3><span class="street">Mini Dungeon</span></div>
+      <div class="mobs"><span class="chip">힘센 돌 도깨비</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>The Restoring Memory</h3><span class="street">Mini Dungeon</span></div>
+      <div class="mobs"><span class="chip">스켈레곤</span><span class="chip">스켈로스</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Control Cube</h3><span class="street">Mothership</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Entry Cube</h3><span class="street">Mothership</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Neutral Cube</h3><span class="street">Mothership</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Proliferation Cube</h3><span class="street">Mothership</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Resurrection Cube</h3><span class="street">Mothership</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Mu Lung Dojo 38th Floor</h3><span class="street">Mu Lung Dojo</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>무릉도장 13층</h3><span class="en">Mu Lung Dojo 13th Floor</span><span class="street">Mu Lung Dojo</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>무릉도장 26층</h3><span class="en">Mu Lung Dojo 26th Floor</span><span class="street">Mu Lung Dojo</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>무릉도장 입구</h3><span class="en">Mu Lung Dojo Entrance</span><span class="town">마을</span><span class="street">Mu Lung Dojo</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>페리온</h3><span class="en">Perion</span><span class="town">마을</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>리스항구 외곽</h3><span class="en">Right Around Lith Harbor</span><span class="street">Port Road</span></div>
+      <div class="mobs"><span class="chip">달팽이</span><span class="chip">파란 달팽이</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>포자언덕</h3><span class="en">Spore Hill</span><span class="street">Singing Mushroom Forest</span></div>
+      <div class="mobs"><span class="chip">주황버섯</span><span class="chip">초록버섯</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>방황의 늪</h3><span class="en">The Swamp of Despair</span><span class="street">Swamp Region</span></div>
+      <div class="mobs"><span class="chip">주니어 네키</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>빛나는 숲의 통로</h3><span class="en">Shining Forest Path</span><span class="street">Way to the Forest</span></div>
+      <div class="mobs"><span class="chip">주황버섯</span><span class="chip">슬라임</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Castle Corridor</h3><span class="street">Zipangu</span></div>
+      <div class="mobs"><span class="chip">Genin</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Locker Room (M)</h3><span class="street">Zipangu</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Phantom&#x27;s Room</h3><span class="street">Zipangu</span></div>
+      <div class="mobs"><span class="chip">Genin</span><span class="chip">Ashigaru</span><span class="chip">Chunin</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>Spa (F)</h3><span class="street">Zipangu</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+<article class="map">
+      <div class="mhead"><h3>버섯신사</h3><span class="en">Mushroom Shrine</span><span class="town">마을</span><span class="street">Zipangu</span></div>
+      <div class="mobs"><span class="chip none">출현 몬스터 정보 없음</span></div>
+    </article>
+    </div>
+  </section>
+  </main>
+  <footer>
+    알팡지지는 비공식 팬 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-14
+  </footer>
+</div>
+</body>
+</html>
