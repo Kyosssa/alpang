@@ -12,33 +12,35 @@
 <meta property="og:description" content="알팡서버로 알려진 신규 월드의 비공식 팬 정보 사이트. 확인된 정보와 미확인 사항, 본진 빅뱅 업데이트 변경점을 정리합니다.">
 <meta property="og:url" content="https://alpang.gg/">
 <style>
+  @import url('https://cdn.jsdelivr.net/gh/Dalgona/neodgm-webfont@1.521/neodgm/style.css');
   :root{
-    --bg:#17130e; --card:#221b12; --line:#3a2f1f; --text:#f3ead9;
-    --sub:#c9b894; --accent:#ffb02e; --accent2:#ff7847; --ok:#7fc76a; --warn:#e8c547; --unknown:#c9bc9f;
+    --bg:#f2eee1; --card:#e8e0cc; --line:#5a5a5a; --text:#222222;
+    --sub:#5f5747; --accent:#e86f00; --blue:#33599e; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.65;padding:0 16px 48px}
   .wrap{max-width:720px;margin:0 auto}
   header{padding:36px 0 20px;text-align:center}
-  header .logo{font-size:34px;font-weight:800;letter-spacing:-0.5px}
+  header .logo{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:34px;letter-spacing:-0.5px}
   header .logo span{color:var(--accent)}
   header .tag{color:var(--sub);font-size:14px;margin-top:6px}
-  .badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--sub);margin-top:12px}
-  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:16px}
-  h2{font-size:19px;margin-bottom:12px}
-  h2 .em{color:var(--accent)}
+  .badge{display:inline-block;font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:12px;padding:3px 10px;border:2px solid var(--line);background:#d4c8b2;color:#333;margin-top:12px;box-shadow:2px 2px 0 rgba(0,0,0,.45)}
+  section{background:var(--card);border:2px solid var(--line);border-radius:4px;box-shadow:3px 3px 0 rgba(0,0,0,.55);padding:20px;margin-top:18px}
+  h2{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:18px;background:var(--blue);color:#fff;padding:9px 14px;margin:-20px -20px 14px;border-bottom:2px solid var(--line);border-radius:2px 2px 0 0}
+  h2 .em{color:#ffd98a}
   p{font-size:15px;color:var(--text)}
   .small{font-size:13px;color:var(--sub)}
   ul{list-style:none}
-  li{font-size:15px;padding:9px 0;border-bottom:1px solid var(--line)}
+  li{font-size:15px;padding:9px 0;border-bottom:1px dashed #a5977a}
   li:last-child{border-bottom:none}
-  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:6px;margin-right:8px;white-space:nowrap;vertical-align:2px}
-  .st.ok{background:#2c4423;color:var(--ok)}
-  .st.mid{background:#4a3d14;color:var(--warn)}
-  .st.no{background:#38332a;color:var(--unknown)}
+  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:3px;margin-right:8px;white-space:nowrap;vertical-align:2px;border:1px solid rgba(0,0,0,.25)}
+  .st.ok{background:#cfe6c3;color:var(--ok)}
+  .st.mid{background:#f3e3a1;color:var(--warn)}
+  .st.no{background:#ddd5bf;color:var(--unknown)}
   .note{font-size:13px;color:var(--sub);margin-top:10px}
-  a{color:var(--accent)}
-  .cta{display:block;text-align:center;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1c1408;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
+  a{color:#1c5fb8}
+  .cta{display:block;text-align:center;background:#ff8c1a;color:#fff;font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:16px;padding:13px;border:2px outset #ffc98a;border-radius:4px;text-decoration:none;margin-top:16px;text-shadow:1px 1px 0 rgba(0,0,0,.35)}
+  .cta:active{border-style:inset}
   footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
 </style>
 </head>
