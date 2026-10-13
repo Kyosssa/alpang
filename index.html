@@ -12,45 +12,43 @@
 <meta property="og:description" content="알팡서버로 알려진 신규 월드의 비공식 팬 정보 사이트. 확인된 정보와 미확인 사항, 본진 빅뱅 업데이트 변경점을 정리합니다.">
 <meta property="og:url" content="https://alpang.gg/">
 <style>
-  @import url('https://cdn.jsdelivr.net/gh/Dalgona/neodgm-webfont@1.521/neodgm/style.css');
   :root{
-    --bg:#f2eee1; --card:#e8e0cc; --line:#5a5a5a; --text:#222222;
-    --sub:#5f5747; --accent:#e86f00; --blue:#33599e; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250;
+    --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
+    --sub:#6f6a5e; --accent:#f27500; --accent-soft:#fff3e6; --blue:#f27500; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.65;padding:0 16px 48px}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
   .wrap{max-width:720px;margin:0 auto}
-  .gnb{display:flex;justify-content:space-between;align-items:center;background:var(--blue);border:2px solid var(--line);box-shadow:3px 3px 0 rgba(0,0,0,.55);padding:10px 16px;margin-top:16px}
-  .gnb .logo{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:20px;color:#fff}
-  .gnb nav a{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;color:#fff;text-decoration:none;font-size:14px;margin-left:14px;padding:4px 10px;border:2px outset #7d9cc9;background:#2a4a85}
-  .gnb nav a.on{border-style:inset;background:#1f3866}
-  header{padding:28px 0 20px;text-align:center}
-  header .logo{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:34px;letter-spacing:-0.5px}
+  .gnb{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+  .gnb nav a.on{color:var(--accent)}
+  header{padding:30px 0 20px;text-align:center}
+  header .logo{font-size:34px;font-weight:800;letter-spacing:-0.5px}
   header .logo span{color:var(--accent)}
   header .tag{color:var(--sub);font-size:14px;margin-top:6px}
-  .badge{display:inline-block;font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:12px;padding:3px 10px;border:2px solid var(--line);background:#d4c8b2;color:#333;margin-top:12px;box-shadow:2px 2px 0 rgba(0,0,0,.45)}
-  section{background:var(--card);border:2px solid var(--line);border-radius:4px;box-shadow:3px 3px 0 rgba(0,0,0,.55);padding:20px;margin-top:18px}
-  h2{font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:18px;background:var(--blue);color:#fff;padding:9px 14px;margin:-20px -20px 14px;border-bottom:2px solid var(--line);border-radius:2px 2px 0 0}
-  h2 .em{color:#ffd98a}
+  .badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-top:12px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  h2{font-size:19px;font-weight:800;margin-bottom:12px}
+  h2 .em{color:var(--accent)}
   p{font-size:15px;color:var(--text)}
   .small{font-size:13px;color:var(--sub)}
   ul{list-style:none}
-  li{font-size:15px;padding:9px 0;border-bottom:1px dashed #a5977a}
+  li{font-size:15px;padding:9px 0;border-bottom:1px solid #f0ece3}
   li:last-child{border-bottom:none}
-  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:3px;margin-right:8px;white-space:nowrap;vertical-align:2px;border:1px solid rgba(0,0,0,.25)}
-  .st.ok{background:#cfe6c3;color:var(--ok)}
-  .st.mid{background:#f3e3a1;color:var(--warn)}
-  .st.no{background:#ddd5bf;color:var(--unknown)}
+  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:8px;white-space:nowrap;vertical-align:2px}
+  .st.ok{background:#e5f2dd;color:var(--ok)}
+  .st.mid{background:#fdf3cd;color:var(--warn)}
+  .st.no{background:#efece5;color:var(--unknown)}
   .note{font-size:13px;color:var(--sub);margin-top:10px}
-  a{color:#1c5fb8}
-  .cta{display:block;text-align:center;background:#ff8c1a;color:#fff;font-family:'NeoDunggeunmo',"Malgun Gothic",sans-serif;font-size:16px;padding:13px;border:2px outset #ffc98a;border-radius:4px;text-decoration:none;margin-top:16px;text-shadow:1px 1px 0 rgba(0,0,0,.35)}
-  .cta:active{border-style:inset}
+  a{color:var(--accent)}
+  .cta{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
   footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="gnb"><span class="logo">알팡지지 🍁</span><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a></nav></div>
+  <div class="gnb"><span class="logo">알팡<span style="color:#f27500">지지</span> 🍁</span><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a></nav></div>
 
   <header>
     <h1 class="logo">알팡<span>지지</span> 🍁</h1>
