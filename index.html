@@ -36,7 +36,7 @@
   .slide{min-width:100%;display:block;text-decoration:none;line-height:0}
   .slide img{width:100%;height:auto;display:block}
   .dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:2px}
-  .pause-btn{position:absolute;right:6px;bottom:16px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(18,53,36,.35);background:rgba(255,255,255,.65);color:var(--hero-ink);font-size:13px;cursor:pointer;line-height:1}
+  .pause-btn{position:absolute;right:6px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(18,53,36,.35);background:rgba(255,255,255,.65);color:var(--hero-ink);font-size:13px;cursor:pointer;line-height:1}
   .dots button{width:44px;height:44px;border:none;background:transparent;cursor:pointer;padding:0;position:relative}
   .dots button::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.85);box-shadow:0 0 4px rgba(0,0,0,.45);transition:width .3s}
   .dots button.on::after{background:var(--accent);width:22px;border-radius:99px}
@@ -82,6 +82,9 @@
   li{font-size:14px;padding:9px 0;border-bottom:1px solid #f0ece3}
   li:last-child{border-bottom:none}
   .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:8px;white-space:nowrap;vertical-align:2px}
+  .mbadge{font-size:11px;font-weight:800;padding:2px 6px;border-radius:4px;margin-right:6px;white-space:nowrap}
+  .mb-say{background:#ffe9d6;color:#8a3b00} .mb-say2{background:#fdf0d0;color:#7a4a00} .mb-post{background:#e1eefb;color:#17548f} .mb-etc{background:#f4f1ea;color:#6b6250}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;margin-right:7px;vertical-align:2px}
   .st.ok{background:#e5f2dd;color:var(--ok)}
   .st.mid{background:#fdf3cd;color:var(--warn)}
   .st.no{background:#efece5;color:var(--unknown)}
@@ -146,26 +149,26 @@
       <a class="tl-row" href="/timeline/">
         <span class="d">2026.09.26</span>
         <span class="t">알팡서버 개발 상황 최초 공개합니다</span>
-        <span class="m">알티 · 유튜브 · 발언 14건 정리</span>
+        <span class="m"><span class="mbadge mb-say">제작진 직접 발언</span>알티 · 유튜브 · 발언 14건 정리</span>
       </a>
       <a class="tl-row" href="/timeline/">
         <span class="d">2026.09.22</span>
         <span class="t">팡이요 알팡서버 소통 메이플</span>
-        <span class="m">팡이요 · SOOP 다시보기 · 발언 7건 정리</span>
+        <span class="m"><span class="mbadge mb-say2">제작진 직접 발언 (2차 출처 대조)</span>팡이요 · SOOP 다시보기 · 발언 7건 정리</span>
       </a>
       <a class="tl-row" href="/timeline/">
         <span class="d">2026.09.21</span>
         <span class="t">9/22 (화) 오후7시 방송 !!</span>
-        <span class="m">알티 · SOOP 방송국 게시판 · 발언 3건 정리</span>
+        <span class="m"><span class="mbadge mb-post">제작진 직접 게시글</span>알티 · SOOP 방송국 게시판 · 발언 3건 정리</span>
       </a>
       <a class="more" href="/timeline/">타임라인 전체 기록 보기</a>
     </section>
     <section>
       <h2>핵심 <span class="em">Q&amp;A</span> 요약</h2>
-      <div class="qa"><div class="q">오픈 일정은?</div><div class="a">아직 약속된 일정은 없어요. 일정은 클로즈베타 직전에 공개하겠다고 밝혔어요.</div></div>
-      <div class="qa"><div class="q">서버 리셋은?</div><div class="a">하드 리셋은 하지 않겠다고 명언했어요. 소프트 리셋은 구상 단계로, 확정은 아니에요.</div></div>
+      <div class="qa"><div class="q"><span class="num">1</span>오픈 일정은?</div><div class="a">아직 약속된 일정은 없어요. 일정은 클로즈베타 직전에 공개하겠다고 밝혔어요.</div></div>
+      <div class="qa"><div class="q"><span class="num">6</span>서버 리셋은?</div><div class="a">하드 리셋은 하지 않겠다고 명언했어요. 소프트 리셋은 구상 단계로, 확정은 아니에요.</div></div>
       <div class="qa"><div class="q">경험치 배율은?</div><div class="a">확정된 배율 발언은 없어요. "1배율도 빠르다"는 취지의 설명만 확인됐어요.</div></div>
-      <div class="qa"><div class="q">후원 혜택은?</div><div class="a">후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.</div></div>
+      <div class="qa"><div class="q"><span class="num">7</span>후원 혜택은?</div><div class="a">후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.</div></div>
       <a class="more" href="/faq/">발언 원문으로 확인하기</a>
     </section>
   </div>
