@@ -6,6 +6,7 @@
 <title>알팡 현황판 — 알팡지지</title>
 <meta name="description" content="알팡지지가 수집·정리한 데이터와 기록 현황을 숫자로 공개합니다.">
 <link rel="canonical" href="https://alpang.gg/status/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="알팡지지">
 <meta property="og:title" content="알팡 현황판 — 알팡지지">
@@ -14,7 +15,8 @@
 <style>
   :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--nf:#d8d2c4}
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
   .wrap{max-width:1280px;margin:0 auto}
   .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
@@ -30,7 +32,7 @@
   .kpi .lb{font-size:12px;color:var(--sub);font-weight:700}
   .kpi .vl{font-size:26px;font-weight:800;margin-top:2px} .kpi .vl small{font-size:13px;color:var(--sub);font-weight:600}
   section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
-  h2{font-size:16.5px;font-weight:800;margin-bottom:10px}
+  h2{font-size:16px;font-weight:700;margin-bottom:10px}
   .row{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:13px}
   .rname{flex:0 0 118px;font-weight:700}
   .bar{flex:1;height:12px;background:#f1ede3;border-radius:99px;overflow:hidden;display:flex}
@@ -66,6 +68,7 @@
 <div class="row"><span class="rname">빅토리아 로드</span><span class="bar"><span class="ok" style="width:33%"></span><span class="nf" style="width:67%"></span></span><span class="rnum">정상 33 · 확인불가 66 / 99</span></div>
 <div class="row"><span class="rname">루디브리엄</span><span class="bar"><span class="ok" style="width:85%"></span><span class="nf" style="width:15%"></span></span><span class="rnum">정상 126 · 확인불가 23 / 149</span></div>
 <div class="row"><span class="rname">105 대역 (뱀의 늪 일대)</span><span class="bar"><span class="ok" style="width:20%"></span><span class="nf" style="width:80%"></span></span><span class="rnum">정상 29 · 확인불가 117 / 146</span></div>
+<div class="row"><span class="rname">기타</span><span class="bar"><span class="ok" style="width:75%"></span><span class="nf" style="width:25%"></span></span><span class="rnum">정상 33 · 확인불가 11 / 44</span></div>
     <p class="legend">주황 = 상세 데이터까지 확보 · 회색 = 목록에는 있으나 상세 조회가 되지 않는 맵 (실내·특수 맵에 많고, 원인은 확인 중). 기준은 본진 빅뱅 직후 데이터입니다.</p>
   </section>
   <section class="card">
