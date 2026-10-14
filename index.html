@@ -12,6 +12,13 @@
 <meta property="og:title" content="알팡지지 - 메이플스토리월드 알팡서버 몬스터·아이템·맵 정보 DB">
 <meta property="og:description" content="메이플스토리월드 알팡서버의 몬스터·아이템·맵 정보와 제작진 발언 기록을 모은 정보 DB. 확인된 정보와 미확인 사항, 본진 빅뱅 업데이트 변경점을 정리합니다.">
 <meta property="og:url" content="https://alpang.gg/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root{
     --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
@@ -25,7 +32,7 @@
   /* 상단 GNB — 전체 폭 바 + 안쪽 1280px */
   .gnb{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
   .gnb-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px}
-  .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}
   .gnb nav a.on{color:var(--accent-dark)}
@@ -101,7 +108,7 @@
 </style>
 </head>
 <body>
-  <div class="gnb"><div class="gnb-in"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/status/">현황판</a></nav></div></div>
+  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈">알팡<span style="color:#FF7E36">지지</span> 🍁</a><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/status/">현황판</a></nav></div></div>
 
   <div class="hero">
     <div class="banner" id="banner">
