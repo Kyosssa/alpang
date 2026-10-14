@@ -35,7 +35,7 @@
   .gnb-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
-  .gnb nav a{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
   .gnb nav a.on{color:var(--accent-dark)}
   /* 히어로 — 브라우저 폭 전체(full-bleed) 이미지 배너 (디렉터 제작 완성본, 텍스트 포함) */
   .hero{background:#fdfcf9;padding:18px 16px 6px}
@@ -54,40 +54,39 @@
   .searchbar{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
   .sb-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .sb-ic{font-size:19px}
-  .sb-in input{flex:1;min-width:180px;font-size:15px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--sub);font-family:inherit}
-  .sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;white-space:nowrap}
+  .sb-in input{flex:1;min-width:180px;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--sub);font-family:inherit}
+  .sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:11px 18px;border-radius:10px;text-decoration:none;white-space:nowrap}
   .sb-btn.alt{background:var(--card);color:var(--accent-dark);border:1px solid var(--accent)}
-  .sb-note{font-size:12.5px;color:var(--sub);margin-top:9px}
+  .sb-note{font-size:13.5px;color:var(--sub);margin-top:9px}
   /* 카테고리 그리드 (리스트 스타일 행) */
   .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:4px 12px;margin-top:16px}
   .cat{display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:start;padding:12px 10px;border-radius:10px;text-decoration:none;color:var(--text)}
   .cat:hover{background:#f2eee5}
-  .cat .ic{grid-row:1/span 3;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:#f3f0e9;border-radius:8px;font-size:19px}
-  .cat h3{font-size:15px;font-weight:700}
-  .cat p{font-size:12.5px;color:var(--sub);margin-top:2px;line-height:1.5}
-  .cat .go{font-size:12px;font-weight:700;color:var(--accent-dark);margin-top:5px;display:block}
+  .cat .ic{grid-row:1/span 2;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:#f3f0e9;border-radius:8px;font-size:19px}
+  .cat h3{font-size:16px;font-weight:700}
+  .cat p{font-size:14px;color:var(--sub);margin-top:2px;line-height:1.5}
   .cat.soon{opacity:.75}
   /* 대시보드 2단 */
   .dash{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
   .dash section{margin-top:0;background:#f5f1ea;padding:18px 16px}
   .tl-row{display:block;text-decoration:none;color:var(--text);padding:11px 0;border-bottom:1px solid #f0ece3}
   .tl-row:last-of-type{border-bottom:none}
-  .tl-row .d{font-size:12.5px;font-weight:800;color:var(--accent-dark)}
-  .tl-row .t{display:block;font-size:14px;font-weight:700;margin-top:2px;line-height:1.5}
-  .tl-row .m{font-size:12.5px;color:var(--sub)}
-  .more{display:inline-block;margin-top:10px;font-size:13.5px;font-weight:700}
+  .tl-row .d{font-size:13px;font-weight:800;color:var(--accent-dark)}
+  .tl-row .t{display:block;font-size:15px;font-weight:700;margin-top:2px;line-height:1.5}
+  .tl-row .m{font-size:13.5px;color:var(--sub)}
+  .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:700}
   .qa{padding:10px 0;border-bottom:1px solid #f0ece3}
   .qa:first-of-type{padding-top:2px}
   .qa:last-of-type{border-bottom:none}
-  .qa .q{font-size:14px;font-weight:800}
-  .qa .a{font-size:13.5px;color:var(--sub);line-height:1.6;margin-top:2px}
+  .qa .q{font-size:15px;font-weight:800}
+  .qa .a{font-size:15px;color:var(--sub);line-height:1.6;margin-top:2px}
   section{scroll-margin-top:80px;padding:20px 2px 4px;margin-top:16px}
-  section h2{font-size:16px;font-weight:700;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:10px}
+  section h2{font-size:18px;font-weight:700;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:10px}
   h2 .em{color:var(--accent)}
-  p{font-size:14px;color:var(--text)}
-  .small{font-size:13px;color:var(--sub)}
+  p{font-size:16px;color:var(--text)}
+  .small{font-size:13.5px;color:var(--sub)}
   ul{list-style:none}
-  li{font-size:14px;padding:9px 0;border-bottom:1px solid #f0ece3}
+  li{font-size:15px;padding:9px 0;border-bottom:1px solid #f0ece3}
   li:last-child{border-bottom:none}
   .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:8px;white-space:nowrap;vertical-align:2px}
   .mbadge{font-size:11px;font-weight:800;padding:2px 6px;border-radius:4px;margin-right:6px;white-space:nowrap}
@@ -96,20 +95,21 @@
   .st.ok{background:#e5f2dd;color:var(--ok)}
   .st.mid{background:#fdf3cd;color:var(--warn)}
   .st.no{background:#efece5;color:var(--unknown)}
-  .note{font-size:13px;color:var(--sub);margin-top:10px}
+  .note{font-size:14px;color:var(--sub);margin-top:10px}
   a{color:var(--accent-dark)}
   .cta{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
-  footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
   @media (max-width:960px){ .cats{grid-template-columns:repeat(2,1fr)} }
   @media (max-width:860px){ .dash{grid-template-columns:1fr} }
   @media (max-width:560px){
-    .gnb .logo{font-size:18px} .gnb nav a{font-size:12.5px;margin-left:10px}
+    .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px}
   }
   @media (max-width:400px){ .cats{grid-template-columns:1fr} }
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
-  [data-theme="dark"]{--bg:#121417;--card:#1B1E23;--line:#2E3238;--text:#ECE9E2;--sub:#A79E8B;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--ok:#8BD17F;--warn:#EBCB6B;color-scheme:dark}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--ok:#8BD17F;--warn:#EBCB6B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
   [data-theme="dark"] .theme-toggle .ic-sun{display:block}
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
@@ -119,7 +119,7 @@
   [data-theme="dark"] .sb-in input{background:#22252B}
   [data-theme="dark"] .cat:hover{background:#1E2126}
   [data-theme="dark"] .cat .ic{background:#26292F}
-  [data-theme="dark"] .dash section{background:#1B1E23}
+  [data-theme="dark"] .dash section{background:#1E2229}
   [data-theme="dark"] .tl-row,[data-theme="dark"] .qa,[data-theme="dark"] li{border-bottom-color:var(--line)}
   [data-theme="dark"] .mb-say{background:#452A12;color:#FFBE82}
   [data-theme="dark"] .mb-say2{background:#40350F;color:#F0D48C}
@@ -162,16 +162,16 @@
   </div>
 
   <nav class="cats">
-    <a class="cat" href="/timeline/"><span class="ic">📜</span><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p><span class="go">기록 보러 가기</span></a>
-    <a class="cat" href="/faq/"><span class="ic">💬</span><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p><span class="go">질문 보러 가기</span></a>
-    <a class="cat" href="#changes"><span class="ic">🔥</span><h3>본진 빅뱅 변경점</h3><p>메랜 감각으로 가면 헤매는 다섯 가지 변화</p><span class="go">변경점 보기</span></a>
-    <a class="cat" href="/status/"><span class="ic">📊</span><h3>알팡 현황판</h3><p>맵 402곳·몬스터 175종·아이템 14,577개, 진행 상황을 숫자로</p><span class="go">현황 보러 가기</span></a>
-    <a class="cat" href="/mobs/"><span class="ic">👾</span><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p><span class="go">도감 보러 가기</span></a>
-    <a class="cat" href="/maps/"><span class="ic">🗺️</span><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p><span class="go">맵 보러 가기</span></a>
-    <a class="cat" href="/items/"><span class="ic">🎒</span><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p><span class="go">목록 보러 가기</span></a>
-    <a class="cat" href="/guide/hunting/"><span class="ic">🏹</span><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p><span class="go">후보 보러 가기</span></a>
-    <a class="cat" href="/guide/orbis-leafre/"><span class="ic">🧭</span><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p><span class="go">구경 가기</span></a>
-    <a class="cat" href="/guide/edelstein/"><span class="ic">⛏️</span><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p><span class="go">엿보러 가기</span></a>
+    <a class="cat" href="/timeline/"><span class="ic">📜</span><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p></a>
+    <a class="cat" href="/faq/"><span class="ic">💬</span><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p></a>
+    <a class="cat" href="#changes"><span class="ic">🔥</span><h3>본진 빅뱅 변경점</h3><p>메랜 감각으로 가면 헤매는 다섯 가지 변화</p></a>
+    <a class="cat" href="/status/"><span class="ic">📊</span><h3>알팡 현황판</h3><p>맵 402곳·몬스터 175종·아이템 14,577개, 진행 상황을 숫자로</p></a>
+    <a class="cat" href="/mobs/"><span class="ic">👾</span><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p></a>
+    <a class="cat" href="/maps/"><span class="ic">🗺️</span><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p></a>
+    <a class="cat" href="/items/"><span class="ic">🎒</span><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p></a>
+    <a class="cat" href="/guide/hunting/"><span class="ic">🏹</span><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p></a>
+    <a class="cat" href="/guide/orbis-leafre/"><span class="ic">🧭</span><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p></a>
+    <a class="cat" href="/guide/edelstein/"><span class="ic">⛏️</span><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p></a>
   </nav>
 
   <div class="dash">
