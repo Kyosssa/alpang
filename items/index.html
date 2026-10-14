@@ -74,6 +74,29 @@
   .emptyf{font-size:14px;color:var(--sub);padding:10px 2px 4px}
   .gnav .grow{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;padding:5px 0}
   .gnav .glb{flex:none;width:46px;font-size:13.5px;font-weight:800;color:var(--accent-dark);padding-top:5px}
+  .igrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .icard{border:1px solid var(--line);border-radius:12px;padding:12px 10px;background:var(--bg);display:flex;flex-direction:column}
+  .icard .islot{width:48px;height:48px;margin:2px auto 0;border-radius:8px}
+  .icard .iic{width:40px;height:40px}
+  .icard .nm{display:block;text-align:center;margin-top:8px;font-size:14.5px;line-height:1.45}
+  .icard .en{text-align:center;font-size:12px}
+  .icard .stats{margin-top:6px;font-size:12.5px;line-height:1.5}
+  .icard .meta{display:flex;justify-content:space-between;align-items:center;gap:6px;border-top:1px solid var(--line);margin-top:9px;padding-top:7px;font-size:12px;color:var(--sub)}
+  @media (min-width:640px){ .igrid{grid-template-columns:repeat(3,1fr)} }
+  @media (min-width:900px){ .igrid{grid-template-columns:repeat(4,1fr)} }
+  @media (min-width:1120px){ .igrid{grid-template-columns:repeat(5,1fr)} }
+  @media (min-width:1320px){ .igrid{grid-template-columns:repeat(6,1fr)} }
+  .cgwrap h3{font-size:15px;font-weight:800;color:var(--accent-dark);margin:16px 0 8px}
+  .cgwrap h3:first-child{margin-top:2px}
+  .cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .icat{display:flex;flex-direction:column;align-items:center;border:1px solid var(--line);border-radius:12px;padding:14px 10px;background:var(--bg);text-decoration:none;color:var(--text)}
+  .icat .islot{width:48px;height:48px;border-radius:8px}
+  .icat .iic{width:40px;height:40px}
+  .icat .nm{margin-top:8px;font-size:15px;text-align:center}
+  .icat .cc{font-size:12.5px;color:var(--sub);margin-top:2px}
+  @media (min-width:700px){ .cgrid{grid-template-columns:repeat(3,1fr)} }
+  @media (min-width:1000px){ .cgrid{grid-template-columns:repeat(4,1fr)} }
+  @media (min-width:1240px){ .cgrid{grid-template-columns:repeat(5,1fr)} }
   .chip.on{background:var(--accent);color:#fff}
   .chip.on b{color:#fff}
   [data-theme="dark"] .jfbtn{background:#22252B}
