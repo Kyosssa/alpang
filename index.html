@@ -28,8 +28,8 @@
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}
   .gnb nav a.on{color:var(--accent-dark)}
   /* 히어로 — 브라우저 폭 전체(full-bleed) 이미지 배너 (디렉터 제작 완성본, 텍스트 포함) */
-  .hero{background:#fdfcf9}
-  .banner{position:relative;overflow:hidden}
+  .hero{background:#fdfcf9;padding:18px 16px 6px}
+  .banner{position:relative;overflow:hidden;max-width:1120px;margin:0 auto;border-radius:16px;box-shadow:0 2px 10px rgba(30,25,15,.12)}
   .slides{display:flex;transition:transform .55s ease}
   .slide{min-width:100%;display:block;text-decoration:none;line-height:0}
   .slide img{width:100%;height:auto;display:block}
@@ -100,9 +100,9 @@
   <div class="hero">
     <div class="banner" id="banner">
       <div class="slides" id="slides">
-        <a class="slide" href="/timeline/"><img src="/assets/banner-timeline.png" alt="알팡서버 타임라인"></a>
-        <a class="slide" href="/faq/"><img src="/assets/banner-qa.png" alt="알팡서버 Q&A"></a>
-        <a class="slide" href="/status/"><img src="/assets/banner-update.png" alt="홈페이지 업데이트 중"></a>
+        <a class="slide" href="/timeline/"><img src="/assets/hero-1.png" alt="알팡서버 타임라인" fetchpriority="high"></a>
+        <a class="slide" href="/faq/"><img src="/assets/hero-2.png" alt="알팡서버 Q&A"></a>
+        <a class="slide" href="/status/"><img src="/assets/hero-3.png" alt="홈페이지 업데이트 중"></a>
       </div>
       <div class="dots" id="dots"></div>
       <button class="pause-btn" id="pauseBtn" aria-label="배너 자동 전환 정지">⏸</button>
