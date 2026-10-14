@@ -15,10 +15,12 @@
   :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
-  .wrap{max-width:860px;margin:0 auto}
-  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
-  .gnb nav a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:12.5px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
@@ -49,7 +51,7 @@
 </head>
 <body>
 <div class="wrap">
-<div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/status/">현황판</a><a href="/items/" class="on">아이템</a></nav></div>
+<div class="gnb"><span class="logo">알팡<span style="color:#FF7E36">지지</span> 🍁</span><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/" class="on">아이템</a><a href="/status/">현황판</a></nav></div>
   <div class="intro">
     <h1>아이템 · <span>장비</span></h1>
     <div class="tag">Equip 카테고리 8,174개 · 세부 분류 42종</div>
