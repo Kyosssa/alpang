@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>아이템 목록 · 장비(Equip) — 알팡지지</title>
@@ -62,6 +63,21 @@
   a{color:var(--accent-dark)}
   footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
   @media (max-width:560px){ section.card{padding:16px} td.lv,td.cs,th.lv,th.cs{width:58px} table{font-size:14px} }
+  .tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .tabs a{font-size:14.5px;font-weight:700;padding:7px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none}
+  .tabs a .n{color:var(--accent-dark);font-weight:800;margin-left:5px;font-size:13px}
+  .jobfilter{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:2px 0 12px}
+  .jobfilter .fl{font-size:13.5px;font-weight:700;color:var(--sub);margin-right:2px}
+  .jfbtn{font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px;background:#f4f1ea;border:1px solid transparent;color:var(--text);cursor:pointer}
+  .jfbtn.on{background:var(--accent);color:#fff;font-weight:800}
+  .jfcount{font-size:13px;color:var(--sub);margin-left:4px}
+  .emptyf{font-size:14px;color:var(--sub);padding:10px 2px 4px}
+  .gnav .grow{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;padding:5px 0}
+  .gnav .glb{flex:none;width:46px;font-size:13.5px;font-weight:800;color:var(--accent-dark);padding-top:5px}
+  .chip.on{background:var(--accent);color:#fff}
+  .chip.on b{color:#fff}
+  [data-theme="dark"] .jfbtn{background:#22252B}
+  [data-theme="dark"] .jfbtn.on{background:var(--accent);color:#fff}
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
@@ -86,6 +102,7 @@
   </div>
   <div class="notice">본진 빅뱅 직후(GMS 95) 기준의 아이템 목록 후보이며, 알팡서버 실서버 구현 범위와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io</div>
   <div class="notice"><b>본진 GMS 95 기준 기본 능력치</b> — 장비 행에 표시되는 능력치는 강화 전 원본 수치이며, 개별 아이템의 랜덤 옵션·강화 결과·알팡 적용 여부는 확인되지 않았습니다.</div>
+  <section class="card"><h2>직업별로 보기</h2><div class="chips jnav"><a class="chip" data-j="common" href="?job=common">공용</a><a class="chip" data-j="1" href="?job=1">전사</a><a class="chip" data-j="2" href="?job=2">마법사</a><a class="chip" data-j="4" href="?job=4">궁수</a><a class="chip" data-j="8" href="?job=8">도적</a><a class="chip" data-j="16" href="?job=16">해적</a></div><p class="emptyf" id="jobnote" hidden></p></section>
   <section class="card"><h2>세부 분류</h2>
 <div class="row" style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0ece3;font-size:15px;line-height:1.55"><a href="/items/equip-hair.html">헤어</a><span style="color:var(--sub)">1,732개</span></div>
 <div class="row" style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0ece3;font-size:15px;line-height:1.55"><a href="/items/equip-hat.html">모자</a><span style="color:var(--sub)">982개</span></div>
@@ -130,6 +147,15 @@
 <div class="row" style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0ece3;font-size:15px;line-height:1.55"><a href="/items/equip-shoulder-accessory.html">어깨장식</a><span style="color:var(--sub)">8개</span></div>
 <div class="row" style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0ece3;font-size:15px;line-height:1.55"><a href="/items/equip-skill-effect.html">스킬 이펙트</a><span style="color:var(--sub)">8개</span></div>
   </section>
+<script>(function(){
+var q=new URLSearchParams(location.search).get('job');
+var names={'common':'공용','1':'전사','2':'마법사','4':'궁수','8':'도적','16':'해적'};
+if(!q||!names[q]){return;}
+document.querySelectorAll('a[href^="/items/equip-"]').forEach(function(a){a.setAttribute('href',a.getAttribute('href')+'?job='+q);});
+var el=document.getElementById('jobnote');
+if(el){el.hidden=false;el.textContent='직업 필터: '+names[q]+' — 아래 분류를 열면 선택한 직업으로 걸러서 보여줍니다.';}
+document.querySelectorAll('.jnav a').forEach(function(a){if(a.getAttribute('data-j')===q){a.classList.add('on');}});
+})();</script>
   <p class="back"><a href="/items/">← 아이템 전체 목차로</a></p>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
