@@ -6,6 +6,7 @@
 <title>에델슈타인 엿보기 — 알팡지지</title>
 <meta name="description" content="빅뱅 이후 개편으로 추가된 지역 에델슈타인의 맵과 출현 몬스터를 미리 살펴봅니다.">
 <link rel="canonical" href="https://alpang.gg/guide/edelstein/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="알팡지지">
 <meta property="og:title" content="에델슈타인 엿보기 — 알팡지지">
@@ -14,7 +15,8 @@
 <style>
   :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
   .wrap{max-width:1280px;margin:0 auto}
   .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
@@ -27,8 +29,8 @@
   .intro .tag{color:var(--sub);font-size:14px;margin-top:6px}
   .disc{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:13.5px;color:var(--text);margin-top:16px;text-align:center}
   section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
-  h2{font-size:16.5px;font-weight:800;margin-bottom:10px}
-  p.body{font-size:14.5px;margin-bottom:8px}
+  h2{font-size:16px;font-weight:700;margin-bottom:10px}
+  p.body{font-size:14px;margin-bottom:8px}
   .legend{font-size:12.5px;color:var(--sub);margin-top:10px}
   table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
   th{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -42,7 +44,7 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}
   .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
   .mob .mimg{display:block;max-height:56px;max-width:100%;margin:0 auto 6px}
-  .mob .nm{font-size:16px;font-weight:800}
+  .mob .nm{font-size:14px;font-weight:700}
   .mob .en{font-size:11.5px;color:var(--sub);font-weight:600}
   .mob .stat{font-size:13px;margin-top:6px}
   .mob .stat b{color:var(--accent-dark)}
