@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>확인된 발언 FAQ — 알팡지지</title>
-<meta name="description" content="알팡서버에 대해 제작진이 실제로 한 발언을 근거로 정리한 FAQ입니다.">
-<link rel="canonical" href="https://alpang.gg/faq/">
+<title>알팡 현황판 — 알팡지지</title>
+<meta name="description" content="알팡지지가 수집·정리한 데이터와 기록 현황을 숫자로 공개합니다.">
+<link rel="canonical" href="https://alpang.gg/status/">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="알팡지지">
-<meta property="og:title" content="확인된 발언 FAQ — 알팡지지">
-<meta property="og:description" content="알팡서버에 대해 제작진이 실제로 한 발언을 근거로 정리한 FAQ입니다.">
-<meta property="og:url" content="https://alpang.gg/faq/">
+<meta property="og:title" content="알팡 현황판 — 알팡지지">
+<meta property="og:description" content="알팡지지가 수집·정리한 데이터와 기록 현황을 숫자로 공개합니다.">
+<meta property="og:url" content="https://alpang.gg/status/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--nf:#d8d2c4}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -35,47 +35,72 @@
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
-  .disclaimer{font-size:14px;color:var(--sub);text-align:center;margin-top:6px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:18px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .kpi .lb{font-size:13px;color:var(--sub);font-weight:700}
+  .kpi .vl{font-size:26px;font-weight:800;margin-top:2px} .kpi .vl small{font-size:13px;color:var(--sub);font-weight:600}
   section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
-  h2{font-size:18px;font-weight:700;margin-bottom:6px} h2 .q{color:var(--accent)}
-  .num{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;margin-right:7px;vertical-align:2px}
-  p{font-size:16px}
-  .src{font-size:13px;margin-top:8px} .src a{color:var(--accent-dark)}
+  h2{font-size:18px;font-weight:700;margin-bottom:10px}
+  .row{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;line-height:1.55}
+  .rname{flex:0 0 118px;font-weight:700}
+  .bar{flex:1;height:12px;background:#f1ede3;border-radius:99px;overflow:hidden;display:flex}
+  .bar .ok{background:var(--accent);height:100%} .bar .nf{background:var(--nf);height:100%}
+  .rnum{flex:0 0 148px;color:var(--sub);text-align:right}
+  .prog{margin:10px 0} .prog .pl{display:flex;justify-content:space-between;font-size:14px;font-weight:700}
+  .prog .track{height:10px;background:#f1ede3;border-radius:99px;overflow:hidden;margin-top:4px}
+  .prog .fill{height:100%;background:var(--accent)}
+  .legend{font-size:13px;color:var(--sub);margin-top:8px}
   footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ .rname{flex-basis:86px} .rnum{flex-basis:118px;font-size:12px} }
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
-  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--nf:#57534A;color-scheme:dark}
   [data-theme="dark"] body{letter-spacing:-0.01em}
   [data-theme="dark"] .theme-toggle .ic-sun{display:block}
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
   [data-theme="dark"] section.card{box-shadow:0 1px 3px rgba(0,0,0,.35)}
-  [data-theme="dark"] .num{background:var(--accent);color:#241203}
+  [data-theme="dark"] .kpi{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .bar,[data-theme="dark"] .prog .track{background:#26292F}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/" class="on">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/status/">현황판</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/status/" class="on">현황판</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
   <div class="intro">
-    <h1>확인된 발언 <span>FAQ</span></h1>
-    <div class="tag">자주 묻는 질문에, 제작진이 실제로 한 말로만 답합니다</div>
-    <div class="disclaimer">근거는 알티 유튜브 '알팡서버 개발 상황 최초 공개합니다' (2026-09-26) 발언이에요. 발언 기록이며 확정 사양이 아닙니다. 전체 기록은 <a href="/timeline/">타임라인</a>에서 볼 수 있어요.</div>
+    <h1>알팡 <span>현황판</span></h1>
+    <div class="tag">우리가 지금까지 쌓은 데이터와 기록을 숫자로 공개합니다</div>
   </div>
-  <main>
-<section class="card"><h2><span class="num">1</span><span class="q">Q.</span> 오픈 일정이 정해졌나요?</h2><p>아직 약속된 일정은 없어요. 오픈 기한을 약속하지 않겠다고 했고, 일정은 클로즈베타 직전에 공개할 예정이라고 밝혔어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=45s" target="_blank" rel="noopener">발언 0:45 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">2</span><span class="q">Q.</span> 어떤 게임 기반인가요?</h2><p>메이플월드 리소스는 쓰지 않고, 본진 메이플스토리 파일만으로 구현 중이라고 설명했어요. 카메라 이동 같은 부분도 본진과 같은 상태에서 출발하는 것이 지향점이라고 했어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=79s" target="_blank" rel="noopener">발언 1:19 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">3</span><span class="q">Q.</span> 해상도는 고정인가요?</h2><p>자유 해상도를 지원한다고 밝혔어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=159s" target="_blank" rel="noopener">발언 2:39 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">4</span><span class="q">Q.</span> 커스텀 콘텐츠가 들어가나요?</h2><p>옛 메이플을 그대로 구현하는 것에서 시작하고, 커스텀 콘텐츠는 유저 반응을 보고 적용 여부를 정한다는 방향이에요. 직업 개성을 살리는 구상도 있지만 본인이 기획 단계이며 확정은 아니라고 강조했어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=206s" target="_blank" rel="noopener">발언 3:26 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">5</span><span class="q">Q.</span> 랭킹 시스템이 있나요?</h2><p>공식 랭킹을 도입하겠다는 계획을 밝혔어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=317s" target="_blank" rel="noopener">발언 5:17 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">6</span><span class="q">Q.</span> 서버 리셋(초기화)이 있나요?</h2><p>하드 리셋은 하지 않겠다고 명언했어요. 부위별 교체 같은 소프트 리셋은 구상은 있으나 확정은 아니라고 덧붙였어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=361s" target="_blank" rel="noopener">발언 6:01 구간 보기</a> · <a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=377s" target="_blank" rel="noopener">발언 6:17 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">7</span><span class="q">Q.</span> 후원하면 혜택이 있나요?</h2><p>후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=410s" target="_blank" rel="noopener">발언 6:50 구간 보기</a></p></section>
-<section class="card"><h2><span class="num">8</span><span class="q">Q.</span> 정식 서버 이름은 뭔가요?</h2><p>이름은 이미 정해졌지만 변수가 있어 비공개라고 밝혔어요. 지금 쓰는 '알팡서버'는 통칭이에요.</p><p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=435s" target="_blank" rel="noopener">발언 7:15 구간 보기</a></p></section>
-  </main>
+  <div class="cards">
+    <div class="kpi"><div class="lb">수집한 맵</div><div class="vl">402<small> 곳</small></div></div>
+    <div class="kpi"><div class="lb">몬스터</div><div class="vl">175<small> 종</small></div></div>
+    <div class="kpi"><div class="lb">몬스터 출현 관계</div><div class="vl">329<small> 건</small></div></div>
+    <div class="kpi"><div class="lb">타임라인 기록</div><div class="vl">9<small> 건 · 발언 58개</small></div></div>
+    <div class="kpi"><div class="lb">확인된 발언 FAQ</div><div class="vl">8<small> 개</small></div></div>
+  </div>
+  <section class="card">
+    <h2>권역별 맵 수집 현황</h2>
+<div class="row"><span class="rname">오르비스</span><span class="bar"><span class="ok" style="width:100%"></span><span class="nf" style="width:0%"></span></span><span class="rnum">정상 72 · 확인불가 0 / 72</span></div>
+<div class="row"><span class="rname">리프레</span><span class="bar"><span class="ok" style="width:100%"></span><span class="nf" style="width:0%"></span></span><span class="rnum">정상 67 · 확인불가 0 / 67</span></div>
+<div class="row"><span class="rname">에델슈타인 권역</span><span class="bar"><span class="ok" style="width:95%"></span><span class="nf" style="width:5%"></span></span><span class="rnum">정상 42 · 확인불가 2 / 44</span></div>
+<div class="row"><span class="rname">빅토리아 로드</span><span class="bar"><span class="ok" style="width:33%"></span><span class="nf" style="width:67%"></span></span><span class="rnum">정상 33 · 확인불가 66 / 99</span></div>
+<div class="row"><span class="rname">루디브리엄</span><span class="bar"><span class="ok" style="width:85%"></span><span class="nf" style="width:15%"></span></span><span class="rnum">정상 126 · 확인불가 23 / 149</span></div>
+<div class="row"><span class="rname">105 대역 (뱀의 늪 일대)</span><span class="bar"><span class="ok" style="width:20%"></span><span class="nf" style="width:80%"></span></span><span class="rnum">정상 29 · 확인불가 117 / 146</span></div>
+<div class="row"><span class="rname">기타</span><span class="bar"><span class="ok" style="width:75%"></span><span class="nf" style="width:25%"></span></span><span class="rnum">정상 33 · 확인불가 11 / 44</span></div>
+    <p class="legend">주황 = 상세 데이터까지 확보 · 회색 = 목록에는 있으나 상세 조회가 되지 않는 맵 (실내·특수 맵에 많고, 원인은 확인 중). 기준은 본진 빅뱅 직후 데이터입니다.</p>
+  </section>
+  <section class="card">
+    <h2>데이터 완성도</h2>
+    <div class="prog"><div class="pl"><span>맵 한글 이름 연결</span><span>368/402 · 92%</span></div><div class="track"><div class="fill" style="width:92%"></div></div></div>
+    <div class="prog"><div class="pl"><span>몬스터 한글 이름 연결</span><span>165/175 · 94%</span></div><div class="track"><div class="fill" style="width:94%"></div></div></div>
+    <div class="prog"><div class="pl"><span>몬스터 상세 스탯 확보</span><span>175/175 · 100%</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+    <p class="legend">한글 이름은 본진 최신 버전 목록과 대조한 '표시명 후보'이며, 확정 표기는 서버 오픈 후 검증합니다. 모든 수치는 알팡 실서버 확인 전인 본진 기준 수집 데이터입니다.</p>
+  </section>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
     <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
-    페이지 갱신일: 2026-10-13
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간 · 페이지 갱신일: 2026-10-13
   </footer>
 </div>
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
