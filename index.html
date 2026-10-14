@@ -50,17 +50,18 @@
   .sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;white-space:nowrap}
   .sb-btn.alt{background:var(--card);color:var(--accent-dark);border:1px solid var(--accent)}
   .sb-note{font-size:12.5px;color:var(--sub);margin-top:9px}
-  /* 카테고리 그리드 */
-  .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
-  .cat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;color:var(--text);box-shadow:0 1px 3px rgba(30,25,15,.05);display:block}
-  .cat .ic{font-size:24px}
-  .cat h3{font-size:16px;font-weight:800;margin-top:6px}
-  .cat p{font-size:13px;color:var(--sub);margin-top:3px;line-height:1.55}
-  .cat .go{font-size:12.5px;font-weight:700;color:var(--accent-dark);margin-top:8px;display:block}
+  /* 카테고리 그리드 (리스트 스타일 행) */
+  .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:4px 12px;margin-top:16px}
+  .cat{display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:start;padding:12px 10px;border-radius:10px;text-decoration:none;color:var(--text)}
+  .cat:hover{background:#f2eee5}
+  .cat .ic{grid-row:1/span 3;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:#f3f0e9;border-radius:8px;font-size:19px}
+  .cat h3{font-size:15px;font-weight:700}
+  .cat p{font-size:12.5px;color:var(--sub);margin-top:2px;line-height:1.5}
+  .cat .go{font-size:12px;font-weight:700;color:var(--accent-dark);margin-top:5px;display:block}
   .cat.soon{opacity:.75}
   /* 대시보드 2단 */
   .dash{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
-  .dash section{margin-top:0}
+  .dash section{margin-top:0;background:#f5f1ea;padding:18px 16px}
   .tl-row{display:block;text-decoration:none;color:var(--text);padding:11px 0;border-bottom:1px solid #f0ece3}
   .tl-row:last-of-type{border-bottom:none}
   .tl-row .d{font-size:12.5px;font-weight:800;color:var(--accent-dark)}
@@ -72,8 +73,8 @@
   .qa:last-of-type{border-bottom:none}
   .qa .q{font-size:14px;font-weight:800}
   .qa .a{font-size:13.5px;color:var(--sub);line-height:1.6;margin-top:2px}
-  section{scroll-margin-top:80px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
-  section h2{font-size:16px;font-weight:700;margin-bottom:12px}
+  section{scroll-margin-top:80px;padding:20px 2px 4px;margin-top:16px}
+  section h2{font-size:16px;font-weight:700;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:10px}
   h2 .em{color:var(--accent)}
   p{font-size:14px;color:var(--text)}
   .small{font-size:13px;color:var(--sub)}
@@ -127,16 +128,16 @@
   </div>
 
   <nav class="cats">
-    <a class="cat" href="/timeline/"><span class="ic">📜</span><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p><span class="go">기록 보러 가기 →</span></a>
-    <a class="cat" href="/faq/"><span class="ic">💬</span><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p><span class="go">질문 보러 가기 →</span></a>
-    <a class="cat" href="#changes"><span class="ic">🔥</span><h3>본진 빅뱅 변경점</h3><p>메랜 감각으로 가면 헤매는 다섯 가지 변화</p><span class="go">변경점 보기 →</span></a>
-    <a class="cat" href="/status/"><span class="ic">📊</span><h3>알팡 현황판</h3><p>맵 402곳·몬스터 175종·아이템 14,577개, 진행 상황을 숫자로</p><span class="go">현황 보러 가기 →</span></a>
-    <a class="cat" href="/mobs/"><span class="ic">👾</span><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p><span class="go">도감 보러 가기 →</span></a>
-    <a class="cat" href="/maps/"><span class="ic">🗺️</span><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p><span class="go">맵 보러 가기 →</span></a>
-    <a class="cat" href="/items/"><span class="ic">🎒</span><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p><span class="go">목록 보러 가기 →</span></a>
-    <a class="cat" href="/guide/hunting/"><span class="ic">🏹</span><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p><span class="go">후보 보러 가기 →</span></a>
-    <a class="cat" href="/guide/orbis-leafre/"><span class="ic">🧭</span><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p><span class="go">구경 가기 →</span></a>
-    <a class="cat" href="/guide/edelstein/"><span class="ic">⛏️</span><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p><span class="go">엿보러 가기 →</span></a>
+    <a class="cat" href="/timeline/"><span class="ic">📜</span><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p><span class="go">기록 보러 가기</span></a>
+    <a class="cat" href="/faq/"><span class="ic">💬</span><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p><span class="go">질문 보러 가기</span></a>
+    <a class="cat" href="#changes"><span class="ic">🔥</span><h3>본진 빅뱅 변경점</h3><p>메랜 감각으로 가면 헤매는 다섯 가지 변화</p><span class="go">변경점 보기</span></a>
+    <a class="cat" href="/status/"><span class="ic">📊</span><h3>알팡 현황판</h3><p>맵 402곳·몬스터 175종·아이템 14,577개, 진행 상황을 숫자로</p><span class="go">현황 보러 가기</span></a>
+    <a class="cat" href="/mobs/"><span class="ic">👾</span><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p><span class="go">도감 보러 가기</span></a>
+    <a class="cat" href="/maps/"><span class="ic">🗺️</span><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p><span class="go">맵 보러 가기</span></a>
+    <a class="cat" href="/items/"><span class="ic">🎒</span><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p><span class="go">목록 보러 가기</span></a>
+    <a class="cat" href="/guide/hunting/"><span class="ic">🏹</span><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p><span class="go">후보 보러 가기</span></a>
+    <a class="cat" href="/guide/orbis-leafre/"><span class="ic">🧭</span><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p><span class="go">구경 가기</span></a>
+    <a class="cat" href="/guide/edelstein/"><span class="ic">⛏️</span><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p><span class="go">엿보러 가기</span></a>
   </nav>
 
   <div class="dash">
@@ -157,7 +158,7 @@
         <span class="t">9/22 (화) 오후7시 방송 !!</span>
         <span class="m">알티 · SOOP 방송국 게시판 · 발언 3건 정리</span>
       </a>
-      <a class="more" href="/timeline/">타임라인 전체 기록 보기 →</a>
+      <a class="more" href="/timeline/">타임라인 전체 기록 보기</a>
     </section>
     <section>
       <h2>핵심 <span class="em">Q&amp;A</span> 요약</h2>
@@ -165,7 +166,7 @@
       <div class="qa"><div class="q">서버 리셋은?</div><div class="a">하드 리셋은 하지 않겠다고 명언했어요. 소프트 리셋은 구상 단계로, 확정은 아니에요.</div></div>
       <div class="qa"><div class="q">경험치 배율은?</div><div class="a">확정된 배율 발언은 없어요. "1배율도 빠르다"는 취지의 설명만 확인됐어요.</div></div>
       <div class="qa"><div class="q">후원 혜택은?</div><div class="a">후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.</div></div>
-      <a class="more" href="/faq/">발언 원문으로 확인하기 →</a>
+      <a class="more" href="/faq/">발언 원문으로 확인하기</a>
     </section>
   </div>
 
