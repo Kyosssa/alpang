@@ -12,43 +12,44 @@
 <meta property="og:description" content="빅뱅 이후 개편으로 추가된 지역 에델슈타인의 맵과 출현 몬스터를 미리 살펴봅니다.">
 <meta property="og:url" content="https://alpang.gg/guide/edelstein/">
 <style>
-  :root{{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}}
-  *{{margin:0;padding:0;box-sizing:border-box}}
-  body{{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}}
-  .wrap{{max-width:1280px;margin:0 auto}}
-  .gnb{{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}}
-  .gnb .logo{{font-size:20px;font-weight:800;color:var(--text)}}
-  .gnb nav{{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}}
-  .gnb nav a{{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}}
-  @media (max-width:560px){{ .gnb .logo{{font-size:18px}} .gnb nav a{{font-size:12.5px;margin-left:10px}} }}
-  .gnb nav a.on{{color:var(--accent-dark)}}
-  .intro{{text-align:center;padding:28px 0 4px}}
-  .intro h1{{font-size:28px;font-weight:800}} .intro h1 span{{color:var(--accent)}}
-  .intro .tag{{color:var(--sub);font-size:14px;margin-top:6px}}
-  .disc{{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:13.5px;color:var(--text);margin-top:16px;text-align:center}}
-  section.card{{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}}
-  h2{{font-size:16.5px;font-weight:800;margin-bottom:10px}}
-  p.body{{font-size:14.5px;margin-bottom:8px}}
-  .legend{{font-size:12.5px;color:var(--sub);margin-top:10px}}
-  table{{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}}
-  th{{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}}
-  td{{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}}
-  tr:last-child td{{border-bottom:none}}
-  td.num, th.num{{text-align:right;white-space:nowrap}}
-  .mname{{font-weight:800}}
-  .men{{display:block;font-size:11.5px;color:var(--sub);font-weight:600}}
-  .chip{{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:12px;margin:1px 2px 1px 0}}
-  .chip b{{color:var(--accent-dark)}}
-  .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}}
-  .mob{{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}}
-  .mob .nm{{font-size:16px;font-weight:800}}
-  .mob .en{{font-size:11.5px;color:var(--sub);font-weight:600}}
-  .mob .stat{{font-size:13px;margin-top:6px}}
-  .mob .stat b{{color:var(--accent-dark)}}
-  .mob .where{{font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}}
-  .cnt{{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:2px}}
-  footer{{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}}
-  @media (max-width:560px){{ table{{font-size:12.5px}} th,td{{padding:7px 6px}} .grid{{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}} }}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7;padding:0 16px 48px}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text)}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:13.5px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:12.5px;margin-left:10px} }
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:14px;margin-top:6px}
+  .disc{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:13.5px;color:var(--text);margin-top:16px;text-align:center}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:16.5px;font-weight:800;margin-bottom:10px}
+  p.body{font-size:14.5px;margin-bottom:8px}
+  .legend{font-size:12.5px;color:var(--sub);margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+  th{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td.num, th.num{text-align:right;white-space:nowrap}
+  .mname{font-weight:800}
+  .men{display:block;font-size:11.5px;color:var(--sub);font-weight:600}
+  .chip{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:12px;margin:1px 2px 1px 0}
+  .chip b{color:var(--accent-dark)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}
+  .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .mob .mimg{display:block;max-height:56px;max-width:100%;margin:0 auto 6px}
+  .mob .nm{font-size:16px;font-weight:800}
+  .mob .en{font-size:11.5px;color:var(--sub);font-weight:600}
+  .mob .stat{font-size:13px;margin-top:6px}
+  .mob .stat b{color:var(--accent-dark)}
+  .mob .where{font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}
+  .cnt{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:2px}
+  footer{text-align:center;color:var(--unknown);font-size:12px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ table{font-size:12.5px} th,td{padding:7px 6px} .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))} }
 </style>
 </head>
 <body>
@@ -102,35 +103,35 @@
   <section class="card">
     <h2>에델슈타인 몬스터<span class="cnt">27종</span></h2>
     <div class="grid">
-<div class="mob"><div class="nm">새싹 화분</div><div class="en">Potted Sprout</div><div class="stat">레벨 <b>5</b> · HP <b>50</b></div><div class="where">출현: 에델슈타인 공원1</div></div>
-<div class="mob"><div class="nm">나팔꽃 화분</div><div class="en">Potted Morning Glory</div><div class="stat">레벨 <b>6</b> · HP <b>65</b></div><div class="where">출현: 에델슈타인 공원2</div></div>
-<div class="mob"><div class="nm">포도주스병</div><div class="en">Grape Juice Bottle</div><div class="stat">레벨 <b>8</b> · HP <b>110</b></div><div class="where">출현: 에델슈타인 공원3</div></div>
-<div class="mob"><div class="nm">훈련로봇A</div><div class="en">Training Robot A</div><div class="stat">레벨 <b>10</b> · HP <b>125</b></div><div class="where">출현: 트레이닝 룸 A</div></div>
-<div class="mob"><div class="nm">훈련로봇B</div><div class="en">Training Robot B</div><div class="stat">레벨 <b>11</b> · HP <b>150</b></div><div class="where">출현: 트레이닝 룸 B</div></div>
-<div class="mob"><div class="nm">훈련로봇C</div><div class="en">Training Robot C</div><div class="stat">레벨 <b>12</b> · HP <b>525</b></div><div class="where">출현: 트레이닝 룸 C</div></div>
-<div class="mob"><div class="nm">훈련로봇 0</div><div class="en">Training Robot O</div><div class="stat">레벨 <b>13</b> · HP <b>180</b></div><div class="where">출현: 트레이닝 룸 D</div></div>
-<div class="mob"><div class="nm">순찰로봇</div><div class="en">Patrol Robot</div><div class="stat">레벨 <b>14</b> · HP <b>225</b></div><div class="where">출현: 에델슈타인 산책로1</div></div>
-<div class="mob"><div class="nm">이상한 이정표</div><div class="en">Strange Sign</div><div class="stat">레벨 <b>16</b> · HP <b>275</b></div><div class="where">출현: 에델슈타인 산책로2</div></div>
-<div class="mob"><div class="nm">구렁이</div><div class="en">Serpent</div><div class="stat">레벨 <b>18</b> · HP <b>325</b></div><div class="where">출현: 뱀 나오는 길</div></div>
-<div class="mob"><div class="nm">물 도둑</div><div class="en">Water Thief Monster</div><div class="stat">레벨 <b>20</b> · HP <b>375</b></div><div class="where">출현: 에델슈타인 산책로3</div></div>
-<div class="mob"><div class="nm">더스트 박스</div><div class="en">Dust Box</div><div class="stat">레벨 <b>22</b> · HP <b>435</b></div><div class="where">출현: 에델슈타인 산책로4</div></div>
-<div class="mob"><div class="nm">수상한 도적</div><div class="en">Suspicious Thief</div><div class="stat">레벨 <b>23</b> · HP <b>930</b></div><div class="where">출현: 위험! 임시공항</div></div>
-<div class="mob"><div class="nm">가로등</div><div class="en">Streetlight</div><div class="stat">레벨 <b>25</b> · HP <b>525</b></div><div class="where">출현: 가로등길</div></div>
-<div class="mob"><div class="nm">저택 경비로봇</div><div class="en">Mansion Guard Robot</div><div class="stat">레벨 <b>27</b> · HP <b>1,300</b></div><div class="where">출현: 경계 심한 저택</div></div>
-<div class="mob"><div class="nm">순찰로봇S</div><div class="en">Patrol Robot S</div><div class="stat">레벨 <b>28</b> · HP <b>720</b></div><div class="where">출현: 광산 가는 길1</div></div>
-<div class="mob"><div class="nm">파비오의 파이어봄</div><div class="en">Fabio's Firebomb</div><div class="stat">레벨 <b>30</b> · HP <b>1,800</b></div><div class="where">출현: 수상쩍은 헤어샵</div></div>
-<div class="mob"><div class="nm">안전제일</div><div class="en">Safety First</div><div class="stat">레벨 <b>31</b> · HP <b>990</b></div><div class="where">출현: 광산 가는 길2</div></div>
-<div class="mob"><div class="nm">아기 바위베어먹기</div><div class="en">Baby Boulder Muncher</div><div class="stat">레벨 <b>33</b> · HP <b>1,200</b></div><div class="where">출현: 바위길</div></div>
-<div class="mob"><div class="nm">큰 바위베어먹기</div><div class="en">Big Boulder Muncher</div><div class="stat">레벨 <b>35</b> · HP <b>1,400</b></div><div class="where">출현: 광석길</div></div>
-<div class="mob"><div class="nm">경비로봇</div><div class="en">Guard Robot</div><div class="stat">레벨 <b>67</b> · HP <b>8,500</b></div><div class="where">출현: 갱도 입구1 · 갱도 입구2</div></div>
-<div class="mob"><div class="nm">라키</div><div class="en">Racoco</div><div class="stat">레벨 <b>70</b> · HP <b>10,000</b></div><div class="where">출현: 갱도1</div></div>
-<div class="mob"><div class="nm">빅 스파이더</div><div class="en">Big Spider</div><div class="stat">레벨 <b>72</b> · HP <b>12,000</b></div><div class="where">출현: 갱도2</div></div>
-<div class="mob"><div class="nm">카트베어</div><div class="en">Cart Bear</div><div class="stat">레벨 <b>74</b> · HP <b>14,000</b></div><div class="where">출현: 갱도3</div></div>
-<div class="mob"><div class="nm">라쿤</div><div class="en">Racaroni</div><div class="stat">레벨 <b>76</b> · HP <b>17,000</b></div><div class="where">출현: 너구리 소굴</div></div>
-<div class="mob"><div class="nm">경비로봇L</div><div class="en">Guard Robot L</div><div class="stat">레벨 <b>79</b> · HP <b>23,000</b></div><div class="where">출현: 갱도4</div></div>
-<div class="mob"><div class="nm">라칸</div><div class="en">Raco</div><div class="stat">레벨 <b>82</b> · HP <b>29,000</b></div><div class="where">출현: 위험한 너구리 소굴</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">새싹 화분</div><div class="en">Potted Sprout</div><div class="stat">레벨 <b>5</b> · HP <b>50</b></div><div class="where">출현: 에델슈타인 공원1</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/150001/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">나팔꽃 화분</div><div class="en">Potted Morning Glory</div><div class="stat">레벨 <b>6</b> · HP <b>65</b></div><div class="where">출현: 에델슈타인 공원2</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/150002/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">포도주스병</div><div class="en">Grape Juice Bottle</div><div class="stat">레벨 <b>8</b> · HP <b>110</b></div><div class="where">출현: 에델슈타인 공원3</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300409/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">훈련로봇A</div><div class="en">Training Robot A</div><div class="stat">레벨 <b>10</b> · HP <b>125</b></div><div class="where">출현: 트레이닝 룸 A</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300410/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">훈련로봇B</div><div class="en">Training Robot B</div><div class="stat">레벨 <b>11</b> · HP <b>150</b></div><div class="where">출현: 트레이닝 룸 B</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300411/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">훈련로봇C</div><div class="en">Training Robot C</div><div class="stat">레벨 <b>12</b> · HP <b>525</b></div><div class="where">출현: 트레이닝 룸 C</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300412/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">훈련로봇 0</div><div class="en">Training Robot O</div><div class="stat">레벨 <b>13</b> · HP <b>180</b></div><div class="where">출현: 트레이닝 룸 D</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/1150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">순찰로봇</div><div class="en">Patrol Robot</div><div class="stat">레벨 <b>14</b> · HP <b>225</b></div><div class="where">출현: 에델슈타인 산책로1</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/1150001/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">이상한 이정표</div><div class="en">Strange Sign</div><div class="stat">레벨 <b>16</b> · HP <b>275</b></div><div class="where">출현: 에델슈타인 산책로2</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/1150002/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">구렁이</div><div class="en">Serpent</div><div class="stat">레벨 <b>18</b> · HP <b>325</b></div><div class="where">출현: 뱀 나오는 길</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/2150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">물 도둑</div><div class="en">Water Thief Monster</div><div class="stat">레벨 <b>20</b> · HP <b>375</b></div><div class="where">출현: 에델슈타인 산책로3</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/2150001/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">더스트 박스</div><div class="en">Dust Box</div><div class="stat">레벨 <b>22</b> · HP <b>435</b></div><div class="where">출현: 에델슈타인 산책로4</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300414/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">수상한 도적</div><div class="en">Suspicious Thief</div><div class="stat">레벨 <b>23</b> · HP <b>930</b></div><div class="where">출현: 위험! 임시공항</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/2150002/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">가로등</div><div class="en">Streetlight</div><div class="stat">레벨 <b>25</b> · HP <b>525</b></div><div class="where">출현: 가로등길</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300419/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">저택 경비로봇</div><div class="en">Mansion Guard Robot</div><div class="stat">레벨 <b>27</b> · HP <b>1,300</b></div><div class="where">출현: 경계 심한 저택</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/2150003/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">순찰로봇S</div><div class="en">Patrol Robot S</div><div class="stat">레벨 <b>28</b> · HP <b>720</b></div><div class="where">출현: 광산 가는 길1</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/9300418/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">파비오의 파이어봄</div><div class="en">Fabio's Firebomb</div><div class="stat">레벨 <b>30</b> · HP <b>1,800</b></div><div class="where">출현: 수상쩍은 헤어샵</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/3150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">안전제일</div><div class="en">Safety First</div><div class="stat">레벨 <b>31</b> · HP <b>990</b></div><div class="where">출현: 광산 가는 길2</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/3150001/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">아기 바위베어먹기</div><div class="en">Baby Boulder Muncher</div><div class="stat">레벨 <b>33</b> · HP <b>1,200</b></div><div class="where">출현: 바위길</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/3150002/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">큰 바위베어먹기</div><div class="en">Big Boulder Muncher</div><div class="stat">레벨 <b>35</b> · HP <b>1,400</b></div><div class="where">출현: 광석길</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/6150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">경비로봇</div><div class="en">Guard Robot</div><div class="stat">레벨 <b>67</b> · HP <b>8,500</b></div><div class="where">출현: 갱도 입구1 · 갱도 입구2</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/7150000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">라키</div><div class="en">Racoco</div><div class="stat">레벨 <b>70</b> · HP <b>10,000</b></div><div class="where">출현: 갱도1</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/7150001/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">빅 스파이더</div><div class="en">Big Spider</div><div class="stat">레벨 <b>72</b> · HP <b>12,000</b></div><div class="where">출현: 갱도2</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/7150002/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">카트베어</div><div class="en">Cart Bear</div><div class="stat">레벨 <b>74</b> · HP <b>14,000</b></div><div class="where">출현: 갱도3</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/7150003/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">라쿤</div><div class="en">Racaroni</div><div class="stat">레벨 <b>76</b> · HP <b>17,000</b></div><div class="where">출현: 너구리 소굴</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/7150004/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">경비로봇L</div><div class="en">Guard Robot L</div><div class="stat">레벨 <b>79</b> · HP <b>23,000</b></div><div class="where">출현: 갱도4</div></div>
+<div class="mob"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/8105000/icon" alt="" loading="lazy" onerror="this.style.display='none'" style="display:block;max-height:56px;max-width:100%;margin:0 auto 6px"><div class="nm">라칸</div><div class="en">Raco</div><div class="stat">레벨 <b>82</b> · HP <b>29,000</b></div><div class="where">출현: 위험한 너구리 소굴</div></div>
     </div>
-    <p class="legend">레벨·HP와 출현 맵은 본진 기준 수집 데이터입니다.</p>
+    <p class="legend">레벨·HP와 출현 맵은 본진 기준 수집 데이터입니다.<br>아이콘·이미지: maplestory.io</p>
   </section>
   <footer>
     알팡지지는 비공식 팬 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
