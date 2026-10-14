@@ -53,8 +53,20 @@
   .hl-t{font-size:13.5px;font-weight:800;color:var(--accent);margin-bottom:6px}
   .hl ul{list-style:none} .hl li{font-size:15px;line-height:1.55;padding:3px 0 3px 14px;position:relative}
   .hl li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
-  button.thumb{position:relative;display:block;width:100%;max-width:480px;margin:0 auto;padding:0;border:1px solid var(--line);cursor:pointer;border-radius:10px;overflow:hidden;background:none}
-  button.thumb img{width:100%;display:block} button.thumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;color:#fff;text-shadow:0 2px 10px #000}
+  .card-top{display:flex;gap:18px;align-items:flex-start}
+  .thumb-col{flex:0 0 224px;width:224px}
+  .thumb-col img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+  a.thumb-link{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .card-main{flex:1;min-width:0}
+  .card-main .hl{margin-bottom:0}
+  .ph-thumb{aspect-ratio:16/9;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,var(--accent-soft),#FFE3D1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center;padding:10px}
+  .ph-pf{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--card);color:var(--accent-dark);border:1px solid var(--line)}
+  .ph-type{font-size:16px;font-weight:800;color:var(--accent-dark)}
+  .ph-ch{font-size:12.5px;color:var(--sub);font-weight:600}
+  button.thumb{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line);cursor:pointer;border-radius:10px;overflow:hidden;background:none}
+  button.thumb img{width:100%;display:block} button.thumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;color:#fff;text-shadow:0 2px 10px #000}
+  .player iframe{margin-top:14px}
+  @media (max-width:760px){ .card-top{flex-direction:column;gap:12px} .thumb-col{flex:none;width:100%} .card-main .hl{margin-bottom:14px} }
   button.thumb:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
   iframe{width:100%;max-width:480px;aspect-ratio:16/9;border:1px solid var(--line);border-radius:10px;display:block;margin:0 auto}
   .src{font-size:13.5px;margin-top:10px;text-align:center} a{color:var(--accent-dark)}
@@ -84,6 +96,7 @@
   [data-theme="dark"] .mb-say2{background:#40350F;color:#F0D48C}
   [data-theme="dark"] .mb-post{background:#17374F;color:#A5CFF5}
   [data-theme="dark"] .mb-etc{background:#26292F;color:#B9BEC7}
+  [data-theme="dark"] .ph-thumb{background:linear-gradient(135deg,#2A1C0F,#3A2410)}
 </style>
 </head>
 <body>
@@ -99,10 +112,12 @@
 <div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.26</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="_bQwgKZYGF4"><img src="/assets/thumb-tl-001.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-say">제작진 직접 발언</span><span class="badge">알티 · YouTube</span><span class="badge">게시일 2026-09-26</span></div>
     <h2>알팡서버 개발 상황 최초 공개합니다</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>오픈 일정은 약속하지 않음 — 클로즈베타 직전에 공개 예정</li><li>메이플월드 리소스는 쓰지 않고, 본진 메이플스토리 파일 기반으로 구현 중</li><li>하드 리셋은 없음 · 후원에 따른 특혜도 없다는 운영 방침</li></ul></div>
-    <button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="_bQwgKZYGF4"><img src="https://i.ytimg.com/vi/_bQwgKZYGF4/hqdefault.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button><div class="player"></div>
+    </div></div>
+    <div class="player"></div>
     <p class="src"><a href="https://www.youtube.com/watch?v=_bQwgKZYGF4" target="_blank" rel="noopener">YouTube에서 원문 보기</a></p>
     <details><summary>발언 14개와 근거 보기</summary>
     <div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=45s" target="_blank" rel="noopener">[0:45]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>오픈 기한은 약속하지 않겠다고 밝힘. 일정은 클로즈베타 직전에 공개할 예정이며, 많이 밀리지는 않을 것이라고 덧붙임.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=79s" target="_blank" rel="noopener">[1:19]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>메이플월드 리소스는 사용하지 않았고 본진 메이플스토리의 파일만으로 구현 중이라고 설명. 카메라 이동 등도 본진과 같은 상태로 출발하는 것이 지향점이라고 강조.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=136s" target="_blank" rel="noopener">[2:16]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>당시 메이플스토리의 실제 UI를 그대로 구현 중이며, 장식용 UI까지 시대 감성을 위해 넣었다고 언급.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=159s" target="_blank" rel="noopener">[2:39]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>자유 해상도를 지원한다고 밝힘 (과거 작은 해상도의 답답함을 해소하려는 선택).</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=206s" target="_blank" rel="noopener">[3:26]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>옛 메이플 완벽 구현에서 시작해 커스텀 콘텐츠에 도전하되 반응이 좋지 않으면 적용하지 않는 방향. 직업 개성을 뚜렷하게 하는 구상도 있으나, 본인이 기획 단계이며 확정은 아니라고 두 차례 강조.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=246s" target="_blank" rel="noopener">[4:06]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>큰 줄기를 해치지 않는 선에서 커스텀 이벤트 보스를 내고 반응을 보겠다는 구상. 솔로 플레이 유저를 버리지 않겠다고 언급.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=317s" target="_blank" rel="noopener">[5:17]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>공식 랭킹을 도입하겠다는 계획을 밝힘.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=325s" target="_blank" rel="noopener">[5:25]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>배율과 관련해 1배율도 빠르다는 취지의 설명을 함. (배율 확정 발언으로 단정하지 않음)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=333s" target="_blank" rel="noopener">[5:33]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#6b6250">적용 여부 미정</span><p>상점 기능 관련 질문에, 구현은 완료했으나 적용 여부는 미정이라고 밝힘. (기능 명칭은 자막으로 특정하지 않아 보류)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=361s" target="_blank" rel="noopener">[6:01]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>하드 리셋은 하지 않겠다고 명언.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=377s" target="_blank" rel="noopener">[6:17]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>부위별 교체 같은 소프트 리셋 구상은 있으나 확정은 아니라고 덧붙임.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=410s" target="_blank" rel="noopener">[6:50]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝힘. 함께 창업한 인원들이 동의할 리 없다는 취지. (인원 언급만으로 기존 합작 전언과의 관계를 판단하지 않음)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=435s" target="_blank" rel="noopener">[7:15]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>서버(게임) 이름은 이미 정해졌으나 변수가 있어 비공개라고 밝힘. '알팡서버'는 통칭으로 언급됨.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=_bQwgKZYGF4&t=465s" target="_blank" rel="noopener">[7:45]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>이 서버를 첫 간판 게임으로 삼아 계속 재투자하며 장기 운영하겠다는 의지를 반복해 강조.</p></div>
@@ -111,9 +126,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.22</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><a class="thumb-link" href="https://vod.sooplive.com/player/207825455" target="_blank" rel="noopener"><img src="/assets/thumb-tl-005.jpg" alt="원본 글 대표 이미지" loading="lazy"></a></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-say2">제작진 직접 발언 (2차 출처 대조)</span><span class="badge">팡이요 · SOOP 다시보기</span><span class="badge">게시일 2026-09-22</span></div>
     <h2>팡이요 알팡서버 소통 메이플</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>개발 마무리 단계 — 검수·QA 진행 중이라고 밝힘</li><li>CBT 날짜는 미확정, 티저 때 홈페이지·디스코드 공개 예정</li><li>현금거래 금지 방침 · 서버 이름은 가명으로 출시 시 변경</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://vod.sooplive.com/player/207825455" target="_blank" rel="noopener">SOOP 다시보기에서 원문 보기</a></p>
     <details><summary>발언 7개와 근거 보기</summary>
@@ -123,9 +140,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.21</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><div class="ph-thumb"><span class="ph-pf">SOOP</span><span class="ph-type">방송국 게시글</span><span class="ph-ch">알티</span></div></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">알티 · SOOP 방송국 게시판</span><span class="badge">게시일 2026-09-21</span></div>
     <h2>9/22 (화) 오후7시 방송 !!</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>다음 알팡 소식은 공식적으로 전하는 소식이 될 것이라고 밝힘</li><li>9/22 방송에서 알팡 이야기는 아주 조금만 하겠다고 예고</li><li>하루빨리 서버 개발을 마무리하고 싶다고 개발 의지 표명</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://www.sooplive.com/station/wonjin0601/post/207735199" target="_blank" rel="noopener">SOOP 방송국 게시판에서 원문 보기</a></p>
     <details><summary>발언 3개와 근거 보기</summary>
@@ -135,9 +154,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.18</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><div class="ph-thumb"><span class="ph-pf">SOOP</span><span class="ph-type">방송국 게시글</span><span class="ph-ch">알티</span></div></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">알티 · SOOP 방송국 게시판</span><span class="badge">게시일 2026-09-18</span></div>
     <h2>안녕하세요!!! 오늘 방송합니다!!</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>요즘 알팡서버 개발로 바빴다는 근황 공개</li><li>당일 방송에서 알팡서버 현황에 대한 짧은 코멘트 예고</li><li>알팡서버를 함께하게 된 비하인드도 방송 주제로 예고</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://www.sooplive.com/station/wonjin0601/post/207445203" target="_blank" rel="noopener">SOOP 방송국 게시판에서 원문 보기</a></p>
     <details><summary>발언 3개와 근거 보기</summary>
@@ -147,10 +168,12 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.18</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="wq9_wy4GdNg"><img src="/assets/thumb-tl-009.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-say">제작진 직접 발언</span><span class="badge">알티 · YouTube</span><span class="badge">게시일 2026-09-18</span></div>
     <h2>알팡섭 개발현황 살짝 공개 갑니닷..!</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>모바일 버전도 제작 중 — 모바일용 UI를 새로 만들고 커스텀 기능 포함</li><li>그 시절 방식의 입찰제 경매장을 개발 중</li><li>OBT는 올해(2026년) 안에 내겠다는 강한 표현 — 단, 날짜 약속은 하지 않음</li></ul></div>
-    <button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="wq9_wy4GdNg"><img src="https://i.ytimg.com/vi/wq9_wy4GdNg/hqdefault.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button><div class="player"></div>
+    </div></div>
+    <div class="player"></div>
     <p class="src"><a href="https://www.youtube.com/watch?v=wq9_wy4GdNg" target="_blank" rel="noopener">YouTube에서 원문 보기</a></p>
     <details><summary>발언 10개와 근거 보기</summary>
     <div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=1747s" target="_blank" rel="noopener">[29:07]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>출시 날짜는 약속하지 않겠다고 밝힘. 본인이 만족할 수준까지 다듬은 뒤 클로즈베타를 열 계획이며, CBT 날짜는 CBT 직전에 공개하겠다고 설명. 기한을 먼저 정하면 완성도를 희생할 수 있어 말하지 않는다고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=1985s" target="_blank" rel="noopener">[33:05]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>원작 클라이언트에 있던 파일만 사용했고 메이플스토리 월드 리소스는 전혀 사용하지 않았다고 설명. (더 이른 시점의 발언이며, 이후 TL-001 1:19에서도 같은 취지가 확인됨)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=2486s" target="_blank" rel="noopener">[41:26]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>경매장은 아직 개발 중이며, 본진 경매장과 달리 그 시절 방식의 입찰제 경매장으로 구현 중이라고 밝힘.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=2885s" target="_blank" rel="noopener">[48:05]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>고도화된 매크로는 잡기 어렵지만 어느 서버보다 잘 잡겠다고 밝힘. 본업 경험을 근거로 매크로·핵 대응이 자신의 전문 분야라고 설명.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=3264s" target="_blank" rel="noopener">[54:24]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#9a7b00">도입 계획</span><p>과거 본인이 만들었던 전투력 환산 방식을 다듬어 서버 공식 랭킹으로 도입하겠다고 공개. (이후 TL-001 5:17의 공식 랭킹 도입 계획 발언으로 이어짐)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=3399s" target="_blank" rel="noopener">[56:39]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>배율은 1배율이라고 반복해 밝힘 (1:31:27, 1:54:13 구간에서도 재차 강조). 이 방송 시점의 발언으로만 기록하며, 이후 TL-001 5:25에서는 '1배율도 빠르다'는 취지의 설명으로 기록돼 있어 확정 사양으로 단정하지 않음.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=5391s" target="_blank" rel="noopener">[1:29:51]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>모바일 버전도 제작 중이라고 밝힘. 모바일용 UI를 새로 만들었고 퀵슬롯 변경 등 커스텀 기능을 포함했다고 설명.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=5432s" target="_blank" rel="noopener">[1:30:32]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>하드 리셋은 절대 하지 않겠다고 못 박음. (TL-001 6:01, TL-008 12:16에서도 같은 취지가 반복된 재확인 발언)</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=6492s" target="_blank" rel="noopener">[1:48:12]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>하드 리셋뿐 아니라 부위별 소프트 리셋도 절대 하지 않겠다고 밝힘. [후속 변경 있음] 이후 2026-09-26 영상(TL-001) 6:17에서 '부위별 교체 같은 소프트 리셋 구상은 있으나 확정은 아니다'라는 후속 발언이 나왔으므로 시간순 후속 변경으로 연결해 기록함. 어느 쪽 발언도 덮어쓰지 않음.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=wq9_wy4GdNg&t=6977s" target="_blank" rel="noopener">[1:56:17]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>오픈베타(OBT)는 올해(2026년) 안에 내겠다는 취지로 강하게 말함. 다만 정확한 날짜 약속은 하지 않겠다는 원칙도 함께 밝혔고, 이후 TL-001 0:45에서도 기한을 약속하지 않는 입장이 유지됨 — 시점별 발언으로 분리해 기록하며 일정 확정으로 보지 않음.</p></div>
@@ -159,9 +182,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.08.18</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><div class="ph-thumb"><span class="ph-pf">SOOP</span><span class="ph-type">방송국 게시글</span><span class="ph-ch">팡이요</span></div></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">팡이요 · SOOP 방송국 게시판</span><span class="badge">게시일 2026-08-18</span></div>
     <h2>08.18(화) 벨로나 폐관수련</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>알티와 함께 빅뱅 후 옛메를 제작 중이라고 재공지</li><li>오픈베타에 많은 기대를 부탁한다고 예고</li><li>옛메 제작 관련 회의 진행 언급</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://www.sooplive.com/station/sccha21/post/204641759" target="_blank" rel="noopener">SOOP 방송국 게시판에서 원문 보기</a></p>
     <details><summary>발언 3개와 근거 보기</summary>
@@ -171,10 +196,12 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.08.10</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="KTxIuZhyqIc"><img src="/assets/thumb-tl-008.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-say">제작진 직접 발언</span><span class="badge">알티 · YouTube</span><span class="badge">게시일 2026-08-10</span></div>
     <h2>알티 오랜만입니다.. 알팡섭 드릴 말씀</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>창업 멤버 3명 구성 공개 — 알티 개발, 팡이요 운영·마케팅, 개발자 1명</li><li>올해(2026년) 안 출시 예정, 정확한 날짜는 비공개</li><li>하드 리셋 절대 없음 · 현금거래 금지 · 서버 이름은 확정됐으나 공개 때 발표</li></ul></div>
-    <button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="KTxIuZhyqIc"><img src="https://i.ytimg.com/vi/KTxIuZhyqIc/hqdefault.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button><div class="player"></div>
+    </div></div>
+    <div class="player"></div>
     <p class="src"><a href="https://www.youtube.com/watch?v=KTxIuZhyqIc" target="_blank" rel="noopener">YouTube에서 원문 보기</a></p>
     <details><summary>발언 13개와 근거 보기</summary>
     <div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=249s" target="_blank" rel="noopener">[4:09]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>메이플스토리 월드 기반 '빅뱅 후' 버전의 옛날 메이플 서버라고 소개함. 옛메 출시뿐 아니라 이후 메이플 IP로 여러 게임을 월드 안에서 확장할 계획이라고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=690s" target="_blank" rel="noopener">[11:30]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>창업 멤버는 세 명이라고 밝힘 — 알티(개발), 팡이요(운영·마케팅), 개발자 한 명. 상하 관계가 아닌 각자 역할의 대표라는 설명 (1:51:58 구간에서 재확인).</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=736s" target="_blank" rel="noopener">[12:16]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>본진의 하드 리셋 방식을 비판하며, 이 서버는 하드 리셋을 절대 하지 않을 예정이라고 밝힘.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=882s" target="_blank" rel="noopener">[14:42]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>올해(2026년) 안에 출시 예정이라고 밝힘. 지키지 못할 약속을 피하려 정확한 날짜는 공개하지 않는다고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=1171s" target="_blank" rel="noopener">[19:31]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>운영 정책에 현금거래 금지 조항이 들어갈 예정이라고 밝힘.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=1310s" target="_blank" rel="noopener">[21:50]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>서버 이름은 이미 정했으나 공개 때 발표하겠다고 함. 특정 인물 이름을 딴 이름으로는 하지 않을 것이라고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=317s" target="_blank" rel="noopener">[5:17]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>지속적인 스토킹 행위(따라다니기, 스틸 등)를 강력 처벌하겠다고 밝힘. CS가 게임 운영에서 가장 중요하다며 CS 인력과 투자에 힘쓰겠다고 함 (7:15 구간).</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=1957s" target="_blank" rel="noopener">[32:37]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>운영진(팡이요)은 무과금으로 유저들과 함께 플레이할 예정이라고 함. 점검 연장 등 문제 발생 시 보상은 두둑하게 하겠다고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=4475s" target="_blank" rel="noopener">[1:14:35]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>개발이 많이 완성됐다고 밝힘. 세부 정보는 티저로 하나씩 공개할 예정이라고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=4636s" target="_blank" rel="noopener">[1:17:16]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>핵·매크로 대응은 개발적으로 최대한 잡아보겠다고 함. 대책 이론과 시뮬레이션은 있으나 실전은 가봐야 안다며 말을 아낌.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=5754s" target="_blank" rel="noopener">[1:35:54]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>디렉터로서 첫 공약이라며 '올해 안에 오픈하지 못하면 벌칙을 받겠다'는 취지의 강한 출시 의지를 밝힘 (공약성 발언으로 기록).</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=6759s" target="_blank" rel="noopener">[1:52:39]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>CBT·오픈베타 등 내부 일정은 존재하지만 지키지 못할 수 있어 비공개라고 함.</p></div><div class="stmt"><a class="ts" href="https://www.youtube.com/watch?v=KTxIuZhyqIc&t=2757s" target="_blank" rel="noopener">[45:57]</a><span class="st" style="color:#FF7E36">제작진 직접 발언</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>서버를 열면 최소 몇 년은 운영하겠다고 밝힘 (1:32:59 구간에서는 '3년 이상'이라고 표현).</p></div>
@@ -183,9 +210,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.07.23</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><div class="ph-thumb"><span class="ph-pf">SOOP</span><span class="ph-type">방송국 게시글</span><span class="ph-ch">알티</span></div></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">알티 · SOOP 방송국 게시판</span><span class="badge">게시일 2026-07-23</span></div>
     <h2>곧 방송!</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>팡이요가 이날 알팡서버 관련 내용을 공식 발표함</li><li>알티도 팬들에게 직접 말할 수 있게 되어 방송을 켜겠다고 공지</li><li>세부 내용은 아직 말하기 어렵고, 방송 방향성 포함해 직접 전하겠다고 함</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://www.sooplive.com/station/wonjin0601/post/202244871" target="_blank" rel="noopener">SOOP 방송국 게시판에서 원문 보기</a></p>
     <details><summary>발언 2개와 근거 보기</summary>
@@ -195,9 +224,11 @@
   </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.07.23</span><span class="dot"></span></div>
     <section class="card">
+    <div class="card-top"><div class="thumb-col"><div class="ph-thumb"><span class="ph-pf">SOOP</span><span class="ph-type">방송국 게시글</span><span class="ph-ch">팡이요</span></div></div><div class="card-main">
     <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">팡이요 · SOOP 방송국 게시판</span><span class="badge">게시일 2026-07-23</span></div>
     <h2>금요일 휴방공지</h2>
     <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>팡이요가 알팡서버를 게시판 공지로 알림</li><li>서버 이름은 바뀔 예정이라고 명시</li><li>자세한 내용은 다시보기 중대발표 참고로 안내</li></ul></div>
+    </div></div>
     
     <p class="src"><a href="https://www.sooplive.com/station/sccha21/post/202291619" target="_blank" rel="noopener">SOOP 방송국 게시판에서 원문 보기</a></p>
     <details><summary>발언 3개와 근거 보기</summary>
@@ -215,9 +246,15 @@
 <script>
 document.querySelectorAll('button.thumb').forEach(function(b){
   b.addEventListener('click', function(){
-    var vid = b.getAttribute('data-vid');
-    b.nextElementSibling.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="YouTube video player" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
-    b.style.display = 'none';
+    var card = b.closest('.card');
+    var p = card ? card.querySelector('.player') : null;
+    if(!p){ return; }
+    if(!p.dataset.loaded){
+      var vid = b.getAttribute('data-vid');
+      p.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="YouTube video player" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+      p.dataset.loaded = '1';
+    }
+    p.scrollIntoView({behavior:'smooth', block:'center'});
   });
 });
 </script>
