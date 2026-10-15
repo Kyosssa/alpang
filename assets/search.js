@@ -11,7 +11,7 @@
   var INDEX_URL = script ? script.getAttribute('data-index') : '/assets/alpang-search.json';
   var TYPE_KO = { mob: '몬스터', map: '맵', item: '아이템', npc: 'NPC', quest: '퀘스트' };
   var TYPE_W = { mob: 0, map: 1, item: 2, npc: 3, quest: 4 };
-  var PAGE = 10, MAX = 30;
+  var PAGE = 10;
   var records = null, loading = false, shown = [], limit = PAGE, sel = -1;
 
   function norm(s) {
@@ -57,10 +57,11 @@
       var s = score(records[i], q, qNum);
       if (s >= 0) hits.push([s, records[i]]);
     }
+    function tw(t) { return (t in TYPE_W) ? TYPE_W[t] : 9; }
     hits.sort(function (a, b) {
       if (a[0] !== b[0]) return a[0] - b[0];
-      var tw = (TYPE_W[a[1].type] || 9) - (TYPE_W[b[1].type] || 9);
-      if (tw) return tw;
+      var d = tw(a[1].type) - tw(b[1].type);
+      if (d) return d;
       var an = a[1].name_ko_candidate || a[1].name_original || '';
       var bn = b[1].name_ko_candidate || b[1].name_original || '';
       if (an.length !== bn.length) return an.length - bn.length;
@@ -93,13 +94,15 @@
     }
     box.innerHTML = html;
     var more = document.getElementById('sbMore');
-    if (more) more.addEventListener('click', function () { limit = MAX; render(); });
+    if (more) more.addEventListener('click', function () { limit += PAGE; render(); });
     open();
   }
   function open() { box.classList.add('open'); input.setAttribute('aria-expanded', 'true'); }
   function close() { box.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); }
   input.addEventListener('focus', load);
   input.addEventListener('input', function () { limit = PAGE; load(); run(); });
+  var goBtn = document.getElementById('sbGo');
+  if (goBtn) goBtn.addEventListener('click', function () { input.focus(); limit = PAGE; load(); run(); });
   input.addEventListener('keydown', function (e) {
     var items = box.querySelectorAll('.sb-item');
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
