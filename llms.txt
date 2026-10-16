@@ -19,6 +19,7 @@
 - [사냥터 가이드](https://alpang.gg/guide/hunting/): 레벨대별 추천 사냥터 39곳
 - [오르비스·리프레 가이드](https://alpang.gg/guide/orbis-leafre/): 해당 지역 몬스터 60종 안내
 - [에델슈타인 가이드](https://alpang.gg/guide/edelstein/): 에델슈타인 지역 맵과 몬스터 안내
+- [한방컷 계산기](https://alpang.gg/calculator/onehit/): 몬스터 HP와 실측한 스킬 1회 총피해로 계산하는 N방컷 예상 범위 도구 (관측 피해 기준)
 
 ## 준비 중인 콘텐츠
 
