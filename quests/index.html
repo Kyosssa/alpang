@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>퀘스트 도감 — 알팡지지</title>
+<meta name="description" content="알팡서버를 기다리며 정리한 퀘스트 도감. 퀘스트 3,412건의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.">
+<link rel="canonical" href="https://alpang.gg/quests/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="퀘스트 도감 — 알팡지지">
+<meta property="og:description" content="알팡서버를 기다리며 정리한 퀘스트 도감. 퀘스트 3,412건의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.">
+<meta property="og:url" content="https://alpang.gg/quests/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--slot:#f3f0e9}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disclaimer{font-size:13.5px;color:var(--sub);text-align:center;margin-top:8px;line-height:1.65}
+  .seg{display:flex;gap:4px;justify-content:center;margin-top:18px}
+  .seg a{padding:8px 22px;border:1px solid var(--line);background:var(--card);color:var(--sub);font-weight:700;font-size:15px;text-decoration:none;border-radius:999px}
+  .seg a.seg-on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .filters{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .fbtns{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+  .fbtn{padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--sub);font-size:13.5px;font-weight:600;cursor:pointer}
+  .fbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .filters input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-size:15px;outline:none;margin-top:4px}
+  .filters input:focus{border-color:var(--accent)}
+  .fcount{font-size:12.5px;color:var(--sub);margin-top:8px}
+  .npc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:14px}
+  .npc-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;scroll-margin-top:90px}
+  .npc-card:target{outline:2px solid var(--accent);outline-offset:1px}
+  .nc-head{display:flex;gap:12px;align-items:center}
+  .sprite{width:64px;height:64px;object-fit:contain;image-rendering:pixelated;flex:none}
+  .nc-title h3{font-size:16.5px;font-weight:800;line-height:1.35}
+  .nc-title .en{display:block;font-size:12.5px;color:var(--sub)}
+  .unk-badge{font-size:10.5px;font-weight:700;color:var(--unknown);background:var(--slot);border-radius:4px;padding:1px 5px;vertical-align:2px;white-space:nowrap}
+  .dlg{font-size:13.5px;color:var(--sub);margin-top:9px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+  .tag{font-size:12px;background:var(--slot);border-radius:6px;padding:3px 8px;color:var(--text);text-decoration:none}
+  .tag.more{color:var(--sub)}
+  .rel{border-top:1px dashed var(--line);margin-top:11px;padding-top:9px;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+  .rel-label{font-size:12.5px;font-weight:700;color:var(--accent-dark)}
+  .qtag{font-size:12px;background:var(--accent-soft);color:var(--accent-dark);border-radius:6px;padding:3px 8px;text-decoration:none}
+  .empty{text-align:center;color:var(--sub);padding:30px 0}
+  .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+  .unc-box summary{cursor:pointer;font-weight:700;font-size:14.5px}
+  .unc-note{font-size:13px;color:var(--sub);margin-top:8px;line-height:1.6}
+  .unc-list{columns:3;font-size:13px;margin-top:10px;list-style:none}
+  @media (max-width:760px){ .unc-list{columns:2} }
+  .unc-list li{padding:2px 0;break-inside:avoid;scroll-margin-top:90px}
+  .unc-list li:target{background:var(--accent-soft);border-radius:4px}
+  .unc-list .uid{color:var(--sub);font-size:11.5px}
+  .band-nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px}
+  .band-nav a{padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--sub);font-size:13.5px;font-weight:700;text-decoration:none}
+  .band-nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .band-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:16px}
+  .band-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 16px;text-decoration:none;color:var(--text)}
+  .band-card b{display:block;font-size:17px;font-weight:800}
+  .band-card span{font-size:13px;color:var(--sub)}
+  .qlist{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+  .qrow{background:var(--card);border:1px solid var(--line);border-radius:12px;scroll-margin-top:90px}
+  .qrow:target{outline:2px solid var(--accent);outline-offset:1px}
+  .qdet summary{list-style:none}
+  .qdet summary::-webkit-details-marker{display:none}
+  .qsum{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;flex-wrap:wrap}
+  .qvis{display:inline-flex;flex:none}
+  .qvis img{width:48px;height:48px;object-fit:contain;image-rendering:pixelated}
+  .qvis.fallback{width:48px;height:48px;align-items:center;justify-content:center;font-size:24px;background:var(--slot);border-radius:8px}
+  .qarrow{color:var(--sub);font-size:14px;flex:none}
+  .qmain{flex:1;min-width:200px}
+  .qname{font-size:16px;font-weight:800;line-height:1.35}
+  .qmain .en{font-size:12.5px;color:var(--sub);margin-left:7px}
+  .qmeta{display:block;font-size:12.5px;color:var(--sub);margin-top:1px}
+  .qmeta .rep{color:var(--accent-dark);font-weight:700}
+  .qrew{font-size:12.5px;color:var(--accent-dark);font-weight:700;flex:none}
+  .qbody{border-top:1px dashed var(--line);padding:12px 16px 14px}
+  .ph{margin-bottom:12px}
+  .ph h4{font-size:13.5px;font-weight:800;color:var(--accent-dark);margin-bottom:6px}
+  .steps{list-style:none;display:flex;flex-direction:column;gap:5px}
+  .step{display:flex;gap:8px;align-items:flex-start;font-size:14px;line-height:1.55}
+  .snum{flex:none;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;margin-top:3px}
+  .skind{flex:none;font-size:11px;font-weight:700;background:var(--slot);border-radius:4px;padding:2px 6px;color:var(--sub);margin-top:2px;white-space:nowrap}
+  .sbody{flex:1}
+  .npc-ref{display:inline-flex;align-items:center;gap:5px;color:var(--accent-dark);text-decoration:none;font-weight:600}
+  .npc-ref.unknown{color:var(--sub)}
+  .npc-ref .dot,.mchip .dot{width:28px;height:28px;object-fit:contain;image-rendering:pixelated;vertical-align:-8px}
+  .slots{display:flex;flex-wrap:wrap;gap:6px}
+  .slot{display:inline-flex;align-items:center;gap:6px;background:#241B12;color:#F3E9D2;border-radius:8px;padding:5px 10px;font-size:13px;font-weight:600}
+  .slot img{width:34px;height:34px;object-fit:contain;image-rendering:pixelated}
+  .slot .cnt{color:#FFC94D}
+  .slot.exp{background:#17301F;color:#BFE8C9}
+  .slot.meso{background:#3A2E08;color:#FFE08A}
+  .mchip{display:inline-flex;align-items:center;gap:5px;background:var(--slot);border-radius:6px;padding:3px 8px;color:var(--text);text-decoration:none;font-size:13.5px}
+  .qdesc{font-size:13.5px;color:var(--sub);line-height:1.65}
+  .cap{font-size:12px;color:var(--unknown);line-height:1.6}
+  .qtag.unknown{background:var(--slot);color:var(--sub)}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--slot:#26292F;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/" class="on">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+
+  <div class="intro">
+    <h1>퀘스트 <span>도감</span></h1>
+    <div class="tag">퀘스트 3412건의 시작·완료 조건과 보상을 한눈에</div>
+    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 내용은 다를 수 있어요. 페이지가 무거워지지 않게 레벨 구간별로 나눠 두었어요.</div>
+  </div>
+  <div class="seg" role="tablist" aria-label="도감 전환">
+    <a href="/npcs/" role="tab" aria-selected="false">NPC</a><a class="seg-on" href="/quests/" role="tab" aria-selected="true">퀘스트</a>
+  </div>
+  <div class="band-grid">
+<a class="band-card" href="/quests/lv-1-10.html"><b>Lv.1~10</b><span>퀘스트 461건</span></a><a class="band-card" href="/quests/lv-11-30.html"><b>Lv.11~30</b><span>퀘스트 827건</span></a><a class="band-card" href="/quests/lv-31-50.html"><b>Lv.31~50</b><span>퀘스트 392건</span></a><a class="band-card" href="/quests/lv-51-70.html"><b>Lv.51~70</b><span>퀘스트 415건</span></a><a class="band-card" href="/quests/lv-71-100.html"><b>Lv.71~100</b><span>퀘스트 331건</span></a><a class="band-card" href="/quests/lv-101.html"><b>Lv.101~</b><span>퀘스트 292건</span></a><a class="band-card" href="/quests/lv-none.html"><b>레벨 조건 없음</b><span>퀘스트 694건</span></a>
+  </div>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    페이지 갱신일: 2026-10-16
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=1" defer></script>
+</body>
+</html>
