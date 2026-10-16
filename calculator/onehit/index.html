@@ -51,7 +51,10 @@
   .mob-item img{width:40px;height:40px;object-fit:contain;image-rendering:pixelated}
   .mob-item .nm{font-weight:700;font-size:15px}
   .mob-item .meta{font-size:12.5px;color:var(--sub)}
-  .selected{display:none;align-items:center;gap:12px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:10px 14px;margin-top:10px}
+  .selected{display:none;align-items:center;gap:12px;flex-wrap:wrap;background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:10px 14px;margin-top:10px}
+  .selected .nm{word-break:keep-all}
+  .mob-item .nm{word-break:keep-all}
+  .mob-item .meta{word-break:keep-all}
   .selected.show{display:flex}
   .selected img{width:48px;height:48px;object-fit:contain;image-rendering:pixelated}
   .selected .nm{font-weight:800;font-size:16.5px}
@@ -131,6 +134,7 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
       dmgMin = document.getElementById('dmgMin'), dmgMax = document.getElementById('dmgMax'),
       err = document.getElementById('calcErr'), result = document.getElementById('calcResult');
   function fmt(n) { return n.toLocaleString('ko-KR'); }
+  document.addEventListener('error', function (e) { if (e.target && e.target.tagName === 'IMG') e.target.style.visibility = 'hidden'; }, true);
   function icon(id) { return 'https://maplestory.io/api/GMS/95/mob/' + id + '/icon'; }
   function renderList() {
     var q = norm(search.value);
@@ -138,7 +142,7 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
     var hits = MOBS.filter(function (m) { return norm(m.name).indexOf(q) >= 0 || norm(m.nameEn).indexOf(q) >= 0; }).slice(0, 12);
     if (!hits.length) { results.innerHTML = '<div style="padding:10px 12px;font-size:14px;color:var(--sub)">찾는 몬스터가 없어요. HP를 직접 입력해도 계산할 수 있습니다.</div>'; results.classList.add('open'); return; }
     results.innerHTML = hits.map(function (m) {
-      return '<button type="button" class="mob-item" data-id="' + m.id + '"><img src="' + icon(m.id) + '" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + '</span></span></button>';
+      return '<button type="button" class="mob-item" data-id="' + m.id + '"><img src="' + icon(m.id) + '" alt="" loading="lazy"><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + '</span></span></button>';
     }).join('');
     results.classList.add('open');
     Array.prototype.forEach.call(results.querySelectorAll('.mob-item'), function (btn) {
@@ -146,7 +150,7 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
         var m = MOBS.filter(function (x) { return x.id === Number(btn.getAttribute('data-id')); })[0];
         if (!m) return;
         hpInput.value = m.hp;
-        selected.innerHTML = '<img src="' + icon(m.id) + '" alt="" onerror="this.style.visibility='hidden'"><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + ' (본진 GMS 95 기준)</span></span><button type="button" id="mobClear">다시 고르기</button>';
+        selected.innerHTML = '<img src="' + icon(m.id) + '" alt=""><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + ' (본진 GMS 95 기준)</span></span><button type="button" id="mobClear">다시 고르기</button>';
         selected.classList.add('show');
         results.classList.remove('open');
         search.value = m.name;
@@ -158,8 +162,9 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
   document.getElementById('calcBtn').addEventListener('click', function () {
     var hp = Number(hpInput.value), a = Number(dmgMin.value), b = Number(dmgMax.value);
     function fail(msg) { err.textContent = msg; err.style.display = 'block'; result.classList.remove('show'); }
-    if (!(hp > 0)) return fail('몬스터 HP를 입력해 주세요.');
-    if (!(a > 0) || !(b > 0)) return fail('1회 총피해의 최소와 최대를 모두 입력해 주세요.');
+    function valid(v) { return Number.isSafeInteger(v) && v > 0; }
+    if (!valid(hp)) return fail('몬스터 HP는 1 이상의 정수로 입력해 주세요. (비어 있거나 소수·0·음수는 계산할 수 없어요)');
+    if (!valid(a) || !valid(b)) return fail('1회 총피해의 최소와 최대는 1 이상의 정수로 입력해 주세요. (소수·0·음수는 계산할 수 없어요)');
     if (b < a) return fail('최대 피해가 최소 피해보다 작아요. 두 값을 바꿔서 확인해 주세요.');
     err.style.display = 'none';
     var best = Math.ceil(hp / b), worst = Math.ceil(hp / a);
