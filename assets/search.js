@@ -83,6 +83,7 @@
       var main = r.name_ko_candidate || r.name_original || ('#' + r.id);
       var sub = r.name_ko_candidate ? (r.name_original || '') : '';
       html += '<a class="sb-item' + (i === sel ? ' sel' : '') + '" role="option" data-i="' + i + '" href="' + esc(r.href) + '">' +
+        (r.icon ? '<img class="sb-icon" src="' + esc(r.icon) + '" alt="" loading="lazy">' : '') +
         '<span class="sb-badge ' + r.type + '">' + (TYPE_KO[r.type] || r.type) + '</span>' +
         '<span class="sb-nm">' + esc(main) + '</span>' +
         (sub ? '<span class="sb-en">' + esc(sub) + '</span>' : '') +
@@ -120,4 +121,8 @@
   document.addEventListener('click', function (e) {
     if (!box.contains(e.target) && e.target !== input) close();
   });
+  document.addEventListener('error', function (e) {
+    var t = e.target;
+    if (t && t.classList && t.classList.contains('sb-icon')) t.style.display = 'none';
+  }, true);
 })();
