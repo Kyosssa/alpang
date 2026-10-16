@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한방컷 계산기 — 몬스터 HP별 N방컷 예상 범위 | 알팡지지</title>
+<meta name="description" content="몬스터 HP와 내가 실제로 때려본 스킬 1회 총피해(최소~최대)를 넣으면 몇 방에 잡을 수 있는지의 예상 범위를 계산합니다. 관측 피해 기준이며, 미검증 공식으로 자동 계산하지 않습니다.">
+<link rel="canonical" href="https://alpang.gg/calculator/onehit/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="한방컷 계산기 — 몬스터 HP별 N방컷 예상 범위 | 알팡지지">
+<meta property="og:description" content="몬스터 HP와 내가 실제로 때려본 스킬 1회 총피해(최소~최대)를 넣으면 몇 방에 잡을 수 있는지의 예상 범위를 계산합니다. 관측 피해 기준이며, 미검증 공식으로 자동 계산하지 않습니다.">
+<meta property="og:url" content="https://alpang.gg/calculator/onehit/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disclaimer{font-size:13.5px;color:var(--sub);text-align:center;margin-top:8px;line-height:1.65}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:17px;font-weight:800;margin-bottom:10px}
+  .mode-badge{display:inline-block;font-size:12px;font-weight:800;color:#7A3E00;background:#FFE7C7;border-radius:5px;padding:2px 8px;vertical-align:2px;margin-left:8px}
+  label.fl{display:block;font-size:13.5px;font-weight:700;color:var(--sub);margin:12px 0 5px}
+  input[type=text],input[type=number]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-size:15.5px;outline:none}
+  input:focus{border-color:var(--accent)}
+  .mob-results{margin-top:8px;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:none}
+  .mob-results.open{display:block}
+  .mob-item{display:flex;align-items:center;gap:10px;width:100%;padding:8px 12px;background:var(--card);border:none;border-bottom:1px solid var(--line);cursor:pointer;text-align:left;color:var(--text)}
+  .mob-item:last-child{border-bottom:none}
+  .mob-item:hover{background:var(--accent-soft)}
+  .mob-item img{width:40px;height:40px;object-fit:contain;image-rendering:pixelated}
+  .mob-item .nm{font-weight:700;font-size:15px}
+  .mob-item .meta{font-size:12.5px;color:var(--sub)}
+  .selected{display:none;align-items:center;gap:12px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:10px 14px;margin-top:10px}
+  .selected.show{display:flex}
+  .selected img{width:48px;height:48px;object-fit:contain;image-rendering:pixelated}
+  .selected .nm{font-weight:800;font-size:16.5px}
+  .selected .meta{font-size:13px;color:var(--sub)}
+  .selected button{margin-left:auto;background:none;border:1px solid var(--line);border-radius:8px;padding:5px 10px;cursor:pointer;color:var(--sub);font-size:13px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:560px){ .grid2{grid-template-columns:1fr} }
+  .calc-btn{width:100%;margin-top:16px;padding:13px;border:none;border-radius:11px;background:var(--accent);color:#fff;font-size:16.5px;font-weight:800;cursor:pointer}
+  .result{display:none;margin-top:16px;border-top:1px dashed var(--line);padding-top:14px}
+  .result.show{display:block}
+  .result .big{font-size:19px;font-weight:800;line-height:1.5}
+  .result .big b{color:var(--accent-dark)}
+  .result p{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.65}
+  .err{color:#C0392B;font-size:13.5px;margin-top:8px;display:none}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] section.card{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .mode-badge{background:#3A2A10;color:#FFC94D}
+  [data-theme="dark"] .result .big b{color:#FF9E57}
+  [data-theme="dark"] .err{color:#FF9B9B}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/status/">현황판</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="intro">
+    <h1>한방컷 <span>계산기</span></h1>
+    <div class="tag">몬스터 HP와 내 스킬 1회 총피해로 계산하는 N방컷 예상 범위</div>
+    <div class="disclaimer">이 계산기는 미검증 공식으로 자동 계산하지 않아요. 직접 때려보고 확인한 피해 범위를 넣으면, 그 관측값 기준의 예상 범위만 계산합니다.<br>몬스터 HP는 본진 메이플스토리 GMS 95 기준 수집값이며 실제 알팡서버와 다를 수 있어요.</div>
+  </div>
+  <main>
+  <section class="card">
+    <h2>1. 몬스터 고르기</h2>
+    <input type="text" id="mobSearch" placeholder="몬스터 이름 검색 (예: 주황버섯, 달팽이)" autocomplete="off" aria-label="몬스터 검색">
+    <div class="mob-results" id="mobResults" role="listbox"></div>
+    <div class="selected" id="mobSelected"></div>
+    <label class="fl" for="hpInput">몬스터 HP (몬스터를 고르면 자동 입력, 직접 바꿀 수도 있어요)</label>
+    <input type="number" id="hpInput" min="1" inputmode="numeric" placeholder="예: 300">
+  </section>
+  <section class="card">
+    <h2>2. 내 스킬 1회 총피해 입력<span class="mode-badge">관측 피해 기준</span></h2>
+    <div class="grid2">
+      <div><label class="fl" for="dmgMin" style="margin-top:0">최소 피해 (제일 약하게 들어간 한 방)</label><input type="number" id="dmgMin" min="1" inputmode="numeric" placeholder="예: 120"></div>
+      <div><label class="fl" for="dmgMax" style="margin-top:0">최대 피해 (제일 세게 들어간 한 방)</label><input type="number" id="dmgMax" min="1" inputmode="numeric" placeholder="예: 210"></div>
+    </div>
+    <p style="font-size:13.5px;color:var(--sub);margin-top:10px">여러 번 때려보고 관측한 1회 총피해의 하한과 상한을 넣으세요. 다단히트 스킬은 한 번 시전의 총합 기준입니다. 크리티컬이 섞인 관측값이면 결과도 크리티컬이 섞인 기준이 됩니다.</p>
+    <button type="button" class="calc-btn" id="calcBtn">몇 방인지 계산하기</button>
+    <p class="err" id="calcErr"></p>
+    <div class="result" id="calcResult"></div>
+  </section>
+  <section class="card">
+    <h2>계산 방식 안내</h2>
+    <p style="font-size:14.5px;line-height:1.75">최선 = ⌈HP ÷ 최대 피해⌉, 최악 상한 = ⌈HP ÷ 최소 피해⌉ 로 계산하는 <b>관측 피해 기준 예상 범위</b>입니다. 매 타격이 명중하고 몬스터가 회복하지 않는다는 전제가 붙고, 실제 전투에서는 빗나감·크리티컬 분포·방어 등으로 달라질 수 있어 도달을 보장하는 값은 아니에요.<br>공식으로 자동 계산하는 '검증된 이론 범위'는 본진 GMS 95 기준 공식 검증이 끝나기 전까지 제공하지 않습니다.</p>
+  </section>
+  </main>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    페이지 갱신일: 2026-10-16
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=1" defer></script>
+<script>
+var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp": 15}, {"id": 100101, "name": "파란 달팽이", "nameEn": "Blue Snail", "lv": 2, "hp": 20}, {"id": 9400551, "name": "Bob", "nameEn": "Bob", "lv": 2, "hp": 777}, {"id": 130101, "name": "빨간 달팽이", "nameEn": "Red Snail", "lv": 5, "hp": 50}, {"id": 150000, "name": "새싹 화분", "nameEn": "Potted Sprout", "lv": 5, "hp": 50}, {"id": 150001, "name": "나팔꽃 화분", "nameEn": "Potted Morning Glory", "lv": 6, "hp": 65}, {"id": 1210102, "name": "주황버섯", "nameEn": "Orange Mushroom", "lv": 6, "hp": 65}, {"id": 210100, "name": "슬라임", "nameEn": "Slime", "lv": 7, "hp": 80}, {"id": 1110100, "name": "초록버섯", "nameEn": "Green Mushroom", "lv": 7, "hp": 80}, {"id": 1210100, "name": "돼지", "nameEn": "Pig", "lv": 7, "hp": 80}, {"id": 9400617, "name": "Strange Pig", "nameEn": "Strange Pig", "lv": 7, "hp": 75}, {"id": 130100, "name": "스텀프", "nameEn": "Stump", "lv": 8, "hp": 95}, {"id": 150002, "name": "포도주스병", "nameEn": "Grape Juice Bottle", "lv": 8, "hp": 110}, {"id": 1120100, "name": "옥토퍼스", "nameEn": "Octopus", "lv": 8, "hp": 95}, {"id": 9400614, "name": "Strange Orange Mushroom", "nameEn": "Strange Orange Mushroom", "lv": 8, "hp": 80}, {"id": 1110101, "name": "다크 스텀프", "nameEn": "Dark Stump", "lv": 10, "hp": 125}, {"id": 1210101, "name": "리본 돼지", "nameEn": "Ribbon Pig", "lv": 10, "hp": 125}, {"id": 9300409, "name": "훈련로봇A", "nameEn": "Training Robot A", "lv": 10, "hp": 125}, {"id": 9400615, "name": "Strange Ribbon Pig", "nameEn": "Strange Ribbon Pig", "lv": 10, "hp": 120}, {"id": 9400620, "name": "Strange Dark Stump", "nameEn": "Strange Dark Stump", "lv": 10, "hp": 250}, {"id": 2300100, "name": "스티지", "nameEn": "Stirge", "lv": 11, "hp": 150}, {"id": 9300410, "name": "훈련로봇B", "nameEn": "Training Robot B", "lv": 11, "hp": 150}, {"id": 9300386, "name": "수련생 스포아", "nameEn": "Trainee Spore", "lv": 12, "hp": 175}, {"id": 9300411, "name": "훈련로봇C", "nameEn": "Training Robot C", "lv": 12, "hp": 525}, {"id": 2110200, "name": "뿔버섯", "nameEn": "Horny Mushroom", "lv": 13, "hp": 200}, {"id": 9300412, "name": "훈련로봇 0", "nameEn": "Training Robot O", "lv": 13, "hp": 180}, {"id": 1150000, "name": "순찰로봇", "nameEn": "Patrol Robot", "lv": 14, "hp": 225}, {"id": 2130100, "name": "다크 엑스텀프", "nameEn": "Dark Axe Stump", "lv": 14, "hp": 225}, {"id": 2230101, "name": "좀비버섯", "nameEn": "Zombie Mushroom", "lv": 15, "hp": 250}, {"id": 9400616, "name": "Strange Green Mushroom", "nameEn": "Strange Green Mushroom", "lv": 15, "hp": 250}, {"id": 9400657, "name": "Strange Green Mushroom", "nameEn": "Strange Green Mushroom", "lv": 15, "hp": 250}, {"id": 1150001, "name": "이상한 이정표", "nameEn": "Strange Sign", "lv": 16, "hp": 275}, {"id": 1150002, "name": "구렁이", "nameEn": "Serpent", "lv": 18, "hp": 325}, {"id": 2130103, "name": "주니어 네키", "nameEn": "Jr. Necki", "lv": 19, "hp": 350}, {"id": 2230102, "name": "와일드보어", "nameEn": "Wild Boar", "lv": 19, "hp": 350}, {"id": 2150000, "name": "물 도둑", "nameEn": "Water Thief Monster", "lv": 20, "hp": 375}, {"id": 2230112, "name": "겁먹은 와일드보어", "nameEn": "Terrified Wild Boar", "lv": 20, "hp": 375}, {"id": 5130101, "name": "스톤골렘", "nameEn": "Stone Golem", "lv": 20, "hp": 375}, {"id": 9001015, "name": "쉐도우 듀어러", "nameEn": "Shadow Dual Blade", "lv": 20, "hp": 375}, {"id": 2150001, "name": "더스트 박스", "nameEn": "Dust Box", "lv": 22, "hp": 435}, {"id": 4230100, "name": "콜드아이", "nameEn": "Cold Eye", "lv": 22, "hp": 435}, {"id": 5130102, "name": "다크 스톤골렘", "nameEn": "Dark Stone Golem", "lv": 23, "hp": 465}, {"id": 9300414, "name": "수상한 도적", "nameEn": "Suspicious Thief", "lv": 23, "hp": 930}, {"id": 2150002, "name": "가로등", "nameEn": "Streetlight", "lv": 25, "hp": 525}, {"id": 9001016, "name": "자이언트 쉐도우", "nameEn": "Giant Shadow Blade", "lv": 25, "hp": 525}, {"id": 9400400, "name": "Genin", "nameEn": "Genin", "lv": 25, "hp": 525}, {"id": 5150000, "name": "믹스골렘", "nameEn": "Mixed Golem", "lv": 26, "hp": 580}, {"id": 9300419, "name": "저택 경비로봇", "nameEn": "Mansion Guard Robot", "lv": 27, "hp": 1300}, {"id": 2150003, "name": "순찰로봇S", "nameEn": "Patrol Robot S", "lv": 28, "hp": 720}, {"id": 2230110, "name": "우드 마스크", "nameEn": "Wooden Mask", "lv": 28, "hp": 720}, {"id": 9001017, "name": "쉐도우 블레이드", "nameEn": "Shadow Blade Lord", "lv": 30, "hp": 900}, {"id": 9300418, "name": "파비오의 파이어봄", "nameEn": "Fabio's Firebomb", "lv": 30, "hp": 1800}, {"id": 9400404, "name": "Ashigaru", "nameEn": "Ashigaru", "lv": 30, "hp": 900}, {"id": 3150000, "name": "안전제일", "nameEn": "Safety First", "lv": 31, "hp": 990}, {"id": 3150001, "name": "아기 바위베어먹기", "nameEn": "Baby Boulder Muncher", "lv": 33, "hp": 1200}, {"id": 3150002, "name": "큰 바위베어먹기", "nameEn": "Big Boulder Muncher", "lv": 35, "hp": 1400}, {"id": 5200000, "name": "주니어 스톤볼", "nameEn": "Jr. Sentinel", "lv": 35, "hp": 1400}, {"id": 3210200, "name": "주니어 샐리온", "nameEn": "Jr. Cellion", "lv": 36, "hp": 1500}, {"id": 3210201, "name": "주니어 라이오너", "nameEn": "Jr. Lioner", "lv": 36, "hp": 1500}, {"id": 3210202, "name": "주니어 그류핀", "nameEn": "Jr. Grupin", "lv": 36, "hp": 1500}, {"id": 3000000, "name": "스톤볼", "nameEn": "Sentinel", "lv": 38, "hp": 1700}, {"id": 3230200, "name": "스타픽시", "nameEn": "Star Pixie", "lv": 38, "hp": 1700}, {"id": 5200001, "name": "아이스 스톤볼", "nameEn": "Ice Sentinel", "lv": 39, "hp": 1800}, {"id": 5200002, "name": "파이어 스톤볼", "nameEn": "Fire Sentinel", "lv": 39, "hp": 1800}, {"id": 4230105, "name": "네펜데스", "nameEn": "Nependeath", "lv": 40, "hp": 1900}, {"id": 4230122, "name": "네펜데스", "nameEn": "Nependeath", "lv": 40, "hp": 1900}, {"id": 5300000, "name": "리티", "nameEn": "Leatty", "lv": 40, "hp": 1900}, {"id": 4230106, "name": "루나픽시", "nameEn": "Lunar Pixie", "lv": 41, "hp": 2000}, {"id": 4130102, "name": "다크 네펜데스", "nameEn": "Dark Nependeath", "lv": 42, "hp": 2100}, {"id": 4130104, "name": "다크 네펜데스", "nameEn": "Dark Nependeath", "lv": 42, "hp": 2100}, {"id": 5300001, "name": "다크 리티", "nameEn": "Dark Leatty", "lv": 42, "hp": 2100}, {"id": 5120000, "name": "러스터픽시", "nameEn": "Luster Pixie", "lv": 43, "hp": 2200}, {"id": 5400000, "name": "주니어 페페", "nameEn": "Jr. Pepe", "lv": 43, "hp": 2200}, {"id": 3110102, "name": "라츠", "nameEn": "Ratz", "lv": 44, "hp": 2300}, {"id": 3210205, "name": "블랙 라츠", "nameEn": "Black Ratz", "lv": 45, "hp": 2400}, {"id": 3210208, "name": "레츠", "nameEn": "Retz", "lv": 46, "hp": 2520}, {"id": 5120001, "name": "샐리온", "nameEn": "Cellion", "lv": 46, "hp": 2520}, {"id": 5120002, "name": "라이오너", "nameEn": "Lioner", "lv": 46, "hp": 2520}, {"id": 5120003, "name": "그류핀", "nameEn": "Grupin", "lv": 46, "hp": 2520}, {"id": 2230103, "name": "트릭스터", "nameEn": "Trixter", "lv": 47, "hp": 2640}, {"id": 2230104, "name": "그린 트릭스터", "nameEn": "Green Trixter", "lv": 48, "hp": 2760}, {"id": 3000005, "name": "브라운테니", "nameEn": "Brown Teddy", "lv": 49, "hp": 2880}, {"id": 3230307, "name": "처프", "nameEn": "Chirppy", "lv": 50, "hp": 3000}, {"id": 4130100, "name": "카파 드레이크", "nameEn": "Copper Drake", "lv": 50, "hp": 3000}, {"id": 6230401, "name": "주니어 루이넬", "nameEn": "Jr. Lucida", "lv": 50, "hp": 3000}, {"id": 9400401, "name": "Chunin", "nameEn": "Chunin", "lv": 50, "hp": 3000}, {"id": 3110101, "name": "핑크테니", "nameEn": "Pink Teddy", "lv": 51, "hp": 3200}, {"id": 3230400, "name": "북치는 토끼", "nameEn": "Drumming Bunny", "lv": 52, "hp": 3400}, {"id": 5130100, "name": "드레이크", "nameEn": "Drake", "lv": 52, "hp": 3400}, {"id": 3210204, "name": "더키 패밀리", "nameEn": "Roloduck", "lv": 53, "hp": 3600}, {"id": 3210203, "name": "팬더테니", "nameEn": "Panda Teddy", "lv": 54, "hp": 3800}, {"id": 3230302, "name": "블록퍼스", "nameEn": "Bloctopus", "lv": 54, "hp": 3800}, {"id": 6130100, "name": "레드 드레이크", "nameEn": "Red Drake", "lv": 54, "hp": 3800}, {"id": 7130000, "name": "루이넬", "nameEn": "Lucida", "lv": 54, "hp": 3800}, {"id": 3210206, "name": "치크세이버", "nameEn": "Helly", "lv": 56, "hp": 4300}, {"id": 6230600, "name": "아이스 드레이크", "nameEn": "Ice Drake", "lv": 56, "hp": 4300}, {"id": 3230303, "name": "핑크세이버", "nameEn": "Propelly", "lv": 57, "hp": 4600}, {"id": 3230305, "name": "장난감 목마", "nameEn": "Toy Trojan", "lv": 57, "hp": 4600}, {"id": 3230103, "name": "킹 블록퍼스", "nameEn": "King Bloctopus", "lv": 58, "hp": 4900}, {"id": 6230601, "name": "다크 드레이크", "nameEn": "Dark Drake", "lv": 58, "hp": 4900}, {"id": 3230304, "name": "스카이세이버", "nameEn": "Planey", "lv": 60, "hp": 5500}, {"id": 6230100, "name": "와일드카고", "nameEn": "Wild Kargo", "lv": 60, "hp": 5500}, {"id": 3230308, "name": "트위터", "nameEn": "Tweeter", "lv": 61, "hp": 5900}, {"id": 4230111, "name": "로보토이", "nameEn": "Robo", "lv": 61, "hp": 5900}, {"id": 7130100, "name": "타우로마시스", "nameEn": "Tauromacis", "lv": 62, "hp": 6300}, {"id": 4230109, "name": "블록골렘", "nameEn": "Block Golem", "lv": 63, "hp": 6700}, {"id": 4230112, "name": "마스터 로보", "nameEn": "Master Robo", "lv": 63, "hp": 6700}, {"id": 7130101, "name": "타우로스피어", "nameEn": "Taurospear", "lv": 64, "hp": 7100}, {"id": 4230110, "name": "킹 블록골렘", "nameEn": "King Block Golem", "lv": 65, "hp": 7500}, {"id": 3210450, "name": "스쿠버 페페", "nameEn": "Scuba Pepe", "lv": 66, "hp": 8000}, {"id": 9500389, "name": "힘센 돌 도깨비", "nameEn": "Strong Stone Goblin", "lv": 66, "hp": 8000}, {"id": 6150000, "name": "경비로봇", "nameEn": "Guard Robot", "lv": 67, "hp": 8500}, {"id": 3210207, "name": "티키", "nameEn": "Tick", "lv": 68, "hp": 9000}, {"id": 4230113, "name": "틱톡", "nameEn": "Tick-Tock", "lv": 70, "hp": 10000}, {"id": 7150000, "name": "라키", "nameEn": "Racoco", "lv": 70, "hp": 10000}, {"id": 7150001, "name": "빅 스파이더", "nameEn": "Big Spider", "lv": 72, "hp": 12000}, {"id": 3230306, "name": "크로노스", "nameEn": "Chronos", "lv": 73, "hp": 13000}, {"id": 4230114, "name": "플래툰 크로노스", "nameEn": "Platoon Chronos", "lv": 74, "hp": 14000}, {"id": 6300100, "name": "[★] 버푼", "nameEn": "Buffoon", "lv": 74, "hp": 14000}, {"id": 7150002, "name": "카트베어", "nameEn": "Cart Bear", "lv": 74, "hp": 14000}, {"id": 4230115, "name": "마스터 크로노스", "nameEn": "Master Chronos", "lv": 75, "hp": 15000}, {"id": 7150003, "name": "라쿤", "nameEn": "Racaroni", "lv": 76, "hp": 17000}, {"id": 7150004, "name": "경비로봇L", "nameEn": "Guard Robot L", "lv": 79, "hp": 23000}, {"id": 9001003, "name": "다크로드의 분신", "nameEn": "Dark Lord's Clone", "lv": 80, "hp": 120000}, {"id": 8105000, "name": "라칸", "nameEn": "Raco", "lv": 82, "hp": 29000}, {"id": 6130200, "name": "[★] 버피", "nameEn": "Buffy", "lv": 95, "hp": 55000}, {"id": 6230400, "name": "[★] 소울테니", "nameEn": "Soul Teddy", "lv": 96, "hp": 57000}, {"id": 6230300, "name": "[★] 레이지 버피", "nameEn": "Lazy Buffy", "lv": 97, "hp": 59000}, {"id": 7130500, "name": "레쉬", "nameEn": "Rash", "lv": 97, "hp": 59000}, {"id": 6230500, "name": "[★] 마스터 소울테니", "nameEn": "Master Soul Teddy", "lv": 98, "hp": 61000}, {"id": 7130002, "name": "비틀", "nameEn": "Beetle", "lv": 99, "hp": 63000}, {"id": 7130600, "name": "호브", "nameEn": "Hobi", "lv": 101, "hp": 67000}, {"id": 8140200, "name": "[★] 클라크", "nameEn": "Klock", "lv": 102, "hp": 69000}, {"id": 7130501, "name": "다크 레쉬", "nameEn": "Dark Rash", "lv": 103, "hp": 71000}, {"id": 8300000, "name": "플라잉 호크", "nameEn": "Soaring Hawk", "lv": 103, "hp": 142000}, {"id": 8300001, "name": "플라잉 이글", "nameEn": "Soaring Eagle", "lv": 103, "hp": 142000}, {"id": 8300002, "name": "플라잉 레드 와이번", "nameEn": "Soaring Red Wyvern", "lv": 104, "hp": 146000}, {"id": 8300003, "name": "플라잉 블루 와이번", "nameEn": "Soaring Blue Wyvern", "lv": 104, "hp": 146000}, {"id": 7130003, "name": "듀얼 비틀", "nameEn": "Dual Beetle", "lv": 105, "hp": 75000}, {"id": 7130601, "name": "핀호브", "nameEn": "Green Hobi", "lv": 105, "hp": 75000}, {"id": 8140300, "name": "[★] 다크 클라크", "nameEn": "Dark Klock", "lv": 105, "hp": 75000}, {"id": 8300004, "name": "플라잉 블랙 와이번", "nameEn": "Soaring Black Wyvern", "lv": 105, "hp": 150000}, {"id": 6400100, "name": "[★] 딥 버푼", "nameEn": "Deep Buffoon", "lv": 106, "hp": 77000}, {"id": 7130004, "name": "헹키", "nameEn": "Hankie", "lv": 107, "hp": 79000}, {"id": 8300006, "name": "드래고니카", "nameEn": "Dragonoir", "lv": 107, "hp": 107000000}, {"id": 8140001, "name": "하프", "nameEn": "Harp", "lv": 109, "hp": 83000}, {"id": 7140000, "name": "[★] 파이렛", "nameEn": "Ghost Pirate", "lv": 110, "hp": 85000}, {"id": 7130010, "name": "[★] 데스테니", "nameEn": "Death Teddy", "lv": 112, "hp": 89000}, {"id": 8140002, "name": "블러드 하프", "nameEn": "Blood Harp", "lv": 112, "hp": 89000}, {"id": 8140110, "name": "버크", "nameEn": "Birk", "lv": 114, "hp": 93000}, {"id": 8140111, "name": "듀얼 버크", "nameEn": "Dual Birk", "lv": 116, "hp": 97000}, {"id": 8140101, "name": "검은 켄타우로스", "nameEn": "Black Kentaurus", "lv": 118, "hp": 101000}, {"id": 8140102, "name": "붉은 켄타우로스", "nameEn": "Red Kentaurus", "lv": 118, "hp": 101000}, {"id": 8140103, "name": "푸른 켄타우로스", "nameEn": "Blue Kentaurus", "lv": 118, "hp": 101000}, {"id": 8141000, "name": "[★] 바이킹", "nameEn": "Spirit Viking", "lv": 119, "hp": 103000}, {"id": 8180000, "name": "마뇽", "nameEn": "Manon", "lv": 120, "hp": 3700000}, {"id": 8180001, "name": "그리프", "nameEn": "Griffey", "lv": 120, "hp": 3700000}, {"id": 8300005, "name": "플라잉 그리프", "nameEn": "Soaring Griffey", "lv": 120, "hp": 3230000}, {"id": 8142000, "name": "[★] 팬텀워치", "nameEn": "Phantom Watch", "lv": 121, "hp": 107000}, {"id": 8160000, "name": "[★] 게이트키퍼", "nameEn": "Gatekeeper", "lv": 126, "hp": 118000}, {"id": 8170000, "name": "[★] 타나토스", "nameEn": "Thanatos", "lv": 126, "hp": 118000}, {"id": 8140700, "name": "블루 드래곤터틀", "nameEn": "Blue Dragon Turtle", "lv": 127, "hp": 120000}, {"id": 8140701, "name": "레드 드래곤터틀", "nameEn": "Red Dragon Turtle", "lv": 128, "hp": 125000}, {"id": 8140702, "name": "리스튼", "nameEn": "Rexton", "lv": 131, "hp": 140000}, {"id": 8140703, "name": "브레스튼", "nameEn": "Brexton", "lv": 133, "hp": 150000}, {"id": 8150300, "name": "레드 와이번", "nameEn": "Red Wyvern", "lv": 134, "hp": 155000}, {"id": 8150200, "name": "그린코니언", "nameEn": "Green Cornian", "lv": 136, "hp": 165000}, {"id": 8150301, "name": "블루 와이번", "nameEn": "Blue Wyvern", "lv": 137, "hp": 170000}, {"id": 8150302, "name": "다크 와이번", "nameEn": "Dark Wyvern", "lv": 141, "hp": 190000}, {"id": 8150201, "name": "다크 코니언", "nameEn": "Dark Cornian", "lv": 142, "hp": 195000}, {"id": 8190000, "name": "뉴트주니어", "nameEn": "Jr. Newtie", "lv": 145, "hp": 210000}, {"id": 8190001, "name": "뉴트주니어", "nameEn": "Jr. Newtie", "lv": 145, "hp": 210000}, {"id": 8190003, "name": "스켈레곤", "nameEn": "Skelegon", "lv": 147, "hp": 220000}, {"id": 8190005, "name": "네스트골렘", "nameEn": "Nest Golem", "lv": 150, "hp": 235000}, {"id": 8190004, "name": "스켈로스", "nameEn": "Skelosaurus", "lv": 153, "hp": 260000}];
+(function () {
+  function norm(s) { return (s || '').normalize('NFKC').toLowerCase().replace(/[^0-9a-z가-힣]/g, ''); }
+  var search = document.getElementById('mobSearch'), results = document.getElementById('mobResults'),
+      selected = document.getElementById('mobSelected'), hpInput = document.getElementById('hpInput'),
+      dmgMin = document.getElementById('dmgMin'), dmgMax = document.getElementById('dmgMax'),
+      err = document.getElementById('calcErr'), result = document.getElementById('calcResult');
+  function fmt(n) { return n.toLocaleString('ko-KR'); }
+  function icon(id) { return 'https://maplestory.io/api/GMS/95/mob/' + id + '/icon'; }
+  function renderList() {
+    var q = norm(search.value);
+    if (!q) { results.classList.remove('open'); results.innerHTML = ''; return; }
+    var hits = MOBS.filter(function (m) { return norm(m.name).indexOf(q) >= 0 || norm(m.nameEn).indexOf(q) >= 0; }).slice(0, 12);
+    if (!hits.length) { results.innerHTML = '<div style="padding:10px 12px;font-size:14px;color:var(--sub)">찾는 몬스터가 없어요. HP를 직접 입력해도 계산할 수 있습니다.</div>'; results.classList.add('open'); return; }
+    results.innerHTML = hits.map(function (m) {
+      return '<button type="button" class="mob-item" data-id="' + m.id + '"><img src="' + icon(m.id) + '" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + '</span></span></button>';
+    }).join('');
+    results.classList.add('open');
+    Array.prototype.forEach.call(results.querySelectorAll('.mob-item'), function (btn) {
+      btn.addEventListener('click', function () {
+        var m = MOBS.filter(function (x) { return x.id === Number(btn.getAttribute('data-id')); })[0];
+        if (!m) return;
+        hpInput.value = m.hp;
+        selected.innerHTML = '<img src="' + icon(m.id) + '" alt="" onerror="this.style.visibility='hidden'"><span><span class="nm">' + m.name + '</span><br><span class="meta">Lv.' + (m.lv != null ? m.lv : '미확인') + ' · HP ' + fmt(m.hp) + ' (본진 GMS 95 기준)</span></span><button type="button" id="mobClear">다시 고르기</button>';
+        selected.classList.add('show');
+        results.classList.remove('open');
+        search.value = m.name;
+        document.getElementById('mobClear').addEventListener('click', function () { selected.classList.remove('show'); selected.innerHTML = ''; search.value = ''; search.focus(); });
+      });
+    });
+  }
+  search.addEventListener('input', renderList);
+  document.getElementById('calcBtn').addEventListener('click', function () {
+    var hp = Number(hpInput.value), a = Number(dmgMin.value), b = Number(dmgMax.value);
+    function fail(msg) { err.textContent = msg; err.style.display = 'block'; result.classList.remove('show'); }
+    if (!(hp > 0)) return fail('몬스터 HP를 입력해 주세요.');
+    if (!(a > 0) || !(b > 0)) return fail('1회 총피해의 최소와 최대를 모두 입력해 주세요.');
+    if (b < a) return fail('최대 피해가 최소 피해보다 작아요. 두 값을 바꿔서 확인해 주세요.');
+    err.style.display = 'none';
+    var best = Math.ceil(hp / b), worst = Math.ceil(hp / a);
+    var line = best === worst
+      ? '관측한 피해 범위 안에서는 항상 <b>' + best + '방</b>에 잡을 수 있어요.'
+      : '관측한 피해 기준 <b>' + best + '방 ~ ' + worst + '방</b> 사이에서 잡을 수 있어요.';
+    if (best === 1) line = '관측한 최대 피해 기준 <b>한 방(1방)</b>에 잡을 수 있어요. 최소 피해 기준으로는 <b>' + worst + '방</b>까지 걸릴 수 있어요.';
+    result.innerHTML = '<p class="big">' + line + '</p>' +
+      '<p>HP ' + fmt(hp) + ' ÷ 최대 피해 ' + fmt(b) + ' = 최선 ' + best + '방 · HP ' + fmt(hp) + ' ÷ 최소 피해 ' + fmt(a) + ' = 최악 상한 ' + worst + '방<br>' +
+      '이 범위는 입력한 관측 피해가 매번 명중한다는 전제의 예상값입니다. 빗나감·회복·방어가 있으면 실제 방 수는 달라질 수 있어요.</p>';
+    result.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
