@@ -52,6 +52,7 @@
   .npc-card:target{outline:2px solid var(--accent);outline-offset:1px}
   .nc-head{display:flex;gap:12px;align-items:center}
   .sprite{width:64px;height:64px;object-fit:contain;image-rendering:pixelated;flex:none}
+  .sprite-ph{width:64px;height:64px;flex:none;display:inline-flex;align-items:center;justify-content:center;font-size:28px;background:var(--slot);border-radius:8px}
   .nc-title h3{font-size:16.5px;font-weight:800;line-height:1.35}
   .nc-title .en{display:block;font-size:12.5px;color:var(--sub)}
   .unk-badge{font-size:10.5px;font-weight:700;color:var(--unknown);background:var(--slot);border-radius:4px;padding:1px 5px;vertical-align:2px;white-space:nowrap}
@@ -63,6 +64,8 @@
   .rel-label{font-size:12.5px;font-weight:700;color:var(--accent-dark)}
   .qtag{font-size:12px;background:var(--accent-soft);color:var(--accent-dark);border-radius:6px;padding:3px 8px;text-decoration:none}
   .empty{text-align:center;color:var(--sub);padding:30px 0}
+  .more-btn{display:block;margin:16px auto 4px;padding:11px 34px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent-dark);font-size:15px;font-weight:800;cursor:pointer}
+  .more-btn:hover{border-color:var(--accent)}
   .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
   .unc-box summary{cursor:pointer;font-weight:700;font-size:14.5px}
   .unc-note{font-size:13px;color:var(--sub);margin-top:8px;line-height:1.6}
@@ -93,7 +96,10 @@
   .qmain .en{font-size:12.5px;color:var(--sub);margin-left:7px}
   .qmeta{display:block;font-size:12.5px;color:var(--sub);margin-top:1px}
   .qmeta .rep{color:var(--accent-dark);font-weight:700}
-  .qrew{font-size:12.5px;color:var(--accent-dark);font-weight:700;flex:none}
+  .qrew{font-size:12.5px;color:var(--accent-dark);font-weight:700;flex:none;display:inline-flex;align-items:center;gap:6px}
+  .rew-icons{display:inline-flex;align-items:center;gap:3px}
+  .rew-ic{width:24px;height:24px;object-fit:contain;image-rendering:pixelated}
+  .rew-more{font-size:12px}
   .qbody{border-top:1px dashed var(--line);padding:12px 16px 14px}
   .ph{margin-bottom:12px}
   .ph h4{font-size:13.5px;font-weight:800;color:var(--accent-dark);margin-bottom:6px}
@@ -125,6 +131,9 @@
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
 </head>
 <body>
 <div class="wrap">
