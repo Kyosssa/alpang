@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>알팡지지 - 메이플스토리월드 알팡서버 몬스터·아이템·맵 정보 DB</title>
+<meta name="description" content="알팡서버 몬스터·아이템·맵·NPC·퀘스트 정보와 제작진 발언 기록, 빅뱅 변경점을 정리한 정보 DB입니다.">
+<link rel="canonical" href="https://alpang.gg/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="알팡지지 - 메이플스토리월드 알팡서버 몬스터·아이템·맵 정보 DB">
+<meta property="og:description" content="알팡서버 몬스터·아이템·맵·NPC·퀘스트 정보와 제작진 발언 기록, 빅뱅 변경점을 정리한 정보 DB입니다.">
+<meta property="og:url" content="https://alpang.gg/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{
+    --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
+    --sub:#6f6a5e; --accent:#FF7E36; --accent-soft:#FFF1E8; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250; --accent-dark:#C25700;
+    --hero-ink:#123524;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 0 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 16px}
+  /* 상단 GNB — 전체 폭 바 + 안쪽 1280px */
+  .gnb{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  .gnb nav a.on{color:var(--accent-dark)}
+  /* 히어로 — 브라우저 폭 전체(full-bleed) 이미지 배너 (디렉터 제작 완성본, 텍스트 포함) */
+  .site-h1{font-size:26px;font-weight:800;letter-spacing:-0.03em;margin:18px 0 10px;color:var(--text)}
+  .hero{background:#fdfcf9;padding:18px 16px 6px}
+  .banner{position:relative;overflow:hidden;max-width:1120px;margin:0 auto;border-radius:16px;box-shadow:0 2px 10px rgba(30,25,15,.12);touch-action:pan-y}
+  .slides{display:flex;transition:transform .55s ease}
+  .slide{min-width:100%;display:block;text-decoration:none;line-height:0}
+  .slide img{width:100%;height:auto;display:block}
+  .dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:2px}
+  .pause-btn{position:absolute;right:6px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(18,53,36,.35);background:rgba(255,255,255,.65);color:var(--hero-ink);font-size:13px;cursor:pointer;line-height:1}
+  .dots button{width:44px;height:44px;border:none;background:transparent;cursor:pointer;padding:0;position:relative}
+  .dots button::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.85);box-shadow:0 0 4px rgba(0,0,0,.45);transition:width .3s}
+  .dots button.on::after{background:var(--accent);width:22px;border-radius:99px}
+  .badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent-dark);margin-top:14px}
+  .hero-note{text-align:center}
+  /* 통합 검색 안내 바 (검색 기능은 준비 중 — 도감·목록으로 안내) */
+  .searchbar{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .sb-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sb-ic{font-size:19px}
+  .sb-in input{flex:1;min-width:180px;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--text);font-family:inherit}
+  .sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;border:none;cursor:pointer;font-family:inherit;min-height:44px}
+  .sb-note{font-size:13.5px;color:var(--sub);margin-top:9px}
+  .sb-wrap{position:relative;flex:1;min-width:180px;display:flex}
+  .sb-wrap input{flex:1;min-width:0}
+  .sb-results{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:60;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(30,25,15,.14);max-height:420px;overflow-y:auto;display:none;text-align:left}
+  .sb-results.open{display:block}
+  .sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--line)}
+  .sb-item:last-child{border-bottom:none}
+  .sb-item.sel,.sb-item:hover{background:var(--accent-soft)}
+  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent)}
+  .sb-badge.map{background:#7A6A53}
+  .sb-badge.item{background:#4A6FA5}
+  .sb-badge.npc{background:#8A5AA5}
+  .sb-badge.quest{background:#B7791F}
+  .sb-icon{flex:none;width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+  .sb-nm{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-en{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-unv{flex:none;font-size:11px;font-weight:700;color:var(--unknown);background:#f4f1ea;border-radius:4px;padding:2px 6px}
+  .sb-none{padding:14px;font-size:14px;color:var(--sub)}
+  .sb-more{display:block;width:100%;padding:11px;font-size:14px;font-weight:700;color:var(--accent-dark);background:transparent;border:none;border-top:1px solid var(--line);cursor:pointer;font-family:inherit;min-height:44px}
+  /* 카테고리 배너형 카드 (배경 아트 위에 다크 그라데이션 + HTML 텍스트) */
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+  .bcard{position:relative;display:block;height:104px;border-radius:14px;overflow:hidden;text-decoration:none;background:#241B12;box-shadow:0 1px 3px rgba(30,25,15,.08)}
+  .bcard-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
+  .bcard-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,9,14,.90) 0%,rgba(10,9,14,.74) 55%,rgba(10,9,14,.18) 100%)}
+  .bcard-txt{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;padding:12px 14px;max-width:78%}
+  .bcard-txt h3{font-size:16.5px;font-weight:800;color:#FFF7EA;line-height:1.3;display:flex;align-items:center;gap:7px}
+  .bcard-txt p{font-size:13px;color:rgba(255,243,224,.82);margin-top:3px;line-height:1.45}
+  .bcard .soon-badge{flex:none;font-size:10.5px;font-weight:800;color:#110B29;background:#FFC94D;border-radius:4px;padding:2px 6px}
+  .bcard.soon{cursor:default}
+  .bcard.soon .bcard-txt{opacity:.92}
+  a.bcard:hover{outline:2px solid var(--accent);outline-offset:-2px}
+  .bcard.t-timeline{background:#2A1B3D}.bcard.t-faq{background:#17301F}.bcard.t-changes{background:#3A1408}
+  .bcard.t-npcs{background:#2A1B12}.bcard.t-mobs{background:#123524}.bcard.t-maps{background:#14263A}
+  .bcard.t-items{background:#351B72}.bcard.t-guide{background:#20301A}.bcard.t-hunting{background:#2E2A10}
+  .bcard.t-orbis{background:#173A3A}.bcard.t-edel{background:#33231A}.bcard.t-jobs{background:#0E2233}
+  /* 대시보드 2단 */
+  .dash{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+  .dash section{margin-top:0;background:#f5f1ea;padding:18px 16px}
+  .tl-row{display:block;text-decoration:none;color:var(--text);padding:11px 0;border-bottom:1px solid #f0ece3}
+  .tl-row:last-of-type{border-bottom:none}
+  .tl-row .d{font-size:13px;font-weight:800;color:var(--accent-dark)}
+  .tl-row .t{display:block;font-size:15px;font-weight:700;margin-top:2px;line-height:1.5}
+  .tl-row .m{font-size:13.5px;color:var(--sub)}
+  .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:700}
+  .qa{padding:10px 0;border-bottom:1px solid #f0ece3}
+  .qa:first-of-type{padding-top:2px}
+  .qa:last-of-type{border-bottom:none}
+  .qa .q{font-size:15px;font-weight:800}
+  .qa .a{font-size:15px;color:var(--sub);line-height:1.6;margin-top:2px}
+  section{scroll-margin-top:80px;padding:20px 2px 4px;margin-top:16px}
+  section h2{font-size:18px;font-weight:700;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:10px}
+  h2 .em{color:var(--accent)}
+  p{font-size:16px;color:var(--text)}
+  .small{font-size:13.5px;color:var(--sub)}
+  ul{list-style:none}
+  li{font-size:15px;padding:9px 0;border-bottom:1px solid #f0ece3}
+  li:last-child{border-bottom:none}
+  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:8px;white-space:nowrap;vertical-align:2px}
+  .mbadge{font-size:11px;font-weight:800;padding:2px 6px;border-radius:4px;margin-right:6px;white-space:nowrap}
+  .mb-say{background:#ffe9d6;color:#8a3b00} .mb-say2{background:#fdf0d0;color:#7a4a00} .mb-post{background:#e1eefb;color:#17548f} .mb-etc{background:#f4f1ea;color:#6b6250}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;margin-right:7px;vertical-align:2px}
+  .st.ok{background:#e5f2dd;color:var(--ok)}
+  .st.mid{background:#fdf3cd;color:var(--warn)}
+  .st.no{background:#efece5;color:var(--unknown)}
+  .note{font-size:14px;color:var(--sub);margin-top:10px}
+  a{color:var(--accent-dark)}
+  .cta{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:960px){ .cats{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:480px){ .cats{grid-template-columns:1fr} .bcard-txt{max-width:88%} }
+  @media (max-width:860px){ .dash{grid-template-columns:1fr} }
+  @media (max-width:560px){
+    .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px}
+  }
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--ok:#8BD17F;--warn:#EBCB6B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] .hero{background:var(--bg)}
+  [data-theme="dark"] .banner{border:1px solid rgba(255,255,255,0.12);box-shadow:0 12px 32px rgba(0,0,0,0.5)}
+  [data-theme="dark"] .slide img{filter:brightness(0.95) contrast(1.02)}
+  [data-theme="dark"] .searchbar{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .sb-in input{background:#22252B}
+  [data-theme="dark"] .dash section{background:#1E2229}
+  [data-theme="dark"] .tl-row,[data-theme="dark"] .qa,[data-theme="dark"] li{border-bottom-color:var(--line)}
+  [data-theme="dark"] .mb-say{background:#452A12;color:#FFBE82}
+  [data-theme="dark"] .mb-say2{background:#40350F;color:#F0D48C}
+  [data-theme="dark"] .mb-post{background:#17374F;color:#A5CFF5}
+  [data-theme="dark"] .mb-etc{background:#26292F;color:#B9BEC7}
+  [data-theme="dark"] .st.ok{background:#21301B}
+  [data-theme="dark"] .st.mid{background:#362D10}
+  [data-theme="dark"] .st.no{background:#26292F}
+  [data-theme="dark"] .num{background:var(--accent);color:#241203}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
+
+  <div class="hero">
+    <h1 class="site-h1">알팡지지 — 메이플스토리월드 알팡서버 정보 DB</h1>
+<div class="banner" id="banner">
+      <div class="slides" id="slides">
+        <a class="slide" href="/timeline/"><img src="/assets/hero-1.webp" alt="알팡서버 타임라인" width="1024" height="434" fetchpriority="high"></a>
+        <a class="slide" href="/faq/"><img src="/assets/hero-2.webp" alt="알팡서버 Q&A" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/mobs/"><img src="/assets/hero-4.webp" alt="몬스터 도감" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/items/"><img src="/assets/hero-5.webp" alt="아이템 사전" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/npcs/"><img src="/assets/hero-6.webp" alt="NPC·퀘스트 도감" width="1584" height="672" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/timeline/"><img src="/assets/hero-3.webp" alt="홈페이지 업데이트 중" width="1024" height="434" loading="lazy" decoding="async"></a>
+      </div>
+      <div class="dots" id="dots"></div>
+      <button class="pause-btn" id="pauseBtn" aria-label="배너 자동 전환 정지">⏸</button>
+    </div>
+  </div>
+
+<div class="wrap">
+  <div class="hero-note"><span class="badge">메이플스토리월드 알팡서버 정보 DB · 오픈 준비 중</span></div>
+
+  <div class="searchbar">
+    <div class="sb-in">
+      <span class="sb-ic">🔍</span>
+      <div class="sb-wrap">
+        <input type="text" id="alpangSearch" placeholder="몬스터·맵·아이템·NPC·퀘스트 통합 검색" aria-label="통합 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
+        <div class="sb-results" id="sbResults" role="listbox"></div>
+      </div>
+      <button type="button" class="sb-btn" id="sbGo">검색</button>
+    </div>
+    <p class="sb-note">한글·영문 이름으로 몬스터 175종, 맵 402곳, 아이템 14,577개, NPC 1,836명, 퀘스트 3,412건을 한 번에 검색할 수 있어요. 한글 이름은 표시명 후보입니다.</p>
+  </div>
+
+  <nav class="cats">
+    <a class="bcard t-timeline" href="/timeline/" aria-label="알팡 타임라인"><img class="bcard-img" src="/assets/card-timeline.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p></span></a>
+    <a class="bcard t-faq" href="/faq/" aria-label="확인된 발언 FAQ"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p></span></a>
+    <a class="bcard t-changes" href="#changes" aria-label="본진 빅뱅 변경점"><img class="bcard-img" src="/assets/card-bigbang.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>본진 빅뱅 변경점</h3><p>메랜 감각으로 가면 헤매는 다섯 가지 변화</p></span></a>
+    <a class="bcard t-npcs" href="/npcs/" aria-label="NPC·퀘스트 도감"><img class="bcard-img" src="/assets/card-npc.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>NPC·퀘스트 도감</h3><p>NPC 1,836명의 위치·대사와 퀘스트 3,412건의 조건·보상</p></span></a>
+    <a class="bcard t-mobs" href="/mobs/" aria-label="몬스터 도감"><img class="bcard-img" src="/assets/card-mobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p></span></a>
+    <a class="bcard t-maps" href="/maps/" aria-label="맵 탐색"><img class="bcard-img" src="/assets/card-maps.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p></span></a>
+    <a class="bcard t-items" href="/items/" aria-label="아이템 목록"><img class="bcard-img" src="/assets/card-items.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p></span></a>
+    <div class="bcard t-jobs soon" aria-label="직업·스킬 도감 준비 중"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>직업·스킬 도감 <span class="soon-badge">준비 중</span></h3><p>직업 90개와 스킬 610개, 전직 조건부터 정리 중</p></span></div>
+    <div class="bcard t-guide soon" aria-label="스타트 가이드 준비 중"><img class="bcard-img" src="/assets/card-guide.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>스타트 가이드 <span class="soon-badge">준비 중</span></h3><p>직업 고르기부터 초반 사냥 동선까지 오픈 준비</p></span></div>
+    <a class="bcard t-hunting" href="/guide/hunting/" aria-label="초반 사냥터 후보"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p></span></a>
+    <a class="bcard t-orbis" href="/guide/orbis-leafre/" aria-label="오르비스와 리프레 구경"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p></span></a>
+    <a class="bcard t-edel" href="/guide/edelstein/" aria-label="에델슈타인 엿보기"><img class="bcard-img" src="/assets/card-edelstein.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p></span></a>
+
+  </nav>
+
+  <div class="dash">
+    <section>
+      <h2>알팡 타임라인 <span class="em">최신 기록</span></h2>
+      <a class="tl-row" href="/timeline/">
+        <span class="d">2026.09.26</span>
+        <span class="t">알팡서버 개발 상황 최초 공개합니다</span>
+        <span class="m"><span class="mbadge mb-say">제작진 직접 발언</span>알티 · 유튜브 · 발언 14건 정리</span>
+      </a>
+      <a class="tl-row" href="/timeline/">
+        <span class="d">2026.09.22</span>
+        <span class="t">팡이요 알팡서버 소통 메이플</span>
+        <span class="m"><span class="mbadge mb-say2">제작진 직접 발언 (2차 출처 대조)</span>팡이요 · SOOP 다시보기 · 발언 7건 정리</span>
+      </a>
+      <a class="tl-row" href="/timeline/">
+        <span class="d">2026.09.21</span>
+        <span class="t">9/22 (화) 오후7시 방송 !!</span>
+        <span class="m"><span class="mbadge mb-post">제작진 직접 게시글</span>알티 · SOOP 방송국 게시판 · 발언 3건 정리</span>
+      </a>
+      <a class="more" href="/timeline/">타임라인 전체 기록 보기</a>
+    </section>
+    <section>
+      <h2>핵심 <span class="em">Q&amp;A</span> 요약</h2>
+      <div class="qa"><div class="q"><span class="num">1</span>오픈 일정은?</div><div class="a">아직 약속된 일정은 없어요. 일정은 클로즈베타 직전에 공개하겠다고 밝혔어요.</div></div>
+      <div class="qa"><div class="q"><span class="num">6</span>서버 리셋은?</div><div class="a">하드 리셋은 하지 않겠다고 명언했어요. 소프트 리셋은 구상 단계로, 확정은 아니에요.</div></div>
+      <div class="qa"><div class="q">경험치 배율은?</div><div class="a">확정된 배율 발언은 없어요. "1배율도 빠르다"는 취지의 설명만 확인됐어요.</div></div>
+      <div class="qa"><div class="q"><span class="num">7</span>후원 혜택은?</div><div class="a">후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.</div></div>
+      <a class="more" href="/faq/">발언 원문으로 확인하기</a>
+    </section>
+  </div>
+
+  <main>
+  <section>
+    <h2>알팡서버, <span class="em">지금 알려진 것</span></h2>
+    <ul>
+      <li><span class="st ok">발언 확인</span>메이플스토리 유명 스트리머 <b>팡이요</b>와 <b>알티</b>가 합작해 준비 중인 메이플스토리 월드 신규 월드 <span class="small">(제작진 게시글·방송 발언 원문 확인 — <a href="/timeline/">타임라인</a> 참조)</span></li>
+      <li><span class="st ok">발언 확인</span>'알팡서버'는 가제이며, 정식 이름은 공개 시점에 발표 예정 <span class="small">(팡이요 게시판 공지·알티 방송 발언 원문 확인)</span></li>
+      <li><span class="st ok">발언 확인</span>메이플스토리 <b>빅뱅 후</b> 버전의 옛날 메이플을 지향 <span class="small">(알티 방송 발언 원문 확인)</span></li>
+      <li><span class="st no">미확인</span>정식 명칭 — 공식 원문 미확인</li>
+      <li><span class="st no">미확인</span>오픈 일정 — 공식 일정 공지 미확인</li>
+      <li><span class="st no">미확인</span>구현 콘텐츠 범위(직업·지역·보스) — 공식 안내 미확인</li>
+    </ul>
+    <p class="note">이 사이트는 정보마다 확인 상태를 표시합니다. '커뮤니티 전언'은 방송·커뮤니티에서 회자되는 내용으로, 공식 확정 공지와 다를 수 있어 항목마다 출처 확보 상태를 함께 적습니다. 오픈 일정·구현 범위처럼 단정하면 오해를 부르는 정보는 공식 근거를 확보하기 전까지 싣지 않습니다.</p>
+  </section>
+
+  <section id="changes">
+    <h2>메랜 유저가 알아야 할 <span class="em">본진 빅뱅 변경점</span></h2>
+    <p class="small" style="margin-bottom:8px">본진 메이플스토리 빅뱅~카오스 패치 기준 정리입니다. 알팡서버의 실제 구현과 다를 수 있으며, 오픈 후 실서버 기준으로 검증해 갱신합니다.</p>
+    <ul>
+      <li><b>성장 속도</b> — 경험치 요구량이 대폭 줄어 레벨업이 훨씬 빨라짐</li>
+      <li><b>전투 공식</b> — 명중·회피 등 전투 공식이 변경됨. 스탯 배분은 알팡의 공식과 장비 조건이 확인되는 대로 안내</li>
+      <li><b>빅토리아 아일랜드 지형 대개편</b> — 마을 구조와 이동 동선이 통째로 바뀜. 메랜 감각으로 길 찾으면 헤매는 구간</li>
+      <li><b>직업군 확장</b> — 모험가·시그너스·아란·에반·듀얼블레이드에 이어 레지스탕스(배틀메이지·와일드헌터, 이후 메카닉) 등장. 거점 지역 에델슈타인 추가</li>
+      <li><b>스킬 대개편</b> — 기존 직업 스킬 수치와 구성이 크게 바뀜. 메랜식 스킬트리 그대로 쓰면 안 됨</li>
+    </ul>
+    <p class="note">출처: 넥슨 공식 패치 공지 — <a href="https://maplestory.nexon.com/News/Update/140" target="_blank" rel="noopener">빅뱅 업데이트(1.2.101)</a> · <a href="https://maplestory.nexon.com/news/update/147?page=64" target="_blank" rel="noopener">레지스탕스 추가(1.2.105)</a> · <a href="https://maplestory.nexon.com/News/Update/149" target="_blank" rel="noopener">메카닉 추가(1.2.108)</a></p>
+  </section>
+
+  <section>
+    <h2>지금 <span class="em">준비된 데이터</span> 🍁</h2>
+    <p>본진 메이플스토리 빅뱅 직후(GMS 95) 기준으로 맵 402곳·몬스터 175종·아이템 14,577개·NPC 1,836명·퀘스트 3,412건을 수집해 정리했습니다. 몬스터 도감·맵 탐색·아이템 목록·NPC·퀘스트 도감에서 바로 둘러보실 수 있어요.</p>
+    <p class="note">※ 이 데이터는 알팡 실서버 적용 여부가 확인되지 않은 참고 자료입니다. 서버 오픈 후 실측으로 확인해 검증 표시를 붙일 예정입니다.</p>
+  </section>
+
+  <section>
+    <h2>준비 중인 것</h2>
+    <ul>
+      <li>직업·스킬 요약과 레벨대별 사냥터 가이드</li>
+      <li>전직·선행 퀘스트 준비물 체크리스트</li>
+      <li>오픈 후 실서버 검증 — 본진 데이터와 다른 항목을 표시해 드립니다</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>소식은 여기서 가장 먼저</h2>
+    <p>알팡서버를 포함한 메이플스토리 월드 소식을 매일 정리하는 텔레그램 채널에서 새 소식을 전합니다.</p>
+    <a class="cta" href="https://t.me/alpang_gg" target="_blank" rel="noopener">📣 알팡지지 텔레그램 채널 구독하기</a>
+  </section>
+  </main>
+
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-16
+  </footer>
+
+</div>
+<script>
+(function(){
+  var slides = document.getElementById('slides');
+  var dotsBox = document.getElementById('dots');
+  var n = slides.children.length, cur = 0, timer = null;
+  for (var i = 0; i < n; i++) {
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', (i+1) + '번 배너');
+    (function(idx){ b.addEventListener('click', function(e){ e.preventDefault(); go(idx); restart(); }); })(i);
+    dotsBox.appendChild(b);
+  }
+  function paint(){ slides.style.transform = 'translateX(' + (-cur*100) + '%)';
+    for (var j = 0; j < n; j++) { dotsBox.children[j].className = (j === cur ? 'on' : '');
+      slides.children[j].tabIndex = (j === cur ? 0 : -1);
+      slides.children[j].setAttribute('aria-hidden', j === cur ? 'false' : 'true'); } }
+  function go(i){ cur = (i + n) % n; paint(); }
+  var paused = false;
+  function restart(){ if (timer) clearInterval(timer); if (!paused) timer = setInterval(function(){ go(cur+1); }, 5000); }
+  var banner = document.getElementById('banner');
+  banner.addEventListener('mouseenter', function(){ if (timer) clearInterval(timer); });
+  banner.addEventListener('mouseleave', restart);
+  banner.addEventListener('focusin', function(){ if (timer) clearInterval(timer); });
+  banner.addEventListener('focusout', restart);
+  var pauseBtn = document.getElementById('pauseBtn');
+  pauseBtn.addEventListener('click', function(e){ e.preventDefault();
+    paused = !paused;
+    pauseBtn.textContent = paused ? '▶' : '⏸';
+    pauseBtn.setAttribute('aria-label', paused ? '배너 자동 전환 재개' : '배너 자동 전환 정지');
+    restart(); });
+  // 터치 스와이프 (2026-10-16): 핸들러는 #banner 컨테이너에 붙인다 — 슬라이드 내부가 HTML 오버레이 구조로 바뀌어도 유지된다.
+  var sx = 0, sy = 0, swiped = false;
+  banner.addEventListener('touchstart', function(e){ var t = e.changedTouches[0]; sx = t.clientX; sy = t.clientY; }, {passive:true});
+  banner.addEventListener('touchend', function(e){
+    var t = e.changedTouches[0];
+    var dx = t.clientX - sx, dy = t.clientY - sy;
+    if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      swiped = true;
+      go(cur + (dx < 0 ? 1 : -1));
+      restart();
+      setTimeout(function(){ swiped = false; }, 350);
+    }
+  }, {passive:true});
+  // 스와이프 직후 슬라이드 링크로 새는 클릭 1회만 차단 (도트·일시정지 버튼은 대상 아님)
+  banner.addEventListener('click', function(e){
+    if (swiped && e.target.closest && e.target.closest('#slides')) { e.preventDefault(); e.stopPropagation(); swiped = false; }
+  }, true);
+  paint(); restart();
+})();
+</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261017-01.json" defer></script>
+<script src="/assets/hit.js?v=2" defer></script>
+</body>
+</html>
