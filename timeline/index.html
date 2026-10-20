@@ -34,6 +34,10 @@
   @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
+  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
+  .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
+  @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)}70%{box-shadow:0 0 0 7px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
+  @media (prefers-reduced-motion: reduce){.live-dot{animation:none}}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
   .intro .stats{font-size:13.5px;color:var(--sub);margin-top:8px}
@@ -116,12 +120,25 @@
   <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/" class="on">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
   <div class="intro">
     <h1>알팡 <span>타임라인</span></h1>
+    <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>새로운 제작진 발언이 확인되면 실시간으로 등록됩니다</p>
     <div class="tag">제작진 채널의 개발 소식·발언 원문 모아보기</div>
-    <div class="stats">기록 9건 · 최근 등록일 2026-10-14</div>
+    <div class="stats">기록 10건 · 최근 등록일 2026-10-20</div>
     <div class="disclaimer">알팡지지가 원문을 정리한 기록입니다. 발언 기록과 출시 확정 정보는 다릅니다.</div>
   </div>
   <main>
 <div class="tl-item">
+    <div class="tl-date"><span class="d">2026.10.19</span><span class="dot"></span></div>
+    <section class="card">
+    <div class="card-top"><div class="thumb-col"><button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="https://www.youtube.com/post/UgkxNwFh0M7TUHySmAvvnQmhNoZ5YPutVZG2"><img src="/assets/thumb-tl-010.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button><a class="src-btn" href="https://www.youtube.com/post/UgkxNwFh0M7TUHySmAvvnQmhNoZ5YPutVZG2" target="_blank" rel="noopener">YouTube에서 원문 보기</a></div><div class="card-main">
+    <div class="meta"><span class="mbadge mb-post">제작진 직접 게시글</span><span class="badge">알티 · YouTube 커뮤니티</span><span class="badge">게시일 2026-10-19</span></div>
+    <h2>안녕하세요, 여러분! 알팡섭 관련 문의가 너무 많이 와서 글 남깁니다</h2>
+    <div class="hl"><div class="hl-t">핵심 요약</div><ul><li>CBT 10~11월 중 진행 예정 — 시작 1주일 전쯤 방송으로 알릴 계획 재확인</li><li>내부 일정보다 조금 늦어지고 있으나 약속 기간 안에는 낼 수 있게 개발 중</li><li>AI 어뷰징 오인으로 대량 정지를 당하는 등 억울한 일이 있었다고 밝힘</li></ul></div>
+    </div></div>
+    <div class="player"></div>
+    <div class="card-foot"><details><summary>▶ 발언 4개 · 근거 보기</summary>
+    <div class="stmt"><span class="st" style="color:#FF7E36">제작진 직접 게시글</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>CBT는 10~11월 중 진행할 예정이며, 시작 1주일 전쯤 방송으로 알리겠다고 했던 계획을 다시 확인함.</p></div><div class="stmt"><span class="st" style="color:#FF7E36">제작진 직접 게시글</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>내부에서 잡았던 일정보다는 조금 늦어지고 있지만, 약속드린 기간 안에는 꼭 낼 수 있도록 개발하고 있다고 밝힘.</p></div><div class="stmt"><span class="st" style="color:#FF7E36">제작진 직접 게시글</span><span class="st" style="color:#2e7d1e">개발 상황 설명</span><p>중간에 AI 어뷰징으로 의심받아 대량 정지를 당하는 등 억울한 일도 많았으나 이겨 내고 개발을 계속하고 있다고 밝힘. 이 이야기는 나중에 방송에서 풀겠다고 덧붙임.</p></div><div class="stmt"><span class="st" style="color:#FF7E36">제작진 직접 게시글</span><span class="st" style="color:#1c5fb8">운영 방침</span><p>얼른 개발을 끝내고 다시 방송을 켜고 싶다며, 조금만 더 기다려 달라고 당부함.</p></div>
+    </details><span class="rev">검토일 2026-10-20</span></div>
+  </section></div><div class="tl-item">
     <div class="tl-date"><span class="d">2026.09.26</span><span class="dot"></span></div>
     <section class="card">
     <div class="card-top"><div class="thumb-col"><button class="thumb" type="button" aria-label="영상 플레이어 열기" data-vid="_bQwgKZYGF4"><img src="/assets/thumb-tl-001.jpg" alt="영상 썸네일" loading="lazy"><span class="play">▶</span></button><a class="src-btn" href="https://www.youtube.com/watch?v=_bQwgKZYGF4" target="_blank" rel="noopener">YouTube에서 원문 보기</a></div><div class="card-main">
