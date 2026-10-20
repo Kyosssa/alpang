@@ -1,0 +1,136 @@
+{
+ "build_id": "alpang-cube-submission-20261020-r4",
+ "canonical": {
+  "file": "cube-data.json",
+  "bytes": 12451540,
+  "sha256": "0bf4dd31f9015a694b08d7941dd7e6b4b2aa31013a977b0e1d3b1e4fd2d27a0f"
+ },
+ "split_files": {
+  "manifest.json": {
+   "bytes": 2063,
+   "sha256": "209cf0226c12e5a787c9e36ddba4754c14bf19824144c89acedd36f128a10e80"
+  },
+  "miracle--귀고리.json": {
+   "bytes": 124496,
+   "sha256": "c9aff19854f56390246a68ccff9f1d9b167ada7bdee771bfeeea6e7a4e507edb"
+  },
+  "miracle--눈장식.json": {
+   "bytes": 124496,
+   "sha256": "ecbd090072af40ae51268d638f54ebf969727fbe52637031c34683f2f4c831b7"
+  },
+  "miracle--망토.json": {
+   "bytes": 124493,
+   "sha256": "a9e58262e607ce60a59f1d82ed7dd65abe063bf90e35eb0f1ece1d93f7667a09"
+  },
+  "miracle--모자.json": {
+   "bytes": 150424,
+   "sha256": "82409287e37af2d06db38eb4883e4423083a01d2a2e1ad96c8f52ed579732e5a"
+  },
+  "miracle--무기.json": {
+   "bytes": 236304,
+   "sha256": "4556efba1c9f2c18b294e7e3d51047a3167414034fd3df69372bf094811889a5"
+  },
+  "miracle--반지.json": {
+   "bytes": 124493,
+   "sha256": "53a57e2c924d7a570e6e533b1274c88ee2971f5a64635050e3d04e1cb997e93c"
+  },
+  "miracle--방패.json": {
+   "bytes": 124493,
+   "sha256": "d352d34de8675cd2a9ed1f5acd2018cd2c1df077c1dbf3734a5d481e04ae4ef0"
+  },
+  "miracle--벨트.json": {
+   "bytes": 124493,
+   "sha256": "f66c932aa2f1fc245905ba211c757afecb6c895981dc74d4b400a70908cfd866"
+  },
+  "miracle--상의.json": {
+   "bytes": 216125,
+   "sha256": "b32910e73d283d2730b852c3bdbc779d650c0513caff7dd0e98bbc2e36466075"
+  },
+  "miracle--신발.json": {
+   "bytes": 180457,
+   "sha256": "4599fd6ab6227c6dd88a451bf2b101ea978c2cfb05205173a83ea08da70af85f"
+  },
+  "miracle--얼굴장식.json": {
+   "bytes": 124499,
+   "sha256": "b1b7337c349fa66935547e9b4720c9e6eae1ef1c94101cd17d6ca96e9d493e9d"
+  },
+  "miracle--장갑.json": {
+   "bytes": 130604,
+   "sha256": "b034c0883282dea2789cd874ab15b2efa3e6b90e92261192900b051652f68d29"
+  },
+  "miracle--펜던트.json": {
+   "bytes": 124496,
+   "sha256": "02cd0b9b992d14c3c36951a03c9a29bfc1deb4a8219ab612669da0a688ed107f"
+  },
+  "miracle--하의.json": {
+   "bytes": 194579,
+   "sha256": "e993e726b1a1a4144b7c33b8a72ee4b98643636ec7af904b13055b35fa943b42"
+  },
+  "miracle--한벌옷.json": {
+   "bytes": 225445,
+   "sha256": "8667b2dc3e6abf2da708b157a3659f57276d6b3398fc76760ff57a51717a4745"
+  },
+  "suspicious--귀고리.json": {
+   "bytes": 326961,
+   "sha256": "406fcf315cb1e09432f67982a0632d3de799ac9d4bb1a85ba45935412cefbd58"
+  },
+  "suspicious--눈장식.json": {
+   "bytes": 326961,
+   "sha256": "6a4dd518185dbc091a40992a864fa3cb85c240c4c4e927ebbf3a498c318ffc33"
+  },
+  "suspicious--망토.json": {
+   "bytes": 317166,
+   "sha256": "aa246ed84ccbdbb9e53256fc58b60508c984892845d8000ffa6b20c9c3c44fe2"
+  },
+  "suspicious--모자.json": {
+   "bytes": 360137,
+   "sha256": "1c8eb720f0c478f05f91a8ff02ed1a7832e65ec57e6c9a6be079b47f11ed4e2f"
+  },
+  "suspicious--무기.json": {
+   "bytes": 465224,
+   "sha256": "cf398b9667dc72f7afc5cc6f7199cba595c1bc9eacb8c448129e9b1daf091bef"
+  },
+  "suspicious--반지.json": {
+   "bytes": 326958,
+   "sha256": "895fc7d4d5113802370c42ca776909de9d31a759c3ffa29e07e423aa31ac3831"
+  },
+  "suspicious--방패.json": {
+   "bytes": 317166,
+   "sha256": "675f4aff59c10f711d70821627c4a213cc72e28a15a052bc5b6f0ad6aba76d1c"
+  },
+  "suspicious--벨트.json": {
+   "bytes": 326958,
+   "sha256": "6f41383e178bec03b9a1aecc7ad91e29c317780bd3866a53be6d8e402380e06b"
+  },
+  "suspicious--상의.json": {
+   "bytes": 404946,
+   "sha256": "c4f978b4414ad79441e97aafe64cff3658c8eae5c80a1ea0530e2c164590c9d7"
+  },
+  "suspicious--신발.json": {
+   "bytes": 369181,
+   "sha256": "a997e66f6cee2f8f25b3cce1fd9515866eb9bd8834867c405a677947335de789"
+  },
+  "suspicious--얼굴장식.json": {
+   "bytes": 326964,
+   "sha256": "07e306af8fdb367d16c11f89c329c21264272e3eb1438b71606bf0c62b6e1325"
+  },
+  "suspicious--장갑.json": {
+   "bytes": 367630,
+   "sha256": "f9b212e21a1db16b8cc12755c8a3cf8212111693a3f8939e49dbc93be4427221"
+  },
+  "suspicious--펜던트.json": {
+   "bytes": 326961,
+   "sha256": "027384ad5edd28b08f0867fd536983c1ea1ecc2f39d7329225092e217312dd93"
+  },
+  "suspicious--하의.json": {
+   "bytes": 379048,
+   "sha256": "a9fee224201b8174e164381611b04040f586ef96f456d3994cc8f34564bf23a6"
+  },
+  "suspicious--한벌옷.json": {
+   "bytes": 419048,
+   "sha256": "47c804b457b8075e9554145ab551c582d32202a6fc182a8218a52cd8c5c1d609"
+  }
+ },
+ "split_total_bytes": 7693269,
+ "split_file_count": 31
+}

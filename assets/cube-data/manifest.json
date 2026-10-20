@@ -1,0 +1,122 @@
+{
+ "miracle--귀고리.json": {
+  "bytes": 124496,
+  "items": 1208
+ },
+ "miracle--눈장식.json": {
+  "bytes": 124496,
+  "items": 1208
+ },
+ "miracle--망토.json": {
+  "bytes": 124493,
+  "items": 1208
+ },
+ "miracle--모자.json": {
+  "bytes": 150424,
+  "items": 1446
+ },
+ "miracle--무기.json": {
+  "bytes": 236304,
+  "items": 2192
+ },
+ "miracle--반지.json": {
+  "bytes": 124493,
+  "items": 1208
+ },
+ "miracle--방패.json": {
+  "bytes": 124493,
+  "items": 1208
+ },
+ "miracle--벨트.json": {
+  "bytes": 124493,
+  "items": 1208
+ },
+ "miracle--상의.json": {
+  "bytes": 216125,
+  "items": 2071
+ },
+ "miracle--신발.json": {
+  "bytes": 180457,
+  "items": 1709
+ },
+ "miracle--얼굴장식.json": {
+  "bytes": 124499,
+  "items": 1208
+ },
+ "miracle--장갑.json": {
+  "bytes": 130604,
+  "items": 1266
+ },
+ "miracle--펜던트.json": {
+  "bytes": 124496,
+  "items": 1208
+ },
+ "miracle--하의.json": {
+  "bytes": 194579,
+  "items": 1861
+ },
+ "miracle--한벌옷.json": {
+  "bytes": 225445,
+  "items": 2158
+ },
+ "suspicious--귀고리.json": {
+  "bytes": 326961,
+  "items": 3000
+ },
+ "suspicious--눈장식.json": {
+  "bytes": 326961,
+  "items": 3000
+ },
+ "suspicious--망토.json": {
+  "bytes": 317166,
+  "items": 2880
+ },
+ "suspicious--모자.json": {
+  "bytes": 360137,
+  "items": 3245
+ },
+ "suspicious--무기.json": {
+  "bytes": 465224,
+  "items": 4340
+ },
+ "suspicious--반지.json": {
+  "bytes": 326958,
+  "items": 3000
+ },
+ "suspicious--방패.json": {
+  "bytes": 317166,
+  "items": 2880
+ },
+ "suspicious--벨트.json": {
+  "bytes": 326958,
+  "items": 3000
+ },
+ "suspicious--상의.json": {
+  "bytes": 404946,
+  "items": 3682
+ },
+ "suspicious--신발.json": {
+  "bytes": 369181,
+  "items": 3356
+ },
+ "suspicious--얼굴장식.json": {
+  "bytes": 326964,
+  "items": 3000
+ },
+ "suspicious--장갑.json": {
+  "bytes": 367630,
+  "items": 3348
+ },
+ "suspicious--펜던트.json": {
+  "bytes": 326961,
+  "items": 3000
+ },
+ "suspicious--하의.json": {
+  "bytes": 379048,
+  "items": 3429
+ },
+ "suspicious--한벌옷.json": {
+  "bytes": 419048,
+  "items": 3810
+ }
+}
