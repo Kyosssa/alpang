@@ -34,6 +34,10 @@
   @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
+  .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
+  .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
+  @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)}70%{box-shadow:0 0 0 7px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
+  @media (prefers-reduced-motion: reduce){.live-dot{animation:none}}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
   .disclaimer{font-size:13.5px;color:var(--sub);text-align:center;margin-top:8px;line-height:1.65}
@@ -141,6 +145,7 @@
 
   <div class="intro">
     <h1>퀘스트 <span>도감</span></h1>
+    <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>퀘스트 정보가 확인되는 대로 실시간으로 등록됩니다</p>
     <div class="tag">Lv.101~ 구간 퀘스트 292건</div>
     <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 내용은 다를 수 있어요.</div>
   </div>
