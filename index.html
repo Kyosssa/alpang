@@ -70,6 +70,8 @@
   .sb-item.sel,.sb-item:hover{background:var(--accent-soft)}
   .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent)}
   .sb-badge.map{background:#7A6A53}
+  .sb-badge.job{background:#2E7D6B}
+  .sb-badge.skill{background:#B0483E}
   .sb-badge.item{background:#4A6FA5}
   .sb-badge.npc{background:#8A5AA5}
   .sb-badge.quest{background:#B7791F}
@@ -204,7 +206,7 @@
     <a class="bcard t-mobs" href="/mobs/" aria-label="몬스터 도감"><img class="bcard-img" src="/assets/card-mobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>몬스터 도감</h3><p>수집한 몬스터 175종의 레벨·HP·출현 맵 한눈에</p></span></a>
     <a class="bcard t-maps" href="/maps/" aria-label="맵 탐색"><img class="bcard-img" src="/assets/card-maps.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>맵 탐색</h3><p>정상 확보한 맵 402곳을 권역별로 둘러보기</p></span></a>
     <a class="bcard t-items" href="/items/" aria-label="아이템 목록"><img class="bcard-img" src="/assets/card-items.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>아이템 목록</h3><p>아이템 14,577개를 분류별로 정리한 목록 후보</p></span></a>
-    <div class="bcard t-jobs soon" aria-label="직업·스킬 도감 준비 중"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>직업·스킬 도감 <span class="soon-badge">준비 중</span></h3><p>직업 90개와 스킬 610개, 전직 조건부터 정리 중</p></span></div>
+    <a class="bcard t-jobs" href="/jobs/" aria-label="직업·스킬 도감"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>직업·스킬 도감</h3><p>직업·전직 단계 90개 · 스킬 610개 · 선행 조건 수록</p></span></a>
     <div class="bcard t-guide soon" aria-label="스타트 가이드 준비 중"><img class="bcard-img" src="/assets/card-guide.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>스타트 가이드 <span class="soon-badge">준비 중</span></h3><p>직업 고르기부터 초반 사냥 동선까지 오픈 준비</p></span></div>
     <a class="bcard t-hunting" href="/guide/hunting/" aria-label="초반 사냥터 후보"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p></span></a>
     <a class="bcard t-orbis" href="/guide/orbis-leafre/" aria-label="오르비스와 리프레 구경"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p></span></a>
@@ -278,7 +280,6 @@
   <section>
     <h2>준비 중인 것</h2>
     <ul>
-      <li>직업·스킬 요약과 레벨대별 사냥터 가이드</li>
       <li>전직·선행 퀘스트 준비물 체크리스트</li>
       <li>오픈 후 실서버 검증 — 본진 데이터와 다른 항목을 표시해 드립니다</li>
     </ul>
@@ -348,7 +349,7 @@
 })();
 </script>
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
-<script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261017-01.json" defer></script>
+<script src="/assets/search.js?v=5" data-index="/assets/alpang-search-20261017-02.json" defer></script>
 <script src="/assets/hit.js?v=2" defer></script>
 </body>
 </html>
