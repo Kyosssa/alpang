@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>큐브값 계산기 — 알팡지지</title>
+<meta name="description" content="큐브 등급업 확률과 목표 잠재옵션 조합이 등장할 확률·기대 시도 횟수를 계산하는 도구. 확률 수치는 공식 공시 기준입니다.">
+<meta property="og:title" content="큐브값 계산기 — 알팡지지">
+<meta property="og:description" content="큐브 등급업 확률표와 잠재옵션 조합 확률 계산기 (유니크 등급까지).">
+<meta property="og:url" content="https://alpang.gg/calculator/cube/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8}
+  [data-theme="dark"]{--bg:#171512;--card:#211e1a;--line:#3a352d;--text:#f0ece4;--sub:#a89f8d;--accent-soft:#33241a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .intro{text-align:center;padding:28px 0 4px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disclaimer{font-size:13.5px;color:var(--sub);text-align:center;margin-top:8px;line-height:1.65}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:17px;font-weight:800;margin-bottom:10px}
+  label.fl{display:block;font-size:13.5px;font-weight:700;color:var(--sub);margin:12px 0 5px}
+  select,input[type=number]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-size:15.5px;outline:none}
+  select:focus,input:focus{border-color:var(--accent)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:720px){.grid3,.grid2{grid-template-columns:1fr}}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:center}
+  th{background:var(--accent-soft);font-weight:800}
+  td.pending{color:var(--sub)}
+  .prep{display:inline-block;font-size:12.5px;font-weight:800;color:#7A3E00;background:#FFE7C7;border-radius:5px;padding:2px 9px}
+  [data-theme="dark"] .prep{color:#FFD9A0;background:#4a3418}
+  .calc-btn{margin-top:16px;width:100%;padding:13px;border:none;border-radius:10px;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
+  .calc-btn:disabled{background:var(--line);color:var(--sub);cursor:not-allowed}
+  .result{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px}
+  .result b{font-size:17px}
+  .note{font-size:13.5px;color:var(--sub);margin-top:10px;line-height:1.65}
+  .theme-toggle{background:none;border:none;cursor:pointer;color:var(--sub);padding:4px}
+  .theme-toggle svg{width:20px;height:20px}
+  [data-theme="dark"] .ic-moon{display:none}
+  [data-theme="light"] .ic-sun{display:none}
+  html:not([data-theme="dark"]) .ic-sun{display:none}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="intro">
+    <h1>큐브값 <span>계산기</span></h1>
+    <div class="tag">큐브 등급업 확률과 목표 잠재옵션 조합의 등장 확률 계산</div>
+    <div class="disclaimer">이 계산기는 일반(잠재 없음)부터 <b>유니크</b> 등급까지만 다룹니다. 확률 수치는 메이플플래닛 공식 공시 기준이며, 공시에 없는 큐브는 확률을 임의로 넣지 않고 '공시 근거 미확보 · 계산 미지원'으로 표시합니다. 표시되는 확률은 공시값을 반올림한 근사치로, 실제 값과 소수점 아래에서 차이가 있을 수 있습니다.</div>
+  </div>
+  <main>
+  <section class="card">
+    <h2>1. 등급업 확률</h2>
+    <table><tr><th>큐브 종류</th><th>레어 → 에픽</th><th>에픽 → 유니크</th></tr>
+<tr><th>미라클 큐브</th><td>6.0%</td><td>1.8%</td></tr>
+<tr><th>수상한 큐브</th><td>6.0%</td><td>1.8%</td></tr>
+<tr><th>장인의 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
+<tr><th>명장의 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
+<tr><th>레드 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
+<tr><th>블랙 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
+</table>
+    <p class="note">등급 상한은 유니크까지입니다. 공시 등급 상승표는 미라클·수상한 공통 표이며, 공시 값이 들어 있는 큐브는 미라클·수상한 2종이며, 장인·명장·레드·블랙은 공시 근거 미확보 · 계산 미지원입니다.</p>
+  </section>
+  <section class="card">
+    <h2>2. 잠재옵션 조합 확률 계산</h2>
+    <div class="grid3">
+      <div><label class="fl" for="cubeSel">큐브 종류</label><select id="cubeSel"><option value="miracle">미라클 큐브</option><option value="suspicious">수상한 큐브</option></select></div>
+      <div><label class="fl" for="partSel">아이템 부위</label><select id="partSel"><option value="무기">무기</option><option value="한벌옷">한벌옷</option><option value="하의">하의</option><option value="상의">상의</option><option value="얼굴장식">얼굴장식</option><option value="눈장식">눈장식</option><option value="귀고리">귀고리</option><option value="펜던트">펜던트</option><option value="벨트">벨트</option><option value="반지">반지</option><option value="모자">모자</option><option value="장갑">장갑</option><option value="신발">신발</option><option value="방패">방패</option><option value="망토">망토</option></select></div>
+      <div><label class="fl" for="gradeSel2">잠재능력 등급</label><select id="gradeSel2"><option value="일반">일반</option><option value="레어">레어</option><option value="에픽">에픽</option><option value="유니크">유니크</option></select></div>
+      <div><label class="fl" for="levelInput">장비 레벨</label><input type="number" id="levelInput" min="0" max="300" step="1" value="120"><p class="note">공시 구간은 0~200이라 201 이상은 해당 풀이 없을 수 있습니다.</p></div>
+    </div>
+    <div class="grid3">
+      <div>
+        <label class="fl" for="lineOpt1">1번째 줄 목표 옵션</label>
+        <select id="lineOpt1"><option value="">(조건을 고르면 채워집니다)</option></select>
+      </div>
+      <div>
+        <label class="fl" for="lineOpt2">2번째 줄 목표 옵션</label>
+        <select id="lineOpt2"><option value="">(조건을 고르면 채워집니다)</option></select>
+      </div>
+      <div>
+        <label class="fl" for="lineOpt3">3번째 줄 목표 옵션</label>
+        <select id="lineOpt3"><option value="">(조건을 고르면 채워집니다)</option></select>
+      </div>
+    </div>
+    <button type="button" class="calc-btn" id="calcBtn">이 조합이 나올 확률 계산하기</button>
+    <div class="result" id="calcResult">조건을 고르면 줄별 옵션 목록이 공시 확률과 함께 채워집니다. 줄마다 목표 옵션을 고른 뒤 계산 버튼을 눌러 주세요.</div>
+    <p class="note">계산 방식: 줄을 순서대로 놓고 조건부로 곱합니다. 특정 옵션군에는 중복 제한(최대 1줄·2줄)이 있어 앞줄에 나온 옵션은 뒷줄에서 제외되고 뒷줄 확률은 남은 풀 기준으로 재계산됩니다. 옵션 풀은 큐브·부위·등급·장비 레벨 구간마다 다릅니다.</p>
+  </section>
+  </main>
+  <footer style="text-align:center;color:var(--sub);font-size:13px;margin-top:26px">
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script>
+(function () {
+  var out = document.getElementById('calcResult');
+  var btn = document.getElementById('calcBtn');
+  var cache = {};
+  var gen = 0;            // 요청 세대 번호 — 오래된 응답을 버린다
+  var loadedKey = null;   // 지금 화면에 채워진 옵션 목록의 조건 키
+  var loadFailed = false; // 로드 실패와 빈 풀을 구분한다
+  function condKey() {
+    return [document.getElementById('cubeSel').value, document.getElementById('partSel').value,
+            document.getElementById('gradeSel2').value, document.getElementById('levelInput').value].join('|');
+  }
+  function rangeOf(item) { var m = String(item.levelRange).split('-'); return [Number(m[0]), Number(m[1])]; }
+  function loadPool(cube, part) {
+    var key = cube + '--' + part;
+    if (cache[key]) return Promise.resolve(cache[key]);
+    return fetch('/assets/cube-data/' + encodeURIComponent(cube) + '--' + encodeURIComponent(part) + '.json')
+      .then(function (r) { if (!r.ok) throw new Error('no file'); return r.json(); })
+      .then(function (j) { cache[key] = j; return j; })
+      .catch(function () { return null; });
+  }
+  function itemsFor(pool, grade, line, level) {
+    var arr = (((pool || {}).grades || {})[grade] || {})[String(line)] || [];
+    return arr.filter(function (it) { var rg = rangeOf(it); return level >= rg[0] && level <= rg[1]; });
+  }
+  function invalidate(msg) {
+    loadedKey = null;
+    for (var l = 1; l <= 3; l++) { var s = document.getElementById('lineOpt' + l); s.innerHTML = '<option value="">(불러오는 중)</option>'; s._items = null; }
+    btn.disabled = true;
+    out.innerHTML = msg;
+  }
+  function refreshOptions() {
+    var myGen = ++gen;
+    var cube = document.getElementById('cubeSel').value;
+    var part = document.getElementById('partSel').value;
+    var grade = document.getElementById('gradeSel2').value;
+    var level = Number(document.getElementById('levelInput').value || 0);
+    if (grade === '일반') {
+      // 일반→레어 구간은 공시 근거가 없어 계산을 차단한다 (기술이사 판정 2026-10-20) — 선택지는 유지
+      loadedKey = condKey(); loadFailed = false;
+      for (var l = 1; l <= 3; l++) { var s0 = document.getElementById('lineOpt' + l); s0.innerHTML = '<option value="">(일반 등급은 계산하지 않습니다)</option>'; s0._items = []; }
+      btn.disabled = true;
+      out.innerHTML = '일반 등급은 잠재능력 공시 근거가 없어 계산하지 않습니다. 레어 등급부터 선택해 주세요.';
+      return;
+    }
+    invalidate('조건에 맞는 옵션 목록을 불러오는 중입니다.');
+    loadPool(cube, part).then(function (pool) {
+      if (myGen !== gen) return; // 늦게 도착한 옛 응답은 버린다
+      loadFailed = !pool;
+      loadedKey = condKey();
+      var anyItems = false;
+      for (var line = 1; line <= 3; line++) {
+        var sel = document.getElementById('lineOpt' + line);
+        var items = pool ? itemsFor(pool, grade, line, level) : [];
+        if (items.length) anyItems = true;
+        sel.innerHTML = '<option value="">(줄 비움 — 조건 없음)</option>' + items.map(function (it, i) {
+          return '<option value="' + i + '">' + it.text + ' (' + (it.probability * 100).toFixed(5) + '%)</option>';
+        }).join('');
+        sel._items = items;
+      }
+      btn.disabled = false;
+      if (!pool) out.innerHTML = '옵션 데이터를 불러오지 못했습니다. 잠시 후 조건을 다시 선택해 주세요.';
+      else if (!anyItems) out.innerHTML = '이 조건(등급 · 레벨)에는 공시 옵션 풀이 없습니다. 다른 조건을 선택해 주세요.';
+      else out.innerHTML = '줄마다 목표 옵션을 고른 뒤 계산 버튼을 눌러 주세요. 줄을 비워 두면 그 줄은 모든 결과를 허용하는 조건으로 계산합니다.';
+    });
+  }
+  function groupOf(it) {
+    // 중복 제한군 4종을 공시 문구 패턴으로 정확히 판정한다
+    if (it.maxLines == null) return null;
+    var t = it.text;
+    if (t.indexOf('<쓸만한') === 0) return '쓸만한 스킬 계열';
+    if (t.indexOf('피격 후 무적시간') === 0) return '피격 후 무적시간 증가';
+    if (/데미지 무시$/.test(t)) return '피격 시 데미지 무시';
+    if (/무적$/.test(t)) return '피격 시 일정 시간 무적';
+    return t;
+  }
+  function reach(p, q) { return Math.ceil(Math.log(1 - q) / Math.log(1 - p)); }
+  btn.addEventListener('click', function () {
+    // 계산 직전 재검사: 조건 키 · 데이터 준비 · 지원 등급 · 레벨 범위 · 선택 인덱스
+    var grade = document.getElementById('gradeSel2').value;
+    var level = Number(document.getElementById('levelInput').value || 0);
+    if (grade === '일반') { out.innerHTML = '일반 등급은 잠재능력 공시 근거가 없어 계산하지 않습니다. 레어 등급부터 선택해 주세요.'; return; }
+    if (loadedKey !== condKey()) { out.innerHTML = '조건이 바뀌어 옵션 목록을 다시 불러오는 중입니다. 잠시 후 다시 눌러 주세요.'; refreshOptions(); return; }
+    if (loadFailed) { out.innerHTML = '옵션 데이터를 불러오지 못해 계산할 수 없습니다. 조건을 다시 선택해 주세요.'; return; }
+    var levelRaw = document.getElementById('levelInput').value;
+    if (levelRaw === '' || !Number.isInteger(level)) { out.innerHTML = '장비 레벨은 정수로 입력해 주세요. 공시 구간은 0~200이라 201 이상은 해당 풀이 없을 수 있습니다.'; return; }
+    if (!(level >= 0 && level <= 300)) { out.innerHTML = '장비 레벨은 0부터 300 사이로 입력해 주세요. 공시 구간은 0~200이라 201 이상은 해당 풀이 없을 수 있습니다.'; return; }
+    var sels = [], anySel = false;
+    for (var l = 1; l <= 3; l++) {
+      var sel = document.getElementById('lineOpt' + l);
+      if (!sel._items) { out.innerHTML = '옵션 목록이 아직 준비되지 않았습니다. 잠시 후 다시 눌러 주세요.'; return; }
+      if (sel.value !== '') {
+        var idx = Number(sel.value);
+        if (!Number.isInteger(idx) || !(idx >= 0 && idx < sel._items.length)) { out.innerHTML = '선택이 현재 옵션 목록과 맞지 않습니다. 줄 선택을 다시 확인해 주세요.'; return; }
+        anySel = true;
+      }
+      sels.push(sel);
+    }
+    if (!anySel) { out.innerHTML = '목표 옵션을 한 줄 이상 골라 주세요. 빈 줄은 모든 결과를 허용하는 조건으로 계산합니다.'; return; }
+    // 정식 해법: 군별 사용 개수를 상태로 추적하고, 빈 줄은 전체 풀을 순회하며 합산한다 (기술이사 보완 2026-10-20)
+    // '조건 없음'은 그 줄이 생기지 않는다는 뜻이 아니라, 그 줄의 모든 결과가 뒤줄 제한 상태를 바꾼다는 뜻이다.
+    var dist = { '': 1 };  // 상태 키(군=개수,...) -> 확률 질량
+    var steps = [];
+    var impossible = null;
+    for (var line = 1; line <= 3; line++) {
+      var sel = sels[line - 1];
+      var items = sel._items;
+      var before = 0; Object.keys(dist).forEach(function (k) { before += dist[k]; });
+      var next = {};
+      function stateOf(key) { var o = {}; if (key) key.split(',').forEach(function (kv) { var p = kv.split('='); o[p[0]] = Number(p[1]); }); return o; }
+      function keyOf(o) { return Object.keys(o).sort().map(function (g) { return g + '=' + o[g]; }).join(','); }
+      function limitOf(g, poolItems) { for (var i = 0; i < poolItems.length; i++) { if (groupOf(poolItems[i]) === g) return Number(poolItems[i].maxLines); } return 0; }
+      Object.keys(dist).forEach(function (key) {
+        var mass = dist[key]; if (!mass) return;
+        var st = stateOf(key);
+        // 이 상태에서 이 줄 풀에서 제외되는 확률 합 (상한 도달 군 전체)
+        var excl = 0;
+        items.forEach(function (cand) { var cg = groupOf(cand); if (cg && st[cg] != null && st[cg] >= limitOf(cg, items)) excl += Number(cand.probability); });
+        var denom = 1 - excl;
+        if (denom <= 0) return; // 분모 0: 이 분기에서는 어떤 결과도 남지 않는다
+        if (sel.value !== '') {
+          var item = items[Number(sel.value)];
+          var g = groupOf(item);
+          if (g && st[g] != null && st[g] >= limitOf(g, items)) return; // 상한 도달 — 이 분기 소멸
+          var ns = stateOf(key); if (g) ns[g] = (ns[g] || 0) + 1;
+          var nk = keyOf(ns);
+          next[nk] = (next[nk] || 0) + mass * (Number(item.probability) / denom);
+        } else {
+          items.forEach(function (cand) {
+            var cg = groupOf(cand);
+            if (cg && st[cg] != null && st[cg] >= limitOf(cg, items)) return; // 제외된 옵션은 등장하지 않는다
+            var ns2 = stateOf(key); if (cg) ns2[cg] = (ns2[cg] || 0) + 1;
+            var nk2 = keyOf(ns2);
+            next[nk2] = (next[nk2] || 0) + mass * (Number(cand.probability) / denom);
+          });
+        }
+      });
+      var after = 0; Object.keys(next).forEach(function (k) { after += next[k]; });
+      if (sel.value !== '') {
+        var chosen = items[Number(sel.value)];
+        steps.push({ line: line, text: chosen.text, marg: before > 0 ? after / before : 0, blank: false });
+        if (after === 0 && !impossible) impossible = { line: line, text: chosen.text };
+      } else {
+        steps.push({ line: line, marg: before > 0 ? after / before : 0, blank: true });
+      }
+      dist = next;
+    }
+    var p = 0; Object.keys(dist).forEach(function (k) { p += dist[k]; });
+    if (impossible || p <= 0) { out.innerHTML = '<b>이 조합은 등장할 수 없습니다.</b><p class="note">중복 제한에 걸려 앞줄에서 이미 상한에 도달한 옵션군은 뒷줄에 다시 나올 수 없습니다.</p>'; return; }
+    if (p >= 1) { out.innerHTML = '<b>선택한 조건으로는 모든 결과가 해당합니다.</b><p class="note">목표 옵션을 한 줄 이상 지정하면 조합 확률을 계산합니다.</p>'; return; }
+    var condTxt = document.getElementById('cubeSel').selectedOptions[0].textContent + ' · ' + document.getElementById('partSel').value + ' · ' + grade + ' · 레벨 ' + level;
+    var tgtTxt = steps.filter(function (u) { return !u.blank; }).map(function (u) { return u.line + '줄 ' + u.text; }).join(' / ');
+    var html = '<b>1회 시도에 이 조합이 등장할 확률: ' + (p * 100).toFixed(4) + '%</b>';
+    html += '<p class="note">계산 당시 조건: ' + condTxt + ' — 목표: ' + tgtTxt + '</p>';
+    html += '<p class="note">줄 순서대로 조건부로 계산했습니다 (' + steps.filter(function (u) { return !u.blank; }).map(function (u) { return u.line + '줄 ' + (u.marg * 100).toFixed(2) + '%'; }).join(' × ') + '). 빈 줄은 전체 결과를 순회해 뒤줄 제한 상태까지 반영했습니다.</p>';
+    html += '<p>기대 시도 횟수(평균): <b>약 ' + (1 / p).toFixed(2) + '회</b> (올림 ' + Math.ceil(1 / p).toLocaleString('ko-KR') + '회)</p>';
+    html += '<p>분위 시행 수 (이 횟수 안에 등장할 확률): 50% → <b>' + reach(p, .5).toLocaleString('ko-KR') + '회</b> · 65% → <b>' + reach(p, .65).toLocaleString('ko-KR') + '회</b> · 90% → <b>' + reach(p, .9).toLocaleString('ko-KR') + '회</b> · 99% → <b>' + reach(p, .99).toLocaleString('ko-KR') + '회</b></p>';
+    html += '<p class="note">기대 횟수는 평균값으로, 그 횟수 안에 반드시 등장한다는 성공 보장 횟수가 아닙니다.</p>';
+    html += '<p class="note">확률 수치는 메이플플래닛 공시 기준이며, 알팡서버 적용 여부는 미확인입니다.</p>';
+    out.innerHTML = html;
+  });
+  ['cubeSel', 'partSel', 'gradeSel2', 'levelInput'].forEach(function (id) {
+    document.getElementById(id).addEventListener('change', refreshOptions);
+  });
+  // 목표 옵션 선택이 바뀌면 결과만 즉시 무효화한다 (선택과 옵션 풀은 보존 — 기술이사 보완 2026-10-20)
+  ['lineOpt1', 'lineOpt2', 'lineOpt3'].forEach(function (id) {
+    document.getElementById(id).addEventListener('change', function () {
+      out.innerHTML = '목표 선택이 바뀌었습니다. 계산 버튼을 다시 눌러 주세요.';
+    });
+  });
+  refreshOptions();
+})();
+</script>
+</body>
+</html>
