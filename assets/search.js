@@ -9,7 +9,7 @@
   if (!input || !box) return;
   var script = document.querySelector('script[data-index]');
   var INDEX_URL = script ? script.getAttribute('data-index') : '/assets/alpang-search.json';
-  var TYPE_KO = { mob: '몬스터', map: '맵', item: '아이템', npc: 'NPC', quest: '퀘스트', job: '직업', skill: '스킬' };
+  var TYPE_KO = { mob: '몬스터', map: '맵', item: '아이템', npc: 'NPC', quest: '퀘스트', job: '직업', skill: '스킬', tool: '도구' };
   var TYPE_W = { mob: 0, map: 1, item: 2, npc: 3, quest: 4, job: 5, skill: 6 };
   var PAGE = 10;
   var records = null, loading = false, shown = [], limit = PAGE, sel = -1;
