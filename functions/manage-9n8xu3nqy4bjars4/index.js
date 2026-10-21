@@ -86,7 +86,91 @@ function gscSection(data, period, days) {
 <p class="sub">일부 검색어는 구글 정책상 표시되지 않습니다.</p></section>`;
 }
 
-async function reportPage(db, env, period, days = 7) {
+
+// [월별 적재 확장 · 2026-10-22 대표 결정] 보관 90일 · 스냅샷 신설 · 삭제 수동.
+// 월 경계는 KST. counters(UTC)는 월별 계산에 쓰지 않는다 (일일 상한 전용 유지).
+const MONTH_RE = /^\d{4}-(0[1-9]|1[0-2])$/;
+const RETENTION_DAYS = 90;
+function monthRangeUnix(m) {
+  const y = Number(m.slice(0, 4)), mo = Number(m.slice(5, 7));
+  const start = Date.UTC(y, mo - 1, 1) / 1000 - 32400;
+  const end = Date.UTC(y, mo, 1) / 1000 - 32400;
+  return [start, end];
+}
+function currentMonthKst() {
+  return new Date(Date.now() + 32400 * 1000).toISOString().slice(0, 7);
+}
+function recentMonths(n) {
+  const out = [];
+  let [y, mo] = currentMonthKst().split('-').map(Number);
+  for (let i = 0; i < n; i++) {
+    out.push(String(y).padStart(4, '0') + '-' + String(mo).padStart(2, '0'));
+    mo -= 1; if (mo === 0) { mo = 12; y -= 1; }
+  }
+  return out;
+}
+async function readMonth(db, m) {
+  const [a, b] = monthRangeUnix(m);
+  const snapMeta = await db.prepare('SELECT MAX(loaded_at) mx FROM monthly_snapshots WHERE month = ?').bind(m).first();
+  if (snapMeta && snapMeta.mx) {
+    const rows = await db.prepare('SELECT path, views FROM monthly_snapshots WHERE month = ? AND loaded_at = ? ORDER BY (path IS NULL) DESC, views DESC').bind(m, snapMeta.mx).all();
+    const list = (rows.results || []);
+    const totalRow = list.find(r => r.path === null);
+    const pages = list.filter(r => r.path !== null).map(r => ({ k: r.path, v: r.views }));
+    return { source: 'snapshot', loadedAt: snapMeta.mx, total: totalRow ? totalRow.views : 0, pages };
+  }
+  const tot = await db.prepare('SELECT COUNT(*) pv FROM hits WHERE ts >= ? AND ts < ?').bind(a, b).first();
+  const pg = await db.prepare('SELECT path k, COUNT(*) v FROM hits WHERE ts >= ? AND ts < ? GROUP BY path ORDER BY v DESC').bind(a, b).all();
+  return { source: 'live', loadedAt: null, total: Number((tot && tot.pv) || 0), pages: (pg.results || []).map(r => ({ k: r.k, v: r.v })) };
+}
+async function loadSnapshot(db, m) {
+  if (!MONTH_RE.test(m)) return { ok: false, error: 'bad_month' };
+  if (m >= currentMonthKst()) return { ok: false, error: 'month_not_closed' };
+  const [a, b] = monthRangeUnix(m);
+  const tot = await db.prepare('SELECT COUNT(*) pv FROM hits WHERE ts >= ? AND ts < ?').bind(a, b).first();
+  const pg = await db.prepare('SELECT path k, COUNT(*) v FROM hits WHERE ts >= ? AND ts < ? GROUP BY path ORDER BY v DESC').bind(a, b).all();
+  const total = Number((tot && tot.pv) || 0);
+  const pages = (pg.results || []).map(r => ({ k: r.k, v: r.v }));
+  const sum = pages.reduce((x, r) => x + r.v, 0);
+  if (sum !== total) return { ok: false, error: 'sum_mismatch', total, sum };
+  const now = Date.now(); // loaded_at은 밀리초 — 같은 초 재적재도 이력 묶음이 갈리게
+  const stmts = [db.prepare('INSERT INTO monthly_snapshots (month, path, views, loaded_at) VALUES (?, NULL, ?, ?)').bind(m, total, now)];
+  for (const r of pages) stmts.push(db.prepare('INSERT INTO monthly_snapshots (month, path, views, loaded_at) VALUES (?, ?, ?, ?)').bind(m, r.k, r.v, now));
+  await db.batch(stmts);
+  return { ok: true, month: m, total, pageCount: pages.length, loadedAt: now };
+}
+async function pruneOld(db) {
+  const cutoff = kstMidnightUnix(0) - RETENTION_DAYS * 86400;
+  const months = await db.prepare("SELECT DISTINCT strftime('%Y-%m', ts + 32400, 'unixepoch') m FROM hits WHERE ts < ?").bind(cutoff).all();
+  const deleted = [], skipped = [];
+  for (const row of (months.results || [])) {
+    const m = row.m;
+    const snap = await db.prepare('SELECT COUNT(*) c FROM monthly_snapshots WHERE month = ?').bind(m).first();
+    if (snap && snap.c > 0) {
+      const [a, b] = monthRangeUnix(m);
+      const res = await db.prepare('DELETE FROM hits WHERE ts >= ? AND ts < ? AND ts < ?').bind(a, b, cutoff).run();
+      deleted.push({ month: m, rows: (res.meta && res.meta.changes) || 0 });
+    } else {
+      skipped.push(m);
+    }
+  }
+  return { ok: true, cutoff, deleted, skippedNoSnapshot: skipped };
+}
+function monthSection(monthData, selected) {
+  if (!monthData) return '';
+  const { source, total, pages, loadedAt } = monthData;
+  const badge = source === 'snapshot'
+    ? '<span class="badge badge-gsc">스냅샷 확정</span>'
+    : '<span class="badge badge-live">실시간 집계</span>';
+  const top = pages.slice(0, 20);
+  const rest = pages.slice(20).reduce((a, r) => a + r.v, 0);
+  const rows = top.map(r => `<tr><td>${esc(r.k)}</td><td class="n">${Number(r.v).toLocaleString('ko-KR')}</td><td class="n">${total > 0 ? (r.v / total * 100).toFixed(1) + '%' : '-'}</td></tr>`).join('')
+    + (rest > 0 ? `<tr><td>상위 20위 밖 합계</td><td class="n">${rest.toLocaleString('ko-KR')}</td><td class="n">${(rest / total * 100).toFixed(1)}%</td></tr>` : '');
+  const note = source === 'snapshot' ? `적재 시각 ${esc(kstText(Math.floor(loadedAt / 1000)))} (KST) · 원시 행이 삭제돼도 이 스냅샷으로 표시가 유지됩니다` : '스냅샷이 없는 달이라 원시 기록 범위 조회로 표시 중입니다';
+  return `<section><div class="panel-head"><h2>월별 조회 — ${esc(selected)}</h2>${badge}</div><p class="sub">월 합계 ${Number(total).toLocaleString('ko-KR')}건 · ${note}</p><table><thead><tr><th>페이지</th><th class="n">조회</th><th class="n">점유율</th></tr></thead><tbody>${rows || '<tr><td colspan="3" class="empty">기록 없음</td></tr>'}</tbody></table></section>`;
+}
+
+async function reportPage(db, env, period, days = 7, month = null) {
   const t0 = kstMidnightUnix(0), t1 = t0 + 86400, y0 = t0 - 86400, w0 = t0 - (days - 1) * 86400;
   const q = (sql, ...binds) => db.prepare(sql).bind(...binds);
   const [today, yday, week, pagesToday, pagesWeek, refs, hours, devices, extHit, lastHit] = await db.batch([
@@ -109,6 +193,9 @@ async function reportPage(db, env, period, days = 7) {
   const gapWarn = T === 0 && (!lastTs || lastTs < t0)
     ? '<p class="warn">오늘 수집된 기록이 없습니다 — 수집 중단 또는 공백 가능 (마지막 정상 수집 시각을 확인하세요)</p>' : '';
   // 서치콘솔 섹션 데이터 — 실패는 섹션 안에서만 격리하고 자체 통계 렌더를 막지 않는다
+  let monthData = null;
+  if (month) { try { monthData = await readMonth(db, month); } catch { monthData = null; } }
+  const monthLinks = recentMonths(4).map(m => m === month ? '<b>' + m + '</b>' : '<a href="?m=' + m + '&d=' + days + '&g=' + period + '">' + m + '</a>').join(' · ');
   let gsc = null;
   try { gsc = await getSearchSectionData(env, { period }); } catch { gsc = { ok: false, error: 'api_error' }; }
   const hourRows = list(hours);
@@ -141,7 +228,7 @@ ${gapWarn}
 <div class="kpi-card"><span class="lbl">오늘 수집된 페이지 조회 (KST)</span><b>${T.toLocaleString('ko-KR')}</b><span class="sub2"></span></div>
 <div class="kpi-card"><span class="lbl">어제 수집된 페이지 조회</span><b>${Y.toLocaleString('ko-KR')}</b><span class="sub2">${W > 0 && Y > 0 ? '최근 ' + days + '일 일평균 대비 ' + (Y / (W / days)).toFixed(1) + '배' : ''}</span></div>
 <div class="kpi-card"><span class="lbl">최근 ${days}일 합계</span><b>${W.toLocaleString('ko-KR')}</b><span class="sub2">일평균 ${(W / days).toLocaleString('ko-KR', { maximumFractionDigits: 1 })}${topPathPct}${extShare === null ? '' : ' · 외부 유입 비중 ' + extShare + '%'}</span></div>
-<div class="kpi-card"><span class="lbl">집계 기간 선택</span><b style="font-size:19px">${[1, 7, 30].map(n => n === days ? '<b>' + n + '일</b>' : '<a href="?d=' + n + '&g=' + period + '">' + n + '일</a>').join(' · ')}</b><span class="sub2">월별 선택 조회는 후속 단계 (자리만 확보)</span></div>
+<div class="kpi-card"><span class="lbl">집계 기간 선택</span><b style="font-size:19px">${[1, 7, 30].map(n => n === days ? '<b>' + n + '일</b>' : '<a href="?d=' + n + '&g=' + period + '">' + n + '일</a>').join(' · ')}</b><span class="sub2">월별 조회: ${monthLinks}</span></div>
 <div class="kpi-card"><span class="lbl">구글 검색 클릭 (GSC)</span><b>${gsc && gsc.ok ? Number(gsc.totals.clicks).toLocaleString('ko-KR') : '—'}</b><span class="sub2">${gsc && gsc.ok ? '노출 ' + Number(gsc.totals.impressions).toLocaleString('ko-KR') + ' · 평균 CTR ' + Number(gsc.totals.ctrPct).toFixed(1) + '% · 평균 순위 ' + Number(gsc.totals.position).toFixed(1) + '위' : '서치콘솔 아래 섹션 참조'}</span></div>
 </div>
 <div class="chart-grid">
@@ -158,6 +245,7 @@ ${gapWarn}
 </section>
 ${gscSection(gsc, period, days)}
 </div>
+${monthSection(monthData, month)}
 <script>function swTab(btn,id){var p=btn.closest('section');p.querySelectorAll('.tabpane').forEach(function(x){x.style.display='none'});document.getElementById(id).style.display='block';btn.parentElement.querySelectorAll('.sub-tab').forEach(function(b){b.classList.remove('active')});btn.classList.add('active')}</script>
 </div></body></html>`;
 }
@@ -169,13 +257,31 @@ export async function onRequest(context) {
   if (!env.STATS_DB || !env.ACCESS_AUD || !env.ACCESS_TEAM_DOMAIN) return forbidden(); // 설정 없으면 차단 (안내 화면 없음)
   const auth = await verifyAccessRequest(request, env);
   if (!auth.ok) return forbidden();
+  if (request.method === 'POST') {
+    const action = url.searchParams.get('action');
+    try {
+      if (action === 'snapshot') {
+        const r = await loadSnapshot(env.STATS_DB, url.searchParams.get('m') || '');
+        return new Response(JSON.stringify(r), { status: r.ok ? 200 : 400, headers: { ...SEC_HEADERS, 'Content-Type': 'application/json; charset=utf-8' } });
+      }
+      if (action === 'prune') {
+        const r = await pruneOld(env.STATS_DB);
+        return new Response(JSON.stringify(r), { status: 200, headers: { ...SEC_HEADERS, 'Content-Type': 'application/json; charset=utf-8' } });
+      }
+    } catch {
+      return new Response(JSON.stringify({ ok: false, error: 'internal' }), { status: 500, headers: { ...SEC_HEADERS, 'Content-Type': 'application/json; charset=utf-8' } });
+    }
+    return new Response(null, { status: 405, headers: SEC_HEADERS });
+  }
   if (request.method !== 'GET') {
     return new Response(null, { status: 405, headers: SEC_HEADERS });
   }
   const period = url.searchParams.get('g') === '28' ? 28 : 7;
   const days = [1, 7, 30].includes(Number(url.searchParams.get('d'))) ? Number(url.searchParams.get('d')) : 7;
   try {
-    return new Response(await reportPage(env.STATS_DB, env, period, days), { headers: HTML_HEADERS });
+    const mParam = url.searchParams.get('m');
+    const month = mParam && MONTH_RE.test(mParam) ? mParam : null;
+    return new Response(await reportPage(env.STATS_DB, env, period, days, month), { headers: HTML_HEADERS });
   } catch {
     return new Response('<!DOCTYPE html><html lang="ko"><body style="font-family:sans-serif;background:#121317;color:#ECEFF3;padding:40px">아직 수집된 기록이 없습니다.</body></html>', { headers: HTML_HEADERS });
   }

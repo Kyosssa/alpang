@@ -16,7 +16,9 @@ const ALLOWED_EXACT = new Set(['/', '/mobs', '/maps', '/items', '/timeline', '/f
 // stats/schema.sql 의 CREATE 문장 본문과 동일본 유지
 const SCHEMA = `CREATE TABLE IF NOT EXISTS hits (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, path TEXT NOT NULL, ref_domain TEXT, device TEXT, browser TEXT);
 CREATE INDEX IF NOT EXISTS idx_hits_ts_path ON hits(ts, path);
-CREATE TABLE IF NOT EXISTS counters (day TEXT PRIMARY KEY, n INTEGER NOT NULL DEFAULT 0);`;
+CREATE TABLE IF NOT EXISTS counters (day TEXT PRIMARY KEY, n INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE IF NOT EXISTS monthly_snapshots (id INTEGER PRIMARY KEY AUTOINCREMENT, month TEXT NOT NULL, path TEXT, views INTEGER NOT NULL, loaded_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_snap_month ON monthly_snapshots(month, loaded_at);`;
 
 function classifyDevice(ua) {
   if (/iPad|Tablet|PlayBook|Silk/i.test(ua) || (/Android/i.test(ua) && !/Mobile/i.test(ua))) return 'tablet';
