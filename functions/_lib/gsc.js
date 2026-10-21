@@ -175,11 +175,21 @@ export async function getSearchSectionData(env, { period = 7, fetchImpl, nowMs }
   ]);
   const firstFail = [totals, queries, pages].find(r => !r.ok);
   if (firstFail) return firstFail;
+  // [자리 2 · 기간 비교] 전 기간 검색어 — 실패해도 본 기간을 막지 않고 자리만 비운다 (prevQueries = null → 렌더에서 '—')
+  const prevEnd = shiftDateStr(startDate, -1);
+  const prevStart = shiftDateStr(prevEnd, -(days - 1));
+  let prevQueries = null;
+  try {
+    const prev = await querySearchAnalytics({ ...common, startDate: prevStart, endDate: prevEnd, dimensions: ['query'], rowLimit: 25 });
+    if (prev.ok) prevQueries = prev.rows;
+  } catch { prevQueries = null; }
   const t = totals.rows[0] || { clicks: 0, impressions: 0, ctrPct: 0, position: 0 };
   const data = {
     ok: true, startDate, endDate,
     totals: { clicks: t.clicks, impressions: t.impressions, ctrPct: t.ctrPct, position: t.position },
     queries: queries.rows,
+    prevQueries,
+    prevStart, prevEnd,
     pages: pages.rows.map(r => ({ ...r, key: pagePath(r.key) })),
   };
   resultCache.set(cacheKey, { at: now, data });
