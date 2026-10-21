@@ -213,8 +213,8 @@ async function reportPage(db, env, period, days = 7, month = null) {
   const refTotal = refRows.reduce((a, r) => a + r.v, 0);
   const weekRows = list(pagesWeek);
   const topPathPct = weekRows.length && W > 0 ? ' · 1위 ' + weekRows[0].k + ' ' + (weekRows[0].v / W * 100).toFixed(1) + '%' : '';
-  // [후단 연결 지점 P4] 카테고리 라벨 매핑 — 결정 도착 시 이 맵만 채우면 바로 표시된다. 지금은 비어 있어 전부 '—'.
-  const PATH_LABELS = { '/': '홈 메인', '/timeline/': '타임라인', '/guide/hunting/': '초반 사냥터 후보', '/faq/': '확인된 발언 FAQ', '/npcs/': 'NPC 도감', '/mobs/': '몬스터 도감', '/maps/': '맵 탐색', '/quests/': '퀘스트 도감', '/guide/orbis-leafre/': '오르비스·리프레', '/guide/edelstein/': '에델슈타인' };
+  // [후단 연결 지점 P4] 카테고리 라벨 매핑 — 큐브 두 경로는 2026-10-22 대표 확정 A안으로 '큐브값 계산기' 정식 채택.
+  const PATH_LABELS = { '/': '홈 메인', '/timeline/': '타임라인', '/guide/hunting/': '초반 사냥터 후보', '/faq/': '확인된 발언 FAQ', '/npcs/': 'NPC 도감', '/mobs/': '몬스터 도감', '/maps/': '맵 탐색', '/quests/': '퀘스트 도감', '/guide/orbis-leafre/': '오르비스·리프레', '/guide/edelstein/': '에델슈타인', '/calculator/cube/': '큐브값 계산기', '/calculator/cube': '큐브값 계산기' };
   function pageRows(rows, total) {
     const max = Math.max(1, ...rows.map(r => r.v));
     return rows.map(r => `<tr><td class="bar-cell"><div class="bar-bg" style="width:${Math.round(r.v / max * 100)}%"></div><div class="bar-content">${esc(r.k)}</div></td><td><span class="page-label">${esc(PATH_LABELS[r.k] || '—')}</span></td><td class="n">${Number(r.v).toLocaleString('ko-KR')}</td><td class="n">${total > 0 ? (r.v / total * 100).toFixed(1) + '%' : '-'}</td></tr>`).join('');
