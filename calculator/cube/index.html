@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>큐브값 계산기 — 알팡지지</title>
 <meta name="description" content="큐브 등급업 확률과 목표 잠재옵션 조합이 등장할 확률·기대 시도 횟수를 계산하는 도구. 확률 수치는 공식 공시 기준입니다.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
 <meta property="og:title" content="큐브값 계산기 — 알팡지지">
 <meta property="og:description" content="큐브 등급업 확률표와 잠재옵션 조합 확률 계산기 (유니크 등급까지).">
 <meta property="og:url" content="https://alpang.gg/calculator/cube/">
@@ -109,7 +111,7 @@
   <p style="text-align:center;color:var(--sub);font-size:13.5px;line-height:1.65;margin-top:18px">이 계산기는 현재 공개된 공식 공시 기준입니다. 알팡서버가 본격 출시되면 실제 큐브 종류와 잠재능력 등급 체계에 맞춰 업데이트할 예정입니다.</p>
   <footer style="text-align:center;color:var(--sub);font-size:13px;margin-top:26px">
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a> · 페이지 갱신일: 2026-10-20
   </footer>
 </div>
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
@@ -269,7 +271,7 @@
     var html = '<b>1회 시도에 이 조합이 등장할 확률: ' + (p * 100).toFixed(4) + '%</b>';
     html += '<p class="note">계산 당시 조건: ' + condTxt + ' — 목표: ' + tgtTxt + '</p>';
     html += '<p class="note">줄 순서대로 조건부로 계산했습니다 (' + steps.filter(function (u) { return !u.blank; }).map(function (u) { return u.line + '줄 ' + (u.marg * 100).toFixed(2) + '%'; }).join(' × ') + '). 빈 줄은 전체 결과를 순회해 뒤줄 제한 상태까지 반영했습니다.</p>';
-    html += '<p>기대 시도 횟수(평균): <b>약 ' + (1 / p).toFixed(2) + '회</b> (올림 ' + Math.ceil(1 / p).toLocaleString('ko-KR') + '회)</p>';
+    html += '<p>기대 시도 횟수(평균): <b>약 ' + (1 / p).toFixed(2) + '회</b></p>';
     html += '<p>분위 시행 수 (이 횟수 안에 등장할 확률): 50% → <b>' + reach(p, .5).toLocaleString('ko-KR') + '회</b> · 65% → <b>' + reach(p, .65).toLocaleString('ko-KR') + '회</b> · 90% → <b>' + reach(p, .9).toLocaleString('ko-KR') + '회</b> · 99% → <b>' + reach(p, .99).toLocaleString('ko-KR') + '회</b></p>';
     html += '<p class="note">기대 횟수는 평균값으로, 그 횟수 안에 반드시 등장한다는 성공 보장 횟수가 아닙니다.</p>';
     html += '<p class="note">알팡서버 적용 여부는 미확인입니다.</p>';
