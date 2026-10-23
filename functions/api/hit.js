@@ -10,8 +10,8 @@ const SITE_HOST = 'alpang.gg';
 const BOT_RE = /bot|spider|crawler|headless|phantom|slurp|lighthouse|pagespeed|facebookexternalhit|embedly|preview/i;
 
 // 허용 경로: 사이트 실제 섹션 접두 + 섹션 루트 자체. 여기에 없으면 무기록 종료.
-const ALLOWED_PREFIXES = ['/mobs/', '/maps/', '/items/', '/timeline/', '/faq/', '/guide/', '/npcs/', '/quests/', '/privacy/', '/calculator/'];
-const ALLOWED_EXACT = new Set(['/', '/mobs', '/maps', '/items', '/timeline', '/faq', '/guide', '/npcs', '/quests', '/privacy', '/calculator']);
+const ALLOWED_PREFIXES = ['/mobs/', '/maps/', '/items/', '/timeline/', '/faq/', '/guide/', '/npcs/', '/quests/', '/privacy/', '/calculator/', '/taiwan/', '/vietnam/'];
+const ALLOWED_EXACT = new Set(['/', '/mobs', '/maps', '/items', '/timeline', '/faq', '/guide', '/npcs', '/quests', '/privacy', '/calculator', '/taiwan', '/vietnam']);
 
 // stats/schema.sql 의 CREATE 문장 본문과 동일본 유지
 const SCHEMA = `CREATE TABLE IF NOT EXISTS hits (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, path TEXT NOT NULL, ref_domain TEXT, device TEXT, browser TEXT);
