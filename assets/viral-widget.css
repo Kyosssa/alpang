@@ -1,0 +1,52 @@
+/* 바이럴 위젯 스타일 (2026-10-21) — 큐브 페이지 공통 틀의 다크 톤 변수에 맞춤. 모바일 360/390px 대응 포함. */
+.vw-wrap{max-width:1120px;margin:32px auto;padding:0 16px;color:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic",sans-serif}
+.vw-head{text-align:center;margin-bottom:20px}
+.vw-badge{display:inline-block;background:rgba(255,107,0,.16);color:#ff6b00;border:1px solid rgba(255,107,0,.35);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+.vw-head h2{font-size:24px;font-weight:800;color:var(--text,#F1F5F9)}
+.vw-head p{font-size:13.5px;color:var(--sub,#94a3b8);margin-top:6px}
+.vw-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:start}
+.vw-panel{background:#161b24;border:1px solid #262f3f;border-radius:14px;padding:20px}
+.vw-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#0f131a;padding:5px;border-radius:10px;border:1px solid #262f3f;margin-bottom:16px}
+.vw-tab{background:transparent;border:none;color:#94a3b8;font-size:14px;font-weight:700;padding:11px 8px;border-radius:7px;cursor:pointer}
+.vw-tab.active{background:#ff6b00;color:#fff}
+.vw-desc{font-size:13px;color:#94a3b8;margin-bottom:12px;line-height:1.55}
+.vw-hat-examples{font-size:12px;color:#64748b}
+.vw-label{font-size:12.5px;font-weight:700;color:#94a3b8;display:block;margin-bottom:6px}
+.vw-select{width:100%;background:#0f131a;border:1px solid #262f3f;color:#f1f5f9;padding:9px 12px;border-radius:8px;font-size:13px;font-weight:600;margin-bottom:10px}
+.vw-count{font-size:13px;font-weight:700;margin-bottom:12px}
+.vw-btn-row{display:flex;gap:10px}
+.vw-btn{flex:1;background:#1b2230;border:1px solid #262f3f;color:#f1f5f9;border-radius:10px;padding:13px 12px;font-size:14px;font-weight:800;cursor:pointer}
+.vw-btn-primary{background:#ff6b00;border-color:#ff6b00;color:#fff}
+.vw-note{font-size:11.5px;color:#64748b;margin-top:12px;line-height:1.5}
+.vw-status{margin-top:14px;font-size:13px;font-weight:700;color:#10b981;min-height:18px}
+.vw-card{background:linear-gradient(155deg,#1a2130 0%,#0f131b 100%);border:2px solid rgba(255,107,0,.55);border-radius:16px;padding:20px}
+.vw-card-top{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:#94a3b8;margin-bottom:12px}
+.vw-card-top strong{color:#ff6b00}
+.vw-card-badge{background:rgba(250,204,21,.18);border:1px solid rgba(250,204,21,.5);color:#facc15;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.vw-card-img{display:block;width:72px;height:72px;image-rendering:pixelated;margin:4px auto 10px}
+.vw-card-title{font-size:20px;font-weight:900;line-height:1.35;text-align:center;margin-bottom:6px}
+.vw-card-sub{font-size:13px;color:#94a3b8;text-align:center;margin-bottom:8px}
+.vw-grade{text-align:center;font-size:12.5px;font-weight:800;color:#facc15;margin-bottom:12px}
+.vw-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.vw-stat{background:rgba(13,16,20,.65);border:1px solid #262f3f;border-radius:9px;padding:10px 12px}
+.vw-stat-label{font-size:11.5px;color:#64748b}
+.vw-stat-val{font-size:14.5px;font-weight:800;margin-top:2px;word-break:keep-all}
+.vw-card-foot{display:flex;justify-content:space-between;gap:8px;padding-top:12px;border-top:1px dashed #262f3f;font-size:11px;color:#64748b}
+.vw-share-preview{background:#0f131a;border:1px solid #262f3f;border-radius:9px;padding:12px;font-size:12.5px;color:#94a3b8;white-space:pre-line;margin:14px 0 10px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.vw-kakao{width:100%;background:#fee500;border:none;color:#191919}
+.vw-toast{text-align:center;font-size:12.5px;color:#10b981;font-weight:700;min-height:18px;margin-top:6px}
+/* 모바일: 390px 이하 1열, 통계 2열 유지하되 글자 크기 조정 */
+@media (max-width:900px){.vw-grid{grid-template-columns:1fr}}
+@media (max-width:480px){
+  .vw-wrap{padding:0 10px}
+  .vw-panel{padding:14px}
+  .vw-head h2{font-size:20px}
+  .vw-card-title{font-size:17px}
+  .vw-btn-row{flex-direction:column}
+  .vw-stat-val{font-size:13px}
+  .vw-card-foot{flex-direction:column;gap:4px}
+  /* 390px 등 좁은 폭: 제목·배지를 위아래로 배치하고 날짜 줄바꿈 허용 */
+  .vw-card-top{flex-direction:column;align-items:flex-start;gap:6px}
+  .vw-card-badge{white-space:normal;line-height:1.4}
+  .vw-card-title{word-break:keep-all}
+}

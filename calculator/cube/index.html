@@ -59,6 +59,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
+  <link rel="stylesheet" href="/assets/viral-widget.css">
 </head>
 <body>
 <div class="wrap">
@@ -107,6 +108,73 @@
     <div class="result" id="calcResult">조건을 고르면 줄별 옵션 목록이 공시 확률과 함께 채워집니다. 줄마다 목표 옵션을 고른 뒤 계산 버튼을 눌러 주세요.</div>
     <p class="note">계산 방식: 줄을 순서대로 놓고 조건부로 곱합니다. 특정 옵션군에는 중복 제한(최대 1줄·2줄)이 있어 앞줄에 나온 옵션은 뒷줄에서 제외되고 뒷줄 확률은 남은 풀 기준으로 재계산됩니다. 옵션 풀은 큐브·부위·등급·장비 레벨 구간마다 다릅니다.</p>
   </section>
+<!-- 바이럴 위젯 편입 블록 (큐브값 계산기 페이지 /calculator/cube/ 하단 파일럿, 2026-10-21)
+     의존: viral-widget.css · viral-widget-core.js · viral-widget-data.js · viral-widget.js
+     공개·배포는 구현 검수 뒤 별도 승인 단계. 이 블록 자체는 검수 제출용 소스다. -->
+<section class="vw-wrap" id="viralWidget" aria-label="운명 첫 캐릭 뽑기 · 목표 큐브 운 시뮬레이션">
+  <header class="vw-head">
+    <span class="vw-badge">🔥 단톡방·디코 공유용 미니게임</span>
+    <h2>🎲 운명 첫 캐릭 뽑기 &amp; 목표 큐브 운 시뮬레이션</h2>
+    <p>직업 도감(GMS 95 기준) &amp; 큐브 확률 시뮬레이션(공시 기준) · 내 운명의 첫 캐릭과 큐브 운을 뽑아 카톡방에 자랑해 보세요!</p>
+  </header>
+
+  <div class="vw-grid">
+    <div class="vw-panel">
+      <div class="vw-tabs">
+        <button type="button" class="vw-tab active" data-mode="job">⚔️ 운명 첫 캐릭 뽑기</button>
+        <button type="button" class="vw-tab" data-mode="cube">🎲 목표 큐브 운 시뮬레이션</button>
+      </div>
+
+      <div id="vwJobView">
+        <p class="vw-desc">직업 도감의 전직 90종을 전직 단계 단위로 추첨해 오늘의 운명 캐릭 1종을 뽑습니다. 추첨은 버튼을 눌러야만 시작됩니다.</p>
+        <button type="button" class="vw-btn vw-btn-primary" id="vwJobRoll">🎰 내 운명의 첫 캐릭 뽑기!</button>
+      </div>
+
+      <div id="vwCubeView" style="display:none">
+        <label class="vw-label" for="vwTargetSelect">목표 선택</label>
+        <select class="vw-select" id="vwTargetSelect"></select>
+        <p class="vw-desc" id="vwTargetDesc"></p>
+        <p class="vw-desc vw-hat-examples" id="vwHatExamples"></p>
+        <p class="vw-count" id="vwCubeCount">누적 소모: 0회</p>
+        <div class="vw-btn-row">
+          <button type="button" class="vw-btn" id="vwCubeOnce">🎲 1회 돌리기</button>
+          <button type="button" class="vw-btn vw-btn-primary" id="vwCubeAuto">🔥 목표 뜰 때까지 자동 측정!</button>
+          <button type="button" class="vw-btn" id="vwCubeNew" style="display:none">↺ 새 도전</button>
+        </div>
+        <p class="vw-note">횟수만 다루는 시뮬레이션입니다. 실제 잠재능력 줄을 뽑지 않으며, 자동 측정은 제한 횟수 안에 성공하지 못하면 실패/중단으로 끝납니다. 현재 확률은 공식 공시 기준 계산값이며 알팡 서버 적용은 미확인입니다. 알팡서버 공식 오픈 시 서버 버전에 맞게 확률이 업데이트될 예정입니다.</p>
+      </div>
+
+      <p class="vw-note" id="vwStorageNote" style="display:none"></p>
+      <p class="vw-status" id="vwStatus" role="status"></p>
+    </div>
+
+    <div class="vw-panel">
+      <div class="vw-card" id="vwCard">
+        <div class="vw-card-top"><strong id="vwCardKind">결과 명함 카드</strong><span class="vw-card-badge" id="vwCardBadge"></span></div>
+        <img class="vw-card-img" id="vwCardImg" alt="" style="display:none">
+        <div class="vw-card-title" id="vwCardTitle">아직 결과가 없습니다. 왼쪽에서 직접 돌려 보세요!</div>
+        <div class="vw-card-sub" id="vwCardSub"></div>
+        <div class="vw-grade" id="vwGradeText"></div>
+        <div class="vw-stat-grid">
+          <div class="vw-stat"><div class="vw-stat-label" id="vwStat1Label"></div><div class="vw-stat-val" id="vwStat1Val"></div></div>
+          <div class="vw-stat"><div class="vw-stat-label" id="vwStat2Label"></div><div class="vw-stat-val" id="vwStat2Val"></div></div>
+          <div class="vw-stat"><div class="vw-stat-label" id="vwStat3Label"></div><div class="vw-stat-val" id="vwStat3Val"></div></div>
+          <div class="vw-stat"><div class="vw-stat-label" id="vwStat4Label"></div><div class="vw-stat-val" id="vwStat4Val"></div></div>
+        </div>
+        <div class="vw-card-foot">
+          <span>직업 데이터: GMS 95 기준 · 큐브 확률: 공시 기준 (알팡 서버 적용 미확인)</span>
+          <strong>alpang.gg 에서 내 결과 뽑기 ➔</strong>
+        </div>
+      </div>
+      <div id="vwShareRow" style="display:none">
+        <div class="vw-share-preview" id="vwShareText"></div>
+        <button type="button" class="vw-btn vw-kakao" id="vwCopyBtn">💬 카카오톡 · 디스코드 자랑 문구 복사하기</button>
+        <div class="vw-toast" id="vwToast"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
   <p style="text-align:center;color:var(--sub);font-size:13.5px;line-height:1.65;margin-top:18px">이 계산기는 현재 공개된 공식 공시 기준입니다. 알팡서버가 본격 출시되면 실제 큐브 종류와 잠재능력 등급 체계에 맞춰 업데이트할 예정입니다.</p>
   <footer style="text-align:center;color:var(--sub);font-size:13px;margin-top:26px">
@@ -289,5 +357,8 @@
   refreshOptions();
 })();
 </script>
+<script src="/assets/viral-widget-core.js"></script>
+<script src="/assets/viral-widget-data.js"></script>
+<script src="/assets/viral-widget.js"></script>
 </body>
 </html>
