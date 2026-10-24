@@ -30,7 +30,7 @@
 <style>
   :root{
     --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
-    --sub:#6f6a5e; --accent:#FF7E36; --accent-soft:#FFF1E8; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250; --accent-dark:#C25700;
+    --sub:#6f6a5e; --accent:#FF7E36;--accent-btn:#C45100; --accent-soft:#FFF1E8; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250; --accent-dark:#B65100;
     --hero-ink:#123524;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -63,7 +63,7 @@
   .sb-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .sb-ic{font-size:19px}
   .sb-in input{flex:1;min-width:180px;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--text);font-family:inherit}
-  .sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;border:none;cursor:pointer;font-family:inherit;min-height:44px}
+  .sb-btn{display:inline-block;background:var(--accent-btn);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;border:none;cursor:pointer;font-family:inherit;min-height:44px}
   .sb-note{font-size:13.5px;color:var(--sub);margin-top:9px}
   .sb-wrap{position:relative;flex:1;min-width:180px;display:flex}
   .sb-wrap input{flex:1;min-width:0}
@@ -72,7 +72,7 @@
   .sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--line)}
   .sb-item:last-child{border-bottom:none}
   .sb-item.sel,.sb-item:hover{background:var(--accent-soft)}
-  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent)}
+  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent-btn)}
   .sb-badge.map{background:#7A6A53}
   .sb-badge.item{background:#4A6FA5}
   .sb-badge.npc{background:#8A5AA5}
@@ -130,14 +130,14 @@
   .st.no{background:#efece5;color:var(--unknown)}
   .note{font-size:14px;color:var(--sub);margin-top:10px}
   a{color:var(--accent-dark)}
-  .cta{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
+  .cta{display:block;text-align:center;background:var(--accent-btn);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
   footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
   @media (max-width:960px){ .cats{grid-template-columns:repeat(2,1fr)} }
   @media (max-width:480px){ .cats{grid-template-columns:1fr} .bcard-txt{max-width:88%} }
   @media (max-width:860px){ .dash{grid-template-columns:1fr} }
   @media (max-width:560px){
     .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px}
-  }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}}
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
@@ -195,7 +195,7 @@
         <input type="text" id="alpangSearch" disabled aria-disabled="true" placeholder="整合搜尋怪物·地圖·道具·NPC·任務" aria-label="통합 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
         <div class="sb-results" id="sbResults" role="listbox"></div>
       </div>
-      <button type="button" class="sb-btn" id="sbGo">검색</button>
+      <button type="button" class="sb-btn" id="sbGo" aria-label="검색">검색</button>
     </div>
     <p class="sb-note">可用韓文·英文名稱，一次搜尋怪物 175 種、地圖 402 張、道具 14,577 件。韓文名稱為顯示名稱候補。</p><p class="sb-note sb-disabled-note">搜尋功能正在準備翻譯中，目前還無法使用。</p>
   </div>
