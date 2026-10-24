@@ -72,7 +72,7 @@
   }
   function render() {
     if (!shown.length) {
-      box.innerHTML = '<div class="sb-none">검색 결과가 없어요. 몬스터 도감과 아이템 목록에서 찾아보실 수 있어요.</div>';
+      box.innerHTML = '<div class="sb-none">검색 결과가 없어요. 이름의 일부만 입력하거나, 영문 이름으로 검색해 보실 수 있어요.</div>';
       open();
       return;
     }
