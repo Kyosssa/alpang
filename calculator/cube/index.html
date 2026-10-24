@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8}
   [data-theme="dark"]{--bg:#171512;--card:#211e1a;--line:#3a352d;--text:#f0ece4;--sub:#a89f8d;--accent-soft:#33241a}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
@@ -28,7 +28,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}}
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
@@ -47,7 +47,7 @@
   td.pending{color:var(--sub)}
   .prep{display:inline-block;font-size:12.5px;font-weight:800;color:#7A3E00;background:#FFE7C7;border-radius:5px;padding:2px 9px}
   [data-theme="dark"] .prep{color:#FFD9A0;background:#4a3418}
-  .calc-btn{margin-top:16px;width:100%;padding:13px;border:none;border-radius:10px;background:var(--accent);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
+  .calc-btn{margin-top:16px;width:100%;padding:13px;border:none;border-radius:10px;background:var(--accent-btn);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
   .calc-btn:disabled{background:var(--line);color:var(--sub);cursor:not-allowed}
   .result{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px}
   .result b{font-size:17px}
