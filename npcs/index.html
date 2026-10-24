@@ -134,6 +134,8 @@
   [data-theme="dark"] .theme-toggle .ic-sun{display:block}
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -147,7 +149,10 @@
     <h1>NPC <span>도감</span></h1>
     <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>NPC 정보가 확인되는 대로 실시간으로 등록됩니다</p>
     <div class="tag">마을과 필드의 NPC 1,836명의 위치·대사·관련 퀘스트</div>
-    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치는 다를 수 있어요.</div>
+    <aside class="name-status" id="notice-npc-map-count" data-component="npc-map-count" data-scope="npcs-registered">
+    <p style="margin:0">출현 기록이 확인된 <span class="rc" data-slot="total-registered">365</span>명 기준으로 보면, NPC는 대부분 한곳에만 나와요. 한 개 맵에만 등장하는 NPC가 <span class="rc" data-slot="mapcount-single">326</span>명으로 대부분이고, 두 곳 이상에 등장하는 NPC는 <span class="rc" data-slot="mapcount-multi">39</span>명이에요. 가장 넓게 나오는 NPC는 열두 개 맵에 있어요.</p>
+  </aside>
+<div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치는 다를 수 있어요.</div>
   </div>
   <div class="seg" role="tablist" aria-label="도감 전환">
     <a class="seg-on" href="/npcs/" role="tab" aria-selected="true">NPC</a><a href="/quests/" role="tab" aria-selected="false">퀘스트</a>

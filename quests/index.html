@@ -134,6 +134,8 @@
   [data-theme="dark"] .theme-toggle .ic-sun{display:block}
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -152,7 +154,10 @@
   <div class="seg" role="tablist" aria-label="도감 전환">
     <a href="/npcs/" role="tab" aria-selected="false">NPC</a><a class="seg-on" href="/quests/" role="tab" aria-selected="true">퀘스트</a>
   </div>
-  <div class="band-grid">
+  <aside class="name-status" id="notice-quest-required-level" data-component="quest-required-level" data-scope="quests">
+    <p style="margin:0">퀘스트 <span class="rc" data-slot="total-quests">3,412</span>건 전체로 보면, 시작하는 데 레벨 제한이 없는 퀘스트가 <span class="rc" data-slot="no-req">694</span>건 있어요. 레벨 제한이 있는 퀘스트는 11레벨에서 30레벨 사이에 가장 많고, 100레벨이 넘어야 시작할 수 있는 퀘스트도 <span class="rc" data-slot="over-100">292</span>건이에요. 여기서 레벨 제한 없음은 시작 레벨이 따로 기록돼 있지 않다는 뜻이에요.</p>
+  </aside>
+<div class="band-grid">
 <a class="band-card" href="/quests/lv-1-10.html"><b>Lv.1~10</b><span>퀘스트 461건</span></a><a class="band-card" href="/quests/lv-11-30.html"><b>Lv.11~30</b><span>퀘스트 827건</span></a><a class="band-card" href="/quests/lv-31-50.html"><b>Lv.31~50</b><span>퀘스트 392건</span></a><a class="band-card" href="/quests/lv-51-70.html"><b>Lv.51~70</b><span>퀘스트 415건</span></a><a class="band-card" href="/quests/lv-71-100.html"><b>Lv.71~100</b><span>퀘스트 331건</span></a><a class="band-card" href="/quests/lv-101.html"><b>Lv.101~</b><span>퀘스트 292건</span></a><a class="band-card" href="/quests/lv-none.html"><b>레벨 조건 없음</b><span>퀘스트 694건</span></a>
   </div>
   <footer>

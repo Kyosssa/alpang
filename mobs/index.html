@@ -65,6 +65,8 @@
   [data-theme="dark"] .place,[data-theme="dark"] .chip,[data-theme="dark"] .street{background:#22252B}
   [data-theme="dark"] .place.none,[data-theme="dark"] .chip.none{background:#22252B}
   [data-theme="dark"] .mob .stats,[data-theme="dark"] .map .mobs{border-top-color:var(--line)}
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -120,7 +122,10 @@
     <div class="stats">레벨 오름차순 · 출현 맵은 수집 완료된 맵 기준입니다</div>
   </div>
   <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io<br>카드의 '상세 수치'는 본진 GMS 95 기준 몬스터 기본 수치입니다.</p>
-  <div class="xlink"><a href="/maps/">🗺️ 맵 탐색 보러 가기</a></div>
+  <aside class="name-status" id="notice-mob-map-count" data-component="mob-map-count" data-scope="mobs">
+    <p style="margin:0">가이드 권역에 나오는 몬스터 <span class="rc" data-slot="total-species">162</span>종은 대부분 한곳에서만 만나요. 한 개 맵에서만 나오는 종이 <span class="rc" data-slot="mapcount-single">87</span>종으로 절반이 넘고, 다섯 곳 이상에 나오는 종은 열한 종뿐이에요. 여러 맵을 오가며 만나는 몬스터는 그만큼 적어요.</p>
+  </aside>
+<div class="xlink"><a href="/maps/">🗺️ 맵 탐색 보러 가기</a></div>
   <div class="filterbar"><label class="flb" for="mobFilter">이름으로 찾기</label><input type="search" id="mobFilter" class="finput" placeholder="몬스터 이름 입력 (한글·영문)" autocomplete="off"><label class="flb" for="mobSort">정렬</label><select id="mobSort" class="fsort"><option value="lv">레벨 낮은 순</option><option value="eff">체경비 낮은 순</option></select><span class="fcount" id="mobCount" aria-live="polite"></span><button type="button" class="fclear" id="mobClear" hidden>지우기</button></div><p class="fnores" id="mobNone" hidden>검색 결과가 없습니다.</p>
   <main class="grid">
 <article class="mob" id="mob-100100" data-name="달팽이 snail" data-eff="5.0" data-lv="1">
