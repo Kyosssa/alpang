@@ -75,6 +75,8 @@
   [data-theme="dark"] .chip{background:#22252B}
   [data-theme="dark"] .mob .islot{background:#26292F}
   [data-theme="dark"] td{border-bottom-color:var(--line)}
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -161,6 +163,31 @@
     </div>
     <p class="legend">레벨·HP와 출현 맵은 본진 기준 수집 데이터입니다.<br>아이콘·이미지: maplestory.io</p>
   </section>
+  <aside class="name-status" id="notice-skill-predecessor-count" data-component="skill-predecessor-count" data-scope="guide">
+    <p style="margin:0 0 6px"><strong>선행 스킬 개수 분포</strong></p>
+    <p style="margin:0 0 6px">선행 스킬이 있는 스킬 161개를 기준으로, 배우기 전에 먼저 배워야 하는 스킬이 몇 개인지 셉니다. 선행 기록이 비어 있는 4건은 세지 않았어요.</p>
+    <p style="margin:0 0 6px">선행 스킬이 1개인 스킬이 160개로 대부분이에요. 선행 스킬이 3개 이상인 스킬은 1개뿐이고, 2개인 스킬은 없어요. 배우기 전에 거쳐야 하는 단계가 길게 이어지는 구조보다는, 앞 스킬 하나를 배우면 열리는 구조가 대부분인 셈이에요.</p>
+    <p style="margin:0">선행 1개 160개 · 2개 0개 · 3개 이상 1개 (기준 161개)</p>
+  </aside>
+  <aside class="name-status" id="notice-skill-attr-badge" data-component="skill-attr-badge" data-scope="guide">
+    <p style="margin:0 0 6px"><strong>스킬 속성 배지 분포</strong></p>
+    <p style="margin:0 0 6px">속성 배지가 붙은 스킬 48종만 기준으로, 배지에 적힌 코드별로 셉니다. 코드는 원본 표기 그대로예요. 코드가 어떤 속성을 뜻하는지는 확정된 자료가 없어, 이 안내에서는 코드에 속성 이름을 붙이지 않아요.</p>
+    <p style="margin:0 0 6px">코드가 f인 스킬이 22종으로 가장 많고, h 9종 · i 8종 · l 7종 · s 2종이에요. 배지가 붙은 스킬 자체가 전체 스킬의 일부라, 배지가 없다는 것은 속성이 없다는 뜻이 아니에요 — 원본 기록에 배지가 없는 경우일 뿐이에요.</p>
+    <p style="margin:0">코드 f 22종 · h 9종 · i 8종 · l 7종 · s 2종 (기준 48종)</p>
+  </aside>
+  <aside class="name-status" id="notice-mob-attack-defense" data-component="mob-attack-defense" data-scope="guide">
+    <p style="margin:0 0 6px"><strong>몬스터 공격·방어 수치 분포</strong></p>
+    <p style="margin:0 0 6px">몬스터 175종 가운데 해당 수치가 기록된 종만 기준으로, 물리·마법 공격과 물리·마법 방어 수치를 자릿수 구간별로 셉니다. 필드마다 기록된 종 수가 달라 기준 종 수도 필드마다 달라요. 수치는 원본 기록 그대로이며, 강하고 약함을 매긴 평가가 아니에요.</p>
+    <p style="margin:0 0 6px">물리 공격은 100~499 구간이 85종으로 가장 두텁고, 1,000 이상인 종도 41종이에요. 마법 공격도 비슷한 모양으로 100~499 구간이 79종입니다. 방어는 두 필드 모두 100~499 구간이 중심이고, 물리 방어 1,000 이상은 1종뿐, 마법 방어는 1,000 이상인 종이 없어요. 수치가 0으로 기록된 종도 있어, 없는 값과 0인 값은 구분해서 봐야 해요.</p>
+    <p style="margin:0">물리 공격 175종 — 0: 0 · 1~99: 38 · 100~499: 85 · 500~999: 11 · 1,000 이상: 41 / 마법 공격 175종 — 0: 7 · 1~99: 36 · 100~499: 79 · 500~999: 11 · 1,000 이상: 42 / 물리 방어 169종 — 0: 2 · 1~99: 62 · 100~499: 67 · 500~999: 37 · 1,000 이상: 1 / 마법 방어 170종 — 0: 1 · 1~99: 64 · 100~499: 79 · 500~999: 26 · 1,000 이상: 0</p>
+  </aside>
+  <aside class="name-status" id="notice-map-return-link" data-component="map-return-link" data-scope="guide">
+    <p style="margin:0 0 6px"><strong>맵 귀환 연결 분포</strong></p>
+    <p style="margin:0 0 6px">맵 402곳에 기록된 귀환 연결 402건을 기준으로, 귀환 목적지가 되는 맵 41곳을 '몇 개 맵이 여기로 돌아오는지'로 셉니다.</p>
+    <p style="margin:0 0 6px">돌아오는 맵이 1곳뿐인 목적지가 13곳, 2~5곳인 목적지가 16곳으로 가장 많아요. 11곳 이상에서 돌아오는 목적지도 7곳 있어, 귀환이 소수 목적지에 몰리는 모양이에요. 목적지가 아닌 맵은 이 셈에 들어가지 않아요.</p>
+    <p style="margin:0">피귀환 1곳 13곳 · 2~5곳 16곳 · 6~10곳 5곳 · 11곳 이상 7곳 (기준 목적지 41곳 · 연결 402건)</p>
+  </aside>
+
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
     <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
