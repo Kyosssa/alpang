@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--slot:#f3f0e9}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8;--unknown:#6b6250;--slot:#f3f0e9}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -36,7 +36,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}}
   /* 모바일: sticky GNB가 nav 줄바꿈으로 높아져(약 118px) 앵커 제목이 가려지는 문제 —
      헤더 실측 최대 높이 + 여유를 반영한 여백 (기술이사 검수 2026-10-17) */
 
@@ -75,7 +75,7 @@
   .job-card:target{outline:2px solid var(--accent);outline-offset:1px}
   .jhead{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .jhead h3{font-size:17px;font-weight:800}
-  .tier{font-size:11.5px;font-weight:800;background:var(--accent);color:#fff;border-radius:4px;padding:2px 7px}
+  .tier{font-size:11.5px;font-weight:800;background:var(--accent-btn);color:#fff;border-radius:4px;padding:2px 7px}
   .tier.base{background:#7A6A53}
   .unk-badge{font-size:10.5px;font-weight:700;color:var(--unknown);background:var(--slot);border-radius:4px;padding:2px 6px;white-space:nowrap}
   .jcount{font-size:12.5px;color:var(--sub);margin-left:auto}
