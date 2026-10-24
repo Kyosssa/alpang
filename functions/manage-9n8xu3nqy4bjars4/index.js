@@ -123,7 +123,10 @@ async function readMonth(db, m) {
   const pg = await db.prepare('SELECT path k, COUNT(*) v FROM hits WHERE ts >= ? AND ts < ? GROUP BY path ORDER BY v DESC').bind(a, b).all();
   return { source: 'live', loadedAt: null, total: Number((tot && tot.pv) || 0), pages: (pg.results || []).map(r => ({ k: r.k, v: r.v })) };
 }
+const SNAP_SCHEMA = 'CREATE TABLE IF NOT EXISTS monthly_snapshots (id INTEGER PRIMARY KEY AUTOINCREMENT, month TEXT NOT NULL, path TEXT, views INTEGER NOT NULL, loaded_at INTEGER NOT NULL); CREATE INDEX IF NOT EXISTS idx_snap_month ON monthly_snapshots(month, loaded_at);';
+async function ensureSnapTable(db) { await db.exec(SNAP_SCHEMA); }
 async function loadSnapshot(db, m) {
+  await ensureSnapTable(db);
   if (!MONTH_RE.test(m)) return { ok: false, error: 'bad_month' };
   if (m >= currentMonthKst()) return { ok: false, error: 'month_not_closed' };
   const [a, b] = monthRangeUnix(m);
@@ -140,6 +143,7 @@ async function loadSnapshot(db, m) {
   return { ok: true, month: m, total, pageCount: pages.length, loadedAt: now };
 }
 async function pruneOld(db) {
+  await ensureSnapTable(db);
   const cutoff = kstMidnightUnix(0) - RETENTION_DAYS * 86400;
   const months = await db.prepare("SELECT DISTINCT strftime('%Y-%m', ts + 32400, 'unixepoch') m FROM hits WHERE ts < ?").bind(cutoff).all();
   const deleted = [], skipped = [];
