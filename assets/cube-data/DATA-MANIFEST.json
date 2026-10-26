@@ -1,14 +1,14 @@
 {
- "build_id": "alpang-cube-submission-20261020-r4",
+ "build_id": "alpang-cube-apply-20261026",
  "canonical": {
   "file": "cube-data.json",
-  "bytes": 12451540,
-  "sha256": "0bf4dd31f9015a694b08d7941dd7e6b4b2aa31013a977b0e1d3b1e4fd2d27a0f"
+  "bytes": 12453571,
+  "sha256": "ded94e4631b8c4c11c797517cbce4f27142cc73574ba074145b9a744eed2a91e"
  },
  "split_files": {
   "manifest.json": {
-   "bytes": 2063,
-   "sha256": "209cf0226c12e5a787c9e36ddba4754c14bf19824144c89acedd36f128a10e80"
+   "bytes": 4463,
+   "sha256": "0b10c270704dde48a50ac54dbfa21e90e80c9f8cce90e499a07660fd7f4b36b9"
   },
   "miracle--귀고리.json": {
    "bytes": 124496,
@@ -131,6 +131,6 @@
    "sha256": "47c804b457b8075e9554145ab551c582d32202a6fc182a8218a52cd8c5c1d609"
   }
  },
- "split_total_bytes": 7693269,
+ "split_total_bytes": 7695669,
  "split_file_count": 31
 }
