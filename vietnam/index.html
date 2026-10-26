@@ -161,16 +161,21 @@
   [data-theme="dark"] .st.mid{background:#362D10}
   [data-theme="dark"] .st.no{background:#26292F}
   [data-theme="dark"] .num{background:var(--accent);color:#241203}
+:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
+[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
+.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:8px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"vi"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main-start">본문 바로가기</a>
   <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
 
   <div class="hero">
-    <h1 class="site-h1">Alpang.gg — Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds</h1>
+    <h1 id="main-start" tabindex="-1" class="site-h1">Alpang.gg — Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds</h1>
 <div class="banner" id="banner">
       <div class="slides" id="slides">
         <a class="slide" href="/timeline/"><img src="/assets/i18n/vietnam/hero-timeline.webp" alt="Dòng thời gian Alpang" width="1024" height="434" fetchpriority="high"></a>
