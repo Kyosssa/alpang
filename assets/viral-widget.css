@@ -50,3 +50,9 @@
   .vw-card-badge{white-space:normal;line-height:1.4}
   .vw-card-title{word-break:keep-all}
 }
+.vw-slots{display:flex;gap:8px;margin:10px 0 4px}
+.vw-slot{flex:1;text-align:center;padding:14px 4px;border-radius:10px;border:2px dashed #3B475C;background:#1B222E;color:#8FA3BF;font-weight:800;font-size:14px;min-height:52px;display:flex;align-items:center;justify-content:center}
+.vw-slot.rolling{border-style:solid;border-color:#F59E0B;color:#F59E0B;animation:vwPulse .5s ease-in-out infinite alternate}
+.vw-slot.hit{border-style:solid;border-color:#22C55E;background:#14532D;color:#BBF7D0}
+.vw-slot.miss{border-style:solid;border-color:#3B475C;color:#64748B}
+@keyframes vwPulse{from{opacity:.55}to{opacity:1}}

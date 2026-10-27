@@ -15,16 +15,16 @@
   var TARGETS = [
     { id: 'C1', name: '유니크 무기 공격력/마력% 2줄 이상',
       desc: '미라클 큐브 · 무기 · 120레벨 · 유니크. 공격력% 또는 마력% 줄이 2줄 이상이면 성공 (혼합 허용).',
-      p: 0.03219956488479381 },
+      p: 0.03219956488479381, slotNeed: 2, slotLabel: '공%·마%' },
     { id: 'C2', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (유니크)',
       desc: '미라클 큐브 · 모자 · 120레벨 · 유니크. ' + HAT_RULE_TEXT + ' ' + HAT_RULE_NOTE + '.',
-      hatRule: true, p: 0.20864370554158448 },
+      hatRule: true, p: 0.20864370554158448, slotNeed: 2, slotLabel: '스탯%·올스탯%' },
     { id: 'C3', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (에픽)',
       desc: '미라클 큐브 · 모자 · 120레벨 · 에픽. ' + HAT_RULE_TEXT + ' ' + HAT_RULE_NOTE + '.',
-      hatRule: true, p: 0.14053404714844753 },
+      hatRule: true, p: 0.14053404714844753, slotNeed: 2, slotLabel: '스탯%·올스탯%' },
     { id: 'C4', name: '유니크 무기 공격력/마력% 3줄',
       desc: '미라클 큐브 · 무기 · 120레벨 · 유니크. 공격력% 또는 마력% 줄이 3줄 전부이면 성공 (혼합 허용).',
-      p: 0.0012432262291516489 }
+      p: 0.0012432262291516489, slotNeed: 3, slotLabel: '공%·마%' }
   ];
 
   var AUTO_CAP = 5000;
@@ -205,11 +205,11 @@
   };
 
   var TITLES = [
-    { at: 1, name: '첫 뽑기의 설렘' }, { at: 10, name: '열 번 찍는 손' },
-    { at: 50, name: '뽑기 단골' }, { at: 77, name: '럭키 세븐 입문' },
-    { at: 777, name: '세븐 잭팟 꿈나무' }, { at: 1000, name: '천 번의 두근거림' },
-    { at: 5000, name: '오천 번의 운 시험' }, { at: 10000, name: '만 번 돌린 손' },
-    { at: 30000, name: '전설의 손놀림' }
+    { at: 1, name: 'The First' }, { at: 10, name: '금손의 품격' },
+    { at: 50, name: '구르는 돌' }, { at: 77, name: '럭키 세븐?' },
+    { at: 777, name: '메이플의 가호' }, { at: 1000, name: '메창의 밀물' },
+    { at: 5000, name: '여기까지 왔어?' }, { at: 10000, name: '자넨 대단하군..' },
+    { at: 30000, name: '초월자 : 알팡의 신' }
   ];
   function titleFor(trials) {
     var cur = null, next = null;

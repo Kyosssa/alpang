@@ -877,3 +877,388 @@ window.VIRAL_JOBS = [
   }
  }
 ];
+
+// ── v2: 최종 대표 직업 단위 (한글명·대표 스킬은 한글화 담당 확정표 v3(2026-10-24) 반영 완료) ──
+window.VIRAL_FINALS = [
+ {
+  "id": 112,
+  "nameEn": "Hero (4th)",
+  "ko": "히어로",
+  "koAlt": "파이터",
+  "avatar": "/assets/job-avatars/avatar-112.png",
+  "series": "Adventurer",
+  "branch": "Warrior",
+  "skills": [
+   {
+    "id": 1121010,
+    "nameEn": "Enrage",
+    "ko": "인레이지"
+   }
+  ],
+  "comment": "검의 극의에 닿은 자만이 이 이름을 짊어진다."
+ },
+ {
+  "id": 122,
+  "nameEn": "Paladin (4th)",
+  "ko": "팔라딘",
+  "koAlt": "페이지",
+  "avatar": "/assets/job-avatars/avatar-122.png",
+  "series": "Adventurer",
+  "branch": "Warrior",
+  "skills": [
+   {
+    "id": 1221011,
+    "nameEn": "Heaven's Hammer",
+    "ko": "생츄어리"
+   }
+  ],
+  "comment": "방패 뒤에 선 동료는 결코 쓰러지지 않는다."
+ },
+ {
+  "id": 132,
+  "nameEn": "Dark Knight (4th)",
+  "ko": "다크나이트",
+  "koAlt": "스피어맨",
+  "avatar": "/assets/job-avatars/avatar-132.png",
+  "series": "Adventurer",
+  "branch": "Warrior",
+  "skills": [
+   {
+    "id": 1321007,
+    "nameEn": "Beholder",
+    "ko": "비홀더"
+   }
+  ],
+  "comment": "창 끝에서 시작되는 전장의 지배자."
+ },
+ {
+  "id": 212,
+  "nameEn": "Arch Mage F/P (4th)",
+  "ko": "아크메이지(불,독)",
+  "koAlt": "위자드(불,독)",
+  "avatar": "/assets/job-avatars/avatar-212.png",
+  "series": "Adventurer",
+  "branch": "Magician",
+  "skills": [
+   {
+    "id": 2121007,
+    "nameEn": "Meteor Shower",
+    "ko": "메테오"
+   }
+  ],
+  "comment": "불과 독, 두 원소를 모두 삼킨 대마법사."
+ },
+ {
+  "id": 222,
+  "nameEn": "Arch Mage I/L (4th)",
+  "ko": "아크메이지(썬,콜)",
+  "koAlt": "위자드(썬,콜)",
+  "avatar": "/assets/job-avatars/avatar-222.png",
+  "series": "Adventurer",
+  "branch": "Magician",
+  "skills": [
+   {
+    "id": 2221007,
+    "nameEn": "Blizzard",
+    "ko": "블리자드"
+   }
+  ],
+  "comment": "얼어붙은 전장에 번개가 내리꽂힌다."
+ },
+ {
+  "id": 232,
+  "nameEn": "Bishop (4th)",
+  "ko": "비숍",
+  "koAlt": "클레릭",
+  "avatar": "/assets/job-avatars/avatar-232.png",
+  "series": "Adventurer",
+  "branch": "Magician",
+  "skills": [
+   {
+    "id": 2321008,
+    "nameEn": "Genesis",
+    "ko": "제네시스"
+   }
+  ],
+  "comment": "당신의 파티는 이 사람 덕분에 죽지 않는다."
+ },
+ {
+  "id": 312,
+  "nameEn": "Bow Master (4th)",
+  "ko": "보우마스터",
+  "koAlt": "헌터",
+  "avatar": "/assets/job-avatars/avatar-312.png",
+  "series": "Adventurer",
+  "branch": "Bowman",
+  "skills": [
+   {
+    "id": 3121008,
+    "nameEn": "Concentrate",
+    "ko": "컨센트레이트"
+   }
+  ],
+  "comment": "바람보다 빠른 화살, 표적은 이미 맞았다."
+ },
+ {
+  "id": 322,
+  "nameEn": "Marksman (4th)",
+  "ko": "신궁",
+  "koAlt": "사수",
+  "avatar": "/assets/job-avatars/avatar-322.png",
+  "series": "Adventurer",
+  "branch": "Bowman",
+  "skills": [
+   {
+    "id": 3221007,
+    "nameEn": "Snipe",
+    "ko": "스나이핑"
+   }
+  ],
+  "comment": "한 발이면 충분하다는 자신감의 정점."
+ },
+ {
+  "id": 412,
+  "nameEn": "Night Lord (4th)",
+  "ko": "나이트로드",
+  "koAlt": "어쌔신",
+  "avatar": "/assets/job-avatars/avatar-412.png",
+  "series": "Adventurer",
+  "branch": "Thief",
+  "skills": [
+   {
+    "id": 4121008,
+    "nameEn": "Ninja Storm",
+    "ko": "닌자 스톰"
+   }
+  ],
+  "comment": "어둠 속에서 표창이 먼저 도착한다."
+ },
+ {
+  "id": 422,
+  "nameEn": "Shadower (4th)",
+  "ko": "섀도어",
+  "koAlt": "시프",
+  "avatar": "/assets/job-avatars/avatar-422.png",
+  "series": "Adventurer",
+  "branch": "Thief",
+  "skills": [
+   {
+    "id": 4221007,
+    "nameEn": "Boomerang Step",
+    "ko": "부메랑 스텝"
+   }
+  ],
+  "comment": "단검 두 자루, 그림자보다 빠르게 벤다."
+ },
+ {
+  "id": 434,
+  "nameEn": "Dual Blade (4th)",
+  "ko": "듀얼블레이더",
+  "koAlt": "세미듀어러",
+  "avatar": "/assets/job-avatars/avatar-434.png",
+  "series": "Adventurer",
+  "branch": "Thief",
+  "skills": [
+   {
+    "id": 4341007,
+    "nameEn": "Thorns",
+    "ko": "쏜즈"
+   }
+  ],
+  "comment": "두 개의 단검으로 전장을 찢는 숨겨진 칼날."
+ },
+ {
+  "id": 512,
+  "nameEn": "Buccaneer (4th)",
+  "ko": "바이퍼",
+  "koAlt": "인파이터",
+  "avatar": "/assets/job-avatars/avatar-512.png",
+  "series": "Adventurer",
+  "branch": "Pirate",
+  "skills": [
+   {
+    "id": 5121010,
+    "nameEn": "Time Leap",
+    "ko": "타임 리프"
+   }
+  ],
+  "comment": "주먹 하나로 바다를 제패한 무투파 선장."
+ },
+ {
+  "id": 522,
+  "nameEn": "Corsair (4th)",
+  "ko": "캡틴",
+  "koAlt": "건슬링거",
+  "avatar": "/assets/job-avatars/avatar-522.png",
+  "series": "Adventurer",
+  "branch": "Pirate",
+  "skills": [
+   {
+    "id": 5221009,
+    "nameEn": "Hypnotize",
+    "ko": "힙노타이즈"
+   }
+  ],
+  "comment": "대포와 총, 화력으로 말하는 해적의 함장."
+ },
+ {
+  "id": 1112,
+  "nameEn": "Dawn Warrior (4th)",
+  "ko": "소울마스터",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-1112.png",
+  "series": "Cygnus Knights",
+  "branch": "Warrior",
+  "skills": [],
+  "comment": "여제의 검, 새벽의 빛으로 맹세한 기사."
+ },
+ {
+  "id": 1212,
+  "nameEn": "Blaze Wizard (4th)",
+  "ko": "플레임위자드",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-1212.png",
+  "series": "Cygnus Knights",
+  "branch": "Magician",
+  "skills": [],
+  "comment": "여제의 기사단에서 가장 뜨거운 불꽃."
+ },
+ {
+  "id": 1312,
+  "nameEn": "Wind Archer (4th)",
+  "ko": "윈드브레이커",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-1312.png",
+  "series": "Cygnus Knights",
+  "branch": "Bowman",
+  "skills": [],
+  "comment": "여제의 바람을 타고 날아드는 화살."
+ },
+ {
+  "id": 1412,
+  "nameEn": "Night Walker (4th)",
+  "ko": "나이트워커",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-1412.png",
+  "series": "Cygnus Knights",
+  "branch": "Thief",
+  "skills": [],
+  "comment": "여제의 그늘 아래 움직이는 밤의 칼날."
+ },
+ {
+  "id": 1512,
+  "nameEn": "Thunder Breaker (4th)",
+  "ko": "스트라이커",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-1512.png",
+  "series": "Cygnus Knights",
+  "branch": "Pirate",
+  "skills": [],
+  "comment": "여제의 천둥주먹, 부딪히면 부서진다."
+ },
+ {
+  "id": 2112,
+  "nameEn": "Aran (4th)",
+  "ko": "아란",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-2112.png",
+  "series": "Heroes",
+  "branch": "Aran",
+  "skills": [
+   {
+    "id": 21121003,
+    "nameEn": "Freeze Standing",
+    "ko": "프리즈 스탠딩"
+   }
+  ],
+  "comment": "폴암을 휘두를 때마다 전설이 다시 깨어난다."
+ },
+ {
+  "id": 2217,
+  "nameEn": "Evan (4th)",
+  "ko": "에반",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-2217.png",
+  "series": "Heroes",
+  "branch": "Evan",
+  "skills": [
+   {
+    "id": 22171003,
+    "nameEn": "Flame Wheel",
+    "ko": "플레임 휠"
+   }
+  ],
+  "comment": "드래곤과 마음을 나눈 유일한 마법사."
+ },
+ {
+  "id": 3212,
+  "nameEn": "Battle Mage (4th)",
+  "ko": "배틀메이지",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-3212.png",
+  "series": "Resistance",
+  "branch": "Battle Mage",
+  "skills": [
+   {
+    "id": 32121007,
+    "nameEn": "Maple Warrior",
+    "ko": "메이플 용사"
+   }
+  ],
+  "comment": "오라를 두른 스태프, 전장의 리듬을 바꾼다."
+ },
+ {
+  "id": 3312,
+  "nameEn": "Wild Hunter (4th)",
+  "ko": "와일드헌터",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-3312.png",
+  "series": "Resistance",
+  "branch": "Wild Hunter",
+  "skills": [
+   {
+    "id": 33121009,
+    "nameEn": "Wild Arrow Blast",
+    "ko": "와일드 애로우 블러스트"
+   }
+  ],
+  "comment": "재규어와 하나 되어 달리는 야생의 사냥꾼."
+ },
+ {
+  "id": 3512,
+  "nameEn": "Mechanic (4th)",
+  "ko": "메카닉",
+  "koAlt": null,
+  "avatar": "/assets/job-avatars/avatar-3512.png",
+  "series": "Resistance",
+  "branch": "Mechanic",
+  "skills": [
+   {
+    "id": 35121013,
+    "nameEn": "Mech: Siege Mode",
+    "ko": "메크: 시즈 모드"
+   }
+  ],
+  "comment": "로봇 군단을 거느린 저항군의 기술자."
+ }
+];
+window.finalDisplayName = function (job) {
+  if (!job) return '';
+  if (job.ko) return job.koAlt ? job.ko + ' (' + job.koAlt + ')' : job.ko;
+  return (job.nameEn || '').replace(/\s*\((\d+)(st|nd|rd|th)\)\s*$/, '');
+};
+window.finalSkillLine = function (job) {
+  if (!job || !job.skills || !job.skills.length) return '';
+  return job.skills.map(function (s) { return s.ko || s.nameEn; }).join(' · ');
+};
+// ── v2 공유 문구 개편(방안 B): 면책 없이 핵심 결과 2줄 + 링크 ──
+window.shareJobTextV2 = function (card) {
+  var name = window.finalDisplayName(card.job);
+  var skills = window.finalSkillLine(card.job);
+  var line2 = (skills ? skills + ' — ' : '') + (card.job.comment || '');
+  return '🎲 내 운명의 첫 캐릭은 ' + name + '!\n' + line2 + '\n' + 'https://alpang.gg/calculator/cube/';
+};
+window.shareCubeTextV2 = function (card) {
+  return '🎲 ' + card.target.name + ', ' + card.tries.toLocaleString() + '회 만에 성공! 운 등급 ' + card.grade.label + '\n'
+    + '칭호 「' + (card.title ? card.title.name : 'The First') + '」 · 너도 운 시험해봐\n' + 'https://alpang.gg/calculator/cube/';
+};

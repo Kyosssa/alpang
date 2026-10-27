@@ -60,6 +60,7 @@
     $('vwShareText').textContent = '';
     $('vwShareRow').style.display = 'none';
     $('vwToast').textContent = '';
+    currentShare = null;
   }
 
   function setCubeButtonsEnded(ended) {
@@ -70,32 +71,33 @@
 
   function renderJobCard(card) {
     var j = card.job;
+    var name = window.finalDisplayName(j);
     $('vwCardKind').textContent = '운명 첫 캐릭 뽑기 결과';
     $('vwCardBadge').textContent = card.isFirst ? '🟠 이 브라우저의 오늘 첫 결과 · ' + card.date : '연습 모드';
-    $('vwCardTitle').textContent = '내 운명의 첫 캐릭은 [' + j.name_en + '] 입니다!';
-    $('vwCardSub').textContent = GROUP_LINE[j.group] || '개성 강한 직업이 당신을 골랐습니다.';
+    $('vwCardTitle').textContent = '내 운명의 첫 캐릭은 [' + name + '] 입니다!';
+    $('vwCardSub').textContent = j.comment || '개성 강한 직업이 당신을 골랐습니다.';
     $('vwGradeText').textContent = '';
     $('vwStat1Label').textContent = '직업 분류';
-    $('vwStat1Val').textContent = (j.group || '-') + (j.stage ? ' · ' + j.stage : '');
+    $('vwStat1Val').textContent = (j.series || '') + (j.branch ? ' · ' + j.branch : '');
     $('vwStat2Label').textContent = '대표 스킬';
-    $('vwStat2Val').textContent = j.repSkill ? j.repSkill.name_en : '(대표 스킬 아이콘 없음 — 텍스트 카드)';
+    $('vwStat2Val').textContent = window.finalSkillLine(j) || '';
     var img = $('vwCardImg');
-    if (j.repSkill) {
-      img.onerror = function () { img.style.display = 'none'; };
-      img.src = '/assets/skill-icons/' + j.repSkill.id + '.png';
-      img.alt = j.repSkill.name_en; img.style.display = '';
-    } else { img.removeAttribute('src'); img.style.display = 'none'; }
+    // 아바타는 직업 아바타만 쓴다 (스킬 아이콘 사용 금지). 없거나 로드 실패하면 공통 단풍잎 로고.
+    var DEFAULT_AVATAR = '/assets/logo.png';
+    img.onerror = function () { if (img.getAttribute('src') !== DEFAULT_AVATAR) img.src = DEFAULT_AVATAR; };
+    img.src = j.avatar || DEFAULT_AVATAR;
+    img.alt = name; img.style.display = '';
     $('vwStat3Label').textContent = '누적 시행';
     $('vwStat3Val').textContent = card.trials.toLocaleString() + '회';
     $('vwStat4Label').textContent = '칭호';
     $('vwStat4Val').textContent = card.title && card.title.current ? card.title.current.name : '없음';
-    $('vwShareText').textContent =
-      '🍁 [알팡지지] 내 운명의 첫 캐릭 뽑기 결과!\n' +
-      '🎯 당첨 직업: ' + j.name_en + (j.stage ? ' (' + j.stage + ')' : '') + '\n' +
-      '💬 한줄평: "' + $('vwCardSub').textContent + '"\n' +
-      (card.isFirst ? '🟠 이 브라우저의 오늘 첫 결과 (' + card.date + ')\n' : '') +
-      '👉 내 첫 캐릭 보러 가기: https://alpang.gg/jobs/#job-' + j.id + '\n' +
-      '※ ' + JOB_NOTICE;
+    $('vwShareText').textContent = window.shareJobTextV2(card);
+    currentShare = {
+      title: '🎲 내 운명의 첫 캐릭은 ' + name + '!',
+      desc: (window.finalSkillLine(j) ? window.finalSkillLine(j) + ' — ' : '') + (j.comment || ''),
+      imageUrl: j.avatar ? 'https://alpang.gg' + j.avatar : 'https://alpang.gg/assets/og.png',
+      detailUrl: 'https://alpang.gg/calculator/cube/'
+    };
     $('vwShareRow').style.display = '';
   }
 
@@ -107,7 +109,7 @@
     $('vwCardSub').textContent = GRADE_LINE[card.grade];
     var img = $('vwCardImg'); // 등급 이미지는 렌더하지 않는다 (텍스트 등급만)
     img.removeAttribute('src'); img.style.display = 'none';
-    $('vwGradeText').textContent = '운 등급 (재미 판정): ' + GRADE_LABEL[card.grade];
+    $('vwGradeText').textContent = '운 등급 (재미 판정): ' + GRADE_LABEL[card.grade] + (card.title && card.title.current ? ' · 칭호 「' + card.title.current.name + '」' : '');
     $('vwStat1Label').textContent = '나의 도달 횟수';
     $('vwStat1Val').textContent = card.tries.toLocaleString() + '회';
     $('vwStat2Label').textContent = '같은 조건의 이론 기대 횟수';
@@ -116,20 +118,93 @@
     $('vwStat3Val').textContent = C.fmtProb(card.probWithin);
     $('vwStat4Label').textContent = '90% 누적 성공 기준 (보장 아님)';
     $('vwStat4Val').textContent = card.q90.toLocaleString() + '회';
-    $('vwShareText').textContent =
-      '🎲 [알팡지지] 큐브 운 시뮬레이션 결과!\n' +
-      '🎯 목표: ' + t.name + '\n' +
-      '🔥 내 결과: ' + card.tries.toLocaleString() + '회 만에 성공 (같은 조건의 이론 기대 횟수 ' + card.expected.toFixed(1) + '회)\n' +
-      '📊 ' + card.tries + '회 이내 성공할 확률 ' + C.fmtProb(card.probWithin) + ' · 운 등급: ' + GRADE_LABEL[card.grade] + '\n' +
-      (card.isFirst ? '🟠 이 브라우저의 오늘 첫 결과 (' + card.date + ')\n' : '') +
-      '👉 너도 돌려 보기: https://alpang.gg/calculator/cube/\n' +
-      '※ ' + CUBE_NOTICE;
+    $('vwShareText').textContent = window.shareCubeTextV2({ target: t, tries: card.tries, grade: { label: GRADE_LABEL[card.grade] }, title: card.title && card.title.current });
+    currentShare = {
+      title: '🎲 ' + t.name + ', ' + card.tries.toLocaleString() + '회 만에 성공!',
+      desc: '운 등급 ' + GRADE_LABEL[card.grade] + (card.title && card.title.current ? ' · 칭호 「' + card.title.current.name + '」' : '') + ' · 너도 운 시험해봐',
+      imageUrl: 'https://alpang.gg/assets/og.png',
+      detailUrl: 'https://alpang.gg/calculator/cube/'
+    };
     $('vwShareRow').style.display = '';
+    showSlotsResult(t, true);
   }
 
-  function copyShareText() {
+  // ── v2 슬롯 박스 연출 (실제 줄 추첨이 아닌 목표 당첨 여부 표시) ──
+  function slotEls() { return [$('vwSlot1'), $('vwSlot2'), $('vwSlot3')]; }
+  function showSlotsRolling() {
+    slotEls().forEach(function (el) { el.className = 'vw-slot rolling'; el.textContent = '···'; });
+  }
+  function showSlotsResult(target, success) {
+    var need = target.slotNeed || 2;
+    slotEls().forEach(function (el, i) {
+      if (success && i < need) { el.className = 'vw-slot hit'; el.textContent = target.slotLabel || '목표 옵션'; }
+      else { el.className = 'vw-slot miss'; el.textContent = '—'; }
+    });
+  }
+  function showSlotsIdle(target) {
+    slotEls().forEach(function (el) { el.className = 'vw-slot'; el.textContent = '?'; });
+    $('vwSlotNeed').textContent = '목표 ' + (target.slotNeed || 2) + '줄: ' + (target.slotLabel || '');
+  }
+
+  // ── v2 공유 본안: 카카오톡 피드 공유 (방안 A). 키·SDK가 없으면 텍스트로 폴백 ──
+  var currentShare = null; // {title, desc, imageUrl, detailUrl}
+  function kakaoReady() {
+    try {
+      if (!window.Kakao || !window.KAKAO_JS_KEY) return false;
+      if (!window.Kakao.isInitialized()) window.Kakao.init(window.KAKAO_JS_KEY);
+      return window.Kakao.isInitialized() && !!window.Kakao.Share;
+    } catch (e) { return false; }
+  }
+  function shareKakaoOrFallback() {
+    if (!currentShare) { setStatus('먼저 결과를 뽑아 주세요.'); return; }
+    if (!kakaoReady()) { // SDK 미지원·차단·키 미도착 시 2줄 텍스트 공유로 폴백
+      copyShareText('✅ 카카오 공유를 쓸 수 없어 텍스트 문구를 복사했습니다.');
+      return;
+    }
+    try {
+      window.Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: currentShare.title,
+          description: currentShare.desc,
+          imageUrl: currentShare.imageUrl,
+          link: { mobileWebUrl: currentShare.detailUrl, webUrl: currentShare.detailUrl }
+        },
+        buttons: [
+          { title: '자세히 보기', link: { mobileWebUrl: currentShare.detailUrl, webUrl: currentShare.detailUrl } },
+          { title: '나도 뽑기', link: { mobileWebUrl: 'https://alpang.gg/calculator/cube/', webUrl: 'https://alpang.gg/calculator/cube/' } }
+        ]
+      });
+    } catch (e) {
+      copyShareText('✅ 카카오 공유에 실패해 텍스트 문구를 복사했습니다.');
+    }
+  }
+
+  // ── v2 카드 이미지 클립보드 복사 (미지원 시 텍스트 공유로 폴백) ──
+  function copyCardImage() {
+    var card = $('vwCard');
+    function fallbackText(reason) {
+      copyShareText('✅ ' + reason + ' 텍스트 문구를 복사했습니다.');
+    }
+    if (!window.html2canvas || !navigator.clipboard || typeof ClipboardItem === 'undefined' || !navigator.clipboard.write) {
+      fallbackText('이 브라우저는 이미지 복사를 지원하지 않아'); return;
+    }
+    window.html2canvas(card, { backgroundColor: '#161B24', scale: 2 }).then(function (canvas) {
+      canvas.toBlob(function (blob) {
+        if (!blob) { fallbackText('이미지 생성에 실패해'); return; }
+        var item = {};
+        item['image/png'] = blob;
+        navigator.clipboard.write([new ClipboardItem(item)]).then(function () {
+          $('vwToast').textContent = '✅ 결과 카드 이미지가 복사되었습니다! 카톡·디코에 붙여넣어 자랑하세요.';
+        }).catch(function () { fallbackText('이미지 복사가 막혀'); });
+      }, 'image/png');
+    }).catch(function () { fallbackText('이미지 생성에 실패해'); });
+  }
+
+  function copyShareText(doneMsg) {
     var txt = $('vwShareText').textContent;
-    function done() { $('vwToast').textContent = '✅ 카톡·디코 자랑 문구가 복사되었습니다!'; }
+    var msg = (typeof doneMsg === 'string' && doneMsg) ? doneMsg : '✅ 카톡·디코 자랑 문구가 복사되었습니다!';
+    function done() { $('vwToast').textContent = msg; }
     function fallback() {
       var r = document.createRange();
       r.selectNodeContents($('vwShareText'));
@@ -137,7 +212,7 @@
       sel.removeAllRanges(); sel.addRange(r);
       var okCopy = false;
       try { okCopy = document.execCommand && document.execCommand('copy'); } catch (e) { okCopy = false; }
-      $('vwToast').textContent = okCopy ? '✅ 카톡·디코 자랑 문구가 복사되었습니다!'
+      $('vwToast').textContent = okCopy ? msg
         : '복사가 지원되지 않습니다. 선택된 문구를 길게 눌러 복사해 주세요.';
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -175,7 +250,7 @@
     var cj = core.restoreFirst('job');
     if (cj) {
       var job = null;
-      window.VIRAL_JOBS.forEach(function (j) { if (j.id === cj.result.jobId) job = j; });
+      window.VIRAL_FINALS.forEach(function (j) { if (j.id === cj.result.jobId) job = j; });
       if (job) restoredCards.job = { kind: 'job', job: job, isFirst: true, date: cj.date, trials: cj.result.trials, title: C.titleFor(cj.result.trials) };
     }
     if (cc) {
@@ -208,6 +283,7 @@
       sel.appendChild(o);
     });
     $('vwTargetDesc').textContent = C.TARGETS[0].desc;
+    showSlotsIdle(C.TARGETS[0]);
     if ($('vwHatExamples')) $('vwHatExamples').textContent = C.HAT_RULE_EXAMPLES;
     refreshStorageNote();
 
@@ -229,6 +305,7 @@
       }
       cubeSeq++;
       restoredCards.cube = null; // 목표 변경은 복원 스냅샷도 무효화
+      showSlotsIdle(t);
       $('vwTargetDesc').textContent = t.desc;
       $('vwCubeCount').textContent = '누적 소모: 0회';
       setCubeButtonsEnded(false);
@@ -240,7 +317,7 @@
       restoredCards.job = null;
       $('vwJobRoll').disabled = true;
       var seq = ++jobSeq;
-      core.rollJob(window.VIRAL_JOBS).then(function (card) {
+      core.rollJob(window.VIRAL_FINALS).then(function (card) {
         $('vwJobRoll').disabled = false; // 완료 시 실행 중 상태 해제는 항상 한다
         // 다른 모드로 이동한 뒤 돌아온 늦은 결과는 현재 카드·공유를 덮지 않는다
         if (seq !== jobSeq || currentMode !== 'job') { refreshStorageNote(); return; }
@@ -275,17 +352,29 @@
     $('vwCubeOnce').addEventListener('click', function () {
       restoredCards.cube = null;
       var seq = cubeSeq;
-      core.rollCubeOnce().then(function (r) { handleCubeResult(r, seq); }).catch(cubeError);
+      showSlotsRolling();
+      core.rollCubeOnce().then(function (r) {
+        if (seq === cubeSeq && currentMode === 'cube') {
+          if (r.status === 'running') showSlotsRolling();
+          else if (r.status !== 'success') showSlotsResult(core.target, false);
+        }
+        handleCubeResult(r, seq);
+      }).catch(cubeError);
     });
     $('vwCubeAuto').addEventListener('click', function () {
       restoredCards.cube = null;
       var seq = cubeSeq;
-      core.rollCubeAuto().then(function (r) { handleCubeResult(r, seq); }).catch(cubeError);
+      showSlotsRolling();
+      core.rollCubeAuto().then(function (r) {
+        if (seq === cubeSeq && currentMode === 'cube' && r.status === 'failed') showSlotsResult(core.target, false);
+        handleCubeResult(r, seq);
+      }).catch(cubeError);
     });
     $('vwCubeNew').addEventListener('click', function () {
       if (!core.newCubeRun()) { setStatus('진행 중인 도전이 있어 새 도전을 시작할 수 없습니다.'); return; }
       cubeSeq++;
       restoredCards.cube = null;
+      showSlotsIdle(core.target);
       $('vwCubeCount').textContent = '누적 소모: 0회';
       setCubeButtonsEnded(false);
       resetCardUI();
@@ -293,7 +382,9 @@
       refreshStorageNote();
     });
 
-    $('vwCopyBtn').addEventListener('click', copyShareText);
+    $('vwCopyBtn').addEventListener('click', function () { copyShareText(); });
+    $('vwImgBtn').addEventListener('click', copyCardImage);
+    $('vwKakaoBtn').addEventListener('click', shareKakaoOrFallback);
 
     window.addEventListener('storage', function (e) {
       if (e.key && e.key.indexOf('alpang.viral.v1.') === 0) setStatus('다른 탭의 기록이 반영됐습니다.');
