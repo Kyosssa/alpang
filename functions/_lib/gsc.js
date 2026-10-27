@@ -183,6 +183,12 @@ export async function getSearchSectionData(env, { period = 7, fetchImpl, nowMs }
     const prev = await querySearchAnalytics({ ...common, startDate: prevStart, endDate: prevEnd, dimensions: ['query'], rowLimit: 25 });
     if (prev.ok) prevQueries = prev.rows;
   } catch { prevQueries = null; }
+  // [표시 확장 준비본 · 2026-10-26] 전 기간 페이지 — 페이지별 표의 증감 자리용. 격리 규칙은 prevQueries와 동일.
+  let prevPages = null;
+  try {
+    const prevP = await querySearchAnalytics({ ...common, startDate: prevStart, endDate: prevEnd, dimensions: ['page'], rowLimit: 20 });
+    if (prevP.ok) prevPages = prevP.rows.map(r => ({ ...r, key: pagePath(r.key) }));
+  } catch { prevPages = null; }
   const t = totals.rows[0] || { clicks: 0, impressions: 0, ctrPct: 0, position: 0 };
   const data = {
     ok: true, startDate, endDate,
@@ -191,6 +197,7 @@ export async function getSearchSectionData(env, { period = 7, fetchImpl, nowMs }
     prevQueries,
     prevStart, prevEnd,
     pages: pages.rows.map(r => ({ ...r, key: pagePath(r.key) })),
+    prevPages,
   };
   resultCache.set(cacheKey, { at: now, data });
   return data;

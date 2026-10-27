@@ -47,6 +47,7 @@
   tr:last-child td{border-bottom:none}
   td.num, th.num{text-align:right;white-space:nowrap}
   .mname{font-weight:700}
+  .mix-badge{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-btn);font-size:11.5px;font-weight:700;vertical-align:2px}
   .men{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
   .chip{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:13.5px;margin:1px 2px 1px 0}
   .chip b{color:var(--accent-dark)}
@@ -101,10 +102,11 @@
   <section class="card">
     <h2>빅토리아 아일랜드 초반 사냥터 후보<span class="cnt">39곳</span></h2>
     <p class="body">빅토리아 아일랜드 본토(헤네시스·엘리니아·페리온·커닝시티·리스항구·슬리피우드 일대) 맵 가운데 몬스터가 출현하는 맵을 모았습니다. 어느 곳이 가장 좋은지는 캐릭터와 장비에 따라 달라지므로 순위를 매기지 않고, 출현 몬스터와 배치 규모를 나란히 비교할 수 있게 정리했습니다. 출현 몬스터의 최저 레벨이 낮은 맵부터 정렬했습니다.</p>
+    <aside class="name-status" id="notice-mixed-warning"><p>드레이크의밥상에는 Lv.54~60 몬스터도 함께 나와요. 낮은 레벨 구간 맵이지만 고레벨 몬스터가 섞여 있으니 사냥할 때 주의해 주세요.</p></aside>
     <table>
       <tr><th>맵</th><th>출현 몬스터</th><th class="num">종류</th><th class="num">레벨 범위</th><th class="num">배치 총량</th></tr>
 <tr><td><span class="mname">리스항구 외곽</span><span class="men">Right Around Lith Harbor</span></td><td><span class="chip">달팽이 <b>Lv.1</b></span><span class="chip">파란 달팽이 <b>Lv.2</b></span></td><td class="num">2</td><td class="num">Lv.1~2</td><td class="num">14</td></tr>
-<tr><td><span class="mname">드레이크의밥상</span><span class="men">Drake's Meal Table</span></td><td><span class="chip">Bob <b>Lv.2</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">3</td><td class="num">Lv.2~60</td><td class="num">37</td></tr>
+<tr><td><span class="mname">드레이크의밥상</span><span class="mix-badge">고레벨 몬스터 혼합</span><span class="men">Drake's Meal Table</span></td><td><span class="chip">Bob <b>Lv.2</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">3</td><td class="num">Lv.2~60</td><td class="num">37</td></tr>
 <tr><td><span class="mname">해질녘하늘</span><span class="men">Sunset Sky</span></td><td><span class="chip">빨간 달팽이 <b>Lv.5</b></span><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">슬라임 <b>Lv.7</b></span></td><td class="num">3</td><td class="num">Lv.5~7</td><td class="num">33</td></tr>
 <tr><td><span class="mname">헤네시스 북쪽언덕</span><span class="men">The Hill North of Henesys</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span></td><td class="num">1</td><td class="num">Lv.6~6</td><td class="num">20</td></tr>
 <tr><td><span class="mname">빛나는 숲의 통로</span><span class="men">Shining Forest Path</span></td><td><span class="chip">주황버섯 <b>Lv.6</b></span><span class="chip">슬라임 <b>Lv.7</b></span></td><td class="num">2</td><td class="num">Lv.6~7</td><td class="num">17</td></tr>
@@ -144,7 +146,28 @@
 <tr><td><span class="mname">금지된 제단</span><span class="men">Forbidden Altar</span></td><td><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">1</td><td class="num">Lv.64~64</td><td class="num">4</td></tr>
     </table>
     <p class="legend">배치 총량은 본진 기준 데이터에서 해당 맵에 배치된 몬스터 수의 합계입니다. 실제 사냥 효율은 리젠·지형·직업에 따라 달라질 수 있습니다. 한글 이름은 표시명 후보이며, 후보가 없는 맵은 영문명으로 표기했습니다.</p>
+    <p class="legend">'고레벨 몬스터 혼합' 배지는 그 맵에 나오는 몬스터의 레벨 차이가 30 이상 벌어지는 맵에만 붙여요.</p>
   </section>
+  <aside class="name-status" id="notice-distribution-attack-defense" data-component="distribution-attack-defense" data-scope="guide">
+    <h2 class="sr-only">몬스터 공격·방어 분포</h2>
+    <p>몬스터 175종의 원본 수치를 필드별로 구간 나눈 결과입니다. 물리 공격력은 100~499 구간이 85종으로 가장 많고 1,000 이상도 41종 있습니다. 마법 공격력은 값이 0인 종이 7종 있고 100~499 구간이 79종입니다. 물리 방어력은 1~99 구간 62종 · 100~499 구간 67종으로 나뉘고, 마법 방어력은 100~499 구간이 79종으로 가장 많습니다. 이 수치는 원본 기록을 구간으로 나눈 것으로, 몬스터의 강함을 매긴 순위가 아닙니다.</p>
+  </aside>
+  <details class="name-status" id="notice-distribution-predecessor" data-component="distribution-predecessor" data-scope="guide">
+    <summary>스킬 선행 관계 분포</summary>
+    <p>선행 스킬이 있는 스킬 161개를 기준으로 보면, 선행 스킬이 1개인 스킬이 160개로 대부분이고 3개 이상인 스킬은 1개뿐입니다. 선행 스킬이 없는 스킬은 이 집계에 포함하지 않았습니다.</p>
+  </details>
+  <details class="name-status" id="notice-distribution-attr-badge" data-component="distribution-attr-badge" data-scope="guide">
+    <summary>스킬 속성 배지 분포</summary>
+    <p>속성 코드가 기록된 스킬 48종을 코드별로 보면 f 코드 22종, h 코드 9종, i 코드 8종, l 코드 7종, s 코드 2종입니다. 코드는 원본 데이터의 표기를 그대로 옮긴 것으로, 속성 이름으로 바꿔 표기하지 않습니다.</p>
+  </details>
+  <details class="name-status" id="notice-distribution-return-link" data-component="distribution-return-link" data-scope="guide">
+    <summary>맵 귀환 연결 분포</summary>
+    <p>귀환 목적지가 되는 맵 41곳을 기준으로, 각 목적지로 돌아오는 출발 맵 수를 세면 1곳에서만 돌아오는 목적지가 13곳, 2~5곳에서 돌아오는 목적지가 16곳, 6~10곳이 5곳, 11곳 이상이 7곳입니다. 전체 맵 402곳의 귀환 연결을 목적지 쪽에서 다시 센 집계입니다.</p>
+  </details>
+  <details class="name-status" id="notice-distribution-dialogue-length" data-component="distribution-dialogue-length" data-scope="guide">
+    <summary>NPC 대사 길이 분포</summary>
+    <p>대사가 확인된 NPC 1,234명을 기준으로, 한 NPC가 가진 서로 다른 대사 문장 수를 세면 문장 1개가 303명, 2~3개가 598명, 4~6개가 321명, 7~10개가 5명, 11개 이상이 7명입니다. 같은 문장이 반복되는 경우는 한 번으로 셌습니다.</p>
+  </details>
   <aside class="name-status" id="notice-skill-predecessor-count" data-component="skill-predecessor-count" data-scope="guide">
     <p style="margin:0 0 6px"><strong>선행 스킬 개수 분포</strong></p>
     <p style="margin:0 0 6px">선행 스킬이 있는 스킬 161개를 기준으로, 배우기 전에 먼저 배워야 하는 스킬이 몇 개인지 셉니다. 선행 기록이 비어 있는 4건은 세지 않았어요.</p>

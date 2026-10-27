@@ -43,9 +43,16 @@ function gaugeRows(rows, total) {
 }
 
 // ---- 구글 검색 (서치콘솔) 섹션 — 2차 확장. 실패해도 자체 통계는 그대로 뜬다 (섹션 단위 격리) ----
-function gscTable(title, rows) {
-  const trs = rows.map(r => `<tr><td>${esc(r.key)}</td><td class="n">${Number(r.clicks).toLocaleString('ko-KR')}</td><td class="n">${Number(r.impressions).toLocaleString('ko-KR')}</td><td class="n">${Number(r.ctrPct).toFixed(1)}%</td><td class="n">${Number(r.position).toFixed(1)}</td></tr>`).join('');
-  return `<table><thead><tr><th>항목</th><th class="n">클릭</th><th class="n">노출</th><th class="n">CTR</th><th class="n">평균 순위</th></tr></thead><tbody>${trs || '<tr><td colspan="5" class="empty">기록 없음</td></tr>'}</tbody></table>`;
+function gscTable(title, rows, prevRows) {
+  // [표시 확장 준비본 · 2026-10-26] 페이지별 표를 검색어 표와 같은 수준으로: 전 기간 클릭·증감·CTR 바·순위 알약.
+  const prevMap = new Map((prevRows || []).map(r => [r.key, r.clicks]));
+  const trs = rows.map(r => {
+    const prev = prevRows ? prevMap.get(r.key) : undefined;
+    const prevCell = prev === undefined ? '—' : Number(prev).toLocaleString('ko-KR');
+    const diffCell = prev === undefined ? '—' : (Number(r.clicks) - Number(prev) > 0 ? '+' : '') + (Number(r.clicks) - Number(prev)).toLocaleString('ko-KR');
+    return `<tr><td>${esc(r.key)}</td><td class="n">${Number(r.clicks).toLocaleString('ko-KR')}</td><td class="n">${prevCell}</td><td class="n">${diffCell}</td><td class="n">${Number(r.impressions).toLocaleString('ko-KR')}</td><td class="n"><span class="ctr-wrap"><span class="ctr-track"><span class="ctr-fill" style="width:${Math.min(100, Number(r.ctrPct))}%"></span></span>${Number(r.ctrPct).toFixed(1)}%</span></td><td class="n"><span class="rank-pill ${rankClass(r.position)}">${Number(r.position).toFixed(1)}위</span></td></tr>`;
+  }).join('');
+  return `<table><thead><tr><th>페이지</th><th class="n">클릭</th><th class="n">전 기간 클릭</th><th class="n">증감</th><th class="n">노출</th><th class="n">CTR</th><th class="n">평균 순위</th></tr></thead><tbody>${trs || '<tr><td colspan="7" class="empty">기록 없음</td></tr>'}</tbody></table>`;
 }
 // 이식 1단계 골격: 검색어 표 — CTR 미니 바 바인딩, 순위 배지는 자리만 (구간 경계 미확정이라 색 구간 미적용)
 // [연결 완료 P2 · 2026-10-18 확정] 순위 배지 구간 — 상위 3위 이하 · 중위 10위 이하, 둘 다 '이하(포함)'이라 비교는 <= 유지.
@@ -82,7 +89,7 @@ function gscSection(data, period, days) {
 <p class="sub">서치콘솔 확정 데이터 기준: ${esc(data.endDate)}까지 (구글 데이터는 2~3일 늦게 확정됩니다 · 조회 기간 ${esc(data.startDate)} ~ ${esc(data.endDate)}) · 기간: ${toggle}</p>
 <div class="gsc-bar"><span>총 클릭 <b>${Number(t.clicks).toLocaleString('ko-KR')}</b></span><span>총 노출 <b>${Number(t.impressions).toLocaleString('ko-KR')}</b></span><span>평균 CTR <b>${Number(t.ctrPct).toFixed(1)}%</b></span><span>평균 순위 <b>${Number(t.position).toFixed(1)}위</b></span></div>
 <div class="tabpane" id="gscQ">${gscQueryTable(data.queries, data.prevQueries)}</div>
-<div class="tabpane" id="gscP" style="display:none">${gscTable('페이지별', data.pages)}</div>
+<div class="tabpane" id="gscP" style="display:none">${gscTable('페이지별', data.pages, data.prevPages)}</div>
 <p class="sub">일부 검색어는 구글 정책상 표시되지 않습니다.</p></section>`;
 }
 
