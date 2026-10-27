@@ -46,6 +46,7 @@
   }
 
   function resetCardUI() {
+    hideShareNote();
     $('vwCardKind').textContent = '결과 명함 카드';
     $('vwCardBadge').textContent = '';
     $('vwCardTitle').textContent = '아직 결과가 없습니다. 왼쪽에서 직접 돌려 보세요!';
@@ -70,6 +71,7 @@
   }
 
   function renderJobCard(card) {
+    hideShareNote();
     var j = card.job;
     var name = window.finalDisplayName(j);
     $('vwCardKind').textContent = '운명 첫 캐릭 뽑기 결과';
@@ -102,6 +104,7 @@
   }
 
   function renderCubeCard(card) {
+    hideShareNote();
     var t = card.target;
     $('vwCardKind').textContent = '목표 큐브 운 시뮬레이션 결과';
     $('vwCardBadge').textContent = card.isFirst ? '🟠 이 브라우저의 오늘 첫 결과 · ' + card.date : '연습 모드';
@@ -155,10 +158,18 @@
       return window.Kakao.isInitialized() && !!window.Kakao.Share;
     } catch (e) { return false; }
   }
+  function showShareNote(msg) {
+    var n = $('vwShareNote');
+    if (!n) return; // 구 HTML과 섞여도 공유 동작이 깨지지 않게 한다
+    n.textContent = msg;
+    n.hidden = false;
+  }
+  function hideShareNote() { var n = $('vwShareNote'); if (n) n.hidden = true; }
   function shareKakaoOrFallback() {
     if (!currentShare) { setStatus('먼저 결과를 뽑아 주세요.'); return; }
-    if (!kakaoReady()) { // SDK 미지원·차단·키 미도착 시 2줄 텍스트 공유로 폴백
+    if (!kakaoReady()) { // SDK 미지원·차단·키 미도착 시 2줄 텍스트 공유로 폴백 + 눈에 띄는 안내
       copyShareText('✅ 카카오 공유를 쓸 수 없어 텍스트 문구를 복사했습니다.');
+      showShareNote('⚠️ 카카오 공유를 열 수 없어서 자랑 문구를 복사해 뒀어요. 카카오톡 대화창에 붙여넣어 공유해 주세요. (광고 차단·네트워크 환경에서는 카카오 창이 열리지 않을 수 있어요)');
       return;
     }
     try {
@@ -175,8 +186,10 @@
           { title: '나도 뽑기', link: { mobileWebUrl: 'https://alpang.gg/calculator/cube/', webUrl: 'https://alpang.gg/calculator/cube/' } }
         ]
       });
+      showShareNote('💬 카카오 공유 창을 열었어요. 창이 보이지 않으면 브라우저 팝업 차단을 해제해 주세요.');
     } catch (e) {
       copyShareText('✅ 카카오 공유에 실패해 텍스트 문구를 복사했습니다.');
+      showShareNote('⚠️ 카카오 공유 창을 열지 못했어요. 팝업이 차단된 경우 주소창의 팝업 차단 아이콘에서 이 사이트를 허용해 주세요. 대신 자랑 문구를 복사해 뒀으니 붙여넣어 공유할 수 있어요.');
     }
   }
 
@@ -185,6 +198,7 @@
     var card = $('vwCard');
     function fallbackText(reason) {
       copyShareText('✅ ' + reason + ' 텍스트 문구를 복사했습니다.');
+      showShareNote('⚠️ ' + reason + ' 텍스트 문구를 복사해 뒀어요. 카톡·디코에 붙여넣어 공유해 주세요.');
     }
     if (!window.html2canvas || !navigator.clipboard || typeof ClipboardItem === 'undefined' || !navigator.clipboard.write) {
       fallbackText('이 브라우저는 이미지 복사를 지원하지 않아'); return;
@@ -196,6 +210,7 @@
         item['image/png'] = blob;
         navigator.clipboard.write([new ClipboardItem(item)]).then(function () {
           $('vwToast').textContent = '✅ 결과 카드 이미지가 복사되었습니다! 카톡·디코에 붙여넣어 자랑하세요.';
+          hideShareNote();
         }).catch(function () { fallbackText('이미지 복사가 막혀'); });
       }, 'image/png');
     }).catch(function () { fallbackText('이미지 생성에 실패해'); });
