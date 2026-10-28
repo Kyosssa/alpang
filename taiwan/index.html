@@ -173,7 +173,7 @@
 </head>
 <body>
 <a class="skip-link" href="#main-start">跳至主要內容</a>
-  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">首頁</a><a href="/timeline/">時間軸</a><a href="/faq/">FAQ</a><a href="/mobs/">怪物圖鑑</a><a href="/maps/">地圖探索</a><a href="/items/">道具</a><a href="/npcs/">NPC·任務</a><a href="/jobs/">職業·技能</a><a href="/calculator/cube/">魔方價值計算機</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
+  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">首頁</a><a href="/timeline/">時間軸</a><a href="/faq/">FAQ</a><a href="/mobs/">怪物圖鑑</a><a href="/maps/">地圖探索</a><a href="/items/">道具</a><a href="/npcs/">NPC·任務</a><a href="/jobs/">職業·技能</a><a href="/calculator/cube/">魔方價值計算機</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="切換深色模式"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
 
   <div class="hero">
     <h1 id="main-start" tabindex="-1" class="site-h1">Alpang.gg — 楓之谷世界 Alpang 伺服器資訊 DB</h1>
@@ -187,7 +187,7 @@
         <a class="slide" href="/timeline/"><img src="/assets/i18n/taiwan/hero-update.webp" alt="網站更新中" width="1024" height="434" loading="lazy" decoding="async"></a>
       </div>
       <div class="dots" id="dots"></div>
-      <button class="pause-btn" id="pauseBtn" aria-label="배너 자동 전환 정지">⏸</button>
+      <button class="pause-btn" id="pauseBtn" aria-label="停止橫幅自動切換">⏸</button>
     </div>
   </div>
 
@@ -198,7 +198,7 @@
     <div class="sb-in">
       <span class="sb-ic">🔍</span>
       <div class="sb-wrap">
-        <input type="text" id="alpangSearch" disabled aria-disabled="true" placeholder="整合搜尋怪物·地圖·道具·NPC·任務" aria-label="통합 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
+        <input type="text" id="alpangSearch" disabled aria-disabled="true" placeholder="整合搜尋怪物·地圖·道具·NPC·任務" aria-label="整合搜尋" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
         <div class="sb-results" id="sbResults" role="listbox"></div>
       </div>
       <button type="button" class="sb-btn" id="sbGo" aria-label="搜尋">搜尋</button>
@@ -207,18 +207,18 @@
   </div>
 
   <nav class="cats">
-    <a class="bcard t-timeline" href="/timeline/" aria-label="알팡 타임라인"><img class="bcard-img" src="/assets/card-timeline.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Alpang 時間軸</h3><p>依時間順序整理製作團隊頻道的開發消息·發言原文</p></span></a>
-    <a class="bcard t-faq" href="/faq/" aria-label="확인된 발언 FAQ"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>已確認發言 FAQ</h3><p>常見問題只以實際發言來回答</p></span></a>
-    <a class="bcard t-changes" href="#changes" aria-label="본진 빅뱅 변경점"><img class="bcard-img" src="/assets/card-bigbang.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>原作大爆炸改版變更點</h3><p>以 MapleLand 的手感來玩會迷路的五個變化</p></span></a>
-    <a class="bcard t-npcs" href="/npcs/" aria-label="NPC·퀘스트 도감"><img class="bcard-img" src="/assets/card-npc.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>NPC·任務圖鑑</h3><p>1,836 名 NPC 的位置·台詞，以及 3,412 件任務的條件·獎勵</p></span></a>
-    <a class="bcard t-mobs" href="/mobs/" aria-label="몬스터 도감"><img class="bcard-img" src="/assets/card-mobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>怪物圖鑑</h3><p>一眼瀏覽已收集的 175 種怪物等級·HP·出現地圖</p></span></a>
-    <a class="bcard t-maps" href="/maps/" aria-label="맵 탐색"><img class="bcard-img" src="/assets/card-maps.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>地圖探索</h3><p>依地區瀏覽已收錄的 402 張地圖</p></span></a>
-    <a class="bcard t-items" href="/items/" aria-label="아이템 목록"><img class="bcard-img" src="/assets/card-items.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>道具列表</h3><p>依分類整理的道具列表候補，共 14,577 件</p></span></a>
-    <div class="bcard t-jobs soon" aria-label="직업·스킬 도감 준비 중"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>職業·技能圖鑑 <span class="soon-badge">準備中</span></h3><p>正在整理 90 種職業與 610 項技能，從轉職條件開始</p></span></div>
-    <div class="bcard t-guide soon" aria-label="스타트 가이드 준비 중"><span class="bcard-shade"></span><span class="bcard-txt"><h3>入門指南 <span class="soon-badge">準備中</span></h3><p>為開服準備中：從選擇職業到前期練功路線</p></span></div>
-    <a class="bcard t-hunting" href="/guide/hunting/" aria-label="초반 사냥터 후보"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>前期練功地點候補</h3><p>比較維多利亞島前期 39 張地圖的出現怪物</p></span></a>
-    <a class="bcard t-orbis" href="/guide/orbis-leafre/" aria-label="오르비스와 리프레 구경"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>天空之城與 Leafre 搶先看</h3><p>天空與精靈之地，搶先預覽 60 種出現怪物</p></span></a>
-    <a class="bcard t-edel" href="/guide/edelstein/" aria-label="에델슈타인 엿보기"><img class="bcard-img" src="/assets/card-edelstein.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>埃德爾斯坦搶先看</h3><p>黑翼的礦山城市與 27 種出現怪物</p></span></a>
+    <a class="bcard t-timeline" href="/timeline/" aria-label="Alpang 時間軸"><img class="bcard-img" src="/assets/card-timeline.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Alpang 時間軸</h3><p>依時間順序整理製作團隊頻道的開發消息·發言原文</p></span></a>
+    <a class="bcard t-faq" href="/faq/" aria-label="已確認發言 FAQ"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>已確認發言 FAQ</h3><p>常見問題只以實際發言來回答</p></span></a>
+    <a class="bcard t-changes" href="#changes" aria-label="原作大爆炸變更點"><img class="bcard-img" src="/assets/card-bigbang.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>原作大爆炸改版變更點</h3><p>以 MapleLand 的手感來玩會迷路的五個變化</p></span></a>
+    <a class="bcard t-npcs" href="/npcs/" aria-label="NPC·任務圖鑑"><img class="bcard-img" src="/assets/card-npc.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>NPC·任務圖鑑</h3><p>1,836 名 NPC 的位置·台詞，以及 3,412 件任務的條件·獎勵</p></span></a>
+    <a class="bcard t-mobs" href="/mobs/" aria-label="怪物圖鑑"><img class="bcard-img" src="/assets/card-mobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>怪物圖鑑</h3><p>一眼瀏覽已收集的 175 種怪物等級·HP·出現地圖</p></span></a>
+    <a class="bcard t-maps" href="/maps/" aria-label="地圖探索"><img class="bcard-img" src="/assets/card-maps.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>地圖探索</h3><p>依地區瀏覽已收錄的 402 張地圖</p></span></a>
+    <a class="bcard t-items" href="/items/" aria-label="道具清單"><img class="bcard-img" src="/assets/card-items.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>道具列表</h3><p>依分類整理的道具列表候補，共 14,577 件</p></span></a>
+    <div class="bcard t-jobs soon" aria-label="職業·技能圖鑑準備中"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>職業·技能圖鑑 <span class="soon-badge">準備中</span></h3><p>正在整理 90 種職業與 610 項技能，從轉職條件開始</p></span></div>
+    <div class="bcard t-guide soon" aria-label="新手指南準備中"><span class="bcard-shade"></span><span class="bcard-txt"><h3>入門指南 <span class="soon-badge">準備中</span></h3><p>為開服準備中：從選擇職業到前期練功路線</p></span></div>
+    <a class="bcard t-hunting" href="/guide/hunting/" aria-label="初期狩獵場候補"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>前期練功地點候補</h3><p>比較維多利亞島前期 39 張地圖的出現怪物</p></span></a>
+    <a class="bcard t-orbis" href="/guide/orbis-leafre/" aria-label="參觀天空之城與里普雷"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>天空之城與 Leafre 搶先看</h3><p>天空與精靈之地，搶先預覽 60 種出現怪物</p></span></a>
+    <a class="bcard t-edel" href="/guide/edelstein/" aria-label="窺探愛德爾斯坦"><img class="bcard-img" src="/assets/card-edelstein.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>埃德爾斯坦搶先看</h3><p>黑翼的礦山城市與 27 種出現怪物</p></span></a>
 
   </nav>
 
