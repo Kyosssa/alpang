@@ -1,0 +1,6645 @@
+[
+ {
+  "map_id": 100000000,
+  "name": "헤네시스",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100000000/minimap",
+  "bytes": 23947,
+  "sha256": "7fbd379e3e826d85f4cbae8aea37fa7706ced2fa4d7910775a35cb508d6b7885",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:02+09:00"
+ },
+ {
+  "map_id": 100010000,
+  "name": "헤네시스 북쪽언덕",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100010000/minimap",
+  "bytes": 10865,
+  "sha256": "59902b041870d15cf613877a7421a3b5d258f55bd33f07dc1c892ee7f85ac72b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:03+09:00"
+ },
+ {
+  "map_id": 100020000,
+  "name": "포자언덕",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100020000/minimap",
+  "bytes": 7895,
+  "sha256": "e91fdc0eca4463fc59c3224ff7daebebfdc07d97006262a5e0cc6af24c10cad0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:03+09:00"
+ },
+ {
+  "map_id": 100040000,
+  "name": "골렘의 사원 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100040000/minimap",
+  "bytes": 7424,
+  "sha256": "d467f5ef7a665ef37d7c72108a1afe663584286bec60fc03fbd21b0e0eadba74",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:03+09:00"
+ },
+ {
+  "map_id": 100040100,
+  "name": "골렘의 사원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100040100/minimap",
+  "bytes": 5493,
+  "sha256": "1d8c8a5f3cf956da164c9586653a6c75878e1cd6d78ef2a52992cd2de492e405",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:03+09:00"
+ },
+ {
+  "map_id": 100040500,
+  "name": "무너진 골렘의 성터",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/100040500/minimap",
+  "bytes": 5879,
+  "sha256": "a79fad531767dd6e6c68bbf165e6c36e85f0e2d17b72a7a05664807a9077f8fd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:06+09:00"
+ },
+ {
+  "map_id": 101000000,
+  "name": "엘리니아",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101000000/minimap",
+  "bytes": 20360,
+  "sha256": "59c61a585f8cc654710b0b89dd8612d29984e80a79adad22aea3f05cf61512d4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:06+09:00"
+ },
+ {
+  "map_id": 101010000,
+  "name": "빛나는 숲의 통로",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101010000/minimap",
+  "bytes": 5280,
+  "sha256": "f36c680a36914b59d005832b947a4eaee64e99414bb5a484ecc360c1d7c30aa6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:05+09:00"
+ },
+ {
+  "map_id": 101010102,
+  "name": "솟아오른나무3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101010102/minimap",
+  "bytes": 9841,
+  "sha256": "6b24d862f4c677525bed17fccf446589b0ce2bf0cf87c8ee6f0d470a97c89f09",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:05+09:00"
+ },
+ {
+  "map_id": 101030401,
+  "name": "동쪽바위산2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030401/minimap",
+  "bytes": 7416,
+  "sha256": "67db7390a94ae87d51a4c898c2f25611b45ad4380f098f10091be3ff96a5ea7f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:07+09:00"
+ },
+ {
+  "map_id": 101030402,
+  "name": "동쪽바위산3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030402/minimap",
+  "bytes": 7416,
+  "sha256": "f238b7c5fd3d16af9bd0452a6d38374d0bb76396f745e6c04ff9aa7d1ac19fb6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:08+09:00"
+ },
+ {
+  "map_id": 101030403,
+  "name": "동쪽바위산4",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030403/minimap",
+  "bytes": 7416,
+  "sha256": "0b7c8fa2991d44e3bda362f5dffecab97165ac30b668cfb748baefb72824b7fe",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:08+09:00"
+ },
+ {
+  "map_id": 101030404,
+  "name": "동쪽바위산5",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030404/minimap",
+  "bytes": 7415,
+  "sha256": "62899f1aa598977e58b8eec8ac7f50d3d240d4e00b331b3ee7c04da66d69dab1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:08+09:00"
+ },
+ {
+  "map_id": 101030405,
+  "name": "동쪽바위산6",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030405/minimap",
+  "bytes": 7416,
+  "sha256": "e212432172d9d4e42f3adf1bf9937cac7b34125fec12bc786ab325f72a323361",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:08+09:00"
+ },
+ {
+  "map_id": 101030406,
+  "name": "동쪽바위산7",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/101030406/minimap",
+  "bytes": 7416,
+  "sha256": "a01570178306196cb68175aaaa5d28bf40d5aa5b0910d05a1a5062ee7e87e0ec",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:10+09:00"
+ },
+ {
+  "map_id": 102000000,
+  "name": "페리온",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/102000000/minimap",
+  "bytes": 25146,
+  "sha256": "afb86074c81dcd3bfb66e86f7800e24268c954f27fae204040cac4cc4e84e8d8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:09+09:00"
+ },
+ {
+  "map_id": 102030000,
+  "name": "와일드보어의 땅",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/102030000/minimap",
+  "bytes": 11832,
+  "sha256": "4d2b334258e4b7bed5b94429a6f9d90c3a7216aa9074d7c3f4f9f1fe351a5a3b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:09+09:00"
+ },
+ {
+  "map_id": 102040000,
+  "name": "초기 발굴지역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/102040000/minimap",
+  "bytes": 8813,
+  "sha256": "1d2b55bf6c5812a518c48729f722e859abe102068f9db0b8bf362263a248333c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:11+09:00"
+ },
+ {
+  "map_id": 102050000,
+  "name": "해질녘하늘",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/102050000/icon",
+  "bytes": 1591,
+  "sha256": "ebd41a46b819e96940e48670dad05dcb78895ed218e2d271216edcb28556789f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 502
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:03+09:00"
+ },
+ {
+  "map_id": 103000000,
+  "name": "커닝시티",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103000000/minimap",
+  "bytes": 21197,
+  "sha256": "51ff2e182ea8c03bed16a91e88a6fec0bbebd71a31aa1ebba977e9f7f1495e38",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:11+09:00"
+ },
+ {
+  "map_id": 103000100,
+  "name": "지하철매표소",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/103000100/icon",
+  "bytes": 1591,
+  "sha256": "0886541540f7b4279ef4ad6bf3ae3c5ac903f6cf47eaf6621e104c40f36d0802",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:13+09:00"
+ },
+ {
+  "map_id": 103030000,
+  "name": "방황의 늪",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/103030000/icon",
+  "bytes": 1591,
+  "sha256": "d219b563586c9dbe8599938c9ae439a7b891d985ef2ef5be5857cfef35adccf9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 502
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:01+09:00"
+ },
+ {
+  "map_id": 103050000,
+  "name": "커닝시티 뒷골목",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050000/minimap",
+  "bytes": 9101,
+  "sha256": "0f12268cdd0c2e3563f04fa183d07f4d4b9507fefaf227ace9d593aedd6e2336",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:12+09:00"
+ },
+ {
+  "map_id": 103050100,
+  "name": "비화원 위층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050100/minimap",
+  "bytes": 9105,
+  "sha256": "ef313480e75c94af4a2de90ba4d523bc67900f12b78967a85f1659a9c231143c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:13+09:00"
+ },
+ {
+  "map_id": 103050101,
+  "name": "설희의 방",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050101/minimap",
+  "bytes": 4679,
+  "sha256": "35f4c4ef6b79fd398e5f6d87557762dd9b495aa80454737dda6a2c9716f27da2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:14+09:00"
+ },
+ {
+  "map_id": 103050200,
+  "name": "비화원 아래층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050200/minimap",
+  "bytes": 7552,
+  "sha256": "d1e92dc51e947d3e3a27014b511074a2330770c868eba27a8540992d246d6621",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:15+09:00"
+ },
+ {
+  "map_id": 103050300,
+  "name": "비화원 지하",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050300/minimap",
+  "bytes": 7750,
+  "sha256": "cd174e01f7ef0cd85898ba938b707f216ed127f06e74c1fc200f7dd4a5920da5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:15+09:00"
+ },
+ {
+  "map_id": 103050310,
+  "name": "수련장1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050310/minimap",
+  "bytes": 7898,
+  "sha256": "25f2eb71ec297ad8aeea818126bb56c2843b4013d5c9efabc6b3084f120f895c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:17+09:00"
+ },
+ {
+  "map_id": 103050340,
+  "name": "수련장2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050340/minimap",
+  "bytes": 7688,
+  "sha256": "83fc669986151b3baf40d6465ed58153bef7f76f81718749c34cae3ff1c7dff8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:16+09:00"
+ },
+ {
+  "map_id": 103050370,
+  "name": "수련장3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/103050370/minimap",
+  "bytes": 7214,
+  "sha256": "8d354fecf1dba8d119839fa6fcd58e3c3c2ed8e4a37cf085cece8d59ad156c0a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:17+09:00"
+ },
+ {
+  "map_id": 103050400,
+  "name": "비화원 지하감옥",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/103050400/icon",
+  "bytes": 1321,
+  "sha256": "20f85851e90acbf9e5590f0e796051cc2b0708739a155e9496243364328991b8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:20+09:00"
+ },
+ {
+  "map_id": 104000000,
+  "name": "리스항구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/104000000/minimap",
+  "bytes": 26805,
+  "sha256": "71c8e596a9dd2c7d3acd0829217423edb2290ef9d2c4ee93d7248b6f3d88adb7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:18+09:00"
+ },
+ {
+  "map_id": 104010000,
+  "name": "리스항구 외곽",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/104010000/minimap",
+  "bytes": 11172,
+  "sha256": "08056f6e45d58d20b877504aca40ac6de1d34440afec7860ecd2411600e3659c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:19+09:00"
+ },
+ {
+  "map_id": 104040001,
+  "name": "헤네시스사냥터2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/104040001/minimap",
+  "bytes": 8271,
+  "sha256": "8f58e02c810ea54f6abbf7a53b2a009886a0dc1af50264b8b84389318b8d1dc0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:21+09:00"
+ },
+ {
+  "map_id": 104040002,
+  "name": "헤네시스사냥터3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/104040002/minimap",
+  "bytes": 9040,
+  "sha256": "8c0f8643bed60d94c9fc0170ecf0fcdaaedd1252653fb4b9e8c5982a4f284c74",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:20+09:00"
+ },
+ {
+  "map_id": 105000000,
+  "name": "슬리피우드",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/105000000/icon",
+  "bytes": 1630,
+  "sha256": "6cc4fde10517ea2e13de89b267bbd15f1bcb7dfe250e7cf1204ea8072def1ec6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 502
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:02+09:00"
+ },
+ {
+  "map_id": 105000010,
+  "name": "슬리피우드 호텔로비",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/105000010/icon",
+  "bytes": 1630,
+  "sha256": "f453af3c469c467fddcce15632728e643b7c9382e841d9372ea9b03ca86ce7d7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:23:24+09:00"
+ },
+ {
+  "map_id": 105000011,
+  "name": "회복사우나실<일반>",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/105000011/icon",
+  "bytes": 1630,
+  "sha256": "d79428a3c1f0af9fe48beb9eee336d5d1a7f99b21929cb47105e9a225aaa3375",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 502
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:01+09:00"
+ },
+ {
+  "map_id": 105000012,
+  "name": "회복사우나실<고급>",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/105000012/icon",
+  "bytes": 1630,
+  "sha256": "2e815d3593e729fcf61b4782ff88d189e919fb06486d8014e8acbdfbe33e4c1f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:05+09:00"
+ },
+ {
+  "map_id": 105010000,
+  "name": "조용한 습지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105010000/minimap",
+  "bytes": 9918,
+  "sha256": "5c10de7496d8bed5fb8db80b8c2f2c237c80728b9be553309cf2514225c4a878",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:02+09:00"
+ },
+ {
+  "map_id": 105010100,
+  "name": "축축한 습지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105010100/minimap",
+  "bytes": 10169,
+  "sha256": "540b29e8cde256335f772bb3931582c5fa328d6d3050e6d3c97d828dfddb0b10",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:03+09:00"
+ },
+ {
+  "map_id": 105020000,
+  "name": "빛이 들지 않는 곳",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020000/minimap",
+  "bytes": 8624,
+  "sha256": "f5fa49d1aa8e23234e41f4faa750c9d0dacb811de92631f2d605cb9d4855c72f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:04+09:00"
+ },
+ {
+  "map_id": 105020100,
+  "name": "동굴 낭떠러지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020100/minimap",
+  "bytes": 10270,
+  "sha256": "eefc4d481ed455c505e4315f50a61001bc2ee58a96144aa76f2c39f861cb8034",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:05+09:00"
+ },
+ {
+  "map_id": 105020200,
+  "name": "차가운 바람",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020200/minimap",
+  "bytes": 15523,
+  "sha256": "d633db2457626c893cee0f0da7b811da8ef983c231c62bff24d92e25bc7bff31",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:05+09:00"
+ },
+ {
+  "map_id": 105020300,
+  "name": "서늘한 동굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020300/minimap",
+  "bytes": 15327,
+  "sha256": "a608bcec87af0111834e569c1214a4321749178a13368aa49baaaa938db4a49f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:04+09:00"
+ },
+ {
+  "map_id": 105020400,
+  "name": "동굴의 출구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020400/minimap",
+  "bytes": 9279,
+  "sha256": "f9580e2b6efeff4c3473a9a92897315de821a33d4fdbbed1abef1e0fde71ef7f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:06+09:00"
+ },
+ {
+  "map_id": 105020500,
+  "name": "드레이크의 푸른동굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105020500/minimap",
+  "bytes": 6220,
+  "sha256": "b72311076391218c1d77e3c4b18b68ffb41fbef3059dcf21bd38a0aa4bf06051",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:06+09:00"
+ },
+ {
+  "map_id": 105030000,
+  "name": "또 다른 문",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030000/minimap",
+  "bytes": 6759,
+  "sha256": "319346800518e6067f9758cb0216f80dd7fbba6860468542332bdc19068f56b5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:06+09:00"
+ },
+ {
+  "map_id": 105030100,
+  "name": "신전의 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030100/minimap",
+  "bytes": 7669,
+  "sha256": "032630d00c39b0859906c2acbe373b57cd6e8a2179de18444cbac9bbc4971563",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:07+09:00"
+ },
+ {
+  "map_id": 105030200,
+  "name": "무너진 신전",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030200/minimap",
+  "bytes": 7477,
+  "sha256": "b29101e28e05baf52271b72ceb450bb506b226b6c5c1299a8bfc706673c018e7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:07+09:00"
+ },
+ {
+  "map_id": 105030300,
+  "name": "끝없는 복도",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030300/minimap",
+  "bytes": 8580,
+  "sha256": "7fc089886eaa518409126af2b4112e0a448001dc95458ac17c5653334e1daaf8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:07+09:00"
+ },
+ {
+  "map_id": 105030400,
+  "name": "음산한 신전",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030400/minimap",
+  "bytes": 7267,
+  "sha256": "9b43bc8da97ca9ae2fa092ae7ff77a41ae82a6ad41abe2d19152bbb5a487bee0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:07+09:00"
+ },
+ {
+  "map_id": 105030500,
+  "name": "금지된 제단",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105030500/minimap",
+  "bytes": 7274,
+  "sha256": "7f8647ecc0177e30cef899f8314e550abc404990185946378513f97fd5a55878",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:07+09:00"
+ },
+ {
+  "map_id": 105040300,
+  "name": "슬리피우드",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105040300/minimap",
+  "bytes": 12271,
+  "sha256": "85af1fd09ac2e4ac81fad1638dc5d8f7259344b8a12433c30142f170e1aedb47",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:08+09:00"
+ },
+ {
+  "map_id": 105040304,
+  "name": "슬리피던전4",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105040304/minimap",
+  "bytes": 7671,
+  "sha256": "8dd3b2c13f9b77fad5020098608fd1279e7058383ccee9c866bcb7a63bff55e6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:08+09:00"
+ },
+ {
+  "map_id": 105050400,
+  "name": "어두운통로",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105050400/minimap",
+  "bytes": 8605,
+  "sha256": "870ee7a90be3703cf2b5144a6660062c15beb10404e7b6a224d02bb2eb042bd0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:08+09:00"
+ },
+ {
+  "map_id": 105090300,
+  "name": "드레이크의밥상",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105090300/minimap",
+  "bytes": 17032,
+  "sha256": "14c32a55ee50f10cccacadada05d7640e55d96adfeaf27ed1d7b41e9341e94de",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:09+09:00"
+ },
+ {
+  "map_id": 105100000,
+  "name": "지하로 내려가는 길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100000/minimap",
+  "bytes": 8490,
+  "sha256": "a339e1328113eb61da538289fde75a4e2c0b839cb7e9e9dfc2d2e5b156128df9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:09+09:00"
+ },
+ {
+  "map_id": 105100100,
+  "name": "신전의 밑바닥",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100100/minimap",
+  "bytes": 7510,
+  "sha256": "1776f015550922e75d8fe18a78504251a3eb440bee9223205896094ca78cb96f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:09+09:00"
+ },
+ {
+  "map_id": 105100101,
+  "name": "트리스탄의 무덤",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/105100101/icon",
+  "bytes": 1629,
+  "sha256": "d31709d3a2484a0f1afd1dae2b27e2df342d101678cecf91b8f27f16530da133",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:11+09:00"
+ },
+ {
+  "map_id": 105100300,
+  "name": "발록의 무덤",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100300/minimap",
+  "bytes": 3342,
+  "sha256": "78d03b247d829253344eaab75888dd17746ab716af7651317c04e19d4e0fa1e6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:09+09:00"
+ },
+ {
+  "map_id": 105100301,
+  "name": "발록이 사라진 자리",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100301/minimap",
+  "bytes": 4522,
+  "sha256": "fb700f8678486428a5983e71a5ff4052b6ad4fb9bc17c353369dcf141eda1ff8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:10+09:00"
+ },
+ {
+  "map_id": 105100400,
+  "name": "발록의 무덤",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100400/minimap",
+  "bytes": 3343,
+  "sha256": "6394cfbddc60d4146ce9343a228e5bf3359cabba1dc695ee1c506110d3783e88",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:10+09:00"
+ },
+ {
+  "map_id": 105100401,
+  "name": "발록이 사라진 자리",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/105100401/minimap",
+  "bytes": 4522,
+  "sha256": "18c7c4ab820d66595ad188bf300d9aba00622360ddd8d7fd722b4d7dcdd82898",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:10+09:00"
+ },
+ {
+  "map_id": 180000000,
+  "name": "엘리니아",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:12+09:00"
+ },
+ {
+  "map_id": 180000001,
+  "name": "엘리니아",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:12+09:00"
+ },
+ {
+  "map_id": 200000000,
+  "name": "오르비스",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000000/minimap",
+  "bytes": 30279,
+  "sha256": "c8866939c5379d860f5c05beb55c46e7dec07ff4f4ac063bdc311dd4134ea3d5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:11+09:00"
+ },
+ {
+  "map_id": 200000001,
+  "name": "오르비스 무기/방어구 상점",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/200000001/icon",
+  "bytes": 1532,
+  "sha256": "7011169293a89c9a0483bb449ba286e7b07ce03a1140157fdf44463ebfd0a07f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:12+09:00"
+ },
+ {
+  "map_id": 200000002,
+  "name": "오르비스잡화상점",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/200000002/icon",
+  "bytes": 1533,
+  "sha256": "0325977173ed51c6b8ccbc3f660761570420bbbb1b8bfb28a144e67f5eefb1cd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:14+09:00"
+ },
+ {
+  "map_id": 200000100,
+  "name": "오르비스 정거장 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000100/minimap",
+  "bytes": 8254,
+  "sha256": "1b1845ec526bff8237ab60e8efa0cd113d72c0bbb442efae8286f06c88de7528",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:13+09:00"
+ },
+ {
+  "map_id": 200000110,
+  "name": "정거장통로<빅토리아행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000110/minimap",
+  "bytes": 2877,
+  "sha256": "449789ffc0a7fd5065a030d4fb34eec7092b2f73a3e0e4febaba2772c803fd63",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:15+09:00"
+ },
+ {
+  "map_id": 200000111,
+  "name": "정거장<빅토리아행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000111/minimap",
+  "bytes": 9599,
+  "sha256": "2c0aa1d3ab53e3bfc52a7bbe622de2534d0fc624b2051d9e6608923da5a19290",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:14+09:00"
+ },
+ {
+  "map_id": 200000112,
+  "name": "출발하기전<빅토리아행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000112/minimap",
+  "bytes": 8225,
+  "sha256": "c47010df7ee67b450f7a48e83df77d0969c77dae9ff36a6ab6424048f4d598d6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:14+09:00"
+ },
+ {
+  "map_id": 200000120,
+  "name": "정거장통로<루디브리엄행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000120/minimap",
+  "bytes": 2888,
+  "sha256": "2c42ae6aa9601ca5b775c24d5cbf90261535058175e962876eb12bafe6e2c0a1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:17+09:00"
+ },
+ {
+  "map_id": 200000121,
+  "name": "정거장<루디브리엄행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000121/minimap",
+  "bytes": 8365,
+  "sha256": "6f79df9f220a5b7d266becd43d0c923f5a5dd6302d03b56ea314c5c910cdf3d3",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:15+09:00"
+ },
+ {
+  "map_id": 200000122,
+  "name": "출발하기전<루디브리엄행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000122/minimap",
+  "bytes": 4621,
+  "sha256": "ec7689f359888c4431b4491dad926bd26a36b81fc1f846a72aefd2a22d58ce8d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:15+09:00"
+ },
+ {
+  "map_id": 200000130,
+  "name": "정거장통로<리프레행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000130/minimap",
+  "bytes": 2870,
+  "sha256": "0b835b077776ccf7f5cebf94f3abe21c990e50e4754556b5a4e50a2471dd1583",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:16+09:00"
+ },
+ {
+  "map_id": 200000131,
+  "name": "정거장<리프레행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000131/minimap",
+  "bytes": 6694,
+  "sha256": "b1a744ce71774f42f7bd291559f92e0bfa09f6d551aba99b106774273471508d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:16+09:00"
+ },
+ {
+  "map_id": 200000132,
+  "name": "정거장<리프레행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000132/minimap",
+  "bytes": 3131,
+  "sha256": "e9058e209bde2d3df623ee0ed831d261a463ec4eae70cb14f17d82a7ed1325c6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:16+09:00"
+ },
+ {
+  "map_id": 200000140,
+  "name": "정거장통로<무릉행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000140/minimap",
+  "bytes": 2869,
+  "sha256": "cbe3738d91bb99ea36176e953991c7bfd048d5817f02346c76168b9da3fcda78",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:17+09:00"
+ },
+ {
+  "map_id": 200000141,
+  "name": "정거장<무릉행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000141/minimap",
+  "bytes": 5491,
+  "sha256": "c4d234e1d367603d4dfeaa93598a7a142336bdf78f44e97a4afd0192fe4cb313",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:17+09:00"
+ },
+ {
+  "map_id": 200000150,
+  "name": "정거장통로<아리안트행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000150/minimap",
+  "bytes": 2825,
+  "sha256": "0204386f34f4af2053b38a0411a6d0117e6f4e4206f5a460c4af0af305d6af9e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:17+09:00"
+ },
+ {
+  "map_id": 200000151,
+  "name": "정거장<아리안트행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000151/minimap",
+  "bytes": 6441,
+  "sha256": "09b7706d483c414fb5b3369b8aac97b4b45af2f636d92a779eb41e1707487a6a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:18+09:00"
+ },
+ {
+  "map_id": 200000152,
+  "name": "정거장<아리안트행>",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/200000152/icon",
+  "bytes": 1533,
+  "sha256": "4e4b08655c9820b514a9b5547e4923068e2429e6e222b0998daa8c1d9c7cb0fd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:18+09:00"
+ },
+ {
+  "map_id": 200000160,
+  "name": "정거장통로<에레브행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000160/minimap",
+  "bytes": 2870,
+  "sha256": "7e78e80493d1ba9cb7a60f81fb4f5a63e5636397eec0424afeed8af1ba0e7e8b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:18+09:00"
+ },
+ {
+  "map_id": 200000161,
+  "name": "정거장<에레브행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000161/minimap",
+  "bytes": 6206,
+  "sha256": "21286a44c7aea8957c3d798f64638c74801827d170b13ee66a0105f83f7393de",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:19+09:00"
+ },
+ {
+  "map_id": 200000170,
+  "name": "정거장<에델슈타인행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000170/minimap",
+  "bytes": 6974,
+  "sha256": "0eaff036a347873647c506a15ae04490049065a67d301fa3c6459206f67a344c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:19+09:00"
+ },
+ {
+  "map_id": 200000200,
+  "name": "오르비스공원",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000200/minimap",
+  "bytes": 20098,
+  "sha256": "b7e660f630a9cbace5793104c994697c34888a6e468171d3dfebe59fe3a334a1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:19+09:00"
+ },
+ {
+  "map_id": 200000300,
+  "name": "만남의 언덕",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000300/minimap",
+  "bytes": 12666,
+  "sha256": "c077df1884c4923f61ed35c3639b8e67b2b9959956608c3fe522503570d4855f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:19+09:00"
+ },
+ {
+  "map_id": 200000301,
+  "name": "길드본부 <영웅의 전당>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200000301/minimap",
+  "bytes": 4904,
+  "sha256": "bb3bbd87eed1a3785b0df8238e74721f65b3dc28e3e375b6abaf500d8fcf56f1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:20+09:00"
+ },
+ {
+  "map_id": 200010000,
+  "name": "구름공원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010000/minimap",
+  "bytes": 14871,
+  "sha256": "43049309b7ef635b3599959382b8a15d75746335065d6363cc2c8a525c783b5e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:21+09:00"
+ },
+ {
+  "map_id": 200010100,
+  "name": "세가지빛정원으로가는길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010100/minimap",
+  "bytes": 12441,
+  "sha256": "c5a7c48b21271158f3ca92845b066ec2a04860f8c6a758ff7bc05cfca9425364",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:20+09:00"
+ },
+ {
+  "map_id": 200010110,
+  "name": "붉은빛의정원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010110/minimap",
+  "bytes": 9932,
+  "sha256": "a937d6fc33826f389fd45debf1209ad155a64b43ae1c533e43b37ef6aa9fcae9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:22+09:00"
+ },
+ {
+  "map_id": 200010111,
+  "name": "붉은빛의정원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010111/minimap",
+  "bytes": 10766,
+  "sha256": "50a74924bd2c9cbeded33440c35cb457c56e30dd6380a6d51690b18df4d73d8d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:21+09:00"
+ },
+ {
+  "map_id": 200010120,
+  "name": "노란빛의정원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010120/minimap",
+  "bytes": 9807,
+  "sha256": "00c5ae17ba176877cd719e28e1c029a650254bde944d9501511ce31294a57a8d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:21+09:00"
+ },
+ {
+  "map_id": 200010121,
+  "name": "노란빛의정원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010121/minimap",
+  "bytes": 9956,
+  "sha256": "e390770c62f8b6bf276c10a876ebe0c8214e27482c9d02796a6547ebca28fa3a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:22+09:00"
+ },
+ {
+  "map_id": 200010130,
+  "name": "푸른빛의정원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010130/minimap",
+  "bytes": 9685,
+  "sha256": "b0375dacd5f2ce630b73bc8498d072eaf23e3d0b50c89d3864e78f38e666e606",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:22+09:00"
+ },
+ {
+  "map_id": 200010131,
+  "name": "푸른빛의정원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010131/minimap",
+  "bytes": 10808,
+  "sha256": "23542ff1b93ec37559eb85bf78889225604d68da6351cbe818451e8792922747",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:22+09:00"
+ },
+ {
+  "map_id": 200010200,
+  "name": "하늘계단1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010200/minimap",
+  "bytes": 15912,
+  "sha256": "90ce3cd65b5cdbd75a5cacbdc5361d3a0c57033fd8c57f80c71d43959e4d6e96",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:23+09:00"
+ },
+ {
+  "map_id": 200010300,
+  "name": "하늘계단2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010300/minimap",
+  "bytes": 9308,
+  "sha256": "0f3a2fc7d64ec2e381b0d51f552fb38b2d3f00d390610eac6a99cf85ec4ffb55",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:23+09:00"
+ },
+ {
+  "map_id": 200010301,
+  "name": "검은빛의정원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010301/minimap",
+  "bytes": 8999,
+  "sha256": "b11c43bbdb31350ef7ab822b18a96451da37ca294473553da5929f6fafcf2c91",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:23+09:00"
+ },
+ {
+  "map_id": 200010302,
+  "name": "검은빛의정원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200010302/minimap",
+  "bytes": 9179,
+  "sha256": "39d0f3f4170cd7a7e7a450233f08883b9458ce476a044fba5974532c31421265",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:23+09:00"
+ },
+ {
+  "map_id": 200020000,
+  "name": "구름공원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200020000/minimap",
+  "bytes": 12478,
+  "sha256": "0673a980272d0ef230e53b34a486f788912ea17363677329dea0bfdac21bcac1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:24+09:00"
+ },
+ {
+  "map_id": 200030000,
+  "name": "산책로",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200030000/minimap",
+  "bytes": 14185,
+  "sha256": "4b1fc2f399b4a36cff8ad357f71373b7250aaebb4fb7d2b7301b21e4c3c9139b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:24+09:00"
+ },
+ {
+  "map_id": 200040000,
+  "name": "구름공원3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200040000/minimap",
+  "bytes": 16452,
+  "sha256": "3a9722c7076adc75fff15d8384b0560e70c990e3782edec030f9f981ef9a7a1f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:24+09:00"
+ },
+ {
+  "map_id": 200040001,
+  "name": "버려진화원",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200040001/minimap",
+  "bytes": 11502,
+  "sha256": "ad2d97e9b4c0238112435d05d645b0ece837fb99a19460fab2eb01e043b22d8c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:24+09:00"
+ },
+ {
+  "map_id": 200050000,
+  "name": "구름공원4",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200050000/minimap",
+  "bytes": 14162,
+  "sha256": "3a1a18ab5a66a61f8aca2f8fbd6ff26e9f37af88fb7710e99a96e80a619f2395",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:25+09:00"
+ },
+ {
+  "map_id": 200050001,
+  "name": "노파의집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/200050001/icon",
+  "bytes": 1533,
+  "sha256": "84c11c60e5b5810ab2629514f1a03eeb97117149be21bc1bd4b6ee7e1abd50f8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:28+09:00"
+ },
+ {
+  "map_id": 200060000,
+  "name": "산책로2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200060000/minimap",
+  "bytes": 13958,
+  "sha256": "769ad26488c86f0960cb6f420259b4613b3a3fcd2b31842a3546a9feaa9c94cd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:25+09:00"
+ },
+ {
+  "map_id": 200070000,
+  "name": "구름공원5",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200070000/minimap",
+  "bytes": 14629,
+  "sha256": "aaa6d39f1949470288b842c5973db68f96f4a2074f9b24cbf8cfed53b1dffdbb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:25+09:00"
+ },
+ {
+  "map_id": 200080000,
+  "name": "구름공원6",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080000/minimap",
+  "bytes": 13185,
+  "sha256": "559cd8d147ebaed36b5dda9e1608acfcb6cfba325eccd0527cfcaffd8bd64281",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:26+09:00"
+ },
+ {
+  "map_id": 200080100,
+  "name": "오르비스탑입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080100/minimap",
+  "bytes": 3630,
+  "sha256": "962ced5a0ace03291125611784c9059a6ff909ed4d210f9933c14cca5a6c2079",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:26+09:00"
+ },
+ {
+  "map_id": 200080101,
+  "name": "알 수 없는 탑<퇴장맵>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080101/minimap",
+  "bytes": 3975,
+  "sha256": "bfafd937cb7a9190e178e2d99bc990918b32aeab5806f39e04936fa83f0c91cf",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:26+09:00"
+ },
+ {
+  "map_id": 200080200,
+  "name": "오르비스탑<20층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080200/minimap",
+  "bytes": 5626,
+  "sha256": "7ed0680b10f5071dede6d5f096a5762fc3e42e3c3cd5b86e17888362e9696ac1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:27+09:00"
+ },
+ {
+  "map_id": 200080300,
+  "name": "오르비스탑<19층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080300/minimap",
+  "bytes": 5441,
+  "sha256": "ad4c3350e3fa411d1a95ef96659d02c8c791da6f21ec9813227bb13d95e9065a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:27+09:00"
+ },
+ {
+  "map_id": 200080400,
+  "name": "오르비스탑<18층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080400/minimap",
+  "bytes": 4253,
+  "sha256": "7e5d0405162f87326a14fb902cf1b8fdbe3eed0f4d7c810e4376bffb221c1693",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:27+09:00"
+ },
+ {
+  "map_id": 200080500,
+  "name": "오르비스탑<17층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080500/minimap",
+  "bytes": 4440,
+  "sha256": "a1cde0da3f5376577af5f3af0b73800457c820d071173d295aebc89a45433199",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:28+09:00"
+ },
+ {
+  "map_id": 200080600,
+  "name": "오르비스탑<16층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080600/minimap",
+  "bytes": 5407,
+  "sha256": "e1ec57f3653982d74d6d0f58797b8d4636b03677268c3fe5f604ec6587641e30",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:29+09:00"
+ },
+ {
+  "map_id": 200080601,
+  "name": "오르비스탑<은밀한방>",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:31+09:00"
+ },
+ {
+  "map_id": 200080700,
+  "name": "오르비스탑<15층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080700/minimap",
+  "bytes": 5230,
+  "sha256": "13fbfc7b415c3b738541e88a2836968f9b3df44bb35f9b55e90539484d406281",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:28+09:00"
+ },
+ {
+  "map_id": 200080800,
+  "name": "오르비스탑<14층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080800/minimap",
+  "bytes": 4507,
+  "sha256": "86882f921a4ee256339331e764f3a58a8608a3ee97cea4880266307b9695ee27",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:29+09:00"
+ },
+ {
+  "map_id": 200080900,
+  "name": "오르비스탑<13층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200080900/minimap",
+  "bytes": 5030,
+  "sha256": "e8a845f2d7036e2dfd30c986f0ee85feb5ca83816f3953e9ff35ea7dc07f0d8f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:30+09:00"
+ },
+ {
+  "map_id": 200081000,
+  "name": "오르비스탑<12층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081000/minimap",
+  "bytes": 5021,
+  "sha256": "f7d9b8b0afed5664dc59c1860e4e278d9fd21963dae4812240903435a910d9f9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:31+09:00"
+ },
+ {
+  "map_id": 200081100,
+  "name": "오르비스탑<11층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081100/minimap",
+  "bytes": 5017,
+  "sha256": "8abc5e28097ff1176670ea87b9429e846d29504f37ea83d6a0fc6028af130143",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:30+09:00"
+ },
+ {
+  "map_id": 200081200,
+  "name": "오르비스탑<10층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081200/minimap",
+  "bytes": 5332,
+  "sha256": "1fe9dc1202006433be1eae1b0cb1b4468aaace71c53792bcaebcf8f655c0622a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:31+09:00"
+ },
+ {
+  "map_id": 200081201,
+  "name": "오르비스탑<비밀의 방>",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:32+09:00"
+ },
+ {
+  "map_id": 200081300,
+  "name": "오르비스탑<9층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081300/minimap",
+  "bytes": 3934,
+  "sha256": "e3590f23ecc1291b067ba27265056f3e73520c9de93bf285cd547a36967fb9d7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:32+09:00"
+ },
+ {
+  "map_id": 200081400,
+  "name": "오르비스탑<8층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081400/minimap",
+  "bytes": 4603,
+  "sha256": "169473b7b39f12317f77344891c6bdecccc6d235206867a6c3c223b732218766",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:33+09:00"
+ },
+ {
+  "map_id": 200081500,
+  "name": "오르비스탑<7층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081500/minimap",
+  "bytes": 5042,
+  "sha256": "8e578da45c07a4733f571589ef5fadf0450534b17462b08fb71a522dfff3a4af",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:31+09:00"
+ },
+ {
+  "map_id": 200081600,
+  "name": "오르비스탑<6층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081600/minimap",
+  "bytes": 4702,
+  "sha256": "0ce0e48ccbd6fd489745db8bf527c8853240054e2ffe11dca63c46c01fa13d29",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:32+09:00"
+ },
+ {
+  "map_id": 200081700,
+  "name": "오르비스탑<5층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081700/minimap",
+  "bytes": 5394,
+  "sha256": "7ca5678e77da98a0745bdae6f0f42e128a956e7d4c5fa5592f9c7deaf845f428",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:32+09:00"
+ },
+ {
+  "map_id": 200081800,
+  "name": "오르비스탑<4층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081800/minimap",
+  "bytes": 4666,
+  "sha256": "419b372004a9f2795751e150892f64cc9bfa3b2b243ad973e2ac536cd7b6ad11",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:33+09:00"
+ },
+ {
+  "map_id": 200081900,
+  "name": "오르비스탑<3층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200081900/minimap",
+  "bytes": 5416,
+  "sha256": "2fd6886b973a9d52d8ec9dadfbbc26b0de4d82d854b73506a1616c026f8aee6a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:33+09:00"
+ },
+ {
+  "map_id": 200082000,
+  "name": "오르비스탑<2층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200082000/minimap",
+  "bytes": 5639,
+  "sha256": "647ea6af14a4fbce546ad23dfce453c45d3b6bcc950cc2a9492ac3db31f66443",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:33+09:00"
+ },
+ {
+  "map_id": 200082100,
+  "name": "오르비스탑<1층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200082100/minimap",
+  "bytes": 6660,
+  "sha256": "a68003b2c1b30784e2a1eb44525821290ee222edd5045d4c728842055d55e8be",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:34+09:00"
+ },
+ {
+  "map_id": 200082200,
+  "name": "오르비스탑<지하1층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200082200/minimap",
+  "bytes": 3566,
+  "sha256": "312df9301b62daf0aef8056c58eaca279316d84262b771f2f643758e2a8b2d53",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:35+09:00"
+ },
+ {
+  "map_id": 200082300,
+  "name": "오르비스탑<지하2층>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/200082300/minimap",
+  "bytes": 5620,
+  "sha256": "12b938f09a98e768f61ed0ca6ae919db06de53158c0516f43c4712601eed789a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:34+09:00"
+ },
+ {
+  "map_id": 200082301,
+  "name": "오르비스탑<휴즈의 연구실>",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/200082301/icon",
+  "bytes": 1696,
+  "sha256": "16acb8ddb11aa719490980bc0b3182d66d3a43cb12ed21702885fbc46b1747bf",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:35+09:00"
+ },
+ {
+  "map_id": 220000000,
+  "name": "루디브리엄",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000000/minimap",
+  "bytes": 24989,
+  "sha256": "f283766742a8e065dae3da3147740b8fb4c406232ed99ee71ccb5a7d93f1e3f7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:35+09:00"
+ },
+ {
+  "map_id": 220000001,
+  "name": "루디브리엄무기방어구상점",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000001/icon",
+  "bytes": 1280,
+  "sha256": "2546b5996de7ab0fb91392da53c5a773f6e903094b01dd961997c938ff5b9641",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:37+09:00"
+ },
+ {
+  "map_id": 220000002,
+  "name": "루디브리엄잡화상점",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000002/icon",
+  "bytes": 1280,
+  "sha256": "a2c5a4bf876df8083b421f2a834eebb9bcb804c56efc57f32579921cc4d3635a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:36+09:00"
+ },
+ {
+  "map_id": 220000003,
+  "name": "루디브리엄성형외과",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000003/icon",
+  "bytes": 1280,
+  "sha256": "853939116684a58aa305cbc419f0eda24d53dcca4fed5e0c70ca45559906780e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:38+09:00"
+ },
+ {
+  "map_id": 220000004,
+  "name": "루디브리엄헤어샵",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000004/icon",
+  "bytes": 1280,
+  "sha256": "d89aa382a359a124d224a917160ac4ec0144612c27e1855188a1e4eff7d7e1ef",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:37+09:00"
+ },
+ {
+  "map_id": 220000005,
+  "name": "루디브리엄피부관리실",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000005/icon",
+  "bytes": 1280,
+  "sha256": "9ea6097d8896aa8d24f477aedfc591dee7225cf588d039639cfc43caaa3d1ade",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:38+09:00"
+ },
+ {
+  "map_id": 220000006,
+  "name": "루디 펫 산책로",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000006/minimap",
+  "bytes": 8204,
+  "sha256": "c5ffb281bf00eeed36ebfbf39bb374b90f588020fbc6cc4b8a3a2b1a23c94863",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:38+09:00"
+ },
+ {
+  "map_id": 220000100,
+  "name": "루디브리엄 정거장 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000100/minimap",
+  "bytes": 4934,
+  "sha256": "ff6af8c8c8224bdb40d47d2642767865980fdfcfe58b62af0937ceba07da0727",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:39+09:00"
+ },
+ {
+  "map_id": 220000110,
+  "name": "정거장<오르비스행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000110/minimap",
+  "bytes": 5989,
+  "sha256": "d977df6093f04f8f8d6eb5dc104c811c43e4c386ef4fa782447f8cd26d553067",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:40+09:00"
+ },
+ {
+  "map_id": 220000111,
+  "name": "출발하기전<오르비스행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000111/minimap",
+  "bytes": 4741,
+  "sha256": "55009dffa6d798663683b7a56c44eeacfcd9edf7208f3ca837cf50bcedba523a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:39+09:00"
+ },
+ {
+  "map_id": 220000300,
+  "name": "루디브리엄 마을",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000300/minimap",
+  "bytes": 18064,
+  "sha256": "484fb82b51ce77bba5a1e7782c73defd8b9b3b67f72bfba2b8623ecebcd34e49",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:39+09:00"
+ },
+ {
+  "map_id": 220000301,
+  "name": "코린의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000301/icon",
+  "bytes": 1280,
+  "sha256": "2dedccc889adcf2cba1d185c720a90aa8b68d4543fa07e02d42f52b2fec58ae4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:41+09:00"
+ },
+ {
+  "map_id": 220000302,
+  "name": "카호의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000302/icon",
+  "bytes": 1280,
+  "sha256": "cb4dcbeab535689ab2344b93c5359be94b945b34bfd2c920814fee8f52e27692",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:43+09:00"
+ },
+ {
+  "map_id": 220000303,
+  "name": "지로큰과 페이의 집",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000303/minimap",
+  "bytes": 4852,
+  "sha256": "e8cc6d50e67df3cd36e20e0897396ebc370bf30db30c767fe7789895b8b5a318",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:41+09:00"
+ },
+ {
+  "map_id": 220000304,
+  "name": "클로이의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000304/icon",
+  "bytes": 1279,
+  "sha256": "4f9945f7768f6c3601899ac713b4c7f5d7eba0960ba329f4f857c812dbd3b450",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:43+09:00"
+ },
+ {
+  "map_id": 220000305,
+  "name": "빈집1",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000305/icon",
+  "bytes": 1280,
+  "sha256": "761f9ebe7d6957796fd347376f080b483fab8e3663200d8bb6e06a1b9405b9c1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:43+09:00"
+ },
+ {
+  "map_id": 220000306,
+  "name": "빈집2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000306/minimap",
+  "bytes": 4492,
+  "sha256": "ce75f5b54cdc87e73942dde8997e3fb841f9aed362b5876bd9def3f9215aa469",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:43+09:00"
+ },
+ {
+  "map_id": 220000307,
+  "name": "매이션의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220000307/icon",
+  "bytes": 1280,
+  "sha256": "6ad69236d3b54b7e65c1bf2d89c129bc8138ce81e14b1919f9ff077068c95dc3",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:45+09:00"
+ },
+ {
+  "map_id": 220000400,
+  "name": "에오스 탑 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000400/minimap",
+  "bytes": 6207,
+  "sha256": "63166ade3f36950dd82cef81b84c8ba9dbe11d133434da172278b71c97321808",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:43+09:00"
+ },
+ {
+  "map_id": 220000500,
+  "name": "핼리오스 탑 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220000500/minimap",
+  "bytes": 5569,
+  "sha256": "b5a98bf838572ffcd5aa2c46ae5042e5894b04c91e78366f0903e13f3e08126f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:45+09:00"
+ },
+ {
+  "map_id": 220010000,
+  "name": "구름테라스<5>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010000/minimap",
+  "bytes": 5247,
+  "sha256": "2e534f9a7960a9b9d13be88db0e6e882c6fa6bfe6fb50ccaa2ea35a5a7b34d31",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:45+09:00"
+ },
+ {
+  "map_id": 220010001,
+  "name": "구름발코니",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/220010001/icon",
+  "bytes": 1280,
+  "sha256": "9cc7edca4a5381e60c08e688c2607cacf6932a69b0c2b6c1e3af6bc6bc2f6b05",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:48+09:00"
+ },
+ {
+  "map_id": 220010100,
+  "name": "구름테라스<4>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010100/minimap",
+  "bytes": 4983,
+  "sha256": "b1e18267a09e4cdda235f4068a85c00cf9cff846da7798d6daca29ae0a31894c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:47+09:00"
+ },
+ {
+  "map_id": 220010200,
+  "name": "구름테라스<3>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010200/minimap",
+  "bytes": 4343,
+  "sha256": "9cfaef70b49eb3a5ad15da28f72f166f2a91d6f796ccdd84ca5bd79ddc02bb47",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:47+09:00"
+ },
+ {
+  "map_id": 220010300,
+  "name": "구름테라스<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010300/minimap",
+  "bytes": 4661,
+  "sha256": "5547f33f736dd53f74197d045077dbf4f54932409563fa8c96051ce142d0fe46",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:47+09:00"
+ },
+ {
+  "map_id": 220010400,
+  "name": "구름테라스<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010400/minimap",
+  "bytes": 4629,
+  "sha256": "010b7752a0c27ca26b8ef2b4a0bdb898faf8fa0bd7d7bf134a70073d823a78c1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:48+09:00"
+ },
+ {
+  "map_id": 220010500,
+  "name": "테라스홀",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010500/minimap",
+  "bytes": 5593,
+  "sha256": "054ea0552b308ce42b5e99f88f60b892a0f36e3b0e5484b4032e51c86e8090e0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:49+09:00"
+ },
+ {
+  "map_id": 220010600,
+  "name": "하늘테라스<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010600/minimap",
+  "bytes": 4817,
+  "sha256": "fbefc31f6095d5229441b69556b02ab398279b3e61090a4f0210cd33d56968ee",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:49+09:00"
+ },
+ {
+  "map_id": 220010700,
+  "name": "하늘테라스<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010700/minimap",
+  "bytes": 4575,
+  "sha256": "e8b2361bc4698a7ce9be3e21ec449b08d01e164254b820eabde14eb4851df02f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:49+09:00"
+ },
+ {
+  "map_id": 220010800,
+  "name": "하늘테라스<3>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010800/minimap",
+  "bytes": 4777,
+  "sha256": "65fecc92a8856a686166dac27dccf628992c7ddf28f454671fdea2cfc020f477",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:49+09:00"
+ },
+ {
+  "map_id": 220010900,
+  "name": "하늘테라스<4>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220010900/minimap",
+  "bytes": 4943,
+  "sha256": "a0c6c58305ea9d65bfafd8d3cb0943e18eb81b51172ae0a3336c07f5fdbeeac2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:49+09:00"
+ },
+ {
+  "map_id": 220011000,
+  "name": "하늘테라스<5>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220011000/minimap",
+  "bytes": 5955,
+  "sha256": "2b6c91516455af4921e9884cc83dc9eb0ad4208ca96c8bd6bd9eb572c5b84b0b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:51+09:00"
+ },
+ {
+  "map_id": 220011001,
+  "name": "하늘발코니",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220011001/minimap",
+  "bytes": 1495,
+  "sha256": "4c7883ef807b01db20b1c06619f6719b320e0b05298da4316f9f681c05d34077",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:50+09:00"
+ },
+ {
+  "map_id": 220020000,
+  "name": "장난감공장<1공정>1구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020000/minimap",
+  "bytes": 6866,
+  "sha256": "8274bbb50f874bf4772d5b910f981e64ab75ca05c978694c23bbcfd89d26364a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:50+09:00"
+ },
+ {
+  "map_id": 220020100,
+  "name": "장난감공장<1공정>2구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020100/minimap",
+  "bytes": 4344,
+  "sha256": "f16d08f9fb44fd3816917fffdde7a3b97fc963be73078db90e885d6dba6a776f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:50+09:00"
+ },
+ {
+  "map_id": 220020200,
+  "name": "장난감공장<1공정>3구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020200/minimap",
+  "bytes": 4860,
+  "sha256": "0509a3857b6774677f012a7d001f42950dea8ab0e500bc58be8ebf10f38532d7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:51+09:00"
+ },
+ {
+  "map_id": 220020300,
+  "name": "장난감공장<메인공정1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020300/minimap",
+  "bytes": 4663,
+  "sha256": "004aeae18362a820e457f08cf99fe35deb806a76f8e6d67f2fae912f15c924fb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:51+09:00"
+ },
+ {
+  "map_id": 220020400,
+  "name": "장난감공장<1공정>5구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020400/minimap",
+  "bytes": 3959,
+  "sha256": "1963522d5ac771e9b2469668b58e7c2184fd3ff872a360d9793b5507dbc3253c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:52+09:00"
+ },
+ {
+  "map_id": 220020500,
+  "name": "장난감공장<1공정>6구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020500/minimap",
+  "bytes": 3714,
+  "sha256": "7beb5071cb93ab0957b3ed435510fbe9ed9073ba92442462f9b89daae37d1422",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:52+09:00"
+ },
+ {
+  "map_id": 220020600,
+  "name": "장난감공장<기계실>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220020600/minimap",
+  "bytes": 7279,
+  "sha256": "3f2d899c511dcad54a60bf4739307387f8d9e57589f7dee5fc55b58e63c27a96",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:52+09:00"
+ },
+ {
+  "map_id": 220030000,
+  "name": "장난감공장<2공정>1구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220030000/minimap",
+  "bytes": 4785,
+  "sha256": "5a7331695b642e388229d696b90263b0deb025014f0d8bd4e4e3a268d95e0ff1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:52+09:00"
+ },
+ {
+  "map_id": 220030100,
+  "name": "장난감공장<2공정>2구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220030100/minimap",
+  "bytes": 4123,
+  "sha256": "c93e82209e0aed0cfcc03ffef277f5139532e25979f1b5112768e00ad5288d86",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:53+09:00"
+ },
+ {
+  "map_id": 220030200,
+  "name": "장난감공장<메인공정2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220030200/minimap",
+  "bytes": 3813,
+  "sha256": "e720d988ed28d22cd7efa84494f9af63475538dab3d2c4cd815b52b7ea0d8c1c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:54+09:00"
+ },
+ {
+  "map_id": 220030300,
+  "name": "장난감공장<2공정>4구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220030300/minimap",
+  "bytes": 4044,
+  "sha256": "00e2354b7bd74419653610684aac0a49eb60219eb604c0a4f9b9c057494d3ca3",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:53+09:00"
+ },
+ {
+  "map_id": 220030400,
+  "name": "장난감공장<2공정>5구역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220030400/minimap",
+  "bytes": 4568,
+  "sha256": "7c8c4b3492abb0be3c7df482e1e53e0b3ac893ba8b38a5bb199125cdba202eed",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:54+09:00"
+ },
+ {
+  "map_id": 220040000,
+  "name": "시간의길<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220040000/minimap",
+  "bytes": 5283,
+  "sha256": "bc56b30af8deb64e430b7c57d3b39f60e8e2bccaa75e9c1d4e0da83bb5f0646a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:54+09:00"
+ },
+ {
+  "map_id": 220040100,
+  "name": "시간의길<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220040100/minimap",
+  "bytes": 7509,
+  "sha256": "71422497c0bebd126443c7dd41f2f0f8462f96daf7e0d7e71d031f5ca17ee7b8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:55+09:00"
+ },
+ {
+  "map_id": 220040200,
+  "name": "시간의갈림길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220040200/minimap",
+  "bytes": 7014,
+  "sha256": "534ba637e237bcfe2e25d9152c41cb42a1438b7af7ffa4f48b808c9046a94aab",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:56+09:00"
+ },
+ {
+  "map_id": 220040300,
+  "name": "시간의길<3>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220040300/minimap",
+  "bytes": 6711,
+  "sha256": "16c768f57abf7d822d1f3ea4bd86e2788d903fcaff4ad4d971af424563a92f78",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:57+09:00"
+ },
+ {
+  "map_id": 220040400,
+  "name": "시간의길<4>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220040400/minimap",
+  "bytes": 6158,
+  "sha256": "5cf196f6d3921c73ebc822872219b1f9a00bb951ca1fa8608e7d044e2b61c0cf",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:56+09:00"
+ },
+ {
+  "map_id": 220050000,
+  "name": "잃어버린시간<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220050000/minimap",
+  "bytes": 6216,
+  "sha256": "c65a8cba7df0f357337073c604d15e75b2bd9831bc724736ae1ad85d20bbc179",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:57+09:00"
+ },
+ {
+  "map_id": 220050100,
+  "name": "시간의소용돌이",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220050100/minimap",
+  "bytes": 6622,
+  "sha256": "def1b6b8d10d9cda69a84c6dea09b1a1fa05f4da5ccdc46fd9e25413fc6e2e9a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:58+09:00"
+ },
+ {
+  "map_id": 220050200,
+  "name": "잃어버린시간<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220050200/minimap",
+  "bytes": 6099,
+  "sha256": "b966225b0319835067e377b7d708c85b1aa902072e1976545d3311ae8b9f02ef",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:57+09:00"
+ },
+ {
+  "map_id": 220050300,
+  "name": "시간의 통로",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220050300/minimap",
+  "bytes": 6288,
+  "sha256": "22222295c31f4af01b98ef09e2b7b7122afdcd5d547fe21310a19d7c7d367488",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:58+09:00"
+ },
+ {
+  "map_id": 220060000,
+  "name": "뒤틀린 시간의 길<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220060000/minimap",
+  "bytes": 11876,
+  "sha256": "8e61cf569937ee2b33cfa80efb69610398ee1755fcbe9727d8157427c72aa297",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:58+09:00"
+ },
+ {
+  "map_id": 220060100,
+  "name": "뒤틀린 시간의 길<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220060100/minimap",
+  "bytes": 14765,
+  "sha256": "3f704bcd8dddafdf0a47e5c3053e264876f16d96ffdb7af604888be29019c108",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:58+09:00"
+ },
+ {
+  "map_id": 220060200,
+  "name": "뒤틀린 시간의 길<3>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220060200/minimap",
+  "bytes": 12460,
+  "sha256": "1a99658c464f3fa6c65953b46f077062e229b0d39a79da6df6bb00a4eaa7c10d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:59+09:00"
+ },
+ {
+  "map_id": 220060300,
+  "name": "뒤틀린 시간의 길<4>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220060300/minimap",
+  "bytes": 16238,
+  "sha256": "33f21b3c434aa3f276f533f215c22ca28d37b70102d95543a5c8ac3990a356db",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:24:59+09:00"
+ },
+ {
+  "map_id": 220060400,
+  "name": "뒤틀린 회랑",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220060400/minimap",
+  "bytes": 4881,
+  "sha256": "85f1ac7729eb2170561165fc0564f67158cf2a485c6cc1a57807df2455155c69",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:00+09:00"
+ },
+ {
+  "map_id": 220070000,
+  "name": "잊혀진 시간의 길<1>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220070000/minimap",
+  "bytes": 12513,
+  "sha256": "7050df59c0b2f4d3192d87c33996d1ad451486db3555d7dee821e9a749884253",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:01+09:00"
+ },
+ {
+  "map_id": 220070100,
+  "name": "잊혀진 시간의 길<2>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220070100/minimap",
+  "bytes": 14166,
+  "sha256": "f40b489cc991d454399229f55acb7c6ede6baa02527f019df9e3e9ecd0539850",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:00+09:00"
+ },
+ {
+  "map_id": 220070200,
+  "name": "잊혀진 시간의 길<3>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220070200/minimap",
+  "bytes": 14542,
+  "sha256": "a1016887cd63010b1748aba84cfa349a3e56e452a009aa22e3b46814c0baae50",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:02+09:00"
+ },
+ {
+  "map_id": 220070300,
+  "name": "잊혀진 시간의 길<4>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220070300/minimap",
+  "bytes": 18921,
+  "sha256": "7a9ca7f3134f753f033881a02c4e6f94bc96b8db94ccb6346d2776679412f47a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:03+09:00"
+ },
+ {
+  "map_id": 220070400,
+  "name": "잊혀진 회랑",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220070400/minimap",
+  "bytes": 5443,
+  "sha256": "acd82c615ed45ae4e6c5eaf8a65b03826cce307d3d749277aa90c8bf1115070e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:02+09:00"
+ },
+ {
+  "map_id": 220080000,
+  "name": "시계탑 깊은 곳",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220080000/minimap",
+  "bytes": 6423,
+  "sha256": "9aa6eb983d16c4030bce9018487fd27529630c24a45a9d004f03c5adac184364",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:02+09:00"
+ },
+ {
+  "map_id": 220080001,
+  "name": "시계탑의 근원",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/220080001/minimap",
+  "bytes": 5256,
+  "sha256": "62af08076dc2c3302f27b4f1016022e17f3f4f9a1d70916c3a6387be5087d02d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:05+09:00"
+ },
+ {
+  "map_id": 221020000,
+  "name": "에오스 탑 1층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020000/minimap",
+  "bytes": 5778,
+  "sha256": "81e2110a28db4165dfbe650c7a05d7b5d1f7d00957c7b95243e24fa4da9d552d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:05+09:00"
+ },
+ {
+  "map_id": 221020100,
+  "name": "에오스 탑 2층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020100/minimap",
+  "bytes": 4489,
+  "sha256": "1622ec42c7874700e1d0944aed7236004727cf1d956c2a87238d25f9423e8cb1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:06+09:00"
+ },
+ {
+  "map_id": 221020200,
+  "name": "에오스 탑 3층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020200/minimap",
+  "bytes": 5041,
+  "sha256": "98a5d0aeb0f8523cadbf5ba934968b387e847787579a69ed6daccf721dcb3ba5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:04+09:00"
+ },
+ {
+  "map_id": 221020300,
+  "name": "에오스 탑 4층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020300/minimap",
+  "bytes": 4491,
+  "sha256": "d146ee98ef75e2cf3e03081ebfa491b175d6efeb8398f83cc73f3f23d861783b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:05+09:00"
+ },
+ {
+  "map_id": 221020400,
+  "name": "에오스 탑 5층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020400/minimap",
+  "bytes": 5415,
+  "sha256": "03e30c356d40a21f2f09b43889cf8aa328ee0b2ec69d25ea9e74a686ccde57e4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:06+09:00"
+ },
+ {
+  "map_id": 221020500,
+  "name": "에오스 탑 6층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020500/minimap",
+  "bytes": 4561,
+  "sha256": "bd0945eb846d05d37c5ee77ecac8e6895bc3f3ec0642e4559b5eca1d74fd10bc",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:06+09:00"
+ },
+ {
+  "map_id": 221020600,
+  "name": "에오스 탑 7층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020600/minimap",
+  "bytes": 5121,
+  "sha256": "6398f8b1000249f4ae1a3885f547b1adb0bd0131092fa435aae8ecdab582d4fb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:06+09:00"
+ },
+ {
+  "map_id": 221020700,
+  "name": "에오스 탑 8층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020700/minimap",
+  "bytes": 5160,
+  "sha256": "9432f2c0f234fa3778b2bb9337e5cd07efb5901c14b8753fff52d64c2b0f6505",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:06+09:00"
+ },
+ {
+  "map_id": 221020800,
+  "name": "에오스 탑 9층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020800/minimap",
+  "bytes": 9701,
+  "sha256": "fe8b0e987fba5ef0e12d0361cda42dc0a73558f34cb82937067ba027cac015c0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:08+09:00"
+ },
+ {
+  "map_id": 221020900,
+  "name": "에오스 탑 10층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221020900/minimap",
+  "bytes": 9666,
+  "sha256": "c77c57cb8de6f25722c3aa8bd44829d48a0c1a50af691b709efb82957aef808d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:09+09:00"
+ },
+ {
+  "map_id": 221021000,
+  "name": "에오스 탑 11층~30층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021000/minimap",
+  "bytes": 15972,
+  "sha256": "4747e46673a4530d59caed129db44fa13f8fb26b21483e8ef6cecc3a4f71e78e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:08+09:00"
+ },
+ {
+  "map_id": 221021100,
+  "name": "에오스 탑 31층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021100/minimap",
+  "bytes": 8464,
+  "sha256": "c2a9c86820837593d0de71566cfef6c8f3dda7249b5b0c7c6043f5f47ad85f3a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:09+09:00"
+ },
+ {
+  "map_id": 221021200,
+  "name": "에오스 탑 32층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021200/minimap",
+  "bytes": 5077,
+  "sha256": "8905fbc6529329c0ba66d0efe3e5216c4a9f1aaeb7bcfa55dd5b84169dd9815c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:08+09:00"
+ },
+ {
+  "map_id": 221021300,
+  "name": "에오스 탑 33층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021300/minimap",
+  "bytes": 5365,
+  "sha256": "f04232d403691db6b0e0419c171d137255e9d5f511edc29095fa28241438fe99",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:10+09:00"
+ },
+ {
+  "map_id": 221021400,
+  "name": "에오스 탑 34층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021400/minimap",
+  "bytes": 5146,
+  "sha256": "19483986ae83aee6bea0c81e7d5474f1501c5845ea48b3a2730f168e625bcc1e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:09+09:00"
+ },
+ {
+  "map_id": 221021500,
+  "name": "에오스 탑 35층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021500/minimap",
+  "bytes": 9612,
+  "sha256": "a965d2c7ca5b2937c54f0ba89ead4f57fa70d7adadbf7124f69918089b6c35aa",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:10+09:00"
+ },
+ {
+  "map_id": 221021600,
+  "name": "에오스 탑 36층~65층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021600/minimap",
+  "bytes": 14287,
+  "sha256": "9817294fe820836a933e5608c710cb52802fb56cf5e407b0aa12a731467c4f40",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:11+09:00"
+ },
+ {
+  "map_id": 221021700,
+  "name": "에오스 탑 66층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021700/minimap",
+  "bytes": 10898,
+  "sha256": "e1c04bed865c03116d78ef74624eef8ad628b252bc5c31fec1bb3fe45f1c32aa",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:11+09:00"
+ },
+ {
+  "map_id": 221021800,
+  "name": "에오스 탑 67층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021800/minimap",
+  "bytes": 8710,
+  "sha256": "92a222c8cb15e811480dc5701e6e39d4c65249a2b0988a4b5982f2379d217de4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:12+09:00"
+ },
+ {
+  "map_id": 221021900,
+  "name": "에오스 탑 68층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221021900/minimap",
+  "bytes": 9465,
+  "sha256": "9f75cc0d4c673e5154123de9fe17f81804ee9e72d27cc1d61b0554088d3fe179",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:12+09:00"
+ },
+ {
+  "map_id": 221022000,
+  "name": "에오스 탑 69층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022000/minimap",
+  "bytes": 10234,
+  "sha256": "6380efd4b345232f2eddd7143cae6eb475ad1144062a083b78d5c8ef21a5167e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:12+09:00"
+ },
+ {
+  "map_id": 221022100,
+  "name": "에오스 탑 70층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022100/minimap",
+  "bytes": 9366,
+  "sha256": "d3e0610cb44328f8ff35374126439a34809d92d4aa48f641287ef2cd481fb14e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:12+09:00"
+ },
+ {
+  "map_id": 221022200,
+  "name": "에오스 탑 71층~90층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022200/minimap",
+  "bytes": 11242,
+  "sha256": "eb080e2a0eaf15798beeb12e5af5050cb250f56e4a78a9de584237c5701c6a99",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:13+09:00"
+ },
+ {
+  "map_id": 221022300,
+  "name": "에오스 탑 91층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022300/minimap",
+  "bytes": 10745,
+  "sha256": "1314ba7689d99342fc2ecdfe8b3f512b7fbf69a4ab20f7eff47d4374c26a6889",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:14+09:00"
+ },
+ {
+  "map_id": 221022400,
+  "name": "에오스 탑 92층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022400/minimap",
+  "bytes": 8733,
+  "sha256": "926a00f74115cf70b9ddb52c51e46350bb940611b258a4a80304eae688d3869c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:13+09:00"
+ },
+ {
+  "map_id": 221022500,
+  "name": "에오스 탑 93층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022500/minimap",
+  "bytes": 5550,
+  "sha256": "e1f8b6829e62c67458a69d93eeda38eb10dec890061062d1a01d8a54b53db64b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:14+09:00"
+ },
+ {
+  "map_id": 221022600,
+  "name": "에오스 탑 94층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022600/minimap",
+  "bytes": 4515,
+  "sha256": "183fdab718aa3268572d388e47f06ea7db5526769bf649bee3e4ee2531526b3f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:14+09:00"
+ },
+ {
+  "map_id": 221022700,
+  "name": "에오스 탑 95층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022700/minimap",
+  "bytes": 4482,
+  "sha256": "db296106e5756cddfc029b0453737f11c3f8aaf4e51223b964ea8245b1247263",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:14+09:00"
+ },
+ {
+  "map_id": 221022800,
+  "name": "에오스 탑 96층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022800/minimap",
+  "bytes": 4771,
+  "sha256": "b85e15c1a0262882aabadba0a525e2139e8cc6c4ba9e46846468b8da6e389ffc",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:16+09:00"
+ },
+ {
+  "map_id": 221022900,
+  "name": "에오스 탑 97층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221022900/minimap",
+  "bytes": 4458,
+  "sha256": "23cd3fda51e8d12529b204e22df14fff3353e78ea64412973a264bb5071eb018",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:15+09:00"
+ },
+ {
+  "map_id": 221023000,
+  "name": "에오스 탑 98층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221023000/minimap",
+  "bytes": 5638,
+  "sha256": "79fe37fba696ae0abf6bda33721fb9533aa3e9ae63275df81d89ab8455fd3e88",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:16+09:00"
+ },
+ {
+  "map_id": 221023100,
+  "name": "에오스 탑 99층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221023100/minimap",
+  "bytes": 4998,
+  "sha256": "c8af15604b617bf936a25223625573cae1de7e9aeb069ff9a03290cc49c3c633",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:16+09:00"
+ },
+ {
+  "map_id": 221023200,
+  "name": "에오스 탑 100층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221023200/minimap",
+  "bytes": 11831,
+  "sha256": "c472ba5c4e631709f9e5b7a31b1bd2238b6587238ae9c39952866b7aacb22cd9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:16+09:00"
+ },
+ {
+  "map_id": 221023300,
+  "name": "에오스 탑 101층<입장맵>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/221023300/minimap",
+  "bytes": 2238,
+  "sha256": "04814ecc98f801d2433ac398eee09c5033b740e64773f4f3faeaae4c70dba8bd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:16+09:00"
+ },
+ {
+  "map_id": 222020000,
+  "name": "핼리오스 탑 도서관",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020000/minimap",
+  "bytes": 4836,
+  "sha256": "01add322bde0bcd133cc593feb120464276d6d4f8bc27b0a23ff0c71977e9dc5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:17+09:00"
+ },
+ {
+  "map_id": 222020100,
+  "name": "핼리오스 탑 2층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020100/minimap",
+  "bytes": 5377,
+  "sha256": "10f02880a2960d4a72b15aa9bcf92f46c167d742b85c150df787101b4d829f33",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:17+09:00"
+ },
+ {
+  "map_id": 222020110,
+  "name": "엘리베이터<루디브리엄행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020110/minimap",
+  "bytes": 1897,
+  "sha256": "98a3dd2c8f863f5a9ffa814567ce2d1d62c24f986b47239a51da48bc5bdf7114",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:17+09:00"
+ },
+ {
+  "map_id": 222020111,
+  "name": "엘리베이터<루디브리엄행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020111/minimap",
+  "bytes": 1781,
+  "sha256": "2e2803c841d7c246b81753eafa9651f0de3e4b8a63bc23f512c5e7d75f7fedca",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:17+09:00"
+ },
+ {
+  "map_id": 222020200,
+  "name": "핼리오스 탑 99층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020200/minimap",
+  "bytes": 4956,
+  "sha256": "d9d8dea8dcd17b4979265fd50ca3e4889ef399741b6970d8c7f11319b9aafec2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:18+09:00"
+ },
+ {
+  "map_id": 222020210,
+  "name": "엘리베이터<아랫마을행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020210/minimap",
+  "bytes": 1874,
+  "sha256": "2dffcff60d60347436ba04b618b738745278b88ef93429c4091389e293fc48f2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:18+09:00"
+ },
+ {
+  "map_id": 222020211,
+  "name": "엘리베이터<아랫마을행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020211/minimap",
+  "bytes": 1787,
+  "sha256": "7a11b95321cfb0f6d150e36cec5e2d3d35f978c9de8d8058baa1af2282d3c9c0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:18+09:00"
+ },
+ {
+  "map_id": 222020300,
+  "name": "핼리오스 탑 100층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/222020300/minimap",
+  "bytes": 11453,
+  "sha256": "40f1345cccda1667f916b7dc1881ac45a45bdd9547ddd1ab35f8b74b289c1dca",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:19+09:00"
+ },
+ {
+  "map_id": 240000000,
+  "name": "리프레",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240000000/minimap",
+  "bytes": 29579,
+  "sha256": "d7a8a87fbd70ebf956776c9e61ee84f688740c540de984e04c528043339450b3",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:19+09:00"
+ },
+ {
+  "map_id": 240000001,
+  "name": "촌장의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000001/icon",
+  "bytes": 1345,
+  "sha256": "b65829655ac9edb2b4b169b994c0d186f4dc4f062f80bc79da2239d079d928d0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:21+09:00"
+ },
+ {
+  "map_id": 240000002,
+  "name": "리프레잡화상점",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000002/icon",
+  "bytes": 1345,
+  "sha256": "ab341471044c6f7265ec39776d40124f5d17f0a6b479ab77753017972551f999",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:23+09:00"
+ },
+ {
+  "map_id": 240000003,
+  "name": "야쿠네 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000003/icon",
+  "bytes": 1345,
+  "sha256": "b34ee62325ffbeab21d34af8e8a8134e15778220e7a3eb5766171629ad31b48a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:22+09:00"
+ },
+ {
+  "map_id": 240000004,
+  "name": "이토네 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000004/icon",
+  "bytes": 1344,
+  "sha256": "cafd1c1fddb605c772ae0df8d0a84c344d8b128de91c33c643bbec9251c36185",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:23+09:00"
+ },
+ {
+  "map_id": 240000005,
+  "name": "쿠모네 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000005/icon",
+  "bytes": 1345,
+  "sha256": "658320ac21b3dfd6deee60051bf89dbb9a0fb8c966af8b4d35b4561f5f59390e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:24+09:00"
+ },
+ {
+  "map_id": 240000006,
+  "name": "팜의 집",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240000006/icon",
+  "bytes": 1345,
+  "sha256": "c8173b8f6fdfb8df76d1c3c5f16282d93256cba4ac4a46cc96f58361e024f103",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:25+09:00"
+ },
+ {
+  "map_id": 240000100,
+  "name": "리프레 정거장 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240000100/minimap",
+  "bytes": 5783,
+  "sha256": "6e9268bd5555262554c35853d964df21061f53791050b14dbac72c5bdab652ab",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:25+09:00"
+ },
+ {
+  "map_id": 240000110,
+  "name": "정거장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240000110/minimap",
+  "bytes": 10518,
+  "sha256": "5eefd5d434cf150300988f7f512f314b76b65144b98589557c7fdaba30e7c3f0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:25+09:00"
+ },
+ {
+  "map_id": 240000111,
+  "name": "출발하기 전<오르비스행>",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240000111/minimap",
+  "bytes": 3128,
+  "sha256": "9c48f3a2041e2c467c3d19eeb2597a5bc41653d2749ce2d051a391e84c3bf11f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:25+09:00"
+ },
+ {
+  "map_id": 240010000,
+  "name": "리프레 서쪽 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010000/minimap",
+  "bytes": 11905,
+  "sha256": "3b039305b69751b9fae5b4eb2ecfcfd5d76879b934eba3e3ae7cd1b5b2b3c891",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:26+09:00"
+ },
+ {
+  "map_id": 240010100,
+  "name": "미나르숲 서쪽 경계",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010100/minimap",
+  "bytes": 16917,
+  "sha256": "fab11fc6580ec45dc7b01c14d5f4b71cf08be4557b8a276f99c7f562dca3445c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:26+09:00"
+ },
+ {
+  "map_id": 240010101,
+  "name": "털복숭이의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010101/minimap",
+  "bytes": 14467,
+  "sha256": "5cc80b9ae5ed96fac328a0d0ab8e9636d3b760ebb20ae668b9556da537007c28",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:26+09:00"
+ },
+ {
+  "map_id": 240010200,
+  "name": "심술쟁이의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010200/minimap",
+  "bytes": 14821,
+  "sha256": "2593a3c1cfdb249f4e90944de170afce4ecc4e6f08f9da81fcb3e045e06ccba9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:26+09:00"
+ },
+ {
+  "map_id": 240010300,
+  "name": "가파른 언덕",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010300/minimap",
+  "bytes": 10138,
+  "sha256": "151441c6e25566dddbabbdbfd797a4cbef6fe3b25bb5eca01ab2c25fe14d607e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:27+09:00"
+ },
+ {
+  "map_id": 240010400,
+  "name": "숲의 갈림길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010400/minimap",
+  "bytes": 11812,
+  "sha256": "760d488f32e1c378f04ec84db5a9b770c4802593903eb15352c868107a8557d7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:28+09:00"
+ },
+ {
+  "map_id": 240010500,
+  "name": "산양의 골짜기1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010500/minimap",
+  "bytes": 13130,
+  "sha256": "bb981be764eb6c9f2939592ee7ca9fc713c0f4b72624a022d6762102e78e8131",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:29+09:00"
+ },
+ {
+  "map_id": 240010501,
+  "name": "사제의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010501/minimap",
+  "bytes": 5170,
+  "sha256": "f8b0fa0abbdc0995b08290950507b8982228282624ae0c1c5dcf13b2894b8168",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:28+09:00"
+ },
+ {
+  "map_id": 240010600,
+  "name": "하늘 둥지2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010600/minimap",
+  "bytes": 10572,
+  "sha256": "4bf8040f4aa334603c6467f1bcbb06ddf6ce74add78519964ecae34fafe08e30",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:28+09:00"
+ },
+ {
+  "map_id": 240010700,
+  "name": "하늘 둥지1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010700/minimap",
+  "bytes": 9012,
+  "sha256": "eb17f753e4800492983947e98f88a1c82f5662e519b5cc600c26be0427f83809",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:29+09:00"
+ },
+ {
+  "map_id": 240010800,
+  "name": "하늘 둥지 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010800/minimap",
+  "bytes": 13158,
+  "sha256": "72d28c18ccdbefbfb4d0bf52abf31b6192519a74a8c8e8416e1c22944cfcc08f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:30+09:00"
+ },
+ {
+  "map_id": 240010900,
+  "name": "미나르숲 동쪽 경계",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010900/minimap",
+  "bytes": 10880,
+  "sha256": "1f0d0502f50d6fe9d9d37a96ba9c5a6b47d039a7cdf980dea5cfadb6a654b46e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:29+09:00"
+ },
+ {
+  "map_id": 240010901,
+  "name": "투구벌레의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240010901/minimap",
+  "bytes": 19761,
+  "sha256": "777cbd308a8906062a74aec70862beec90ea96c378442eea0b954bdfba2e0dd2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:29+09:00"
+ },
+ {
+  "map_id": 240011000,
+  "name": "리프레 동쪽 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240011000/minimap",
+  "bytes": 10917,
+  "sha256": "5a836e4af116753ccc99d9a96f59e94e4c204deea4e54f90c13781ef78b816f5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:30+09:00"
+ },
+ {
+  "map_id": 240020000,
+  "name": "붉은 켄타우로스의 영역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020000/minimap",
+  "bytes": 14907,
+  "sha256": "203a0c9e656eeeb07446303ce5ba09d45ca9d2e53a093f81719664ca3abf8849",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:33+09:00"
+ },
+ {
+  "map_id": 240020100,
+  "name": "불과 어둠의 전장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020100/minimap",
+  "bytes": 14880,
+  "sha256": "e673df66ec3fc8afa61c9c1bcb11ee264d3e53d36505c572ce92e4fe6fee34aa",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:31+09:00"
+ },
+ {
+  "map_id": 240020101,
+  "name": "그리프의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020101/minimap",
+  "bytes": 5608,
+  "sha256": "969ead5d9435a79c05218c5224e8b72f243e0285a0e8662116b077239103653c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:31+09:00"
+ },
+ {
+  "map_id": 240020102,
+  "name": "그리프의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020102/minimap",
+  "bytes": 5584,
+  "sha256": "ea2eef69db312630b85c0fba2ac12632404a51e8e24bd9625440647908389d20",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:33+09:00"
+ },
+ {
+  "map_id": 240020200,
+  "name": "검은 켄타우로스의 영역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020200/minimap",
+  "bytes": 10632,
+  "sha256": "a5d8bc8e3b05a4d362111ed92129fd4b137d3d144865a26ecbb59ebd174d3b90",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:33+09:00"
+ },
+ {
+  "map_id": 240020300,
+  "name": "물과 어둠의 전장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020300/minimap",
+  "bytes": 16107,
+  "sha256": "9d0a0245b2fb110eef553f0225145d6d6c7c7f215d1ff589001a36940f82352d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:35+09:00"
+ },
+ {
+  "map_id": 240020400,
+  "name": "푸른 켄타우로스의 영역",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020400/minimap",
+  "bytes": 14007,
+  "sha256": "5da50cafc67c7007157105e7339c319bc97de2992ecccd89957b8598266f1086",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:37+09:00"
+ },
+ {
+  "map_id": 240020401,
+  "name": "마뇽의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020401/minimap",
+  "bytes": 6022,
+  "sha256": "532f2da0c3804c92f8f83371eca6657950567916f83d31ba5c512000123b0f52",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:35+09:00"
+ },
+ {
+  "map_id": 240020402,
+  "name": "마뇽의 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020402/minimap",
+  "bytes": 6103,
+  "sha256": "3ab8330b0cd4803db775d90c77fec6a083fab2b95f076967da5da1993998b750",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:35+09:00"
+ },
+ {
+  "map_id": 240020500,
+  "name": "불과 물의 전장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240020500/minimap",
+  "bytes": 13952,
+  "sha256": "8b93deb709571417cf00d99afdfb180c70b3df3b4bc1fd29f0dcc58ceffa3083",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:35+09:00"
+ },
+ {
+  "map_id": 240030000,
+  "name": "용의 숲 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030000/minimap",
+  "bytes": 13948,
+  "sha256": "c4e0804f8a02908c609bff7256c63205cd27c1a7293154dae2628ad060ed989e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:36+09:00"
+ },
+ {
+  "map_id": 240030100,
+  "name": "용의 숲1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030100/minimap",
+  "bytes": 19731,
+  "sha256": "cd5f7a8ddfdf1c3ca59962290bc033b49f824899c3f024206641e810694a8015",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:36+09:00"
+ },
+ {
+  "map_id": 240030101,
+  "name": "불타는 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030101/minimap",
+  "bytes": 11500,
+  "sha256": "81ae261f34672a47f7cba4fdf59d49b040c4ea59d5418c485036d34b008c5e75",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:37+09:00"
+ },
+ {
+  "map_id": 240030102,
+  "name": "사라진 숲",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030102/minimap",
+  "bytes": 13106,
+  "sha256": "ba1cc96c2236a0d945cdfce757cbb93bba0a042855902eeecf6f55a1a2d77af2",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:37+09:00"
+ },
+ {
+  "map_id": 240030200,
+  "name": "용의 숲2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030200/minimap",
+  "bytes": 14006,
+  "sha256": "56b7d8947ba47cc004362f8d66f22e6c43405d5467894938ac3aa5c859949d1b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:37+09:00"
+ },
+ {
+  "map_id": 240030300,
+  "name": "용의 숲3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240030300/minimap",
+  "bytes": 13288,
+  "sha256": "494d6a6448c97c980379544334a7520b179d3586acb4c5cca70bc3dfb2ca7a5f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:38+09:00"
+ },
+ {
+  "map_id": 240040000,
+  "name": "용의 협곡",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040000/minimap",
+  "bytes": 8358,
+  "sha256": "98febaa5f145ba221d7fc8669f0b794219da824bc8d42e65827e2644381f3090",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:39+09:00"
+ },
+ {
+  "map_id": 240040100,
+  "name": "협곡의 갈림길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040100/minimap",
+  "bytes": 7306,
+  "sha256": "42c0feb0506849455b20fa0c8645728c9cc595d683c005881b36ec2fe8f85004",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:38+09:00"
+ },
+ {
+  "map_id": 240040200,
+  "name": "협곡의 동쪽길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040200/minimap",
+  "bytes": 8183,
+  "sha256": "7a7999997c98fd460e6605481a8f89453bf96e15f644656f47098be4781cbbd4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:39+09:00"
+ },
+ {
+  "map_id": 240040300,
+  "name": "협곡의 서쪽길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040300/minimap",
+  "bytes": 7629,
+  "sha256": "0b94b647863941c25a3c82f9e6a0e52ebdd353ab5b9b8872c6ee2c310c78eb76",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:39+09:00"
+ },
+ {
+  "map_id": 240040400,
+  "name": "와이번의 협곡",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040400/minimap",
+  "bytes": 7917,
+  "sha256": "facdbcb271ff47b3a234d5528b012524f25259bec159191df34f113efcdb0073",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:39+09:00"
+ },
+ {
+  "map_id": 240040500,
+  "name": "용의 둥지 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040500/minimap",
+  "bytes": 5585,
+  "sha256": "3305894804347a5fc26604b990573c3d51933fa9c82436bcc07f232eccaeebec",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:40+09:00"
+ },
+ {
+  "map_id": 240040510,
+  "name": "죽은 용의 둥지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040510/minimap",
+  "bytes": 8740,
+  "sha256": "9d4e6b5fe598b7c5ba938b1669d85d52a386ad1e6a9d256c1240e2c929f0c137",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:40+09:00"
+ },
+ {
+  "map_id": 240040511,
+  "name": "남겨진 용의 둥지1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040511/minimap",
+  "bytes": 9479,
+  "sha256": "30745d73ffe0c1cf7a4ea8241a7ca8eec09143fe97c648c536e1abb349af777e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:41+09:00"
+ },
+ {
+  "map_id": 240040520,
+  "name": "망가진 용의 둥지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040520/minimap",
+  "bytes": 8174,
+  "sha256": "cdc35756c4caa716519d425955fa0727ef08c12ad4c7b2fc116f27e1ae1dac6d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:41+09:00"
+ },
+ {
+  "map_id": 240040521,
+  "name": "위험한 용의 둥지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040521/minimap",
+  "bytes": 8838,
+  "sha256": "e68b2e48bd709a9a47ab0cce83ec5265df7a20c39200a9b6359bbbe01b2fb113",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:41+09:00"
+ },
+ {
+  "map_id": 240040600,
+  "name": "큰 둥지 봉우리",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040600/minimap",
+  "bytes": 6046,
+  "sha256": "e05491f1e8ee664880c62e565e91b7688b3abd8b1d3b32b2046f7fa662be3e7a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:42+09:00"
+ },
+ {
+  "map_id": 240040610,
+  "name": "위험한 둥지 밑",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040610/minimap",
+  "bytes": 2626,
+  "sha256": "65df15ca39ef03f391ea7e17184da6518301e396a5cb539b9d4fcb54520daf05",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:42+09:00"
+ },
+ {
+  "map_id": 240040611,
+  "name": "나인스피릿의 둥지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040611/minimap",
+  "bytes": 5527,
+  "sha256": "88e4f0349cbc97ade770d8067471af1219923378dd107130b3d706c2b089e123",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:42+09:00"
+ },
+ {
+  "map_id": 240040700,
+  "name": "생명의 동굴 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040700/minimap",
+  "bytes": 4218,
+  "sha256": "12e680dc54f65035c6ea446ba79cf9217d332b0b0dfd485c3d94410fd95a25eb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:42+09:00"
+ },
+ {
+  "map_id": 240040815,
+  "name": "The Restoring Memory",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240040815/minimap",
+  "bytes": 9037,
+  "sha256": "529d2318fc1fee11effa763699b2d93a7e4a32095ae87df6da27334719d6efc9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:43+09:00"
+ },
+ {
+  "map_id": 240080000,
+  "name": "천공의 나루터",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080000/minimap",
+  "bytes": 4809,
+  "sha256": "fc226e066b20ce98a7d5f152a3397ccfc766405bcd8349c800264b6beac78075",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:43+09:00"
+ },
+ {
+  "map_id": 240080040,
+  "name": "천공의 부활터",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240080040/icon",
+  "bytes": 1345,
+  "sha256": "efe853492d64f385b23529e7ee8a3c3342d0786d2625f9735b4990c418d8d8fb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:43+09:00"
+ },
+ {
+  "map_id": 240080041,
+  "name": "천공의 부활터",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/240080041/icon",
+  "bytes": 1345,
+  "sha256": "e000c06c324840cce856014b5a378917c6ffd11d8f5048a03f83f631ea941ac9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:45+09:00"
+ },
+ {
+  "map_id": 240080050,
+  "name": "망자의 동굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080050/minimap",
+  "bytes": 2451,
+  "sha256": "cf8a0d396431fea57b5b9256860f51b70ad0c22199276be95e6739fc6f076261",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:43+09:00"
+ },
+ {
+  "map_id": 240080051,
+  "name": "망자의 동굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080051/minimap",
+  "bytes": 2451,
+  "sha256": "8e581459fea943816e6a42cb5d0773ac00b7f81e50e81de7201615239852c849",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:44+09:00"
+ },
+ {
+  "map_id": 240080100,
+  "name": "천공 지역 1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080100/minimap",
+  "bytes": 3652,
+  "sha256": "09a5d64b004ac9e9314627401172427b8320e7affcb133281f3367eb863007bb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:44+09:00"
+ },
+ {
+  "map_id": 240080200,
+  "name": "천공 지역 2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080200/minimap",
+  "bytes": 2708,
+  "sha256": "af35fa72352cd7466bad8574d09f983d2fc1a69b9c81c27f86d05b1a26037953",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:44+09:00"
+ },
+ {
+  "map_id": 240080300,
+  "name": "천공 지역 끝자락",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080300/minimap",
+  "bytes": 3088,
+  "sha256": "73d7558114ffe5fa6d747ab33c9b9f157958838deb0b618f12e6d847b4a5d7df",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:45+09:00"
+ },
+ {
+  "map_id": 240080400,
+  "name": "천공의 둥지 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080400/minimap",
+  "bytes": 4007,
+  "sha256": "05decf257cfd43ecb291356545ee0f14f4fbfbce57c5a6f03f8949501cf77cac",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:45+09:00"
+ },
+ {
+  "map_id": 240080500,
+  "name": "천공의 둥지",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080500/minimap",
+  "bytes": 2649,
+  "sha256": "e7dac47b827f1d16e3d8bf07de987392ba1e231ea27d6cff77363bb1c1c98849",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:45+09:00"
+ },
+ {
+  "map_id": 240080600,
+  "name": "Crimson Sky Edge ",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080600/minimap",
+  "bytes": 4011,
+  "sha256": "b8de404a8f2b397bf86746d18751c012bb0fa3e8339f90a3ee78efd68ab10bc7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:46+09:00"
+ },
+ {
+  "map_id": 240080700,
+  "name": "Crimson Sky Nest Entrance",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080700/minimap",
+  "bytes": 6314,
+  "sha256": "5fc38388423850e95ca44eb92718503878d6d679e498769326e016508ab7ae45",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:45+09:00"
+ },
+ {
+  "map_id": 240080800,
+  "name": "Crimson Sky Nest ",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/240080800/minimap",
+  "bytes": 5291,
+  "sha256": "6e42f4dc5f564421c66ef170ffe205ca32dd6e28b85addc72ab5e2da50ba5ce7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:46+09:00"
+ },
+ {
+  "map_id": 310000000,
+  "name": "에델슈타인",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310000000/minimap",
+  "bytes": 31217,
+  "sha256": "040cd6feeada27c95fd36452f0257c1618c1fd80790acf7ec8c46bc458a6406f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:51+09:00"
+ },
+ {
+  "map_id": 310000001,
+  "name": "에델슈타인 의회",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310000001/minimap",
+  "bytes": 3998,
+  "sha256": "650085349daa121d3e96ac75a8c905f0cd814ac9b03bc42fa600ab2e3709f96c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:51+09:00"
+ },
+ {
+  "map_id": 310000003,
+  "name": "에델슈타인 헤어샵",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/310000003/icon",
+  "bytes": 1200,
+  "sha256": "71640021b3f319d220f5c69e9b836d2c28c402e7c282629d0cdf1fa11d4f8997",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:49+09:00"
+ },
+ {
+  "map_id": 310000004,
+  "name": "저택",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310000004/minimap",
+  "bytes": 4208,
+  "sha256": "f1a06a9bb6091e40e67d799360333dc35cef9404bed26f4cb6cd282c0fdf9a27",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:47+09:00"
+ },
+ {
+  "map_id": 310000010,
+  "name": "에델슈타인 임시공항",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310000010/minimap",
+  "bytes": 3873,
+  "sha256": "9c341d33a8d19fb7d2488af5d2b583a66101fce385d608c32d983c091fdc7953",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:49+09:00"
+ },
+ {
+  "map_id": 310010000,
+  "name": "비밀광장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010000/minimap",
+  "bytes": 3856,
+  "sha256": "20f90e4338e881ed0123f53bda786e282817def08816da31ec333de228d55050",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:50+09:00"
+ },
+ {
+  "map_id": 310010010,
+  "name": "트레이닝 룸 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010010/minimap",
+  "bytes": 4381,
+  "sha256": "7e150fa2dd176e3001e7d91da7f7eaa0fce87b5ea091d8fc1ff29a7ba2c697ff",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:51+09:00"
+ },
+ {
+  "map_id": 310010100,
+  "name": "트레이닝 룸 A",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010100/minimap",
+  "bytes": 3982,
+  "sha256": "f8eba546626b902ffb395bd87c92422d0b8c2b3a424cfbcbf362a10fd2d06f9b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:51+09:00"
+ },
+ {
+  "map_id": 310010200,
+  "name": "트레이닝 룸 B",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010200/minimap",
+  "bytes": 4010,
+  "sha256": "24e894ae62e7134f97aa339269779de833138a952f91b9c8e4a5b748d070493c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:51+09:00"
+ },
+ {
+  "map_id": 310010300,
+  "name": "트레이닝 룸 C",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010300/minimap",
+  "bytes": 3880,
+  "sha256": "52cb4c33934bb75cf99f190058a6dece2365b7254a7ac64c668a1618e67c0871",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:52+09:00"
+ },
+ {
+  "map_id": 310010400,
+  "name": "트레이닝 룸 D",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310010400/minimap",
+  "bytes": 3699,
+  "sha256": "e2861cafe87e2e35903e1a4e609cf9428a2d5a6857212a014a99318fe2679502",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:54+09:00"
+ },
+ {
+  "map_id": 310020000,
+  "name": "에델슈타인 공원1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310020000/minimap",
+  "bytes": 4109,
+  "sha256": "ab4569a2d2f7aa1b4070bc94a14e635a8f2e49629f2ab86bc02eb89188204db8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:52+09:00"
+ },
+ {
+  "map_id": 310020100,
+  "name": "에델슈타인 공원2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310020100/minimap",
+  "bytes": 4260,
+  "sha256": "66d393df397e9f834a4820ecdfa002a2082cf48dcf24061214f0b8f6df7d556a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:53+09:00"
+ },
+ {
+  "map_id": 310020200,
+  "name": "에델슈타인 공원3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310020200/minimap",
+  "bytes": 4440,
+  "sha256": "a18e78752f7f586c2ac7a4a8fc55b10faa883b70a661951ea6648163914a09c4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:52+09:00"
+ },
+ {
+  "map_id": 310030000,
+  "name": "에델슈타인 산책로1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030000/minimap",
+  "bytes": 4935,
+  "sha256": "f9faf5c1bd185bac65c4caaf01c8d4aae49e8a73b2ce54256dffeb24a2967421",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:53+09:00"
+ },
+ {
+  "map_id": 310030100,
+  "name": "에델슈타인 산책로2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030100/minimap",
+  "bytes": 5703,
+  "sha256": "a1e48a55438f7d0bc11d159a15fd069fb6ec22272cfe283d799396efc06f4692",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:53+09:00"
+ },
+ {
+  "map_id": 310030110,
+  "name": "뱀 나오는 길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030110/minimap",
+  "bytes": 4175,
+  "sha256": "b5e5f9997318a1ed41b9221afb34cf0828e6221b8707c50f6197d5d5b121d6ea",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:55+09:00"
+ },
+ {
+  "map_id": 310030200,
+  "name": "에델슈타인 산책로3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030200/minimap",
+  "bytes": 4581,
+  "sha256": "b157eb0952b74ae2f0f0947f1329b8c5b1b642ecac430fba4a23e87cb97e405f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:54+09:00"
+ },
+ {
+  "map_id": 310030300,
+  "name": "에델슈타인 산책로4",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030300/minimap",
+  "bytes": 7754,
+  "sha256": "622fdf7b30f17a40e9b64117e64fc3803f024f84db6af98dffbb4bbedc226d92",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:54+09:00"
+ },
+ {
+  "map_id": 310030310,
+  "name": "가로등길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310030310/minimap",
+  "bytes": 4980,
+  "sha256": "98bf9e13e666aeb6e67d948a9820066edae32a432f223831cad4aded8096f845",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:55+09:00"
+ },
+ {
+  "map_id": 310040000,
+  "name": "광산 가는 길1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310040000/minimap",
+  "bytes": 11036,
+  "sha256": "3a1a6ee2ebc97663fb8ba50544610f30eeb68ac36741dd58e0506b092d9134a4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:55+09:00"
+ },
+ {
+  "map_id": 310040100,
+  "name": "광산 가는 길2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310040100/minimap",
+  "bytes": 8420,
+  "sha256": "145a3010e49beb08ecb0503044ee5d27cd00f9bb05206f68dc9ecbc78bdc7858",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:55+09:00"
+ },
+ {
+  "map_id": 310040110,
+  "name": "숨겨진 포탈",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/310040110/icon",
+  "bytes": 1200,
+  "sha256": "6c1a6e696700d514a49540abea2b149570b73d07fa3f0db72ee80720bfe84ff4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:56+09:00"
+ },
+ {
+  "map_id": 310040200,
+  "name": "광산 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310040200/minimap",
+  "bytes": 7870,
+  "sha256": "eccec2ec4ee20998be55f4c1d3cd7c6ca3c2ecdab6874dc9722531f2912d4ddd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:56+09:00"
+ },
+ {
+  "map_id": 310040300,
+  "name": "바위길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310040300/minimap",
+  "bytes": 7507,
+  "sha256": "fe658cb0ee6bfaea57d39e4445e3c1cb90f53d148f236c052dee4983f96206fd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:56+09:00"
+ },
+ {
+  "map_id": 310040400,
+  "name": "광석길",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310040400/minimap",
+  "bytes": 7473,
+  "sha256": "d2e15131f8c274199144d5f737a746e9bf26d568ee4ea69ea93c636918dd1455",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:56+09:00"
+ },
+ {
+  "map_id": 310050000,
+  "name": "발전소 로비",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050000/minimap",
+  "bytes": 4866,
+  "sha256": "501585c2814491664d2c6f686b61727e36e93bef67ca045242cc505cd32d528a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:57+09:00"
+ },
+ {
+  "map_id": 310050100,
+  "name": "발전소 보안대",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050100/minimap",
+  "bytes": 3529,
+  "sha256": "09fdc2cf9ddb721f81050c616e03ea155091bf9be1795a7ba4acff38085d8d2b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:58+09:00"
+ },
+ {
+  "map_id": 310050200,
+  "name": "갱도 입구1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050200/minimap",
+  "bytes": 4293,
+  "sha256": "bcda2381229cb59ba41e5236c864260082df5ed9ba7b240b38d16e96c889e1ea",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:57+09:00"
+ },
+ {
+  "map_id": 310050300,
+  "name": "갱도 입구2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050300/minimap",
+  "bytes": 4439,
+  "sha256": "78532b85674d3a186e08024fd7ffd630e0cbad2b8c00ba0ca9c87e544292a33f",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:58+09:00"
+ },
+ {
+  "map_id": 310050400,
+  "name": "제 1 광장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050400/minimap",
+  "bytes": 2955,
+  "sha256": "aa8f3a7b6c3df96547bcc01e177ceb2d86676fc2b36dec71c28fac677c064852",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:59+09:00"
+ },
+ {
+  "map_id": 310050500,
+  "name": "갱도1",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050500/minimap",
+  "bytes": 4638,
+  "sha256": "47b4f8da04e2631b22959b0262431bd35362628729255bae8ef1762b05c8dec9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:59+09:00"
+ },
+ {
+  "map_id": 310050510,
+  "name": "너구리 소굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050510/minimap",
+  "bytes": 4423,
+  "sha256": "228c13288f072d1521bd94d7fe19909be84ed553168dca2e4cbb59eb8a2d50fe",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:25:59+09:00"
+ },
+ {
+  "map_id": 310050520,
+  "name": "위험한 너구리 소굴",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050520/minimap",
+  "bytes": 5925,
+  "sha256": "786868a9b6cfe7643daef3f88893c5f4d94f107ccd1a161da2582d0a20ecbecb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:01+09:00"
+ },
+ {
+  "map_id": 310050600,
+  "name": "갱도2",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050600/minimap",
+  "bytes": 4581,
+  "sha256": "fa838dac2cac40602f7d7b1828ec3cd99df77b3191a846372cc401cac91ae33d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:01+09:00"
+ },
+ {
+  "map_id": 310050700,
+  "name": "갱도3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050700/minimap",
+  "bytes": 4861,
+  "sha256": "fa17139188b5d8aa4f8ec865dafb5c8b7a8eada6797369cc0f67e1b1813725fd",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:00+09:00"
+ },
+ {
+  "map_id": 310050800,
+  "name": "갱도4",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/310050800/minimap",
+  "bytes": 4396,
+  "sha256": "d9eab5f4834b7c88ed710d808638f96562cae74d9b0395519dfc6073741572e0",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:03+09:00"
+ },
+ {
+  "map_id": 502030000,
+  "name": "Entry Cube",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/502030000/icon",
+  "bytes": 1815,
+  "sha256": "98db3f6320668050f828dd95baee6b2ee4ac0924d04e765431d7887f067a3acb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:07+09:00"
+ },
+ {
+  "map_id": 502030020,
+  "name": "Proliferation Cube",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/502030020/icon",
+  "bytes": 1320,
+  "sha256": "fc13a3b84c8818fcefe0e5afd95aea1a80542ab54dc1916cb1c66ae4b1421d55",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:10+09:00"
+ },
+ {
+  "map_id": 502030040,
+  "name": "Control Cube",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:09+09:00"
+ },
+ {
+  "map_id": 502030060,
+  "name": "Resurrection Cube",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/502030060/icon",
+  "bytes": 1320,
+  "sha256": "2884cd03a6c799dff77377763f8d5276720141f38aae95242fe3ed0e91b7d11d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:10+09:00"
+ },
+ {
+  "map_id": 502030079,
+  "name": "Neutral Cube",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/502030079/icon",
+  "bytes": 1815,
+  "sha256": "4d2cbefdf78b083fe1b144cd68235498ff1f63f66f2a3ef014891642296eb003",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:09+09:00"
+ },
+ {
+  "map_id": 677000004,
+  "name": "Andras Strolling Path",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/677000004/minimap",
+  "bytes": 5294,
+  "sha256": "7a76bac6869c294be5e892664f48335455b1fcf3ac87ebc2ec277180decdd974",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:10+09:00"
+ },
+ {
+  "map_id": 800000000,
+  "name": "버섯신사",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/800000000/minimap",
+  "bytes": 24113,
+  "sha256": "21eab3e93b3b0cdf539d2887f43770156fb11429763f8bf61835ff550b19ac51",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:11+09:00"
+ },
+ {
+  "map_id": 800040200,
+  "name": "Castle Corridor",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/800040200/minimap",
+  "bytes": 5031,
+  "sha256": "5910dafa34724c2fd1c106db1e3a0fc6b9b9e5f1199508daf08106cf1288d380",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:11+09:00"
+ },
+ {
+  "map_id": 800040305,
+  "name": "Phantom's Room",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/800040305/icon",
+  "bytes": 987,
+  "sha256": "ca621c31b05fc16f0bea4cdc36e12d97709ed8a1dc1061dd5a8fa273b63efcd1",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:11+09:00"
+ },
+ {
+  "map_id": 801000100,
+  "name": "Locker Room (M)",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/801000100/icon",
+  "bytes": 1008,
+  "sha256": "a994cf4789dd11ad31a7df254ff61a9ab7115ef54dde1386da29b7e60a86711d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:12+09:00"
+ },
+ {
+  "map_id": 809000201,
+  "name": "Spa (F)",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:13+09:00"
+ },
+ {
+  "map_id": 809050000,
+  "name": "Ludibrium Maze 1",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050000/icon",
+  "bytes": 1280,
+  "sha256": "50312cdd0cdbf8d24e15190795a91afbd5e9942910fc44e726db5750fe48a5aa",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:13+09:00"
+ },
+ {
+  "map_id": 809050001,
+  "name": "Ludibrium Maze 2",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050001/icon",
+  "bytes": 1279,
+  "sha256": "690df339267736178f8a27797b46df718a3f075b10c763b7d444588efb109f7a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:13+09:00"
+ },
+ {
+  "map_id": 809050002,
+  "name": "Ludibrium Maze 3",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050002/icon",
+  "bytes": 1280,
+  "sha256": "e0d41b6c1d732ae4008f8f39a7124486794af190a9e8990e46277b8c292aead7",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:14+09:00"
+ },
+ {
+  "map_id": 809050003,
+  "name": "Ludibrium Maze 4",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050003/icon",
+  "bytes": 1280,
+  "sha256": "3d8679b39372ad40807fdeefa565f33ac55272ed1ebb347fb95463ea374835b9",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:15+09:00"
+ },
+ {
+  "map_id": 809050004,
+  "name": "Ludibrium Maze 5",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050004/icon",
+  "bytes": 1280,
+  "sha256": "deccefd6125b7d6b0e10bcceb4b03b3a98c1d160bc7a00cb4544a729a18effeb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:15+09:00"
+ },
+ {
+  "map_id": 809050005,
+  "name": "Ludibrium Maze 6",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050005/icon",
+  "bytes": 1280,
+  "sha256": "6a607ff2674096425e2006f6be31ca3cca780444b59f8098e217c685895ebfaa",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:15+09:00"
+ },
+ {
+  "map_id": 809050006,
+  "name": "Ludibrium Maze 7",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050006/icon",
+  "bytes": 1280,
+  "sha256": "b6538fac131d9999d0477bf579a6e0e8379df60b5b0edc565f0ff22b0f36e9d4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:17+09:00"
+ },
+ {
+  "map_id": 809050007,
+  "name": "Ludibrium Maze 8",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050007/icon",
+  "bytes": 1280,
+  "sha256": "1863aa587dde8de2ad9710742868bfb08354644e1ba96ffea5139d5ccd0a0278",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:20+09:00"
+ },
+ {
+  "map_id": 809050008,
+  "name": "Ludibrium Maze 9",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050008/icon",
+  "bytes": 1280,
+  "sha256": "ff26d5e95eb2c70035d796d9a24bdeeef7c8f56064cb72d2c85a15b4f0ad0a84",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:18+09:00"
+ },
+ {
+  "map_id": 809050009,
+  "name": "Ludibrium Maze 10",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050009/icon",
+  "bytes": 1279,
+  "sha256": "674a5e1db27275838e87d97a408339bdaf8e06efb5ae0deff57a36b6a25dc7fc",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:18+09:00"
+ },
+ {
+  "map_id": 809050010,
+  "name": "Ludibrium Maze 11",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050010/icon",
+  "bytes": 1280,
+  "sha256": "2b159e1174cb00379c2b6d98e7b773204d9a6fa7dc8a2e0f62a0da4811905d5a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:19+09:00"
+ },
+ {
+  "map_id": 809050011,
+  "name": "Ludibrium Maze 12",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050011/icon",
+  "bytes": 1280,
+  "sha256": "2a68d93d119c61a7edf1e4ef7b12be3f151b8cb11af57b22e6fbc7c8eac3e510",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:20+09:00"
+ },
+ {
+  "map_id": 809050012,
+  "name": "Ludibrium Maze 13",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050012/icon",
+  "bytes": 1280,
+  "sha256": "be9280a3abac80901b448c76a14e1e5642945b45e80d8c89551929f2d7b64bcb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:20+09:00"
+ },
+ {
+  "map_id": 809050013,
+  "name": "Ludibrium Maze 14",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050013/icon",
+  "bytes": 1280,
+  "sha256": "a11419279cbde4282306b9cbad738865d30ac92ce65e3c2f3e5a8c1af7b71412",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:21+09:00"
+ },
+ {
+  "map_id": 809050014,
+  "name": "Ludibrium Maze 15",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050014/icon",
+  "bytes": 1280,
+  "sha256": "eb689bfb9653da1329cdb01a7599d1e5a117f7b8258e01197c1ec547d6e64cc3",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:21+09:00"
+ },
+ {
+  "map_id": 809050015,
+  "name": "Ludibrium Maze 16",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050015/icon",
+  "bytes": 1280,
+  "sha256": "64bce442f8613848907077dab7dbfb2d690ba6ac077aaf89b27bcaa6622e230e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:21+09:00"
+ },
+ {
+  "map_id": 809050016,
+  "name": "Exit of the Maze",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050016/icon",
+  "bytes": 1280,
+  "sha256": "d89e88a72edf9e492729ed19112ab74aef691a583630d44b9b0845b06815137d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:26+09:00"
+ },
+ {
+  "map_id": 809050017,
+  "name": "Exit of the Maze",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/809050017/icon",
+  "bytes": 1280,
+  "sha256": "315116550379fa461c4bbff45aa0b47535c29063f72d7febb006f6fa97af3e89",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:23+09:00"
+ },
+ {
+  "map_id": 910060000,
+  "name": "궁수 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910060000/minimap",
+  "bytes": 6567,
+  "sha256": "db46bee8211d20a748355836b0c5b7ef0871af65b1b3276a2df0823eb5de60ab",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:25+09:00"
+ },
+ {
+  "map_id": 910060100,
+  "name": "왕연해의 스포아 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910060100/minimap",
+  "bytes": 6617,
+  "sha256": "56a2eb8d2ab4c78c4a6f3178f604bff9dfd4d1b35bb717a2db7c89507eafa62c",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:24+09:00"
+ },
+ {
+  "map_id": 910060101,
+  "name": "왕연해의 대여된 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910060101/minimap",
+  "bytes": 6618,
+  "sha256": "a3a3ac040eb056fa9a1fa9061979366ffe17e8caea40a4579e1e073cacf09421",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:26+09:00"
+ },
+ {
+  "map_id": 910120000,
+  "name": "마법사 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910120000/minimap",
+  "bytes": 3678,
+  "sha256": "051f355a39ac155da18b9a7f376a1584c93c7947e1327c62e60f2568d565b466",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:26+09:00"
+ },
+ {
+  "map_id": 910220000,
+  "name": "전사 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910220000/minimap",
+  "bytes": 7600,
+  "sha256": "c1d969533840c883ec1653289187b07f590a6314c7153733eeafee301e7cc98a",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:26+09:00"
+ },
+ {
+  "map_id": 910310000,
+  "name": "도적 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910310000/minimap",
+  "bytes": 4522,
+  "sha256": "91033d1e7d4799db8d39b7edd48f9ac0c1e95ac18e6bf29a309c65efa2d6e560",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:28+09:00"
+ },
+ {
+  "map_id": 910540400,
+  "name": "차원의 세계",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/910540400/minimap",
+  "bytes": 5319,
+  "sha256": "4e3abc933f1b5633b5f53955a158038d30e41d4df318ac86f34f73aca84fea28",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:30+09:00"
+ },
+ {
+  "map_id": 912030000,
+  "name": "해적 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/912030000/minimap",
+  "bytes": 5446,
+  "sha256": "846d476c742d5afb9a7f8c0a52bb8276267a38db3d95ec72fe7b2bb0ebe24b9e",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:27+09:00"
+ },
+ {
+  "map_id": 912030001,
+  "name": "해적 수련장",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/912030001/icon",
+  "bytes": 1530,
+  "sha256": "21c884082d04480b6f997858c189276617c4a86873e1ba90d97f45a825369fe4",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 500
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:28+09:00"
+ },
+ {
+  "map_id": 912030002,
+  "name": "해적 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/912030002/minimap",
+  "bytes": 5446,
+  "sha256": "2dcd934d371bac569f9ff385e9eeefa69f73de52f2059af41cecab6af0d0191d",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:28+09:00"
+ },
+ {
+  "map_id": 912030003,
+  "name": "해적 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/912030003/minimap",
+  "bytes": 5446,
+  "sha256": "56c4f52497b366638a11470873c70d3a159d11e1b2a5fb9e661b00acbaaa2cd8",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:29+09:00"
+ },
+ {
+  "map_id": 912030004,
+  "name": "해적 수련장",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/912030004/minimap",
+  "bytes": 5446,
+  "sha256": "8c010ce0eae64973f275cfce60a1c501bc8e87df5b3fe3691cd6260de957a8dc",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:30+09:00"
+ },
+ {
+  "map_id": 925020000,
+  "name": "무릉도장 입구",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/925020000/minimap",
+  "bytes": 9693,
+  "sha256": "7478138d43304b8fe1c3dd1c0ce15aca834834781f03af0f6fe6b01268d67dcb",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:29+09:00"
+ },
+ {
+  "map_id": 925021303,
+  "name": "무릉도장 13층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/925021303/minimap",
+  "bytes": 3346,
+  "sha256": "6ff9a12413ef79cca924495a4e182e62b1f88f166a21a87b54ee64b50e476cb5",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:30+09:00"
+ },
+ {
+  "map_id": 925022600,
+  "name": "무릉도장 26층",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/925022600/minimap",
+  "bytes": 3341,
+  "sha256": "39ee96328a39ccd4f07c00bfebccc83a32994af10fbd453b8253697565d15bd6",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:30+09:00"
+ },
+ {
+  "map_id": 925033804,
+  "name": "Mu Lung Dojo 38th Floor",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/925033804/minimap",
+  "bytes": 3287,
+  "sha256": "3be6c5c9566690915c274343ba23c3e50eaebabe1ebeac6711d7cd2bfadb0010",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:32+09:00"
+ },
+ {
+  "map_id": 931000410,
+  "name": "수아르의 물 창고",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:32+09:00"
+ },
+ {
+  "map_id": 931000420,
+  "name": "위험! 임시공항",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/931000420/minimap",
+  "bytes": 3962,
+  "sha256": "aa22f32f640d5caa6bbd3ffa7aab4511075670ab335eb013c813ab1865e9b15b",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:31+09:00"
+ },
+ {
+  "map_id": 931010010,
+  "name": "경계 심한 저택",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/931010010/minimap",
+  "bytes": 4211,
+  "sha256": "5abcb700d60ceb7a6d0b1753983febb379fef6dc94dec0fb29f9a8003fa85811",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:32+09:00"
+ },
+ {
+  "map_id": 931010020,
+  "name": "울리카의 아지트",
+  "result": "failed",
+  "url": null,
+  "bytes": 0,
+  "sha256": null,
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 500
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:32+09:00"
+ },
+ {
+  "map_id": 931010030,
+  "name": "수상쩍은 헤어샵",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/931010030/icon",
+  "bytes": 1200,
+  "sha256": "4e1452004445cf60772f3633be872924981331071a7f3c8320f6b29bd58b9dae",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:34+09:00"
+ },
+ {
+  "map_id": 950100700,
+  "name": "Goblin Cave 3",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/950100700/minimap",
+  "bytes": 6223,
+  "sha256": "4cb9cb3a8c704722ad0b0cbf08e36c8ce8f6dc6eac99545ed1e263191c6e6227",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-16T03:26:33+09:00"
+ },
+ {
+  "map_id": 101010101,
+  "name": "The Tree That Grew II",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/101010101/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 101010103,
+  "name": "Top of the Tree That Grew",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/101010103/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 104040000,
+  "name": "Henesys Hunting Ground I",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/104040000/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105040000,
+  "name": "Swampy Land in a Deep Forest",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105040000/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105040301,
+  "name": "Sleepy Dungeon I",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105040301/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105040303,
+  "name": "Sleepy Dungeon III",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105040303/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105040305,
+  "name": "Sleepy Dungeon V",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105040305/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측) — 데이터 재확인 시점 절단 보류, 동결 제작 시점 실측은 미니맵 404 · 아이콘 404",
+  "bytes": 0,
+  "sha256": null,
+  "hold": "보류 — 데이터 재확인 2회 연속 절단 (2026-10-28). 폴백 처리하되 원천 없음으로 확정하지 않는다"
+ },
+ {
+  "map_id": 105040400,
+  "name": "Sleepywood Hotel",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105040400/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105050000,
+  "name": "Ant Tunnel I",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105050000/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105050300,
+  "name": "Ant Tunnel IV",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105050300/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105060000,
+  "name": "Dangerous Steam",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105060000/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105090200,
+  "name": "Another Entrance",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105090200/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105090301,
+  "name": "Wild Cargo's Area",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105090301/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 105090310,
+  "name": "Drake Area",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/105090310/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 120020000,
+  "name": "Coastal Forest",
+  "result": "minimap",
+  "url": "https://maplestory.io/api/GMS/95/map/120020000/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 502030004,
+  "name": "Proliferation Cube",
+  "result": "icon_fallback",
+  "url": "https://maplestory.io/api/GMS/95/map/502030004/icon",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 200
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ },
+ {
+  "map_id": 502030008,
+  "name": "Control Cube",
+  "result": "failed",
+  "url": "https://maplestory.io/api/GMS/95/map/502030008/minimap",
+  "attempts": [
+   {
+    "kind": "minimap",
+    "status": 404
+   },
+   {
+    "kind": "icon",
+    "status": 404
+   }
+  ],
+  "fetched_at_kst": "2026-10-28T07:40:00+09:00",
+  "note": "dest17 편입분 (개발 동결 제작 시 실측)",
+  "bytes": 0,
+  "sha256": null
+ }
+]
