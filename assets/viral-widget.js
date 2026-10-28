@@ -94,11 +94,16 @@
     $('vwStat4Label').textContent = '칭호';
     $('vwStat4Val').textContent = card.title && card.title.current ? card.title.current.name : '없음';
     $('vwShareText').textContent = window.shareJobTextV2(card);
+    var firstSkill = (j.skills && j.skills.length) ? (j.skills[0].ko || j.skills[0].nameEn) : '';
     currentShare = {
-      title: '🎲 내 운명의 첫 캐릭은 ' + name + '!',
-      desc: (window.finalSkillLine(j) ? window.finalSkillLine(j) + ' — ' : '') + (j.comment || ''),
+      title: '✨ 내 운명의 첫 캐릭은 ' + name + '!',
+      desc: (firstSkill ? '🤖 대표 스킬: ' + firstSkill + ' · ' : '') + '💡 ' + (j.comment || ''),
       imageUrl: j.avatar ? 'https://alpang.gg' + j.avatar : 'https://alpang.gg/assets/og.png',
-      detailUrl: 'https://alpang.gg/calculator/cube/'
+      detailUrl: 'https://alpang.gg/calculator/cube/',
+      buttons: [
+        { title: '내 직업 스킬 보기', url: 'https://alpang.gg/jobs/#job-' + j.id },
+        { title: '나도 운명 테스트하기', url: 'https://alpang.gg/calculator/cube/' }
+      ]
     };
     $('vwShareRow').style.display = '';
   }
@@ -123,10 +128,14 @@
     $('vwStat4Val').textContent = card.q90.toLocaleString() + '회';
     $('vwShareText').textContent = window.shareCubeTextV2({ target: t, tries: card.tries, grade: { label: GRADE_LABEL[card.grade] }, title: card.title && card.title.current });
     currentShare = {
-      title: '🎲 ' + t.name + ', ' + card.tries.toLocaleString() + '회 만에 성공!',
-      desc: '운 등급 ' + GRADE_LABEL[card.grade] + (card.title && card.title.current ? ' · 칭호 「' + card.title.current.name + '」' : '') + ' · 너도 운 시험해봐',
-      imageUrl: 'https://alpang.gg/assets/og.png',
-      detailUrl: 'https://alpang.gg/calculator/cube/'
+      title: '🎲 ' + t.name + ' ' + card.tries.toLocaleString() + '회 컷!',
+      desc: '🏅 획득 칭호: ' + (card.title && card.title.current ? card.title.current.name : 'The First') + ' · 🔥 내 큐브 운빨은 어느 정도일까?',
+      imageUrl: window.CUBE_SHARE_IMAGE_URL || 'https://alpang.gg/assets/og.png',
+      detailUrl: 'https://alpang.gg/calculator/cube/',
+      buttons: [
+        { title: '결과 상세보기', url: 'https://alpang.gg/calculator/cube/' },
+        { title: '내 큐브 운 시험하기', url: 'https://alpang.gg/calculator/cube/' }
+      ]
     };
     $('vwShareRow').style.display = '';
     showSlotsResult(t, true);
@@ -181,10 +190,10 @@
           imageUrl: currentShare.imageUrl,
           link: { mobileWebUrl: currentShare.detailUrl, webUrl: currentShare.detailUrl }
         },
-        buttons: [
-          { title: '자세히 보기', link: { mobileWebUrl: currentShare.detailUrl, webUrl: currentShare.detailUrl } },
-          { title: '나도 뽑기', link: { mobileWebUrl: 'https://alpang.gg/calculator/cube/', webUrl: 'https://alpang.gg/calculator/cube/' } }
-        ]
+        buttons: (currentShare.buttons || [
+          { title: '자세히 보기', url: currentShare.detailUrl },
+          { title: '나도 뽑기', url: 'https://alpang.gg/calculator/cube/' }
+        ]).map(function (b) { return { title: b.title, link: { mobileWebUrl: b.url, webUrl: b.url } }; })
       });
       showShareNote('💬 카카오 공유 창을 열었어요. 창이 보이지 않으면 브라우저 팝업 차단을 해제해 주세요.');
     } catch (e) {

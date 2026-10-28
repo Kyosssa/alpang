@@ -1251,14 +1251,22 @@ window.finalSkillLine = function (job) {
   if (!job || !job.skills || !job.skills.length) return '';
   return job.skills.map(function (s) { return s.ko || s.nameEn; }).join(' · ');
 };
-// ── v2 공유 문구 개편(방안 B): 면책 없이 핵심 결과 2줄 + 링크 ──
+// ── 공유 문구 포맷 (2026-10-28 디렉터 보완안 채택): 이모지 골격 3줄 + 링크, 큐브는 확률 고지 유지 ──
+// 큐브 공유 전용 썸네일: 에셋 도착 시 이 값만 채우면 payload가 전용 이미지를 쓴다 (비어 있으면 공통 OG)
+window.CUBE_SHARE_IMAGE_URL = 'https://alpang.gg/assets/og-cube-kakao.png';
 window.shareJobTextV2 = function (card) {
   var name = window.finalDisplayName(card.job);
-  var skills = window.finalSkillLine(card.job);
-  var line2 = (skills ? skills + ' — ' : '') + (card.job.comment || '');
-  return '🎲 내 운명의 첫 캐릭은 ' + name + '!\n' + line2 + '\n' + 'https://alpang.gg/calculator/cube/';
+  var firstSkill = (card.job.skills && card.job.skills.length) ? (card.job.skills[0].ko || card.job.skills[0].nameEn) : '';
+  var lines = ['✨ 내 운명의 첫 캐릭은 ' + name + '!'];
+  if (firstSkill) lines.push('🤖 대표 스킬: ' + firstSkill);
+  if (card.job.comment) lines.push('💡 ' + card.job.comment);
+  lines.push('https://alpang.gg/calculator/cube/');
+  return lines.join('\n');
 };
 window.shareCubeTextV2 = function (card) {
-  return '🎲 ' + card.target.name + ', ' + card.tries.toLocaleString() + '회 만에 성공! 운 등급 ' + card.grade.label + '\n'
-    + '칭호 「' + (card.title ? card.title.name : 'The First') + '」 · 너도 운 시험해봐\n' + 'https://alpang.gg/calculator/cube/';
+  return '🎲 ' + card.target.name + ' ' + card.tries.toLocaleString() + '회 컷!\n'
+    + '🏅 획득 칭호: ' + (card.title ? card.title.name : 'The First') + '\n'
+    + '🔥 내 큐브 운빨은 어느 정도일까?\n'
+    + 'https://alpang.gg/calculator/cube/\n'
+    + '※ 확률은 공식 공시 기준 계산값이며 알팡 서버 적용은 미확인입니다. 알팡서버 공식 오픈 시 서버 버전에 맞게 확률이 업데이트될 예정입니다.';
 };
