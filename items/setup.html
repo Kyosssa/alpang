@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -31,7 +31,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}.chip{display:inline-flex;align-items:center;min-height:40px}.jfbtn{min-height:40px}}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
@@ -69,8 +69,10 @@
   .jobfilter{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:2px 0 12px}
   .jobfilter .fl{font-size:13.5px;font-weight:700;color:var(--sub);margin-right:2px}
   .jfbtn{font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px;background:#f4f1ea;border:1px solid transparent;color:var(--text);cursor:pointer}
-  .jfbtn.on{background:var(--accent-btn);color:#fff;font-weight:800}
+  .jfbtn.on{background:var(--accent);color:#fff;font-weight:800}
   .jfcount{font-size:13px;color:var(--sub);margin-left:4px}
+  .gentoggle{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;margin-left:14px;cursor:pointer}
+  .gentoggle input{width:16px;height:16px;accent-color:#FF6B00}
   .emptyf{font-size:14px;color:var(--sub);padding:10px 2px 4px}
   .gnav .grow{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;padding:5px 0}
   .gnav .glb{flex:none;width:46px;font-size:13.5px;font-weight:800;color:var(--accent-dark);padding-top:5px}
@@ -98,10 +100,10 @@
   @media (min-width:700px){ .cgrid{grid-template-columns:repeat(3,1fr)} }
   @media (min-width:1000px){ .cgrid{grid-template-columns:repeat(4,1fr)} }
   @media (min-width:1240px){ .cgrid{grid-template-columns:repeat(5,1fr)} }
-  .chip.on{background:var(--accent-btn);color:#fff}
+  .chip.on{background:var(--accent);color:#fff}
   .chip.on b{color:#fff}
   [data-theme="dark"] .jfbtn{background:#22252B}
-  [data-theme="dark"] .jfbtn.on{background:var(--accent-btn);color:#fff}
+  [data-theme="dark"] .jfbtn.on{background:var(--accent);color:#fff}
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
@@ -115,21 +117,19 @@
   [data-theme="dark"] .chip{background:#22252B}
   [data-theme="dark"] .islot{background:#26292F}
   [data-theme="dark"] td{border-bottom-color:var(--line)}
-:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
-[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
-.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
-.skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-start">본문 바로가기</a>
 <div class="wrap">
-<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/" class="on">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/" class="on">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
   <div class="intro">
-    <h1 id="main-start" tabindex="-1">아이템 · <span>설치</span></h1>
+    <h1>아이템 · <span>설치</span></h1>
     <div class="tag">Setup 카테고리 341개 · 세부 분류 5종</div>
   </div>
   <div class="notice">본진 빅뱅 직후(GMS 95) 기준의 아이템 목록 후보이며, 알팡서버 실서버 구현 범위와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io</div>
@@ -141,19 +141,7 @@
 <section class="card"><h2 id="other">기타<span class="cnt">16개</span></h2><div class="igrid"><div class="icard" id="it3995000" data-lv="" data-name="." data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3995000/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">.</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800088" data-lv="" data-name="???" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800088/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">???</span><span class="en">???</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800091" data-lv="" data-name="갇혀 있는 새끼 광석이터" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800091/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">갇혀 있는 새끼 광석이터</span><span class="en">Caged Baby Ore Muncher</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800087" data-lv="" data-name="녹화된 메모리의 내용" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800087/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">녹화된 메모리의 내용</span><span class="en">Recorded Information</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800010" data-lv="" data-name="니은 숲1" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800010/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">니은 숲1</span><span class="en">L Forest I</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800014" data-lv="" data-name="도둑의아지트" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800014/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">도둑의아지트</span><span class="en">Thieves&#x27; Hideout</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800090" data-lv="" data-name="도토리가 열린 가로수" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800090/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">도토리가 열린 가로수</span><span class="en">Fruit Trees with Acorns</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800030" data-lv="" data-name="발록의 선물 보따리" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800030/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">발록의 선물 보따리</span><span class="en">Balrog Treasure Bag</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800089" data-lv="" data-name="방치된공사장" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800089/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">방치된공사장</span><span class="en">Abandoned Construction Site</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800031" data-lv="" data-name="자쿰의 선물 보따리" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800031/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">자쿰의 선물 보따리</span><span class="en">Zakum Treasure Bag</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800015" data-lv="" data-name="지하철매표소" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800015/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">지하철매표소</span><span class="en">Subway Ticketing Booth</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800011" data-lv="" data-name="커닝시티" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800011/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">커닝시티</span><span class="en">Kerning City</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800012" data-lv="" data-name="커닝시티북쪽공사장" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800012/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">커닝시티북쪽공사장</span><span class="en">Construction Site North of Kerning City</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800013" data-lv="" data-name="페리온서쪽령" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800013/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">페리온서쪽령</span><span class="en">West Domain of Perion</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800033" data-lv="" data-name="핑크빈의 선물 보따리" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800033/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">핑크빈의 선물 보따리</span><span class="en">Pink Bean Treasure Bag</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3800032" data-lv="" data-name="혼테일의 선물 보따리" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3800032/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">혼테일의 선물 보따리</span><span class="en">Horntail Treasure Bag</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div></div></section>
 <section class="card"><h2 id="key">열쇠<span class="cnt">3개</span></h2><div class="igrid"><div class="icard" id="it3992039" data-lv="" data-name="영웅의 표식" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3992039/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">영웅의 표식</span><span class="en">Marker of Heroism</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3992041" data-lv="" data-name="크림슨우드 쐐기돌" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3992041/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">크림슨우드 쐐기돌</span><span class="en">Crimsonwood Keystone</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div><div class="icard" id="it3992040" data-lv="" data-name="팬텀 포레스트 지도" data-unv="1"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/3992040/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">팬텀 포레스트 지도</span><span class="en">Map of Phantom Forest</span><div class="meta"><span>필요 레벨 -</span><span>캐시 아님</span></div></div></div></section>
   <p class="back"><a href="/items/">← 아이템 전체 목차로</a></p>
-  <footer>
-    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#0a6b667a6b646d666b646e4a6d676b636624696567" style="color:var(--sub)">문의하기</a><br>
-    데이터 기준: 본진 빅뱅 직후 (GMS 95) · 페이지 갱신일: 2026-10-14
-  <br>
-    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
-    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
-  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
-  </footer>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
-<script src="/assets/hit.js?v=2" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><script>
+<script>
 (function(){
 var sel=document.getElementById('itemSort');if(!sel)return;
 var grids=[].slice.call(document.querySelectorAll('.igrid'));
@@ -179,5 +167,18 @@ sel.addEventListener('change',function(){
 });
 })();
 </script>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 빅뱅 직후 (GMS 95) · 페이지 갱신일: 2026-10-14
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 </body>
 </html>
