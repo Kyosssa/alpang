@@ -166,6 +166,9 @@
 [data-theme="dark"] :focus-visible{outline-color:#FF9E57}
 .skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
 .skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"vi"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -173,7 +176,7 @@
 </head>
 <body>
 <a class="skip-link" href="#main-start">Đi đến nội dung chính</a>
-  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">Trang chủ</a><a href="/timeline/">Dòng thời gian</a><a href="/faq/">FAQ</a><a href="/mobs/">Tra cứu quái vật</a><a href="/maps/">Khám phá bản đồ</a><a href="/items/">Vật phẩm</a><a href="/npcs/">NPC · Nhiệm vụ</a><a href="/jobs/">Nghề nghiệp · Kỹ năng</a><a href="/calculator/cube/">Máy tính giá trị Cube</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ tối"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
+  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">Trang chủ</a><a href="/timeline/">Dòng thời gian<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">Tra cứu quái vật</a><a href="/maps/">Khám phá bản đồ</a><a href="/items/">Vật phẩm</a><a href="/npcs/">NPC · Nhiệm vụ</a><a href="/jobs/">Nghề nghiệp · Kỹ năng</a><a href="/calculator/cube/">Máy tính giá trị Cube</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ tối"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
 
   <div class="hero">
     <h1 id="main-start" tabindex="-1" class="site-h1">Alpang.gg — Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds</h1>
@@ -363,5 +366,6 @@
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/search.js?v=5" data-index="/assets/alpang-search-20261028-02.json" defer></script>
 <script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 </body>
 </html>
