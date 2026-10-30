@@ -3,8 +3,8 @@
 <head>
 <!-- alpang-build-provenance
   input-package: deliverables/alpang-guide-module-20261017.zip sha256=05831fce0d55deaa5e08a6e1ed9e00beb8043334b4459af0e5340367b1b960b3
-  builder: jobs_skills_build.py sha256=ad5b983c7d749bde420e9f433dee6b4395173ffe864c46632a17778d2b46759c
-  built-at: 2026-10-24T17:14:32+09:00
+  builder: jobs_skills_build.py sha256=880c9e0fe4f348c78dc961f20917b925a57e211d6d2395f537fcbb9f66b1aebb
+  built-at: 2026-10-30T13:48:40+09:00
 -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8;--unknown:#6b6250;--slot:#f3f0e9}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250;--slot:#f3f0e9}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -36,7 +36,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   /* 모바일: sticky GNB가 nav 줄바꿈으로 높아져(약 118px) 앵커 제목이 가려지는 문제 —
      헤더 실측 최대 높이 + 여유를 반영한 여백 (기술이사 검수 2026-10-17) */
 
@@ -75,7 +75,7 @@
   .job-card:target{outline:2px solid var(--accent);outline-offset:1px}
   .jhead{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .jhead h3{font-size:17px;font-weight:800}
-  .tier{font-size:11.5px;font-weight:800;background:var(--accent-btn);color:#fff;border-radius:4px;padding:2px 7px}
+  .tier{font-size:11.5px;font-weight:800;background:var(--accent);color:#fff;border-radius:4px;padding:2px 7px}
   .tier.base{background:#7A6A53}
   .unk-badge{font-size:10.5px;font-weight:700;color:var(--unknown);background:var(--slot);border-radius:4px;padding:2px 6px;white-space:nowrap}
   .jcount{font-size:12.5px;color:var(--sub);margin-left:auto}
@@ -91,7 +91,7 @@
   .shead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
   .sname{font-size:15px;font-weight:800}
   .smeta{font-size:12.5px;color:var(--sub)}
-  .attr-badge{font-size:11px;font-weight:800;background:#43703F;color:#fff;border-radius:4px;padding:1px 6px}
+  .attr-badge{font-size:11px;font-weight:800;background:#5B8C5A;color:#fff;border-radius:4px;padding:1px 6px}
   .attr-code{font-size:11px;font-weight:700;background:var(--slot);color:var(--sub);border-radius:4px;padding:1px 6px}
   .sdesc{font-size:13.5px;color:var(--text);line-height:1.6;margin-top:2px}
   .sshort{font-size:12.5px;color:var(--sub);line-height:1.55}
@@ -118,10 +118,9 @@
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
   @media (max-width:720px){ .job-card,.skill,.unc-card{scroll-margin-top:170px} }
-:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
-[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
-.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
-.skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
 
   .sentence-block{margin:8px 0 4px;padding:10px 12px;background:var(--accent-soft,#FFF1E8);border-radius:8px}
   .sentence-block p{margin:0 0 4px;font-size:14.5px}
@@ -137,12 +136,11 @@
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-start">본문 바로가기</a>
 <div class="wrap">
-<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/" class="on">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/" class="on">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
 
   <div class="intro">
-    <h1 id="main-start" tabindex="-1">직업·스킬 <span>도감</span></h1>
+    <h1>직업·스킬 <span>도감</span></h1>
     <div class="tag">직업 90개와 스킬 610개의 전직 계열·조건 정리</div>
     <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 직업·스킬 이름은 한글 이름과 영문 원본을 함께 표기합니다. 한글 이름에는 대조 출처 표기와 자체 번역이 섞여 있어, 실제 알팡서버의 이름·내용과 다를 수 있어요.</div>
   </div>
@@ -304,7 +302,7 @@
 </script>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#e3828f93828d848f828d87a3848e828a8fcd808c8e" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     페이지 갱신일: 2026-10-17
   <br>
     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
@@ -312,7 +310,8 @@
   <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
   </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/hit.js?v=1" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+</body>
 </html>
