@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -31,7 +31,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}.chip{display:inline-flex;align-items:center;min-height:40px}.jfbtn{min-height:40px}}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
@@ -69,8 +69,10 @@
   .jobfilter{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:2px 0 12px}
   .jobfilter .fl{font-size:13.5px;font-weight:700;color:var(--sub);margin-right:2px}
   .jfbtn{font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px;background:#f4f1ea;border:1px solid transparent;color:var(--text);cursor:pointer}
-  .jfbtn.on{background:var(--accent-btn);color:#fff;font-weight:800}
+  .jfbtn.on{background:var(--accent);color:#fff;font-weight:800}
   .jfcount{font-size:13px;color:var(--sub);margin-left:4px}
+  .gentoggle{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;margin-left:14px;cursor:pointer}
+  .gentoggle input{width:16px;height:16px;accent-color:#FF6B00}
   .emptyf{font-size:14px;color:var(--sub);padding:10px 2px 4px}
   .gnav .grow{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;padding:5px 0}
   .gnav .glb{flex:none;width:46px;font-size:13.5px;font-weight:800;color:var(--accent-dark);padding-top:5px}
@@ -98,10 +100,10 @@
   @media (min-width:700px){ .cgrid{grid-template-columns:repeat(3,1fr)} }
   @media (min-width:1000px){ .cgrid{grid-template-columns:repeat(4,1fr)} }
   @media (min-width:1240px){ .cgrid{grid-template-columns:repeat(5,1fr)} }
-  .chip.on{background:var(--accent-btn);color:#fff}
+  .chip.on{background:var(--accent);color:#fff}
   .chip.on b{color:#fff}
   [data-theme="dark"] .jfbtn{background:#22252B}
-  [data-theme="dark"] .jfbtn.on{background:var(--accent-btn);color:#fff}
+  [data-theme="dark"] .jfbtn.on{background:var(--accent);color:#fff}
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
   .theme-toggle svg{width:18px;height:18px;display:block}
   .theme-toggle .ic-sun{display:none}
@@ -115,73 +117,58 @@
   [data-theme="dark"] .chip{background:#22252B}
   [data-theme="dark"] .islot{background:#26292F}
   [data-theme="dark"] td{border-bottom-color:var(--line)}
-:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
-[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
-.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
-.skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-start">본문 바로가기</a>
 <div class="wrap">
-<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/" class="on">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/" class="on">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
   <div class="intro">
-    <h1 id="main-start" tabindex="-1">아이템 · <span>장비</span></h1>
+    <h1>아이템 · <span>장비</span></h1>
     <div class="tag">Equip · 펫 아이템 10개</div>
   </div>
   <div class="notice">본진 빅뱅 직후(GMS 95) 기준의 아이템 목록 후보이며, 알팡서버 실서버 구현 범위와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io</div>
-  <div class="sortbar"><label class="flb" for="itemSort">정렬</label><select id="itemSort" class="fsort"><option value="base">기본 정렬</option><option value="lvAsc">요구 레벨 낮은 순</option><option value="lvDesc">요구 레벨 높은 순</option><option value="name">이름순</option></select></div>
-
   <div class="notice"><b>본진 GMS 95 기준 기본 능력치</b> — 장비 행에 표시되는 능력치는 강화 전 원본 수치이며, 개별 아이템의 랜덤 옵션·강화 결과·알팡 적용 여부는 확인되지 않았습니다.</div>
+  <div class="sortbar"><label class="flb" for="itemSort">정렬</label><select id="itemSort" class="fsort"><option value="base">기본 정렬</option><option value="lvAsc">요구 레벨 낮은 순</option><option value="lvDesc">요구 레벨 높은 순</option><option value="name">이름순</option></select></div>
+  <label class="gentoggle"><input type="checkbox" id="genOnly" checked> 일반 장비만 보기</label>
   <section class="card"><h2>펫 아이템<span class="cnt">10개</span></h2><div class="jobfilter" role="group" aria-label="직업 필터"><span class="fl">직업</span><button type="button" class="jfbtn on" data-jf="all">전체</button><button type="button" class="jfbtn" data-jf="common">공용</button><button type="button" class="jfbtn" data-jf="1">전사</button><button type="button" class="jfbtn" data-jf="2">마법사</button><button type="button" class="jfbtn" data-jf="4">궁수</button><button type="button" class="jfbtn" data-jf="8">도적</button><button type="button" class="jfbtn" data-jf="16">해적</button><span class="jfcount"></span></div><div class="igrid"><div class="icard" id="it1812004" data-job="all" data-lv="0" data-name="날개 부츠"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812004/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">날개 부츠</span><span class="en">Wing Boots</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812006" data-job="all" data-lv="0" data-name="마법 저울"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812006/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">마법 저울</span><span class="en">Magic Scales</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812000" data-job="all" data-lv="0" data-name="메소 자석"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812000/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">메소 자석</span><span class="en">Meso Magnet</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812005" data-job="all" data-lv="0" data-name="쌍안경"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812005/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">쌍안경</span><span class="en">Binocular</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812007" data-job="all" data-lv="0" data-name="아이템 무시 펜던트"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812007/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">아이템 무시 펜던트</span><span class="en">Item Ignore Pendant</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812001" data-job="all" data-lv="0" data-name="아이템 주머니"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812001/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">아이템 주머니</span><span class="en">Item Pouch</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812002" data-job="all" data-lv="0" data-name="자동 HP 물약 주머니"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812002/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">자동 HP 물약 주머니</span><span class="en">Auto HP Potion Pouch</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1812003" data-job="all" data-lv="0" data-name="자동 MP 물약 주머니"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1812003/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">자동 MP 물약 주머니</span><span class="en">Auto MP Potion Pouch</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1832000" data-job="all" data-lv="0" data-name="펫 말풍선 반지"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1832000/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">펫 말풍선 반지</span><span class="en">Pet Quote Ring</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div><div class="icard" id="it1822000" data-job="all" data-lv="0" data-name="펫 이름표 반지"><span class="islot"><img class="iic" src="https://maplestory.io/api/GMS/95/item/1822000/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span><span class="nm">펫 이름표 반지</span><span class="en">Pet Label Ring</span><span class="stats">요구Lv 0</span><div class="meta"><span>필요 레벨 0</span><span class="cash">캐시</span></div></div></div><p class="emptyf" hidden>선택한 직업으로 볼 수 있는 아이템이 이 분류에는 없습니다.</p></section>
 <script>(function(){
-var btns=document.querySelectorAll('.jfbtn');if(!btns.length)return;
-var rows=document.querySelectorAll('[data-job]');
+var sel=document.getElementById('itemSort');
+var genBox=document.getElementById('genOnly');
+var btns=document.querySelectorAll('.jfbtn');
+var rows=[].slice.call(document.querySelectorAll('.icard'));
 var empty=document.querySelector('.emptyf');var cnt=document.querySelector('.jfcount');
-function apply(f){
+var jobF='all';
+var grids=[].slice.call(document.querySelectorAll('.igrid'));
+var base=grids.map(function(g){return [].slice.call(g.querySelectorAll('.icard'));});
+function lv(c){var v=c.getAttribute('data-lv');return v===''||v===null?null:parseInt(v,10);}
+function nm(c){return c.getAttribute('data-name')||'';}
+function tail(c){return lv(c)===null||c.getAttribute('data-unv')==='1';}
+function jobOk(r){
+  var raw=r.getAttribute('data-job');
+  if(jobF==='all'||raw==='all'||raw===null){return true;}
+  var j=parseInt(raw,10);
+  if(j===0||j===-1){return true;}
+  if(jobF==='common'){return false;}
+  return (j&parseInt(jobF,10))!==0;
+}
+function applyDisplay(){
   var shown=0;
   rows.forEach(function(r){
-    var raw=r.getAttribute('data-job');var ok;
-    if(f==='all'||raw==='all'){ok=true;}
-    else{var j=parseInt(raw,10);
-      if(j===0||j===-1){ok=true;}
-      else if(f==='common'){ok=false;}
-      else{ok=(j&parseInt(f,10))!==0;}}
+    var ok=jobOk(r)&&(!genBox||!genBox.checked||r.getAttribute('data-gen')==='1');
     r.style.display=ok?'':'none';if(ok){shown++;}
   });
   if(empty){empty.hidden=shown>0;}
   if(cnt){cnt.textContent=shown.toLocaleString()+'개 표시';}
-  btns.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-jf')===f);});
+  btns.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-jf')===jobF);});
 }
-btns.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-jf'));});});
-var q=new URLSearchParams(location.search).get('job');
-if(q&&document.querySelector('.jfbtn[data-jf="'+q+'"]')){apply(q);}else{apply('all');}
-})();</script>
-  <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
-  <footer>
-    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#b9d8d5c9d8d7ded5d8d7ddf9ded4d8d0d597dad6d4" style="color:var(--sub)">문의하기</a><br>
-    데이터 기준: 본진 빅뱅 직후 (GMS 95) · 페이지 갱신일: 2026-10-14
-  <br>
-    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
-    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
-  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
-  </footer>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
-<script src="/assets/hit.js?v=2" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><script>
-(function(){
-var sel=document.getElementById('itemSort');if(!sel)return;
-var grids=[].slice.call(document.querySelectorAll('.igrid'));
-var base=grids.map(function(g){return [].slice.call(g.querySelectorAll('.icard'));});
-function lv(c){var v=c.getAttribute('data-lv');return v===''||v===null?null:parseInt(v,10);}
-function tail(c){return lv(c)===null||c.getAttribute('data-unv')==='1';}
-function nm(c){return c.getAttribute('data-name')||'';}
-sel.addEventListener('change',function(){
+function applySort(){
+  if(!sel)return;
   var mode=sel.value;
   grids.forEach(function(g,gi){
     var cards;
@@ -196,8 +183,27 @@ sel.addEventListener('change',function(){
       return nm(a)<nm(b)?-1:(nm(a)>nm(b)?1:0);});}
     cards.forEach(function(c){g.appendChild(c);});
   });
-});
-})();
-</script>
+}
+if(sel){sel.addEventListener('change',function(){applySort();applyDisplay();});}
+if(genBox){genBox.addEventListener('change',applyDisplay);}
+btns.forEach(function(b){b.addEventListener('click',function(){jobF=b.getAttribute('data-jf');applyDisplay();});});
+var q=new URLSearchParams(location.search).get('job');
+if(q&&document.querySelector('.jfbtn[data-jf="'+q+'"]')){jobF=q;}
+applyDisplay();
+})();</script>
+  <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 빅뱅 직후 (GMS 95) · 페이지 갱신일: 2026-10-14
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
-  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-btn:#C45100;--accent-dark:#B65100;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
@@ -31,7 +31,7 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
-  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}.chip{display:inline-flex;align-items:center;min-height:40px}}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
   .gnb nav a.on{color:var(--accent-dark)}
   .intro{text-align:center;padding:28px 0 4px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
@@ -59,7 +59,7 @@
   .mob .stat{font-size:14px;line-height:1.5;margin-top:6px}
   .mob .stat b{color:var(--accent-dark)}
   .mob .where{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.6}
-  .cnt{display:inline-block;background:var(--accent-btn);color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
+  .cnt{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
   footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
   @media (max-width:560px){ table{font-size:13.5px} th,td{padding:7px 6px} .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))} }
   .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
@@ -75,25 +75,19 @@
   [data-theme="dark"] .chip{background:#22252B}
   [data-theme="dark"] .mob .islot{background:#26292F}
   [data-theme="dark"] td{border-bottom-color:var(--line)}
-.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
-.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 
-  [data-theme="dark"] .name-status{background:var(--card);border-color:var(--line)}
-:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
-[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
-.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
-.skip-link:focus{top:8px}
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main-start">본문 바로가기</a>
 <div class="wrap">
-  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
   <div class="intro">
-    <h1 id="main-start" tabindex="-1">에델슈타인 <span>엿보기</span></h1>
+    <h1>에델슈타인 <span>엿보기</span></h1>
     <div class="tag">블랙윙의 광산 도시, 미리 구경하기</div>
   </div>
   <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
@@ -101,6 +95,8 @@
   <section class="card">
     <h2>에델슈타인은 어떤 곳?</h2>
     <p class="body">에델슈타인은 빅뱅 이후 개편 시기에 추가된 지역으로, 블랙윙이 점거한 광산 도시를 배경으로 합니다. 이 페이지에서는 수집된 에델슈타인 권역 맵 42곳 가운데 몬스터가 출현하는 28곳과, 거기서 만날 수 있는 몬스터 27종을 미리 엿봅니다.</p>
+    <p class="body">본진 GMS 95의 에델슈타인은 블랙윙이 마을을 차지한 상황으로 묘사돼요. 무기·방어구 상인 Bonjasky는 블랙윙이 마을을 점령하고 있는 동안 강력한 무기를 팔 수 없다고 말해요. 배틀메이지 교관 Brighton은 블랙윙을 몰아내고 자유를 되찾을 날까지 싸움이 계속될 거라고 말해요.</p>
+    <p class="body">이 소개는 본진 GMS 95의 게임 텍스트를 바탕으로 자체 번역·요약한 내용이에요. 자료는 maplestory.io를 경유했으며, 알팡서버의 실제 구현은 미확인입니다.</p>
   </section>
   <section class="card">
     <h2>몬스터가 출현하는 맵<span class="cnt">28곳</span></h2>
@@ -137,10 +133,6 @@
     </table>
     <p class="legend">몬스터가 출현하지 않는 맵(마을·실내 등): 광산 입구 · 발전소 로비 · 발전소 보안대 · 비밀광장 · 수아르의 물 창고 · 숨겨진 포탈 · 에델슈타인 · 에델슈타인 의회 · 에델슈타인 임시공항 · 에델슈타인 헤어샵 · 울리카의 아지트 · 저택 · 제 1 광장 · 트레이닝 룸 입구</p>
   </section>
-  <details class="name-status" id="notice-distribution-return-link" data-component="distribution-return-link" data-scope="guide">
-    <summary>맵 귀환 연결 분포</summary>
-    <p>귀환 목적지가 되는 맵 41곳을 기준으로, 각 목적지로 돌아오는 출발 맵 수를 세면 1곳에서만 돌아오는 목적지가 13곳, 2~5곳에서 돌아오는 목적지가 16곳, 6~10곳이 5곳, 11곳 이상이 7곳입니다. 귀환 연결이 기록된 맵 402곳의 귀환 연결을 목적지 쪽에서 다시 센 집계입니다.</p>
-  </details>
   <section class="card">
     <h2>에델슈타인 몬스터<span class="cnt">27종</span></h2>
     <div class="grid">
@@ -174,50 +166,9 @@
     </div>
     <p class="legend">레벨·HP와 출현 맵은 본진 기준 수집 데이터입니다.<br>아이콘·이미지: maplestory.io</p>
   </section>
-  <aside class="name-status" id="notice-distribution-attack-defense" data-component="distribution-attack-defense" data-scope="guide">
-    <h2 class="sr-only">몬스터 공격·방어 분포</h2>
-    <p>몬스터 175종의 원본 수치를 필드별로 구간 나눈 결과입니다. 물리 공격력은 100~499 구간이 85종으로 가장 많고 1,000 이상도 41종 있습니다. 마법 공격력은 값이 0인 종이 7종 있고 100~499 구간이 79종입니다. 물리 방어력은 1~99 구간 62종 · 100~499 구간 67종으로 나뉘고, 마법 방어력은 100~499 구간이 79종으로 가장 많습니다. 이 수치는 원본 기록을 구간으로 나눈 것으로, 몬스터의 강함을 매긴 순위가 아닙니다.</p>
-  </aside>
-  <details class="name-status" id="notice-distribution-predecessor" data-component="distribution-predecessor" data-scope="guide">
-    <summary>스킬 선행 관계 분포</summary>
-    <p>선행 스킬이 있는 스킬 161개를 기준으로 보면, 선행 스킬이 1개인 스킬이 160개로 대부분이고 3개 이상인 스킬은 1개뿐입니다. 선행 스킬이 없는 스킬은 이 집계에 포함하지 않았습니다.</p>
-  </details>
-  <details class="name-status" id="notice-distribution-attr-badge" data-component="distribution-attr-badge" data-scope="guide">
-    <summary>스킬 속성 배지 분포</summary>
-    <p>속성 코드가 기록된 스킬 48종을 코드별로 보면 f 코드 22종, h 코드 9종, i 코드 8종, l 코드 7종, s 코드 2종입니다. 코드는 원본 데이터의 표기를 그대로 옮긴 것으로, 속성 이름으로 바꿔 표기하지 않습니다.</p>
-  </details>
-  <details class="name-status" id="notice-distribution-dialogue-length" data-component="distribution-dialogue-length" data-scope="guide">
-    <summary>NPC 대사 길이 분포</summary>
-    <p>대사가 확인된 NPC 1,234명을 기준으로, 한 NPC가 가진 서로 다른 대사 문장 수를 세면 문장 1개가 303명, 2~3개가 598명, 4~6개가 321명, 7~10개가 5명, 11개 이상이 7명입니다. 같은 문장이 반복되는 경우는 한 번으로 셌습니다.</p>
-  </details>
-  <aside class="name-status" id="notice-skill-predecessor-count" data-component="skill-predecessor-count" data-scope="guide">
-    <p style="margin:0 0 6px"><strong>선행 스킬 개수 분포</strong></p>
-    <p style="margin:0 0 6px">선행 스킬이 있는 스킬 161개를 기준으로, 배우기 전에 먼저 배워야 하는 스킬이 몇 개인지 셉니다. 선행 기록이 비어 있는 4건은 세지 않았어요.</p>
-    <p style="margin:0 0 6px">선행 스킬이 1개인 스킬이 160개로 대부분이에요. 선행 스킬이 3개 이상인 스킬은 1개뿐이고, 2개인 스킬은 없어요. 배우기 전에 거쳐야 하는 단계가 길게 이어지는 구조보다는, 앞 스킬 하나를 배우면 열리는 구조가 대부분인 셈이에요.</p>
-    <p style="margin:0">선행 1개 160개 · 2개 0개 · 3개 이상 1개 (기준 161개)</p>
-  </aside>
-  <aside class="name-status" id="notice-skill-attr-badge" data-component="skill-attr-badge" data-scope="guide">
-    <p style="margin:0 0 6px"><strong>스킬 속성 배지 분포</strong></p>
-    <p style="margin:0 0 6px">속성 배지가 붙은 스킬 48종만 기준으로, 배지에 적힌 코드별로 셉니다. 코드는 원본 표기 그대로예요. 코드가 어떤 속성을 뜻하는지는 확정된 자료가 없어, 이 안내에서는 코드에 속성 이름을 붙이지 않아요.</p>
-    <p style="margin:0 0 6px">코드가 f인 스킬이 22종으로 가장 많고, h 9종 · i 8종 · l 7종 · s 2종이에요. 배지가 붙은 스킬 자체가 전체 스킬의 일부라, 배지가 없다는 것은 속성이 없다는 뜻이 아니에요 — 원본 기록에 배지가 없는 경우일 뿐이에요.</p>
-    <p style="margin:0">코드 f 22종 · h 9종 · i 8종 · l 7종 · s 2종 (기준 48종)</p>
-  </aside>
-  <aside class="name-status" id="notice-mob-attack-defense" data-component="mob-attack-defense" data-scope="guide">
-    <p style="margin:0 0 6px"><strong>몬스터 공격·방어 수치 분포</strong></p>
-    <p style="margin:0 0 6px">몬스터 175종 가운데 해당 수치가 기록된 종만 기준으로, 물리·마법 공격과 물리·마법 방어 수치를 자릿수 구간별로 셉니다. 필드마다 기록된 종 수가 달라 기준 종 수도 필드마다 달라요. 수치는 원본 기록 그대로이며, 강하고 약함을 매긴 평가가 아니에요.</p>
-    <p style="margin:0 0 6px">물리 공격은 100~499 구간이 85종으로 가장 두텁고, 1,000 이상인 종도 41종이에요. 마법 공격도 비슷한 모양으로 100~499 구간이 79종입니다. 방어는 두 필드 모두 100~499 구간이 중심이고, 물리 방어 1,000 이상은 1종뿐, 마법 방어는 1,000 이상인 종이 없어요. 수치가 0으로 기록된 종도 있어, 없는 값과 0인 값은 구분해서 봐야 해요.</p>
-    <p style="margin:0">물리 공격 175종 — 0: 0 · 1~99: 38 · 100~499: 85 · 500~999: 11 · 1,000 이상: 41 / 마법 공격 175종 — 0: 7 · 1~99: 36 · 100~499: 79 · 500~999: 11 · 1,000 이상: 42 / 물리 방어 169종 — 0: 2 · 1~99: 62 · 100~499: 67 · 500~999: 37 · 1,000 이상: 1 / 마법 방어 170종 — 0: 1 · 1~99: 64 · 100~499: 79 · 500~999: 26 · 1,000 이상: 0</p>
-  </aside>
-  <aside class="name-status" id="notice-map-return-link" data-component="map-return-link" data-scope="guide">
-    <p style="margin:0 0 6px"><strong>맵 귀환 연결 분포</strong></p>
-    <p style="margin:0 0 6px">귀환 연결이 기록된 맵 402곳의 연결 402건을 기준으로, 귀환 목적지가 되는 맵 41곳을 '몇 개 맵이 여기로 돌아오는지'로 셉니다.</p>
-    <p style="margin:0 0 6px">돌아오는 맵이 1곳뿐인 목적지가 13곳, 2~5곳인 목적지가 16곳으로 가장 많아요. 11곳 이상에서 돌아오는 목적지도 7곳 있어, 귀환이 소수 목적지에 몰리는 모양이에요. 목적지가 아닌 맵은 이 셈에 들어가지 않아요.</p>
-    <p style="margin:0">피귀환 1곳 13곳 · 2~5곳 16곳 · 6~10곳 5곳 · 11곳 이상 7곳 (기준 목적지 41곳 · 연결 402건)</p>
-  </aside>
-
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#7f1e130f1e1118131e111b3f18121e1613511c1012" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-10-14
   <br>
     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
@@ -225,7 +176,8 @@
   <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
   </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/hit.js?v=2" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+</body>
 </html>
