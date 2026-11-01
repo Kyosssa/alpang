@@ -406,13 +406,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alpang.gg/quests/lv-31-50.html</loc>
+    <loc>https://alpang.gg/quests/lv-31-40.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alpang.gg/quests/lv-51-70.html</loc>
+    <loc>https://alpang.gg/quests/lv-41-50.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alpang.gg/quests/lv-51-60.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alpang.gg/quests/lv-61-70.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
