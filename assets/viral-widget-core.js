@@ -13,16 +13,16 @@
   var HAT_RULE_NOTE = '어느 스탯이든 성공, 캐릭터 주스탯 사전 지정 없음';
 
   var TARGETS = [
-    { id: 'C1', name: '유니크 무기 공격력/마력% 2줄 이상',
+    { id: 'C1', name: '유니크 무기 공격력/마력% 2줄 이상', grade: 'unique',
       desc: '미라클 큐브 · 무기 · 120레벨 · 유니크. 공격력% 또는 마력% 줄이 2줄 이상이면 성공 (혼합 허용).',
       p: 0.03219956488479381, slotNeed: 2, slotLabel: '공%·마%' },
-    { id: 'C2', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (유니크)',
+    { id: 'C2', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (유니크)', grade: 'unique',
       desc: '미라클 큐브 · 모자 · 120레벨 · 유니크. ' + HAT_RULE_TEXT + ' ' + HAT_RULE_NOTE + '.',
       hatRule: true, p: 0.20864370554158448, slotNeed: 2, slotLabel: '스탯%·올스탯%' },
-    { id: 'C3', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (에픽)',
+    { id: 'C3', name: '모자 동일 스탯% 2줄 이상 · 올스탯 포함 (에픽)', grade: 'epic',
       desc: '미라클 큐브 · 모자 · 120레벨 · 에픽. ' + HAT_RULE_TEXT + ' ' + HAT_RULE_NOTE + '.',
       hatRule: true, p: 0.14053404714844753, slotNeed: 2, slotLabel: '스탯%·올스탯%' },
-    { id: 'C4', name: '유니크 무기 공격력/마력% 3줄',
+    { id: 'C4', name: '유니크 무기 공격력/마력% 3줄', grade: 'unique',
       desc: '미라클 큐브 · 무기 · 120레벨 · 유니크. 공격력% 또는 마력% 줄이 3줄 전부이면 성공 (혼합 허용).',
       p: 0.0012432262291516489, slotNeed: 3, slotLabel: '공%·마%' }
   ];

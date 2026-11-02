@@ -22,6 +22,24 @@
   };
   var CUBE_NOTICE = '조건: 미라클 큐브 · 120레벨 고정 · 확률은 공식 공시 기준이며 알팡 서버 적용은 미확인입니다. 실제 게임이 아닌 운 시뮬레이션 결과입니다. 알팡서버 공식 오픈 시 서버 버전에 맞게 확률이 업데이트될 예정입니다.';
   var JOB_NOTICE = 'GMS 95 직업·전직 단계 자료를 기반으로 한 재미 추첨이며, 알팡 서버의 실제 구현 여부는 미확인입니다.';
+  // ── 등급 프레임 골격 (2026-11-02): 오버레이 레이어 + 등급색 테두리 폴백. 에셋 연결은 동결 단계에서.
+  var FRAME_BASE = '/assets/widget-frames/frame-';
+  function setCardGrade(grade) {
+    var card = $('vwCard'); if (!card) return;
+    var frame = $('vwCardFrame');
+    if (!grade) {
+      card.removeAttribute('data-grade');
+      if (frame) { frame.removeAttribute('src'); frame.style.display = 'none'; }
+      return;
+    }
+    card.setAttribute('data-grade', grade);
+    if (frame) {
+      frame.style.display = 'none';
+      frame.onload = function () { frame.style.display = ''; };
+      frame.onerror = function () { frame.style.display = 'none'; };
+      frame.src = FRAME_BASE + grade + '.png';
+    }
+  }
 
   // 복원된 첫 결과 카드 (모드별로 분리해 유지 — 현재 도전과 섞지 않는다)
   var restoredCards = { job: null, cube: null };
@@ -47,6 +65,7 @@
 
   function resetCardUI() {
     hideShareNote();
+    setCardGrade(null);
     $('vwCardKind').textContent = '결과 명함 카드';
     $('vwCardBadge').textContent = '';
     $('vwCardTitle').textContent = '아직 결과가 없습니다. 왼쪽에서 직접 돌려 보세요!';
@@ -72,6 +91,7 @@
 
   function renderJobCard(card) {
     hideShareNote();
+    setCardGrade(null);
     var j = card.job;
     var name = window.finalDisplayName(j);
     $('vwCardKind').textContent = '운명 첫 캐릭 뽑기 결과';
@@ -111,6 +131,7 @@
   function renderCubeCard(card) {
     hideShareNote();
     var t = card.target;
+    setCardGrade(t.grade);
     $('vwCardKind').textContent = '목표 큐브 운 시뮬레이션 결과';
     $('vwCardBadge').textContent = card.isFirst ? '🟠 이 브라우저의 오늘 첫 결과 · ' + card.date : '연습 모드';
     $('vwCardTitle').textContent = '[' + t.name + '] ' + card.tries.toLocaleString() + '회 만에 성공했습니다!';
