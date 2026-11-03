@@ -87,6 +87,13 @@
 header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
 header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
 header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .gtable th{background:#F3EDE2;border-bottom:2px solid var(--line)}
+  .gtable tbody tr:nth-child(even){background:#FAF6EE}
+  .gtable tbody tr:hover{background:#F1E8D8}
+  [data-theme="dark"] .gtable th{background:#2A251C}
+  [data-theme="dark"] .gtable tbody tr:nth-child(even){background:#211D16}
+  [data-theme="dark"] .gtable tbody tr:hover{background:#2E2820}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -106,7 +113,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <p class="body">빅토리아 아일랜드 본토(헤네시스·엘리니아·페리온·커닝시티·리스항구·슬리피우드 일대) 맵 가운데 몬스터가 출현하는 맵을 모았습니다. 어느 곳이 가장 좋은지는 캐릭터와 장비에 따라 달라지므로 순위를 매기지 않고, 출현 몬스터와 배치 규모를 나란히 비교할 수 있게 정리했습니다. 출현 몬스터의 최저 레벨이 낮은 맵부터 정렬했습니다.</p>
     <p class="body">본진 GMS 95의 헤네시스 퀘스트에는 Mrs. Ming Ming이 마을 축제를 준비하는 모습이 담겨 있어요. Mrs. Ming Ming은 일손이 부족해 마을 밖 사람들의 도움이 필요하다고 말해요. 마을의 촌장은 Stan이에요. 에반 관련 퀘스트에서 Stan은 여러 마을 몬스터가 이상하게 행동한다는 소문을 들었다고 말하고, Bruce는 헤네시스 근처 주황버섯에게도 비슷한 일이 있었다고 전해요.</p>
     <p class="body">이 소개는 본진 GMS 95의 게임 텍스트를 바탕으로 자체 번역·요약한 내용이에요. 자료는 maplestory.io를 경유했으며, 알팡서버의 실제 구현은 미확인입니다.</p>
-    <table>
+    <table class="gtable">
       <tr><th>맵</th><th>출현 몬스터</th><th class="num">종류</th><th class="num">레벨 범위</th><th class="num">배치 총량</th></tr>
 <tr><td><span class="mname">리스항구 외곽</span><span class="men">Right Around Lith Harbor</span></td><td><span class="chip">달팽이 <b>Lv.1</b></span><span class="chip">파란 달팽이 <b>Lv.2</b></span></td><td class="num">2</td><td class="num">Lv.1~2</td><td class="num">14</td></tr>
 <tr><td><span class="mname">드레이크의밥상</span><span class="men">Drake's Meal Table</span></td><td><span class="chip">밥 <b>Lv.2</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">3</td><td class="num">Lv.2~60</td><td class="num">37</td></tr>
