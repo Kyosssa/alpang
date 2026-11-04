@@ -128,6 +128,14 @@
 
 /* 타이틀 패턴 (2026-11-04) */
 .intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
+
+/* 패턴 다크 톤다운 (2026-11-04) */
+[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"))}
+@media (max-width:640px){[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-maps-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps-mobile.png") type("image/png"))}}
+
+/* 맵 타이틀 마스크 (2026-11-04) */
+.intro{background-image:radial-gradient(ellipse at center,rgba(250,246,240,.85) 35%,rgba(250,246,240,0) 80%),image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"))}
+@media (max-width:640px){.intro{background-image:radial-gradient(ellipse at center,rgba(250,246,240,.85) 35%,rgba(250,246,240,0) 80%),image-set(url("/assets/title-bg/title-bg-maps-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps-mobile.png") type("image/png"))}}
 </style>
 <body>
 <a class="skip-link" href="#main-start">본문 바로가기</a>
@@ -3176,5 +3184,5 @@ clampAll();
 })();</script>
 <script src="/assets/hit.js?v=2" defer></script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>
