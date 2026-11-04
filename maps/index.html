@@ -1,3 +1,4 @@
+@media (max-width:640px){.intro{background-image:image-set(url("/assets/title-bg/title-bg-maps-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps-mobile.png") type("image/png"))}}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -124,6 +125,9 @@
   .map .mbody{flex:1;min-width:0}
   .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
   @media (max-width:640px){ .map{flex-direction:column} .map .mframe{width:auto;height:150px;border-right:none;border-bottom:1px solid var(--line)} }
+
+/* 타이틀 패턴 (2026-11-04) */
+.intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
 </style>
 <body>
 <a class="skip-link" href="#main-start">본문 바로가기</a>
@@ -3172,5 +3176,5 @@ clampAll();
 })();</script>
 <script src="/assets/hit.js?v=2" defer></script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
-</body>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>
