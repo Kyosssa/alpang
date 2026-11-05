@@ -24,7 +24,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <style>
   :root{
     --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
@@ -167,6 +167,8 @@
 header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
 header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
 header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+.dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
 </style>
 </head>
 <body>
@@ -192,7 +194,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 
   <div class="searchbar">
     <div class="sb-in">
-      <span class="sb-ic">🔍</span>
+      <span class="sb-ic"><img class="dic" src="/assets/icons/icon-search.png" alt=""></span>
       <div class="sb-wrap">
         <input type="text" id="alpangSearch" placeholder="몬스터·맵·아이템·NPC·퀘스트 통합 검색" aria-label="통합 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
         <div class="sb-results" id="sbResults" role="listbox"></div>
@@ -215,7 +217,6 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <a class="bcard t-hunting" href="/guide/hunting/" aria-label="초반 사냥터 후보"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>초반 사냥터 후보</h3><p>빅토리아 초반 맵 39곳의 출현 몬스터 비교</p></span></a>
     <a class="bcard t-orbis" href="/guide/orbis-leafre/" aria-label="오르비스와 리프레 구경"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>오르비스 &amp; 리프레 구경</h3><p>하늘과 엘프의 땅, 출현 몬스터 60종 미리보기</p></span></a>
     <a class="bcard t-edel" href="/guide/edelstein/" aria-label="에델슈타인 엿보기"><img class="bcard-img" src="/assets/card-edelstein.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>에델슈타인 엿보기</h3><p>블랙윙의 광산 도시와 출현 몬스터 27종</p></span></a>
-    <a class="bcard t-ludi" href="/guide/ludibrium/" aria-label="루디브리엄 마을 가이드"><img class="bcard-img" src="/assets/card-ludibrium.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>루디브리엄 마을 가이드</h3><p>장난감 도시의 출현 몬스터 41종 미리보기</p></span></a>
 
   </nav>
 
@@ -283,7 +284,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   </section>
 
   <section>
-    <h2>지금 <span class="em">준비된 데이터</span> 🍁</h2>
+    <h2>지금 <span class="em">준비된 데이터</span> <img class="dic" src="/assets/icons/icon-mapleleaf.png" alt=""></h2>
     <p>본진 메이플스토리 빅뱅 직후(GMS 95) 기준으로 맵 419곳·몬스터 175종·아이템 14,577개를 수집해 정리했습니다. 몬스터 도감·맵 탐색·아이템 목록에서 바로 둘러보실 수 있어요.</p>
     <p class="note">※ 이 데이터는 알팡 실서버 적용 여부가 확인되지 않은 참고 자료입니다. 서버 오픈 후 실측으로 확인해 검증 표시를 붙일 예정입니다.</p>
   </section>
@@ -300,7 +301,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   <section>
     <h2>소식은 여기서 가장 먼저</h2>
     <p>알팡서버를 포함한 메이플스토리 월드 소식을 매일 정리하는 텔레그램 채널에서 새 소식을 전합니다.</p>
-    <a class="cta" href="https://t.me/alpang_gg" target="_blank" rel="noopener">📣 알팡지지 텔레그램 채널 구독하기</a>
+    <a class="cta" href="https://t.me/alpang_gg" target="_blank" rel="noopener"><img class="dic" src="/assets/icons/icon-megaphone.png" alt=""> 알팡지지 텔레그램 채널 구독하기</a>
   </section>
   </main>
 
@@ -367,5 +368,5 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-10.json" defer></script>
 <script src="/assets/hit.js?v=2" defer></script>
-<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --></body>
 </html>
