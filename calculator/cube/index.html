@@ -72,6 +72,13 @@ body aside.name-status,body .vw-badge,body .vw-card-badge{background:var(--slate
 /* A3 큐브 보완 — 조작 영역 구분 (2026-11-03) */
 select.vw-select,select#cubeSel,select#partSel,select#gradeSel2,input#levelInput{background:var(--card);border:1.5px solid #b7ae9d;border-radius:8px;padding:8px 10px}
 select.vw-select:focus,select#cubeSel:focus,select#partSel:focus,select#gradeSel2:focus,input#levelInput:focus{outline:none;box-shadow:0 0 0 3px rgba(255,107,0,.22);border-color:var(--accent)}
+/* 사용성 개선 (2026-11-05) — 모바일 한정 */
+.calc-jump{display:none}
+@media (max-width:640px){
+.calc-jump{display:block;margin:0 0 14px;padding:12px;border:1.5px solid #b7ae9d;border-radius:10px;background:var(--card);color:var(--text);font-weight:700;text-align:center;text-decoration:none}
+select.vw-select,select#cubeSel,select#partSel,select#gradeSel2,input#levelInput{min-height:44px}
+select,input[type=number]{font-size:16px}
+}
 .result .vw-badge{font-weight:600}
 
 /* 타이틀 패턴 (2026-11-04) */
@@ -175,7 +182,8 @@ select.vw-select:focus,select#cubeSel:focus,select#partSel:focus,select#gradeSel
   </div>
 </section>
 
-  <section class="card">
+  <a class="calc-jump" href="#cubeCalc">🧮 큐브값 계산기 바로가기</a>
+  <section class="card" id="cubeCalc">
     <h2>1. 등급업 확률</h2>
     <table><tr><th>큐브 종류</th><th>레어 → 에픽</th><th>에픽 → 유니크</th></tr>
 <tr><th>미라클 큐브</th><td>6.0%</td><td>1.8%</td></tr>
