@@ -130,6 +130,9 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 
   .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
   .new-dot.on{display:inline-block}
+
+  .twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .twrap>table{margin:0}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -142,7 +145,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <h1>아이템 · <span>장비</span></h1>
     <div class="tag">Equip · 단검 105개</div>
   </div>
-  <div class="notice">본진 빅뱅 직후(GMS 95) 기준의 아이템 목록 후보이며, 알팡서버 실서버 구현 범위와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io</div>
+  <div class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다. 알팡서버 공식 오픈 시 해당 버전에 맞춰 상세 정보를 업데이트할 예정입니다.<br>아이콘·이미지: maplestory.io</div>
   <div class="notice"><b>본진 GMS 95 기준 기본 능력치</b> — 장비 행에 표시되는 능력치는 강화 전 원본 수치이며, 개별 아이템의 랜덤 옵션·강화 결과·알팡 적용 여부는 확인되지 않았습니다.</div>
   <div class="sortbar"><label class="flb" for="itemSort">정렬</label><select id="itemSort" class="fsort"><option value="base">기본 정렬</option><option value="lvAsc">요구 레벨 낮은 순</option><option value="lvDesc">요구 레벨 높은 순</option><option value="name">이름순</option></select></div>
   <label class="gentoggle"><input type="checkbox" id="genOnly" checked> 일반 장비만 보기</label>
@@ -204,17 +207,17 @@ applyDisplay();
   <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#9afbf6eafbf4fdf6fbf4fedafdf7fbf3f6b4f9f5f7" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-14
   <br>
-  <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
-  메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
-  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+    <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
   </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/hit.js?v=2" defer></script>
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 <button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+</body>
 </html>
