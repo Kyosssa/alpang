@@ -36,11 +36,14 @@
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  .gnb nav a.on{color:var(--accent-dark)}
   @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
   /* 모바일: sticky GNB가 nav 줄바꿈으로 높아져(약 118px) 앵커 제목이 가려지는 문제 —
      헤더 실측 최대 높이 + 여유를 반영한 여백 (기술이사 검수 2026-10-17) */
 
-  .intro{text-align:center;padding:28px 0 4px}
+  .intro{text-align:center;padding:28px 0 16px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
   .disclaimer{font-size:13.5px;color:var(--sub);text-align:center;margin-top:8px;line-height:1.65}
@@ -128,7 +131,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 
   .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
   .topbtn.on{opacity:1;pointer-events:auto}
-  .jhead{position:sticky;top:68px;z-index:30;background:var(--card);padding:6px 0}
+  .jhead{position:sticky;top:73px;z-index:30;background:var(--card);padding:6px 0}
 
   /* 타이틀 패턴 (2026-11-04) */
 .intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
