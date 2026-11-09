@@ -36,5 +36,27 @@
    "title": "안녕하세요, 여러분! 알팡섭 관련 문의가 너무 많이 와서 글 남깁니다"
   }
  ],
- "popular_top5": []
+ "popular_top5": [],
+ "recommended_keywords": [
+  {
+   "keyword": "슬라임",
+   "url": "/mobs/#mob-210100"
+  },
+  {
+   "keyword": "주황버섯",
+   "url": "/mobs/#mob-1210102"
+  },
+  {
+   "keyword": "에델슈타인",
+   "url": "/maps/#map-310000000"
+  },
+  {
+   "keyword": "뇌전 수리검",
+   "url": "/items/use.html#it2070005"
+  },
+  {
+   "keyword": "리스항구",
+   "url": "/maps/#map-104000000"
+  }
+ ]
 }
