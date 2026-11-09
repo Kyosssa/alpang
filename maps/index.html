@@ -33,14 +33,15 @@
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
   .gnb nav a.on{color:var(--accent-dark)}
   @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} .gnb nav a{display:inline-flex;align-items:center;min-height:44px}}
-  .intro{text-align:center;padding:28px 0 4px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
+  .intro{text-align:center;padding:28px 0 16px}
   .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
   .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
   .intro .stats{font-size:13.5px;color:var(--sub);margin-top:8px}
   .notice{font-size:14px;color:var(--sub);background:var(--accent-soft);border-radius:10px;padding:12px 16px;margin-top:16px;text-align:center}
   .notice .small{font-size:12.5px}
   .filterbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--bg);padding:10px 0;margin-top:14px}
-   .filterbar{position:sticky;top:68px;z-index:40}
+   .filterbar{position:sticky;top:73px;z-index:40}
   .flb{font-size:14px;font-weight:800;color:var(--accent-dark)}
   .finput{flex:1;min-width:160px;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
   .fcount{font-size:13px;color:var(--sub)}
