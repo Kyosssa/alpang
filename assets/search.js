@@ -119,7 +119,7 @@
     }
   });
   document.addEventListener('click', function (e) {
-    if (!box.contains(e.target) && e.target !== input) close();
+    if (!box.contains(e.target) && e.target !== input && !(goBtn && goBtn.contains(e.target))) close();
   });
   document.addEventListener('error', function (e) {
     var t = e.target;
