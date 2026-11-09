@@ -88,6 +88,8 @@ select,input[type=number]{font-size:16px}
 /* 패턴 다크 톤다운 (2026-11-04) */
 [data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"))}
 @media (max-width:640px){[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-common-mobile.png") type("image/png"))}}
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.twrap>table{margin:0}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -182,17 +184,18 @@ select,input[type=number]{font-size:16px}
   </div>
 </section>
 
+
   <a class="calc-jump" href="#cubeCalc">🧮 큐브값 계산기 바로가기</a>
   <section class="card" id="cubeCalc">
     <h2>1. 등급업 확률</h2>
-    <table><tr><th>큐브 종류</th><th>레어 → 에픽</th><th>에픽 → 유니크</th></tr>
+    <div class="twrap"><table><tr><th>큐브 종류</th><th>레어 → 에픽</th><th>에픽 → 유니크</th></tr>
 <tr><th>미라클 큐브</th><td>6.0%</td><td>1.8%</td></tr>
 <tr><th>수상한 큐브</th><td>6.0%</td><td>1.8%</td></tr>
 <tr><th>장인의 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
 <tr><th>명장의 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
 <tr><th>레드 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
 <tr><th>블랙 큐브</th><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td><td class="pending"><span class="prep">공시 근거 미확보 · 계산 미지원</span></td></tr>
-</table>
+</table></div>
     <p class="note">등급 상한은 유니크까지입니다. 공시 등급 상승표는 미라클·수상한 공통 표이며, 공시 값이 들어 있는 큐브는 미라클·수상한 2종이며, 장인·명장·레드·블랙은 공시 근거 미확보 · 계산 미지원입니다.</p>
   </section>
   <section class="card">
