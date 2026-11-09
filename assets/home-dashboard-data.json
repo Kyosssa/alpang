@@ -39,8 +39,12 @@
  "popular_top5": [],
  "recommended_keywords": [
   {
-   "keyword": "슬라임",
-   "url": "/mobs/#mob-210100"
+   "keyword": "타임라인",
+   "url": "/timeline/"
+  },
+  {
+   "keyword": "FAQ",
+   "url": "/faq/"
   },
   {
    "keyword": "주황버섯",
@@ -53,10 +57,6 @@
   {
    "keyword": "뇌전 수리검",
    "url": "/items/use.html#it2070005"
-  },
-  {
-   "keyword": "리스항구",
-   "url": "/maps/#map-104000000"
   }
  ]
 }
