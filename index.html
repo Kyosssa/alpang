@@ -169,11 +169,38 @@ header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform
 header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
 
 .dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
+
+/* 홈 대시보드 1단계 (시안) */
+.statusbar{display:flex;gap:8px;flex-wrap:wrap;max-width:1180px;margin:10px auto 0;padding:0 16px}
+.statusbar .slot{flex:1 1 200px;border:1px solid var(--line,#e3e6ea);border-radius:10px;padding:7px 12px;font-size:12.5px;color:var(--sub);background:var(--card,#fff)}
+.statusbar .slot b{color:var(--ink,#222);margin-right:6px}
+.hero .banner{max-height:300px}
+.hero .banner .slide img{height:300px;object-fit:cover}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1180px;margin:14px auto 0;padding:0 16px}
+.dash .dcard{border:1px solid var(--line,#e3e6ea);border-radius:14px;padding:14px 16px;background:var(--card,#fff)}
+.dash .dcard h3{font-size:15px;margin:0 0 10px}
+.dash .dcard ul{list-style:none;margin:0;padding:0}
+.dash .dcard li{font-size:13px;padding:5px 0;border-top:1px dashed var(--line,#e3e6ea)}
+.dash .dcard li:first-child{border-top:0}
+.dash .dcard .d{color:var(--sub);font-size:11.5px;margin-right:6px}
+.dash .empty{color:var(--sub);font-size:12.5px}
+.dash .q a{display:block;padding:6px 0;font-size:13.5px}
+@media (max-width:860px){.dash{grid-template-columns:1fr}}
+@media (min-width:500px) and (max-width:768px){
+  .hero{margin-top:6px}.hero .banner,.hero .banner .slide img{max-height:210px;height:210px}
+  .hero-note{margin-top:8px}.searchbar{margin-top:8px;position:sticky;top:0;z-index:30}
+  .statusbar{margin-top:6px}.dash{gap:8px;margin-top:10px}
+}
 </style>
 </head>
 <body>
   <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
 
+  <div class="statusbar" id="statusBar">
+    <div class="slot" data-slot="event"><b>이벤트/공지</b><span>알팡서버 오픈 일정 — 공식 공지 대기 중</span></div>
+    <div class="slot" data-slot="timer"><b>타이머</b><span>초기화 시각 — 공식 확정 후 표기</span></div>
+    <div class="slot" data-slot="server"><b>서버 상태</b><span>오픈 전 — 서버 미가동</span></div>
+  </div>
   <div class="hero">
     <div class="banner" id="banner">
       <div class="slides" id="slides">
@@ -204,6 +231,33 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <p class="sb-note">한글·영문 이름으로 몬스터 175종, 맵 419곳, 아이템 14,577개를 한 번에 검색할 수 있어요. 한글 이름은 표시명 후보입니다.</p>
   </div>
 
+  <section class="dash" id="dashBoard">
+    <div class="dcard">
+      <h3>속보 — 타임라인 최신</h3>
+      <ul id="dashNews">
+      <li><span class="d">2026-10-29</span><a href="/timeline/">팡이요, "오늘은 알팡서버 미팅데이" — 중요한 미팅으로 휴방 공지</a></li>
+      <li><span class="d">2026-10-29</span><a href="/timeline/">팡이요, 찬해 방송 채팅에서 알팡서버 방향 언급 — "레전드리까지 있다, 스우·데미안도 나중에"</a></li>
+      <li><span class="d">2026-10-19</span><a href="/timeline/">안녕하세요, 여러분! 알팡섭 관련 문의가 너무 많이 와서 글 남깁니다</a></li>
+      </ul>
+    </div>
+    <div class="dcard">
+      <h3>오늘의 인기 검색 Top 5</h3>
+      <ul id="dashPopular">
+      <li class="empty">1. — (데이터 연결 전)</li>
+      <li class="empty">2. — (데이터 연결 전)</li>
+      <li class="empty">3. — (데이터 연결 전)</li>
+      <li class="empty">4. — (데이터 연결 전)</li>
+      <li class="empty">5. — (데이터 연결 전)</li>
+      </ul>
+      <p class="empty">검색 집계가 연결되면 이 자리에 실제 순위가 들어갑니다.</p>
+    </div>
+    <div class="dcard q">
+      <h3>퀵 유틸</h3>
+      <a href="/calculator/onehit/">한방컷 계산기</a>
+      <a href="/calculator/cube/">큐브값 계산기</a>
+      <a href="#" id="dashSearchLink">도감 통합 검색 (아래 검색창 · '/' 키)</a>
+    </div>
+  </section>
   <nav class="cats">
     <a class="bcard t-timeline" href="/timeline/" aria-label="알팡 타임라인"><img class="bcard-img" src="/assets/card-timeline.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>알팡 타임라인</h3><p>제작진 채널의 개발 소식·발언 원문을 시간순으로</p></span></a>
     <a class="bcard t-faq" href="/faq/" aria-label="확인된 발언 FAQ"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>확인된 발언 FAQ</h3><p>자주 묻는 질문에 실제 발언으로만 답합니다</p></span></a>
@@ -368,5 +422,25 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 <script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-11.json" defer></script>
 <script src="/assets/hit.js?v=2" defer></script>
-<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><script>
+/* 홈 대시보드 1단계 (시안): 상태 바 데이터 분리 + '/' 단축키 */
+(function(){
+  fetch('/assets/home-dashboard-data.json').then(function(r){return r.json()}).then(function(d){
+    (d.status_slots||[]).forEach(function(s){
+      var el=document.querySelector('.statusbar .slot[data-slot="'+s.id+'"] span');
+      if(el&&s.text){el.textContent=s.text;}
+    });
+  }).catch(function(){});
+  document.addEventListener('keydown', function(e){
+    if(e.key!=='/'||e.metaKey||e.ctrlKey||e.altKey){return;}
+    var a=document.activeElement;
+    if(a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.isContentEditable)){return;}
+    var inp=document.getElementById('alpangSearch');
+    if(inp){e.preventDefault();inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}
+  });
+  var q=document.getElementById('dashSearchLink');
+  if(q){q.addEventListener('click',function(e){e.preventDefault();var inp=document.getElementById('alpangSearch');if(inp){inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}});}
+})();
+</script>
+</body>
 </html>
