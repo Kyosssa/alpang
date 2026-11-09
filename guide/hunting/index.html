@@ -96,6 +96,9 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   [data-theme="dark"] .gtable tbody tr:hover{background:#2E2820}
 .glink{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;margin:2px 4px 2px 0;background:var(--card)}
 .glink:hover{color:var(--ink)}
+
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.twrap>table{margin:0}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -115,7 +118,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <p class="body">빅토리아 아일랜드 본토(헤네시스·엘리니아·페리온·커닝시티·리스항구·슬리피우드 일대) 맵 가운데 몬스터가 출현하는 맵을 모았습니다. 어느 곳이 가장 좋은지는 캐릭터와 장비에 따라 달라지므로 순위를 매기지 않고, 출현 몬스터와 배치 규모를 나란히 비교할 수 있게 정리했습니다. 출현 몬스터의 최저 레벨이 낮은 맵부터 정렬했습니다.</p>
     <p class="body">본진 GMS 95의 헤네시스 퀘스트에는 Mrs. Ming Ming이 마을 축제를 준비하는 모습이 담겨 있어요. Mrs. Ming Ming은 일손이 부족해 마을 밖 사람들의 도움이 필요하다고 말해요. 마을의 촌장은 Stan이에요. 에반 관련 퀘스트에서 Stan은 여러 마을 몬스터가 이상하게 행동한다는 소문을 들었다고 말하고, Bruce는 헤네시스 근처 주황버섯에게도 비슷한 일이 있었다고 전해요.</p>
     <p class="body">이 소개는 본진 GMS 95의 게임 텍스트를 바탕으로 자체 번역·요약한 내용이에요. 자료는 maplestory.io를 경유했으며, 알팡서버의 실제 구현은 미확인입니다.</p>
-    <table class="gtable">
+    <div class="twrap"><table class="gtable">
       <tr><th>맵</th><th>출현 몬스터</th><th class="num">종류</th><th class="num">레벨 범위</th><th class="num">배치 총량</th></tr>
 <tr><td><span class="mname">리스항구 외곽</span><span class="men">Right Around Lith Harbor</span></td><td><span class="chip">달팽이 <b>Lv.1</b></span><span class="chip">파란 달팽이 <b>Lv.2</b></span></td><td class="num">2</td><td class="num">Lv.1~2</td><td class="num">14</td></tr>
 <tr><td><span class="mname">드레이크의밥상</span><span class="men">Drake's Meal Table</span></td><td><span class="chip">밥 <b>Lv.2</b></span><span class="chip">레드 드레이크 <b>Lv.54</b></span><span class="chip">와일드카고 <b>Lv.60</b></span></td><td class="num">3</td><td class="num">Lv.2~60</td><td class="num">37</td></tr>
@@ -156,7 +159,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 <tr><td><span class="mname">끝없는 복도</span><span class="men">Endless Hallway</span></td><td><span class="chip">타우로마시스 <b>Lv.62</b></span><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">2</td><td class="num">Lv.62~64</td><td class="num">8</td></tr>
 <tr><td><span class="mname">음산한 신전</span><span class="men">Gloomy Temple</span></td><td><span class="chip">타우로마시스 <b>Lv.62</b></span><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">2</td><td class="num">Lv.62~64</td><td class="num">10</td></tr>
 <tr><td><span class="mname">금지된 제단</span><span class="men">Forbidden Altar</span></td><td><span class="chip">타우로스피어 <b>Lv.64</b></span></td><td class="num">1</td><td class="num">Lv.64~64</td><td class="num">4</td></tr>
-    </table>
+    </table></div>
     <p class="legend">배치 총량은 본진 기준 데이터에서 해당 맵에 배치된 몬스터 수의 합계입니다. 실제 사냥 효율은 리젠·지형·직업에 따라 달라질 수 있습니다. 한글 이름은 표시명 후보이며, 후보가 없는 맵은 영문명으로 표기했습니다.</p>
   </section>
   <aside class="name-status" id="notice-distribution-attack-defense" data-component="distribution-attack-defense" data-scope="guide">
