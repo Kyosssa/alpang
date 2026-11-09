@@ -65,24 +65,51 @@
   [data-theme="dark"] .place,[data-theme="dark"] .chip,[data-theme="dark"] .street{background:#22252B}
   [data-theme="dark"] .place.none,[data-theme="dark"] .chip.none{background:#22252B}
   [data-theme="dark"] .mob .stats,[data-theme="dark"] .map .mobs{border-top-color:var(--line)}
-.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
-.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 
-  [data-theme="dark"] .name-status{background:var(--card);border-color:var(--line)}
+/* 공통 규칙 선행분 — 디렉터 자문 (2026-11-02) */
+:root{--card-pad:22px;--card-gap:14px;--slate-bg:rgba(148,163,184,.12);--slate-tx:#94A3B8;--amber:#F59E0B;--amber-lt:#FBBF24}
+aside.name-status,.vw-badge,.vw-card-badge{background:var(--slate-bg);color:var(--slate-tx)}
+
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status{background:var(--card);border-color:var(--line)}
+[data-theme="dark"] .name-status{background:var(--card);border-color:var(--line)}
 :focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
 [data-theme="dark"] :focus-visible{outline-color:#FF9E57}
 .skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
 .skip-link:focus{top:8px}
 
-.lvchips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
-.lvchip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
-.lvchip[aria-pressed="true"]{background:var(--slot);font-weight:700}
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
+
+  .map{flex-direction:row}
+  .map .mframe{width:168px;height:auto;min-height:150px;border-bottom:none;border-right:1px solid var(--line)}
+  .map .mbody{flex:1;min-width:0}
+  .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  @media (max-width:640px){ .map{flex-direction:column} .map .mframe{width:auto;height:150px;border-right:none;border-bottom:1px solid var(--line)} }
+
+  .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
+  .topbtn.on{opacity:1;pointer-events:auto}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <style>
+:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
+[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
+.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:8px}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
+.lvchips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
+.lvchip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
+.lvchip[aria-pressed="true"]{background:var(--slot);font-weight:700}
   .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
   .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
   @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)}70%{box-shadow:0 0 0 7px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
@@ -93,8 +120,8 @@
   .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 1px 3px rgba(30,25,15,.05);scroll-margin-top:90px}
   .mob:target{outline:2px solid var(--accent);outline-offset:2px}
   .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-  .mhead h3{font-size:15px;font-weight:700}
-  .mhead .en{font-size:12.5px;color:var(--sub)}
+  .mhead h3{font-size:15px;font-weight:800}
+  .mhead .en{font-size:12px;color:var(--sub)}
   .mhead .lv{margin-left:auto;font-size:11px;font-weight:800;color:var(--accent-dark);background:var(--accent-soft);padding:2px 6px;border-radius:4px}
   .mob .stats{display:flex;gap:16px;font-size:14px;line-height:1.5;color:var(--sub);margin-top:6px;border-top:1px solid #f0ece3;padding-top:8px}
   .mob .stats b{color:var(--text)}
@@ -121,16 +148,26 @@
   .drow .unknown{white-space:nowrap}
   .dnote{font-size:12px;color:var(--sub);line-height:1.55;margin-top:7px}
   @media (max-width:560px){ .grid{grid-template-columns:1fr} .dgrid{grid-template-columns:1fr} }
+.lvchips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
+.lvchip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
+.lvchip[aria-pressed="true"]{background:var(--slot);font-weight:700}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .map{flex-direction:row}
+  .map .mframe{width:168px;height:auto;min-height:150px;border-bottom:none;border-right:1px solid var(--line)}
+  .map .mbody{flex:1;min-width:0}
+  .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  @media (max-width:640px){ .map{flex-direction:column} .map .mframe{width:auto;height:150px;border-right:none;border-bottom:1px solid var(--line)} }
 
   .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
   .topbtn.on{opacity:1;pointer-events:auto}
-
-/* 타이틀 패턴 (2026-11-04) */
-.intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
-
-/* 패턴 다크 톤다운 (2026-11-04) */
-[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"))}
-@media (max-width:640px){.intro{background-image:image-set(url("/assets/title-bg/title-bg-common-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-common-mobile.png") type("image/png"))}}@media (max-width:640px){[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-common-mobile.png") type("image/png"))}}
 </style>
 <body>
 <a class="skip-link" href="#main-start">본문 바로가기</a>
@@ -142,13 +179,12 @@
     <div class="tag">수집된 맵에 출현하는 몬스터 175종</div>
     <div class="stats">레벨 오름차순 · 출현 맵은 수집 완료된 맵 기준입니다</div>
   </div>
-  <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br>아이콘·이미지: maplestory.io<br>카드의 '상세 수치'는 본진 GMS 95 기준 몬스터 기본 수치입니다.</p>
+  <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다. 알팡서버 공식 오픈 시 해당 버전에 맞춰 상세 정보를 업데이트할 예정입니다.<br>아이콘·이미지: maplestory.io<br>카드의 '상세 수치'는 본진 GMS 95 기준 몬스터 기본 수치입니다.</p>
   <aside class="name-status" id="notice-mob-map-count" data-component="mob-map-count" data-scope="mobs">
     <p style="margin:0">가이드 권역에 나오는 몬스터 <span class="rc" data-slot="total-species">162</span>종은 대부분 한곳에서만 만나요. 한 개 맵에서만 나오는 종이 <span class="rc" data-slot="mapcount-single">87</span>종으로 절반이 넘고, 다섯 곳 이상에 나오는 종은 열한 종뿐이에요. 여러 맵을 오가며 만나는 몬스터는 그만큼 적어요.</p>
   </aside>
-<div class="xlink"><a href="/maps/">🗺️ 맵 탐색 보러 가기</a></div>
-  <div class="filterbar"><label class="flb" for="mobFilter">이름으로 찾기</label><input type="search" id="mobFilter" class="finput" placeholder="몬스터 이름 입력 (한글·영문)" autocomplete="off"><label class="flb" for="mobSort">정렬</label><select id="mobSort" class="fsort"><option value="lv">레벨 낮은 순</option><option value="eff">체경비 낮은 순</option></select><span class="fcount" id="mobCount" aria-live="polite"></span><button type="button" class="fclear" id="mobClear" hidden>지우기</button></div><div class="lvchips" role="group" aria-label="레벨 구간 필터"><button type="button" class="lvchip" data-band="all" aria-pressed="true">전체</button><button type="button" class="lvchip" data-band="1-30" aria-pressed="false">Lv.1~30</button><button type="button" class="lvchip" data-band="31-70" aria-pressed="false">Lv.31~70</button><button type="button" class="lvchip" data-band="71-120" aria-pressed="false">Lv.71~120</button><button type="button" class="lvchip" data-band="121-" aria-pressed="false">Lv.121+</button></div>
-<p class="fnores" id="mobNone" hidden>검색 결과가 없습니다.</p>
+  <div class="xlink"><a href="/maps/"><img class="dic" src="/assets/icons/icon-worldmap.png" alt="" aria-hidden="true"> 맵 탐색 보러 가기</a></div>
+  <div class="filterbar"><label class="flb" for="mobFilter">이름으로 찾기</label><input type="search" id="mobFilter" class="finput" placeholder="몬스터 이름 입력 (한글·영문)" autocomplete="off"><label class="flb" for="mobSort">정렬</label><select id="mobSort" class="fsort"><option value="lv">레벨 낮은 순</option><option value="eff">체경비 낮은 순</option></select><span class="fcount" id="mobCount" aria-live="polite"></span><button type="button" class="fclear" id="mobClear" hidden>지우기</button></div><div class="lvchips" role="group" aria-label="레벨 구간 필터"><button type="button" class="lvchip" data-band="all" aria-pressed="true">전체</button><button type="button" class="lvchip" data-band="1-30" aria-pressed="false">Lv.1~30</button><button type="button" class="lvchip" data-band="31-70" aria-pressed="false">Lv.31~70</button><button type="button" class="lvchip" data-band="71-120" aria-pressed="false">Lv.71~120</button><button type="button" class="lvchip" data-band="121-" aria-pressed="false">Lv.121+</button></div><p class="fnores" id="mobNone" hidden>검색 결과가 없습니다.</p>
   <main class="grid">
 <article class="mob" id="mob-100100" data-name="달팽이 snail" data-eff="5.0" data-lv="1">
       <span class="islot"><img class="mimg" src="https://maplestory.io/api/GMS/95/mob/100100/icon" alt="" loading="lazy" onerror="this.style.display='none'"></span>
@@ -1378,7 +1414,7 @@
   </main>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#45242935242b2229242b21052228242c296b262a28" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-15
   <br>
     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
@@ -1386,7 +1422,7 @@
   <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
   </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script>(function(){
 var inp=document.getElementById('mobFilter');if(!inp)return;
 var cards=[].slice.call(document.querySelectorAll('.mob'));
@@ -1423,6 +1459,7 @@ sel.addEventListener('change',function(){
 });
 })();</script>
 <script src="/assets/hit.js?v=2" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+<button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
 </body>
 </html>

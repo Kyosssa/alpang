@@ -65,23 +65,48 @@
   [data-theme="dark"] .place,[data-theme="dark"] .chip,[data-theme="dark"] .street{background:#22252B}
   [data-theme="dark"] .place.none,[data-theme="dark"] .chip.none{background:#22252B}
   [data-theme="dark"] .mob .stats,[data-theme="dark"] .map .mobs{border-top-color:var(--line)}
-.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
-.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 
-  [data-theme="dark"] .name-status{background:var(--card);border-color:var(--line)}
+/* 공통 규칙 선행분 — 디렉터 자문 (2026-11-02) */
+:root{--card-pad:22px;--card-gap:14px;--slate-bg:rgba(148,163,184,.12);--slate-tx:#94A3B8;--amber:#F59E0B;--amber-lt:#FBBF24}
+aside.name-status,.vw-badge,.vw-card-badge{background:var(--slate-bg);color:var(--slate-tx)}
+
+.name-status{border:1px solid #ddd;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.7;background:#fff;text-align:left;margin:12px 0}
+.name-status{background:var(--card);border-color:var(--line)}
+[data-theme="dark"] .name-status{background:var(--card);border-color:var(--line)}
 :focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
 [data-theme="dark"] :focus-visible{outline-color:#FF9E57}
 .skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
 .skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
+
+  .map{flex-direction:row}
+  .map .mframe{width:168px;height:auto;min-height:150px;border-bottom:none;border-right:1px solid var(--line)}
+  .map .mbody{flex:1;min-width:0}
+  .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  @media (max-width:640px){ .map{flex-direction:column} .map .mframe{width:auto;height:150px;border-right:none;border-bottom:1px solid var(--line)} }
+
+  .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
+  .topbtn.on{opacity:1;pointer-events:auto}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
 </head>
 <style>
-  .mlinks{margin-top:8px;border-top:1px solid #f0ece3;padding-top:8px}
-  .mlab{font-size:12px;font-weight:700;color:var(--sub);margin-right:6px}
-  a.lchip{text-decoration:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
+[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
+.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:8px}
+.name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
   .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
   .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
   @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)}70%{box-shadow:0 0 0 7px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
@@ -108,16 +133,23 @@
   .map .mobs{margin-top:8px;border-top:1px solid #f0ece3;padding-top:8px}
   .dchip{display:inline-flex;align-items:center;gap:5px;background:#252A34;border-radius:6px;padding:4px 8px;margin:0 4px 4px 0;color:#ECE9E2;vertical-align:top}
   .dchip[hidden]{display:none}
-  a.dchip, a.place{text-decoration:none}
   .dimg{width:24px;height:24px;object-fit:contain;image-rendering:pixelated;flex:none}
   .dnm{font-size:13.5px}
   .dlv{font-size:12px;font-weight:700;color:#B9C0CC}
   .dchip.dnone{background:var(--accent-soft);color:var(--sub)}
   .morebtn{font-size:12.5px;font-weight:700;padding:6px 10px;border-radius:6px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer;margin:0 4px 4px 0;vertical-align:top}
   @media (max-width:560px){ .list{grid-template-columns:1fr} }
+.mlinks{margin-top:8px;border-top:1px solid #f0ece3;padding-top:8px}
+.mlab{font-size:12px;font-weight:700;color:var(--sub);margin-right:6px}
+a.lchip{text-decoration:none;cursor:pointer}
 
-  .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
-  .topbtn.on{opacity:1;pointer-events:auto}
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
 
   .map{flex-direction:row}
   .map .mframe{width:168px;height:auto;min-height:150px;border-bottom:none;border-right:1px solid var(--line)}
@@ -125,16 +157,8 @@
   .map .mhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
   @media (max-width:640px){ .map{flex-direction:column} .map .mframe{width:auto;height:150px;border-right:none;border-bottom:1px solid var(--line)} }
 
-/* 타이틀 패턴 (2026-11-04) */
-.intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
-
-/* 패턴 다크 톤다운 (2026-11-04) */
-[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"))}
-@media (max-width:640px){[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-maps-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps-mobile.png") type("image/png"))}}
-
-/* 맵 타이틀 마스크 (2026-11-04) */
-.intro{background-image:radial-gradient(ellipse at center,rgba(250,246,240,.85) 35%,rgba(250,246,240,0) 80%),image-set(url("/assets/title-bg/title-bg-maps.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps.png") type("image/png"))}
-@media (max-width:640px){.intro{background-image:radial-gradient(ellipse at center,rgba(250,246,240,.85) 35%,rgba(250,246,240,0) 80%),image-set(url("/assets/title-bg/title-bg-maps-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-maps-mobile.png") type("image/png"))}}
+  .topbtn{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .18s}
+  .topbtn.on{opacity:1;pointer-events:auto}
 </style>
 <body>
 <a class="skip-link" href="#main-start">본문 바로가기</a>
@@ -146,14 +170,14 @@
     <div class="tag">정상 수집된 맵 419곳 · 권역별 정리</div>
     <div class="stats">출현 몬스터는 수집된 출현 관계 기준입니다</div>
   </div>
-  <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다.<br><span class="small">히든 스트리트 권역은 메랜디비(mapledb.kr)의 맵 분류를 대조해 판정한 결과입니다. 미니맵 이미지는 maplestory.io에서 가져왔습니다.</span></p>
+  <p class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다. 알팡서버 공식 오픈 시 해당 버전에 맞춰 상세 정보를 업데이트할 예정입니다.<br><span class="small">히든 스트리트 권역은 메랜디비(mapledb.kr)의 맵 분류를 대조해 판정한 결과입니다. 미니맵 이미지는 maplestory.io에서 가져왔습니다.</span></p>
   <aside class="name-status" id="notice-map-mob-species-count" data-component="map-mob-species-count" data-scope="maps">
-    <p style="margin:0">전체 맵 <span class="rc" data-slot="total-maps">419</span>곳 가운데 몬스터가 나오지 않는 맵이 <span class="rc" data-slot="no-mob-maps">157</span>곳으로, 열 곳 가운데 네 곳꼴이에요. 몬스터가 나오는 맵에서는 한 종만 나오는 맵이 <span class="rc" data-slot="species-single">182</span>곳으로 가장 많고, 세 종 넘게 함께 나오는 맵은 열두 곳뿐이에요.</p>
+    <p style="margin:0">전체 맵 <span class="rc" data-slot="total-maps">419</span>곳 가운데 몬스터가 나오지 않는 맵이 <span class="rc" data-slot="no-mob-maps">174</span>곳으로, 열 곳 가운데 네 곳꼴이에요. 몬스터가 나오는 맵에서는 한 종만 나오는 맵이 <span class="rc" data-slot="species-single">182</span>곳으로 가장 많고, 세 종 넘게 함께 나오는 맵은 열두 곳뿐이에요.</p>
   </aside>
-<aside class="name-status" id="notice-map-portal-link-count" data-component="map-portal-link-count" data-scope="maps-portal-links">
+  <aside class="name-status" id="notice-map-portal-link-count" data-component="map-portal-link-count" data-scope="maps-portal-links">
     <p style="margin:0">기록된 포털 수 기준으로 보면, 맵마다 갈림길의 수가 달라요. 전체 맵 <span class="rc" data-slot="total-maps">419</span>곳 가운데 포털이 다섯 개 이하로 기록된 맵이 <span class="rc" data-slot="portal-band-1to5">256</span>곳으로 가장 많고, 스무 개 넘게 기록된 맵도 열다섯 곳 있어요. 포털이 많은 맵일수록 기록된 갈림길이 많다는 뜻이에요.</p>
   </aside>
-<div class="xlink"><a href="/mobs/">👾 몬스터 도감 보러 가기</a></div>
+  <div class="xlink"><a href="/mobs/">👾 몬스터 도감 보러 가기</a></div>
   <div class="filterbar"><label class="flb" for="mapFilter">이름으로 찾기</label><input type="search" id="mapFilter" class="finput" placeholder="맵 이름 입력 (한글·영문)" autocomplete="off"><span class="fcount" id="mapCount" aria-live="polite"></span><button type="button" class="fclear" id="mapClear" hidden>지우기</button></div><p class="fnores" id="mapNone" hidden>검색 결과가 없습니다.</p>
   <main>
 <section class="region">
@@ -2798,7 +2822,7 @@
     </div>
   </section>
 <section class="region">
-    <h2>히든 스트리트 <small>14곳</small></h2>
+    <h2>히든 스트리트 <small>15곳</small></h2>
     <div class="list">
 <article class="map" id="map-102030000" data-name="와일드보어의땅 wildboarland">
       <div class="mframe"><span class="rbadge">히든 스트리트</span><img class="mmap" src="/assets/maps/minimap-102030000.png" alt="" loading="lazy"></div>
@@ -2908,7 +2932,7 @@
     </div>
   </section>
 <section class="region">
-    <h2>기타 권역 <small>32곳</small></h2>
+    <h2>기타 권역 <small>31곳</small></h2>
     <div class="list">
 <article class="map" id="map-101000000" data-name="엘리니아 ellinia">
       <div class="mframe"><span class="rbadge">기타 권역</span><img class="mmap" src="/assets/maps/minimap-101000000.png" alt="" loading="lazy"></div>
@@ -3132,7 +3156,7 @@
   </main>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/cdn-cgi/l/email-protection#01606d71606f666d606f6541666c60686d2f626e6c" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-15
   <br>
     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
@@ -3140,7 +3164,7 @@
   <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
   </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
 <script>(function(){
 var inp=document.getElementById('mapFilter');if(!inp)return;
 var cards=[].slice.call(document.querySelectorAll('.map'));
@@ -3182,6 +3206,7 @@ if(fi)fi.addEventListener('input',function(){requestAnimationFrame(clampAll);});
 clampAll();
 })();</script>
 <script src="/assets/hit.js?v=2" defer></script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --><button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+<button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
 </body>
 </html>
