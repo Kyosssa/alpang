@@ -92,6 +92,16 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 
   .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
   .new-dot.on{display:inline-block}
+
+  .s2-badge{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-dark);background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+  .s2-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:5px;vertical-align:middle}
+  .s2-modes{display:flex;gap:8px;margin:10px 0}
+  .s2-modes button{flex:1;min-height:42px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-size:14px;font-weight:600;cursor:pointer;color:var(--sub)}
+  .s2-modes button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .s2-cutline{font-size:17px;margin:8px 0;line-height:1.6}
+  .s2-cutline b{color:var(--accent-dark)}
+  .s2-cannot{color:var(--unknown);font-size:15px;line-height:1.7}
+  .s2-slot{border:1.5px dashed var(--line);border-radius:12px;padding:18px;text-align:center;color:var(--sub);font-size:14.5px;line-height:1.7;background:var(--bg)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -125,7 +135,55 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <p class="err" id="calcErr"></p>
     <div class="result" id="calcResult"></div>
   </section>
-  <section class="card" id="skillLookup">
+  
+  <section class="card" id="stage2">
+    <h2>2단계 계산<span class="s2-badge">GMS 95 기준 · 알팡서버 실제 구현 미확인</span></h2>
+    <p style="font-size:14.5px;line-height:1.75">시전당 피해를 직접 입력하면 방 수를 확정 계산합니다. 범위(최소·최대)로 입력하면 가능 컷과 보장 컷을 나눠 보여줍니다.</p>
+    <h3 style="margin-top:16px">몬스터</h3>
+    <input type="text" id="s2MobSearch" placeholder="몬스터 이름·ID 검색 (예: 주황버섯, 100100)" autocomplete="off" aria-label="2단계 몬스터 검색">
+    <div class="mob-results" id="s2MobResults"></div>
+    <div class="selected" id="s2SelInfo" style="display:none"></div>
+    <label class="fl" style="margin-top:12px">HP 직접 입력 (데이터 HP를 대신합니다)
+      <input type="number" id="s2HpInput" min="1" placeholder="비워 두면 선택한 몬스터의 데이터 HP 사용">
+    </label>
+  </section>
+  <section class="card">
+    <h2>시전당 피해 입력</h2>
+    <div class="s2-modes" role="group" aria-label="피해 입력 방식">
+      <button type="button" id="s2ModeFixed" aria-pressed="true">고정값</button>
+      <button type="button" id="s2ModeRange" aria-pressed="false">범위 (최소·최대)</button>
+    </div>
+    <div id="s2FixedWrap">
+      <label class="fl">시전당 피해 (고정값)
+        <input type="number" id="s2DmgFixed" min="1" placeholder="예: 1,250">
+      </label>
+    </div>
+    <div id="s2RangeWrap" style="display:none">
+      <div class="grid2">
+        <label class="fl">최소 피해
+          <input type="number" id="s2DmgMin" min="1" placeholder="예: 900">
+        </label>
+        <label class="fl">최대 피해
+          <input type="number" id="s2DmgMax" min="1" placeholder="예: 1,100">
+        </label>
+      </div>
+    </div>
+    <div class="s2-modes" role="group" aria-label="피해 값의 성격" style="max-width:340px">
+      <button type="button" id="s2KindObs" aria-pressed="true">관측값</button>
+      <button type="button" id="s2KindAssume" aria-pressed="false">가정</button>
+    </div>
+    <p style="font-size:13px;color:var(--sub)">직접 때려보고 잰 값이면 '관측값', 예상으로 넣는 값이면 '가정'을 골라 주세요. 결과에 그대로 표시됩니다.</p>
+    <button type="button" id="s2CalcBtn" style="margin-top:12px">계산하기</button>
+  </section>
+  <section class="card">
+    <h2>2단계 결과<span class="s2-badge">GMS 95 기준 · 알팡서버 실제 구현 미확인</span></h2>
+    <div id="s2Result"><p class="s2-cannot">몬스터를 선택하고 시전당 피해를 입력하면 결과가 표시됩니다.</p></div>
+  </section>
+  <section class="card">
+    <h2>스펙 자동 계산</h2>
+    <div class="s2-slot">스펙으로 시전당 피해를 자동 계산하는 기능은 준비 중입니다.<br>지금은 시전당 피해를 직접 입력해 주세요.</div>
+  </section>
+<section class="card" id="skillLookup">
     <h2>스킬 수치 조회<span class="mode-badge">원본 수치 조회</span></h2>
     <p style="font-size:14.5px;line-height:1.75">직업의 <b>전 스킬</b>을 골라 조회합니다. 원본 설명에 데미지 수식이 있는 스킬은 <b>수식과 그 산술값</b>을, 없는 스킬은 이름·최대 레벨·원문 설명만 보여줍니다. 예상 피해를 계산하는 도구가 아니며, 여기서 x는 스킬 레벨입니다. 수치는 본진 GMS 95 기준 자료로 maplestory.io를 경유해 수집됐고, 알팡서버 실서버의 수치와 다를 수 있습니다. 조회 결과는 위 관측 입력칸에 자동으로 들어가지 않습니다.</p>
     <div class="lk-form" style="margin-top:12px">
@@ -411,6 +469,94 @@ const ALL_SKILLS = [{"id": 1000006, "jobs": [100], "max_level": 10, "desc": "Per
       (r.attack_count != null ? '원본 타수 표기: ' + r.attack_count + ' (조회값에 곱하지 않습니다)<br>' : '') +
       '<span class="muted">이 수치는 원본 설명의 수치이며 실제 피해 배율이 아닙니다. 타수는 원본에 표기가 있는 경우만 표시합니다.</span>' + src;
     resultBox.appendChild(div); resultBox.classList.add('show');
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var M = window.MOBS || [];
+  var sel = null, mode = 'fixed', kind = '관측값';
+  var $ = function (id) { return document.getElementById(id); };
+  var search = $('s2MobSearch'), results = $('s2MobResults'), selInfo = $('s2SelInfo');
+  var result = $('s2Result');
+  function fmt(n) { return n.toLocaleString('ko-KR'); }
+  function clearResult(msg) {
+    result.innerHTML = '<p class="s2-cannot">' + msg + '</p>';
+  }
+  function invalidate() { clearResult('조건이 바뀌었습니다. 다시 계산해 주세요.'); }
+  function norm(s) { return (s || '').normalize('NFKC').toLowerCase().replace(/\s+/g, ''); }
+  search.addEventListener('input', function () {
+    var q = norm(search.value);
+    results.innerHTML = '';
+    if (!q) { results.classList.remove('open'); return; }
+    var hits = M.filter(function (m) {
+      return norm(m.name).includes(q) || norm(m.nameEn || '').includes(q) || String(m.id).includes(q);
+    }).slice(0, 8);
+    hits.forEach(function (m) {
+      var d = document.createElement('div');
+      d.className = 'mob-item';
+      d.innerHTML = '<span class="nm">' + m.name + '</span> <span class="meta">Lv.' + m.lv + ' · HP ' + (m.hp != null ? fmt(m.hp) : '미확인') + '</span>';
+      d.addEventListener('click', function () {
+        sel = m;
+        selInfo.style.display = '';
+        selInfo.textContent = m.name + ' (Lv.' + m.lv + ') · HP ' + (m.hp != null ? fmt(m.hp) : '미확인');
+        results.classList.remove('open');
+        invalidate();
+      });
+      results.appendChild(d);
+    });
+    results.classList.toggle('open', hits.length > 0);
+  });
+  function setMode(m) {
+    mode = m;
+    $('s2ModeFixed').setAttribute('aria-pressed', String(m === 'fixed'));
+    $('s2ModeRange').setAttribute('aria-pressed', String(m === 'range'));
+    $('s2FixedWrap').style.display = m === 'fixed' ? '' : 'none';
+    $('s2RangeWrap').style.display = m === 'range' ? '' : 'none';
+    invalidate();
+  }
+  $('s2ModeFixed').addEventListener('click', function () { setMode('fixed'); });
+  $('s2ModeRange').addEventListener('click', function () { setMode('range'); });
+  function setKind(k, obsBtn, assumeBtn) {
+    kind = k;
+    obsBtn.setAttribute('aria-pressed', String(k === '관측값'));
+    assumeBtn.setAttribute('aria-pressed', String(k === '가정'));
+    invalidate();
+  }
+  $('s2KindObs').addEventListener('click', function () { setKind('관측값', $('s2KindObs'), $('s2KindAssume')); });
+  $('s2KindAssume').addEventListener('click', function () { setKind('가정', $('s2KindObs'), $('s2KindAssume')); });
+  ['s2HpInput', 's2DmgFixed', 's2DmgMin', 's2DmgMax'].forEach(function (id) {
+    $(id).addEventListener('input', invalidate);
+  });
+  $('s2CalcBtn').addEventListener('click', function () {
+    if (!sel) { clearResult('계산 불가 — 몬스터를 먼저 선택해 주세요.'); return; }
+    var hpDirect = parseInt($('s2HpInput').value, 10);
+    var hp, hpTag;
+    if (!isNaN(hpDirect) && hpDirect > 0) { hp = hpDirect; hpTag = '사용자 입력'; }
+    else if (sel.hp != null) { hp = sel.hp; hpTag = 'GMS 95 데이터'; }
+    else { clearResult('계산 불가 — 몬스터 HP가 확인되지 않았습니다. HP를 아는 경우 직접 입력해 주세요.'); return; }
+    var dmgTag = '<span class="s2-tag">사용자 입력</span><span class="s2-tag">' + kind + '</span>';
+    var hpTagHtml = '<span class="s2-tag">' + hpTag + '</span>';
+    if (mode === 'fixed') {
+      var dmg = parseInt($('s2DmgFixed').value, 10);
+      if (isNaN(dmg) || dmg <= 0) { clearResult('계산 불가 — 시전당 피해가 필요합니다.'); return; }
+      var n = Math.ceil(hp / dmg);
+      var rest = hp - dmg * (n - 1);
+      result.innerHTML =
+        '<p class="s2-cutline"><b>' + n + '회</b> 시전으로 처치합니다.</p>' +
+        '<p style="font-size:14.5px;line-height:1.75">HP ' + fmt(hp) + hpTagHtml + ' ÷ 시전당 피해 ' + fmt(dmg) + dmgTag + '<br>' +
+        '마지막 1회 직전 잔여 HP는 ' + fmt(rest) + '이며, 이 잔여분에 시전 1회로 처치합니다.</p>';
+    } else {
+      var mn = parseInt($('s2DmgMin').value, 10), mx = parseInt($('s2DmgMax').value, 10);
+      if (isNaN(mn) || isNaN(mx) || mn <= 0 || mx <= 0) { clearResult('계산 불가 — 최소·최대 피해가 모두 필요합니다.'); return; }
+      if (mn > mx) { clearResult('입력 오류 — 최소 피해가 최대 피해보다 큽니다. 값을 확인해 주세요.'); return; }
+      var possible = Math.ceil(hp / mx), guaranteed = Math.ceil(hp / mn);
+      result.innerHTML =
+        '<p class="s2-cutline">가능 컷 <b>' + possible + '회</b> — 최대 피해 ' + fmt(mx) + dmgTag + ' 가 계속 나올 때의 하한입니다.</p>' +
+        '<p class="s2-cutline">보장 컷 <b>' + guaranteed + '회</b> — 최소 피해 ' + fmt(mn) + dmgTag + ' 만 나와도 보장되는 상한입니다.</p>' +
+        '<p style="font-size:14.5px;line-height:1.75">기준 HP ' + fmt(hp) + hpTagHtml + '</p>';
+    }
   });
 })();
 </script>
