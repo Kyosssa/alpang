@@ -48,6 +48,7 @@
   .fsort{font-size:14px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
   .fclear{font-size:13.5px;font-weight:700;padding:8px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
   .fnores{font-size:14px;color:var(--sub);text-align:center;padding:18px 0 4px}
+  .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
   .xlink{margin-top:14px;text-align:center}
   .xlink a{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 18px;color:var(--accent-dark);font-weight:700;font-size:15px;text-decoration:none}
   footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
@@ -1413,6 +1414,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
       <details class="mdetail"><summary>상세 수치</summary><div class="mbasis">본진 GMS 95 기준 몬스터 기본 수치</div><div class="tiles"><div class="tile"><span class="tk">HP</span><b>260,000</b></div><div class="tile"><span class="tk">MP</span><b>12,000</b></div><div class="tile"><span class="tk">EXP</span><b>4,146</b></div><div class="tile eff"><span class="tk">체경비</span><b>62.7</b></div></div><p class="tnote">체경비 = HP ÷ EXP · 본진 GMS 95 기준</p><dl class="dgrid"><div class="drow"><dt>MP</dt><dd>12,000</dd></div><div class="drow"><dt>물리 공격력</dt><dd>3,222</dd></div><div class="drow"><dt>마법 공격력</dt><dd>3,257</dd></div><div class="drow"><dt>물리 방어력</dt><dd>810</dd></div><div class="drow"><dt>마법 방어력</dt><dd>710</dd></div><div class="drow"><dt>명중</dt><dd>225</dd></div><div class="drow"><dt>회피</dt><dd>169</dd></div><div class="drow"><dt>이동 속도 (원본 수치)</dt><dd>-20</dd></div><div class="drow"><dt>물리 방어율 (원본 수치)</dt><dd>10</dd></div><div class="drow"><dt>마법 방어율 (원본 수치)</dt><dd>10</dd></div></dl><p class="dnote">물리·마법 공격력, 이동 속도·방어율은 모두 원본 수치를 그대로 표시합니다. 이동 속도·방어율은 의미·단위 검증 전이라 백분율이나 계산값이 아닙니다.</p></details>
     </article>
   </main>
+  <button type="button" class="qmore" id="mobMore" hidden>더 보기</button>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
     <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
@@ -1442,6 +1444,34 @@ inp.addEventListener('input',apply);
 if(clr)clr.addEventListener('click',function(){inp.value='';apply();inp.focus();});
 apply();
 })();</script>
+<script>
+(function () {
+  var PAGE = 50, limit = PAGE;
+  var more = document.getElementById('mobMore');
+  if (!more) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.mob'));
+  function applyPaging() {
+    cards.forEach(function (c) { if (c.getAttribute('data-pg') === '1') { c.style.display = ''; c.removeAttribute('data-pg'); } });
+    var passed = cards.filter(function (c) { return c.style.display !== 'none'; });
+    var visible = 0;
+    passed.forEach(function (c, i) {
+      if (i >= limit) { c.style.display = 'none'; c.setAttribute('data-pg', '1'); }
+      else visible++;
+    });
+    if (passed.length <= visible) { more.hidden = true; }
+    else { more.hidden = false; more.textContent = '더 보기 (남은 ' + (passed.length - visible).toLocaleString('ko-KR') + '건)'; }
+  }
+  more.addEventListener('click', function () { limit += PAGE; applyPaging(); });
+  document.addEventListener('input', function () { limit = PAGE; setTimeout(applyPaging, 0); });
+  document.addEventListener('click', function () { setTimeout(applyPaging, 0); });
+  document.addEventListener('change', function () { setTimeout(applyPaging, 0); });
+  if (location.hash) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target && target.classList.contains('mob')) { var ti = cards.indexOf(target); if (ti >= limit) limit = ti + 1; }
+  }
+  applyPaging();
+})();
+</script>
 <script>(function(){
 var sel=document.getElementById('mobSort');if(!sel)return;
 var grid=document.querySelector('.grid');if(!grid)return;
