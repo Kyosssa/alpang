@@ -82,6 +82,7 @@
   .rel-label{font-size:12.5px;font-weight:700;color:var(--accent-dark)}
   .qtag{font-size:12px;background:var(--accent-soft);color:var(--accent-dark);border-radius:6px;padding:3px 8px;text-decoration:none}
   .empty{text-align:center;color:var(--sub);padding:30px 0}
+  .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
   .more-btn{display:block;margin:16px auto 4px;padding:11px 34px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent-dark);font-size:15px;font-weight:800;cursor:pointer}
   .more-btn:hover{border-color:var(--accent)}
   .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
@@ -407,22 +408,30 @@ aside.name-status,.vw-badge,.vw-card-badge{background:var(--slate-bg);color:var(
 <div class="qrow" id="quest-29506" data-band="4" data-jobs="0" data-rep="1" data-rwexp="0" data-rwmeso="0" data-rwitem="0" data-search="천부적인카니발리언|thegiftedcarnivalian|29506"><details class="qdet"><summary class="qsum"><a class="qvis" href="/npcs/#npc-2042005"><img src="https://maplestory.io/api/GMS/95/npc/2042005/icon" alt="" loading="lazy" width="48" height="48" onerror="imgHide(this)"></a><span class="qmain"><span class="qname t-ko">천부적인 카니발리언</span><span class="en">The Gifted Carnivalian</span><span class="qmeta">Lv.51~ · <span class="rep">반복 가능</span> · 시작: 슈피겔만</span></span></summary><div class="qbody"><div class="ph"><h4>시작 조건</h4><ol class="steps"><li class="step"><span class="snum">1</span><span class="skind">대화</span><span class="sbody"><a class="npc-ref" href="/npcs/#npc-2042005"><img class="dot" src="https://maplestory.io/api/GMS/95/npc/2042005/icon" alt="" loading="lazy" onerror="imgHide(this)">슈피겔만</a> 에게서 시작</span></li><li class="step"><span class="snum">2</span><span class="skind">레벨</span><span class="sbody">Lv.51 이상</span></li><li class="step"><span class="snum">3</span><span class="skind">반복</span><span class="sbody">완료 후 반복 가능 (원본 간격 표기: 0)</span></li></ol></div><div class="ph"><h4>완료 조건</h4><ol class="steps"><li class="step"><span class="snum">1</span><span class="skind">대화</span><span class="sbody"><a class="npc-ref" href="/npcs/#npc-2042005"><img class="dot" src="https://maplestory.io/api/GMS/95/npc/2042005/icon" alt="" loading="lazy" onerror="imgHide(this)">슈피겔만</a> 에게 완료</span></li></ol></div><div class="ph"><h4>퀘스트 설명 (영문 원문)</h4><p class="qdesc">If you think you have the highest victory rate in the 2nd Monster Carnival, acquire the Gifted Carnivalian Medal from Spiegelmann!</p></div><p class="cap">필요 아이템 및 조건 — 복수 조건의 적용 방식(전부 충족인지 일부인​지)은 확인되지 않았습니다.</p><p class="cap">보상 목록 — 확정 지급인지, 선택·확률 보상인지 여부는 확인되지 않았습니다.</p></div></details></div>
   </main>
   <p class="empty" id="qEmpty" hidden>조건에 맞는 퀘스트가 없어요.</p>
+  <button type="button" class="qmore" id="qMore" hidden>더 보기</button>
 <script>
 (function () {
   var flags = {}, q = '';
   var rows = Array.prototype.slice.call(document.getElementById('qList').children),
       count = document.getElementById('qCount'), empty = document.getElementById('qEmpty');
   function norm(s) { return (s || '').normalize('NFKC').toLowerCase().replace(/[^0-9a-z가-힣]/g, ''); }
+  var PAGE = 50, limit = PAGE;
+  var more = document.getElementById('qMore');
+  function filtering() { return !!q || Object.keys(flags).length > 0; }
   function apply() {
-    var shown = 0;
-    rows.forEach(function (r) {
+    var shown = 0, visible = 0, filt = filtering();
+    rows.forEach(function (r, i) {
       var ok = Object.keys(flags).every(function (k) { return r.getAttribute('data-' + k) === '1'; })
         && (!q || r.getAttribute('data-search').indexOf(q) >= 0);
-      r.style.display = ok ? '' : 'none';
+      var vis = ok && (filt || i < limit);
+      r.style.display = vis ? '' : 'none';
       if (ok) shown++;
+      if (vis) visible++;
     });
     count.textContent = shown.toLocaleString('ko-KR') + '건 표시 중';
     empty.hidden = shown > 0;
+    if (filt || shown <= visible) { more.hidden = true; }
+    else { more.hidden = false; more.textContent = '더 보기 (남은 ' + (shown - visible).toLocaleString('ko-KR') + '건)'; }
   }
   document.getElementById('qFlags').addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
@@ -430,7 +439,12 @@ aside.name-status,.vw-badge,.vw-card-badge{background:var(--slate-bg);color:var(
     if (flags[k]) { delete flags[k]; b.classList.remove('on'); } else { flags[k] = 1; b.classList.add('on'); }
     apply();
   });
-  document.getElementById('qSearch').addEventListener('input', function () { q = norm(this.value); apply(); });
+  document.getElementById('qSearch').addEventListener('input', function () { q = norm(this.value); limit = PAGE; apply(); });
+  more.addEventListener('click', function () { limit += PAGE; apply(); });
+  if (location.hash) {
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) { var ti = rows.indexOf(target); if (ti >= limit) limit = ti + 1; }
+  }
   apply();
 })();
 </script>
