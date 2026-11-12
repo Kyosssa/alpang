@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스킬 계획 메모 — 알팡지지</title>
+<meta name="description" content="직업별 스킬 목표 레벨을 기록하고 링크로 공유하는 계획 메모 도구입니다.">
+<style>
+:root{--bg:#faf9f6;--card:#fff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700}
+[data-theme="dark"]{--bg:#14171B;--card:#1E2229;--line:#2E333C;--text:#EDEAE4;--sub:#9a958a;--accent-dark:#FF9A5C}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,"Malgun Gothic",sans-serif;line-height:1.6;padding:0 16px 48px}
+.wrap{max-width:960px;margin:0 auto}
+h1{font-size:24px;margin:22px 0 6px}
+.note{color:var(--sub);font-size:13.5px;margin-bottom:14px}
+select,input[type=number]{font:inherit;font-size:15px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}
+button{font:inherit;font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--accent-dark);cursor:pointer}
+.skill{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:12px 14px;margin-top:10px}
+.skill .grow{flex:1}
+.skill b{font-size:15px}
+.skill .en{color:var(--sub);font-size:12.5px;margin-left:6px}
+.skill p{color:var(--sub);font-size:13px;margin-top:2px}
+.skill input{width:76px;text-align:center}
+.skill .mx{color:var(--sub);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>스킬 계획 메모</h1>
+<p class="note">계획 메모 도구입니다 — 스킬별 목표 레벨을 기록하고 링크로 공유할 수 있어요. 실제 투자 가능 여부(SP·전직 규칙)는 알팡서버 규칙 확인 후 별도 단계에서 안내합니다. 직업 81종의 스킬북을 다룹니다.</p>
+<div class="bar">
+<label>직업 <select id="jobSel"></select></label>
+<button type="button" id="shareBtn">계획 링크 복사</button>
+<button type="button" id="resetBtn">이 직업 초기화</button>
+<span id="msg" class="mx"></span>
+</div>
+<div id="list"></div>
+</div>
+<script>
+var DATA=null, plan={};
+try{ plan=JSON.parse(localStorage.getItem('alpang-planner')||'{}'); }catch(e){ plan={}; }
+function save(){ try{ localStorage.setItem('alpang-planner', JSON.stringify(plan)); }catch(e){} }
+function encode(jobId){
+  var parts=[];
+  (plan[jobId]||[]).forEach(function(v,i){ if(v>0) parts.push(i+':'+v); });
+  return 'j='+jobId+(parts.length?('&p='+parts.join('.')):'');
+}
+function decodeFromUrl(){
+  var q=new URLSearchParams(location.search); var j=q.get('j'); if(!j) return null;
+  var out={}; out[j]=[];
+  var p=q.get('p');
+  if(p){ p.split('.').forEach(function(kv){ var a=kv.split(':'); out[j][+a[0]]=+a[1]; }); }
+  return out;
+}
+function render(){
+  var sel=document.getElementById('jobSel'); var jobId=+sel.value;
+  var job=DATA.jobs.filter(function(j){return j.id===jobId;})[0];
+  var list=document.getElementById('list'); list.innerHTML='';
+  if(!plan[jobId]) plan[jobId]=[];
+  job.skills.forEach(function(s,i){
+    var v=plan[jobId][i]||0;
+    var d=document.createElement('div'); d.className='skill';
+    d.innerHTML='<div class="grow"><b></b><span class="en"></span><p></p></div>';
+    d.querySelector('b').textContent=s.name_ko||s.name_en;
+    d.querySelector('.en').textContent=s.name_en;
+    d.querySelector('p').textContent=s.desc||'';
+    var inp=document.createElement('input'); inp.type='number'; inp.min=0; inp.max=s.max; inp.value=v;
+    inp.addEventListener('change',function(){
+      var nv=Math.max(0,Math.min(s.max,+inp.value||0)); inp.value=nv; plan[jobId][i]=nv; save();
+    });
+    var mx=document.createElement('span'); mx.className='mx'; mx.textContent='/ '+s.max;
+    d.appendChild(inp); d.appendChild(mx); list.appendChild(d);
+  });
+}
+fetch('planner-data.json').then(function(r){return r.json();}).then(function(d){
+  DATA=d;
+  var fromUrl=decodeFromUrl();
+  var sel=document.getElementById('jobSel');
+  d.jobs.forEach(function(j){
+    var o=document.createElement('option'); o.value=j.id;
+    o.textContent=(j.name_ko||j.name_en)+' ('+j.skills.length+')'; sel.appendChild(o);
+  });
+  var start=d.jobs[0].id;
+  if(fromUrl){ var jid=+Object.keys(fromUrl)[0]; if(d.jobs.some(function(j){return j.id===jid;})){ start=jid; plan[jid]=fromUrl[jid]; save(); } }
+  sel.value=start;
+  sel.addEventListener('change',render);
+  render();
+});
+document.getElementById('shareBtn').addEventListener('click',function(){
+  var sel=document.getElementById('jobSel'); var url=location.origin+location.pathname+'?'+encode(+sel.value);
+  var done=function(){ document.getElementById('msg').textContent='링크가 복사됐어요.'; };
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done,done); }
+  else{ prompt('아래 링크를 복사하세요', url); }
+});
+document.getElementById('resetBtn').addEventListener('click',function(){
+  var sel=document.getElementById('jobSel'); plan[+sel.value]=[]; save(); render();
+});
+</script>
+</body>
+</html>
