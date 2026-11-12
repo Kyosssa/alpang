@@ -25,7 +25,8 @@
   body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
   button,input,select,textarea{font-family:inherit}
   .wrap{max-width:1280px;margin:0 auto}
-  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
   .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
@@ -201,6 +202,23 @@ select,input[type=number]{font-size:16px}
 </table></div>
     <p class="note">등급 상한은 유니크까지입니다. 공시 등급 상승표는 미라클·수상한 공통 표이며, 공시 값이 들어 있는 큐브는 미라클·수상한 2종이며, 장인·명장·레드·블랙은 공시 근거 미확보 · 계산 미지원입니다.</p>
   </section>
+  <div class="bar" style="display:flex;gap:8px;margin-top:14px">
+    <button type="button" class="calc-btn" id="modeCalc" style="margin-top:0">확률 계산 모드</button>
+    <button type="button" class="calc-btn" id="modeTrial" style="margin-top:0;background:var(--card);color:var(--accent-dark);border:1.5px solid var(--accent)">체험 모드</button>
+  </div>
+  <section class="card" id="cubeTrial" hidden>
+    <h2>3. 큐브 체험 (공시 기준 추첨)</h2>
+    <p class="prep" style="display:block;text-align:center;margin:6px 0 10px">메이플플래닛 공시 기준 · 알팡 적용 미확인</p>
+    <p class="note">위 계산과 같은 조건(큐브 · 부위 · 등급 · 레벨)으로 실제 추첨을 돌려 보는 체험입니다. 각 시도는 시작 등급에서 등급업 판정(공시 확률이 있는 조합만)을 먼저 하고, 도달한 등급의 옵션 풀에서 3줄을 뽑습니다. 등급은 시도마다 시작 등급으로 돌아갑니다. 중복 제한(최대 1줄 · 2줄)은 계산과 같은 규칙으로 적용합니다.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+      <button type="button" class="calc-btn" data-n="1" style="flex:1;margin-top:0">1회 체험</button>
+      <button type="button" class="calc-btn" data-n="100" style="flex:1;margin-top:0">100회</button>
+      <button type="button" class="calc-btn" data-n="1000" style="flex:1;margin-top:0">1,000회</button>
+    </div>
+    <div class="result" id="trialResult">조건을 고른 뒤 체험 버튼을 눌러 주세요. 결과는 이 브라우저에서만 계산되며 저장되지 않습니다.</div>
+    <p class="note">메이플플래닛 공시 기준 · 알팡 적용 미확인 — 체험 결과는 공시 확률의 통계적 재현일 뿐, 알팡서버의 실제 확률이 아닙니다.</p>
+  </section>
+
   <section class="card">
     <h2>2. 잠재옵션 조합 확률 계산</h2>
     <div class="grid3">
@@ -435,6 +453,67 @@ select,input[type=number]{font-size:16px}
     });
   });
   refreshOptions();
+})();
+</script>
+<script>
+/* 큐브 체험 — 공시 풀 가중 추첨 (계산과 같은 중복 제한 규약) */
+(function(){
+  var modeCalc=document.getElementById('modeCalc'), modeTrial=document.getElementById('modeTrial');
+  var trialSec=document.getElementById('cubeTrial');
+  function setMode(trial){
+    trialSec.hidden=!trial;
+    document.querySelectorAll('section.card').forEach(function(s){ if(s.id!=='cubeTrial'&&s.id!=='cubeFaq') s.style.display=trial?'none':''; });
+    modeTrial.style.background=trial?'var(--accent-btn)':''; modeTrial.style.color=trial?'#fff':'var(--accent-dark)';
+    modeCalc.style.background=trial?'var(--card)':'var(--accent-btn)'; modeCalc.style.color=trial?'var(--accent-dark)':'#fff';
+  }
+  if(modeCalc&&modeTrial){ modeCalc.addEventListener('click',function(){setMode(false);}); modeTrial.addEventListener('click',function(){setMode(true);}); }
+  var GRADE_UP={miracle:{'레어→에픽':6.0,'에픽→유니크':1.8},suspicious:{'레어→에픽':6.0,'에픽→유니크':1.8}};
+  var NEXT={'레어':'에픽','에픽':'유니크'};
+  var cache={};
+  function loadPool(cube,part){ var key=cube+'--'+part; if(cache[key]) return Promise.resolve(cache[key]); return fetch('/assets/cube-data/'+encodeURIComponent(cube)+'--'+encodeURIComponent(part)+'.json').then(function(r){if(!r.ok) throw new Error('x'); return r.json();}).then(function(j){cache[key]=j; return j;}).catch(function(){return null;}); }
+  function rangeOf(it){ var m=String(it.levelRange).split('-'); return [Number(m[0]),Number(m[1])]; }
+  function itemsFor(pool,grade,line,level){ var arr=(((pool||{}).grades||{})[grade]||{})[String(line)]||[]; return arr.filter(function(it){ var rg=rangeOf(it); return level>=rg[0]&&level<=rg[1]; }); }
+  function groupOf(it){ if(it.maxLines==null) return null; var t=it.text; if(t.indexOf('<쓸만한')===0) return '쓸만한 스킬 계열'; if(t.indexOf('피격 후 무적시간')===0) return '피격 후 무적시간 증가'; if(/데미지 무시$/.test(t)) return '피격 시 데미지 무시'; if(/무적$/.test(t)) return '피격 시 일정 시간 무적'; return t; }
+  function limitOf(g,items){ for(var i=0;i<items.length;i++){ if(groupOf(items[i])===g) return Number(items[i].maxLines); } return 0; }
+  function drawLine(items, used){
+    var pool=items.filter(function(it){ var g=groupOf(it); return !(g&&used[g]!=null&&used[g]>=limitOf(g,items)); });
+    var total=0; pool.forEach(function(it){ total+=Number(it.probability); });
+    if(!pool.length||total<=0) return null;
+    var r=Math.random()*total, acc=0, pick=pool[pool.length-1];
+    for(var i=0;i<pool.length;i++){ acc+=Number(pool[i].probability); if(r<acc){ pick=pool[i]; break; } }
+    var g=groupOf(pick); if(g) used[g]=(used[g]||0)+1;
+    return pick;
+  }
+  function oneTrial(pool, cube, startGrade, level){
+    var grade=startGrade, up=false;
+    var nxt=NEXT[startGrade];
+    var gu=nxt?(GRADE_UP[cube]||{})[startGrade+'→'+nxt]:null;
+    if(gu!=null && Math.random()*100<gu){ grade=nxt; up=true; }
+    var used={}, lines=[];
+    for(var line=1; line<=3; line++){ var items=itemsFor(pool, grade, line, level); var pick=items.length?drawLine(items, used):null; lines.push(pick?pick.text:'(풀 없음)'); }
+    return {grade:grade, up:up, lines:lines};
+  }
+  var out=document.getElementById('trialResult');
+  document.querySelectorAll('#cubeTrial [data-n]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var n=Number(btn.getAttribute('data-n'));
+      var cube=document.getElementById('cubeSel').value, part=document.getElementById('partSel').value;
+      var grade=document.getElementById('gradeSel2').value, level=Number(document.getElementById('levelInput').value||0);
+      if(grade==='일반'){ out.innerHTML='일반 등급은 잠재능력 공시 근거가 없어 체험하지 않습니다. 레어 등급부터 선택해 주세요.'; return; }
+      out.textContent='추첨 중입니다…';
+      loadPool(cube,part).then(function(pool){
+        if(!pool){ out.textContent='옵션 데이터를 불러오지 못했습니다.'; return; }
+        var ups=0, counts={}, last=null;
+        for(var i=0;i<n;i++){ var r=oneTrial(pool,cube,grade,level); if(r.up) ups++; last=r; r.lines.forEach(function(tx){ counts[tx]=(counts[tx]||0)+1; }); }
+        var top=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];}).slice(0,10);
+        var html='<b>'+n.toLocaleString('ko-KR')+'회 체험 완료</b> — 등급업 성공 '+ups+'회';
+        if(last){ html+='<p class="note">마지막 시도 ('+last.grade+'): '+last.lines.map(function(x){return x.replace(/</g,'&lt;');}).join(' / ')+'</p>'; }
+        html+='<p class="note">자주 나온 옵션: '+top.map(function(tx){return tx.replace(/</g,'&lt;')+' ×'+counts[tx];}).join(' · ')+'</p>';
+        html+='<p class="note">메이플플래닛 공시 기준 · 알팡 적용 미확인</p>';
+        out.innerHTML=html;
+      });
+    });
+  });
 })();
 </script>
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"></script>

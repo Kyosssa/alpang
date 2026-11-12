@@ -201,6 +201,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 }
 @media (max-width:768px){.hero .banner{max-height:none}.hero .banner .slide img{height:auto;object-fit:initial}}
 </style>
+<link rel="stylesheet" href="/assets/motion.css">
 </head>
 <body>
   <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/" class="on">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
@@ -226,7 +227,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   </div>
 
 <div class="wrap">
-  <div class="hero-note"><span class="badge">메이플스토리월드 알팡서버 정보 DB · 오픈 준비 중</span></div>
+  <div class="hero-note"><span class="badge" data-stagger>메이플스토리월드 알팡서버 정보 DB · 오픈 준비 중</span></div>
 
   <div class="searchbar">
     <div class="sb-in">
@@ -241,7 +242,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   </div>
 
   <section class="dash" id="dashBoard">
-    <div class="dcard">
+    <div class="dcard" data-tilt>
       <h3>속보 — 타임라인 최신</h3>
       <ul id="dashNews">
       <li><span class="d">2026-10-29</span><a href="/timeline/">팡이요, "오늘은 알팡서버 미팅데이" — 중요한 미팅으로 휴방 공지</a></li>
@@ -249,7 +250,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
       <li><span class="d">2026-10-19</span><a href="/timeline/">안녕하세요, 여러분! 알팡섭 관련 문의가 너무 많이 와서 글 남깁니다</a></li>
       </ul>
     </div>
-    <div class="dcard">
+    <div class="dcard" data-tilt>
       <h3>추천 검색어</h3>
       <ul id="dashRecommend">
       <li>1. <a href="/mobs/#mob-210100">슬라임</a></li>
@@ -259,7 +260,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
       <li>5. <a href="/maps/#map-104000000">리스항구</a></li>
       </ul>
     </div>
-    <div class="dcard q">
+    <div class="dcard q" data-tilt>
       <h3>퀵 유틸</h3>
       <a href="/calculator/onehit/">한방컷 계산기</a>
       <a href="/calculator/cube/">큐브값 계산기</a>
@@ -455,5 +456,6 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   if(q){q.addEventListener('click',function(e){e.preventDefault();var inp=document.getElementById('alpangSearch');if(inp){inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}});}
 })();
 </script>
+<script src="/assets/motion.js" defer></script>
 </body>
 </html>

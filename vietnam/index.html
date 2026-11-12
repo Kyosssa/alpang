@@ -212,6 +212,7 @@
 .dash .empty{color:var(--sub);font-size:12.5px}
 .dash .q a{display:block;padding:6px 0;font-size:13.5px}
 </style>
+<link rel="stylesheet" href="/assets/motion.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"vi"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
@@ -220,6 +221,11 @@
 <a class="skip-link" href="#main-start">Đi đến nội dung chính</a>
   <div class="gnb"><div class="gnb-in"><a href="/vietnam/" class="logo" aria-label="Trang chủ Alpang.gg"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/vietnam/" class="on">Trang chủ</a><a href="/vietnam/timeline/">Dòng thời gian<span class="new-dot" id="tlNewDot" aria-label="Có bài viết mới"></span></a><a href="/vietnam/faq/">FAQ</a><a href="/mobs/">Tra cứu quái vật</a><a href="/maps/">Khám phá bản đồ</a><a href="/items/">Vật phẩm</a><a href="/npcs/">NPC · Nhiệm vụ</a><a href="/jobs/">Nghề nghiệp · Kỹ năng</a><a href="/calculator/cube/">Máy tính giá trị Cube</a><a href="/calculator/onehit/">Máy tính một đòn kết liễu</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ tối"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
 
+  <div class="statusbar" id="statusBar">
+    <div class="slot" data-slot="event"><b>Sự kiện / Thông báo</b><span>Lịch mở máy chủ Alpang — đang chờ thông báo chính thức</span></div>
+    <div class="slot" data-slot="timer"><b>Bộ hẹn giờ</b><span>Thời gian đặt lại — sẽ hiển thị sau khi có xác nhận chính thức</span></div>
+    <div class="slot" data-slot="server"><b>Trạng thái máy chủ</b><span>Trước khi mở — máy chủ chưa hoạt động</span></div>
+  </div>
   <div class="hero">
     <h1 id="main-start" tabindex="-1" class="site-h1">Alpang.gg — Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds</h1>
 <div class="banner" id="banner">
@@ -237,7 +243,7 @@
   </div>
 
 <div class="wrap">
-  <div class="hero-note"><span class="badge">Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds · Đang chuẩn bị mở</span></div>
+  <div class="hero-note"><span class="badge" data-stagger>Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds · Đang chuẩn bị mở</span></div>
 
   <div class="searchbar">
     <div class="sb-in">
@@ -259,6 +265,23 @@
       <li><span class="d">2026-10-28</span><a href="/vietnam/timeline/">팡이요 nhắc tới định hướng máy chủ Alpang trong trò chuyện ở kênh của 찬해 — &quot;Có tới cấp Legendary, 스우·데미안 sau này cũng có&quot;</a></li>
       <li><span class="d">2026-10-19</span><a href="/vietnam/timeline/">Xin chào mọi người! Câu hỏi về máy chủ Alpang gửi tới quá nhiều nên tôi viết bài này</a></li>
       </ul>
+    </div>
+  
+    <div class="dcard">
+      <h3>Từ khóa tìm kiếm gợi ý</h3>
+      <ul id="dashRecommend">
+      <li>1. <a href="/mobs/#mob-210100">슬라임</a></li>
+      <li>2. <a href="/mobs/#mob-1210102">주황버섯</a></li>
+      <li>3. <a href="/maps/#map-310000000">에델슈타인</a></li>
+      <li>4. <a href="/items/use.html#it2070005">뇌전 수리검</a></li>
+      <li>5. <a href="/maps/#map-104000000">리스항구</a></li>
+      </ul>
+    </div>
+    <div class="dcard q">
+      <h3>Tiện ích nhanh</h3>
+      <a href="/calculator/onehit/">Máy tính một đòn kết liễu</a>
+      <a href="/calculator/cube/">Máy tính giá trị Cube</a>
+      <a href="#" id="dashSearchLink">Tìm kiếm tổng hợp tra cứu (ô tìm kiếm bên dưới · phím '/')</a>
     </div>
   </section>
   <nav class="cats">
@@ -442,5 +465,6 @@
   var q=document.getElementById('dashSearchLink');
   if(q){q.addEventListener('click',function(e){e.preventDefault();var inp=document.getElementById('alpangSearch');if(inp){inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}});}
 })();
-</script></body>
+</script><script src="/assets/motion.js" defer></script>
+</body>
 </html>

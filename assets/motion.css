@@ -1,0 +1,11 @@
+/* 모션 공통 모듈 (2026-11-13, 디렉터 확정 3모듈 중 2·3의 스타일)
+   모듈 2: 단어 단위 스태거 페이드인 — JS가 단어를 span으로 나눈 뒤에만 애니메이션이 걸린다.
+           JS off 환경에서는 원문이 그대로 보인다 (span 분해 전에는 어떤 규칙도 걸리지 않음).
+   모듈 3: 카드 3D 틸트 — transform은 JS가 포인터 이벤트로만 건다. CSS는 전환만 둔다. */
+.stag span{display:inline-block;opacity:0;transform:translateY(14px);animation:alpangStagUp .55s cubic-bezier(.2,.7,.3,1) forwards;animation-delay:calc(var(--i)*55ms)}
+@keyframes alpangStagUp{to{opacity:1;transform:none}}
+[data-tilt]{transform-style:preserve-3d;transition:transform .18s ease-out}
+@media (prefers-reduced-motion: reduce){
+  .stag span{animation:none;opacity:1;transform:none}
+  [data-tilt]{transition:none}
+}
