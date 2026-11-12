@@ -172,6 +172,45 @@
 
 .dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
   @media (max-width:768px){.gnb-in{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}.gnb nav a{flex-shrink:0}}
+
+/* 홈 대시보드 1단계 (시안) */
+.statusbar{display:flex;gap:12px;flex-wrap:wrap;max-width:1280px;margin:12px auto 0;padding:0 16px}
+.statusbar .slot{flex:1 1 200px;border:1px solid var(--line,#e3e6ea);border-radius:10px;padding:9px 14px;font-size:12.5px;color:var(--sub);background:var(--card,#fff)}
+.statusbar .slot b{color:var(--text);margin-right:6px}
+.hero .banner{max-height:400px}
+.hero .banner .slide img{height:400px;object-fit:cover;object-position:center 30%}
+.hero .banner .slide:nth-child(1) img{object-position:center 50%}
+.hero .banner .slide:nth-child(2) img{object-position:center 65%}
+.hero .banner .slide:nth-child(3) img{object-position:center 60%}
+.hero .banner .slide:nth-child(4) img{object-position:center 60%}
+.hero .banner .slide:nth-child(5) img{object-position:center 30%}
+.hero .banner .slide:nth-child(6) img{object-position:center 40%}
+.hero .banner .slide:nth-child(7) img{object-position:center 30%}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1280px;margin:16px auto 0;padding:0 16px}
+.dash .dcard{border:1px solid var(--line,#e3e6ea);border-radius:14px;padding:14px 16px;background:var(--card,#fff)}
+.dash .dcard h3{font-size:15px;margin:0 0 10px}
+.dash .dcard ul{list-style:none;margin:0;padding:0}
+.dash .dcard li{font-size:13px;padding:5px 0;border-top:1px dashed var(--line,#e3e6ea)}
+.dash .dcard li:first-child{border-top:0}
+.dash .dcard .d{color:var(--sub);font-size:11.5px;margin-right:6px}
+.dash .empty{color:var(--sub);font-size:12.5px}
+.dash .q a{display:block;padding:6px 0;font-size:13.5px}
+@media (max-width:860px){.dash{grid-template-columns:1fr}}
+@media (min-width:500px) and (max-width:768px){
+  .hero{margin-top:6px}
+  .hero-note{margin-top:8px}.searchbar{margin-top:8px;position:sticky;top:0;z-index:30}
+  .statusbar{margin-top:8px}.dash{gap:8px;margin-top:12px}
+}
+@media (max-width:768px){.hero .banner{max-height:none}.hero .banner .slide img{height:auto;object-fit:initial}}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1280px;margin:16px auto 0;padding:0 16px}
+.dash .dcard{border:1px solid var(--line,#e3e6ea);border-radius:14px;padding:14px 16px;background:var(--card,#fff)}
+.dash .dcard h3{font-size:15px;margin:0 0 10px}
+.dash .dcard ul{list-style:none;margin:0;padding:0}
+.dash .dcard li{font-size:13px;padding:5px 0;border-top:1px dashed var(--line,#e3e6ea)}
+.dash .dcard li:first-child{border-top:0}
+.dash .dcard .d{color:var(--sub);font-size:11.5px;margin-right:6px}
+.dash .empty{color:var(--sub);font-size:12.5px}
+.dash .q a{display:block;padding:6px 0;font-size:13.5px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"zh-TW"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -212,6 +251,16 @@
     <p class="sb-note">可用韓文·英文名稱，一次搜尋怪物 175 種、地圖 402 張、道具 14,577 件。韓文名稱為顯示名稱候補。</p><p class="sb-note sb-disabled-note">搜尋功能正在準備翻譯中，目前還無法使用。</p>
   </div>
 
+  <section class="dash" id="dashBoard">
+    <div class="dcard">
+      <h3>時間軸</h3>
+      <ul id="dashNews">
+      <li><span class="d">2026-10-29</span><a href="/taiwan/timeline/">팡이요：「今天是 Alpang 伺服器會議日」— 因重要會議公告停播</a></li>
+      <li><span class="d">2026-10-28</span><a href="/taiwan/timeline/">팡이요 在 찬해 直播聊天中提及 Alpang 伺服器方向 — 「有到傳說級，史烏·戴米安之後也會有」</a></li>
+      <li><span class="d">2026-10-19</span><a href="/taiwan/timeline/">大家好！關於 Alpang 伺服器的詢問太多了，所以留篇文章</a></li>
+      </ul>
+    </div>
+  </section>
   <nav class="cats">
     <a class="bcard t-timeline" href="/taiwan/timeline/" aria-label="Alpang 時間軸"><img class="bcard-img" src="/assets/card-timeline.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Alpang 時間軸</h3><p>依時間順序整理製作團隊頻道的開發消息·發言原文</p></span></a>
     <a class="bcard t-faq" href="/taiwan/faq/" aria-label="已確認發言 FAQ"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>已確認發言 FAQ</h3><p>常見問題只以實際發言來回答</p></span></a>
@@ -370,5 +419,28 @@
 <script src="/assets/search.js?v=5" data-index="/assets/alpang-search-20261028-10.json" defer></script>
 <script src="/assets/hit.js?v=2" defer></script>
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
-</body>
+<script>
+/* 홈 대시보드 1단계 (시안): 상태 바 데이터 분리 + '/' 단축키 */
+(function(){
+  fetch('/assets/home-dashboard-data-tw.json').then(function(r){return r.json()}).then(function(d){
+    var rec=document.getElementById('dashRecommend');
+    if(rec&&(d.recommended_keywords||[]).length){
+      rec.innerHTML=(d.recommended_keywords||[]).map(function(r,i){return '<li>'+(i+1)+'. <a href="'+r.url+'">'+r.keyword+'</a></li>';}).join('');
+    }
+    (d.status_slots||[]).forEach(function(s){
+      var el=document.querySelector('.statusbar .slot[data-slot="'+s.id+'"] span');
+      if(el&&s.text){el.textContent=s.text;}
+    });
+  }).catch(function(){});
+  document.addEventListener('keydown', function(e){
+    if(e.key!=='/'||e.metaKey||e.ctrlKey||e.altKey){return;}
+    var a=document.activeElement;
+    if(a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.isContentEditable)){return;}
+    var inp=document.getElementById('alpangSearch');
+    if(inp){e.preventDefault();inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}
+  });
+  var q=document.getElementById('dashSearchLink');
+  if(q){q.addEventListener('click',function(e){e.preventDefault();var inp=document.getElementById('alpangSearch');if(inp){inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}});}
+})();
+</script></body>
 </html>
