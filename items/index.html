@@ -159,6 +159,36 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 
 .twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .twrap>table{margin:0}
+/* 통합 검색 안내 바 (검색 기능은 준비 중 — 도감·목록으로 안내) */
+  .searchbar{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+.sb-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sb-ic{font-size:19px}
+.sb-in input{flex:1;min-width:180px;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--text);font-family:inherit}
+.sb-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;border:none;cursor:pointer;font-family:inherit;min-height:44px}
+.sb-note{font-size:13.5px;color:var(--sub);margin-top:9px}
+.sb-wrap{position:relative;flex:1;min-width:180px;display:flex}
+.sb-wrap input{flex:1;min-width:0}
+.sb-results{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:60;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(30,25,15,.14);max-height:420px;overflow-y:auto;display:none;text-align:left}
+.sb-results.open{display:block}
+.sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--line)}
+.sb-item:last-child{border-bottom:none}
+.sb-item.sel,.sb-item:hover{background:var(--accent-soft)}
+.sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent)}
+.sb-badge.map{background:#7A6A53}
+.sb-badge.item{background:#4A6FA5}
+.sb-badge.npc{background:#8A5AA5}
+.sb-badge.quest{background:#B7791F}
+.sb-icon{flex:none;width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+.sb-nm{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-en{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-unv{flex:none;font-size:11px;font-weight:700;color:var(--unknown);background:#f4f1ea;border-radius:4px;padding:2px 6px}
+.sb-none{padding:14px;font-size:14px;color:var(--sub)}
+.sb-more{display:block;width:100%;padding:11px;font-size:14px;font-weight:700;color:var(--accent-dark);background:transparent;border:none;border-top:1px solid var(--line);cursor:pointer;font-family:inherit;min-height:44px}
+[data-theme="dark"] .searchbar{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+[data-theme="dark"] .sb-in input{background:#22252B}
+#notice-item-category-level summary{cursor:pointer;list-style:none}
+#notice-item-category-level summary::-webkit-details-marker{display:none}
+#notice-item-category-level summary h2{display:inline}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -172,12 +202,22 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <h1 id="main-start" tabindex="-1">아이템 <span>목록</span></h1>
     <div class="tag">본진 빅뱅 직후 기준 아이템 목록 후보 14,577개</div>
   </div>
+<div class="searchbar">
+    <div class="sb-in">
+      <span class="sb-ic"><img class="dic" src="/assets/icons/icon-search.png" alt=""></span>
+      <div class="sb-wrap">
+        <input type="text" id="alpangSearch" placeholder="몬스터·맵·아이템·NPC·퀘스트 통합 검색" aria-label="통합 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
+        <div class="sb-results" id="sbResults" role="listbox"></div>
+      </div>
+      <button type="button" class="sb-btn" id="sbGo">검색</button>
+    </div>
+    <p class="sb-note">한글·영문 이름으로 몬스터 175종, 맵 419곳, 아이템 14,577개를 한 번에 검색할 수 있어요. 한글 이름은 표시명 후보입니다.</p>
   <div class="notice">본진 빅뱅 직후(GMS 95) 기준 데이터이며 알팡서버 실서버와 다를 수 있습니다. 한글 이름은 표시명 후보입니다. 알팡서버 공식 오픈 시 해당 버전에 맞춰 상세 정보를 업데이트할 예정입니다.<br>아이콘·이미지: maplestory.io</div>
-<section class="card" id="notice-item-category-level">
-    <h2>장비 종류별로 요구 레벨이 다릅니다</h2>
+<details class="card" id="notice-item-category-level">
+    <summary><h2>장비 종류별로 요구 레벨이 다릅니다</h2></summary>
     <p>장비 5,770개(착용 레벨이 기록된 장비 기준)를 종류별로 나누어, 요구 레벨 100을 넘는 장비의 비중을 비교하면 종류마다 차이가 큽니다. 탈것(Mount)은 21개 중 28.6%가 100을 넘고, 양손 무기(Two-Handed Weapon)는 686개 중 9.8%, 한손 무기(One-Handed Weapon)는 792개 중 7.7%입니다. 반면 방어구(Armor)는 3,434개 중 2.3%로 낮은 편이고, 장신구(Accessory)는 718개 중 3.8%입니다. 전체 장비의 레벨 분포가 아니라 종류 사이의 차이를 비교한 수치입니다.</p>
     <div class="twrap"><table><thead><tr><th>종류</th><th>장비 수</th><th>요구 레벨 100 초과</th><th>비중</th></tr></thead><tbody><tr><td>탈것 (Mount)</td><td>21개</td><td>6개</td><td>28.6%</td></tr><tr><td>양손 무기 (Two-Handed Weapon)</td><td>686개</td><td>67개</td><td>9.8%</td></tr><tr><td>한손 무기 (One-Handed Weapon)</td><td>792개</td><td>61개</td><td>7.7%</td></tr><tr><td>기타 (Other)</td><td>119개</td><td>9개</td><td>7.6%</td></tr><tr><td>장신구 (Accessory)</td><td>718개</td><td>27개</td><td>3.8%</td></tr><tr><td>방어구 (Armor)</td><td>3,434개</td><td>80개</td><td>2.3%</td></tr></tbody></table></div>
-  </section>
+  </details>
     <div class="tabcards" role="tablist" aria-label="아이템 대분류">
 <button type="button" class="tabcard" role="tab" data-cat="Equip" aria-selected="true"><span class="tslot"><img class="tic" src="/assets/cat-icons/equip-one-handed-sword.png" alt="" onerror="this.closest('.tslot').classList.add('noimg');this.remove()"></span><span class="tlb">장비 · Equip</span><span class="tn">8,174개</span></button>
 <button type="button" class="tabcard" role="tab" data-cat="Use" aria-selected="false"><span class="tslot"><img class="tic" src="/assets/cat-icons/use-consumable.png" alt="" onerror="this.closest('.tslot').classList.add('noimg');this.remove()"></span><span class="tlb">소비 · Use</span><span class="tn">2,707개</span></button>
@@ -205,5 +245,5 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 <button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
 <script>(function(){var tabs=document.querySelectorAll('.tabcard');var panels=document.querySelectorAll('.tabpanel');tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected','false')});t.setAttribute('aria-selected','true');var c=t.getAttribute('data-cat');panels.forEach(function(p){p.hidden=p.getAttribute('data-panel')!==c})})})})();</script>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
+<script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-11.json" defer></script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40a677bd87444e9e950bac440e734449"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>
