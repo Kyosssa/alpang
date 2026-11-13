@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마을 NPC 배치 읽는 법 — 알팡지지</title>
+<meta name="description" content="맵 419곳에 배치된 NPC 수를 세어, 처음 가는 마을의 규모와 기능을 숫자로 읽는 법을 정리했습니다.">
+<link rel="canonical" href="https://alpang.gg/guide/town-npcs/">
+<link rel="alternate" hreflang="ko" href="https://alpang.gg/guide/town-npcs/">
+<link rel="alternate" hreflang="zh-TW" href="https://alpang.gg/taiwan/guide/town-npcs/">
+<link rel="alternate" hreflang="vi" href="https://alpang.gg/vietnam/guide/town-npcs/">
+<link rel="alternate" hreflang="x-default" href="https://alpang.gg/guide/town-npcs/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="마을 NPC 배치 읽는 법 — 알팡지지">
+<meta property="og:description" content="맵 419곳에 배치된 NPC 수를 세어, 처음 가는 마을의 규모와 기능을 숫자로 읽는 법을 정리했습니다.">
+<meta property="og:url" content="https://alpang.gg/guide/town-npcs/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 16px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disc{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--text);margin-top:16px;text-align:center}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:18px;font-weight:700;margin-bottom:10px}
+  p.body{font-size:16px;margin-bottom:8px}
+  .legend{font-size:13px;color:var(--sub);margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5;margin-top:6px}
+  th{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td.num, th.num{text-align:right;white-space:nowrap}
+  .mname{font-weight:700}
+  .men{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+  .chip{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:13.5px;margin:1px 2px 1px 0}
+  .chip b{color:var(--accent-dark)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}
+  .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .mob .islot{display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:#F3F4F6;border-radius:6px;margin:0 auto 6px}
+  .mob .mimg{max-width:32px;max-height:32px}
+  .mob .nm{font-size:15px;font-weight:700}
+  .mob .en{font-size:12.5px;color:var(--sub);font-weight:600}
+  .mob .stat{font-size:14px;line-height:1.5;margin-top:6px}
+  .mob .stat b{color:var(--accent-dark)}
+  .mob .where{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.6}
+  .cnt{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ table{font-size:13.5px} th,td{padding:7px 6px} .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))} }
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] section.card{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .mob{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .chip{background:#22252B}
+  [data-theme="dark"] .mob .islot{background:#26292F}
+  [data-theme="dark"] td{border-bottom-color:var(--line)}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .gtable th{background:#F3EDE2;border-bottom:2px solid var(--line)}
+  .gtable tbody tr:nth-child(even){background:#FAF6EE}
+  .gtable tbody tr:hover{background:#F1E8D8}
+  [data-theme="dark"] .gtable th{background:#2A251C}
+  [data-theme="dark"] .gtable tbody tr:nth-child(even){background:#211D16}
+  [data-theme="dark"] .gtable tbody tr:hover{background:#2E2820}
+.glink{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;margin:2px 4px 2px 0;background:var(--card)}
+.glink:hover{color:var(--ink)}
+
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.twrap>table{margin:0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="intro">
+    <h1>마을 NPC 배치 <span>읽는 법</span></h1>
+    <div class="tag">마을의 크기는 사람 수에 들어 있어요</div>
+  </div>
+  <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+  <p class="hub-link" style="text-align:center;margin:12px 0 0"><a href="/guide/">가이드 전체 보기 →</a></p>
+<section class="card">
+    <h2>마을의 크기는 사람 수로 읽어요 — NPC 배치 해설</h2>
+    <p class="body">처음 가는 마을에 도착하면 제일 먼저 궁금한 게 &#x27;여기 누가 있지&#x27;예요. 상점은 어디고, 퀘스트는 누구한테 받는지. 그 답은 마을에 배치된 NPC 수에 들어 있어요. 이 글에서는 본진 게임 데이터의 맵 419곳에 배치된 NPC를 세어, 마을의 규모를 숫자로 읽는 법을 정리했습니다. 인물 하나하나의 이야기는 지역 이야기에서 다루니, 여기서는 배치라는 숫자만 봅니다.</p>
+    <p class="body">분포가 극단적이에요. NPC가 한 명도 없는 맵이 243곳으로 전체의 절반이 넘습니다. 1명인 맵이 125곳이고, 2~3명이 32곳, 4~6명이 6곳, 7명 이상이 13곳뿐이에요. 맵의 대부분은 사람이 살지 않는 공간 — 사냥터이거나 지나가는 길 — 이고, 사람이 몰리는 맵은 열댓 곳 남짓이라는 뜻입니다. 마을다운 마을은 생각보다 적어요.</p>
+    <p class="body">그 소수의 정점에 있는 맵들을 보면, 에델슈타인이 39명으로 가장 많고 커닝시티 31명, 엘리니아 29명, 페리온 28명, 리스항구 27명, 헤네시스 25명이 뒤를 잇습니다. 이 맵들의 공통점은 역할이 겹겹이 쌓여 있다는 거예요. 사람이 많다는 것은 그만큼 받을 퀘스트가 많고, 맡는 기능이 많은 맵이라는 뜻입니다. 반대로 사냥터 한가운데 NPC가 한 명만 서 있는 맵 (125곳)도 많은데, 이런 NPC는 대개 그 맵과 직접 닿은 퀘스트 하나를 맡은 사람인 경우가 많아요. 현장에서 바로 일을 주는 사람인 셈이죠.</p>
+    <p class="body">7명 이상이 배치된 맵 13곳의 면면을 보면, 권역마다 중심 마을이 하나씩은 꼭 들어 있어요. 빅토리아의 큰 마을들, 오르비스와 루디브리엄, 에델슈타인처럼 권역 거점들이 그 자리를 차지합니다. 여행 동선으로 보면 이 13곳이 사실상 이 세계의 &#x27;들러야 할 마을&#x27; 목록인 셈이에요. 반대로 2~3명만 있는 맵 32곳은 작은 정착지나 특수 목적의 장소인 경우가 많습니다. 사람은 적지만 그 맵에서만 받을 수 있는 일이 있는 곳이라, 인원수가 적다고 지나치면 놓치는 퀘스트가 생겨요.</p>
+    <p class="body">숫자 뒤에 있는 것도 하나 짚어 둘게요. 배치 인원은 마을의 행정 규모이지 재미의 순위가 아닙니다. 인원이 적은 마을에도 긴 이야기의 시작점이 있고, 인원이 많은 마을에도 스쳐 지나가는 사람이 섞여 있어요. 그래서 이 글의 숫자는 &#x27;어디부터 둘러볼까&#x27;의 순서 정하기까지만 쓰고, 그 마을이 어떤 곳인지는 지역 이야기로 읽는 것이 맞습니다. 인원수로 마을을 다 안다고 말하지 않는 것이 이 해설의 경계예요.</p>
+    <p class="body">읽는 법을 정리하면 이래요. 첫째, 처음 도착한 마을에서는 NPC가 몰린 구역부터 한 바퀴 도세요. 배치 수가 많은 마을일수록 주요 인물이 중심부에 모여 있어, 한 바퀴면 마을의 기능이 대략 잡힙니다. 둘째, 퀘스트를 찾을 때는 마을만 보지 마세요. 전체 퀘스트의 시작점이 전부 큰 마을에 있는 것은 아니고, 사냥터의 단독 NPC가 여는 퀘스트도 적지 않아요. 셋째, NPC가 0명인 맵은 보급도, 받을 일도 없는 맵입니다. 들어가기 전에 물약과 퀘스트 상태를 점검하는 기준점으로 쓰면 됩니다. 넷째, 여행 순서를 정할 때 이 분포를 지도로 쓰세요. 7명 이상인 13곳을 먼저 찍고 그 사이를 1~3명 맵들로 메우는 동선이, 사람이 있는 곳을 빠뜨리지 않는 가장 단순한 여행법이에요.</p>
+    <p class="body">실전으로 옮기면 이렇습니다. 배치가 가장 많은 에델슈타인에 처음 도착했다고 해 볼게요. 39명 전원을 한 번에 상대할 필요는 없어요. 중심 구역의 인물들부터 만나면 상점과 주요 퀘스트의 위치가 잡히고, 나머지는 일을 따라가며 자연히 만나게 됩니다. 반대로 배치 1명인 사냥터 맵에서는 그 한 명이 그 맵의 전부예요. 그냥 지나치면 그 맵에서 받을 수 있는 일을 통째로 놓칩니다. 인원수가 많은 곳에서는 중심부터, 적은 곳에서는 전원을 — 이 대비가 배치 분포가 알려 주는 동선의 요령입니다.</p>
+    <p class="body">이 글에서 세는 것은 인원수까지예요. 이 마을 사람들이 어떤 이야기를 갖고 있는지는 따로 정리한 지역 이야기에 링크로 넘깁니다. 수치로 규모를 먼저 읽고 이야기로 넘어가는 순서가, 이 사이트가 마을을 정리한 순서이기도 해요. 수치는 본진 빅뱅 직후 (GMS 95) 데이터 기준이며, 알팡서버의 실제 배치는 아직 확인되지 않았어요.</p>
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">표 — NPC가 가장 많은 맵</h3>
+    <div class="twrap"><table>
+      <thead><tr><th scope="col">맵</th><th scope="col">배치 NPC 수</th></tr></thead>
+      <tbody>
+      <tr><td>에델슈타인</td><td>39</td></tr>
+      <tr><td>커닝시티</td><td>31</td></tr>
+      <tr><td>엘리니아</td><td>29</td></tr>
+      <tr><td>페리온</td><td>28</td></tr>
+      <tr><td>리스항구</td><td>27</td></tr>
+      <tr><td>헤네시스</td><td>25</td></tr>
+      </tbody>
+    </table></div>
+    <p class="body">전체 분포: 0명 243곳 · 1명 125곳 · 2~3명 32곳 · 4~6명 6곳 · 7명 이상 13곳 (맵 419곳, 현행 세대 재실측).</p>
+    <p class="body">마을별 NPC와 퀘스트는 <a href="/npcs/">NPC·퀘스트 조회</a>에서, 마을이 있는 지역의 이야기는 <a href="/guide/orbis-leafre/">오르비스 · 리프레 가이드</a>에서 이어서 볼 수 있어요.</p>
+  </section>
+
+  <section class="card glinks">
+    <h2>다른 가이드 보기</h2>
+    <div class="glink-row"><a class="glink" href="/guide/hunting/">초반 사냥터 후보 비교</a><a class="glink" href="/guide/orbis-leafre/">오르비스 & 리프레 몬스터 구경</a><a class="glink" href="/guide/edelstein/">에델슈타인 엿보기</a><a class="glink" href="/guide/ludibrium/">루디브리엄 마을 가이드</a><a class="glink" href="/guide/mushroom-shrine/">버섯신사 엿보기</a><a class="glink" href="/guide/scroll-reward-quests/">주문서 주는 퀘스트 총정리</a><a class="glink" href="/guide/return-routes/">귀환 연결로 읽는 이동 절약법</a><a class="glink" href="/guide/hunting-efficiency/">사냥터 효율 읽는 법</a><a class="glink" href="/guide/quest-chains/">퀘스트 선행 사슬 읽는 법</a><a class="glink" href="/guide/portal-hubs/">포털 허브 맵 읽는 법</a></div>
+  </section>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-11-14
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+</body>
+</html>
