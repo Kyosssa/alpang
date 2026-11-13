@@ -114,6 +114,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <div class="tag">어디서 사냥할지, 순위가 아니라 비교로 고르기</div>
   </div>
   <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+  <p class="hub-link" style="text-align:center;margin:12px 0 0"><a href="/guide/">가이드 전체 보기 →</a></p>
 
   <section class="card">
     <h2>빅토리아 아일랜드 초반 사냥터 후보<span class="cnt">39곳</span></h2>
@@ -172,6 +173,10 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <h2 class="sr-only">맵별 출현 몬스터 레벨 범위 분포</h2>
     <p>몬스터가 출현하는 맵 245곳을 기준으로, 출현 몬스터의 레벨 범위를 세면 범위가 0인 맵(한 가지 레벨의 몬스터만 출현)이 195곳으로 대부분입니다. 범위가 1~5인 맵은 37곳, 6~10인 맵은 9곳, 11~20인 맵은 1곳, 21 이상인 맵은 3곳입니다.</p>
   </aside>
+    <aside class="name-status" id="notice-distribution-npc-per-map" data-component="distribution-npc-per-map" data-scope="guide">
+    <h2 class="sr-only">맵당 NPC 수 분포</h2>
+    <p>맵 402곳을 기준으로, 각 맵에 배치된 NPC가 몇 명인지 셉니다. 배치 기록이 기준이라, NPC가 없다고 해서 마을이 아닌 맵이라는 뜻은 아니에요. NPC가 한 명도 없는 맵이 226곳으로 절반이 넘어요. NPC가 1명 있는 맵이 125곳, 2~3명 있는 맵이 32곳, 4~6명 있는 맵이 6곳, 7명 이상 모여 있는 맵이 13곳 있어, NPC가 있는 맵은 마을이나 거점처럼 사람이 모이는 자리에 몰려 있는 모양이에요.</p>
+  </aside>
   <details class="name-status" id="notice-distribution-predecessor" data-component="distribution-predecessor" data-scope="guide">
     <summary>스킬 선행 관계 분포</summary>
     <p>선행 스킬이 있는 스킬 161개를 기준으로 보면, 선행 스킬이 1개인 스킬이 160개로 대부분이고 3개 이상인 스킬은 1개뿐입니다. 선행 스킬이 없는 스킬은 이 집계에 포함하지 않았습니다.</p>
@@ -211,6 +216,15 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
     <p style="margin:0 0 6px">귀환 연결이 기록된 맵 402곳의 연결 402건을 기준으로, 귀환 목적지가 되는 맵 41곳을 '몇 개 맵이 여기로 돌아오는지'로 셉니다.</p>
     <p style="margin:0 0 6px">돌아오는 맵이 1곳뿐인 목적지가 13곳, 2~5곳인 목적지가 16곳으로 가장 많아요. 11곳 이상에서 돌아오는 목적지도 7곳 있어, 귀환이 소수 목적지에 몰리는 모양이에요. 목적지가 아닌 맵은 이 셈에 들어가지 않아요.</p>
     <p style="margin:0">피귀환 1곳 13곳 · 2~5곳 16곳 · 6~10곳 5곳 · 11곳 이상 7곳 (기준 목적지 41곳 · 연결 402건)</p>
+  </aside>
+  <aside class="name-status" id="notice-next-region" data-component="next-region" data-scope="guide">
+    <h2 class="sr-only">다음 지역 안내</h2>
+    <p>이 표에 실린 사냥터의 몬스터는 Lv.64까지예요. 더 높은 레벨대의 몬스터를 찾는다면 <a href="/guide/orbis-leafre/">오르비스·리프레 가이드</a>도 함께 봐 주세요. 오르비스 몬스터는 Lv.35~66, 리프레 몬스터는 Lv.97~153이라 빅토리아와 겹치는 구간도 있어, 어느 지역이 맞는지는 레벨대에 따라 달라요. Lv.65~96 사이는 오르비스·리프레 두 지역 범위에서는 확인되지 않은 구간이에요.</p>
+  </aside>
+  <aside class="name-status" id="notice-cube-guide" data-component="cube-guide" data-scope="guide">
+    <h2 class="sr-only">큐브·잠재능력 안내</h2>
+    <p><strong>알팡서버에도 큐브와 잠재능력이 있나요?</strong></p>
+    <p>제작진 발언으로 큐브 체계가 있다는 방향은 확인돼요. 팡이요는 레전드리 등급까지 있다고 언급하며, 후반 보스도 나중에 나올 수 있다는 방향으로 길게 가겠다고 했어요 (2026-10-28, TL-013). 다만 알팡서버의 큐브 확률은 아직 공시된 자료가 없어요. 이 사이트의 <a href="/calculator/cube/">큐브값 계산기</a>는 메이플플래닛이 공시한 확률을 기준으로 만든 체험 도구라, 알팡서버의 실제 확률과는 구분해서 봐 주세요. 알팡 기준 확률이 공시되면 그 기준으로 새로 정리할게요.</p>
   </aside>
 <section class="card">
 <h2>지역 이야기 · 엘리니아</h2>
