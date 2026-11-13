@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://alpang.gg/sitemap.xml
+
+# deploy probe 2026-11-14
