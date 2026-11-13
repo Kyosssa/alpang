@@ -268,9 +268,10 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
     if (!window.visualViewport) return;
     var r = search.getBoundingClientRect();
     var available = window.visualViewport.height - (r.bottom - window.visualViewport.offsetTop) - 24;
-    results.style.setProperty('--mob-list-height', Math.max(0, Math.floor(available)) + 'px');
+    results.style.setProperty('--mob-list-height', Math.max(160, Math.floor(available)) + 'px');
   }
-  if (window.visualViewport) window.visualViewport.addEventListener('resize', function () { if (results.classList.contains('open')) fitList(); });
+  if (window.visualViewport) { window.visualViewport.addEventListener('resize', function () { if (results.classList.contains('open')) fitList(); }); window.visualViewport.addEventListener('scroll', function () { if (results.classList.contains('open')) fitList(); }); }
+  search.addEventListener('focus', function () { search.scrollIntoView({behavior:'smooth', block:'start'}); });
   function ctaRow(oneHit) {
     var h = '<div class="cta-row">';
     if (selId) h += '<a class="cta-btn" href="/mobs/#mob-' + selId + '">' + (oneHit ? '이 몬스터가 나오는 맵 보기' : '이 몬스터 도감에서 보기') + '</a>';
@@ -278,7 +279,7 @@ var MOBS = [{"id": 100100, "name": "달팽이", "nameEn": "Snail", "lv": 1, "hp"
     h += '<button type="button" class="cta-btn cta-again">다른 몬스터로 다시 계산</button></div>';
     return h;
   }
-  result.addEventListener('click', function (e) { if (e.target && e.target.classList && e.target.classList.contains('cta-again')) { window.scrollTo(0, 0); search.focus(); } });
+  result.addEventListener('click', function (e) { if (e.target && e.target.classList && e.target.classList.contains('cta-again')) { selected.classList.remove('show'); selected.innerHTML = ''; search.value = hpInput.value = dmgMin.value = dmgMax.value = ''; result.classList.remove('show'); search.focus({preventScroll: true}); search.scrollIntoView({behavior:'smooth', block:'center'}); } });
   function fmt(n) { return n.toLocaleString('ko-KR'); }
   document.addEventListener('error', function (e) { if (e.target && e.target.tagName === 'IMG') e.target.style.visibility = 'hidden'; }, true);
   function icon(id) { return 'https://maplestory.io/api/GMS/95/mob/' + id + '/icon'; }
@@ -533,9 +534,10 @@ const ALL_SKILLS = [{"id": 1000006, "jobs": [100], "max_level": 10, "desc": "Per
     if (!window.visualViewport) return;
     var r = search.getBoundingClientRect();
     var available = window.visualViewport.height - (r.bottom - window.visualViewport.offsetTop) - 24;
-    results.style.setProperty('--mob-list-height', Math.max(0, Math.floor(available)) + 'px');
+    results.style.setProperty('--mob-list-height', Math.max(160, Math.floor(available)) + 'px');
   }
-  if (window.visualViewport) window.visualViewport.addEventListener('resize', function () { if (results.classList.contains('open')) fitList(); });
+  if (window.visualViewport) { window.visualViewport.addEventListener('resize', function () { if (results.classList.contains('open')) fitList(); }); window.visualViewport.addEventListener('scroll', function () { if (results.classList.contains('open')) fitList(); }); }
+  search.addEventListener('focus', function () { search.scrollIntoView({behavior:'smooth', block:'start'}); });
   function fmt(n) { return n.toLocaleString('ko-KR'); }
   function clearResult(msg) {
     result.innerHTML = '<p class="s2-cannot">' + msg + '</p>';
