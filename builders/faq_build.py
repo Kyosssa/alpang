@@ -1,0 +1,142 @@
+import os
+THEME_INIT = "<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>"
+THEME_BTN = '<button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>'
+THEME_SCRIPT = "<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>"
+V = "https://www.youtube.com/watch?v=_bQwgKZYGF4"
+QA = [
+ ("알팡서버 공식 홈페이지가 있나요?", "알팡서버의 공식 홈페이지는 아직 확인되지 않았어요. 이 사이트(알팡지지)는 제작진이 운영하는 공식 사이트가 아니라, 서버를 대비해 본진 게임 자료와 제작진 발언을 정리해 두는 비공식 정보 사이트예요. 공식 홈페이지가 열리면 이 문항에 주소를 이어서 정리할게요.", ""),
+ ("유료인가요? 과금 체계는 어떻게 되나요?", "과금 체계를 정했다는 발언은 아직 없어요. 확인되는 것은 운영 방침뿐입니다. 운영진은 무과금으로 유저들과 함께 플레이할 예정이라고 했고, 큰손 후원자나 별풍선에 휘둘려 특정 유저에게 특혜를 주는 일은 없을 것이라고 밝혔어요. 과금 체계가 공개되면 이 문항에 이어서 정리할게요.", "출처 TL-008 32:37 · TL-009 57:49 · TL-001 6:50"),
+ ("오픈 일정이 정해졌나요?", "아직 확정된 일정은 없어요. 오픈 기한을 따로 약속하지 않겠다는 입장은 그대로이고, 클로즈 베타는 10~11월 중 진행할 예정이라는 계획이 나왔어요. 베타 시작은 1주일 전쯤 방송으로 알리겠다고 했습니다. 다만 이것은 계획 단계의 발언이라, 확정 일정으로 정해진 것은 아니에요. 일정이 정해지면 이 사이트의 타임라인에 바로 정리하고, 텔레그램 채널(@alpang_gg)에도 속보로 올려요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=45s\" target=\"_blank\" rel=\"noopener\">발언 0:45 구간 보기</a>"),
+ ("알팡서버는 어떻게 접속하나요?", "아직 서버가 열리지 않아 접속 방법이 공개되지 않았어요. 클로즈 베타는 10~11월 중 진행할 예정이라는 계획이 나왔고, 시작 1주일 전쯤 방송으로 알리겠다고 했어요. 접속 절차가 공개되면 이 문항에 이어서 정리할게요.", "<a href=\"https://www.youtube.com/post/UgkxNwFh0M7TUHySmAvvnQmhNoZ5YPutVZG2\" target=\"_blank\" rel=\"noopener\">근거: 알티 유튜브 커뮤니티 공지 (2026-10-19)</a>"),
+ ("어떤 게임 기반인가요?", "메이플월드 리소스는 쓰지 않고, 본진 메이플스토리 파일만으로 구현 중이라고 설명했어요. 카메라 이동 같은 부분도 본진과 같은 상태에서 출발하는 것이 지향점이라고 했어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=79s\" target=\"_blank\" rel=\"noopener\">발언 1:19 구간 보기</a>"),
+ ("기반 버전이 정해졌나요?", "아직 확정된 기반 버전 발표는 없어요. 메이플스토리 빅뱅 직후 구간의 옛날 메이플을 지향한다는 취지의 설명만 확인돼 있어요. 이 사이트의 데이터베이스가 본진 메이플스토리 빅뱅 직후(GMS 95) 기준으로 수집됐다는 표기는 자료 수집 기준일 뿐, 서버의 기반 버전이 그 구간으로 정해졌다는 뜻은 아니에요.", "<a href=\"/timeline/\">발언 원문은 타임라인에서 확인하기</a>"),
+ ("이 사이트의 데이터는 어느 버전 기준인가요?", "이 사이트의 데이터베이스는 본진 메이플스토리 빅뱅 직후(GMS 95) 자료를 maplestory.io를 통해 수집해 정리한 거예요. 이건 자료를 모은 기준일 뿐, 알팡서버의 기반 버전이 그 구간으로 정해졌다는 뜻은 아니에요. 데이터를 어떤 기준으로 골랐는지는 데이터 기준 안내 페이지에 따로 정리해 뒀어요.", "사이트 안내 · <a href=\"/data-criteria/\">데이터 기준 안내</a>"),
+ ("경험치 배율은 어떻게 되나요?", "시점순으로 보면 이렇습니다. 한 방송에서는 배율이 1배율이라는 발언이 반복해서 나왔지만(TL-009), 이후 다른 방송에서는 '1배율도 빠르다'는 취지의 설명이 나왔습니다(TL-001). 발언의 취지는 이어지지만, 시점마다 표현이 달라 확정된 배율 사양으로 안내하지는 않습니다. 배율이 최종 확정됐다는 발언은 아직 없습니다.", "출처: TL-009 56:39 (같은 방송 1:31:27 · 1:54:13에서도 재차 강조) → TL-001 5:25 · <a href=\"/timeline/\">타임라인에서 발언 확인하기</a>"),
+ ("해상도는 고정인가요?", "자유 해상도를 지원한다고 밝혔어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=159s\" target=\"_blank\" rel=\"noopener\">발언 2:39 구간 보기</a>"),
+ ("커스텀 콘텐츠가 들어가나요?", "옛 메이플을 그대로 구현하는 것에서 시작하고, 커스텀 콘텐츠는 유저 반응을 보고 적용 여부를 정한다는 방향이에요. 직업 개성을 살리는 구상도 있지만 본인이 기획 단계이며 확정은 아니라고 강조했어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=206s\" target=\"_blank\" rel=\"noopener\">발언 3:26 구간 보기</a>"),
+ ("큐브를 자동으로 돌리는 기능이 있나요?", "큐브 자동 돌리기는 제작진이 꼭 넣어야겠다고 밝힌 기능이에요. 메이플플래닛에서 큐브를 대량으로 직접 돌려 본 경험을 얘기하면서, 10개씩 한 번에 돌리는 방식도 언급했어요. 다만 실제 구현이 확인된 것은 아니라서, 도입 계획 발언으로만 안내해요.", "출처 TL-011 · 2026-10-09 · 13:47"),
+ ("에디셔널 잠재능력이나 추가옵션도 있나요?", "에디셔널 잠재능력과 추가옵션은 없다고 밝혔어요. 기본 잠재능력(윗잠)만 있고, 그 당시 버전이라 윗잠만 있다는 설명이었어요.", "출처 TL-009 · 2026-09-18 · 1:46:39"),
+ ("랭킹 시스템이 있나요?", "공식 랭킹을 도입하겠다는 계획을 밝혔어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=317s\" target=\"_blank\" rel=\"noopener\">발언 5:17 구간 보기</a>"),
+ ("서버 리셋(초기화)이 있나요?", "하드 리셋은 하지 않겠다고 명언했어요. 부위별 교체 같은 소프트 리셋은 구상은 있으나 확정은 아니라고 덧붙였어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=361s\" target=\"_blank\" rel=\"noopener\">발언 6:01 구간 보기</a> · <a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=377s\" target=\"_blank\" rel=\"noopener\">발언 6:17 구간 보기</a>"),
+ ("후원하면 혜택이 있나요?", "후원 규모에 따라 특정 유저를 봐주는 일은 없을 것이라고 밝혔어요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=410s\" target=\"_blank\" rel=\"noopener\">발언 6:50 구간 보기</a>"),
+ ("정식 서버 이름은 뭔가요?", "이름은 이미 정해졌지만 변수가 있어 비공개라고 밝혔어요. 지금 쓰는 '알팡서버'는 통칭이에요.", "<a href=\"https://www.youtube.com/watch?v=_bQwgKZYGF4&t=435s\" target=\"_blank\" rel=\"noopener\">발언 7:15 구간 보기</a>"),
+ ("개발은 어느 단계까지 와 있나요?", "시점순으로 보면 이렇습니다. 초기에는 준비 단계를 설명했고(TL-008), 이후 실제로 만드는 단계로 넘어갔다는 취지의 발언이 이어졌습니다(TL-009). 최근에는 클로즈 베타를 10~11월 중 진행할 예정이라는 공지까지 나왔습니다(TL-010, 2026-10-19). 단계 표현은 시점마다 달라서, 확정된 진행률 수치로는 안내하지 않습니다.", "출처: TL-008 1:14:35 → TL-009 24:46 → TL-005 → TL-010 (2026-10-19)"),
+ ("서버를 오래 운영할 계획인가요?", "제작진은 오래 운영하겠다는 취지의 발언을 여러 시점에서 반복해 왔습니다. 이 문항은 그런 공약성 발언을 모은 것으로, 운영 기간이 확정됐다는 뜻은 아닙니다.", "출처: TL-008 45:57 · 1:32:59, TL-009 1:02:50, TL-001 7:45"),
+ ("외부 투자나 매각 없이 독립적으로 운영하나요?", "제작진은 매각이나 외부 투자 없이 독립적으로 운영한다는 취지로 말했고, 첫 간판 게임에 재투자한다는 방향도 함께 밝혔습니다.", "출처: TL-009 1:02:50"),
+ ("세계관이나 IP를 확장할 계획이 있나요?", "세계관과 IP 확장에 대한 구상은 발언으로 나온 적이 있습니다. 다만 계획 단계의 구상이라, 구체적인 형태나 시기가 정해진 것은 아닙니다.", "출처: TL-008 4:09"),
+ ("원작과 같은 느낌으로 구현되나요?", "제작진은 본진과 같은 느낌으로 구현한다는 방향을 밝혔습니다. 어느 범위까지 같은지는 항목마다 다를 수 있어, 전체가 동일하다는 뜻으로 안내하지는 않습니다.", "출처: TL-009 35:17 (TL-001 1:19 보조)"),
+ ("UI는 어떤 방향인가요?", "UI 방향에 대한 발언은 한 구간에서만 확인됩니다. 그 발언에서 '장식용 UI'가 무엇인지까지는 특정되지 않아, 이 문항에서는 예시를 만들지 않고 발언이 있는 범위만 안내합니다.", "출처: TL-001 2:16"),
+ ("솔로 플레이나 이벤트 보스도 있나요?", "솔로 플레이와 이벤트 보스에 대한 구상 단계의 발언이 있습니다. 테스트 서버에 대한 발언과는 시점과 단계가 달라, 두 가지를 섞지 않고 구분해 안내합니다.", "출처: TL-001 4:06 (TL-009 43:29는 경계 표시)"),
+ ("스우나 데미안 같은 후반 보스도 나오나요?", "레전드리 등급까지 있다는 점을 들며, 스우·데미안 같은 후반 보스도 나중에 나올 수 있다고 언급했어요. 다만 '나오겠죠'라는 추정 표현이 섞인 방향성 발언이라, 확정된 출시 콘텐츠로는 안내하지 않아요.", "출처 TL-013 · 2026-10-28 · 03:40:14경"),
+ ("공식 소식은 어디서 볼 수 있나요?", "공식 소식을 전하는 채널에 대해서는 발언이 있는 범위 안에서만 안내합니다. 발언에 나오지 않은 채널 이름은 만들지 않습니다.", "출처: TL-009 27:01 (TL-005 보조)"),
+ ("알팡서버 새 소식은 이 사이트에서 어떻게 확인하나요?", "제작진의 새 발언과 공지는 타임라인에 그때그때 정리해 올려요. 빠르게 받아 보고 싶다면 텔레그램 채널(@alpang_gg)에서도 같은 소식을 속보로 전해요. 확정되지 않은 일정은 일정으로 적지 않고, 발언이 나온 그대로만 정리해요.", "사이트 안내 · <a href=\"/timeline/\">타임라인</a>"),
+ ("한방컷 계산기는 어떻게 쓰나요?", "몬스터를 직접 때려 보고 확인한 피해 범위를 입력하면, 몬스터 HP를 기준으로 몇 방에 잡을 수 있는지를 범위로 알려 주는 도구예요. 스펙으로 피해를 예측하는 도구가 아니에요. 계산기 페이지에서 잡으려는 몬스터를 고르고, 여러 번 때려 보고 관측한 가장 약했던 피해(최소)와 가장 셌던 피해(최대)를 넣으면 돼요.", "사이트 안내 · <a href=\"/calculator/onehit/\">한방컷 계산기</a>"),
+ ("큐브값 계산기의 확률은 실제 서버 확률인가요?", "아니에요. 이 계산기는 메이플플래닛에 공시된 확률을 기준으로, 큐브를 돌렸을 때의 가치를 체험해 보는 도구예요. 알팡서버의 실제 큐브 확률은 아직 공시되지 않았어요.", "사이트 안내 · <a href=\"/calculator/cube/\">큐브값 계산기</a>"),
+ ("다른 언어로도 볼 수 있나요?", "네. 번체 중국어(대만)와 베트남어 페이지가 있어요. 홈과 주요 페이지, 자주 묻는 질문과 타임라인을 각 언어로 볼 수 있어요.", "사이트 안내 · <a href=\"/taiwan/\">/taiwan/</a> · <a href=\"/vietnam/\">/vietnam/</a>"),
+ ("문의는 어디로 하면 되나요?", "이 사이트의 내용에 대한 문의는 alpangland@gmail.com으로 보내 주세요. 알팡서버 자체의 운영 문의는 이 사이트에서 받지 않아요. 이 사이트는 제작진과 무관한 비공식 정보 사이트예요.", "사이트 안내"),
+]
+DEF_CARD = """<section class="card"><h2>알팡서버가 무엇인가요?</h2><p>알팡서버는 스트리머 팡이요와 알티가 함께 만들고 있는, 메이플스토리를 기반으로 한 월드의 이름이에요. 정식 출시 때는 다른 이름으로 나올 예정이라 지금의 '알팡서버'는 가제로 쓰이는 이름인데, 출시 전부터 커뮤니티에서는 이 이름으로 굳어 불리고 있어요. 이 사이트(알팡지지)는 그 서버를 대비해 본진 게임 자료와 제작진 발언을 정리해 두는 정보 사이트예요. 서버의 오픈 일정과 기반 버전은 아직 확정돼 있지 않아요.</p></section>\n"""
+items = DEF_CARD
+for i, (q, a, src_html) in enumerate(QA, 1):
+    src = f'<p class="src">{src_html}</p>' if src_html else ""
+    items += f"""<section class="card"><h2><span class="num">{i}</span><span class="q">Q.</span> {q}</h2><p>{a}</p>{src}</section>\n"""
+html = f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>확인된 발언 FAQ — 알팡지지</title>
+<meta name="description" content="알팡서버에 대해 제작진이 실제로 한 발언을 근거로 정리한 FAQ입니다.">
+<link rel="canonical" href="https://alpang.gg/faq/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="확인된 발언 FAQ — 알팡지지">
+<meta property="og:description" content="알팡서버에 대해 제작진이 실제로 한 발언을 근거로 정리한 FAQ입니다.">
+<meta property="og:url" content="https://alpang.gg/faq/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{THEME_INIT}
+<style>
+  :root{{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}}
+  *{{margin:0;padding:0;box-sizing:border-box}}
+  body{{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}}
+  button,input,select,textarea{{font-family:inherit}}
+  .wrap{{max-width:1280px;margin:0 auto}}
+  .gnb{{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}}
+  .gnb .logo{{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}}
+  .gnb nav{{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}}
+  .gnb nav a{{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}}
+  @media (max-width:560px){{ .gnb .logo{{font-size:18px}} .gnb nav a{{font-size:14px;margin-left:10px}} }}
+  .gnb nav a{{display:inline-flex;align-items:center;min-height:44px}}
+  @media (max-width:768px){{.gnb{{flex-wrap:nowrap}}.gnb nav{{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}}.gnb nav::-webkit-scrollbar{{display:none}}}}
+  .gnb nav a.on{{color:var(--accent-dark)}}
+  .new-dot{{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}}
+  .new-dot.on{{display:inline-block}}
+  .intro{{text-align:center;padding:28px 0 16px}}
+  .live-badge{{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}}
+  .live-dot{{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}}
+  @keyframes livePulse{{0%{{box-shadow:0 0 0 0 rgba(31,157,85,.45)}}70%{{box-shadow:0 0 0 7px rgba(31,157,85,0)}}100%{{box-shadow:0 0 0 0 rgba(31,157,85,0)}}}}
+  @media (prefers-reduced-motion: reduce){{.live-dot{{animation:none}}}}
+  .intro h1{{font-size:28px;font-weight:800}} .intro h1 span{{color:var(--accent)}}
+  .intro .tag{{color:var(--sub);font-size:15px;margin-top:6px}}
+  .disclaimer{{font-size:14px;color:var(--sub);text-align:center;margin-top:6px}}
+  section.card{{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}}
+  h2{{font-size:18px;font-weight:700;margin-bottom:6px}} h2 .q{{color:var(--accent)}}
+  .num{{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;margin-right:7px;vertical-align:2px}}
+  p{{font-size:16px}}
+  .src{{font-size:13px;margin-top:8px}} .src a{{color:var(--accent-dark)}}
+  footer{{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}}
+  .theme-toggle{{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}}
+  .theme-toggle svg{{width:18px;height:18px;display:block}}
+  .theme-toggle .ic-sun{{display:none}}
+  [data-theme="dark"]{{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}}
+  [data-theme="dark"] body{{letter-spacing:-0.01em}}
+  [data-theme="dark"] .theme-toggle .ic-sun{{display:block}}
+  [data-theme="dark"] .theme-toggle .ic-moon{{display:none}}
+  [data-theme="dark"] .gnb{{background:rgba(18,20,23,.92)}}
+  [data-theme="dark"] section.card{{box-shadow:0 1px 3px rgba(0,0,0,.35)}}
+  [data-theme="dark"] .num{{background:var(--accent);color:#241203}}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{{transition:transform .12s ease, box-shadow .12s ease}}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{{transform:translateY(-2px)}}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}}
+</style>
+<script type="application/ld+json">
+{{"@context":"https://schema.org","@graph":[{{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"}},{{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}}]}}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href=\"/\">홈</a><a href=\"/timeline/\">타임라인<span class=\"new-dot\" id=\"tlNewDot\" aria-label=\"새 글 있음\"></span></a><a href=\"/faq/\" class=\"on\">FAQ</a><a href=\"/mobs/\">몬스터 도감</a><a href=\"/maps/\">맵 탐색</a><a href=\"/items/\">아이템</a><a href=\"/npcs/\">NPC·퀘스트</a><a href=\"/jobs/\">직업·스킬</a><a href=\"/calculator/cube/\">큐브값 계산기</a><a href=\"/calculator/onehit/\">한방컷 계산기</a></nav>{THEME_BTN}</div>
+  <div class="intro">
+    <h1>확인된 발언 <span>FAQ</span></h1>
+    <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>새 질문과 답변이 추가되면 실시간으로 업데이트됩니다</p>
+    <div class="tag">자주 묻는 질문에, 제작진이 실제로 한 말로만 답합니다</div>
+    <div class="disclaimer">근거는 알티 유튜브 '알팡서버 개발 상황 최초 공개합니다' (2026-09-26) 발언이에요. 발언 기록이며 확정 사양이 아닙니다. 전체 기록은 <a href="/timeline/">타임라인</a>에서 볼 수 있어요.</div>
+  </div>
+  <main>
+{items}  </main>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    페이지 갱신일: 2026-10-14
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+{THEME_SCRIPT}
+<script src="/assets/hit.js?v=2" defer></script>
+</body>
+</html>"""
+open(os.path.expanduser("~/workspace/alpang/site/faq/index.html"), "w").write(html)
+print("faq built | items:", len(QA), "| bytes:", len(html))

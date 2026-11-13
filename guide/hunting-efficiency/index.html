@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사냥터 효율 읽는 법 — 알팡지지</title>
+<meta name="description" content="몬스터 경험치와 맵 레벨 범위를 어떤 순서로 읽어야 내게 맞는 사냥터를 고를 수 있는지 정리했습니다.">
+<link rel="canonical" href="https://alpang.gg/guide/hunting-efficiency/">
+<link rel="alternate" hreflang="ko" href="https://alpang.gg/guide/hunting-efficiency/">
+<link rel="alternate" hreflang="zh-TW" href="https://alpang.gg/taiwan/guide/hunting-efficiency/">
+<link rel="alternate" hreflang="vi" href="https://alpang.gg/vietnam/guide/hunting-efficiency/">
+<link rel="alternate" hreflang="x-default" href="https://alpang.gg/guide/hunting-efficiency/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="사냥터 효율 읽는 법 — 알팡지지">
+<meta property="og:description" content="몬스터 경험치와 맵 레벨 범위를 어떤 순서로 읽어야 내게 맞는 사냥터를 고를 수 있는지 정리했습니다.">
+<meta property="og:url" content="https://alpang.gg/guide/hunting-efficiency/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 16px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disc{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--text);margin-top:16px;text-align:center}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:18px;font-weight:700;margin-bottom:10px}
+  p.body{font-size:16px;margin-bottom:8px}
+  .legend{font-size:13px;color:var(--sub);margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5;margin-top:6px}
+  th{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td.num, th.num{text-align:right;white-space:nowrap}
+  .mname{font-weight:700}
+  .men{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+  .chip{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:13.5px;margin:1px 2px 1px 0}
+  .chip b{color:var(--accent-dark)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}
+  .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .mob .islot{display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:#F3F4F6;border-radius:6px;margin:0 auto 6px}
+  .mob .mimg{max-width:32px;max-height:32px}
+  .mob .nm{font-size:15px;font-weight:700}
+  .mob .en{font-size:12.5px;color:var(--sub);font-weight:600}
+  .mob .stat{font-size:14px;line-height:1.5;margin-top:6px}
+  .mob .stat b{color:var(--accent-dark)}
+  .mob .where{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.6}
+  .cnt{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ table{font-size:13.5px} th,td{padding:7px 6px} .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))} }
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] section.card{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .mob{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .chip{background:#22252B}
+  [data-theme="dark"] .mob .islot{background:#26292F}
+  [data-theme="dark"] td{border-bottom-color:var(--line)}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .gtable th{background:#F3EDE2;border-bottom:2px solid var(--line)}
+  .gtable tbody tr:nth-child(even){background:#FAF6EE}
+  .gtable tbody tr:hover{background:#F1E8D8}
+  [data-theme="dark"] .gtable th{background:#2A251C}
+  [data-theme="dark"] .gtable tbody tr:nth-child(even){background:#211D16}
+  [data-theme="dark"] .gtable tbody tr:hover{background:#2E2820}
+.glink{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;margin:2px 4px 2px 0;background:var(--card)}
+.glink:hover{color:var(--ink)}
+
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.twrap>table{margin:0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="intro">
+    <h1>사냥터 효율 <span>읽는 법</span></h1>
+    <div class="tag">순위표가 아니라, 숫자를 판단 재료로 바꾸는 순서</div>
+  </div>
+  <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+  <p class="hub-link" style="text-align:center;margin:12px 0 0"><a href="/guide/">가이드 전체 보기 →</a></p>
+<section class="card">
+    <h2>사냥터 효율, 숫자만 보면 속아요 — 도감 수치 읽는 법</h2>
+    <p class="body">사냥터를 고를 때 제일 먼저 보는 숫자가 몬스터 경험치예요. 그런데 경험치가 높은 몬스터가 있는 맵이 항상 빠른 사냥터는 아닙니다. 이 글에서는 몬스터 도감과 맵 탐색에 정리된 숫자를 어떤 순서로 읽으면 내게 맞는 사냥터를 고를 수 있는지, 그 읽는 법을 정리했어요. 순위를 매기는 글이 아니라, 숫자를 판단 재료로 바꾸는 법에 대한 글이에요.</p>
+    <p class="body">첫 번째로 볼 것은 레벨 차이예요. 몬스터 경험치는 레벨이 오를수록 커지는 구조라, 고레벨 몬스터의 경험치가 큰 건 당연합니다. 데이터로 봐도 경험치 상위권은 드래고니카 (Lv 107, 경험치 320,000) 같은 보스급이 차지해요. 이런 숫자와 초반 몬스터를 나란히 놓고 비교하면 안 됩니다. 내 레벨과 크게 차이 나는 몬스터는 잡는 데 걸리는 시간과 위험이 함께 커지기 때문에, 경험치 숫자만으로 효율을 말할 수 없어요. 비교는 항상 내 레벨 근처의 몬스터들끼리 해야 합니다. 도감에서 레벨로 걸러 보는 기능이 있는 이유가 그래서예요.</p>
+    <p class="body">두 번째는 맵에 어떤 몬스터가 몇 종류 섞여 있는가예요. 출현 맵 245곳을 세어 보면, 한 맵에 한 레벨의 몬스터만 나오는 맵이 195곳으로 대부분이고, 레벨 범위가 21 이상 벌어지는 맵은 3곳뿐입니다. 범위가 넓은 맵은 약한 몬스터와 강한 몬스터가 섞여 나와서, 경험치 평균으로 읽으면 실제 체감과 어긋나요. 반대로 단일 레벨 맵은 사냥 리듬이 일정합니다. 맵 탐색에서 출현 몬스터 목록을 볼 때는 제일 강한 몬스터와 제일 약한 몬스터의 레벨 차부터 확인하는 습관이 좋아요. 이 사이트의 가이드에는 레벨 차이가 30 이상 벌어지는 맵에 '고레벨 몬스터 혼합' 표시를 따로 붙여 두었으니, 그 표시가 있으면 조심해서 읽으면 됩니다.</p>
+    <p class="body">세 번째는 경험치의 빈칸을 읽는 법이에요. 전체 몬스터 175종 가운데 경험치가 데이터에 없는 종이 4종 있습니다. 이건 경험치가 0이라는 뜻이 아니라, 원본 자료에서 확인되지 않았다는 뜻이에요. 이 사이트는 확인되지 않은 수치를 0으로 채우지 않고 '미확인'으로 표시합니다. 효율을 비교하다가 미확인 몬스터를 만나면, 그 맵은 숫자 비교에서 빼고 다른 기준으로 판단하는 게 맞습니다. 없는 숫자를 있는 것처럼 읽는 것이 제일 위험해요.</p>
+    <p class="body">네 번째는 출현 종수예요. 한 맵에 나오는 몬스터 종류가 적을수록 사냥이 단순해지고, 많을수록 상대가 계속 바뀝니다. 권역 등장 몬스터를 세어 보면 한 맵에만 나오는 몬스터가 대부분이라, 맵마다 '그 맵의 얼굴'인 몬스터가 정해져 있는 경우가 많아요. 반대로 여러 맵에 걸쳐 나오는 몬스터는 그 권역 어디서든 만나는 흔한 상대입니다. 사냥터를 고를 때는 그 맵의 대표 몬스터 하나를 정해 그 몬스터 기준으로 판단하고, 나머지는 섞여 나오는 정도로만 감안하는 읽기가 실전에 가깝습니다. 종류가 많다는 이유만으로 좋은 맵도, 나쁜 맵도 아니에요.</p>
+    <p class="body">숫자 감각을 잡는 예시를 하나 들어 볼게요. 레벨 30 이하 몬스터 중 경험치가 큰 편인 쉐도우 블레이드와 아시가루가 60, 순찰로봇S와 우드 마스크가 53입니다. 초반 구간의 경험치는 대략 이 범위에서 움직여요. 그런데 보스급인 드래고니카는 320,000으로 자릿수 자체가 다릅니다. 같은 '경험치'라는 숫자라도 구간이 다르면 비교가 성립하지 않는다는 것을 이 간격이 잘 보여 줘요. 도감에서 경험치를 볼 때는 절대값보다 '내 구간 안에서의 상대 위치'를 보는 것이 핵심입니다.</p>
+    <p class="body">다섯 번째는 한방컷과의 연결이에요. 경험치가 아무리 좋아도 내가 잡는 데 오래 걸리면 시간당 효율은 떨어집니다. 그래서 마지막 판단은 '몇 방에 잡는가'로 해야 해요. <a href="/calculator/onehit/">한방컷 계산기</a>에 내가 직접 때려 보고 확인한 피해 범위를 넣어 보면, 가능 컷과 보장 컷이 나뉘어 나옵니다. 보장 컷 기준으로 방 수가 적은 사냥터가 실제로는 꾸준한 사냥터인 경우가 많아요. 경험치로 후보를 추리고, 방 수로 최종 결정을 내리는 순서가 이 사이트 도구들의 설계 순서이기도 합니다.</p>
+    <p class="body">이 읽는 법을 이 사이트의 <a href="/guide/hunting/">사냥터 가이드</a>에 적용하면 이래요. 가이드의 후보표는 순위를 매긴 표가 아니라 비교표입니다. 같은 레벨 밴드 안에서 맵들을 나란히 놓고, 출현 몬스터와 그 레벨을 비교하게 만든 것이에요. 표를 볼 때는 첫 줄부터 정답처럼 읽지 말고, 내 레벨이 걸리는 밴드를 먼저 펼친 뒤 이 글의 순서 (레벨 범위, 미확인 여부, 방 수)를 그대로 적용하면 됩니다. 밴드 사이에 빈 구간이 있는 것도 데이터 그대로의 모습이에요. 예를 들어 초반 밴드 중에는 후보 맵이 하나도 없는 레벨 구간이 있는데, 없는 구간을 억지로 채우지 않고 비어 있다고 표시한 것이 이 사이트의 방식입니다. 빈칸은 결함이 아니라 '그 레벨에는 마땅한 후보가 데이터에 없다'는 정보로 읽어 주세요.</p>
+    <p class="body">정리하면 순서가 이래요. 내 레벨 근처로 후보를 좁히고, 맵의 레벨 범위가 좁은지 확인하고, 미확인 수치는 비교에서 빼고, 마지막에 한방컷으로 방 수를 재서 정합니다. 이 글에서 인용한 수치는 본진 빅뱅 직후 (GMS 95) 데이터 기준이라, 알팡서버에서 몬스터 배치가 달라지면 읽는 순서의 결론도 달라질 수 있어요. 서버가 열리면 실제 출현 구성부터 대조해 이 글의 예시를 갱신할게요.</p>
+    <p class="body">몬스터 레벨 · 경험치 검색은 <a href="/mobs/">몬스터 도감</a>에서 할 수 있어요.</p>
+  </section>
+
+  <section class="card glinks">
+    <h2>다른 가이드 보기</h2>
+    <div class="glink-row"><a class="glink" href="/guide/hunting/">초반 사냥터 후보 비교</a><a class="glink" href="/guide/orbis-leafre/">오르비스 & 리프레 몬스터 구경</a><a class="glink" href="/guide/edelstein/">에델슈타인 엿보기</a><a class="glink" href="/guide/ludibrium/">루디브리엄 마을 가이드</a><a class="glink" href="/guide/mushroom-shrine/">버섯신사 엿보기</a><a class="glink" href="/guide/scroll-reward-quests/">주문서 주는 퀘스트 총정리</a><a class="glink" href="/guide/return-routes/">귀환 연결로 읽는 이동 절약법</a></div>
+  </section>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-11-03
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+</body>
+</html>
