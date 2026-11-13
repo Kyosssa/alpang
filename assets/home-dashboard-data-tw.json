@@ -1,6 +1,30 @@
 {
- "status_slots": [],
+ "status_slots": [
+  {
+   "id": "event",
+   "label": "活動/公告",
+   "text": "Alpang 伺服器開服時程 — 等待官方公告",
+   "value": null
+  },
+  {
+   "id": "timer",
+   "label": "計時器",
+   "text": "重置時間 — 待官方確定後標示",
+   "value": null
+  },
+  {
+   "id": "server",
+   "label": "伺服器狀態",
+   "text": "開服前 — 伺服器尚未運作",
+   "value": null
+  }
+ ],
  "timeline_latest": [
+  {
+   "date": "2026-11-13",
+   "tag": "製作團隊直接發文",
+   "title": "알티, 일요일(11/15) 저녁 복귀 방송 예고 — \"개발이 거의 끝나간다\""
+  },
   {
    "date": "2026-10-29",
    "tag": "製作團隊直接發文",
@@ -10,12 +34,28 @@
    "date": "2026-10-28",
    "tag": "製作團隊直接發言（其他頻道聊天）",
    "title": "팡이요 在 찬해 直播聊天中提及 Alpang 伺服器方向 — 「有到傳說級，史烏·戴米安之後也會有」"
-  },
-  {
-   "date": "2026-10-19",
-   "tag": "製作團隊直接發文",
-   "title": "大家好！關於 Alpang 伺服器的詢問太多了，所以留篇文章"
   }
  ],
- "recommended_keywords": []
+ "recommended_keywords": [
+  {
+   "keyword": "슬라임",
+   "url": "/mobs/#mob-210100"
+  },
+  {
+   "keyword": "주황버섯",
+   "url": "/mobs/#mob-1210102"
+  },
+  {
+   "keyword": "에델슈타인",
+   "url": "/maps/#map-310000000"
+  },
+  {
+   "keyword": "뇌전 수리검",
+   "url": "/items/use.html#it2070005"
+  },
+  {
+   "keyword": "리스항구",
+   "url": "/maps/#map-104000000"
+  }
+ ]
 }

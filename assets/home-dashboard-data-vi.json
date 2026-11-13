@@ -1,6 +1,30 @@
 {
- "status_slots": [],
+ "status_slots": [
+  {
+   "id": "event",
+   "label": "Sự kiện / Thông báo",
+   "text": "Lịch mở máy chủ Alpang — đang chờ thông báo chính thức",
+   "value": null
+  },
+  {
+   "id": "timer",
+   "label": "Bộ hẹn giờ",
+   "text": "Thời gian đặt lại — sẽ hiển thị sau khi có xác nhận chính thức",
+   "value": null
+  },
+  {
+   "id": "server",
+   "label": "Trạng thái máy chủ",
+   "text": "Trước khi mở — máy chủ chưa hoạt động",
+   "value": null
+  }
+ ],
  "timeline_latest": [
+  {
+   "date": "2026-11-13",
+   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
+   "title": "알티, 일요일(11/15) 저녁 복귀 방송 예고 — \"개발이 거의 끝나간다\""
+  },
   {
    "date": "2026-10-29",
    "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
@@ -10,12 +34,28 @@
    "date": "2026-10-28",
    "tag": "Đội ngũ sản xuất phát ngôn trực tiếp (trò chuyện kênh khác)",
    "title": "팡이요 nhắc tới định hướng máy chủ Alpang trong trò chuyện ở kênh của 찬해 — \"Có tới cấp Legendary, 스우·데미안 sau này cũng có\""
-  },
-  {
-   "date": "2026-10-19",
-   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
-   "title": "Xin chào mọi người! Câu hỏi về máy chủ Alpang gửi tới quá nhiều nên tôi viết bài này"
   }
  ],
- "recommended_keywords": []
+ "recommended_keywords": [
+  {
+   "keyword": "슬라임",
+   "url": "/mobs/#mob-210100"
+  },
+  {
+   "keyword": "주황버섯",
+   "url": "/mobs/#mob-1210102"
+  },
+  {
+   "keyword": "에델슈타인",
+   "url": "/maps/#map-310000000"
+  },
+  {
+   "keyword": "뇌전 수리검",
+   "url": "/items/use.html#it2070005"
+  },
+  {
+   "keyword": "리스항구",
+   "url": "/maps/#map-104000000"
+  }
+ ]
 }
