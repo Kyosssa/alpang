@@ -3212,9 +3212,9 @@ var cards=[].slice.call(document.querySelectorAll('.map'));
 var cnt=document.getElementById('mapCount');var none=document.getElementById('mapNone');var clr=document.getElementById('mapClear');
 function norm(s){return (s||'').normalize('NFKC').toLowerCase().replace(/[\s\-_·.,'"!?()\[\]]/g,'');}
 function apply(){var q=norm(inp.value);var shown=0;
-cards.forEach(function(c){var ok=!q||(c.getAttribute('data-name')||'').indexOf(q)>=0;c.style.display=ok?'':'none';if(ok)shown++;});
+cards.forEach(function(c){var ok=!q||(c.getAttribute('data-name')||'').indexOf(q)>=0;if(ok){c.removeAttribute('data-fhide');c.style.display='';shown++;}else{c.setAttribute('data-fhide','1');c.style.display='none';}});
 document.querySelectorAll('.region').forEach(function(sec){var any=false;sec.querySelectorAll('.map').forEach(function(c){if(c.style.display!=='none')any=true;});sec.style.display=any?'':'none';});
-if(cnt)cnt.textContent=q?(shown.toLocaleString()+'곳 표시 / 전체 '+cards.length.toLocaleString()+'곳'):('전체 '+cards.length.toLocaleString()+'곳');
+if(cnt)cnt.textContent=(q||(typeof band!=='undefined'&&band!=='all'))?(shown.toLocaleString()+'곳 표시 / 전체 '+cards.length.toLocaleString()+'곳'):('전체 '+cards.length.toLocaleString()+'곳');
 if(none)none.hidden=shown>0;
 if(clr)clr.hidden=!q;}
 inp.addEventListener('input',apply);
