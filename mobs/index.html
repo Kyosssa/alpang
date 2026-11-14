@@ -114,7 +114,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 .skip-link:focus{top:8px}
 .name-status .rc{border-bottom:1px dashed #C25700;font-weight:600}
 .lvchips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
-.lvchip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
+.lvchip{min-height:44px;display:inline-flex;align-items:center;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
 .lvchip[aria-pressed="true"]{background:var(--slot);font-weight:700}
   .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
   .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
@@ -155,7 +155,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
   .dnote{font-size:12px;color:var(--sub);line-height:1.55;margin-top:7px}
   @media (max-width:560px){ .grid{grid-template-columns:1fr} .dgrid{grid-template-columns:1fr} }
 .lvchips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
-.lvchip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
+.lvchip{min-height:44px;display:inline-flex;align-items:center;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;font-size:13px;cursor:pointer}
 .lvchip[aria-pressed="true"]{background:var(--slot);font-weight:700}
 
   .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
@@ -1440,9 +1440,9 @@ function norm(s){return (s||'').normalize('NFKC').toLowerCase().replace(/[\s\-_�
 var band='all';
 function inBand(c){if(band==='all')return true;var lv=parseInt(c.getAttribute('data-lv'),10);if(isNaN(lv))return false;var p=band.split('-');var lo=parseInt(p[0],10);var hi=p[1]?parseInt(p[1],10):Infinity;return lv>=lo&&lv<=hi;}
 function apply(){var q=norm(inp.value);var shown=0;
-cards.forEach(function(c){var ok=(!q||(c.getAttribute('data-name')||'').indexOf(q)>=0)&&inBand(c);c.style.display=ok?'':'none';if(ok)shown++;});
+cards.forEach(function(c){var ok=(!q||(c.getAttribute('data-name')||'').indexOf(q)>=0)&&inBand(c);if(ok){c.removeAttribute('data-fhide');c.style.display='';shown++;}else{c.setAttribute('data-fhide','1');c.style.display='none';}});
 
-if(cnt)cnt.textContent=q?(shown.toLocaleString()+'종 표시 / 전체 '+cards.length.toLocaleString()+'종'):('전체 '+cards.length.toLocaleString()+'종');
+if(cnt)cnt.textContent=(q||(typeof band!=='undefined'&&band!=='all'))?(shown.toLocaleString()+'종 표시 / 전체 '+cards.length.toLocaleString()+'종'):('전체 '+cards.length.toLocaleString()+'종');
 if(none)none.hidden=shown>0;
 if(clr)clr.hidden=!q;}
 inp.addEventListener('input',apply);
@@ -1457,8 +1457,8 @@ apply();
   if (!more) return;
   var cards = Array.prototype.slice.call(document.querySelectorAll('.mob'));
   function applyPaging() {
-    cards.forEach(function (c) { if (c.getAttribute('data-pg') === '1') { c.style.display = ''; c.removeAttribute('data-pg'); } });
-    var passed = cards.filter(function (c) { return c.style.display !== 'none'; });
+    cards.forEach(function (c) { if (c.getAttribute('data-pg') === '1' && !c.hasAttribute('data-fhide')) { c.style.display = ''; c.removeAttribute('data-pg'); } });
+    var passed = cards.filter(function (c) { return !c.hasAttribute('data-fhide'); });
     var visible = 0;
     passed.forEach(function (c, i) {
       if (i >= limit) { c.style.display = 'none'; c.setAttribute('data-pg', '1'); }
