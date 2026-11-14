@@ -205,6 +205,15 @@ if(genBox){genBox.addEventListener('change',applyDisplay);}
 btns.forEach(function(b){b.addEventListener('click',function(){jobF=b.getAttribute('data-jf');applyDisplay();});});
 var q=new URLSearchParams(location.search).get('job');
 if(q&&document.querySelector('.jfbtn[data-jf="'+q+'"]')){jobF=q;}
+if(location.hash){
+  var ht=document.getElementById(location.hash.slice(1));
+  if(ht&&ht.classList.contains('icard')){
+    if(genBox&&genBox.checked&&ht.getAttribute('data-gen')!=='1'){genBox.checked=false;}
+    if(!jobOk(ht)){jobF='all';}
+    applyDisplay();
+    if(ht.style.display!=='none'){ht.scrollIntoView();}
+  }
+}
 applyDisplay();
 })();</script>
   <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
