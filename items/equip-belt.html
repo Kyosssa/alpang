@@ -204,6 +204,15 @@ if(genBox){genBox.addEventListener('change',applyDisplay);}
 btns.forEach(function(b){b.addEventListener('click',function(){jobF=b.getAttribute('data-jf');applyDisplay();});});
 var q=new URLSearchParams(location.search).get('job');
 if(q&&document.querySelector('.jfbtn[data-jf="'+q+'"]')){jobF=q;}
+if(location.hash){
+  var ht=document.getElementById(location.hash.slice(1));
+  if(ht&&ht.classList.contains('icard')){
+    if(genBox&&genBox.checked&&ht.getAttribute('data-gen')!=='1'){genBox.checked=false;}
+    if(!jobOk(ht)){jobF='all';}
+    applyDisplay();
+    if(ht.style.display!=='none'){ht.scrollIntoView();}
+  }
+}
 applyDisplay();
 })();</script>
   <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
@@ -221,5 +230,5 @@ applyDisplay();
 <script src="/assets/hit.js?v=2" defer></script>
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 <button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){var nearBottom=scrollY+innerHeight>document.documentElement.scrollHeight-140;b.classList.toggle('lift',nearBottom&&scrollY>600);b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
-<!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --></body>
+<!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --></body>
 </html>
