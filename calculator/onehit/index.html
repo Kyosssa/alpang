@@ -495,6 +495,7 @@ const ALL_SKILLS = [{"id": 1000006, "jobs": [100], "max_level": 10, "desc": "Per
   fillSkills();
   document.getElementById('lkGo').addEventListener('click', function () {
     resultBox.innerHTML = '';
+    var div = document.createElement('div');
     var r = ALL[Number(skillSel.value)];
     var lv = Number(lvInput.value);
     if (r.plain) {
@@ -502,7 +503,6 @@ const ALL_SKILLS = [{"id": 1000006, "jobs": [100], "max_level": 10, "desc": "Per
         '<span class="muted">이 스킬은 원본 설명에 데미지 수식이 없어 수치 조회 대상이 아닙니다.' + (r.max_level ? ' 최대 레벨 ' + r.max_level + '.' : '') + (r.desc ? '<br>원문 설명: ' + r.desc : '') + '</span>';
       resultBox.appendChild(div); resultBox.classList.add('show'); return;
     }
-    var div = document.createElement('div');
     var src = '<br><span class="muted">스킬 ID ' + r.skill_id + ' · 단위 근거: ' + r.unit_basis +
       '<br>원문 설명: ' + (r.desc_text || r.short_desc || '(원문 설명 없음)') + '</span>';
     if (!r.label) {
