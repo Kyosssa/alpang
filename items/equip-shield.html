@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>아이템 목록 · 장비 방패 — 알팡지지</title>
 <meta name="description" content="알팡지지 아이템 목록 후보 — 장비 · 방패 78개. 본진 빅뱅 직후(GMS 95) 기준.">
-<link rel="canonical" href="https://alpang.gg/items/equip-shield.html">
+<link rel="canonical" href="https://alpang.gg/items/equip-shield">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="알팡지지">
 <meta property="og:title" content="아이템 목록 · 장비 방패 — 알팡지지">
 <meta property="og:description" content="알팡지지 아이템 목록 후보 — 장비 · 방패 78개. 본진 빅뱅 직후(GMS 95) 기준.">
-<meta property="og:url" content="https://alpang.gg/items/equip-shield.html">
+<meta property="og:url" content="https://alpang.gg/items/equip-shield">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -204,21 +204,12 @@ if(genBox){genBox.addEventListener('change',applyDisplay);}
 btns.forEach(function(b){b.addEventListener('click',function(){jobF=b.getAttribute('data-jf');applyDisplay();});});
 var q=new URLSearchParams(location.search).get('job');
 if(q&&document.querySelector('.jfbtn[data-jf="'+q+'"]')){jobF=q;}
-if(location.hash){
-  var ht=document.getElementById(location.hash.slice(1));
-  if(ht&&ht.classList.contains('icard')){
-    if(genBox&&genBox.checked&&ht.getAttribute('data-gen')!=='1'){genBox.checked=false;}
-    if(!jobOk(ht)){jobF='all';}
-    applyDisplay();
-    if(ht.style.display!=='none'){ht.scrollIntoView();}
-  }
-}
 applyDisplay();
 })();</script>
   <p class="back"><a href="/items/equip.html">← 장비 분류 목차로</a> · <a href="/items/">아이템 전체 목차로</a></p>
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="/cdn-cgi/l/email-protection#8cede0fcede2ebe0ede2e8ccebe1ede5e0a2efe3e1" style="color:var(--sub)">문의하기</a><br>
     데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-10-14
   <br>
     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
@@ -230,5 +221,5 @@ applyDisplay();
 <script src="/assets/hit.js?v=2" defer></script>
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 <button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){var nearBottom=scrollY+innerHeight>document.documentElement.scrollHeight-140;b.classList.toggle('lift',nearBottom&&scrollY>600);b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
-</body>
+<!-- Cloudflare Pages Analytics --><!-- Cloudflare Pages Analytics --></body>
 </html>
