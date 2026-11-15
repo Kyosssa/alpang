@@ -1,4 +1,21 @@
 {
+ "timeline_latest": [
+  {
+   "date": "2026-11-15",
+   "tag": "Đội ngũ sản xuất phát ngôn trực tiếp",
+   "title": "알티 phát sóng trở lại — buổi phát sóng bắt đầu"
+  },
+  {
+   "date": "2026-11-13",
+   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
+   "title": "알티, thông báo phát sóng trở lại vào tối Chủ nhật tuần này (15/11) — \"Việc phát triển gần như đã xong\""
+  },
+  {
+   "date": "2026-10-29",
+   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
+   "title": "팡이요, \"Hôm nay là ngày họp của máy chủ Alpang\" — thông báo nghỉ phát sóng vì cuộc họp quan trọng"
+  }
+ ],
  "status_slots": [
   {
    "id": "event",
@@ -17,23 +34,6 @@
    "label": "Trạng thái máy chủ",
    "text": "Trước khi mở — máy chủ chưa hoạt động",
    "value": null
-  }
- ],
- "timeline_latest": [
-  {
-   "date": "2026-11-13",
-   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
-   "title": "알티, 일요일(11/15) 저녁 복귀 방송 예고 — \"개발이 거의 끝나간다\""
-  },
-  {
-   "date": "2026-10-29",
-   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
-   "title": "팡이요, \"Hôm nay là ngày họp của máy chủ Alpang\" — thông báo nghỉ phát sóng vì cuộc họp quan trọng"
-  },
-  {
-   "date": "2026-10-28",
-   "tag": "Đội ngũ sản xuất phát ngôn trực tiếp (trò chuyện kênh khác)",
-   "title": "팡이요 nhắc tới định hướng máy chủ Alpang trong trò chuyện ở kênh của 찬해 — \"Có tới cấp Legendary, 스우·데미안 sau này cũng có\""
   }
  ],
  "recommended_keywords": [
