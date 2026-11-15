@@ -38,3 +38,12 @@
 - 했음: 입력 해시 대조, 격리 재생성, 동결본 바이트 대조, 저장소 main 대조, 라이브 대조, CF 토큰 복호화.
 - 안 했음: 계산기 동작 시험(브라우저에서 계산 결과 확인). 이번 재상신은 세대 합치기(바이트 계보) 판정이고, 계산 로직은 바뀌지 않았다(저장소본과 1줄 차이).
 - 증거: `onehit-verify-20261116/` (regen-lf.html, repo.html, live-raw.html, MANIFEST.sha256).
+
+## 6. 배포 후 라이브 대조 — **종결** (2026-11-16 04:17)
+- 고지: `packages/notices/20261116-0325-onehit.md`. 커밋 `a7b589c2`(main, 1파일), 사이트맵 96 유지.
+- 저장소 main `calculator/onehit/index.html`(API contents) = `71cd1763…`. **동결본과 일치.**
+- 라이브 실측 288,552B · `32798656…`.
+  - 예상대로 Cloudflare가 mailto를 email-protection 링크로 바꾸고 decode 스크립트를 주입했다. 토큰 1개를 복호화하면 `alpangland@gmail.com`이다.
+  - 엣지 정규화(링크 복원, decode 스크립트·Analytics 비컨 제거) 결과는 288,187B · `71cd1763…`로 **동결본과 바이트 일치**한다.
+- 증거: `onehit-verify-20261116/post/` (live.html, live-norm.html, repo.html, `post-MANIFEST.sha256`).
+- **판정: onehit 세대 합치기 재상신 — 종결.** 큐브 빌더 역이식(§4)은 별건으로 남는다.
