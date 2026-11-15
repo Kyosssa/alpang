@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>착용 레벨로 읽는 성장 구간 — 알팡지지</title>
+<meta name="description" content="아이템 14,577건 중 착용 레벨 값이 있는 3,179건의 분포를 세어, 다음 장비로 갈아타는 계단이 어디에 몰려 있는지 읽는 법을 정리했습니다.">
+<link rel="canonical" href="https://alpang.gg/guide/equip-levels/">
+<link rel="alternate" hreflang="ko" href="https://alpang.gg/guide/equip-levels/">
+<link rel="alternate" hreflang="zh-TW" href="https://alpang.gg/taiwan/guide/equip-levels/">
+<link rel="alternate" hreflang="vi" href="https://alpang.gg/vietnam/guide/equip-levels/">
+<link rel="alternate" hreflang="x-default" href="https://alpang.gg/guide/equip-levels/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="착용 레벨로 읽는 성장 구간 — 알팡지지">
+<meta property="og:description" content="아이템 14,577건 중 착용 레벨 값이 있는 3,179건의 분포를 세어, 다음 장비로 갈아타는 계단이 어디에 몰려 있는지 읽는 법을 정리했습니다.">
+<meta property="og:url" content="https://alpang.gg/guide/equip-levels/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{--bg:#faf9f6;--card:#ffffff;--line:#e6e1d8;--text:#1f1c18;--sub:#6f6a5e;--accent:#FF7E36;--accent-dark:#C25700;--accent-soft:#FFF1E8;--unknown:#6b6250}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 16px 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto}
+  .gnb{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px;padding:14px 6px;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 84%,transparent);mask-image:linear-gradient(to right,#000 84%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
+  .gnb nav a.on{color:var(--accent-dark)}
+  .intro{text-align:center;padding:28px 0 16px}
+  .intro h1{font-size:28px;font-weight:800} .intro h1 span{color:var(--accent)}
+  .intro .tag{color:var(--sub);font-size:15px;margin-top:6px}
+  .disc{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--text);margin-top:16px;text-align:center}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+  h2{font-size:18px;font-weight:700;margin-bottom:10px}
+  p.body{font-size:16px;margin-bottom:8px}
+  .legend{font-size:13px;color:var(--sub);margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5;margin-top:6px}
+  th{background:var(--accent-soft);color:var(--accent-dark);font-weight:800;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:8px 10px;border-bottom:1px solid #f0ece3;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td.num, th.num{text-align:right;white-space:nowrap}
+  .mname{font-weight:700}
+  .men{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+  .chip{display:inline-block;background:#f7f3ec;border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:13.5px;margin:1px 2px 1px 0}
+  .chip b{color:var(--accent-dark)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:6px}
+  .mob{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .mob .islot{display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:#F3F4F6;border-radius:6px;margin:0 auto 6px}
+  .mob .mimg{max-width:32px;max-height:32px}
+  .mob .nm{font-size:15px;font-weight:700}
+  .mob .en{font-size:12.5px;color:var(--sub);font-weight:600}
+  .mob .stat{font-size:14px;line-height:1.5;margin-top:6px}
+  .mob .stat b{color:var(--accent-dark)}
+  .mob .where{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.6}
+  .cnt{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:560px){ table{font-size:13.5px} th,td{padding:7px 6px} .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))} }
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] section.card{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .mob{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .chip{background:#22252B}
+  [data-theme="dark"] .mob .islot{background:#26292F}
+  [data-theme="dark"] td{border-bottom-color:var(--line)}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .gtable th{background:#F3EDE2;border-bottom:2px solid var(--line)}
+  .gtable tbody tr:nth-child(even){background:#FAF6EE}
+  .gtable tbody tr:hover{background:#F1E8D8}
+  [data-theme="dark"] .gtable th{background:#2A251C}
+  [data-theme="dark"] .gtable tbody tr:nth-child(even){background:#211D16}
+  [data-theme="dark"] .gtable tbody tr:hover{background:#2E2820}
+.glink{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;margin:2px 4px 2px 0;background:var(--card)}
+.glink:hover{color:var(--ink)}
+
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.twrap>table{margin:0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div>
+  <div class="intro">
+    <h1>착용 레벨 <span>읽는 법</span></h1>
+    <div class="tag">다음 장비의 계단은 초반에 촘촘해요</div>
+  </div>
+  <div class="disc">⚠️ 이 페이지는 본진 빅뱅 직후 기준이며, 알팡 실서버 구현 시 달라질 수 있습니다.</div>
+  <p class="hub-link" style="text-align:center;margin:12px 0 0"><a href="/guide/">가이드 전체 보기 →</a></p>
+<section class="card">
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">다음 장비는 언제 갈아타나 — 착용 레벨의 계단 읽기</h3>
+    <p class="body">장비를 바꿀 때가 되면 누구나 같은 질문을 해요. 다음 장비는 몇 레벨부터 쓸 수 있나. 아이템마다 붙은 착용 레벨을 전부 모아 보면, 이 질문에 대한 세계 전체의 답이 분포로 나타납니다. 어디에 계단이 몰려 있는지를 알면 성장이 어디서 끊기고 어디서 이어지는지가 읽혀요.</p>
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">전체 분포 — 계단은 초반에 몰려 있다</h3>
+    <p class="body">착용 레벨 값이 있는 아이템 3,179건의 분포는 이렇습니다.</p>
+    <div class="twrap"><table>
+      <thead><tr><th scope="col">착용 레벨</th><th scope="col">아이템 수</th></tr></thead>
+      <tbody>
+      <tr><td>30 이하</td><td>1,121건</td></tr>
+      <tr><td>31~50</td><td>710건</td></tr>
+      <tr><td>51~70</td><td>559건</td></tr>
+      <tr><td>71~100</td><td>539건</td></tr>
+      <tr><td>100 초과</td><td>250건</td></tr>
+      </tbody>
+    </table></div>
+    <p class="body">세 건 중 한 건 이상이 30 이하에 몰려 있어요. 초반에는 갈아탈 장비가 촘촘하게 깔려 있다는 뜻이에요. 위로 갈수록 구간마다 조금씩 얇아지지만 100을 넘는 장비도 250건이 있고, 착용 레벨이 가장 높은 장비는 200레벨부터예요. 계단이 끝까지 이어지되, 초반만큼 촘촘하지는 않은 곡선입니다.</p>
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">값이 없는 아이템은 어떻게 읽나</h3>
+    <p class="body">전체 14,577건 중 착용 레벨로 읽을 수 있는 건 3,179건뿐이에요. 나머지는 값이 없거나 0이에요. 여기서 조심할 것이 있어요. 값이 없다고 &#x27;레벨 제한이 없는 장비&#x27;라고 단정할 수 없다는 점이에요. 소비 · 기타 아이템처럼 애초에 착용 개념이 없는 것, 얼굴 장식처럼 레벨보다 다른 조건이 중심인 것이 섞여 있거든요. 착용 레벨이라는 잣대는 장비의 계단을 읽는 도구이지, 전체 아이템을 나누는 기준은 아니에요.</p>
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">카테고리마다 계단의 모양이 다르다</h3>
+    <p class="body">장비를 무기 · 방어구 · 장신구로 나눠 보면 계단의 모양이 갈립니다 (값 있는 건 기준).</p>
+    <div class="twrap"><table>
+      <thead><tr><th scope="col">구분</th><th scope="col">값 있는 건</th><th scope="col">모양</th></tr></thead>
+      <tbody>
+      <tr><td>무기</td><td>1,188건</td><td>전 구간에 고르게 퍼지고 100 초과도 128건</td></tr>
+      <tr><td>방어구</td><td>1,657건</td><td>30 이하에 635건으로 초반 몰림</td></tr>
+      <tr><td>장신구</td><td>280건</td><td>값 있는 건 자체가 적다</td></tr>
+      </tbody>
+    </table></div>
+    <p class="body">무기는 레벨이 오를수록 계속 갈아탈 것이 나오는 구조예요. 고레벨 구간에서도 선택지가 유지되니, 무기 교체는 성장 내내 따라오는 일입니다. 방어구는 초반에 몰려 있어요. 저레벨 방어구가 두껍게 깔려 있다는 것은 초반 생존 준비의 선택지가 넓다는 뜻이고, 반대로 중반 이후에는 교체 주기가 길어져요. 장신구는 착용 레벨 값이 붙은 건이 280건뿐이라, 이 잣대만으로는 계단이 잘 안 그려져요. 장신구를 고를 때는 레벨보다 다른 표기를 함께 봐야 한다는 게 분포가 주는 힌트예요.</p>
+    <h3 style="font-size:16.5px;font-weight:800;margin:18px 0 8px">도감에서 거꾸로 찾기</h3>
+    <p class="body">이 읽는 법은 아이템 도감에서 이렇게 씁니다. 지금 레벨에서 다음 구간 경계 (30, 50, 70, 100)까지의 거리를 먼저 보고, 그 경계 아래에 있는 장비부터 후보로 올려요. 경계를 막 넘긴 시점에는 새로 열리는 장비가 한꺼번에 들어오니, 그때가 교체 후보를 다시 추리기 좋은 때예요. 반대로 경계까지 한참 남았으면 지금 장비에 주문서를 쓸지 다음 계단을 기다릴지의 판단 재료가 됩니다.</p>
+    <p class="body">이 정리는 본진 GMS 95의 게임 데이터를 기준으로 정리했어요. 알팡서버의 실제 구현은 미확인입니다.</p>
+    <p class="body">레벨대별 장비 후보는 <a href="/items/">아이템 도감</a>에서 착용 레벨로 좁혀 볼 수 있어요.</p>
+  </section>
+
+  <section class="card glinks">
+    <h2>다른 가이드 보기</h2>
+    <div class="glink-row"><a class="glink" href="/guide/hunting/">초반 사냥터 후보 비교</a><a class="glink" href="/guide/orbis-leafre/">오르비스 & 리프레 몬스터 구경</a><a class="glink" href="/guide/edelstein/">에델슈타인 엿보기</a><a class="glink" href="/guide/ludibrium/">루디브리엄 마을 가이드</a><a class="glink" href="/guide/mushroom-shrine/">버섯신사 엿보기</a><a class="glink" href="/guide/scroll-reward-quests/">주문서 주는 퀘스트 총정리</a><a class="glink" href="/guide/return-routes/">귀환 연결로 읽는 이동 절약법</a><a class="glink" href="/guide/hunting-efficiency/">사냥터 효율 읽는 법</a><a class="glink" href="/guide/quest-chains/">퀘스트 선행 사슬 읽는 법</a><a class="glink" href="/guide/portal-hubs/">포털 허브 맵 읽는 법</a><a class="glink" href="/guide/town-npcs/">마을 NPC 배치 읽는 법</a><a class="glink" href="/guide/spawn-ranges/">출현 범위로 읽는 몬스터</a><a class="glink" href="/guide/quest-start-levels/">시작 레벨로 읽는 세계의 열림</a><a class="glink" href="/guide/mob-stats/">몬스터 스탯 분포로 읽는 상대의 성격</a></div>
+  </section>
+  <footer>
+    알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95 수집 데이터) · 한글 이름은 '표시명 후보'입니다 · 페이지 갱신일: 2026-11-15
+  <br>
+    <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+  </footer>
+</div>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+</body>
+</html>
