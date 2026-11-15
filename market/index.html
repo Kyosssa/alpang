@@ -36,9 +36,31 @@ legend{font-weight:800;padding:0 6px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
 label{font-size:13px;font-weight:700;color:var(--sub);display:block}
 select{font:inherit;font-size:14.5px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);width:100%}
-</style>
+/* 상단 GNB — 전체 폭 바 + 안쪽 1280px (공통 정본 이식) */
+  /* 상단 GNB — 전체 폭 바 + 안쪽 1280px */
+  .gnb{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  .gnb nav a.on{color:var(--accent-dark)}
+  @media (max-width:560px){
+    .gnb .logo{font-size:18px}
+    .gnb nav a{font-size:14px;margin-left:10px}
+  }
+  @media (max-width:768px){
+    .gnb-in{flex-wrap:nowrap}
+    .gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 84%,transparent);mask-image:linear-gradient(to right,#000 84%,transparent)}
+    .gnb nav::-webkit-scrollbar{display:none}
+    .gnb nav a{flex-shrink:0}
+    [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+    .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+    .new-dot.on{display:inline-block}
+  }
+  </style>
 </head>
 <body>
+  <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav></div></div>
 <div class="wrap">
 <h1>시세 트래커</h1>
 <p class="note">알팡서버 오픈 뒤 실제 거래가 생기면 시세를 기록할 공간입니다. 지금은 틀만 먼저 열어 둡니다.</p>
@@ -102,9 +124,10 @@ fetch('market-items.json').then(function(r){return r.json();}).then(function(d){
 </script>
   <footer style="text-align:center;color:var(--sub);font-size:12.5px;margin-top:28px;line-height:1.8">
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="/cdn-cgi/l/email-protection#36575a465758515a57585276515b575f5a1855595b" style="color:var(--sub)">문의하기</a><br>
     <span style="font-size:12px">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
     메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
   </footer>
+  <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 </body>
 </html>
