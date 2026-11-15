@@ -14,13 +14,13 @@ SRC = os.path.join(ROOT, "data/stage2-npc-quest/out")
 
 THEME_INIT = "<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>"
 THEME_BTN = '<button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>'
-THEME_SCRIPT = "<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>"
+THEME_SCRIPT = "<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script><script>function imgRetry(el){el.onerror=function(){imgHide(el)};el.src=el.src}function imgHide(el){el.style.visibility='hidden'}</script>"
 
 def gnb(active):
     def a(href, label):
         return f'<a href="{href}"' + (' class="on"' if href == active else '') + f'>{label}</a>'
     return ('<div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav>'
-            + a("/", "홈") + a("/timeline/", '타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span>') + a("/faq/", "FAQ") + a("/mobs/", "몬스터 도감") + a("/maps/", "맵 탐색") + a("/items/", "아이템") + a("/npcs/", "NPC·퀘스트") + '</nav>' + THEME_BTN + '</div>')
+            + a("/", "홈") + a("/timeline/", '타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span>') + a("/faq/", "FAQ") + a("/mobs/", "몬스터 도감") + a("/maps/", "맵 탐색") + a("/items/", "아이템") + a("/npcs/", "NPC·퀘스트") + a("/jobs/", "직업·스킬") + a("/calculator/cube/", "큐브값 계산기") + a("/calculator/onehit/", "한방컷 계산기") + '</nav>' + THEME_BTN + '</div>')
 
 def norm(s):
     s = (s or "").lower()
@@ -122,7 +122,7 @@ npcs_raw = json.load(open(os.path.join(SRC, "npcs.json"), encoding="utf-8"))["np
 # ── 대사 한글화 정본 우선안 A 병합 — 재적용 시범 사본 (2026-10-20, 데이터 담당) ──
 # 본 빌드(로딩 분할) 구조 위에 정본 파생 파일 병합만 얹은 시범. 원본 빌더 무변경.
 import copy as _copy
-_dlg_apply = json.load(open(os.path.join(ROOT, os.environ.get("ALPANG_DIALOGUE_IN", "localization/dialogue-ko-apply.json")), encoding="utf-8"))["npcs"]
+_dlg_apply = json.load(open(os.path.join(ROOT, os.environ.get("ALPANG_DIALOGUE_IN", "data/translation-apply/dialogue-ko-apply-merged-all.json")), encoding="utf-8"))["npcs"]
 _dlg_merged = 0
 for _n in npcs_raw:
     _a = _dlg_apply.get(str(_n["id"]))
@@ -137,15 +137,72 @@ mobs_db = json.load(open(os.path.join(ROOT, "data/db/mobs.json"), encoding="utf-
 jobs_db = json.load(open(os.path.join(ROOT, "data/stage4-jobs-skills/out/jobs.json"), encoding="utf-8"))["jobs"]
 
 NPC = {n["id"]: n for n in npcs_raw}
-# 채택 표시명 19건 오버라이드 (대표 채택 확정 2026-10-20, 준비본 NPC-NAME-ADOPTED-19-PREP.json be046f35…)
+# 채택 표시명 오버라이드 (잔존 1건) (대표 채택 확정 2026-10-20, 준비본 NPC-NAME-ADOPTED-19-PREP.json be046f35…)
+# 9270013 '쇼와 메이플TV'는 정본 채택 완료 (자체 구성 표기 — 기술이사 게이트 채택 2026-11-03)로 2026-11-03 정식 정리에서 제외 — 정본 status를 빌더가 덮지 않는다.
 # 출처: 플래닛헬퍼 표시명 (건별 조회 2026-10-20). '공식 이름'·'실측 검증 완료'가 아닌 채택 표시명으로 반영한다.
 # 영문명·기존 상태 필드는 원본 그대로 두고 표시용 이름 필드만 이 19건에 채운다. 동결 132건·기존 한글명 NPC는 대상이 아니다.
-ADOPT19 = {9201142: '마녀 말라디', 9270018: '커니', 9270024: '켈빈', 9110106: '안즈', 9110110: '우스케', 9110114: '나가레', 9120201: '콘페이', 9120202: '콘페이', 9120024: '우에리바', 9270013: '쇼와 메이플TV', 9270023: '노엘', 9110101: '테얀데이', 9120026: '크리스탈', 9120200: '콘페이', 9270020: '후이팅', 9120023: '요코요코', 9201135: '오드리', 9250052: '신문배달원', 9120203: '콘페이'}
-for _nid, _ko in ADOPT19.items():
+# 잔존분 전체 정리 (2026-11-05, 정본 a26f7f95… 대조): 정본 채택값과 일치하는 17건은 제거 (정본이 기준, 제거해도 화면 불변).
+# 잔존 1건 9110106은 오버라이드 '안즈'와 정본 채택값 '안즈 공주'가 달라 판단 지점으로 유지한다.
+ADOPT_RESIDUAL = {9110106: '안즈'}
+for _nid, _ko in ADOPT_RESIDUAL.items():
     if _nid in NPC:
+        # 재발 방지 가드 (2026-11-03): 정본 status가 이미 게이트 채택 계열이면 오버라이드로 덮지 않는다
+        if "게이트 채택" in (NPC[_nid].get("name_ko_status") or ""):
+            continue
         NPC[_nid]["name_ko_candidate"] = _ko
         NPC[_nid]["name_ko_status"] = "candidate"
 QUEST = {q["id"]: q for q in quests_raw}
+
+# ── 퀘스트 NPC display override (명세 e14c6c41… · 대장 data/quest-npc-display-override.json)
+# 원본 quests.json은 수정하지 않는다 — 로드된 표시용 사본의 지정 fieldpath만 치환한다.
+# 기대 토큰이 실제 값에 없으면 그 건은 적용하지 않고 불일치로 수집한다 (추측 치환 금지).
+import copy as _copy, re as _re
+OVERRIDE_WARNINGS = []
+def _apply_quest_display_override(_quests):
+    try:
+        _spec = json.load(open(os.path.join(ROOT, "data/quest-npc-display-override.json"), encoding="utf-8"))
+    except Exception:
+        return
+    _by_id = {q["id"]: q for q in _quests}
+    for _row in _spec["rows"]:
+        _q = _by_id.get(_row["quest"])
+        if _q is None:
+            OVERRIDE_WARNINGS.append(f"override 대상 퀘스트 부재: {_row['quest']}")
+            continue
+        _tok, _disp = _row["token"], _row["display"]
+        # 단어 경계 + 소유격 + 서식 토큰(#b · #k) 경계를 이름 경계로 취급한다 (명세 규칙)
+        _pat = _re.compile(r"(^|[^A-Za-z]|#[A-Za-z])(" + _re.escape(_tok) + r")(?![A-Za-z])")
+        def _sub(_val):
+            if not isinstance(_val, str) or not _pat.search(_val):
+                return None
+            return _pat.sub(lambda m: m.group(1) + _disp, _val)
+        for _path in _row["paths"]:
+            if _path == "name":
+                for _key in ("name_en",):
+                    _new = _sub(_q.get(_key))
+                    if _new is None:
+                        OVERRIDE_WARNINGS.append(f"override 불일치: {_row['quest']} name — 기대 토큰 '{_tok}' 없음")
+                    else:
+                        _q[_key] = _new
+                _d = _q.get("detail") or {}
+                if isinstance(_d.get("name"), str):
+                    _new = _sub(_d["name"])
+                    if _new is not None:
+                        _d["name"] = _new
+            else:
+                _idx = int(_path[len("messages["):-1])
+                _msgs = (_q.get("detail") or {}).get("messages") or []
+                if _idx < len(_msgs):
+                    _new = _sub(_msgs[_idx])
+                    if _new is None:
+                        OVERRIDE_WARNINGS.append(f"override 불일치: {_row['quest']} messages[{_idx}] — 기대 토큰 '{_tok}' 없음")
+                    else:
+                        _msgs[_idx] = _new
+                else:
+                    OVERRIDE_WARNINGS.append(f"override 불일치: {_row['quest']} messages[{_idx}] — 항목 부재")
+_apply_quest_display_override(quests_raw)
+if OVERRIDE_WARNINGS:
+    print("[override] 불일치 " + str(len(OVERRIDE_WARNINGS)) + "건:", *OVERRIDE_WARNINGS, sep="\n  ")
 CONFIRMED = {i for i, n in NPC.items() if n.get("detail_status") == "confirmed"}
 UNCONFIRMED = {i for i, n in NPC.items() if n.get("detail_status") != "confirmed"}
 MAP_NAME = {m["id"]: ((m.get("name_ko_candidate") or "").strip(), (m.get("street_ko_candidate") or "").strip()) for m in maps_db}
@@ -185,15 +242,32 @@ def item_icon(iid):
 def mob_icon(mid):
     return f"https://maplestory.io/api/GMS/95/mob/{mid}/icon"
 
+# 표시 분기 판정 반전 (2026-10-30 사업실장 채택 — 안 2): 한글 후보가 있으면 기본으로 한글 표시.
+# 영문으로 강제할 상태만 아래 집합에 명시한다. 현재 정본 교차표 (status × 후보 보유) 기준 해당 상태 없음 —
+# 후보 보유 상태는 candidate · kms389 · 자체 번역/음차뿐이고, 후보 없는 상태는 후보가 없어 영문 경로가 유지된다.
+NAME_DISPLAY_FORCE_EN = frozenset()
+_NAME_LABELS = {"kms389_id_name_matched": "KMS389 이름대조", "id_overlap_no_name": "이름 후보 (ID 대조)"}
+def _name_label(st):
+    if st in _NAME_LABELS:
+        return _NAME_LABELS[st]
+    if isinstance(st, str):
+        if st.startswith("자체 표기"):
+            return "자체 표기"
+        if st.startswith("자체 음차"):
+            return "자체 음차"
+        if st.startswith("자체 번역"):
+            return "자체 번역"
+    return None
+
 def npc_display(n):
     """이름 상태 3분류 표기: (표시명, 상태 라벨 or None, 영문 병기 여부)"""
     ko = (n.get("name_ko_candidate") or "").strip()
     en = (n.get("name_en") or "").strip()
     st = n.get("name_ko_status")
-    if st == "candidate" and ko:
-        return ko, None, en
     if st == "id_overlap_no_name":
         return (ko or en), "이름 후보 (ID 대조)", en
+    if ko and st not in NAME_DISPLAY_FORCE_EN:
+        return ko, _name_label(st), en
     return en, "영문원본", None
 
 def npc_ref_html(nid, link=True):
@@ -202,7 +276,7 @@ def npc_ref_html(nid, link=True):
     if n is None:
         return f'<span class="npc-ref unknown">NPC {nid} (미확인)</span>'
     name, label, _ = npc_display(n)
-    img = f'<img class="dot" src="{npc_sprite(nid)}" alt="" loading="lazy">'
+    img = f'<img class="dot" src="{npc_sprite(nid)}" alt="" loading="lazy" onerror="imgHide(this)">'
     if nid in UNCONFIRMED:
         return f'<span class="npc-ref unknown">{img}{H.escape(name)} <span class="unk-badge">상세 미확인</span></span>'
     inner = f'{img}{H.escape(name)}'
@@ -247,7 +321,7 @@ def npc_card(n):
         mid = loc["map_id"]
         mn, street = MAP_NAME.get(mid, ("", ""))
         label_txt = (f"{street} · " if street else "") + (mn or f"맵 {mid}")
-        tags.append(f'<a class="tag" href="/maps/#map-{mid}">🗺 {H.escape(label_txt)}</a>')
+        tags.append(f'<a class="tag" href="/maps/#map-{mid}"><img class="dic" src="/assets/icons/icon-worldmap.png" alt="" aria-hidden="true" onerror="imgHide(this)"> {H.escape(label_txt)}</a>')
     if len(locs) > 3:
         tags.append(f'<span class="tag more">외 {len(locs) - 3}곳</span>')
     rel_html = ""
@@ -257,17 +331,26 @@ def npc_card(n):
             q = QUEST[qid]
             qn = (q.get("name_ko_candidate") or q.get("name_en") or "").strip()
             chips.append(f'<a class="qtag" href="{quest_href(qid)}">{H.escape(qn)}</a>')
-        rel_html = (f'<div class="rel"><span class="rel-label">📜 관련 퀘스트 {len(rel)}건</span>'
+        # 역방향 전건화 (2026-11-13): 4건째부터는 접이식으로 전건 링크한다 (총수 라벨만 있던 절단 해소)
+        if len(rel) > 3:
+            more = []
+            for qid in rel[3:]:
+                q = QUEST[qid]
+                qn = (q.get("name_ko_candidate") or q.get("name_en") or "").strip()
+                more.append(f'<a class="qtag" href="{quest_href(qid)}">{H.escape(qn)}</a>')
+            chips.append(f'<details class="rel-more"><summary>외 {len(rel) - 3}건 더 보기</summary>' + "".join(more) + "</details>")
+        rel_html = (f'<div class="rel"><span class="rel-label"><img class="dic" src="/assets/icons/icon-quest.png" alt="" aria-hidden="true" onerror="imgHide(this)"> 관련 퀘스트 {len(rel)}건</span>'
                     + "".join(chips) + "</div>")
     badge = f' <span class="unk-badge">{label}</span>' if label else ""
     en_html = f'<span class="en">{H.escape(en)}</span>' if en else ""
+    _tcls = "t-ko" if name and name == (n.get("name_ko_candidate") or "").strip() else "t-en"
     dlg_html = f'<p class="dlg">“{H.escape(dlg)}”</p>' if dlg else ""
     search_txt = norm(name) + "|" + norm(n.get("name_en") or "") + "|" + str(nid)
     _fr, _ft, _ff = npc_filter_attrs(n)
     return (f'<article class="npc-card" id="npc-{nid}" data-quests="{1 if rel else 0}" data-maps="{1 if locs else 0}" '
             f'data-namestate="{n.get("name_ko_status") or ""}" data-search="{H.escape(search_txt)}" data-region="{H.escape(_fr)}" data-town="{H.escape(_ft)}" data-func="{_ff}">'
-            f'<div class="nc-head"><img class="sprite" src="{npc_sprite(nid)}" alt="" loading="lazy" width="64" height="64">'
-            f'<div class="nc-title"><h3>{H.escape(name)}{badge}</h3>{en_html}</div></div>'
+            f'<div class="nc-head"><img class="sprite" src="{npc_sprite(nid)}" alt="" loading="lazy" width="64" height="64" onerror="imgRetry(this)">'
+            f'<div class="nc-title {_tcls}"><h3>{H.escape(name)}{badge}</h3>{en_html}</div></div>'
             f'{dlg_html}'
             + (f'<div class="tags">{"".join(tags)}</div>' if tags else "")
             + rel_html + "</article>")
@@ -295,7 +378,7 @@ def build_npcs():
     <h1>NPC <span>도감</span></h1>
     <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>NPC 정보가 확인되는 대로 실시간으로 등록됩니다</p>
     <div class="tag">마을과 필드의 NPC {len(conf):,}명의 위치·대사·관련 퀘스트</div>
-    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치는 다를 수 있어요.</div>
+    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치·내용과는 다를 수 있어요. 알팡서버가 공식 오픈하면 해당 버전에 맞춰 상세 정보를 업데이트할 예정이에요.</div>
   </div>
   <div class="seg" role="tablist" aria-label="도감 전환">
     <a class="seg-on" href="/npcs/" role="tab" aria-selected="true">NPC</a><a href="/quests/" role="tab" aria-selected="false">퀘스트</a>
@@ -341,7 +424,7 @@ def build_npcs():
   var main = 'all', nameF = 'all', q = '', region = '', func = '';
   var restBox = document.getElementById('nfRest'), restGrid = document.getElementById('nfRestGrid'),
       restSummary = document.getElementById('nfRestSummary'), nfNote = document.getElementById('nfNote');
-  var PAGE = 200, revealed = PAGE;
+  var PAGE = 50, revealed = PAGE;
   var TOTAL_ALL = {len(conf)};
   var grid = document.getElementById('npcGrid'), cards = Array.prototype.slice.call(grid.children),
       restLoaded = false, restLoading = null,
@@ -471,10 +554,24 @@ def build_npcs():
   goHash();
 }})();
 </script>"""
-    return page("NPC 도감 — 알팡지지", "알팡서버를 기다리며 정리한 NPC 도감. NPC 1,836명의 출현 위치·대사·관련 퀘스트를 본진 GMS 95 기준으로 모았습니다.", "https://alpang.gg/npcs/", "/npcs/", body)
+    return page("NPC 도감 — 알팡지지", "알팡서버를 기다리며 정리한 NPC 도감. NPC 1,836명의 출현 위치·대사·관련 퀘스트를 본진 GMS 95 기준으로 모았습니다.", "https://alpang.gg/npcs/", "/npcs/", body, pattern=True)
 
 # ---------- 페이지 공통 ----------
-def page(title, desc, canonical, active, body):
+# 타이틀 패턴 정본 블록 (저장소 현행 인덱스 페이지의 적용 형태 그대로 — 2026-11-08 역이식).
+# 적용 방식: 인덱스 페이지에서만 .intro 기본 규칙 바로 뒤에 삽입하고, 구간 페이지에는 넣지 않는다.
+TITLE_PATTERN_BLOCK = """/* 타이틀 패턴 (2026-11-04) */
+.intro{background-color:#faf9f6;background-image:image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"));background-size:cover;background-position:center;background-repeat:no-repeat}
+
+/* 패턴 다크 톤다운 (2026-11-04) */
+[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common.webp") type("image/webp"),url("/assets/title-bg/title-bg-common.png") type("image/png"))}
+@media (max-width:640px){[data-theme="dark"] .intro{background-image:linear-gradient(rgba(18,19,22,.90),rgba(18,19,22,.90)),image-set(url("/assets/title-bg/title-bg-common-mobile.webp") type("image/webp"),url("/assets/title-bg/title-bg-common-mobile.png") type("image/png"))}}"""
+
+def page(title, desc, canonical, active, body, pattern=False):
+    css = CSS
+    if pattern:
+        anchor = ".intro{text-align:center;padding:28px 0 16px}\n"
+        assert anchor in css, "타이틀 패턴 삽입 앵커(.intro 기본 규칙)를 CSS에서 찾지 못함"
+        css = css.replace(anchor, anchor + TITLE_PATTERN_BLOCK + "\n", 1)
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -498,7 +595,7 @@ def page(title, desc, canonical, active, body):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 {THEME_INIT}
-<style>{CSS}
+<style>{css}
   .new-dot{{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}}
   .new-dot.on{{display:inline-block}}
 </style>
@@ -514,7 +611,9 @@ def page(title, desc, canonical, active, body):
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
     <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
     페이지 갱신일: 2026-10-16
-  </footer>
+  <br><span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+  <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <a href="/vietnam/" style="color:var(--sub)">Tiếng Việt</a></div>
+</footer>
 </div>
 {THEME_SCRIPT}
 <script src="/assets/hit.js?v=1" defer></script>
@@ -533,8 +632,10 @@ CSS = """
   .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
   .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
   @media (max-width:560px){ .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px} }
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+  @media (max-width:768px){.gnb{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 92%,transparent);mask-image:linear-gradient(to right,#000 92%,transparent)}.gnb nav::-webkit-scrollbar{display:none}}
   .gnb nav a.on{color:var(--accent-dark)}
-  .intro{text-align:center;padding:28px 0 4px}
+  .intro{text-align:center;padding:28px 0 16px}
   .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);background:rgba(31,157,85,.08);border:1px solid rgba(31,157,85,.35);border-radius:999px;padding:5px 12px 5px 10px;margin:10px 0 2px}
   .live-dot{flex:none;width:8px;height:8px;border-radius:50%;background:#1F9D55;animation:livePulse 2s ease-out infinite}
   @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)}70%{box-shadow:0 0 0 7px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
@@ -570,17 +671,21 @@ CSS = """
   .nc-head{display:flex;gap:12px;align-items:center}
   .sprite{width:64px;height:64px;object-fit:contain;image-rendering:pixelated;flex:none}
   .sprite-ph{width:64px;height:64px;flex:none;display:inline-flex;align-items:center;justify-content:center;font-size:28px;background:var(--slot);border-radius:8px}
-  .nc-title h3{font-size:16.5px;font-weight:800;line-height:1.35}
-  .nc-title .en{display:block;font-size:12.5px;color:var(--sub)}
+  .nc-title h3{font-size:16px;font-weight:800;line-height:1.35}
+  .nc-title .en{display:block;font-size:12px;color:var(--sub)}
   .unk-badge{font-size:10.5px;font-weight:700;color:var(--unknown);background:var(--slot);border-radius:4px;padding:1px 5px;vertical-align:2px;white-space:nowrap}
-  .dlg{font-size:13.5px;color:var(--sub);margin-top:9px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .dlg{position:relative;font-size:13.5px;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 12px;margin-top:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.dlg::before{content:"";position:absolute;top:-6px;left:18px;width:12px;height:12px;background:var(--card);border-left:1px solid var(--line);border-top:1px solid var(--line);transform:rotate(45deg)}
   .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
   .tag{font-size:12px;background:var(--slot);border-radius:6px;padding:3px 8px;color:var(--text);text-decoration:none}
   .tag.more{color:var(--sub)}
   .rel{border-top:1px dashed var(--line);margin-top:11px;padding-top:9px;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
   .rel-label{font-size:12.5px;font-weight:700;color:var(--accent-dark)}
   .qtag{font-size:12px;background:var(--accent-soft);color:var(--accent-dark);border-radius:6px;padding:3px 8px;text-decoration:none}
+  .rel-more{display:inline}
+  .rel-more summary{display:inline;cursor:pointer;font-size:12px;font-weight:700;color:var(--accent-dark)}
+  .rel-more .qtag{margin-top:4px}
   .empty{text-align:center;color:var(--sub);padding:30px 0}
+  .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
   .more-btn{display:block;margin:16px auto 4px;padding:11px 34px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent-dark);font-size:15px;font-weight:800;cursor:pointer}
   .more-btn:hover{border-color:var(--accent)}
   .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
@@ -610,7 +715,7 @@ CSS = """
   .qarrow{color:var(--sub);font-size:14px;flex:none}
   .qmain{flex:1;min-width:200px}
   .qname{font-size:16px;font-weight:800;line-height:1.35}
-  .qmain .en{font-size:12.5px;color:var(--sub);margin-left:7px}
+  .qmain .en{font-size:12px;color:var(--sub);margin-left:7px}
   .qmeta{display:block;font-size:12.5px;color:var(--sub);margin-top:1px}
   .qmeta .rep{color:var(--accent-dark);font-weight:700}
   .qrew{font-size:12.5px;color:var(--accent-dark);font-weight:700;flex:none;display:inline-flex;align-items:center;gap:6px}
@@ -647,12 +752,23 @@ CSS = """
   [data-theme="dark"] .theme-toggle .ic-sun{display:block}
   [data-theme="dark"] .theme-toggle .ic-moon{display:none}
   [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+
+/* 디렉터 4번 — GNB · 필터 탭 인게임 버튼 느낌 (입체감만, 색상 체계 유지) */
+header nav a, .chips .chip, .tabs .tab, .fchip{transition:transform .12s ease, box-shadow .12s ease}
+header nav a:hover, .chips .chip:hover, .tabs .tab:hover, .fchip:hover{transform:translateY(-2px)}
+header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 72%, #fff) 0%, var(--accent) 55%, var(--accent-dark) 100%);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55), inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.18)}
+
+  .dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
+
+/* 공통 규칙 선행분 — 디렉터 자문 (2026-11-02) */
+:root{--card-pad:22px;--card-gap:14px;--slate-bg:rgba(148,163,184,.12);--slate-tx:#94A3B8;--amber:#F59E0B;--amber-lt:#FBBF24}
+aside.name-status,.vw-badge,.vw-card-badge{background:var(--slate-bg);color:var(--slate-tx)}
 """
 
 # ---------- 퀘스트 페이지 ----------
 
-BANDS = [("lv-1-10", "Lv.1~10", 1, 10), ("lv-11-30", "Lv.11~30", 11, 30), ("lv-31-50", "Lv.31~50", 31, 50),
-         ("lv-51-70", "Lv.51~70", 51, 70), ("lv-71-100", "Lv.71~100", 71, 100), ("lv-101", "Lv.101~", 101, None),
+BANDS = [("lv-1-10", "Lv.1~10", 1, 10), ("lv-11-20", "Lv.11~20", 11, 20), ("lv-21-30", "Lv.21~30", 21, 30), ("lv-31-40", "Lv.31~40", 31, 40),
+         ("lv-41-50", "Lv.41~50", 41, 50), ("lv-51-60", "Lv.51~60", 51, 60), ("lv-61-70", "Lv.61~70", 61, 70), ("lv-71-100", "Lv.71~100", 71, 100), ("lv-101", "Lv.101~", 101, None),
          ("lv-none", "레벨 조건 없음", None, None)]
 
 def quest_band(q):
@@ -674,12 +790,11 @@ def quest_href(qid):
 def quest_name(q):
     ko = (q.get("name_ko_candidate") or "").strip()
     en = (q.get("name_en") or "").strip()
-    if q.get("name_ko_status") == "candidate" and ko:
-        return ko, en, None
-    if q.get("name_ko_status") == "id_overlap_no_name":
+    _st = q.get("name_ko_status")
+    if _st == "id_overlap_no_name":
         return (ko or en), en, "이름 후보 (ID 대조)"
-    if ko:
-        return ko, en, None
+    if ko and _st not in NAME_DISPLAY_FORCE_EN:
+        return ko, en, _name_label(_st)
     return en, None, "영문원본"
 
 def item_slot(iid, count=None):
@@ -692,7 +807,9 @@ def mob_chip(mid, count=None):
     name = MOB_NAME.get(mid, "")
     label = H.escape(name) if name else f"몬스터 {mid} (이름 미확인)"
     cnt = f' {count}마리' if isinstance(count, int) and count > 0 else ""
-    inner = f'<img class="dot" src="{mob_icon(mid)}" alt="" loading="lazy">{label}{cnt}'
+    # 이름 미확인 몬스터는 아이콘 참조가 404라 img를 만들지 않는다 (A안 · 특정표 8d4cb6af…)
+    _img = f'<img class="dot" src="{mob_icon(mid)}" alt="" loading="lazy" onerror="imgHide(this)">' if name else ""
+    inner = f'{_img}{label}{cnt}'
     if mid in {m["id"] for m in mobs_db}:
         return f'<a class="mchip" href="/mobs/#mob-{mid}">{inner}</a>'
     return f'<span class="mchip">{inner}</span>'
@@ -798,9 +915,14 @@ def quest_detail_html(q):
     start_npc = rs.get("npcId")
     if isinstance(rc.get("npcId"), int):
         n += 1; steps.append(step(n, "대화", npc_ref_html(rc["npcId"]) + " 에게 완료"))
+    _rw_neg_ids = {it["id"] for it in rw.get("items") or [] if isinstance(it.get("id"), int) and isinstance(it.get("count"), int) and it["count"] < 0}
     for it in rc.get("items") or []:
         if isinstance(it.get("id"), int):
-            n += 1; steps.append(step(n, "필요 아이템", item_slot(it["id"], it.get("count"))))
+            n += 1
+            _slot = item_slot(it["id"], it.get("count"))
+            if it["id"] in _rw_neg_ids:
+                _slot += ' <span class="unk-badge">완료 시 회수</span>'
+            steps.append(step(n, "필요 아이템", _slot))
     for mb in rc.get("mobs") or []:
         if isinstance(mb.get("id"), int):
             n += 1; steps.append(step(n, "처치", mob_chip(mb["id"], mb.get("count"))))
@@ -818,7 +940,7 @@ def quest_detail_html(q):
     if isinstance(rw.get("fame"), int) and rw["fame"]:
         rewards.append(f'<span class="slot">인기도 {rw["fame"]:,}</span>')
     for it in rw.get("items") or []:
-        if isinstance(it.get("id"), int):
+        if isinstance(it.get("id"), int) and not (isinstance(it.get("count"), int) and it["count"] < 0):
             rewards.append(item_slot(it["id"], it.get("count")))
     for sk in rw.get("skills") or []:
         rewards.append(f'<span class="slot">스킬 {H.escape(str(sk))} (원본 표기)</span>')
@@ -826,6 +948,15 @@ def quest_detail_html(q):
         rewards.append(item_slot(rw["buffItemId"]))
     if rewards:
         parts.append(f'<div class="ph"><h4>보상</h4><div class="slots">{"".join(rewards)}</div></div>')
+    # 회수 별도 줄 (혼합안 2026-11-16): 조건 밖 완료 회수는 보상 블록 밖에, 시작 회수는 rewardOnStart 음수
+    _rc_ids = {it["id"] for it in rc.get("items") or [] if isinstance(it.get("id"), int)}
+    _out_neg = [it for it in rw.get("items") or [] if isinstance(it.get("id"), int) and isinstance(it.get("count"), int) and it["count"] < 0 and it["id"] not in _rc_ids]
+    if _out_neg:
+        parts.append(f'<div class="ph"><h4>완료 시 회수</h4><div class="slots">{"".join(item_slot(it["id"], abs(it["count"])) for it in _out_neg)}</div></div>')
+    _ros = d.get("rewardOnStart") or {}
+    _start_neg = [it for it in _ros.get("items") or [] if isinstance(it.get("id"), int) and isinstance(it.get("count"), int) and it["count"] < 0]
+    if _start_neg:
+        parts.append(f'<div class="ph"><h4>시작 시 회수</h4><div class="slots">{"".join(item_slot(it["id"], abs(it["count"])) for it in _start_neg)}</div></div>')
     # 후속 퀘스트
     nxt = []
     for a in d.get("questsAvailableOnComplete") or []:
@@ -847,7 +978,7 @@ def quest_detail_html(q):
     if isinstance(msgs, list) and msgs and isinstance(msgs[0], str):
         msg0 = msgs[0]
     if msg0:
-        if os.environ.get("ALPANG_QUESTS_IN"):
+        if d.get("messages_ko"):
             msgs_ko = d.get("messages_ko") or []
             ko0 = ""
             if isinstance(msgs_ko, list) and msgs_ko and isinstance(msgs_ko[0], str):
@@ -872,9 +1003,9 @@ def quest_row(q):
     # 대표 비주얼: 시작 NPC 도트, 완료가 다르면 ➔ 완료 도트
     vis = ""
     if sn is not None and sn in NPC and sn not in UNCONFIRMED:
-        vis = f'<a class="qvis" href="/npcs/#npc-{sn}"><img src="{npc_sprite(sn)}" alt="" loading="lazy" width="48" height="48"></a>'
+        vis = f'<a class="qvis" href="/npcs/#npc-{sn}"><img src="{npc_sprite(sn)}" alt="" loading="lazy" width="48" height="48" onerror="imgHide(this)"></a>'
         if cn is not None and cn != sn and cn in NPC and cn not in UNCONFIRMED:
-            vis += f'<span class="qarrow">➔</span><a class="qvis" href="/npcs/#npc-{cn}"><img src="{npc_sprite(cn)}" alt="" loading="lazy" width="48" height="48"></a>'
+            vis += f'<span class="qarrow">➔</span><a class="qvis" href="/npcs/#npc-{cn}"><img src="{npc_sprite(cn)}" alt="" loading="lazy" width="48" height="48" onerror="imgHide(this)"></a>'
     elif sn is not None:
         vis = '<span class="qvis fallback" title="시작 NPC 상세 미확인">📜</span>'
     else:
@@ -903,10 +1034,11 @@ def quest_row(q):
     rw_sum = []
     if isinstance(rw.get("exp"), int) and rw["exp"]:
         rw_sum.append(f"EXP {rw['exp']:,}")
-    if rw.get("items"):
-        rw_sum.append(f"보상 아이템 {len(rw['items'])}개")
+    _pay_items = [it for it in rw.get("items") or [] if isinstance(it.get("id"), int) and isinstance(it.get("count"), int) and it["count"] > 0]
+    if _pay_items:
+        rw_sum.append(f"보상 아이템 {len(_pay_items)}개")
     # ⑤ summary 보상 아이콘 (A안): 최대 4개 + 초과분 '+N개'. EXP·메소만 있으면 아이콘 영역을 만들지 않는다
-    rw_items = [it["id"] for it in rw.get("items") or [] if isinstance(it.get("id"), int)]
+    rw_items = [it["id"] for it in _pay_items]
     qrew_icons = ""
     if rw_items:
         imgs = "".join(f'<img class="rew-ic" src="{item_icon(iid)}" alt="" loading="lazy" width="24" height="24">' for iid in rw_items[:4])
@@ -922,10 +1054,10 @@ def quest_row(q):
     search_txt = norm(name) + "|" + norm(q.get("name_en") or "") + "|" + str(q["id"])
     attrs = (f'data-band="{band}" data-jobs="{1 if rs.get("jobs") else 0}" data-rep="{1 if isinstance(rs.get("repeatInterval"), int) else 0}" '
              f'data-rwexp="{1 if (isinstance(rw.get("exp"), int) and rw["exp"]) else 0}" data-rwmeso="{1 if (isinstance(rw.get("meso"), int) and rw["meso"]) else 0}" '
-             f'data-rwitem="{1 if rw.get("items") else 0}" data-search="{H.escape(search_txt)}"')
+             f'data-rwitem="{1 if _pay_items else 0}" data-search="{H.escape(search_txt)}"')
     return (f'<div class="qrow" id="quest-{q["id"]}" {attrs}>'
             f'<details class="qdet"><summary class="qsum">{vis}'
-            f'<span class="qmain"><span class="qname">{H.escape(name)}{badge}</span>{en_html}'
+            f'<span class="qmain"><span class="qname {"t-ko" if en_html else "t-en"}">{H.escape(name)}{badge}</span>{en_html}'
             f'<span class="qmeta">{" · ".join(metas) if metas else "별도 조건 없음"}</span></span>'
             + qrew_html
             + f'</summary><div class="qbody">{detail}</div></details></div>')
@@ -933,19 +1065,19 @@ def quest_row(q):
 def band_nav(active_slug):
     links = []
     for slug, label, _lo, _hi in BANDS:
-        links.append(f'<a href="/quests/{slug}.html"' + (' class="on"' if slug == active_slug else '') + f'>{label}</a>')
+        links.append(f'<a href="/quests/{slug}"' + (' class="on"' if slug == active_slug else '') + f'>{label}</a>')
     return '<nav class="band-nav" aria-label="레벨 구간">' + "".join(links) + '</nav>'
 
 def build_quests_index(band_counts):
     cards = "".join(
-        f'<a class="band-card" href="/quests/{slug}.html"><b>{label}</b><span>퀘스트 {cnt}건</span></a>'
+        f'<a class="band-card" href="/quests/{slug}"><b>{label}</b><span>퀘스트 {cnt}건</span></a>'
         for (slug, label, _lo, _hi), cnt in zip(BANDS, band_counts))
     body = f"""
   <div class="intro">
     <h1>퀘스트 <span>도감</span></h1>
     <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>퀘스트 정보가 확인되는 대로 실시간으로 등록됩니다</p>
     <div class="tag">퀘스트 {len(quests_raw):,}건의 시작·완료 조건과 보상을 한눈에</div>
-    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 내용은 다를 수 있어요. 페이지가 무거워지지 않게 레벨 구간별로 나눠 두었어요.</div>
+    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치·내용과는 다를 수 있어요. 알팡서버가 공식 오픈하면 해당 버전에 맞춰 상세 정보를 업데이트할 예정이에요. 페이지가 무거워지지 않게 레벨 구간별로 나눠 두었어요.</div>
   </div>
   <div class="seg" role="tablist" aria-label="도감 전환">
     <a href="/npcs/" role="tab" aria-selected="false">NPC</a><a class="seg-on" href="/quests/" role="tab" aria-selected="true">퀘스트</a>
@@ -953,7 +1085,7 @@ def build_quests_index(band_counts):
   <div class="band-grid">
 {cards}
   </div>"""
-    return page("퀘스트 도감 — 알팡지지", "알팡서버를 기다리며 정리한 퀘스트 도감. 퀘스트 3,412건의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.", "https://alpang.gg/quests/", "/npcs/", body)
+    return page("퀘스트 도감 — 알팡지지", "알팡서버를 기다리며 정리한 퀘스트 도감. 퀘스트 3,412건의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.", "https://alpang.gg/quests/", "/npcs/", body, pattern=True)
 
 def build_quests_band(band, quests):
     slug, label, _lo, _hi = band
@@ -963,7 +1095,7 @@ def build_quests_band(band, quests):
     <h1>퀘스트 <span>도감</span></h1>
     <p class="live-badge"><span class="live-dot" aria-hidden="true"></span>퀘스트 정보가 확인되는 대로 실시간으로 등록됩니다</p>
     <div class="tag">{label} 구간 퀘스트 {len(quests)}건</div>
-    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 내용은 다를 수 있어요.</div>
+    <div class="disclaimer">본진 메이플스토리 GMS 95 기준으로 수집한 정보예요. 한글 이름은 확인된 후보 표기이며, 실제 알팡서버의 배치·내용과는 다를 수 있어요. 알팡서버가 공식 오픈하면 해당 버전에 맞춰 상세 정보를 업데이트할 예정이에요.</div>
   </div>
   <div class="seg" role="tablist" aria-label="도감 전환">
     <a href="/npcs/" role="tab" aria-selected="false">NPC</a><a class="seg-on" href="/quests/" role="tab" aria-selected="true">퀘스트</a>
@@ -984,22 +1116,30 @@ def build_quests_band(band, quests):
 {rows}
   </main>
   <p class="empty" id="qEmpty" hidden>조건에 맞는 퀘스트가 없어요.</p>
+  <button type="button" class="qmore" id="qMore" hidden>더 보기</button>
 <script>
 (function () {{
   var flags = {{}}, q = '';
   var rows = Array.prototype.slice.call(document.getElementById('qList').children),
       count = document.getElementById('qCount'), empty = document.getElementById('qEmpty');
   function norm(s) {{ return (s || '').normalize('NFKC').toLowerCase().replace(/[^0-9a-z가-힣]/g, ''); }}
+  var PAGE = 50, limit = PAGE;
+  var more = document.getElementById('qMore');
+  function filtering() {{ return !!q || Object.keys(flags).length > 0; }}
   function apply() {{
-    var shown = 0;
-    rows.forEach(function (r) {{
+    var shown = 0, visible = 0, filt = filtering();
+    rows.forEach(function (r, i) {{
       var ok = Object.keys(flags).every(function (k) {{ return r.getAttribute('data-' + k) === '1'; }})
         && (!q || r.getAttribute('data-search').indexOf(q) >= 0);
-      r.style.display = ok ? '' : 'none';
+      var vis = ok && (filt || i < limit);
+      r.style.display = vis ? '' : 'none';
       if (ok) shown++;
+      if (vis) visible++;
     }});
     count.textContent = shown.toLocaleString('ko-KR') + '건 표시 중';
     empty.hidden = shown > 0;
+    if (filt || shown <= visible) {{ more.hidden = true; }}
+    else {{ more.hidden = false; more.textContent = '더 보기 (남은 ' + (shown - visible).toLocaleString('ko-KR') + '건)'; }}
   }}
   document.getElementById('qFlags').addEventListener('click', function (e) {{
     var b = e.target.closest('button'); if (!b) return;
@@ -1007,11 +1147,16 @@ def build_quests_band(band, quests):
     if (flags[k]) {{ delete flags[k]; b.classList.remove('on'); }} else {{ flags[k] = 1; b.classList.add('on'); }}
     apply();
   }});
-  document.getElementById('qSearch').addEventListener('input', function () {{ q = norm(this.value); apply(); }});
+  document.getElementById('qSearch').addEventListener('input', function () {{ q = norm(this.value); limit = PAGE; apply(); }});
+  more.addEventListener('click', function () {{ limit += PAGE; apply(); }});
+  if (location.hash) {{
+    var target = document.getElementById(location.hash.slice(1));
+    if (target) {{ var ti = rows.indexOf(target); if (ti >= limit) limit = ti + 1; }}
+  }}
   apply();
 }})();
 </script>"""
-    return page(f"퀘스트 도감 {label} — 알팡지지", f"알팡서버를 기다리며 정리한 퀘스트 도감. {label} 구간 퀘스트의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.", f"https://alpang.gg/quests/{slug}.html", "/npcs/", body)
+    return page(f"퀘스트 도감 {label} — 알팡지지", f"알팡서버를 기다리며 정리한 퀘스트 도감. {label} 구간 퀘스트의 시작·완료 NPC, 조건, 보상을 본진 GMS 95 기준으로 모았습니다.", f"https://alpang.gg/quests/{slug}", "/npcs/", body)
 
 def build_quests():
     """구간 분할 빌드. (인덱스 HTML, {파일명: HTML}) 반환."""
