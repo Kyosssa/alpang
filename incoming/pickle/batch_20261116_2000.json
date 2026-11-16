@@ -1,0 +1,191 @@
+{
+ "batch": "16차 정기 소싱 (2026-11-16 20:00 KST)",
+ "run_at": "2026-11-16T20:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "target": "정예 6~10편 (쪼꼬미 4종 — 페럿·다람쥐(치프멍크)·수달·라쿤 → 고양이·강아지)",
+ "delivered": [],
+ "delivered_count": 0,
+ "hold_count": 3,
+ "near_miss_count": 3,
+ "screened_count": 20,
+ "screened_log": "tmp16/screen16.jsonl",
+ "why_zero": "이번 회차는 기존 프록시 경로 대신 (1) 인비디어스 API의 adaptiveFormats로 해상도·세로 여부·길이를 사전 확정하는 프리필터를 새로 세우고, (2) 440개 채널의 숏츠 9,744편을 수집해 그중 세로 1080p 177편을 추린 뒤, (3) 브라우저 /shorts 페이지에서 실제 디코드 프레임으로 모션·컷을 측정했다. 판정한 20편 중 게이트 5개를 모두 통과한 영상은 없었다. 모션 12.0 경계에 3편(10.97~11.02)이 걸려 보류로 올리고, 모션은 압도적이나 게이트④⑤ 위반 2편, 길이 9.9초 1편은 탈락 근거와 함께 남겼다. 기준을 낮춰 편수를 채우지 않았다.",
+ "holds": [
+  {
+   "id": "aU9NYv0B1QA",
+   "url": "https://www.youtube.com/shorts/aU9NYv0B1QA",
+   "title": "You’ve Got Something on Your Face🥹#chipmunk #squirrel #cuteanimals",
+   "channel": "Chipmunk House🏠",
+   "author_id": null,
+   "subs": 25200,
+   "views": 601378,
+   "likes": 3577,
+   "published": "1 month ago",
+   "dur_s": 16,
+   "resolution": "2160x3840 (소스)",
+   "motion_mean": 10.98,
+   "motion_med": 9.68,
+   "cuts_0_10s": 0,
+   "why": "모션 10.98로 임계 12.0 미달. 무컷·세로 4K 원본이고 채널 소개가 '야생 다람쥐의 일상' 1인칭 사육/관찰 계정이라 게이트①②③은 사실상 충족. 샘플 fps 편차(±30%)를 감안하면 경계선 후보 → 스틸 육안(게이트④⑤) 미실시 상태로 기획실장 판정 요청."
+  },
+  {
+   "id": "juawBK_PeJA",
+   "url": "https://www.youtube.com/shorts/juawBK_PeJA",
+   "title": "Absolutely Unhinged 😂 #CharlieTheChipmunk",
+   "channel": "Charlie The Chipmunk",
+   "subs": 17300,
+   "views": 34277,
+   "likes": 597,
+   "published": "2 months ago",
+   "dur_s": 14,
+   "resolution": "1080x1920",
+   "motion_mean": 10.97,
+   "motion_med": 8.55,
+   "cuts_0_10s": 0,
+   "why": "모션 10.97. 1080x1920 무컷. 채널은 개인 창작자(Borjana Anicin)의 다람쥐Charlie 계정. 임계 근접 → 보류."
+  },
+  {
+   "id": "XNs7ax1FYas",
+   "url": "https://www.youtube.com/shorts/XNs7ax1FYas",
+   "title": "Bisou can’t wait for winter 🤭 #ferret",
+   "channel": "Bisou the sassy ferret",
+   "subs": 140,
+   "views": 22156,
+   "likes": 655,
+   "published": "3 weeks ago",
+   "dur_s": 28,
+   "resolution": "1080x1920",
+   "motion_mean": 11.02,
+   "motion_med": 7.24,
+   "cuts_0_10s": 0,
+   "first_cut_s": 17.3,
+   "why": "모션 11.02, 0~17초 무컷. 페럿 개인 계정(구독 140). 임계 근접 → 보류. 구독 규모가 매우 작아 '레전드 체급' 판단도 필요."
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "7a_AAc2-v1U",
+   "url": "https://www.youtube.com/shorts/7a_AAc2-v1U",
+   "title": "Raccoon playing with me while I rake leaves",
+   "channel": "Shredder Raccoon",
+   "subs": 7800,
+   "views": 378453,
+   "likes": 7886,
+   "published": "5 years ago",
+   "dur_s": 60,
+   "resolution": "1080x1920",
+   "motion_mean": 28.46,
+   "motion_med": 29.41,
+   "cuts_0_15s": 0,
+   "fail": "게이트⑤ — 0.5초 스틸에서 보호자 전신(상의·청바지·부츠)이 화면 우측을 크게 점유. 모션·무컷·화질은 이번 회차 최고(28.46)."
+  },
+  {
+   "id": "Dfn8BvyvXP0",
+   "url": "https://www.youtube.com/shorts/Dfn8BvyvXP0",
+   "title": "Otters Are Too Funny! #Otter #CuteAnimals #Shorts",
+   "channel": "Otterly Amazing",
+   "subs": 197,
+   "views": 9631,
+   "likes": 302,
+   "published": "1 month ago",
+   "dur_s": 26,
+   "resolution": "1080x1920",
+   "motion_mean": 12.43,
+   "motion_med": 9.46,
+   "first_cut_s": 10.12,
+   "fail": "게이트④ — 화면 상단에 'OtterlyAmazing' 로고+아바타 워터마크가 0.5·4초 모두 고정 노출. 모션은 12.43으로 통과."
+  },
+  {
+   "id": "uydcO5iC9rk",
+   "url": "https://www.youtube.com/shorts/uydcO5iC9rk",
+   "title": "Thor Grows Up! #mainecoon #cat",
+   "channel": "Maine Coon Kittens",
+   "subs": 178000,
+   "views": 1420605,
+   "likes": 25118,
+   "published": "2 years ago",
+   "dur_s": 9.9,
+   "resolution": "1080x1920",
+   "motion_mean": 12.57,
+   "motion_med": 11.35,
+   "fail": "게이트①-길이 — 총 9.9초로 '10초 이상 무컷' 하한에 0.1초 미달. 모션 12.57."
+  }
+ ],
+ "rejected_this_round": [
+  {
+   "id": "-5YaCVAXDTM",
+   "ch": "Moon & Nala",
+   "mean": 1.94,
+   "why": "정지 카드형(중앙값 0)"
+  },
+  {
+   "id": "cLKy3YuFGZk",
+   "ch": "Chipmunk House",
+   "mean": 7.02,
+   "why": "모션 미달"
+  },
+  {
+   "id": "zP3pI0eWvzc",
+   "ch": "Chipmunk House",
+   "mean": 4.73,
+   "why": "모션 미달"
+  },
+  {
+   "id": "sflZRxtj6cc",
+   "ch": "Kindness Matters Ferret",
+   "mean": 0.91,
+   "why": "정지(회전판 대기 화면)"
+  },
+  {
+   "id": "OzD1ArEbWe4",
+   "ch": "Raccoon Saloon",
+   "mean": 4.51,
+   "why": "모션 미달"
+  },
+  {
+   "id": "23-ZlSGuUjs",
+   "ch": "Charlie The Chipmunk",
+   "mean": 1.74,
+   "why": "정지·슬로모션 혼합"
+  },
+  {
+   "id": "2UIPzWI7jBU",
+   "ch": "RACCOON MAKOON",
+   "mean": 4.55,
+   "why": "모션 미달(김 먹기 클로즈업)"
+  },
+  {
+   "id": "Chho1f-9IJc",
+   "ch": "Squirrels at the window",
+   "mean": 6.49,
+   "why": "모션 미달(창가 다람쥐 구도)"
+  },
+  {
+   "id": "bcAQpTmWBNU",
+   "ch": "Maine Coon Kittens",
+   "mean": 5.33,
+   "why": "모션 미달"
+  },
+  {
+   "id": "drnmwHBTiAg",
+   "ch": "TiaraEkaPutrii",
+   "mean": 6.65,
+   "why": "플레이어 스톨로 신뢰도 낮음(판정 보류 기록)"
+  }
+ ],
+ "verification_method_16": {
+  "new": "인비디어스 API(/api/v1/videos/<id>?fields=adaptiveFormats)를 쓰면 영상별 실제 인코딩 해상도 목록(예: 1080x1920, 2160x3840)이 나온다. 이를 '세로 1080p' 프리필터로 쓰면 브라우저를 열기 전에 후보의 80%를 걸러낼 수 있었다(브라우저 판정 1편당 25~35초 → API 판정 1편당 1.2초).",
+  "channel_expansion": "인비디어스 채널 검색(type=channel) → /api/v1/channels/<UC>/shorts 로 채널별 숏츠 목록(조회수 포함)을 받아 후보 풀을 9,744편까지 넓혔다. 채널 구독자 수는 /api/v1/channels/<UC>로 실측.",
+  "motion_harness": "브라우저는 watch 페이지의 movie_player.loadVideoById 루프가 10편쯤에서 스톨(readyState 0)되는 문제가 있어, /shorts/<id> 페이지를 직접 열고 페이지 로드 직후 0초부터 160x90 그레이스케일 프레임 차분을 10fps로 샘플링하는 방식으로 바꿨다. 이 방식이 이번 회차에 안정적으로 동작했다.",
+  "limits": "샘플 간격 편차(±30%)는 15차와 동일. 1080p 강제에도 플레이어가 뷰포트에 맞춰 480x858~720x1280 스트림을 고르는 경우가 있어 모션 수치는 디코드 해상도에 따라 소폭 흔들린다. 원본 mp4 보관은 여전히 불가(SABR)."
+ },
+ "artifacts": {
+  "json": "work/sourcing_v2/batch_20261116_2000.json",
+  "md": "work/sourcing_v2/batch_20261116_2000.md",
+  "stills": "work/sourcing_v2/stills16/",
+  "screening_log": "work/sourcing_v2/tmp16/screen16.jsonl",
+  "meta": "work/sourcing_v2/tmp16/meta16*.jsonl",
+  "channels": "work/sourcing_v2/tmp16/chan_shorts16.json",
+  "pool": "work/sourcing_v2/tmp16/pool16_sub500.json"
+ }
+}
