@@ -1,0 +1,187 @@
+{
+ "cubes": [
+  {
+   "id": "miracle",
+   "name": "미라클 큐브",
+   "support": "공시 근거 확보 · 계산 지원"
+  },
+  {
+   "id": "suspicious",
+   "name": "수상한 큐브",
+   "support": "공시 근거 확보 · 계산 지원"
+  },
+  {
+   "id": "craftsman",
+   "name": "장인의 큐브",
+   "support": "공시 근거 미확보 · 계산 미지원"
+  },
+  {
+   "id": "meister",
+   "name": "명장의 큐브",
+   "support": "공시 근거 미확보 · 계산 미지원"
+  },
+  {
+   "id": "red",
+   "name": "레드 큐브",
+   "support": "공시 근거 미확보 · 계산 미지원"
+  },
+  {
+   "id": "black",
+   "name": "블랙 큐브",
+   "support": "공시 근거 미확보 · 계산 미지원"
+  }
+ ],
+ "gradeSteps": [
+  {
+   "from": "레어",
+   "label": "레어 → 에픽",
+   "to": "에픽"
+  },
+  {
+   "from": "에픽",
+   "label": "에픽 → 유니크",
+   "to": "유니크"
+  }
+ ],
+ "gradeUp": {
+  "black": {
+   "레어→에픽": null,
+   "에픽→유니크": null
+  },
+  "craftsman": {
+   "레어→에픽": null,
+   "에픽→유니크": null
+  },
+  "meister": {
+   "레어→에픽": null,
+   "에픽→유니크": null
+  },
+  "red": {
+   "레어→에픽": null,
+   "에픽→유니크": null
+  },
+  "suspicious": {
+   "레어→에픽": 6.0,
+   "에픽→유니크": 1.8
+  },
+  "miracle": {
+   "레어→에픽": 6.0,
+   "에픽→유니크": 1.8
+  }
+ },
+ "grades": [
+  "일반",
+  "레어",
+  "에픽",
+  "유니크"
+ ],
+ "note": "2026-10-24 기술이사 검증 승인 완료. 출처: 메이플플래닛 공식 공시 수집본 research/planet-cube-odds-collection-20261019.md + research/cube-odds/planet-cube-odds-full.csv (71,337행).",
+ "optionStats": [
+  "STR",
+  "DEX",
+  "INT",
+  "LUK",
+  "HP",
+  "MP",
+  "공격력",
+  "마력",
+  "보스 공격력",
+  "방어율 무시",
+  "데미지",
+  "올스탯"
+ ],
+ "parts": [
+  {
+   "id": "weapon",
+   "name": "무기"
+  },
+  {
+   "id": "emblem",
+   "name": "엠블렘"
+  },
+  {
+   "id": "secondary",
+   "name": "보조무기"
+  },
+  {
+   "id": "hat",
+   "name": "모자"
+  },
+  {
+   "id": "top",
+   "name": "상의"
+  },
+  {
+   "id": "bottom",
+   "name": "하의"
+  },
+  {
+   "id": "overall",
+   "name": "한벌옷"
+  },
+  {
+   "id": "shoes",
+   "name": "신발"
+  },
+  {
+   "id": "gloves",
+   "name": "장갑"
+  },
+  {
+   "id": "cape",
+   "name": "망토"
+  },
+  {
+   "id": "belt",
+   "name": "벨트"
+  },
+  {
+   "id": "shoulder",
+   "name": "어깨장식"
+  },
+  {
+   "id": "accessory",
+   "name": "얼굴·눈·귀·반지·펜던트"
+  },
+  {
+   "id": "heart",
+   "name": "기계 심장"
+  }
+ ],
+ "status": "approved",
+ "version": "filled-20261020-verdict",
+ "gradeUpSource": "메이플플래닛 공식 확률 공시(mapleplanet.io/guide/probability) 등급 상승 공통 표 — 큐브 종류(미라클·수상한)를 바꿔도 같은 표. 수집 기록: research/planet-cube-odds-collection-20261019.md 2절",
+ "gradeUpCoverage": {
+  "note": "등급상승 자리 12곳(6종 × 2단계) 중 공시로 뒷받침되는 종류만 값을 가진다. 공시 대상은 미라클·수상한 2종이며 두 종류가 같은 공통 표(레어→에픽 6.0 · 에픽→유니크 1.8)를 쓴다 — 수집 기록 research/planet-cube-odds-collection-20261019.md 2절. 나머지 4종은 공시 근거가 없어 null을 유지하고 계산 미지원으로 표기한다 (미확인을 값으로 지어 넣지 않는 정본 원칙).",
+  "disclosed": [
+   "miracle",
+   "suspicious"
+  ],
+  "not_disclosed": [
+   "craftsman",
+   "meister",
+   "red",
+   "black"
+  ],
+  "not_disclosed_marking": "gradeUp 값 null 유지 + cubes.support의 '공시 근거 미확보 · 계산 미지원' 표기와 정합"
+ },
+ "optionOddsCoverage": {
+  "note": "옵션 확률은 공시 원문이 완성 표가 아니라 3층 구조(옵션 풀 + 줄별 등급 분포 + 산식)로 주어지며, 정본 optionPools는 그 전개 결과 71,337행을 전량 수록한 형태다. 전개표(별도 파일)와 정본 행을 전건 대조해 불일치 0건을 확인했다 (2026-10-24 실측).",
+  "structure": "원본 풀(가중치) → 줄별 등급 분포(1줄 100% · 2줄 해당 10%/아래 90% · 3줄 해당 1%/아래 99%) → 산식 (줄 분포 × 가중치÷조건 풀 가중치 합). 조건 = 큐브 × 등급 × 부위 × 레벨 구간.",
+  "expansion_reference": {
+   "file": "research/cube-odds/planet-cube-odds-full.csv",
+   "bytes": 4176862,
+   "sha256": "396b63ad064a5ecc155540729dbd5ccf524330af4b36cb98656363033a94591b",
+   "rows": 71337,
+   "verification": "조건별 확률 합 100% 전수 검산 통과 · 손계산 대조 일치 (조사 기록 cube-odds-table-verification-20261019.md) · 정본 전건 대조 불일치 0 (2026-10-24)"
+  },
+  "source_pool": {
+   "file": "research/cube-odds/planet-probability-raw.json",
+   "sha256": "3b68ac7b27f0e22c635625e5a4e082b44dc50ed07026689a74e9a557064e5b97",
+   "counts": {
+    "miracle": 88,
+    "suspicious": 129
+   }
+  }
+ }
+}
