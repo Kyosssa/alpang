@@ -15,8 +15,9 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <style>
-:root{--line:#e3e6ea;--card:#fff;--sub:#6b7280;--accent-dark:#9a4a12}
-body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin:0;background:#faf9f6;color:#1f2430}
+:root{--line:#e3e6ea;--card:#fff;--sub:#6b7280;--accent-dark:#9a4a12;--bg:#faf9f6;--text:#1f2430}
+[data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;color-scheme:dark}
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin:0;background:var(--bg);color:var(--text)}
 main{max-width:860px;margin:0 auto;padding:28px 16px 48px}
 h1{font-size:24px;margin:0 0 8px}
 .lead{color:var(--sub);font-size:14.5px;line-height:1.65;margin:0 0 22px}
@@ -55,6 +56,7 @@ section.idx li a{display:inline-block;border:1px solid var(--line);background:va
     .new-dot.on{display:inline-block}
   }
   </style>
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
 </head>
 <body>
