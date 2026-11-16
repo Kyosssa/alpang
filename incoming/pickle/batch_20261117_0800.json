@@ -1,0 +1,327 @@
+{
+ "batch": "20차 정기 소싱 (2026-11-17 08:00 KST)",
+ "run_at": "2026-11-17T08:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
+ "target": "정예 6~10편 (고양이·강아지 최우선) — 미달 편 억지 편입 금지",
+ "delivered_count": 4,
+ "hold_count": 4,
+ "near_miss_count": 23,
+ "browser_screened": 33,
+ "prescreened": 215,
+ "method_20": {
+  "new_channel_discovery": "유튜브 채널 검색 HTML(ytInitialData channelRenderer) 95쿼리 — 고양이 45(줌비·점프·사냥놀이·한/일/스/이/독/프) + 강아지 40(19차 누락 보완) + 쪼꼬미 15. 신규 후보 347채널(구독 300~499,999) 확보, 기존 풀 재탕 0.",
+  "shorts_harvest": "채널 /shorts ytInitialData shortsLockupViewModel 파싱 — 11,752편 수집(347채널).",
+  "prescreen": "제목·채널 금칙어 + 채널별 1인칭·소규모 우선 정렬 → 268편 선별 → oar2.jpg 실치수 세로 720p+ 215편 → 8×3 접촉시트 9장 육안 스캔으로 자막·사람·워터마크 사전 제거 → 33편 브라우저 판정.",
+  "verify": "원격 브라우저 watch 페이지 + loadVideoById, hd1080 강제, 160×90 gray 10fps(0.099초 버킷) 차분. 컷 스파이크 = 변화픽셀비율 0.6 초과.",
+  "stills": "0.3~10.2초 4프레임을 2×2 캔버스에 그려 육안 검수(stills20/ 9장).",
+  "meta": "시청 페이지 ytInitialData 실측(구독·조회·좋아요·게시일) — tmp20/meta20.json",
+  "channel_profile": "/about aboutChannelViewModel 55채널 프로필 실측(tmp20/chprofiles.json)으로 원작자성 판정."
+ },
+ "delivered": [
+  {
+   "id": "FbnXIcNpTCc",
+   "url": "https://www.youtube.com/shorts/FbnXIcNpTCc",
+   "title": "Cat Garden Zoomies 🐾💛 #funnycats #catshorts #cutecats",
+   "channel": "Kittylicious",
+   "subs": 631,
+   "subs_txt": "631 subscribers",
+   "views_txt": "4,465 views",
+   "likes_txt": "105",
+   "published": "Nov 4, 2026",
+   "cat": "고양이",
+   "dur_s": 14.16,
+   "resolution": "1080x1920",
+   "motion_mean": 24.9,
+   "motion_med": 27.12,
+   "ratios_max": 0.59,
+   "spike_times_s": [],
+   "stills": "stills20/c20_kittylicious_zoomies-2026-11-17-083145.png",
+   "why": "구조 고양이 Felix·Boža가 사는 집 마당에서 오렌지 고양이가 잔디를 가로질러 걸어가는 14.16초 단일 숏. 0.5·4·8·11초 4컷 모두 같은 마당·같은 고양이, 자막·워터마크·사람 0.",
+   "cut_evidence": "10fps(0.099초 버킷) 99프레임 차분 평균 24.90·중앙 27.12, 컷 스파이크 0회(최대 변화픽셀비율 0.59).",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 24.90 (중앙 27.12)",
+    "2_original_creator": "PASS — 채널 설명 'rescue kitty Felix', 277편 전부 같은 두 고양이 일상",
+    "3_measured_only": "PASS — 구독 631 · 조회 4,465 · 좋아요 105 · 2026-11-04 (시청 페이지 ytInitialData 실측)",
+    "4_no_subs": "PASS — 4컷 전부 자막·브랜드스트립 0",
+    "5_no_people": "PASS — 사람 없음, 타 채널 워터마크 없음"
+   },
+   "note": "마당 배경 음이 섞여 있어 현장음 그대로 사용 권장."
+  },
+  {
+   "id": "z6O-qpL0CEE",
+   "url": "https://www.youtube.com/shorts/z6O-qpL0CEE",
+   "title": "The welcoming committee! #corgi #dog #puppy #corgilife #cute #corgination #pets #dogsofyoutube",
+   "channel": "TheSplootFriends",
+   "subs": 457,
+   "subs_txt": "457 subscribers",
+   "views_txt": "2,609 views",
+   "likes_txt": "72",
+   "published": "May 14, 2026",
+   "cat": "강아지",
+   "dur_s": 15.0,
+   "resolution": "1080x1920(디코드 608x1080)",
+   "motion_mean": 19.71,
+   "motion_med": 19.69,
+   "ratios_max": 0.45,
+   "spike_times_s": [],
+   "stills": "stills20/c20_splootfriends_corgi-2026-11-17-083426.png",
+   "why": "코기 두 마리가 집 대문 너머에서 달려오는 15초 단일 숏. 고정 카메라·울타리 구도 유지, 0.5초부터 코기가 화면에 있으며 마지막까지 접근. 자막·워터마크·사람 0.",
+   "cut_evidence": "10fps 90프레임 차분 평균 19.71·중앙 19.69, 컷 스파이크 0회(최대 0.45).",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 19.71",
+    "2_original_creator": "PASS — 채널 설명 'our two corgi besties', 167편 전부 같은 코기 자매",
+    "3_measured_only": "PASS — 구독 457 · 조회 2,609 · 좋아요 72 · 2026-05-14 (실측)",
+    "4_no_subs": "PASS — 4컷 자막·브랜드스트립 0",
+    "5_no_people": "PASS — 사람 없음, 워터마크 없음"
+   },
+   "note": "7~11초 카메라가 문 쪽으로 살짝 흔들림. 0.5초 프레임은 코기가 원거리라 첫 1초 훅은 8초 컷으로 잡는 편이 낫다."
+  },
+  {
+   "id": "Ogj9_wFS5BE",
+   "url": "https://www.youtube.com/shorts/Ogj9_wFS5BE",
+   "title": "손을 주면 미어캣이 되는 고양이",
+   "channel": "나랑노랑",
+   "subs": 1430,
+   "subs_txt": "1.43K subscribers",
+   "views_txt": "5,144 views",
+   "likes_txt": "151",
+   "published": "Jan 18, 2024",
+   "cat": "고양이",
+   "dur_s": 11.36,
+   "resolution": "1080x1920",
+   "motion_mean": 13.12,
+   "motion_med": 13.42,
+   "ratios_max": 0.28,
+   "spike_times_s": [],
+   "stills": "stills20/c20_narangnorang_meerkat-2026-11-17-083338.png",
+   "why": "아비시니안 '노랑이'가 손을 보고 미어캣 자세로 일어서서 카메라를 응시하는 11.36초 단일 숏. 4컷 모두 같은 자세·같은 배경, 자막·워터마크 0, 사람은 손만.",
+   "cut_evidence": "10fps 101프레임 차분 평균 13.12·중앙 13.42, 스파이크 0회(최대 0.28).",
+   "gate_check": {
+    "1_uncut_motion": "PASS(경계) — 0~10초 무컷, 모션 평균 13.12로 임계 12.0 위이나 여유 1.1",
+    "2_original_creator": "PASS — 채널 '나랑노랑' 아비시니안 노랑이 단일 개체 1인칭, 64편 전부 같은 고양이",
+    "3_measured_only": "PASS — 구독 1,430 · 조회 5,144 · 좋아요 151 · 2024-01-18 (실측)",
+    "4_no_subs": "PASS — 자막·브랜드스트립 0 (한글 자동 자막은 영상에 burn-in 아님)",
+    "5_no_people": "PASS — 얼굴·전신 없음, 손만 등장"
+   },
+   "note": "모션 임계 근접(13.12). 기획실장 판정 시 참고."
+  },
+  {
+   "id": "qwu55mQAOlE",
+   "url": "https://www.youtube.com/shorts/qwu55mQAOlE",
+   "title": "Breakfast Is Over, Let the Cuteness Begin! 😻❤️🐾 #Cats #straycats",
+   "channel": "Live Cat Feeding",
+   "subs": 332,
+   "subs_txt": "332 subscribers",
+   "views_txt": "2,516 views",
+   "likes_txt": "123",
+   "published": "Oct 29, 2026",
+   "cat": "고양이",
+   "dur_s": 26.76,
+   "resolution": "1080x1920(디코드 608x1080)",
+   "motion_mean": 12.56,
+   "motion_med": 11.69,
+   "ratios_max": 0.68,
+   "spike_times_s": [
+    7.72
+   ],
+   "stills": "stills20/c20_livecatfeeding_breakfast-2026-11-17-084754.png",
+   "why": "길고양이 급식소 아침 식사 후 장면. 고양이 여러 마리가 담장 아래를 오가는 26.76초 단일 숏. 0.5·3.5·7·10초 4컷 모두 같은 골목·같은 담장, 자막·사람 없음.",
+   "cut_evidence": "10fps 98프레임 차량 평균 12.56·중앙 11.69. 7.72초에 변화픽셀비율 0.68 스파이크 1회 — 컷이 아니라 카메라 급회전(직후 프레임 담장·고양이 동일)으로 판단.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(플래그) — 0~10초 모션 12.56, 7.72초 프레이밍 전환 1회 의심",
+    "2_original_creator": "PASS — 채널 'Live Cat Feeding' 길고양이 급식 1인칭, 124편 전부 같은 급식소",
+    "3_measured_only": "PASS — 구독 332 · 조회 2,516 · 좋아요 123 · 2026-10-29 (실측)",
+    "4_no_subs": "PASS — 4컷 자막·브랜드스트립 0",
+    "5_no_people": "PASS — 사람 없음, 워터마크 없음"
+   },
+   "note": "7.72초 스파이크는 8초 컷 이후로 잘라 쓰면 무해. 모션 중앙값이 11.69로 낮아 역동성은 평범."
+  }
+ ],
+ "holds": [
+  {
+   "id": "Y3RthzQMK0A",
+   "url": "https://www.youtube.com/shorts/Y3RthzQMK0A",
+   "channel": "Beach.Road.Dog.Birds.Wildlife",
+   "subs_txt": "1.5K",
+   "views_txt": "34",
+   "published": "2025-06-29",
+   "dur_s": 36.3,
+   "motion_mean": 16.55,
+   "motion_med": 15.84,
+   "spike_times_s": [],
+   "reason": "검은 고양이가 통나무 위에 앉아 그루밍하는 36초 단일 숏. 컷 0·자막 0·사람 0이지만 4컷이 사실상 동일 구도로 모션 상당분이 카메라 흔들림에서 나옴. '역동적 몸동작' 게이트 ①의 취지에 못 미쳐 보류."
+  },
+  {
+   "id": "55knwcfc1Ho",
+   "url": "https://www.youtube.com/shorts/55knwcfc1Ho",
+   "channel": "Agent Trinity",
+   "subs_txt": "411",
+   "views_txt": "22,151",
+   "published": "2026-10-21",
+   "dur_s": 9.9,
+   "motion_mean": 16.52,
+   "motion_med": 11.79,
+   "spike_times_s": [],
+   "reason": "파란 줄무늬 터널에서 흰 새끼고양이가 앞발을 내미는 클립. 무자막·무인물·모션 16.52로 좋으나 길이 9.90초로 10초 하한 미달."
+  },
+  {
+   "id": "q-ht4j6Iqc8",
+   "url": "https://www.youtube.com/shorts/q-ht4j6Iqc8",
+   "channel": "Ariel the Cat 🐈",
+   "subs_txt": "878",
+   "views_txt": "229",
+   "published": "2023-09-19",
+   "dur_s": 28.0,
+   "motion_mean": 13.55,
+   "motion_med": 13.41,
+   "spike_times_s": [],
+   "reason": "캣닙 장난감에 날뛰는 고양이. 모션 13.55·컷 0이나 측정 구간이 0~7.1초에서 끊겨 0~10초 무컷 입증 불충분. 재측정 필요."
+  },
+  {
+   "id": "ox_PbtrgwIU",
+   "url": "https://www.youtube.com/shorts/ox_PbtrgwIU",
+   "channel": "Kitten Growing Up",
+   "subs_txt": "405",
+   "views_txt": "4,206",
+   "published": "2024-06-23",
+   "dur_s": 10.0,
+   "motion_mean": 10.82,
+   "motion_med": 11.0,
+   "spike_times_s": [],
+   "reason": "새끼고양이 손 핥는 클립. 길이 10.00초 정확 경계·모션 10.82로 임계 12.0 미달."
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "-YsHmOYEJlM",
+   "channel": "First Zoomies PH",
+   "reason": "스파이크 6회 — 3~8초마다 컷 이어붙인 몽타주"
+  },
+  {
+   "id": "ksEPBdmz7Vo",
+   "channel": "Cute Cat Kitten",
+   "reason": "모션 26.86이나 스파이크 3회(2.22·3.77·5.52초) 몽타주"
+  },
+  {
+   "id": "BwtaY5PCpXE",
+   "channel": "Kittylicious",
+   "reason": "4컷이 서로 다른 장소 — 컷 1회(4.62초) 확인"
+  },
+  {
+   "id": "Y125-hj2vvI",
+   "channel": "Maxy the DOG",
+   "reason": "모션 20.70이나 스파이크 2회, 디코드 360x640"
+  },
+  {
+   "id": "o8FuL9HImaQ",
+   "channel": "rubynkiwi",
+   "reason": "0~3초 낙엽만 보이는 빈 화면, 스파이크 1회"
+  },
+  {
+   "id": "Hq0lwIEYAEA",
+   "channel": "rubynkiwi",
+   "reason": "0~7초 빈 마당 — 동물 등장 전 모션은 카메라 팬"
+  },
+  {
+   "id": "VnVbk2DPD98",
+   "channel": "Cute Cat Kitten",
+   "reason": "모션 10.02 미달"
+  },
+  {
+   "id": "wvV12DJembk",
+   "channel": "Rambo Adventures",
+   "reason": "모션 7.80 미달"
+  },
+  {
+   "id": "iPGJvQqTAQU",
+   "channel": "NEMO the Chaos Dog",
+   "reason": "모션 8.58 미달"
+  },
+  {
+   "id": "IBcte5Cdu4o",
+   "channel": "Jovie & Lola",
+   "reason": "모션 8.03 미달(2분 4초 장편)"
+  },
+  {
+   "id": "YzvTje89ZBM",
+   "channel": "나랑노랑",
+   "reason": "모션 8.50 미달"
+  },
+  {
+   "id": "Hgg0SJTgABw",
+   "channel": "Kitty Antics",
+   "reason": "모션 7.45 미달"
+  },
+  {
+   "id": "jVZTGKW7fGg",
+   "channel": "Cute Cat Kitten",
+   "reason": "모션 7.47 미달"
+  },
+  {
+   "id": "hGROeXIsSEY",
+   "channel": "Kitty Antics",
+   "reason": "모션 6.65 미달"
+  },
+  {
+   "id": "BVrP8MDjxuo",
+   "channel": "Theo-Maltese Dog",
+   "reason": "모션 6.44 미달"
+  },
+  {
+   "id": "YjaJefBFVU4",
+   "channel": "Big Brother Cats",
+   "reason": "모션 2.92 미달"
+  },
+  {
+   "id": "eGeHJlWfDWM",
+   "channel": "Niti & Bella",
+   "reason": "모션 3.58 미달"
+  },
+  {
+   "id": "eoGrtajsW5c",
+   "channel": "kucing mata laser",
+   "reason": "모션 4.76 미달"
+  },
+  {
+   "id": "3polJOWAAP0",
+   "channel": "My Mao",
+   "reason": "길이 8초"
+  },
+  {
+   "id": "zsVdPO7-T1g",
+   "channel": "sweetmeows",
+   "reason": "길이 8초"
+  },
+  {
+   "id": "l0WQT6VJ-6M",
+   "channel": "Siamkatzboys",
+   "reason": "길이 2초"
+  },
+  {
+   "id": "tqnlqkn1SBo",
+   "channel": "Tucky the Beach Dog",
+   "reason": "길이 6초"
+  },
+  {
+   "id": "Cycv-Wcm-ww",
+   "channel": "Brialla",
+   "reason": "브라우저 로드 실패(2회)"
+  }
+ ],
+ "artifacts": {
+  "stills": "work/sourcing_v2/stills20/ (9장)",
+  "contact_sheets": "tmp20/th/sheet_0~8.jpg",
+  "pools": "tmp20/newchan20.json(347채널) · tmp20/chan_shorts20.json(11,752편) · tmp20/q20.json(268)",
+  "meta": "tmp20/meta20.json",
+  "profiles": "tmp20/chprofiles.json",
+  "screened": "tmp20/measured.txt"
+ },
+ "notes": [
+  "고양이 3편·강아지 1편 확정. 19차 지적대로 강아지 쿼리 40개를 고정 편성해 강아지 후보 112편을 세웠고 그중 1편이 통과했다.",
+  "통과율 4/33(12%). 탈락 사유 1위는 모션 미달(17편) — 개인 집사·보호자 채널의 무자막 클립 대부분이 실내 정적 구도였다.",
+  "자막은 접촉시트 단계에서 대량 사전 제거됐다(215편 중 캡션·POV 카피가 박힌 것 약 60%). 남은 판정 대상은 '무자막이지만 정적인' 클립이 대부분.",
+  "브라우저 플레이어가 3~4편마다 loadVideoById를 거부(notload)해 재시도·재내비게이션이 필요했다. 판정 1편당 평균 40초 소요.",
+  "원본 mp4 보관 불가(SABR 전용)는 15차와 동일 — 항소 대비 원본 보존 미해결."
+ ]
+}
