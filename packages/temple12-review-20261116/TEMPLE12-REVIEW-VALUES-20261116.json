@@ -1,0 +1,242 @@
+[
+ {
+  "name": "추억의 사제",
+  "v2_sec2_3": [
+   142,
+   195000,
+   3900
+  ],
+  "snapshotA": [
+   142,
+   195000,
+   3900
+  ],
+  "snapshotB": [
+   142,
+   195000,
+   3900
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "추억의 신관",
+  "v2_sec2_3": [
+   144,
+   205000,
+   4066
+  ],
+  "snapshotA": [
+   144,
+   205000,
+   4066
+  ],
+  "snapshotB": [
+   144,
+   205000,
+   4066
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "추억의 수호병",
+  "v2_sec2_3": [
+   146,
+   215000,
+   4231
+  ],
+  "snapshotA": [
+   146,
+   215000,
+   4231
+  ],
+  "snapshotB": [
+   146,
+   215000,
+   4231
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "추억의 수호대장",
+  "v2_sec2_3": [
+   148,
+   225000,
+   4393
+  ],
+  "snapshotA": [
+   148,
+   225000,
+   4393
+  ],
+  "snapshotB": [
+   148,
+   225000,
+   4393
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "후회의 사제",
+  "v2_sec2_3": [
+   151,
+   240000,
+   4633
+  ],
+  "snapshotA": [
+   151,
+   240000,
+   4633
+  ],
+  "snapshotB": [
+   151,
+   240000,
+   4633
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "후회의 신관",
+  "v2_sec2_3": [
+   153,
+   260000,
+   4975
+  ],
+  "snapshotA": [
+   153,
+   260000,
+   4975
+  ],
+  "snapshotB": [
+   153,
+   260000,
+   4975
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "후회의 수호병",
+  "v2_sec2_3": [
+   155,
+   280000,
+   5312
+  ],
+  "snapshotA": [
+   155,
+   280000,
+   5312
+  ],
+  "snapshotB": [
+   155,
+   280000,
+   5312
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "후회의 수호대장",
+  "v2_sec2_3": [
+   157,
+   300000,
+   5646
+  ],
+  "snapshotA": [
+   157,
+   300000,
+   5646
+  ],
+  "snapshotB": [
+   157,
+   300000,
+   5646
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "망각의 사제",
+  "v2_sec2_3": [
+   160,
+   330000,
+   6139
+  ],
+  "snapshotA": [
+   160,
+   330000,
+   6139
+  ],
+  "snapshotB": [
+   160,
+   330000,
+   6139
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "망각의 신관",
+  "v2_sec2_3": [
+   162,
+   350000,
+   6463
+  ],
+  "snapshotA": [
+   162,
+   350000,
+   6463
+  ],
+  "snapshotB": [
+   162,
+   350000,
+   6463
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "망각의 수호병",
+  "v2_sec2_3": [
+   164,
+   370000,
+   6783
+  ],
+  "snapshotA": [
+   164,
+   370000,
+   6783
+  ],
+  "snapshotB": [
+   164,
+   370000,
+   6783
+  ],
+  "canonical": null,
+  "canon_id": null
+ },
+ {
+  "name": "망각의 수호대장",
+  "v2_sec2_3": [
+   166,
+   390000,
+   7099
+  ],
+  "snapshotA": [
+   166,
+   390000,
+   7099
+  ],
+  "snapshotB": [
+   166,
+   390000,
+   7099
+  ],
+  "canonical": null,
+  "canon_id": null
+ }
+]
