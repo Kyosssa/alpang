@@ -1,0 +1,257 @@
+{
+ "purpose": "저스티스 몬스터 값 상이 13종 — 다음 대조(두 세트 1.2.148/1.2.157 판정) 입력 체크리스트",
+ "sources": {
+  "snapshot_file": "research/pickle-justice-mapmon-20261116/justice_map_monster_research.json (220,386B)",
+  "snapshot_md": "research/pickle-justice-mapmon-20261116/justice_map_monster_research.md · ad07de664151cd8e",
+  "canonical": "data/db/mobs.json · 0a50720c (175종)"
+ },
+ "notes": [
+  "값 쌍은 전부 실측 — 빈 항목 없음. 힘센 돌 도깨비는 2011 스냅샷에 없어 null이 아니라 \"스냅샷 부재\"로 표기.",
+  "8190001 뉴트주니어 정본 exp null은 확정 건 — 스냅샷 값은 당시 KMS 값으로만 기록."
+ ],
+ "entries": [
+  {
+   "name": "옥토퍼스",
+   "mob_id": 1120100,
+   "snapshot_2011_09_12": {
+    "level": 9,
+    "hp": 110,
+    "exp": 15
+   },
+   "snapshot_2012_05_04": {
+    "level": 9,
+    "hp": 110,
+    "exp": 15
+   },
+   "canonical_gms95": {
+    "level": 8,
+    "hp": 95,
+    "exp": 13
+   }
+  },
+  {
+   "name": "주황버섯",
+   "mob_id": 1210102,
+   "snapshot_2011_09_12": {
+    "level": 10,
+    "hp": 125,
+    "exp": 17
+   },
+   "snapshot_2012_05_04": {
+    "level": 10,
+    "hp": 125,
+    "exp": 17
+   },
+   "canonical_gms95": {
+    "level": 6,
+    "hp": 65,
+    "exp": 10
+   }
+  },
+  {
+   "name": "초록버섯",
+   "mob_id": 1110100,
+   "snapshot_2011_09_12": {
+    "level": 12,
+    "hp": 175,
+    "exp": 21
+   },
+   "snapshot_2012_05_04": {
+    "level": 12,
+    "hp": 175,
+    "exp": 21
+   },
+   "canonical_gms95": {
+    "level": 7,
+    "hp": 80,
+    "exp": 12
+   }
+  },
+  {
+   "name": "뿔버섯",
+   "mob_id": 2110200,
+   "snapshot_2011_09_12": {
+    "level": 14,
+    "hp": 225,
+    "exp": 24
+   },
+   "snapshot_2012_05_04": {
+    "level": 14,
+    "hp": 225,
+    "exp": 24
+   },
+   "canonical_gms95": {
+    "level": 13,
+    "hp": 200,
+    "exp": 23
+   }
+  },
+  {
+   "name": "좀비버섯",
+   "mob_id": 2230101,
+   "snapshot_2011_09_12": {
+    "level": 18,
+    "hp": 325,
+    "exp": 32
+   },
+   "snapshot_2012_05_04": {
+    "level": 18,
+    "hp": 325,
+    "exp": 32
+   },
+   "canonical_gms95": {
+    "level": 15,
+    "hp": 250,
+    "exp": 26
+   }
+  },
+  {
+   "name": "다크 스톤골렘",
+   "mob_id": 5130102,
+   "snapshot_2011_09_12": {
+    "level": 22,
+    "hp": 435,
+    "exp": 48
+   },
+   "snapshot_2012_05_04": {
+    "level": 22,
+    "hp": 435,
+    "exp": 48
+   },
+   "canonical_gms95": {
+    "level": 23,
+    "hp": 465,
+    "exp": 40
+   }
+  },
+  {
+   "name": "믹스골렘",
+   "mob_id": 5150000,
+   "snapshot_2011_09_12": {
+    "level": 24,
+    "hp": 495,
+    "exp": 50
+   },
+   "snapshot_2012_05_04": {
+    "level": 24,
+    "hp": 495,
+    "exp": 50
+   },
+   "canonical_gms95": {
+    "level": 26,
+    "hp": 580,
+    "exp": 47
+   }
+  },
+  {
+   "name": "가로등",
+   "mob_id": 2150002,
+   "snapshot_2011_09_12": {
+    "level": 25,
+    "hp": 525,
+    "exp": 53
+   },
+   "snapshot_2012_05_04": {
+    "level": 25,
+    "hp": 525,
+    "exp": 53
+   },
+   "canonical_gms95": {
+    "level": 25,
+    "hp": 525,
+    "exp": 44
+   }
+  },
+  {
+   "name": "순찰로봇S",
+   "mob_id": 2150003,
+   "snapshot_2011_09_12": {
+    "level": 28,
+    "hp": 720,
+    "exp": 64
+   },
+   "snapshot_2012_05_04": {
+    "level": 28,
+    "hp": 720,
+    "exp": 64
+   },
+   "canonical_gms95": {
+    "level": 28,
+    "hp": 720,
+    "exp": 53
+   }
+  },
+  {
+   "name": "우드 마스크",
+   "mob_id": 2230110,
+   "snapshot_2011_09_12": {
+    "level": 28,
+    "hp": 720,
+    "exp": 64
+   },
+   "snapshot_2012_05_04": {
+    "level": 28,
+    "hp": 720,
+    "exp": 64
+   },
+   "canonical_gms95": {
+    "level": 28,
+    "hp": 720,
+    "exp": 53
+   }
+  },
+  {
+   "name": "뉴트주니어",
+   "mob_id": 8190001,
+   "snapshot_2011_09_12": {
+    "level": 145,
+    "hp": 210000,
+    "exp": 3458
+   },
+   "snapshot_2012_05_04": {
+    "level": 145,
+    "hp": 210000,
+    "exp": 3458
+   },
+   "canonical_gms95": {
+    "level": 145,
+    "hp": 210000,
+    "exp": null
+   }
+  },
+  {
+   "name": "네스트 골렘",
+   "mob_id": 8190005,
+   "snapshot_2011_09_12": {
+    "level": 150,
+    "hp": 235000,
+    "exp": 7800
+   },
+   "snapshot_2012_05_04": {
+    "level": 150,
+    "hp": 235000,
+    "exp": 7800
+   },
+   "canonical_gms95": {
+    "level": 150,
+    "hp": 235000,
+    "exp": 3795
+   }
+  },
+  {
+   "name": "힘센 돌 도깨비",
+   "mob_id": 9500389,
+   "snapshot_2011_09_12": "스냅샷 부재",
+   "snapshot_2012_05_04": {
+    "level": 126,
+    "hp": 118000,
+    "exp": 2122
+   },
+   "canonical_gms95": {
+    "level": 66,
+    "hp": 8000,
+    "exp": 428
+   }
+  }
+ ]
+}
