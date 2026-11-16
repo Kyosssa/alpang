@@ -1,0 +1,9 @@
+# home_build.py 가드 발췌 (원본: ~/workspace/alpang/home_build.py · 20,499B · SHA-256 129217fc95ce9e5512f7db9cde00280b55add5ef97d8592114d92bce5c703f3a)
+# 위치: build_locale 정의 직전 238~240줄
+
+    return out
+
+# [가드 — 2026-11-16 Claude 판정] 다국어 홈 2곳(taiwan · vietnam)은 라이브 실물 세대가 정본이다.
+# 이 빌더의 산출로 두 홈을 덮지 않는다 — 재빌드 산출은 구조가 다른 별도 세대임이 실측으로 확정됐다.
+# 다국어 홈 정정은 라이브 실물(저장소 main) 기준 소규모 정정으로만 하고, 정본 세대 재구축 건에서만 이 가드를 푼다.
+def build_locale(locale, preview_locales):
