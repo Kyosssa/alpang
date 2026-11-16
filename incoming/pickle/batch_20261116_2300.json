@@ -1,0 +1,546 @@
+{
+ "batch": "17차 정기 소싱 (2026-11-16 23:00 KST)",
+ "run_at": "2026-11-16T23:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "target": "정예 6~10편 (쪼꼬미 — 페럿·다람쥐·수달·라쿤 → 고양이·강아지)",
+ "delivered": [
+  {
+   "id": "sDgEo3joUEA",
+   "url": "https://www.youtube.com/shorts/sDgEo3joUEA",
+   "title": "Raccoon wrestling #funny #furbaby #raccoon #pets #cute #raccoonshorts #animals #wildlife #racoons",
+   "channel": "Shredder Raccoon",
+   "author_id": "UC_LD9PidJk7xx6RgMKVadeQ",
+   "subs": 7800,
+   "views": 30163,
+   "likes": 1069,
+   "published": "1 year ago",
+   "dur_s": 16.58,
+   "api_length_s": 17,
+   "resolution": "1080x1920 (실측 디코드)",
+   "orientation": "vertical",
+   "motion_mean": 32.71,
+   "motion_med": 34.23,
+   "spike_max": 0.63,
+   "cuts_0_10s": 0,
+   "cut_evidence": "0.1초 버킷 105프레임 차분 시계열이 10.2~45.8 사이에 고르게 분포(최대 45.8, 2위 43.0) → 단일 프레임 급변 없음. 핸드헬드 팬·줌에 의한 연속 프레이밍 변화로 판정.",
+   "stills": "stills17/c17_raccoon_wrestle_4cut.png (0.5·4·8·11초 4컷)",
+   "gate_check": {
+    "1_uncut_motion": "PASS",
+    "2_original_creator": "PASS — 개인 사육 계정, 라쿤 2마리 상시 등장",
+    "3_measured": "PASS — 채널 HTML 구독자 7.8천명 실측",
+    "4_no_caption": "PASS — 무자막·무브랜드스트립",
+    "5_no_human": "PASS — 사람 미등장"
+   },
+   "category": "쪼꼬미(라쿤)",
+   "why": "라쿤 2마리가 낙엽 깔린 우리에서 서로 레슬링하는 17초 단일 숏. 모션 32.71(중앙 34.23)로 이번 회차 최상위권이며 컷·자막·사람·워터마크 모두 없음."
+  },
+  {
+   "id": "LWV6dtwjFOQ",
+   "url": "https://www.youtube.com/shorts/LWV6dtwjFOQ",
+   "title": "Angry Jack Russell",
+   "channel": "Jack Russell Terrier",
+   "author_id": "UCUCjIbrMHdugY8InENrtNPw",
+   "subs": 6020,
+   "views": 1902037,
+   "likes": 30310,
+   "published": "5 years ago",
+   "dur_s": 14.7,
+   "api_length_s": 15,
+   "resolution": "720x1280 (실측 디코드)",
+   "orientation": "vertical",
+   "motion_mean": 33.28,
+   "motion_med": 32.83,
+   "spike_max": 0.63,
+   "cuts_0_10s": 0,
+   "cut_evidence": "0.1초 버킷 106프레임 차분 시계열 17.3~63.7, 최소값 17 이상으로 전 구간 고모션 연속. 고립 스파이크 없음 → 무컷.",
+   "stills": "stills17/c17_jackrussell_4cut.png (0.5·4·8·11초 4컷)",
+   "gate_check": {
+    "1_uncut_motion": "PASS",
+    "2_original_creator": "PASS — 개인 반려견 계정",
+    "3_measured": "PASS — 채널 HTML 구독자 6.02천명 실측",
+    "4_no_caption": "PASS — 무자막",
+    "5_no_human": "PASS — 손만 등장(플레이북 허용)"
+   },
+   "category": "강아지",
+   "why": "잭러셀테리어가 사람 손을 향해 이빨을 드러내며 달려드는 15초 단일 숏. 모션 33.28로 이번 회차 최고치. 조회 190만·좋아요 3만의 검증된 레전드 원석."
+  },
+  {
+   "id": "hfX1LHbRKqo",
+   "url": "https://www.youtube.com/shorts/hfX1LHbRKqo",
+   "title": "なかよしなカワウソとサモエド😍",
+   "channel": "otter kinaco",
+   "author_id": "UC0qP3e6Ys9EycNiHQ4yU3GQ",
+   "subs": 23500,
+   "views": 218954,
+   "likes": 5731,
+   "published": "2 years ago",
+   "dur_s": 17.5,
+   "api_length_s": 18,
+   "resolution": "1080x1920 (실측 디코드)",
+   "orientation": "vertical",
+   "motion_mean": 13.12,
+   "motion_med": 12.58,
+   "spike_max": 0.29,
+   "cuts_0_10s": 0,
+   "cut_evidence": "스파이크 최대 0.29로 0.6 임계 미만 → 단일 프레임 컷 없음. 카메라 줌인/아웃에 따른 완만한 프레이밍 변화.",
+   "stills": "stills17/c17_otterkinaco_4cut.png (0.5·4·8·11초 4컷)",
+   "gate_check": {
+    "1_uncut_motion": "PASS",
+    "2_original_creator": "PASS — 일본 1인칭 사육 계정(수달 1마리+개 6마리)",
+    "3_measured": "PASS — 채널 API 구독자 23,500 실측",
+    "4_no_caption": "PASS — 무자막",
+    "5_no_human": "PASS — 사람 미등장"
+   },
+   "category": "쪼꼬미(수달)",
+   "why": "수달과 사모예드가 침대 위에서 장난치는 18초 단일 숏. 모션 13.12(중앙 12.58)로 임계 통과, 자막·워터마크·사람 없음."
+  }
+ ],
+ "delivered_count": 3,
+ "hold_count": 10,
+ "near_miss_count": 16,
+ "screened_count": 51,
+ "screened_log": "tmp17/screen17.jsonl",
+ "holds": [
+  {
+   "id": "q2TVvyn3-BQ",
+   "url": "https://www.youtube.com/shorts/q2TVvyn3-BQ",
+   "title": "Ferrets Gone Wild: Macaroni Mayhem",
+   "channel": "FerretGPT",
+   "subs": 789,
+   "views": 8102,
+   "likes": 234,
+   "published": "1 year ago",
+   "dur_s": 13.64,
+   "resolution": "720x1280",
+   "motion_mean": 16.36,
+   "motion_med": 15.14,
+   "spike_max": 0.59,
+   "cuts_0_10s": 0,
+   "why": "모션·길이·해상도 모두 통과. 무자막이지만 0.5초·8초 스틸에서 보호자 팔뚝과 상의 소매가 화면 절반을 차지 → 게이트⑤ 경계(플레이북은 '손만' 허용). 기획실장 판정 요청.",
+   "stills": "stills17/c17_ferretgpt_hold_4cut.png"
+  },
+  {
+   "id": "cs4TfplbncY",
+   "url": "https://www.youtube.com/shorts/cs4TfplbncY",
+   "title": "일하기 싫어서 화난 프레리독 #놀고싶어 #돈많고싶어",
+   "channel": "우슬래말래 aka 쁘래리 angry prairie dog",
+   "subs": null,
+   "views": 298230,
+   "dur_s": 12.4,
+   "resolution": "1080x1920",
+   "motion_mean": 10.76,
+   "motion_med": 13.46,
+   "spike_max": 0.13,
+   "why": "모션 평균 10.76(중앙 13.46)로 임계 근접. 국내 프레리독 계정·무자막으로 보이나 스틸 미실시 → 판정 보류."
+  },
+  {
+   "id": "OEaL1HeExG8",
+   "url": "https://www.youtube.com/shorts/OEaL1HeExG8",
+   "title": "School…..",
+   "channel": "Cockatiel Riki & Kisa",
+   "subs": null,
+   "views": 493630,
+   "dur_s": 16.66,
+   "resolution": "1080x1920",
+   "motion_mean": 10.73,
+   "motion_med": 8.86,
+   "spike_max": 0.73,
+   "why": "모션 10.73으로 임계 미달, 스파이크 0.73으로 컷 의심 동반 → 보류."
+  },
+  {
+   "id": "6lv1IkdyyOg",
+   "url": "https://www.youtube.com/shorts/6lv1IkdyyOg",
+   "title": "Sock Soup?! 蕾夢狂讚美味湯頭!",
+   "channel": "Totoro The Cockatiel",
+   "subs": null,
+   "views": 721985,
+   "dur_s": 11.78,
+   "resolution": "1440x2560",
+   "motion_mean": 11.33,
+   "motion_med": 5.06,
+   "spike_max": 0.75,
+   "why": "4K 세로·무컷 후보이나 모션 11.33(중앙 5.06)·스파이크 0.75. 중국어 자막 성향 채널이라 스틸 확인 필요 → 보류."
+  },
+  {
+   "id": "U_iXDhuV9dc",
+   "url": "https://www.youtube.com/shorts/U_iXDhuV9dc",
+   "title": "Smeagol hates Halloween",
+   "channel": "Smeagol and Groot the Sphynx Cat Brothers",
+   "subs": 87200,
+   "views": 28834003,
+   "dur_s": 37.5,
+   "resolution": "1080x1920",
+   "motion_mean": 11.49,
+   "motion_med": 8.24,
+   "spike_max": 0.4,
+   "why": "조회 2,883만의 스핑크스 고양이 계정. 모션 11.49로 임계 근접, 37초 단일 숏 여부는 스틸 확인 필요 → 보류."
+  },
+  {
+   "id": "wyVHHt7fwjI",
+   "url": "https://www.youtube.com/shorts/wyVHHt7fwjI",
+   "title": "The Rainy Day Umbrella Fail",
+   "channel": "ZUBBY the ferret",
+   "subs": 383,
+   "views": 70000,
+   "dur_s": 21.33,
+   "resolution": "720x1280",
+   "motion_mean": 11.65,
+   "motion_med": 9.85,
+   "spike_max": 0.71,
+   "why": "모션 11.65로 임계 근접하나 스파이크 0.71·썸네일이 합성/AI풍 렌더라 원본성 재확인 필요 → 보류."
+  },
+  {
+   "id": "Iik47zx66bA",
+   "url": "https://www.youtube.com/shorts/Iik47zx66bA",
+   "title": "But to me, it's all worth it!",
+   "channel": "Moon & Nala",
+   "subs": 162000,
+   "views": 1534310,
+   "dur_s": 60.08,
+   "resolution": "1080x1920",
+   "motion_mean": 19.2,
+   "motion_med": 14.01,
+   "spike_max": 0.81,
+   "why": "모션 19.2로 통과권이나 스파이크 0.81 → 60초 구간 중 컷 전환 의심. 0~10초 무컷 확인을 위해 스틸·시계열 재검증 필요."
+  },
+  {
+   "id": "oAG2oECx8JU",
+   "url": "https://www.youtube.com/shorts/oAG2oECx8JU",
+   "title": "What are your ferret's favorites?",
+   "channel": "Moon & Nala",
+   "subs": 162000,
+   "views": 2388060,
+   "dur_s": 60.06,
+   "resolution": "1080x1920",
+   "motion_mean": 17.77,
+   "motion_med": 15.06,
+   "spike_max": 0.8,
+   "why": "위와 동일 채널·동일 사유(스파이크 0.8 컷 의심)."
+  },
+  {
+   "id": "RLbIoeaSrJg",
+   "url": "https://www.youtube.com/shorts/RLbIoeaSrJg",
+   "title": "Even the tiniest souls deserve love & kindness",
+   "channel": "Van Gogh the Chipmunk",
+   "subs": 75900,
+   "views": 165269,
+   "dur_s": 30.32,
+   "resolution": "1080x1920",
+   "motion_mean": 13.32,
+   "motion_med": 8.95,
+   "spike_max": 0.8,
+   "why": "모션 13.32이나 중앙 8.95·스파이크 0.8로 0~10초 내 컷 가능성 높음 → 보류."
+  },
+  {
+   "id": "9xhp-SQ2Wdo",
+   "url": "https://www.youtube.com/shorts/9xhp-SQ2Wdo",
+   "title": "CatMom vs CatDad Rivalry Continues",
+   "channel": "Maxie & Foxie Maine Coons",
+   "subs": 200000,
+   "views": 5395524,
+   "dur_s": 17.98,
+   "resolution": "2160x3840 소스(디코드 1080x1920)",
+   "motion_mean": 14.14,
+   "motion_med": 10.31,
+   "spike_max": 0.89,
+   "why": "4K 세로·조회 539만의 대형 원석이나 스파이크 0.89로 컷 의심 → 보류(스틸 확인 시 즉시 사용 가능)."
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "xV2bjAM7gQQ",
+   "channel": "The Cat and Ferret",
+   "motion_mean": 17.22,
+   "resolution": "1080x1920",
+   "reason": "게이트⑤ — 0.5·4·8·11초 전 컷에서 보호자(남성) 상반신이 화면 중앙을 점유",
+   "stills": "stills17/c17_catferret_reject_4cut.png"
+  },
+  {
+   "id": "LemAUo4tfgU",
+   "channel": "Charlie The Chipmunk",
+   "motion_mean": 15.31,
+   "resolution": "1080x1920",
+   "reason": "게이트④ — 하단 중앙 'Charlie The Chipmunk' 워터마크가 4·8·11초 고정",
+   "stills": "stills17/c17_charlie_watermark_4cut.png"
+  },
+  {
+   "id": "5d9KHTmMtFo",
+   "channel": "Playful Otter TV",
+   "motion_mean": 20.95,
+   "resolution": "720x1280",
+   "reason": "게이트④ — 중국어 자막 고정 + 컷 전환 다수",
+   "stills": "stills17/c17_playfulotter_caption_4cut.png"
+  },
+  {
+   "id": "0ABXckdo6x8",
+   "channel": "Playful Otter TV",
+   "motion_mean": 18.8,
+   "resolution": "720x1280",
+   "reason": "게이트④ — 중국어 자막 고정"
+  },
+  {
+   "id": "_c_P4t9VcWc",
+   "channel": "Playful Otter TV",
+   "motion_mean": 22.86,
+   "resolution": "720x1280",
+   "reason": "게이트④ — 중국어 자막 고정"
+  },
+  {
+   "id": "EkuzD4b_Rw0",
+   "channel": "Ronzeiltreadmill",
+   "motion_mean": 18.65,
+   "resolution": "720x1280",
+   "reason": "게이트④⑤ — 영어 자막 박스 고정 + 보호자 전신·얼굴 노출",
+   "stills": "stills17/c17_aussie_caption_person_4cut.png"
+  },
+  {
+   "id": "OIXIkFulkBY",
+   "channel": "Ferret Ever After",
+   "motion_mean": 16.01,
+   "resolution": "1080x1920",
+   "reason": "게이트④ — 'What even is this? 🙈😂' 영문 자막 고정",
+   "stills": "stills17/c17_ferreteverafter_caption_4cut.png"
+  },
+  {
+   "id": "1Pb87K1aKjc",
+   "channel": "Zooarcade (Zooarcade)",
+   "motion_mean": 17.35,
+   "resolution": "720x1280",
+   "reason": "스파이크 0.93 → 컷 의심(중앙 12.19 대비 최대 108.2 고립)"
+  },
+  {
+   "id": "yo-QgJkFzUw",
+   "channel": "Zooarcade (Zooarcade)",
+   "motion_mean": 16.05,
+   "resolution": "720x1280",
+   "reason": "스파이크 0.77 → 컷 의심"
+  },
+  {
+   "id": "uBh_3pAUUoI",
+   "channel": "Shredder Raccoon",
+   "motion_mean": 30.53,
+   "resolution": "608x1080",
+   "reason": "해상도 — 세로 608x1080으로 720p 하한 미달(모션 자체는 30.53으로 우수)"
+  },
+  {
+   "id": "6CFfOn2PhpU",
+   "channel": "Jack Russell Terrier",
+   "motion_mean": 19.08,
+   "resolution": "576x1024",
+   "reason": "해상도 576x1024 미달"
+  },
+  {
+   "id": "904cGcNUm7g",
+   "channel": "Cockatiel Riki & Kisa",
+   "motion_mean": 5.41,
+   "resolution": "608x1080",
+   "reason": "길이 9.06초 + 해상도 미달"
+  },
+  {
+   "id": "2C9gDqL9XDs",
+   "channel": "Maine Coon Kittens",
+   "motion_mean": 4.59,
+   "resolution": "1080x1920",
+   "reason": "길이 9.4초(10초 하한 미달)"
+  },
+  {
+   "id": "aIaazJ04msU",
+   "channel": "Ferret Ever After",
+   "motion_mean": 12.28,
+   "resolution": "1080x1920",
+   "reason": "길이 7.94초"
+  },
+  {
+   "id": "VX5In3RGjcA",
+   "channel": "Risky Business Ferret Sanctuary",
+   "motion_mean": null,
+   "resolution": "-",
+   "reason": "길이 9초"
+  },
+  {
+   "id": "obE7B3swrMk",
+   "channel": "Kingsdown Ferrets",
+   "motion_mean": null,
+   "resolution": "-",
+   "reason": "길이 6초"
+  }
+ ],
+ "rejected_this_round": {
+  "count": 21,
+  "motion_under_10": [
+   {
+    "id": "1HrYa0oHPuc",
+    "ch": "Parrot Whisper Journeys",
+    "motion_mean": 4.7,
+    "motion_med": 4.7,
+    "dur": 31.72
+   },
+   {
+    "id": "HFuNyd4JC2k",
+    "ch": "Talk with Taco",
+    "motion_mean": 4.64,
+    "motion_med": 4.36,
+    "dur": 15.08
+   },
+   {
+    "id": "MotoggX3WVw",
+    "ch": "Talk with Taco",
+    "motion_mean": 4.42,
+    "motion_med": 3.45,
+    "dur": 15.08
+   },
+   {
+    "id": "BK1KCNF7VXU",
+    "ch": "Moon & Nala",
+    "motion_mean": 8.36,
+    "motion_med": 5.09,
+    "dur": 59.6
+   },
+   {
+    "id": "Cc8B2DIcuYU",
+    "ch": "Cosmo the funny parrot",
+    "motion_mean": 1.94,
+    "motion_med": 1.48,
+    "dur": 30.5
+   },
+   {
+    "id": "OOLqIeP2yM0",
+    "ch": "Zooarcade (Zooarcade)",
+    "motion_mean": 5.82,
+    "motion_med": 4.66,
+    "dur": 12.16
+   },
+   {
+    "id": "ZlXZtHDk2W4",
+    "ch": null,
+    "motion_mean": 6.1,
+    "motion_med": 2.38,
+    "dur": 18.02
+   },
+   {
+    "id": "0yB5CviOCmg",
+    "ch": "Squirrels at the window",
+    "motion_mean": 5.35,
+    "motion_med": 5,
+    "dur": 34.02
+   },
+   {
+    "id": "OlBDNx2x06w",
+    "ch": "Wild Mane Cats",
+    "motion_mean": 3.03,
+    "motion_med": 2.14,
+    "dur": 23.3
+   },
+   {
+    "id": "PkHbDoaD5-s",
+    "ch": "Zeus The Stubborn Husky",
+    "motion_mean": 5.09,
+    "motion_med": 4.67,
+    "dur": 53.22
+   },
+   {
+    "id": "obPwJHBVypg",
+    "ch": "Saucy Huskies",
+    "motion_mean": 9.38,
+    "motion_med": 8.49,
+    "dur": 25.94
+   },
+   {
+    "id": "DMRXnR0MQIY",
+    "ch": "Talk with Taco",
+    "motion_mean": 2.56,
+    "motion_med": 2.23,
+    "dur": 15.08
+   },
+   {
+    "id": "-y2g81DQf2k",
+    "ch": "All About Budgies",
+    "motion_mean": 5.12,
+    "motion_med": 5.24,
+    "dur": 15.04
+   },
+   {
+    "id": "KBfZPKw15uE",
+    "ch": "Zeus The Stubborn Husky",
+    "motion_mean": 8.76,
+    "motion_med": 6.74,
+    "dur": 59.8
+   },
+   {
+    "id": "904cGcNUm7g",
+    "ch": null,
+    "motion_mean": 5.41,
+    "motion_med": 0.77,
+    "dur": 9.06
+   },
+   {
+    "id": "Let14rp_qbo",
+    "ch": null,
+    "motion_mean": 4.66,
+    "motion_med": 4.14,
+    "dur": 10.92
+   },
+   {
+    "id": "eFho3za8GOM",
+    "ch": null,
+    "motion_mean": 9.04,
+    "motion_med": 8.14,
+    "dur": 15.24
+   },
+   {
+    "id": "P_UnOHCtw9I",
+    "ch": null,
+    "motion_mean": 5.84,
+    "motion_med": 4.66,
+    "dur": 16.1
+   },
+   {
+    "id": "2C9gDqL9XDs",
+    "ch": null,
+    "motion_mean": 4.59,
+    "motion_med": 4.29,
+    "dur": 9.4
+   },
+   {
+    "id": "uTWDB3kDZEE",
+    "ch": null,
+    "motion_mean": 9.04,
+    "motion_med": 9.29,
+    "dur": 117.56
+   },
+   {
+    "id": "_53gekHKj9M",
+    "ch": null,
+    "motion_mean": 3.17,
+    "motion_med": 2.39,
+    "dur": 14.04
+   }
+  ],
+  "unavailable_or_no_duration": []
+ },
+ "method_17": {
+  "1_channel_pool": "16차 618채널 + 17차 신규 채널 검색 937건(동물 키워드 70종, type=channel) → 구독자 300~50만 241채널 숏츠 7,050편 추가 수집(총 582채널·19,743편)",
+  "2_thumbnail_vertical_filter": "i.ytimg.com/vi/<id>/oar2.jpg(세로 원본 썸네일) 치수를 PIL로 읽어 세로 여부만 1차 판정(표본 414건 중 실제 세로/가로 판정 376건 전부 일치). 3,039편 → 세로 2,625편",
+  "3_contact_sheet_caption_scan": "후보 24편씩 oar2 썸네일을 격자 이미지로 합성해 육안 스캔 → 자막·사람·워터마크가 박힌 클립을 브라우저 판정 전에 대량 제거(이번 회차 226편 중 약 60% 사전 탈락)",
+  "4_motion_measure": "원격 브라우저 watch 페이지의 <video>를 hd1080으로 강제하고 movie_player.loadVideoById로 후보를 갈아끼우며 0~10.6초 160x90 그레이스케일 프레임 차분 10fps 측정(모션 평균·중앙·스파이크)",
+  "5_cut_check": "모션 통과작은 0.1초 버킷 차분 시계열을 전량 덤프해 고립 스파이크 유무로 컷 판정(LWV6dtwjFOQ 17~64 연속, sDgEo3joUEA 10~46 연속)",
+  "6_stills": "0.5·4·8·11초 4컷을 2x2 격자로 캔버스에 합성해 1장으로 캡처 → 자막·워터마크·사람 유무 육안 확인",
+  "7_measured_meta": "구독자·조회·좋아요·업로드일은 인비디어스 API + 채널 HTML 실측값만 기재"
+ },
+ "artifacts": {
+  "stills_dir": "work/sourcing_v2/stills17/",
+  "sheets": "work/sourcing_v2/tmp17/th/sheet_mo_*.jpg",
+  "logs": [
+   "tmp17/screen17.jsonl",
+   "tmp17/qmeta17.jsonl",
+   "tmp17/verts17.json(thumb probe)",
+   "tmp17/thumbs17.jsonl"
+  ]
+ },
+ "notes": [
+  "이번 회차도 편수를 채우지 않고 게이트 5개를 모두 통과한 3편만 확정했습니다.",
+  "자막(게이트④)과 사람(게이트⑤)이 탈락의 최대 원인이었습니다. 자막 고정 비율이 높은 채널(Playful Otter TV·Ferret Ever After·Charlie The Chipmunk·Ronzeiltreadmill)은 이번 회차에서 채널 단위로 제외했습니다.",
+  "모션 12.0을 넘겨도 해상도 608x1080·576x1024로 떨어지는 숏츠(유튜브가 720p 미만으로만 인코딩)가 다수 있어 해상도 실측을 브라우저 단계에서 반드시 병행해야 합니다.",
+  "노션 마스터보드는 수정하지 않았습니다."
+ ]
+}
