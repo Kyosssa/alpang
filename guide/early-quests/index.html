@@ -61,7 +61,10 @@ h1{font-size:25px;margin:22px 0 6px}
     .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
     .new-dot.on{display:inline-block}
   }
-  </style>
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(30,25,15,.05);padding:20px 22px;margin-top:14px}
+.glink{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:15px 14px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;margin:2px 4px 2px 0;background:var(--card)}
+.glink:hover{color:var(--ink)}
+</style>
 </head>
 <body>
   <div class="gnb"><div class="gnb-in"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a></nav></div></div>
@@ -81,6 +84,10 @@ h1{font-size:25px;margin:22px 0 6px}
 <p class="note">* 보상이 여러 종류인 퀘스트는 어떤 방식으로 받는지 본진 데이터만으로 확정할 수 없어, 받을 수 있는 보상을 목록으로만 표기했어요.</p>
 </div>
 </div>
+  <section class="card glinks">
+    <h2>다른 가이드 보기</h2>
+    <div class="glink-row"><a class="glink" href="/guide/hunting/">초반 사냥터 후보 비교</a><a class="glink" href="/guide/orbis-leafre/">오르비스 & 리프레 몬스터 구경</a><a class="glink" href="/guide/edelstein/">에델슈타인 엿보기</a><a class="glink" href="/guide/ludibrium/">루디브리엄 마을 가이드</a><a class="glink" href="/guide/mushroom-shrine/">버섯신사 엿보기</a><a class="glink" href="/guide/scroll-reward-quests/">주문서 주는 퀘스트 총정리</a><a class="glink" href="/guide/return-routes/">귀환 연결로 읽는 이동 절약법</a><a class="glink" href="/guide/hunting-efficiency/">사냥터 효율 읽는 법</a><a class="glink" href="/guide/quest-chains/">퀘스트 선행 사슬 읽는 법</a><a class="glink" href="/guide/portal-hubs/">포털 허브 맵 읽는 법</a><a class="glink" href="/guide/town-npcs/">마을 NPC 배치 읽는 법</a><a class="glink" href="/guide/equip-levels/">착용 레벨로 읽는 성장 구간</a><a class="glink" href="/guide/spawn-ranges/">출현 범위로 읽는 몬스터</a><a class="glink" href="/guide/quest-start-levels/">시작 레벨로 읽는 세계의 열림</a><a class="glink" href="/guide/mob-stats/">몬스터 스탯 분포로 읽는 상대의 성격</a><a class="glink" href="/guide/mob-levels/">몬스터 레벨대 분포로 읽는 종의 곡선</a><a class="glink" href="/guide/exp-curve/">레벨 대비 경험치 곡선 읽는 법</a><a class="glink" href="/guide/npc-dialogue/">NPC 대사 보유 분포로 읽는 세계의 말수</a><a class="glink" href="/guide/hp-curve/">몬스터 체력 곡선으로 읽는 상대의 무게</a><a class="glink" href="/guide/quest-rewards/">퀘스트 보상 분포로 읽는 보상의 결</a><a class="glink" href="/guide/quest-endpoints/">완료 NPC 집중도로 읽는 이야기의 매듭</a><a class="glink" href="/guide/quest-startpoints/">시작 NPC 집중도로 읽는 이야기의 문</a></div>
+  </section>
 <script>
 document.querySelectorAll('.tabs button').forEach(function(b){
   b.addEventListener('click',function(){
