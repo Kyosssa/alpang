@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "kind": "q234-followup-verification",
+    "created": "2026-11-16T16:45:00+09:00",
+    "author": "피클(배경 담당)",
+    "subject": "justice_map_monster_research.md/.json 몬스터 스냅샷 2벌의 골렘 3종 원자료 행밀림 확인",
+    "sources_rechecked": [
+      "https://blog.naver.com/nari_o_oa/140150395342",
+      "https://blog.naver.com/qpqp111111/10138272135",
+      "https://blog.naver.com/qpqp111111/10138272081",
+      "https://maplestory.nexon.com/News/Update/190"
+    ],
+    "raw_files": [
+      "work/map_tmp/nari_raw.html",
+      "work/map_tmp/qpqp135.html",
+      "work/map_tmp/qpqp081.html",
+      "work/map_tmp/posts.jsonl",
+      "work/map_tmp/db_201109.json",
+      "work/map_tmp/db_201205.json",
+      "work/map_tmp/parse_db.py",
+      "work/map_tmp/lib.py",
+      "tmp/justice5/u136_190.html",
+      "tmp/justice5/u136_190.txt"
+    ],
+    "originals_modified": false,
+    "notion_touched": false
+  },
+  "snapshots": [
+    {
+      "key": "A",
+      "label": "2011-09-12",
+      "urls": ["https://blog.naver.com/nari_o_oa/140150395342"],
+      "post_add_date_local": "2012-01-24 01:48",
+      "stated_baseline": "2011/9/12 기준 최신 정보입니다",
+      "monster_count_doc": 462,
+      "monster_count_raw_parsed": 463,
+      "raw_reparse_diff_count": 0,
+      "html_structure": "paragraph (<p>) free text 'name (level/hp/exp) - attr' per monster; no monster table",
+      "upstream_evidence": {
+        "inven_dataninfo_image_refs": 349,
+        "cited_inven_board_posts": [
+          "inven.co.kr/board/powerbbs.php?come_idx=2304&l=2993",
+          "inven.co.kr/board/powerbbs.php?come_idx=2304&l=3206"
+        ]
+      }
+    },
+    {
+      "key": "B",
+      "label": "2012-05-04",
+      "urls": [
+        "https://blog.naver.com/qpqp111111/10138272135",
+        "https://blog.naver.com/qpqp111111/10138272081"
+      ],
+      "post_add_date_local": ["2012-05-08 02:17", "2012-05-08 02:15"],
+      "stated_baseline": "2012/05/04 기준 최신 정보입니다",
+      "monster_count_doc": 488,
+      "monster_count_raw_parsed": 488,
+      "raw_reparse_diff_count": 0,
+      "html_structure": "paragraph (<p>) free text; no monster table",
+      "upstream_evidence": {
+        "inven_dataninfo_image_refs": 349,
+        "verbatim_line_overlap_with_A_pct": 89.6
+      }
+    }
+  ],
+  "golem_rows": {
+    "snapshot_A": [
+      {"name": "스톤골렘", "level": 20, "hp": "375", "exp": "35", "attr": "무형", "map": "헤네시스", "raw_html_value": "스톤골렘 (20/375/35) - 무형", "doc_value_matches_raw": true},
+      {"name": "다크 스톤골렘", "level": 22, "hp": "435", "exp": "48", "attr": "무형/성약점", "map": "헤네시스", "raw_html_value": "다크 스톤골렘 (22/435/48) - 무형/성약점", "doc_value_matches_raw": true},
+      {"name": "믹스골렘", "level": 24, "hp": "495", "exp": "50", "attr": "무형", "map": "헤네시스", "raw_html_value": "믹스골렘 (24/495/50) - 무형", "doc_value_matches_raw": true}
+    ],
+    "snapshot_B": [
+      {"name": "스톤골렘", "level": 20, "hp": "375", "exp": "35", "attr": "무형", "map": "헤네시스", "raw_html_value": "스톤골렘 (20/375/35) - 무형", "doc_value_matches_raw": true},
+      {"name": "다크 스톤골렘", "level": 22, "hp": "435", "exp": "48", "attr": "무형/성약점", "map": "헤네시스", "raw_html_value": "다크 스톤골렘 (22/435/48) - 무형/성약점", "doc_value_matches_raw": true},
+      {"name": "믹스골렘", "level": 24, "hp": "495", "exp": "50", "attr": "무형", "map": "헤네시스", "raw_html_value": "믹스골렘 (24/495/50) - 무형", "doc_value_matches_raw": true}
+    ],
+    "neighbors_checked": {
+      "snapshot_A": [
+        {"name": "물 도둑", "v": "20/375/35", "map": "에델슈타인"},
+        {"name": "스텀피", "v": "20/7500/700", "map": "페리온", "boss": true},
+        {"name": "스톤골렘", "v": "20/375/35", "map": "헤네시스"},
+        {"name": "커즈아이", "v": "20/375/35", "map": "엘리니아"},
+        {"name": "화난 불가사리", "v": "20/375/35", "map": "노틸러스"},
+        {"name": "흰털 아기 원숭이", "v": "20/375/35", "map": "황금사원"},
+        {"name": "리게이터", "v": "21/405/37", "map": "커닝시티"},
+        {"name": "어미 원숭이", "v": "21/405/37", "map": "황금사원"},
+        {"name": "아이언 호그", "v": "22/435/39", "map": "페리온"},
+        {"name": "콜드아이", "v": "22/435/39", "map": "엘리니아"},
+        {"name": "다크 스톤골렘", "v": "22/435/48", "map": "헤네시스"},
+        {"name": "블루 머쉬맘", "v": "22/21750/1950", "map": "헤네시스"},
+        {"name": "크로코", "v": "23/465/48", "map": "커닝시티"},
+        {"name": "아이언 보어", "v": "24/495/50", "map": "페리온"},
+        {"name": "젤리피쉬", "v": "24/495/50", "map": "노틸러스"},
+        {"name": "쿨 젤리피쉬", "v": "24/580/56", "map": "노틸러스"},
+        {"name": "믹스골렘", "v": "24/495/50", "map": "헤네시스"},
+        {"name": "서전아이", "v": "24/495/50", "map": "엘리니아"},
+        {"name": "가로등", "v": "25/525/53", "map": "에델슈타인"},
+        {"name": "늪진흙괴물", "v": "25/525/53", "map": "커닝시티"},
+        {"name": "좀비 머쉬맘", "v": "25/26250/2200", "map": "헤네시스", "boss": true},
+        {"name": "로랑", "v": "26/580/47", "map": "플로리나비치"},
+        {"name": "루팡", "v": "26/580/56", "map": "엘리니아"},
+        {"name": "아이스 믹스골렘", "v": "26/580/56", "map": "헤네시스"},
+        {"name": "클랑", "v": "27/650/50", "map": "플로리나비치"},
+        {"name": "파이어 믹스골렘", "v": "28/720/63", "map": "헤네시스"}
+      ]
+    }
+  },
+  "verdict": {
+    "row_shift": false,
+    "parsing_error": false,
+    "doc_matches_source_text": true,
+    "cause": "upstream source (inven dataninfo-derived monster DB) carries pre-1.2.136 levels; both blog snapshots transcribe it faithfully",
+    "official_1_2_136": {
+      "url": "https://maplestory.nexon.com/News/Update/190",
+      "date": "2011-07-07",
+      "quote": "헤네시스 지역의 몬스터 레벨이 수정되었습니다. - (Lv.22) 스톤골렘 - (Lv.24) 다크스톤골렘",
+      "implication": "+2 for both golems; 믹스골렘 not listed (unchanged => 24)"
+    },
+    "independent_corroboration": {
+      "source": "https://maplestory.pe.kr/2133",
+      "desc": "가메톡메이플 몬스터 레벨별 전체 목록, 2012-02-22 작성 / 2012-07-29 최종수정, kmsdb v1.2.167 기반",
+      "values": {"스톤골렘": 22, "다크스톤골렘": 24, "믹스골렘": 26, "파이어믹스골렘": 26},
+      "caveat": "파이어 믹스골렘을 026으로 적어 공지(028)·스냅샷(028)과 불일치 — 작성자도 오류 인정. 보조 근거로만 사용"
+    },
+    "doc_independence_caveat": "A와 B는 독립 출처가 아니다: A 고유 라인 89.6%가 B에 그대로 등장, 몬스터 이미지 모두 인벤 데이터정보 hotlink(각 349건). 골렘 3종 일치는 교차검증이 아님",
+    "same_pattern_in_doc": "§10-3 (1.2.149 노트 상향 vs 2012-05 스냅샷이 더 낮은 레벨 기록)"
+  },
+  "unresolved": [
+    "믹스골렘: 24 (공지 미기재 / 두 스냅샷 / 인벤) vs 26 (2012-07 추출표) — 미확정",
+    "플레이어 글 다수는 2012년에도 20/22로 적음(2012-01-15 memorialpark1, 2012-09-05 heezuk_e). 게임 화면 스크린샷 증거는 미확보",
+    "1.2.136 헤네시스 목록은 변동 없는 항목(주황버섯 10, 머쉬맘 19 등)까지 포함 — '변경 후 지역 레벨표' 성격으로 보임"
+  ],
+  "proposed_correction": {
+    "mode": "annotation_first",
+    "md_footnote": "※ 골렘 3종 레벨 주의: 원문은 스톤골렘 20 / 다크 스톤골렘 22 / 믹스골렘 24로 적혀 있다(원문 HTML 그대로, 파싱 오류·행 밀림 아님). 공식 1.2.136(2011-07-07)은 (Lv.22) 스톤골렘, (Lv.24) 다크스톤골렘으로 명시하며 2012-07 추출표도 022/024/026을 기록한다. 두 스냅샷의 골렘 레벨은 인벤 데이터정보 계열의 미갱신 값으로 판단된다. 저스티스 시기 실데이터 기준 스톤골렘 22·다크 스톤골렘 24가 맞고, 믹스골렘은 24/26 미확정.",
+    "json_field": "snapshot_*.monsters[]의 골렘 3종에 level_source_note / level_official_2012 추가 또는 monster_db.known_discrepancies 신설",
+    "do_not_add_to_section_4_1": "§4-1 개편 25종 표에 골렘을 넣으면 'A→B 변화'로 오독되므로 각주로만 처리"
+  },
+  "side_findings": [
+    "A 원문에는 '스파커 (73/13000/361, 아쿠아리움)' 행이 똑같이 두 번 있음(원문 자체 중복). 문서 462종은 이름 기준 중복 제거 결과(원문 파싱 463행)",
+    "B 문서의 '힐라 (백발모드) -' 항목은 원문 문장부호가 이름 칸에 붙은 흔적"
+  ]
+}
