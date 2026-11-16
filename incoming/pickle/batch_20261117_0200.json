@@ -1,0 +1,203 @@
+{
+  "batch": "18차 정기 소싱 (2026-11-17 02:00 KST)",
+  "run_at": "2026-11-17T02:00:00+09:00",
+  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+  "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
+  "target": "정예 6~10편 (고양이·쪼꼬미·강아지 균형) — 미달 시 통과분만 제출",
+  "delivered_count": 3,
+  "hold_count": 5,
+  "near_miss_count": 14,
+  "screened_count": 38,
+  "method_18": {
+    "pool": "17차 누적 후보 풀 3,015편(582채널, oar2 세로 실측) 중 미탐색 2,751편 → 세로 720p+ 2,226편",
+    "prescreen": "제목·채널 금칙어 + 카테고리 밸런스(쪼꼬미 120·고양이 72·강아지 60·기타 24)로 276편 선별 → oar2 썸네일 8×3 접촉시트 12장 육안 스캔(자막·사람·워터마크 사전 제거)",
+    "verify": "원격 브라우저 watch 페이지 + loadVideoById 루프, hd1080 강제, 160×90 gray 10fps 0.099초 버킷 차분, 컷 스파이크(변화픽셀 60% 초과) 카운트",
+    "stills": "0.5·4·8·11초(또는 영상 길이에 맞춘 4시점) 프레임을 2×2 캔버스로 합성해 1회 캡처 → stills18/",
+    "measured_source": "ytInitialData(시청 페이지) 조회수·게시일·구독자 실측, 해상도는 video.videoWidth/Height 디코드 실측"
+  },
+  "delivered": [
+    {
+      "id": "QqhkNpoc-UQ",
+      "url": "https://www.youtube.com/shorts/QqhkNpoc-UQ",
+      "title": "Good times in #budapest #barkour #dogtraining (부다페스트에서의 즐거운 시간)",
+      "channel": "Ninja a Parkour Dog",
+      "author_id": "UC02bC-sqoipqg8W3IiwC2eg",
+      "handle": "@ParkourDogNinja",
+      "subs": 30200,
+      "views": 20279,
+      "published": "2026-05-29",
+      "dur_s": 22.0,
+      "resolution": "1080x1920 (디코드 실측)",
+      "motion_mean": 23.62,
+      "motion_med": 21.05,
+      "motion_max": 47.36,
+      "spikes_over_60pct": 0,
+      "cuts_0_10s": 0,
+      "cut_evidence": "0.099초 버킷 103프레임 차분 시계열이 시작(16)부터 10초(21)까지 연속 10 이상, 단일 프레임 급변 없음. 중반 31~47 구간은 개의 도약·착지에 따른 전면 변화.",
+      "stills": "stills18/c18_ninja_budapest_4cut.png (0.5·4·8·11초)",
+      "gate_check": {
+        "1_uncut_motion": "PASS — 22초 중 0~10초 무컷, 모션 평균 23.62",
+        "2_original_creator": "PASS — 815편 전부 같은 보더콜리 'Ninja'의 바쿠르 훈련 개인 계정, 1인칭 훈련 브이로그",
+        "3_measured": "PASS — 구독자 3.02만·조회 20,279·2026-05-29 (ytInitialData 실측)",
+        "4_no_caption": "PASS — 4컷 전부 무자막·무브랜드스트립·무워터마크",
+        "5_no_human": "PASS — 보호자 신체 미노출, 광장 배경에 원거리 행인만 (주 피사체 아님)"
+      },
+      "category": "강아지(보더콜리)",
+      "why": "도시 광장 벽·분수대를 넘는 보더콜리의 22초 단일 숏. 0초부터 도약이 시작되고 모션 23.62(중앙 21.05)·컷 0회. 자막·워터마크·보호자 노출 전무."
+    },
+    {
+      "id": "5bGD2hnwDNc",
+      "url": "https://www.youtube.com/watch?v=5bGD2hnwDNc",
+      "title": "Henry the Jack Russell Terrier Dog - More Donuts Please! #dog #dogshorts #jackrussellterrier #dogs",
+      "channel": "Henry the Jack Russell Terrier Dog",
+      "author_id": "UCys4Z5JlBK1m-l7-vwGzSkA",
+      "subs": 2230,
+      "views": 25018,
+      "published": "2025-12-04",
+      "dur_s": 135.0,
+      "resolution": "1080x1920 (디코드 실측)",
+      "motion_mean": 26.97,
+      "motion_med": 26.89,
+      "motion_max": 68.11,
+      "spikes_over_60pct": 3,
+      "cuts_0_10s": 0,
+      "cut_evidence": "0~10초 차분 22,23,23,25,23,32,26,27,25,27 — 급변 없이 연속. 이후 구간의 68대 값은 개의 점프·보호자 손 진입에 따른 화면 전체 변화이고, 4컷 모두 같은 거실·같은 개로 컷 없음.",
+      "stills": "stills18/c18_henry_donuts_4cut.png (0.5·4·8·11초)",
+      "gate_check": {
+        "1_uncut_motion": "PASS(조건부) — 0~10초 무컷·모션 26.97이나 원본이 2분15초 장척이라 편집 구간 선별 필수",
+        "2_original_creator": "PASS — 머리말 그대로 'Henry' 개인 반려견 계정",
+        "3_measured": "PASS — 구독자 2.23천·조회 25,018·2025-12-04 (ytInitialData 실측)",
+        "4_no_caption": "PASS — 4컷 전부 무자막·무워터마크",
+        "5_no_human": "PASS — 사람 얼굴·전신 프레임 없음"
+      },
+      "category": "강아지(잭러셀)",
+      "why": "거실에서 도넛을 받아먹는 잭러셀의 무컷 롱테이크. 모션 26.97(중앙 26.89)로 이번 회차 상위. 다만 2분15초 원본이라 12~15초 구간만 잘라 쓰는 전제."
+    },
+    {
+      "id": "WXXCruwltJ4",
+      "url": "https://www.youtube.com/shorts/WXXCruwltJ4",
+      "title": "飼い主が帰宅すると嬉し鳴きをするプレーリードッグ🥰❤️ Prairie dog makes the cutest noise🐿🎵",
+      "channel": "プレーリードッグのコロン Prairie dog Coron",
+      "author_id": "UCjvuZOFwEMxbtsQZdzA1j8g",
+      "subs": 897,
+      "views": 65680,
+      "published": "2024-01-28",
+      "dur_s": 11.0,
+      "resolution": "720x1280 (디코드 실측)",
+      "motion_mean": 21.87,
+      "motion_med": 19.53,
+      "motion_max": 58.21,
+      "spikes_over_60pct": 3,
+      "cuts_0_10s": 0,
+      "cut_evidence": "0.3초까지 정지(0값 3프레임) 후 26~58로 진입. 스파이크 3회는 모두 시작 1초 내 카메라 급이동 구간이며, 4컷이 같은 소파·같은 개체로 장면 전환 없음.",
+      "stills": "stills18/c18_prairiedog_colon_4cut.png (0.4·3·6·9초)",
+      "gate_check": {
+        "1_uncut_motion": "PASS(조건부) — 11초 단일 숏, 모션 21.87. 시작 0.3초 정적 + 스파이크 3회는 카메라 이동으로 판정",
+        "2_original_creator": "PASS — '飼い主(주인)' 1인칭 프레리독 사육 계정 897명",
+        "3_measured": "PASS — 구독자 897·조회 65,680·2024-01-28 (ytInitialData 실측)",
+        "4_no_caption": "PASS — 4컷 전부 무자막·무워터마크",
+        "5_no_human": "PASS — 손만 등장(플레이북 허용)"
+      },
+      "category": "쪼꼬미(프레리독)",
+      "why": "주인 귀가에 반응해 소파에서 몸을 흔드는 프레리독 11초 단일 숏. 모션 21.87. 해상도 720p 하한·근접 클로즈업이라 화질은 B급."
+    }
+  ],
+  "holds": [
+    {
+      "id": "oBufQg13fIw",
+      "channel": "Adventures of Frankie the Jack Russell",
+      "subs": 2140,
+      "views": 9600,
+      "dur_s": 12.2,
+      "resolution": "1080x1920",
+      "motion_mean": 23.04,
+      "motion_med": 22.61,
+      "spikes": 0,
+      "reason": "게이트⑤ 경계 — 4컷 모두 보호자 흰 바지 다리·맨발이 좌측 20~30% 점유. 손만 허용 조항을 넘는지 판정 필요. 9:16 크롭 시 다리 제거 가능.",
+      "stills": "stills18/h18_frankie_jaw_4cut.png"
+    },
+    {
+      "id": "lHf8anGM87c",
+      "channel": "Adventures of Frankie the Jack Russell",
+      "subs": 2140,
+      "views": 11000,
+      "dur_s": 26.0,
+      "resolution": "1080x1920",
+      "motion_mean": 11.22,
+      "motion_med": 11.48,
+      "spikes": 0,
+      "reason": "모션 12.0 임계 근접(11.22) — 시작 1초 정적 포함. 자막·사람 없음."
+    },
+    {
+      "id": "1qDEHTVsY0w",
+      "channel": "Budgie Nirvana",
+      "subs": 14200,
+      "views": 43000,
+      "dur_s": 14.0,
+      "resolution": "1080x1920",
+      "motion_mean": 11.89,
+      "motion_med": 11.37,
+      "spikes": 0,
+      "reason": "모션 12.0 임계 근접(11.89) — 목욕하는 잉꼬 6마리, 자막·사람 없음. 기획실장 판정 요청."
+    },
+    {
+      "id": "iHpv2cy2alc",
+      "channel": "Ritik dog lover177",
+      "subs": 1100,
+      "views": 354000,
+      "dur_s": 15.0,
+      "resolution": "720x1280",
+      "motion_mean": 22.34,
+      "motion_med": 17.97,
+      "spikes": 5,
+      "reason": "모션은 충분하나 103프레임 중 5회 대형 변화 — 컷 전환 의심. 채널이 훈련·자랑 성격이라 보호자 등장 가능성."
+    },
+    {
+      "id": "97o5Ys7AVb8",
+      "channel": "Tilney & Lottie",
+      "subs": 3300,
+      "views": 2700000,
+      "dur_s": 75.0,
+      "resolution": "1080x1920",
+      "motion_mean": 14.92,
+      "motion_med": 14.84,
+      "spikes": 2,
+      "reason": "모션 통과지만 75초 장척에 2.2/5.0/7.4초 간격 스파이크 — 숏 전환 성격. 4컷 미실시."
+    }
+  ],
+  "near_miss": [
+    {"id": "vvyJJP_DQ2U", "channel": "Budgie Nirvana", "motion": 18.04, "res": "1080x1920", "reason": "게이트④ — 첫 프레임 'Need a BIGGER one?' 자막 고정. 그 외 모든 게이트 통과(모션 18.04·컷 0)."},
+    {"id": "I6Vx2qviL2w", "channel": "ChillaFractals", "motion": 16.53, "res": "1080x1920", "reason": "게이트④ — 'Hello'/'Nope!'/'Streets behind' 자막 다수"},
+    {"id": "JJ2hDxqJXwY", "channel": "Greek Garden Maine Coons", "motion": 20.66, "res": "1080x1920", "reason": "게이트④ — 대형 자막 + 채널 워터마크 고정"},
+    {"id": "DvFpua9cVSc", "channel": "Becki Ferret", "motion": 20.86, "res": "1080x1920", "reason": "게이트④ — 11초 이후 영어 자막 등장 + 생고기 혈흔(수익화 리스크)"},
+    {"id": "5APZqO5hyD0", "channel": "Ninja a Parkour Dog", "motion": 31.13, "res": "720x1280", "reason": "1인칭 POV — 보호자 다리·신발 화면 고정, 4컷이 서로 다른 장소(컷 4회)"},
+    {"id": "780M2KjofOE", "channel": "Ninja a Parkour Dog", "motion": 15.52, "res": "1080x1920", "reason": "컷 6회 — 몽타주"},
+    {"id": "AdTcMVhZEkY", "channel": "Merle Squirrel & Friends", "motion": 15.92, "res": "1080x1920", "reason": "154초 몽타주 — 컷 4회"},
+    {"id": "rr4RUmengLs", "channel": "Ninja a Parkour Dog", "motion": 34.29, "res": "720x1280", "reason": "720p·74초·샘플 44프레임(편차 과다) → 판정 불가"},
+    {"id": "23-ZlSGuUjs", "channel": "Charlie The Chipmunk(기존 납품 채널)", "motion": 10.14, "res": "1080x1920", "reason": "모션 미달 + 채널 중복"},
+    {"id": "WN65WGGkcq4", "channel": "Vanessa's Cockatiels", "motion": 10.05, "res": "1080x1920", "reason": "모션 미달"},
+    {"id": "w1SSbyKwoX4", "channel": "Adventures of Frankie", "motion": 9.93, "res": "1080x1920", "reason": "0~7초 정지 후 동작 시작 — 게이트① 위반"},
+    {"id": "GU-iI9y37Ws", "channel": "Totoro The Cockatiel(기존 납품)", "motion": 12.89, "res": "1080x1920", "reason": "0~0.8초 정지 + 스파이크 4회"},
+    {"id": "05rBYVkMjzE", "channel": "Jack Russell Terrier(기존 납품)", "motion": 20.52, "res": "720x1280", "reason": "채널 중복 + 1초 정지 시작"},
+    {"id": "662IFS6hEDE", "channel": "Meatball the Frenchie", "motion": 9.10, "res": "894x1920", "reason": "모션 미달·비표준 해상도"}
+  ],
+  "rejected_this_round": {
+    "모션 10.0 미만": ["0cKXaMo0IoY(6.36)", "rjC5RmjLwPw(0.32)", "nU6uHFI2WfI(6.50)", "kERHnbHmv8Y(4.93)", "dCGuv46y0HU(7.05)", "ZhZ2q17rrVU(4.39)", "ftc2XYm9-1g(5.20)", "zsZuolp5xRQ(8.27)"],
+    "길이 10초 미달": ["SDFBayGuO0E(10.1)", "8YqVv8-R00Q(10.0)", "U0NNtmPpLwg(10.0)", "NqMaPbFmjN0(7)", "OiSlYdc4PQY(10.0)", "ouguENwM7pQ(10.0)", "mqiRVgZLfNA(10.0)"],
+    "로드 실패/삭제 의심": ["Pn78aIblKJM", "PKa4iRca_U"],
+    "접촉시트 사전 탈락(약 240편)": "썸네일 단계에서 자막·브랜드스트립·사람 얼굴·AI 합성·비반려동물(아트·게임·음악·리셀) 확인"
+  },
+  "artifacts": {
+    "json": "work/sourcing_v2/batch_20261117_0200.json",
+    "md": "work/sourcing_v2/batch_20261117_0200.md",
+    "stills": "work/sourcing_v2/stills18/ (확정 3편 + 보류 1편 + 탈락 근거 5편)",
+    "contact_sheets": "work/sourcing_v2/tmp18/th/sheet_0~11.jpg (276편, 8×3)",
+    "queue": "work/sourcing_v2/tmp18/q18.json (276편) · q18b.json(140) · q18c.json(48)"
+  },
+  "notes": [
+    "17차가 남긴 풀을 그대로 쓴 결과 상위 조회수 대역은 이미 소진되어, 이번 회차는 조회수 하위 대역(1만~30만)에서 정예를 골랐다.",
+    "고양이 카테고리는 이번 풀에서 전멸 수준(0편). 상위 조회수 고양이 채널 대부분이 대형 자막·채널 워터마크를 고정 삽입(예: Greek Garden Maine Coons, Cats Do It Better)해 게이트④에서 사전 탈락.",
+    "무료 Invidious(yt.chocolatemoo53.com)의 metadata API가 이번 시간대에 1편당 20초 이상·429 다발로 사실상 불통 — 모든 실측은 시청 페이지 ytInitialData 파싱으로 대체했다.",
+    "브라우저 샘플 fps가 후반부에 4~5fps로 떨어지는 현상 확인(rr4RUmengLs 44프레임). n이 60 미만인 측정은 신뢰하지 말고 재측정할 것."
+  ]
+}
