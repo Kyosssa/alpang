@@ -7,7 +7,7 @@
  "delivered_count": 4,
  "hold_count": 4,
  "near_miss_count": 23,
- "browser_screened": 33,
+ "browser_screened": 32,
  "prescreened": 215,
  "method_20": {
   "new_channel_discovery": "유튜브 채널 검색 HTML(ytInitialData channelRenderer) 95쿼리 — 고양이 45(줌비·점프·사냥놀이·한/일/스/이/독/프) + 강아지 40(19차 누락 보완) + 쪼꼬미 15. 신규 후보 347채널(구독 300~499,999) 확보, 기존 풀 재탕 0.",
@@ -323,5 +323,12 @@
   "자막은 접촉시트 단계에서 대량 사전 제거됐다(215편 중 캡션·POV 카피가 박힌 것 약 60%). 남은 판정 대상은 '무자막이지만 정적인' 클립이 대부분.",
   "브라우저 플레이어가 3~4편마다 loadVideoById를 거부(notload)해 재시도·재내비게이션이 필요했다. 판정 1편당 평균 40초 소요.",
   "원본 mp4 보관 불가(SABR 전용)는 15차와 동일 — 항소 대비 원본 보존 미해결."
- ]
+ ],
+ "browser_measured": 30,
+ "near_miss_breakdown": {
+  "cut_or_empty_screen_motion_passed": 6,
+  "motion_below_12": 12,
+  "length_under_10s": 4,
+  "player_load_failed": 2
+ }
 }
