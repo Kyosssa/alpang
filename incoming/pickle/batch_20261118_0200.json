@@ -1,0 +1,572 @@
+{
+ "batch": "26차 정기 소싱 (2026-11-18 02:00 KST)",
+ "run_at": "2026-11-18T02:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 포함)",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md + 26차 개정(아래 method_26 참조)",
+ "target": "정예 6~10편 (고양이·강아지·쪼꼬미 균형, 25차 미완 4편 선판정) — 미달 시 편수 축소, 기준 완화 금지",
+ "judged_total": 57,
+ "delivered_count": 3,
+ "hold_count": 1,
+ "reject_count": 53,
+ "carryover_confirmed_count": 1,
+ "pool_new_channels": 21,
+ "pool_new_channels_raw": 553,
+ "pool_new_candidates": 740,
+ "pool_1yr_plus": 362,
+ "method_26": {
+  "carryover": "25차 미판정 4편(iqSyz72SJwk·DssJ3xRZIng·a2siAKuTO4k·V_pp8xpeb90)을 원격 브라우저 1080p 디코드 프레임 10fps 차분으로 먼저 판정. 4편 전부 탈락(자막 2·모션 미달 1·흔들림/극근접 1).",
+  "ai_badge_recheck": "25차 확정 6gZ7N3lK-9M의 watch HTML 재조회 성공(429 해소). 'AI: Content was made with AI' 0건, dateText 'Aug 28, 2024' 확인 — 25차 확정 유지.",
+  "channel_source": "누적 원장 21개 '기확정(클린 납품) 채널'의 /shorts 전수(740편) → Invidious published·lengthSeconds로 1년 이상·10~90초·세로 필터 → 362편. 신규 채널 무작위 발굴보다 기확정 클린 채널 재순회가 통과율이 높다는 25차 결론을 적용.",
+  "fresh_discovery": "신규 채널 발굴도 병행: 고양이 질의 15종 → 276채널, 쪼꼬미 질의 15종 → 278채널(중복 제거 553채널). 원작자성 마커·컴필 배제 후 458채널 확보(다음 회차 이월).",
+  "prescreen": "썸네일 접촉시트(5×4)로 자막·인물·구도 사전 스캔 → 자막류 대량 사전 배제 후 브라우저 실측.",
+  "verify": "원격 브라우저 watch 페이지에서 movie_player.loadVideoById로 후보를 갈아끼우고 playbackQuality hd1080 요청 → 160×90 gray 10fps(0.099초 버킷) mean abs diff·변화픽셀 비율 실측. 전편 videoWidth/Height 실측값 기록(1080x1920 확인).",
+  "harness_fix": "브라우저 세션이 회차 중 재시작되어 측정 함수를 페이지 전역(__load/__meas/__g26grid)으로 재설치. 로드 대기 조건을 '직전 영상 duration과 다른가'에서 'player.getVideoData().video_id == 목표 id'로 교체 — 25차 대비 오측정(이전 영상 측정) 위험 제거.",
+  "stills": "8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)을 4컷×2회(378×672 타일 4개, 1512×672 캔버스)로 합성해 캡처. 확정 3편은 8컷 전부 무자막·무워터마크·무인물 확인.",
+  "spike": "10fps 변화픽셀 비율 0.6 초과 스파이크 전수 확인. 스파이크 발생 시 해당 초 전후를 0.02초 간격 시킹으로 재확인.",
+  "ai_badge": "확정·보류 4편 + 25차 확정 1편의 watch HTML을 6초 간격으로 개별 조회해 'AI: Content was made with AI' 0건 확인."
+ },
+ "delivered": [
+  {
+   "id": "FHCx4ndYduk",
+   "url": "https://www.youtube.com/shorts/FHCx4ndYduk",
+   "title": "拒否柴の終わり方 Shiba Inu #shorts",
+   "channel": "柿丸と散歩 | オランダ在住 柴犬との毎日 (Walking with Kaki-Maru the Shiba inu in Holland)",
+   "channel_id": "UCuyxna3qJSjqP6BFrTyS6lQ",
+   "handle": "@kakimaru2019",
+   "subs_txt": "4.55K",
+   "views_txt": "5,454",
+   "likes_txt": "253",
+   "published": "2022-06-10",
+   "cat": "강아지",
+   "dur_s": 22.1,
+   "resolution": "1080x1920",
+   "motion_mean": 17.91,
+   "motion_med": 18.23,
+   "frames": 105,
+   "ratios_max": 0.356,
+   "spike_times_s": [],
+   "stills": "stills26/c26_kakimaru_refuse_cuts1-4.png · stills26/c26_kakimaru_refuse_cuts5-8.png",
+   "why": "포장도로 위에서 누워 버티다가(거부) 일어나 카메라 쪽으로 고개를 돌리는 크림색 시바의 단일 숏 22.1초. 0.3초부터 개가 프레임 안에 있고 10.4초까지 카메라 컷·프레이밍 전환 0(변화픽셀 0.6 초과 스파이크 0). 8컷 전부 같은 자리·같은 개, 자막·워터마크·사람 0(목줄만 등장).",
+   "gate_check": "①통과(무컷·모션17.91) ②통과(원작자 1인칭 산책 채널, 쇼츠 전편 동일 시바) ③통과(watch HTML dateText Jun 10, 2022 · 5,454회 · 좋아요 253 · 4.55K) ④통과(8컷 무자막) ⑤통과(인물 0)",
+   "author_confirm_evidence": "채널 /about 'オランダ在住の柴犬、柿丸のお散歩チャンネルです … 柿丸は８ヵ月になる少し前に我が家に来た譲渡犬です' (1,452편·가입 2021-02-14)",
+   "publish_date_source": "watch HTML dateText",
+   "ai_badge": "0건 (watch HTML grep)"
+  },
+  {
+   "id": "kccqJ46NpNU",
+   "url": "https://www.youtube.com/shorts/kccqJ46NpNU",
+   "title": "츄르내놔 #cat #shorts",
+   "channel": "유화네 고양이",
+   "channel_id": "UC6mpz6bXYDjgfRcpv3KnNEA",
+   "subs_txt": "25.7K",
+   "views_txt": "60,594",
+   "likes_txt": "2,016",
+   "published": "2024-08-08",
+   "cat": "고양이",
+   "dur_s": 17.1,
+   "resolution": "1080x1920",
+   "motion_mean": 15.25,
+   "motion_med": 12.99,
+   "frames": 105,
+   "ratios_max": 0.596,
+   "spike_times_s": [],
+   "stills": "stills26/c26_yuhwa_churu_cuts1-4.png · stills26/c26_yuhwa_churu_cuts5-8.png",
+   "why": "치즈·흰 털 고양이가 츄르 스틱을 앞발로 낚아채 핥아먹는 17.1초 단일 숏. 0.3초부터 고양이가 프레임 안에서 스틱을 응시하고 4.5~6.0초에 앞발로 붙잡는 동작이 이어진다. 컷 전환 0, 자막·워터마크 0, 사람은 손목·손만 등장(게이트⑤ 허용 범위).",
+   "gate_check": "①통과(무컷·모션15.25·스파이크 0) ②통과('말 많은 대운이랑 사는 평범한 일상' 1인칭 사육 계정) ③통과(dateText Aug 8, 2024 · 60,594회 · 좋아요 2,016 · 25.7K) ④통과(8컷 무자막) ⑤통과(손만)",
+   "author_confirm_evidence": "채널 /about '말 많은 대운이랑 사는 평범한 일상' (45편·가입 2021-04-06)",
+   "publish_date_source": "watch HTML dateText",
+   "ai_badge": "0건 (watch HTML grep)"
+  },
+  {
+   "id": "jS2ULwupPyk",
+   "url": "https://www.youtube.com/shorts/jS2ULwupPyk",
+   "title": "Budgie Luchik plays football",
+   "channel": "Luchik the Bird",
+   "channel_id": "UC77QI6AZtgQdiK_aKXhJmGg",
+   "subs_txt": "480",
+   "views_txt": "1,572",
+   "likes_txt": "59",
+   "published": "2024-02-05",
+   "cat": "쪼꼬미(잉꼬)",
+   "dur_s": 16.3,
+   "resolution": "1080x1920",
+   "motion_mean": 12.94,
+   "motion_med": 13.11,
+   "frames": 105,
+   "ratios_max": 0.291,
+   "spike_times_s": [],
+   "stills": "stills26/c26_luchik_football_cuts1-4.png · stills26/c26_luchik_football_cuts5-8.png",
+   "why": "잉꼬 두 마리가 나무 바닥에서 초록 공을 굴리고 쪼며 노는 16.3초 단일 숏. 컷 전환 0, 자막·워터마크 0, 사람 0. 모션 12.94로 임계 12.0 대비 여유 +0.94 — 조건부 등급(20차 S0IWz_m_bXw 1.05 여유와 동급)으로 기획실장 확인 요청.",
+   "gate_check": "①통과(무컷·모션12.94·스파이크 0) ②통과(원작자 잉꼬 사육 채널) ③통과(dateText Feb 5, 2024 · 1,572회 · 좋아요 59 · 480) ④통과(8컷 무자막) ⑤통과(인물 0)",
+   "author_confirm_evidence": "채널 /about 'We show the fun and funny life of the budgerigar … The life story of a cheerful budgie' (149편·가입 2023-02-12)",
+   "publish_date_source": "watch HTML dateText",
+   "ai_badge": "0건 (watch HTML grep)",
+   "grade_note": "모션 임계 여유 +0.94 (12.94 / 12.0) — 기획실장 등급 판정 대상"
+  }
+ ],
+ "holds": [
+  {
+   "id": "ps52QgHSl3Y",
+   "url": "https://www.youtube.com/shorts/ps52QgHSl3Y",
+   "title": "Are Jack Russell's Good Guard Dogs?",
+   "channel": "Jack Russell Terrier",
+   "channel_id": "UCUCjIbrMHdugY8InENrtNPw",
+   "subs_txt": "6.01K",
+   "views_txt": "109,979",
+   "likes_txt": "2,536",
+   "published": "2021-10-05",
+   "cat": "강아지",
+   "dur_s": 15.0,
+   "resolution": "1080x2400 (19.5:9 비규격)",
+   "motion_mean": 16.75,
+   "motion_med": 15.67,
+   "frames": 105,
+   "ratios_max": 0.41,
+   "spike_times_s": [],
+   "stills": "stills26/h26_jrt_guard_1080x2400.png",
+   "hold_reason": "모션 16.75·무컷·무자막으로 수치 게이트는 통과했으나 ① 0.3초에 사람 발(샌들)이 프레임 하단에 걸리고 ② 원본이 1080x2400(9:16 아님)이다. 두 가지 모두 등급 판정 사안이라 확정하지 않고 보류로 남긴다.",
+   "ai_badge": "0건 (watch HTML grep)"
+  }
+ ],
+ "carryover_confirmed": [
+  {
+   "id": "6gZ7N3lK-9M",
+   "note": "25차 확정 유지 재확인",
+   "ai_badge": "watch HTML 'AI: Content was made with AI' 0건",
+   "dateText": "Aug 28, 2024",
+   "views": "618",
+   "subs": "510 subscribers",
+   "checked_at": "2026-11-18 02:02 KST",
+   "low_view_checked": "저조회 확인 — 조회 618 · 원작자 본인 계정(Good mo_ri) · 게시 2024-08-28(2년 2개월 경과)"
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "iqSyz72SJwk",
+   "ch": "シンバ君のお散歩日記",
+   "reason": "게이트④ 자막 — 3.0초 'あけまして'·6.0/10.1초 'レジ袋かーい(笑)' 고정 자막",
+   "motion": 18.22,
+   "res": "720x1280",
+   "note": "25차 미판정분"
+  },
+  {
+   "id": "DssJ3xRZIng",
+   "ch": "웅가리와 정줌마",
+   "reason": "게이트① 모션 9.92 미달",
+   "motion": 9.92,
+   "res": "720x1280",
+   "note": "25차 미판정분"
+  },
+  {
+   "id": "a2siAKuTO4k",
+   "ch": "グク散歩",
+   "reason": "게이트① 구도 — 손떨림 핸드헬드 극근접(목줄·털만 보임), 프레임 판독 불가. 스파이크 22회는 컷이 아니라 손떨림으로 판정",
+   "motion": 36.27,
+   "res": "720x1280",
+   "note": "25차 미판정분"
+  },
+  {
+   "id": "V_pp8xpeb90",
+   "ch": "샤의 산책",
+   "reason": "게이트④ 자막 — '강아지와 단풍산책'·'집근처 산에 단풍이 물들이 있었어요' 고정 자막. 4.47초 스파이크는 자막 등장 프레임 전환으로 확인",
+   "motion": 26.28,
+   "res": "1080x1920",
+   "note": "25차 미판정분"
+  },
+  {
+   "id": "0ODIAI8GAOg",
+   "ch": "柿丸と散歩",
+   "reason": "게이트④⑤ — 하단 고정 일본어 배너('アントウェルペン聖母大聖堂/ネロとバトラッシュ像') + 보호자 전신 등장",
+   "motion": 12.85,
+   "res": "1080x1920"
+  },
+  {
+   "id": "Et0IbDHmO48",
+   "ch": "柿丸と散歩",
+   "reason": "게이트⑤ — 배경에 사람 다리·신발 등장",
+   "motion": 18.54,
+   "res": "1080x1920"
+  },
+  {
+   "id": "2Jg1GqwR3Yw",
+   "ch": "柿丸と散歩",
+   "reason": "게이트① 모션 6.30 미달",
+   "motion": 6.3,
+   "res": "1080x1920"
+  },
+  {
+   "id": "kLQr3QrQ0Gc",
+   "ch": "柿丸と散歩",
+   "reason": "게이트① 모션 9.80 미달",
+   "motion": 9.8,
+   "res": "1080x1920"
+  },
+  {
+   "id": "4Xv7MApW6BU",
+   "ch": "柿丸と散歩",
+   "reason": "길이 9.5초(10초 미달)",
+   "motion": 4.4,
+   "res": "1080x1920"
+  },
+  {
+   "id": "04zsVhz-QaU",
+   "ch": "柿丸と散歩",
+   "reason": "게이트① 슬로모션(모션 1.77)",
+   "motion": 1.77,
+   "res": "1080x1920"
+  },
+  {
+   "id": "82FR3iZ0NdE",
+   "ch": "otter kinaco",
+   "reason": "게이트① 모션 8.45 미달",
+   "motion": 8.45,
+   "res": "1080x1920"
+  },
+  {
+   "id": "0cKXaMo0IoY",
+   "ch": "otter kinaco",
+   "reason": "게이트① 모션 6.32 미달",
+   "motion": 6.32,
+   "res": "1080x1920"
+  },
+  {
+   "id": "z5EayXQ7Tf8",
+   "ch": "かわうそ幼稚園",
+   "reason": "게이트④ 자막 — 하단 '目がこわいよwww'",
+   "motion": 13.46,
+   "res": "1080x1920"
+  },
+  {
+   "id": "oAUM2HnLEEg",
+   "ch": "かわうそ幼稚園",
+   "reason": "게이트① 모션 7.97 미달",
+   "motion": 7.97,
+   "res": "1080x1920"
+  },
+  {
+   "id": "UQGFssryCT0",
+   "ch": "Raccoon Nation",
+   "reason": "게이트①③ — 야간 저조도 실루엣(개체 판독 불가) + 720x1280",
+   "motion": 13.73,
+   "res": "720x1280"
+  },
+  {
+   "id": "iFDl1ZAuggU",
+   "ch": "Raccoon Nation",
+   "reason": "게이트① 모션 11.45 미달",
+   "motion": 11.45,
+   "res": "720x1280"
+  },
+  {
+   "id": "TC7yCJ9mmfA",
+   "ch": "Shredder Raccoon",
+   "reason": "해상도 480x902(비규격·저해상) + 0.3초 인물 하반신 등장",
+   "motion": 14.38,
+   "res": "480x902"
+  },
+  {
+   "id": "k006hS6r14E",
+   "ch": "cute CHIPMUNK",
+   "reason": "게이트① 피사체 부재 — 0~1.5초는 빈 의자/카메라 팬이고 다람쥐는 3초 이후 등장. 모션 19.18 대부분이 카메라 이동분",
+   "motion": 19.18,
+   "res": "1080x1920"
+  },
+  {
+   "id": "slHtZwHHiQQ",
+   "ch": "cute CHIPMUNK",
+   "reason": "게이트① 피사체 부재 — 0~3초 빈 테이블·의자, 다람쥐는 5초 이후. 프레임 내 개체 비중 과소",
+   "motion": 27.5,
+   "res": "1080x1920"
+  },
+  {
+   "id": "8lqDta6UOhs",
+   "ch": "cute CHIPMUNK",
+   "reason": "게이트① 피사체 부재 — 0~3초는 손바닥·화분만, 개체는 5초 이후 등장",
+   "motion": 14.43,
+   "res": "1080x1920"
+  },
+  {
+   "id": "VXpqjGJvGPo",
+   "ch": "cute CHIPMUNK",
+   "reason": "게이트① — 1~4초 개체 프레임 이탈·원경, 카메라 팬 위주",
+   "motion": 13.14,
+   "res": "1080x1920"
+  },
+  {
+   "id": "XhqVRmLNPKM",
+   "ch": "cute CHIPMUNK",
+   "reason": "게이트① — 6.9~10.1초 구간 변화픽셀 0.6~0.75 스파이크 10회(프레임 전환/급격한 팬) 확인",
+   "motion": 27.79,
+   "res": "1080x1920"
+  },
+  {
+   "id": "jKlm4n9jOVs",
+   "ch": "My Cat Rupert",
+   "reason": "게이트① — 2~8초 개체가 담요 뒤로 사라지고 10.1초는 털 클로즈업 블러, 구도 붕괴",
+   "motion": 15.19,
+   "res": "720x1280"
+  },
+  {
+   "id": "_oxrQHTiS8s",
+   "ch": "My Cat Rupert",
+   "reason": "게이트① 모션 6.24 미달",
+   "motion": 6.24,
+   "res": "1080x1920"
+  },
+  {
+   "id": "KeVQ74qEQRM",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 1.53(정지 화면)",
+   "motion": 1.53,
+   "res": "1080x1920"
+  },
+  {
+   "id": "LlU-8bilKYg",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 1.69 + 1.89초 스파이크",
+   "motion": 1.69,
+   "res": "1080x1920"
+  },
+  {
+   "id": "G5n4RJOx-fU",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 5.49 미달",
+   "motion": 5.49,
+   "res": "1080x1920"
+  },
+  {
+   "id": "Bq4MsgVTsTs",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 9.69 미달",
+   "motion": 9.69,
+   "res": "1080x1920"
+  },
+  {
+   "id": "Px5Eel1Ah64",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 9.48 미달",
+   "motion": 9.48,
+   "res": "1080x1920"
+  },
+  {
+   "id": "XlD5CBftEEA",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 7.25 + 4.47초 스파이크 0.97(프레임 전환)",
+   "motion": 7.25,
+   "res": "1080x1920"
+  },
+  {
+   "id": "41kLgoVaVDs",
+   "ch": "유화네 고양이",
+   "reason": "게이트①⑤ — 9.01초 스파이크 0.75(무릎 위로 구도 전환) + 사람 팔뚝 등장",
+   "motion": 13.08,
+   "res": "1080x1920"
+  },
+  {
+   "id": "8oQk1NNJfMg",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 5.93 미달 · 1080x1440(4:3 아님·비규격)",
+   "motion": 5.93,
+   "res": "1080x1440"
+  },
+  {
+   "id": "1VGZJr6hEuM",
+   "ch": "유화네 고양이",
+   "reason": "게이트① 모션 4.21 미달",
+   "motion": 4.21,
+   "res": "1080x1920"
+  },
+  {
+   "id": "y9QeZAWHp6E",
+   "ch": "냥초코",
+   "reason": "게이트① — 0.4·0.51·0.89초 스파이크(0.8)로 초반 프레임 전환 + 저조도",
+   "motion": 16.67,
+   "res": "720x1280"
+  },
+  {
+   "id": "dMP2kE4-W24",
+   "ch": "냥초코",
+   "reason": "게이트① 모션 6.97 미달",
+   "motion": 6.97,
+   "res": "720x1280"
+  },
+  {
+   "id": "gmYsytHCi1c",
+   "ch": "냥초코",
+   "reason": "게이트① 모션 5.77 미달",
+   "motion": 5.77,
+   "res": "720x1280"
+  },
+  {
+   "id": "eFho3za8GOM",
+   "ch": "Jack Russell Terrier",
+   "reason": "게이트① 모션 8.99 미달",
+   "motion": 8.99,
+   "res": "576x1024"
+  },
+  {
+   "id": "rfsaBZXBe0o",
+   "ch": "Jack Russell Terrier",
+   "reason": "게이트① — 9.32초 스파이크 0.88(프레임 전환) + 576x1024 저해상",
+   "motion": 15.93,
+   "res": "576x1024"
+  },
+  {
+   "id": "Q-ciKCg8TRw",
+   "ch": "Jack Russell Terrier",
+   "reason": "게이트① — 원경 구도(개체가 프레임 5% 미만), 사실상 풍경화면",
+   "motion": 15.86,
+   "res": "1080x1920"
+  },
+  {
+   "id": "xr9Ik8GLgzA",
+   "ch": "Jack Russell Terrier",
+   "reason": "게이트① 모션 7.77 미달",
+   "motion": 7.77,
+   "res": "576x1024"
+  },
+  {
+   "id": "EFfJj4AGBkM",
+   "ch": "Mr Hedgie",
+   "reason": "게이트④ 자막 — 'Tongue alert! 😍'·'Don't blink…' 고정 자막",
+   "motion": 13.82,
+   "res": "1080x1920"
+  },
+  {
+   "id": "S7OLVAAPsC8",
+   "ch": "Henry the Jack Russell Terrier",
+   "reason": "게이트① 모션 11.04 미달",
+   "motion": 11.04,
+   "res": "1080x1920"
+  },
+  {
+   "id": "gHUU4Ra1GLQ",
+   "ch": "Henry the Jack Russell Terrier",
+   "reason": "게이트① 모션 8.21 미달",
+   "motion": 8.21,
+   "res": "1080x1920"
+  },
+  {
+   "id": "OS5seAJu3oI",
+   "ch": "Henry the Jack Russell Terrier",
+   "reason": "게이트④ 자막 — 'Big stick workout every morning!' 고정 자막",
+   "motion": 21.93,
+   "res": "1080x1920"
+  },
+  {
+   "id": "HZHAlGBGC5w",
+   "ch": "Henry the Jack Russell Terrier",
+   "reason": "게이트① 모션 1.76 미달",
+   "motion": 1.76,
+   "res": "1080x1920"
+  },
+  {
+   "id": "bl0BXr7SkRY",
+   "ch": "Luchik the Bird",
+   "reason": "게이트① 모션 11.16 미달",
+   "motion": 11.16,
+   "res": "1080x1920"
+  },
+  {
+   "id": "duHn3ADBBnM",
+   "ch": "Luchik the Bird",
+   "reason": "게이트① 모션 2.51 미달",
+   "motion": 2.51,
+   "res": "1080x1920"
+  },
+  {
+   "id": "fCbPUazMIcU",
+   "ch": "Kissa Katt",
+   "reason": "게이트① 모션 7.01 미달",
+   "motion": 7.01,
+   "res": "1080x1920"
+  },
+  {
+   "id": "Cbaw-KsAAyU",
+   "ch": "kim kong's daily life",
+   "reason": "게이트① 모션 2.67 미달",
+   "motion": 2.67,
+   "res": "1080x1920"
+  },
+  {
+   "id": "m8f2FXyQ-3o",
+   "ch": "kim kong's daily life",
+   "reason": "게이트① 모션 3.70 미달",
+   "motion": 3.7,
+   "res": "1080x1920"
+  },
+  {
+   "id": "JGBli9eulUs",
+   "ch": "my dog",
+   "reason": "게이트① 모션 7.54 미달",
+   "motion": 7.54,
+   "res": "1080x1920"
+  },
+  {
+   "id": "bOFDoX3F8ug",
+   "ch": "시바 나또",
+   "reason": "게이트④⑤ — '(스트리트즈)' 고정 자막 + 보호자 상반신 전면 등장",
+   "motion": 13.71,
+   "res": "1080x1920"
+  },
+  {
+   "id": "GMgoXXw9MUg",
+   "ch": "손만두",
+   "reason": "게이트④⑤ — 상단 '옆집 강아지 시바'·하단 '(이름잘못)' 고정 자막 + 보호자 팔·몸 등장",
+   "motion": 16.6,
+   "res": "1080x1920"
+  }
+ ],
+ "reject_breakdown": {
+  "자막·인물(게이트④⑤)": 7,
+  "모션 12.0 미달": 26,
+  "피사체 부재·구도/프레임 전환(게이트①)": 12,
+  "기타": 4,
+  "길이 10초 미달": 1,
+  "게이트① 슬로모션": 1,
+  "해상도·비규격·저조도": 2
+ },
+ "flags": {
+  "large_channel_1m_plus": "0건 (이번 판정 최대 채널 25.7K · 유화네 고양이)",
+  "nonstandard_or_landscape": "3건 — ps52QgHSl3Y 1080x2400(19.5:9), 8oQk1NNJfMg 1080x1440, TC7yCJ9mmfA 480x902",
+  "low_res_720p": "다수(720x1280: iqSyz·DssJ3·a2si·UQGF·y9Qe·dMP2·jKlm 포함 8편) — 1080p 미달 플래그",
+  "cut_false_positive_suspect": "3건 — V_pp8xpeb90(4.47초 자막 등장), 41kLgoVaVDs(9.01초 구도 전환), XhqVRmLNPKM(6.9~10.1초 다발) — 모두 0.02초 재확인 또는 8컷 육안으로 프레임 전환 실재 확인",
+  "account_cap": "위반 없음 — 확정 3편이 서로 다른 계정(柿丸と散歩·유화네 고양이·Luchik the Bird). 예비 재고 없음",
+  "reserve_pool": []
+ },
+ "notes_for_기획실장": [
+  "목표 6~10편 대비 확정 3편(강아지 1·고양이 1·쪼꼬미 1). 편수를 채우려 기준을 낮추지 않았다.",
+  "25차 미판정 4편은 전부 탈락으로 정리했다(자막 2·모션 미달 1·손떨림 극근접 1). 25차가 남긴 숙제는 이번에 모두 닫혔다.",
+  "25차 확정 6gZ7N3lK-9M의 AI 배지 교차검사도 완료 — watch HTML에 'AI: Content was made with AI' 0건, dateText Aug 28, 2024 확인.",
+  "이번 회차 최대 발견은 통과율의 구조다. 기확정 클린 채널 21개에서 1년 이상 후보 362편을 뽑아 39편을 실물 판정했는데, 탈락 1위가 모션 미달(22편), 2위가 자막·인물(8편)이었다. 특히 '한국·일본 1인칭 계정'은 자막을 다는 비율이 여전히 압도적이고(유화네 고양이·냥초코·시바 나또 등), 자막을 안 다는 영어권 채널은 동작이 잔잔해 모션 12.0을 못 넘는 경우가 많다.",
+  "다람쥐·칩멍크류는 모션 수치가 19~28로 높게 나오지만, 그 수치의 대부분이 '빈 화면 → 개체 등장' 카메라 팬에서 나온다. 8컷으로 보면 0~3초가 빈 의자·손바닥이고 개체는 5초 이후에 나온다. 게이트① '0초부터 몸동작' 요건으로 전부 탈락시켰다(같은 채널 4편). 이 판정 기준을 기획실장이 승인하면 아래 예비 후보를 다음 회차에 재검할 수 있다.",
+  "jS2ULwupPyk(Luchik the Bird)은 모션 12.94로 임계 여유 +0.94다. 20차 S0IWz_m_bXw(+1.05)와 같은 조건부 등급이니 등급 판정을 요청한다.",
+  "새 채널 풀 458개(고양이 276·쪼꼬미 278 중복 제거)를 스크리닝해 확보해 뒀다. 다음 회차는 이 풀에서 /shorts 실측 → 1년 이상 필터로 바로 들어가면 된다(tmp26_chids.json)."
+ ],
+ "stills_dir": "work/sourcing_v2/stills26/",
+ "artifacts": [
+  "work/sourcing_v2/batch_20261118_0200.json",
+  "work/sourcing_v2/batch_20261118_0200.md",
+  "work/sourcing_v2/stills26/c26_kakimaru_refuse_cuts1-4.png",
+  "work/sourcing_v2/stills26/c26_kakimaru_refuse_cuts5-8.png",
+  "work/sourcing_v2/stills26/c26_yuhwa_churu_cuts1-4.png",
+  "work/sourcing_v2/stills26/c26_yuhwa_churu_cuts5-8.png",
+  "work/sourcing_v2/stills26/c26_luchik_football_cuts1-4.png",
+  "work/sourcing_v2/stills26/c26_luchik_football_cuts5-8.png",
+  "work/sourcing_v2/stills26/h26_jrt_guard_1080x2400.png",
+  "work/sourcing_v2/tmp26_chids.json (신규 채널 풀 458 이월)",
+  "work/sourcing_v2/tmp26_clean_1yr_sorted.json (기확정 채널 후보 362 이월)"
+ ],
+ "not_measured_carryover": [
+  {
+   "id": "woBHa0TSaNo",
+   "ch": "My Cat Rupert",
+   "note": "회차 시간 소진으로 미측정 — 다음 회차 이월"
+  },
+  {
+   "id": "_kPjGvZBpfo",
+   "ch": "Mr Hedgie",
+   "note": "회차 시간 소진으로 미측정 — 다음 회차 이월"
+  }
+ ]
+}
