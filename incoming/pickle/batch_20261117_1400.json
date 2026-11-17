@@ -7,8 +7,8 @@
  "delivered_count": 3,
  "hold_count": 8,
  "undetermined_count": 2,
- "near_miss_count": 74,
- "browser_screened": 86,
+ "near_miss_count": 75,
+ "browser_screened": 88,
  "prescreened": 250,
  "method_22": {
   "pool_sourcing": "20차가 발굴한 347채널·11,752쇼츠의 잔여분을 소진. 누적 원장 197 ID·113채널 + 17~21차 풀·판정분(총 1,884 ID)을 전수 제외하고 남은 9,565편에서 강아지 130·고양이 130·쪼꼬미 45·기타 5 = 310편을 재선별(tmp22/q22.json). 신규 채널 발굴은 하지 않았다.",
@@ -247,14 +247,14 @@
  "artifacts": {
   "stills": "work/sourcing_v2/stills22/ (7장 — 확정 3 · 보류 4)",
   "contact_sheets": "tmp22/th/sheet_0~10.jpg (250편)",
-  "pools": "tmp22/q22.json(310편) · tmp22/vert22.json(250) · tmp22/len22.jsonl(228) · tmp22/live22.jsonl(250) · tmp22/judge.jsonl(86편 판정 원장)",
+  "pools": "tmp22/q22.json(310편) · tmp22/vert22.json(250) · tmp22/len22.jsonl(228) · tmp22/live22.jsonl(250) · tmp22/judge.jsonl(88편 판정 원장)",
   "meta": "tmp22/len22.jsonl (Invidious 실측 view/like/게시일)",
   "screened": "tmp22/prescan.txt",
   "history": "work/sourcing_v2/sourced_history.json (210 ID · 124채널, 직전 백업 sourced_history.json.bak22)"
  },
  "notes": [
   "확정 3편(고양이 1 · 강아지 2). 목표 6~10편에는 미달 — 기준을 낮추지 않고 게이트 5개를 전부 통과한 편만 담았다.",
-  "판정 86편 중 확정 3편(3.5%). 21차(2/25=8%)보다 판정량은 3.4배로 늘었지만 통과율은 오히려 낮다. 탈락 1위는 몽타주·컷(34편), 2위는 모션 미달(28편), 3위는 길이 10초 미달(6편·사전 배제분 제외).",
+  "판정 88편 중 확정 3편(3.4%). 21차(2/25=8%)보다 판정량은 3.5배로 늘었지만 통과율은 오히려 낮다. 탈락 75편 분포는 몽타주·컷 41, 모션 미달 20, 길이 10초 미달 8, 자막·워터마크 3, 사람 2, 기타 1.",
   "이번 회차 최대 발견: 예전 회차가 '플레이어 거부'로 기록한 실패의 상당수가 **죽은 영상 ID** 때문이었다(oembed 401/404). oembed 라이브 체크를 먼저 넣으면 판정 실패가 거의 사라진다.",
   "10초 미만 쇼츠가 풀의 13%(250편 중 33편)라 Invidious 길이 프리필터만으로 브라우저 판정 낭비를 크게 줄였다.",
   "재시작 시 주의: 페이지 플레이어가 버퍼링으로 멈추면(readyState 0) loadVideoById가 계속 실패한다. 새 문서로 재내비게이션 1회가 유일한 복구책."
@@ -276,5 +276,13 @@
    "verdict": "undetermined",
    "detail": "이번 회차 신규 — 캔버스 캡처 실패로 판정 불가"
   }
- ]
+ ],
+ "reject_breakdown": {
+  "montage_cut": 41,
+  "motion_below": 20,
+  "too_short": 8,
+  "subs_watermark": 3,
+  "people": 2,
+  "other": 1
+ }
 }
