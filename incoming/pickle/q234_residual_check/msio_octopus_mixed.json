@@ -1,0 +1,82 @@
+{
+ "103": {
+  "octopus": {
+   "level": 8,
+   "maxHP": 95,
+   "exp": 13
+  },
+  "mixed": {
+   "level": 26,
+   "maxHP": 580,
+   "exp": 47
+  }
+ },
+ "104": {
+  "octopus": null,
+  "mixed": {
+   "level": 24,
+   "maxHP": 495,
+   "exp": 50
+  }
+ },
+ "105": {
+  "octopus": {
+   "level": 9,
+   "maxHP": 110,
+   "exp": 15
+  },
+  "mixed": {
+   "level": 24,
+   "maxHP": 495,
+   "exp": 50
+  }
+ },
+ "146": {
+  "octopus": {
+   "level": 9,
+   "maxHP": 110,
+   "exp": 15
+  },
+  "mixed": {
+   "level": 24,
+   "maxHP": 495,
+   "exp": 50
+  }
+ },
+ "147": {
+  "octopus": null,
+  "mixed": null
+ },
+ "148": {
+  "octopus": null,
+  "mixed": {
+   "level": 24,
+   "maxHP": 495,
+   "exp": 50
+  }
+ },
+ "149": {
+  "octopus": {
+   "level": 9,
+   "maxHP": 110,
+   "exp": 15
+  },
+  "mixed": {
+   "level": 24,
+   "maxHP": 495,
+   "exp": 50
+  }
+ },
+ "150": {
+  "octopus": {
+   "level": 10,
+   "maxHP": 125,
+   "exp": 17
+  },
+  "mixed": {
+   "level": 17,
+   "maxHP": 300,
+   "exp": 30
+  }
+ }
+}

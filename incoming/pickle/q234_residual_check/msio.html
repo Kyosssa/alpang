@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Maplestory: IO - Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name='keywords' content="maplestory, maplestory io, maplestory development, maplestory api, gms, maplestory dev, maplestory: io" />
+    <meta name='description' content="The unofficial worldwide Maplestory developer platform, created by maplers, for maplers." />
+    <meta property="og:url" content="https://maplestory.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maplestory: IO" />
+    <meta property="og:description" content="The unofficial worldwide Maplestory developer platform, created by maplers, for maplers." />
+    <meta property="og:image" content="https://maplestory.io/api/gms/latest/npc/9200000/render/stand" />
+    <link rel="stylesheet" href="/css/site.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800" rel="stylesheet">
+  </head>
+  <body style="background:url('https://2.maplestory.io/api/random-background') scroll bottom no-repeat !important; background-size:cover !important;">
+      <header>
+          
+      </header>
+      <div class='main-container'>
+          <nav>
+              <div class='logo fancy-underline'>
+                  <a href="/">
+                      <img src='https://maplestory.io/api/GMS/208.2.0/npc/9200000/render/stand?resize=2' /><br />
+                      <span><b>MapleStory:</b> IO</span>
+                  </a>
+              </div>
+              <div class='links-container'>
+                  <ul class='links'>
+                      <li class='meta'><span>Discover</span></li>
+                      <li><a class="nav-item nav-link" href='https://maplestory.wiki' target="_blank" rel="noopener noreferrer"><img src='https://maplestory.io/api/wz/img/GMS/195/UI/UIWindow2.img/QuestIcon/0/0' /> <span>Wiki</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://maplestory.studio' target="_blank" rel="noopener noreferrer"><img src='https://maplestory.io/api/gms/208.2.0/mob/100004/render/stand' /> <span>Studio</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://maples.im' target="_blank" rel="noopener noreferrer"><img src='https://maples.im/kino-square.png' /> <span>Simulator</span></a></li>
+                  </ul>
+                  <ul class='links'>
+                      <li class='meta'><span>Community</span></li>
+                      <li><a class="nav-item nav-link" href='https://open.kakao.com/o/gAdw6ZWb' target="_blank" rel="noopener noreferrer"><span>Kakao</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://line.me/ti/g2/gtDPDDIq-TAT2rPbwSn6qXjHegHCyqi8KGlFog' target="_blank" rel="noopener noreferrer"><span>Line</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://ko-fi.com/maplestoryio' target="_blank" rel="noopener noreferrer"><span>Ko-fi</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://www.patreon.com/maplestoryio' target="_blank" rel="noopener noreferrer"><span>Patreon</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/3SyrbAs' target="_blank" rel="noopener noreferrer"><span>Discord</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://maplestorywiki.net/' target="_blank" rel="noopener noreferrer"><span>Wiki</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://reddit.com/r/maplestory' target="_blank" rel="noopener noreferrer"><span>Reddit</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/maplesea' target="_blank" rel="noopener noreferrer"><span>SEA Discord</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/QwE6kdd' target="_blank" rel="noopener noreferrer"><span>Meta</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/aYS5A4keM5' target="_blank" rel="noopener noreferrer"><span>MapleStory.GG</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/8Z6eGYFgPk' target="_blank" rel="noopener noreferrer"><span>Reboot Central</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://maplestory.nexon.co.jp/community/discord/' target="_blank" rel="noopener noreferrer"><span>JMS Discord</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/CGfJnypHQ3' target="_blank" rel="noopener noreferrer"><span>Ayumilove Discord</span></a></li>
+                      <li><a class="nav-item nav-link" href='https://discord.gg/BXAa6yskzU' target="_blank" rel="noopener noreferrer"><span>TMS Discord</span></a></li>
+                  </ul>
+              </div>
+          </nav>
+          <main>
+              <div class='content-wrapper'>
+                  <div class='content'>
+                      <div id="swagger-ui"></div>
+
+<!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+<script>
+    if (window.navigator.userAgent.indexOf("Edge") > -1) {
+        console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+        window.fetch = undefined;
+    }
+</script>
+
+<script src="./swagger/swagger-ui-bundle.js"></script>
+<script src="./swagger/swagger-ui-standalone-preset.js"></script>
+<link rel="stylesheet" type="text/css" href="./swagger/swagger-ui.css">
+<style>
+    .content {
+        max-width: 1460px; /* Dictated by Swagger UI */
+    }
+</style>
+
+<script>
+    window.onload = function () {
+        var configObject = JSON.parse('{"urls":[{"url":"/swagger/V3/swagger.json","name":"MapleStory.IO V3"}],"validatorUrl":null}');
+        var oauthConfigObject = JSON.parse('{}');
+
+        // Apply mandatory parameters
+        configObject.dom_id = "#swagger-ui";
+        configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+        configObject.layout = "StandaloneLayout";
+
+        // If oauth2RedirectUrl isn't specified, use the built-in default
+        if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+            configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+
+        // Build a system
+        const ui = SwaggerUIBundle(configObject);
+
+        // Apply OAuth config
+        ui.initOAuth(oauthConfigObject);
+    }
+</script>
+                  </div>
+              </div>
+              <footer>
+                  <strong>Disclaimer</strong>
+                  <p>All aforementioned media, icons, descriptions, and character information provided by this service thereof are the sole property of <a href="https://www.nexon.net">NEXON</a> and therefor applies to their <a href="https://www.nexon.com/main/en/legal/tou" target="_blank">Terms of Service</a>.</p>
+                  <p>This service is provided out of love towards the Maplestory community and with a focus on building positive gaming experiences.</p>
+              </footer>
+          </main>
+      </div>
+  </body>
+</html>
