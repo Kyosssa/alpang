@@ -1,0 +1,280 @@
+{
+ "batch": "22차 정기 소싱 (2026-11-17 14:00 KST)",
+ "run_at": "2026-11-17T14:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
+ "target": "정예 6~10편 (강아지·고양이 우선 + 쪼꼬미 균형) — 미달 편 억지 편입 금지",
+ "delivered_count": 3,
+ "hold_count": 8,
+ "undetermined_count": 2,
+ "near_miss_count": 74,
+ "browser_screened": 86,
+ "prescreened": 250,
+ "method_22": {
+  "pool_sourcing": "20차가 발굴한 347채널·11,752쇼츠의 잔여분을 소진. 누적 원장 197 ID·113채널 + 17~21차 풀·판정분(총 1,884 ID)을 전수 제외하고 남은 9,565편에서 강아지 130·고양이 130·쪼꼬미 45·기타 5 = 310편을 재선별(tmp22/q22.json). 신규 채널 발굴은 하지 않았다.",
+  "prescreen": "oar2.jpg 실치수 세로 720p+ 250편 → 8×3 접촉시트 11장 육안 스캔(자막·사람·워터마크·AI/게임 사전 제거). 이어서 **oembed 라이브 체크(250편 중 248편 생존)** 와 **Invidious API 길이 실측**으로 10초 미만 33편을 브라우저 판정 전에 배제 → 실제 브라우저 판정 85편.",
+  "verify": "원격 브라우저 watch 페이지(`loadVideoById`) + 0.099초 버킷 시킹. 이번 세션 디코드는 608x1080(1080p 요청 시)~720x1280까지 올라갔고, 원본 해상도는 oar2.jpg 실치수(1080x1920/720x1280)로 별도 확인했다.",
+  "sampling": "`currentTime`을 0.099초마다 직접 시킹하고 `seeked` 뒤 160×90 그레이 프레임을 그려 mean-abs-diff(차분 정의는 verify.py와 동일). 컷은 '변화 픽셀 60% 초과' 스파이크로 계산.",
+  "stills": "0.5·3.5·7.0·10.2초 4프레임을 340×604×4 캔버스에 그려 스크린샷 1회로 육안 검수(stills22/).",
+  "meta": "Invidious API 실측(viewCount·likeCount·published·subCountText) + 채널 /about 설명·최근 업로드로 원작자성 확인.",
+  "new_in_22": "① **Invidious API 길이 프리필터**로 10초 미만을 브라우저에서 빼고 판정 편수를 3.4배(25→85)로 늘렸다. ② **oembed 라이브 체크**로 삭제·비공개 영상을 사전 제거. ③ 시킹 측정을 페이지 내 `window.__S/__P/__Q/__G` 헬퍼로 고정해 호출당 15초 상한을 걸고 부분 측정값(partial)으로도 1차 판정이 가능하게 만들었다."
+ },
+ "delivered": [
+  {
+   "id": "Eo8lMVLLWdE",
+   "url": "https://www.youtube.com/shorts/Eo8lMVLLWdE",
+   "title": "Cute Kitten Playing biting. Cat play bite.",
+   "channel": "Kissa Katt",
+   "channel_id": "UCZ_QzHSwlb0K61CnWKM_gNw",
+   "subs_txt": "25.6K",
+   "views_txt": "26,912",
+   "likes_txt": "252",
+   "published": "2025-10-06",
+   "cat": "고양이",
+   "dur_s": 11.78,
+   "resolution": "1080x1920(oar2 실측) · 디코드 608x1080",
+   "motion_mean": 20.71,
+   "motion_med": 21.08,
+   "ratios_max": 0.43,
+   "spike_times_s": [],
+   "stills": "stills22/c22_kissakatt_kitten.png",
+   "why": "검은 반점 흰 새끼고양이가 고양이 타워 옆 러그에서 몸을 뒤집고 앞발로 장난감을 치며 노는 11.8초 단일 숏. 0.5·3.5·7.0·10.2초 4컷 모두 같은 러그·같은 개체·같은 앵글. 자막·브랜드스트립·워터마크·사람 0.",
+   "cut_evidence": "10fps(0.099초 버킷) 103프레임 차분 평균 20.71·중앙 21.08, 컷 스파이크 0회(최대 변화픽셀비율 0.43). 0~10.3초 전 구간 실측.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 20.71(중앙 21.08), 스파이크 0",
+    "2_original_creator": "PASS — 채널 소개 'I help foster kittens' 1인칭 임보 계정. 쇼츠 24편 전부 자기 임보 새끼고양이 일상, 타 계정 영상 없음",
+    "3_measured_only": "PASS — 구독 25.6K · 조회 26,912 · 좋아요 252 · 2025-10-06 (Invidious API 실측)",
+    "4_no_subs": "PASS — 4컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 없음, 타 채널 워터마크 없음"
+   },
+   "note": "임보(foster) 계정이라 개체가 바뀌지만, 계정 자체가 1인칭 촬영이다."
+  },
+  {
+   "id": "EqnkC2nxojk",
+   "url": "https://www.youtube.com/shorts/EqnkC2nxojk",
+   "title": "Dachshunds Dance in the Rain 🌧️",
+   "channel": "Zoomies Daily",
+   "channel_id": "UCHmWPuW_dIvGBlA_ssSETww",
+   "subs_txt": "1.35K",
+   "views_txt": "11,360",
+   "likes_txt": "268",
+   "published": "2026-11-10",
+   "cat": "강아지",
+   "dur_s": 10.04,
+   "resolution": "720x1280(oar2 실측) · 디코드 608x1080",
+   "motion_mean": 24.12,
+   "motion_med": 25.68,
+   "ratios_max": 0.51,
+   "spike_times_s": [],
+   "stills": "stills22/c22_zoomiesdaily_dachshund.png",
+   "why": "닥스훈트 두 마리가 비 내리는 마당에서 서로 몸을 부딪치며 미친 듯이 뛰노는 10.0초 단일 숏. 4컷 모두 같은 마당·같은 두 마리, 자막·워터마크·사람 0.",
+   "cut_evidence": "103프레임 차분 평균 24.12·중앙 25.68, 컷 스파이크 0회(최대 0.51). 7.0초 프레임은 급격한 이동으로 모션블러.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 24.12(중앙 25.68), 스파이크 0",
+    "2_original_creator": "PASS(주의) — 쇼츠 48편이 전부 같은 닥스훈트 두 마리의 일상(샌드박스·통나무·알람시계 등 1인칭 관찰). 다만 채널명·소개가 'daily dose / funniest pet moments' 큐레이션 문구라 재업 계정 가능성을 완전히 배제하지 못함",
+    "3_measured_only": "PASS — 구독 1.35K · 조회 11,360 · 좋아요 268 · 2026-11-10 (Invidious API 실측)",
+    "4_no_subs": "PASS — 4컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 없음, 물웅덩이·마당 배경"
+   },
+   "note": "채널 소개 문구와 실제 업로드(한 집 닥스훈트 48편)가 어긋난다. 기획실장이 채널 최근 30편만 훑으면 확정 가능."
+  },
+  {
+   "id": "UU-BltIAc50",
+   "url": "https://www.youtube.com/shorts/UU-BltIAc50",
+   "title": "리트리버와 와이마라너가 노는법..체급차이는 못이겨..",
+   "channel": "레이데이 RAYDAY",
+   "channel_id": "UCnOvSh0S2cGAhQvXfCZ87MQ",
+   "subs_txt": "2.11K",
+   "views_txt": "7,484",
+   "likes_txt": "142",
+   "published": "2023-10-17",
+   "cat": "강아지",
+   "dur_s": 35.52,
+   "resolution": "1080x1920(oar2 실측) · 디코드 720x1280",
+   "motion_mean": 14.59,
+   "motion_med": 13.66,
+   "ratios_max": 0.42,
+   "spike_times_s": [],
+   "stills": "stills22/c22_rayday_weimaraner.png",
+   "why": "라브라도 리트리버와 와이마라너가 인조잔디 마당에서 서로 목덜미를 물고 뒹굴며 노는 35.5초 단일 숏. 4컷 모두 같은 마당·같은 앵글, 자막·워터마크·사람 0.",
+   "cut_evidence": "103프레임 차분 평균 14.59·중앙 13.66, 컷 스파이크 0회(최대 0.42).",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 14.59(중앙 13.66), 스파이크 0",
+    "2_original_creator": "PASS — 채널 소개 '와이마라너 레이의 행복한 life style sharing', 인스타·메일 명기. 쇼츠 11편 전부 같은 개 '레이' 1인칭",
+    "3_measured_only": "PASS — 구독 2.11K · 조회 7,484 · 좋아요 142 · 2023-10-17 (Invidious API 실측)",
+    "4_no_subs": "PASS — 4컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "국내 1인칭 대형견 계정. 원본이 35초라 0~10초 컷을 쓰거나 뒷부분 접촉 구간을 골라 쓸 수 있다."
+  }
+ ],
+ "holds": [
+  {
+   "id": "CR1Is8A-Mlc",
+   "url": "https://www.youtube.com/shorts/CR1Is8A-Mlc",
+   "channel": "Sugar the Maltese puppy",
+   "subs_txt": "596",
+   "views_txt": "499",
+   "published": "2023-06-10",
+   "cat": "강아지",
+   "dur_s": 27.76,
+   "motion_mean": 13.93,
+   "motion_med": 11.48,
+   "spike_times_s": [
+    0.12
+   ],
+   "stills": "stills22/c22_sugar_maltese_hold.png",
+   "reason": "기술 게이트는 전부 통과(모션 13.93·컷은 0.12초 첫 프레임 1회뿐·무자막·무워터마크, 10.2초에 손목만 등장). 그러나 채널 쇼츠 17편이 제목이 전부 'Maltese puppy playing video...'로 동일하고, 채널 과거 업로드가 7년 전 힌디어 미용·생활 정보 영상이라 반려견 계정으로 전환한 재업 계정 가능성이 높다 — 원작자성 판정 필요."
+  },
+  {
+   "id": "6lCulcapbZU",
+   "url": "https://www.youtube.com/shorts/6lCulcapbZU",
+   "channel": "Tej Tyagi - Bernese Mountain Dog",
+   "subs_txt": "833",
+   "views_txt": "2,258",
+   "published": "2026-02-28",
+   "cat": "강아지",
+   "dur_s": 11.86,
+   "motion_mean": 26.05,
+   "motion_med": 26.51,
+   "spike_times_s": [],
+   "stills": "stills22/c22_tej_bernes_hold.png",
+   "reason": "모션 26.05·컷 0·무자막·무인물로 수치는 전부 통과. 다만 모션의 대부분이 핸드헬드 카메라 이동이고 피사체는 뒷모습으로 걷는 중이라 '명확하고 역동적인 몸동작' 기준의 육안 판정이 필요하다."
+  },
+  {
+   "id": "rP_hqfls-qI",
+   "url": "https://www.youtube.com/shorts/rP_hqfls-qI",
+   "channel": "Amazing Grace",
+   "subs_txt": "468",
+   "views_txt": "11,949",
+   "published": "2026-09-12",
+   "cat": "강아지",
+   "dur_s": 17.3,
+   "motion_mean": 12.17,
+   "motion_med": 11.49,
+   "spike_times_s": [],
+   "stills": "stills22/c22_grace_frisbee_hold.png",
+   "reason": "0~10.2초 103프레임 12.17·컷 0으로 임계는 넘겼다. 다만 0.5초 프레임에 빨간 셔츠를 입은 사람이 배경에 서 있고 피사체(프리스비를 잡는 개)가 원거리에서 시작해 게이트⑤·화면 완성도 판정이 필요하다."
+  },
+  {
+   "id": "3W8tni8H-R0",
+   "url": "https://www.youtube.com/shorts/3W8tni8H-R0",
+   "channel": "Stella the Awesome Aussie",
+   "subs_txt": "357",
+   "views_txt": "2,166",
+   "published": "2026-10-24",
+   "cat": "강아지",
+   "dur_s": 26.42,
+   "motion_mean": 11.13,
+   "motion_med": 11.49,
+   "spike_times_s": [],
+   "stills": "",
+   "reason": "0~8.4초는 12.65(84프레임)로 넘지만 8.5~10.3초가 3.63으로 떨어져 전 구간 평균 11.13 — 임계 12.0 미달. 후반 2초를 잘라 쓰면 10초 하한에 걸린다."
+  },
+  {
+   "id": "6_GpVt7BmGc",
+   "url": "https://www.youtube.com/shorts/6_GpVt7BmGc",
+   "channel": "Cute Poodle Mocha",
+   "subs_txt": "2.59K",
+   "views_txt": "7,206",
+   "published": "2025-12-05",
+   "cat": "강아지",
+   "dur_s": 12.6,
+   "motion_mean": 11.71,
+   "motion_med": 12.44,
+   "spike_times_s": [],
+   "stills": "",
+   "reason": "0~8.7초 87프레임 11.71·컷 0. 임계 12.0에 0.29 모자란다(측정 편차 ±30% 구간). 육안으로 눈/거리 확인 후 기획실장 판정 권장."
+  },
+  {
+   "id": "3cGfsZ_NQuI",
+   "url": "https://www.youtube.com/shorts/3cGfsZ_NQuI",
+   "channel": "Super Shiba",
+   "subs_txt": "28.3K",
+   "views_txt": "12,197",
+   "published": "2026-04-19",
+   "cat": "강아지",
+   "dur_s": 16.88,
+   "motion_mean": 11.32,
+   "motion_med": 12.19,
+   "spike_times_s": [],
+   "stills": "",
+   "reason": "0~8.5초 11.32·컷 0·중앙값 12.19. 임계 12.0 아래지만 중앙값은 넘는다. 후반 구간 재측정이 캔버스 캡처 실패로 막혀 보류로 남겼다."
+  },
+  {
+   "id": "vAiO4KUH4NY",
+   "url": "https://www.youtube.com/shorts/vAiO4KUH4NY",
+   "channel": "Mr.LuckyLeChat",
+   "subs_txt": "320K",
+   "views_txt": "—",
+   "published": "—",
+   "cat": "고양이",
+   "dur_s": 104.0,
+   "motion_mean": 15.03,
+   "motion_med": 14.79,
+   "spike_times_s": [],
+   "stills": "",
+   "reason": "수치(15.03·컷 0)는 통과지만 104초 장편이고, 육안 4컷이 새끼고양이가 의자 다리 밑에 웅크린 정적 구도에 전경 블러(손·팔로 보이는 물체)가 걸려 있다. 동작 강도·인물 판정 필요."
+  },
+  {
+   "id": "2UXP-4X4yqI",
+   "url": "https://www.youtube.com/shorts/2UXP-4X4yqI",
+   "channel": "Kristi Cates",
+   "subs_txt": "339K",
+   "views_txt": "—",
+   "published": "—",
+   "cat": "고양이",
+   "dur_s": 70.92,
+   "motion_mean": 13.75,
+   "motion_med": 13.42,
+   "spike_times_s": [],
+   "stills": "",
+   "reason": "수치(13.75·컷 0)는 통과지만 70.9초 장편이고, 육안 4컷이 물그릇에 얼굴을 박은 초근접 정적 구도(수면 반사가 차분을 만든 것으로 보임) — '역동적 몸동작' 기준 미달로 보인다."
+  }
+ ],
+ "undetermined": [
+  {
+   "id": "sLAbthqQ6Uk",
+   "channel": "Rambo Adventures",
+   "reason": "캔버스 drawImage가 전 프레임 동일(차분 0)로 잡혀 측정 불가 — 다음 회차 재측정"
+  },
+  {
+   "id": "oOdnDBqufLI",
+   "channel": "Bela e Thanos",
+   "reason": "플레이어 버퍼링 정지로 loadVideoById 2회 실패 — 다음 회차 재측정"
+  }
+ ],
+ "artifacts": {
+  "stills": "work/sourcing_v2/stills22/ (7장 — 확정 3 · 보류 4)",
+  "contact_sheets": "tmp22/th/sheet_0~10.jpg (250편)",
+  "pools": "tmp22/q22.json(310편) · tmp22/vert22.json(250) · tmp22/len22.jsonl(228) · tmp22/live22.jsonl(250) · tmp22/judge.jsonl(86편 판정 원장)",
+  "meta": "tmp22/len22.jsonl (Invidious 실측 view/like/게시일)",
+  "screened": "tmp22/prescan.txt",
+  "history": "work/sourcing_v2/sourced_history.json (210 ID · 124채널, 직전 백업 sourced_history.json.bak22)"
+ },
+ "notes": [
+  "확정 3편(고양이 1 · 강아지 2). 목표 6~10편에는 미달 — 기준을 낮추지 않고 게이트 5개를 전부 통과한 편만 담았다.",
+  "판정 86편 중 확정 3편(3.5%). 21차(2/25=8%)보다 판정량은 3.4배로 늘었지만 통과율은 오히려 낮다. 탈락 1위는 몽타주·컷(34편), 2위는 모션 미달(28편), 3위는 길이 10초 미달(6편·사전 배제분 제외).",
+  "이번 회차 최대 발견: 예전 회차가 '플레이어 거부'로 기록한 실패의 상당수가 **죽은 영상 ID** 때문이었다(oembed 401/404). oembed 라이브 체크를 먼저 넣으면 판정 실패가 거의 사라진다.",
+  "10초 미만 쇼츠가 풀의 13%(250편 중 33편)라 Invidious 길이 프리필터만으로 브라우저 판정 낭비를 크게 줄였다.",
+  "재시작 시 주의: 페이지 플레이어가 버퍼링으로 멈추면(readyState 0) loadVideoById가 계속 실패한다. 새 문서로 재내비게이션 1회가 유일한 복구책."
+ ],
+ "history_after": "210 ID · 124채널",
+ "carryover_closed": [
+  {
+   "id": "x2l3m7C6BXk",
+   "verdict": "reject",
+   "detail": "21차 보류 — 8~10.3초 8.57까지 재측정, 전 구간 평균 4.16·중앙 2.8로 모션 미달 확정"
+  },
+  {
+   "id": "yvzk11rqmY0",
+   "verdict": "reject",
+   "detail": "21차 판정불가 — 재측정 성공. 모션 19.72·컷 0이지만 0.5초 제목 캡션 + 상시 채널 워터마크"
+  },
+  {
+   "id": "sLAbthqQ6Uk",
+   "verdict": "undetermined",
+   "detail": "이번 회차 신규 — 캔버스 캡처 실패로 판정 불가"
+  }
+ ]
+}
