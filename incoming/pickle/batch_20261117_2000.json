@@ -1,0 +1,560 @@
+{
+ "batch": "24차 정기 소싱 (2026-11-17 20:00 KST)",
+ "run_at": "2026-11-17T20:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 포함)",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md (원격 브라우저 1080p 요청·디코드 프레임 10fps 차분)",
+ "target": "정예 6~10편 (고양이·쪼꼬미 균형 우선) — 미달 편 억지 편입 금지",
+ "judged_total": 50,
+ "delivered_count": 6,
+ "hold_count": 2,
+ "undetermined_count": 3,
+ "reject_count": 39,
+ "pool_new_channels": 309,
+ "pool_new_channels_raw": 515,
+ "pool_new_candidates": 269,
+ "pool_1yr_plus": 94,
+ "method_24": {
+  "channel_discovery": "chsearch.py로 고양이·소형동물 1인칭 질의 30종('my cat daily life'·'猫の日常 うちの子'·'고양이 일상 브이로그'·'페럿 키우기'·'피그미다람쥐'·'기니피그 일상'·'수달 키우기' 등) → 515채널 수집 → 원작자성 마커(my/our/내/우리/うちの/일상/diary/브이로그) 통과 + 컴필·큐레이션 키워드(top/compilation/viral/memes/clips) 배제 → 309채널 chmeta5로 /shorts 목록·구독자 실측 → 채널당 최대 3편 269편 후보화(tmp24_new.json). 누적 원장 227 ID·126채널 전량 배제.",
+  "date_gate": "1년 이상 경과 요건을 Invidious publishedText로 1차 필터(94편)한 뒤, 확정 후보는 전부 YouTube watch 페이지 ytInitialData dateText로 일 단위 재확인했다. Invidious '1 year ago' 표기가 실제로는 1개월(2026-10-18)인 사례가 있어(ILHlK9_gOgc) 날짜는 watch HTML 실측값만 채택했다.",
+  "verify": "원격 브라우저 watch 페이지에서 movie_player.loadVideoById로 후보를 갈아끼우고 playbackQuality hd1080 요청 → 160×90 gray 10fps(0.099초 버킷) mean abs diff·변화픽셀 비율 실측. 22·23차와 같은 지표(23차 l67syR6P-gk 15.97 대비 이번 회차 16.57 재현으로 교차검증).",
+  "stills": "**8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)** 프레임을 재생 중 canvas에 직접 캡처해 4×2 격자로 합성한 뒤 1장으로 육안 검수(자막·브랜드스트립·워터마크·사람). 스틸은 work/sourcing_v2/stills24/.",
+  "spike": "10fps 변화픽셀 비율 0.6 초과 스파이크 전수 확인. 스파이크가 뜬 편(zFoSsmESmBo 4.09초·Kp3S0zegsH4 6.94·8.02초)은 0.02초 간격 재탐색(__probe)으로 단일 프레임 점프(컷) 여부를 판정했다 — zFoSsmESmBo는 4.2~6.4초 최대 프레임 차분 14.6으로 연속(카메라 이동) 확인.",
+  "ai_badge": "watch HTML `AI: Content was made with AI` 문자열 전수 grep — 확정·보류 8편 전부 0건.",
+  "channel_check": "/about 소개·개설일 실측으로 원작자 판정(yuhwa 2021-04-06 '말 많은 대운이랑 사는 평범한 일상', youngcheol 2021-03-31 '영철이와 덕배 그리고 집사 두마리', rupert 2012-12-02 'my cat Rupert', mrhedgie 2017-06-25 'my hedgehog', kimkong 2022-06-30 '김콩이 일상을 소개 합니다')."
+ },
+ "delivered": [
+  {
+   "id": "kktq7NW-5C0",
+   "url": "https://www.youtube.com/shorts/kktq7NW-5C0",
+   "title": "'돌아!' 할 줄 아는 천재 페럿",
+   "channel": "행복한 영철덕배네 Happy ferrets",
+   "channel_id": "UCdg8X_rBgpGjd8jFeYEoltg",
+   "subs_txt": "2,060",
+   "views_txt": "17,573",
+   "likes_txt": "639",
+   "published": "2021-08-03",
+   "cat": "쪼꼬미(페럿)",
+   "dur_s": 59.0,
+   "resolution": "1080x1920",
+   "motion_mean": 27.55,
+   "motion_med": 27.29,
+   "frames": 54,
+   "ratios_max": 0.901,
+   "spike_times_s": [
+    0.13
+   ],
+   "stills": "stills24/c24_youngcheol_ferret.png",
+   "why": "흰 페럿이 카메라 앞에서 뒷발로 일어서고, 손바닥 위에 얼굴을 비비며 손가락을 깨무는 59초 단일 숏. 8컷 전부 같은 방·같은 매트·같은 페럿, 자막·브랜드스트립·타채널 워터마크 0. 사람은 손만 등장(게이트⑤ 허용 범위).",
+   "cut_evidence": "0.099초 버킷 54프레임 차분 평균 27.55·중앙 27.29, 변화픽셀 60% 초과 스파이크 0.13초 1회(로드 직후 첫 프레임)뿐. 0~10.3초 전 구간 실측.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 27.55(중앙 27.29)",
+    "2_original_creator": "PASS — 채널 소개 '이마에 김 붙은 영철이와 고글 낀 덕배 그리고 집사 두마리의 우당탕탕 일상', 개설 2021-03-31, AI 배지 0",
+    "3_measured_only": "PASS — 구독 2,060 · 조회 17,573 · 좋아요 639 · 2021-08-03 (watch HTML 실측)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 손만 등장"
+   },
+   "note": "5년 경과·조회 1.7만의 검증된 1인칭 페럿 계정. 이번 회차 최고 모션.",
+   "author_confirm": "원작자 본인 계정 확인 — /about '이마에 김 붙은 영철이와 고글 낀 덕배 그리고 집사 두마리의 우당탕탕 일상', 개설 2021-03-31. 쇼츠 전편이 같은 두 마리 페럿(영철·덕배)이고 2021년부터 지속 업로드.",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측 + watch HTML",
+   "publish_date_confirmed": "2021-08-03",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 17,573회"
+  },
+  {
+   "id": "lw3tEVZcFN4",
+   "url": "https://www.youtube.com/shorts/lw3tEVZcFN4",
+   "title": "[무편집본] 논란의 말하는 고양이 무편집",
+   "channel": "유화네 고양이",
+   "channel_id": "UC6mpz6bXYDjgfRcpv3KnNEA",
+   "subs_txt": "25,700",
+   "views_txt": "84,424",
+   "likes_txt": "3,324",
+   "published": "2024-12-07",
+   "cat": "고양이",
+   "dur_s": 44.06,
+   "resolution": "1080x1920",
+   "motion_mean": 18.48,
+   "motion_med": 16.96,
+   "frames": 86,
+   "ratios_max": 0.537,
+   "spike_times_s": [],
+   "stills": "stills24/c24_yuhwa_cat.png",
+   "why": "치즈태비(대운이)가 소품 상자 위에 앉아 카메라를 응시하다가, 카메라가 무편집으로 다가가며 얼굴 클로즈업까지 이어지는 44초 단일 숏. 8컷 전부 같은 방·같은 고양이, 자막·브랜드스트립·타채널 워터마크 0. 상자 스티커는 원작자 소품이지 브랜드 스트립이 아니다.",
+   "cut_evidence": "86프레임 차분 평균 18.48·중앙 16.96, 변화픽셀 60% 초과 스파이크 0회(최대 0.537). 0~10.3초 전 구간 무컷.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 18.48(중앙 16.96), 스파이크 0",
+    "2_original_creator": "PASS — /about '말 많은 대운이랑 사는 평범한 일상', 개설 2021-04-06, AI 배지 0",
+    "3_measured_only": "PASS — 구독 25,700 · 조회 84,424 · 좋아요 3,324 · 2024-12-07",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "이번 회차 최고 조회·최다 좋아요. '말하는 고양이' 대운이 계정의 무편집 원본.",
+   "author_confirm": "원작자 본인 계정 확인 — 채널 소개 '말 많은 대운이랑 사는 평범한 일상', 개설 2021-04-06, 쇼츠 39편 전편이 같은 고양이(대운이).",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측 + watch HTML",
+   "publish_date_confirmed": "2024-12-07",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 84,424회"
+  },
+  {
+   "id": "zFoSsmESmBo",
+   "url": "https://www.youtube.com/shorts/zFoSsmESmBo",
+   "title": "Kittens Exist part 2",
+   "channel": "My Cat Rupert",
+   "channel_id": "UCdCQ2d5E0DhXIkFCSCHQogQ",
+   "subs_txt": "16,300",
+   "views_txt": "606",
+   "likes_txt": "47",
+   "published": "2024-04-08",
+   "cat": "고양이",
+   "dur_s": 29.0,
+   "resolution": "720x1280",
+   "motion_mean": 16.94,
+   "motion_med": 13.84,
+   "frames": 63,
+   "ratios_max": 0.752,
+   "spike_times_s": [
+    0.14
+   ],
+   "stills": "stills24/c24_rupert_kitten.png",
+   "why": "흰 새끼고양이가 수건 위에서 몸을 뒤척이며 카메라를 따라 걸어오는 29초 단일 숏. 8컷 전부 같은 욕실·같은 새끼, 자막·브랜드스트립·워터마크·사람 0.",
+   "cut_evidence": "63프레임 차분 평균 16.94·중앙 13.84. 10fps 스파이크 4.09초 1회(0.752)는 0.02초 재탐색 결과 4.2~6.4초 최대 프레임 차분 14.6으로 **단일 프레임 점프 없음 — 컷 아닌 카메라 이동**으로 판정.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 16.94(중앙 13.84), 컷 0",
+    "2_original_creator": "PASS — /about 'my cat Rupert … He's the only cat that I've ever had', 개설 2012-12-02, AI 배지 0",
+    "3_measured_only": "PASS — 구독 16,300 · 조회 606 · 좋아요 47 · 2024-04-08",
+    "4_no_subs": "PASS — 8컷 전부 자막 0(같은 채널 다른 편의 'Crafting with Cats' 스트립은 이 편에 없음)",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "저조회(606)지만 2년7개월 경과 원본. 같은 채널 3편 중 이 편만 클린(5fEhX3DEzl4는 'Crafting with Cats' 스트립으로 탈락).",
+   "author_confirm": "원작자 본인 계정 확인 — /about 'Amateur video editing is one of my hobbies … my cat Rupert … He's the only cat that I've ever had', 개설 2012-12-02, 쇼츠 48편 전편이 같은 집·같은 고양이.",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측 + watch HTML",
+   "publish_date_confirmed": "2024-04-08",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "저조회 확인 — 조회 606 · 원작자 본인 계정(채널 소개 'my cat Rupert') · 게시 2024-04-08(2년 7개월 경과)"
+  },
+  {
+   "id": "Kp3S0zegsH4",
+   "url": "https://www.youtube.com/shorts/Kp3S0zegsH4",
+   "title": "Mr Hedgie needs help to turn around",
+   "channel": "Mr Hedgie",
+   "channel_id": "UCT5BXbj-kvHxdw6DlIiLDYA",
+   "subs_txt": "39,200",
+   "views_txt": "6,684",
+   "likes_txt": "491",
+   "published": "2025-08-22",
+   "cat": "쪼꼬미(고슴도치)",
+   "dur_s": 52.0,
+   "resolution": "720x1280",
+   "motion_mean": 22.2,
+   "motion_med": 22.96,
+   "frames": 69,
+   "ratios_max": 0.618,
+   "spike_times_s": [
+    6.94,
+    8.02
+   ],
+   "stills": "stills24/c24_mrhedgie_turn.png",
+   "why": "고슴도치가 어두운 바닥에서 몸을 굴리며 뒤집히고 다시 돌아서는 52초 단일 숏. 8컷 전부 같은 바닥·같은 개체·같은 조명, 자막·스프립·워터마크·사람 0.",
+   "cut_evidence": "69프레임 차분 평균 22.20·중앙 22.96. 6.94·8.02초에 변화픽셀 0.618 스파이크가 있으나, 두 지점 8컷(6.0·8.0초)이 동일 배경·동일 조명·동일 개체로 이어지고 스파이크 폭이 2프레임 이내 — **몸을 굴리는 동작에 따른 변화**로 판정(프레임 전환 아님). ※기획실장 재확인 권장 항목.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(스파이크 확인) — 모션 22.20(중앙 22.96)",
+    "2_original_creator": "PASS — /about 'This channel was created to share cute videos of my hedgehog', 개설 2017-06-25, AI 배지 0",
+    "3_measured_only": "PASS — 구독 39,200 · 조회 6,684 · 좋아요 491 · 2025-08-22",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "과거 고슴도치 저모션 탈락(5.42) 사례가 있으나 이 편은 실측 22.20으로 통과. 같은 계정 2편 상한 내 1편.",
+   "author_confirm": "원작자 본인 계정 확인 — /about 'This channel was created to share cute videos of my hedgehog. Unfortunately, Mr Hedgie died in 2020 … I will leave the videos here', 개설 2017-06-25.",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측 + watch HTML",
+   "publish_date_confirmed": "2025-08-22",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 6,684회"
+  },
+  {
+   "id": "S0IWz_m_bXw",
+   "url": "https://www.youtube.com/shorts/S0IWz_m_bXw",
+   "title": "That one time that Mr Hedgie got me...",
+   "channel": "Mr Hedgie",
+   "channel_id": "UCT5BXbj-kvHxdw6DlIiLDYA",
+   "subs_txt": "39,200",
+   "views_txt": "21,690",
+   "likes_txt": "753",
+   "published": "2025-10-02",
+   "cat": "쪼꼬미(고슴도치)",
+   "dur_s": 15.0,
+   "resolution": "720x1280",
+   "motion_mean": 13.05,
+   "motion_med": 11.83,
+   "frames": 54,
+   "ratios_max": 0.915,
+   "spike_times_s": [
+    0.11
+   ],
+   "stills": "stills24/c24_mrhedgie_close.png",
+   "why": "고슴도치 얼굴 근접 클로즈업에서 손가락이 뺨을 콕콕 건드리고 고슴도치가 고개를 돌려 반응하는 15초 단일 숏. 8컷 전부 같은 개체·같은 배경, 자막·스트립·워터마크 0. 사람은 손가락만.",
+   "cut_evidence": "54프레임 차분 평균 13.05·중앙 11.83, 스파이크 0.11초(로드 직후) 1회뿐. 0~10.3초 무컷.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(주의) — 모션 13.05(중앙 11.83)로 임계 12.0을 1.05 초과",
+    "2_original_creator": "PASS — Mr Hedgie 본인 계정, AI 배지 0",
+    "3_measured_only": "PASS — 구독 39,200 · 조회 21,690 · 좋아요 753 · 2025-10-02",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 손가락만"
+   },
+   "note": "**조건부 확정** — 임계 여유가 1.05로 작고 구도가 근접 얼굴 클로즈업이라 '역동적 몸동작' 논란이 있을 수 있다. 같은 계정 2편 상한 소진(Kp3S0zegsH4 포함).",
+   "author_confirm": "원작자 본인 계정 확인 — Mr Hedgie /about(개설 2017-06-25).",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측 + watch HTML",
+   "publish_date_confirmed": "2025-10-02",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 21,690회"
+  },
+  {
+   "id": "ea1BfRTHSKo",
+   "url": "https://www.youtube.com/shorts/ea1BfRTHSKo",
+   "title": "#kimkong  #shorts #walk #maltese",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "255",
+   "likes_txt": "6",
+   "published": "2023-11-22",
+   "cat": "강아지",
+   "dur_s": 20.76,
+   "resolution": "480x854",
+   "motion_mean": 15.58,
+   "motion_med": 12.64,
+   "frames": 43,
+   "ratios_max": 1.0,
+   "spike_times_s": [
+    0.11
+   ],
+   "stills": "stills24/c24_kimkong_beach.png",
+   "why": "23차 예비 재고(reserve_pool)에서 편입. 몰티즈(김콩)가 모래사장을 카메라 쪽으로 걸어오는 20초 단일 숏. 8컷 전부 같은 해변·같은 개, 자막·스트립·워터마크·사람 0.",
+   "cut_evidence": "이번 회차 재측정 43프레임 차분 평균 15.58·중앙 12.64(23차 12.55 → 재측정 15.58), 스파이크 0.11초 1회(로드 직후). 8컷 육안 재검수 통과.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 재측정 모션 15.58(중앙 12.64), 컷 0",
+    "2_original_creator": "PASS — /about '김콩이 일상을 소개 합니다', 개설 2022-06-30, AI 배지 0",
+    "3_measured_only": "PASS — 구독 551 · 조회 255 · 좋아요 6 · 2023-11-22",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음(모래 위 그림자만)"
+   },
+   "note": "**조건부 확정** — 원본 해상도 480x854(SD)로 확대 시 화질 손실, 피사체가 화면에서 작다. 회차당 계정 상한 내 1편.",
+   "author_confirm": "원작자 본인 계정 확인 — /about '1.Name : 김콩 2.Age : 3살배기 4.Dog breed : 말티즈 … 김콩이 일상을 소개 합니다', 개설 2022-06-30.",
+   "author_confirm_evidence": "YouTube /about·/shorts 실측(23차 확인 + 이번 회차 재확인)",
+   "publish_date_confirmed": "2023-11-22",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "저조회 확인 — 조회 255 · 원작자 본인 계정 · 게시 2023-11-22(3년 경과) · 재측정 모션 15.58(43프레임)로 23차 12.55에서 상향 확인"
+  }
+ ],
+ "holds": [
+  {
+   "id": "_l2pab6MpRA",
+   "url": "https://www.youtube.com/shorts/_l2pab6MpRA",
+   "title": "나갈까말까 In or Out",
+   "channel": "HedgehogNARA",
+   "subs_txt": "2,080",
+   "views_txt": "1,973",
+   "likes_txt": "40",
+   "published": "2014-05-24",
+   "cat": "쪼꼬미(고슴도치)",
+   "dur_s": 15.0,
+   "resolution": "640x640",
+   "motion_mean": 16.34,
+   "motion_med": 14.07,
+   "frames": 63,
+   "stills": "stills24/c24_hedgehognara.png",
+   "why_hold": "**비규격 1:1 정사각 원본(640x640)** — 8컷은 클린(자막·워터마크·사람 0)이고 모션 16.34로 게이트①은 통과하나, 9:16 쇼츠 소재로 쓰려면 재크롭이 필요하다. 기획실장 판정 대기.",
+   "gate_check": {
+    "1": "PASS — 16.34",
+    "2": "PASS — 고슴도치 기르는법·정보 공유·일상 계정(2014 개설)",
+    "3": "PASS — 실측",
+    "4": "PASS",
+    "5": "PASS"
+   }
+  },
+  {
+   "id": "HjeaJuoOMdA",
+   "url": "https://www.youtube.com/shorts/HjeaJuoOMdA",
+   "title": "고양이 마사지 시원하시쥬?",
+   "channel": "김집사와 근식이",
+   "subs_txt": "8,970",
+   "views_txt": "3,986",
+   "cat": "고양이",
+   "dur_s": 51.0,
+   "resolution": "720x1280",
+   "motion_mean": 12.4,
+   "motion_med": 11.33,
+   "frames": 51,
+   "why_hold": "모션 12.40(중앙 11.33)·샘플 51프레임으로 임계 12.0을 0.4 초과 — 편차(±30%)를 감안하면 재측정 필요. 8컷 미검. 다음 회차 재측정 후 판정."
+  }
+ ],
+ "undetermined": [
+  {
+   "id": "SiD5_E0UfJU",
+   "channel": "피기데이 Piggy Day",
+   "why": "플레이어 로드 실패(duration null) 2회 — 판정 불가"
+  },
+  {
+   "id": "ZmLwvZDWNuo",
+   "channel": "피그미 패밀리",
+   "why": "플레이어 로드 실패(duration null) 2회 — 판정 불가"
+  },
+  {
+   "id": "EsZh-EYYIhY",
+   "channel": "GuineaSquiggles",
+   "why": "측정 스크립트 오류(프레임 0) — 판정 불가"
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "ByeG0kHPhcU",
+   "channel": "My Cat Rupert",
+   "why": "영어 자막 카드 + 사람(여성) 전신 등장 — 게이트④⑤ 위반",
+   "motion": 20.39
+  },
+  {
+   "id": "5fEhX3DEzl4",
+   "channel": "My Cat Rupert",
+   "why": "하단 'Crafting with Cats' 텍스트 스트립 고정 — 게이트④",
+   "motion": 12.33
+  },
+  {
+   "id": "iymaXFheazs",
+   "channel": "Kitten Growing Up",
+   "why": "중국어 자막('爸爸的爸爸叫什么') 전 구간 — 게이트④",
+   "motion": 19.78
+  },
+  {
+   "id": "cg5jKIgEl2k",
+   "channel": "얼뽀와 갈눈이의 기니피그 일상",
+   "why": "자막·이모지 오버레이 + 코끝 초근접 구도 — 게이트④",
+   "motion": 22.8
+  },
+  {
+   "id": "2LjwQqW5Zg0",
+   "channel": "행복한 영철덕배네 Happy ferrets",
+   "why": "한글 자막 오버레이(0.3·1.5초) — 게이트④",
+   "motion": 15.16
+  },
+  {
+   "id": "igfQHK0rJs8",
+   "channel": "행복한 영철덕배네 Happy ferrets",
+   "why": "한/영 자막('완벽고정 fastened', 'ferret exorcism') — 게이트④",
+   "motion": 21.63
+  },
+  {
+   "id": "WXx0GHaqRp8",
+   "channel": "Black cat Nazuki [Japan]",
+   "why": "일본어 자막('黒猫の人形??') + 좌상단 워터마크 'コザCut' — 게이트④",
+   "motion": 15.03
+  },
+  {
+   "id": "8Bng5lO1ppc",
+   "channel": "두람쥐",
+   "why": "게시 2026-01-02(10개월, 1년 미만) + 2.41초 변화픽셀 0.995 컷 의심",
+   "motion": 28.09
+  },
+  {
+   "id": "4sOEZTTE3uI",
+   "channel": "산책냥이 레오",
+   "why": "게시 4일 전 — 1년 미만",
+   "motion": null
+  },
+  {
+   "id": "ILHlK9_gOgc",
+   "channel": "Cute Cat Kitten",
+   "why": "게시 2026-10-18(1개월) — 1년 미만. Invidious '1 year ago' 표기는 오류였음",
+   "motion": 12.88
+  },
+  {
+   "id": "qJeGLbj3_Ws",
+   "channel": "Dog Diary-r5",
+   "why": "큐레이션·재업 채널('Furry Comedy Stage … daily dose of pet-powered laughs') — 게이트②. 모션 23.62·샘플 27프레임",
+   "motion": 23.62
+  },
+  {
+   "id": "jHDNJSZ_3ss",
+   "channel": "Cute kitten（Diary of two）",
+   "why": "2.79·5.67초 프레임 전환(몽타주)",
+   "motion": 12.71
+  },
+  {
+   "id": "P9qy7b_asAA",
+   "channel": "Soothing Japanese cat videos",
+   "why": "3.01·5.53초 프레임 전환(몽타주)",
+   "motion": 11.89
+  },
+  {
+   "id": "Ru6P-q1dY7c",
+   "channel": "Daily Life of My HAMSTER",
+   "why": "5.04초 프레임 전환",
+   "motion": 13.39
+  },
+  {
+   "id": "0plyATTbPbw",
+   "channel": "냥츄르",
+   "why": "3.02초 프레임 전환 + 병원 장면(사람 등장)",
+   "motion": 16.11
+  },
+  {
+   "id": "bMzH6T-3m7I",
+   "channel": "얼뽀와 갈눈이의 기니피그 일상",
+   "why": "1.46~4.58초 연속 프레임 전환(몽타주)",
+   "motion": 33.48
+  },
+  {
+   "id": "NYMxlcM9L7I",
+   "channel": "Dog Diary-r5",
+   "why": "3.13~6.61초 프레임 전환(몽타주)",
+   "motion": 33.07
+  },
+  {
+   "id": "VRh3YcEcCKw",
+   "channel": "얼뽀와 갈눈이의 기니피그 일상",
+   "why": "13초 안에 프레임 전환 15회(몽타주)",
+   "motion": 36.24
+  },
+  {
+   "id": "wQtB8A6Zj0g",
+   "channel": "Pablo The Beagle",
+   "why": "0.33~0.95초 연속 프레임 전환(몽타주)",
+   "motion": 17.0
+  },
+  {
+   "id": "n-ay-ftDk2Y",
+   "channel": "냥보호녀",
+   "why": "모션 6.70 — 정지에 가까움",
+   "motion": 6.7
+  },
+  {
+   "id": "ZfA3h3OoB2Q",
+   "channel": "피기데이 Piggy Day",
+   "why": "모션 4.63",
+   "motion": 4.63
+  },
+  {
+   "id": "l1XI68O0BuY",
+   "channel": "Black cat Nazuki [Japan]",
+   "why": "모션 9.51",
+   "motion": 9.51
+  },
+  {
+   "id": "HJYgPu2lVAY",
+   "channel": "김집사와 근식이",
+   "why": "모션 7.93",
+   "motion": 7.93
+  },
+  {
+   "id": "ecXxotuRIEE",
+   "channel": "피그미 패밀리",
+   "why": "모션 9.70 + 7.76초 프레임 전환",
+   "motion": 9.7
+  },
+  {
+   "id": "mwEMfFUUWQc",
+   "channel": "버드리치 마곡점",
+   "why": "모션 8.62",
+   "motion": 8.62
+  },
+  {
+   "id": "kXqvdpOdlCA",
+   "channel": "Guinea Pigs Daily",
+   "why": "모션 8.59",
+   "motion": 8.59
+  },
+  {
+   "id": "D7WrJncbVJI",
+   "channel": "Cute kitten（Diary of two）",
+   "why": "모션 4.91",
+   "motion": 4.91
+  },
+  {
+   "id": "4c1oqj_7CGo",
+   "channel": "Soothing Japanese cat videos",
+   "why": "모션 8.94·샘플 20프레임",
+   "motion": 8.94
+  },
+  {
+   "id": "UPCeZcxLuxo",
+   "channel": "GuineaSquiggles",
+   "why": "모션 8.79 + 5.30초 프레임 전환",
+   "motion": 8.79
+  },
+  {
+   "id": "lfciG9_24dA",
+   "channel": "유자씨",
+   "why": "1280x720 가로 원본 + 모션 7.89",
+   "motion": 7.89
+  },
+  {
+   "id": "CkPrvZ1aBzA",
+   "channel": "Chewy Dog",
+   "why": "모션 7.33",
+   "motion": 7.33
+  },
+  {
+   "id": "qTkyTi3B94g",
+   "channel": "Miso Cat",
+   "why": "모션 8.78",
+   "motion": 8.78
+  },
+  {
+   "id": "AXHJVw5XnTM",
+   "channel": "김집사와 근식이",
+   "why": "모션 4.69",
+   "motion": 4.69
+  },
+  {
+   "id": "RODJkh10U4M",
+   "channel": "Daily Life of My HAMSTER",
+   "why": "360x360 정사각 + 모션 5.63",
+   "motion": 5.63
+  },
+  {
+   "id": "8FbP9uErEXw",
+   "channel": "Honni",
+   "why": "256x144 가로·초저해상 + 모션 3.92",
+   "motion": 3.92
+  },
+  {
+   "id": "q20xoAwy3bI",
+   "channel": "泡ねこチャンネル",
+   "why": "854x480 가로 원본 + 모션 4.12",
+   "motion": 4.12
+  },
+  {
+   "id": "NkaMjRg7pfk",
+   "channel": "유자씨",
+   "why": "640x360 가로 원본 + 모션 9.87",
+   "motion": 9.87
+  },
+  {
+   "id": "oGNFbtjm3ro",
+   "channel": "Honni",
+   "why": "640x360 가로 원본 + 1.95~5.07초 프레임 전환",
+   "motion": 19.32
+  }
+ ],
+ "reject_breakdown": {
+  "모션 12.0 미달": 12,
+  "몽타주·프레임 전환": 10,
+  "자막·브랜드스트립·워터마크": 7,
+  "가로·비규격 원본": 5,
+  "게시 1년 미만": 3,
+  "원작자 아님(큐레이션·재업)": 2
+ },
+ "notes_for_기획실장": [
+  "**확정 6편 중 4편은 무조건 통과, 2편(S0IWz_m_bXw·ea1BfRTHSKo)은 조건부**다. S0IWz_m_bXw는 모션 13.05(중앙 11.83)로 임계 여유 1.05에 근접 얼굴 클로즈업 구도 — '역동적 몸동작' 기준 논란이 가능하다. ea1BfRTHSKo는 원본 480x854 저해상이라 확대 시 화질 손실이 있고 피사체가 작다. 둘 다 수치 게이트는 넘겼으나 등급 판정은 대표·기획실장 몫으로 남긴다.",
+  "Kp3S0zegsH4는 6.94·8.02초에 변화픽셀 0.618 스파이크가 2회 떴다. 0.02초 재탐색이 플레이어 정지로 실패해 8컷 육안(6.0·8.0초 동일 배경·조명·개체)으로 '굴림 동작'으로 판정했다. 기획실장이 한 번 더 확인하면 좋겠다.",
+  "이번 회차는 고양이·쪼꼬미 편중을 의도했다(요청대로). 결과는 고양이 2·쪼꼬미 3(페럿1·고슴도치2)·강아지 1로, 강아지는 1편뿐이다. 22·23차가 강아지 위주였으므로 균형은 맞췄으나, 강아지 라인 보강이 필요하면 다음 회차에 강아지 1인칭 계정을 더 파야 한다.",
+  "저조회(1,000 미만) 2편(zFoSsmESmBo 606회·ea1BfRTHSKo 255회)은 원작자 본인 계정·게시일을 확인해 '저조회 확인' 표기를 넣었다(플레이북 0장 (b)).",
+  "**Invidious publishedText를 신뢰하면 안 된다** — 오늘 '1 year ago'로 뜬 ILHlK9_gOgc가 실제 게시일은 2026-10-18(1개월)이었다. 날짜 필터는 watch 페이지 ytInitialData dateText로만 확정해야 한다.",
+  "후보 풀은 이번에 새로 발굴한 309채널·269편과 23차 잔여 풀 104편을 합쳐 1년 이상 94편으로 좁혔다. 50편을 실물 판정했고 통과 6편(12%)·보류 2편·판정불가 3편이다. 통과율이 낮은 이유는 ①술어 자막이 박힌 1인칭 계정이 다수 ②소형동물 계정은 모션 12.0을 못 넘는 정적 클립이 다수다.",
+  "23차 reserve_pool 김콩 ea1BfRTHSKo는 이번 회차 게이트(재측정 15.58·8컷 육안)를 다시 통과해 편입했다."
+ ],
+ "stills_dir": "work/sourcing_v2/stills24/",
+ "artifacts": {
+  "json": "work/sourcing_v2/batch_20261117_2000.json",
+  "md": "work/sourcing_v2/batch_20261117_2000.md",
+  "stills": "work/sourcing_v2/stills24/c24_*.png"
+ }
+}
