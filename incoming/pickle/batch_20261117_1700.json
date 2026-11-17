@@ -1,0 +1,281 @@
+{
+ "batch": "23차 정기 소싱 (2026-11-17 17:00 KST)",
+ "run_at": "2026-11-17T17:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
+ "target": "정예 6~10편 (강아지 우선 + 고양이·쪼꼬미 균형) — 미달 편 억지 편입 금지",
+ "delivered_count": 5,
+ "hold_count": 9,
+ "undetermined_count": 3,
+ "reject_count": 80,
+ "judged_total": 97,
+ "pool_new_channels": 456,
+ "pool_new_candidates": 434,
+ "pool_prefiltered_len10": 338,
+ "pool_vertical720": 295,
+ "method_23": {
+  "channel_discovery": "쇼츠 신규 채널 발굴: chsearch.py로 'my dog daily'·'고양이 일상'·'猫の日常' 등 30개 질의 → 456채널 수집 → chmeta5로 채널별 쇼츠 목록·구독자 실측(11,913편) → 200~499,999 구독·원작자성 마커('my/our/diary/daily/집사/うちの') 있는 148채널에서 3편씩 434편 후보화(tmp23/newpool23.json). 누적 원장 210 ID·124채널 전량 배제.",
+  "prescreen": "으r2.jpg 실치수 세로 720p+ 295편 → 8×3 접촉시트 13장 육안 스캔(자막·사람·워터마크·AI 사전 제거) → oembed 라이브 체크 + Invidious 길이 실측(10초 미만 60편 사전 배제).",
+  "verify": "원격 브라우저 1080p 요청 + 240p 디코드 프레임(160×90 gray) 0.099초 버킷 10fps 샘플링. 22차 verify.py와 같은 지표(mean abs diff)를 재현하는지 기존 판정 영상(x2l3m7C6BXk=4.12 vs 22차 4.16)으로 교차 검증했다.",
+  "stills": "**4컷 → 8컷 상향(0.3·1.5·3·4.5·6·8·9.2·10.1초)**. 22차 방식(0.5·3.5·7·10.2초)으로는 사이 구간에만 뜨는 자막을 놓쳤다 — bywS6KNpr88은 4컷에서 무자막으로 보였으나 3초·9초 프레임에 영어 자막이 있어 탈락으로 정정했다.",
+  "meta": "Invidious API 실측(viewCount·likeCount·published·subCountText) + 채널 소개·최근 쇼츠 제목으로 원작자성 판정."
+ },
+ "delivered": [
+  {
+   "id": "l67syR6P-gk",
+   "url": "https://www.youtube.com/shorts/l67syR6P-gk",
+   "title": "#kimkong #휴일 #maltese",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "1,615",
+   "likes_txt": "45",
+   "published": "2023-07-11",
+   "cat": "강아지",
+   "dur_s": 15.24,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 15.97,
+   "motion_med": 16.36,
+   "frames": 103,
+   "ratios_max": null,
+   "spike_times_s": [],
+   "stills": "stills23/c23_kimkong_pigeons.png",
+   "why": "몰티즈(김콩)가 보도 위 비둘기 떼를 향해 목줄을 팽팽히 당기며 전력으로 돌진하는 15초 단일 숏. 8컷 모두 같은 보도·같은 개, 자막·브랜드스트립·워터마크·사람 0.",
+   "cut_evidence": "0.099초 버킷 103프레임 차분 평균 15.97·중앙 16.36, 변화픽셀 60% 초과 스파이크 0회. 0~10.3초 전 구간 실측.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 15.97(중앙 16.36), 스파이크 0",
+    "2_original_creator": "PASS — 채널 'My name is 김콩' 소개·쇼츠 전편이 같은 몰티즈 1인칭 일상, #kimkong 고정 태그",
+    "3_measured_only": "PASS — 구독 551 · 조회 1,615 · 좋아요 45 · 2023-07-11 (Invidious 실측)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 없음, 목줄만 화면 하단에 걸침"
+   },
+   "note": "구독 551·조회 1,615의 초소형 1인칭 계정. 원본 퀄리티는 깨끗하나 채널 체급이 낮다."
+  },
+  {
+   "id": "ea1BfRTHSKo",
+   "url": "https://www.youtube.com/shorts/ea1BfRTHSKo",
+   "title": "#kimkong  #shorts #walk #maltese",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "254",
+   "likes_txt": "6",
+   "published": "2023-11-22",
+   "cat": "강아지",
+   "dur_s": 20.76,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 12.55,
+   "motion_med": 13.54,
+   "frames": 103,
+   "spike_times_s": [],
+   "stills": "stills23/c23_kimkong_beach.png",
+   "why": "몰티즈가 모래사장을 카메라 쪽으로 터벅터벅 걸어오는 20초 단일 숏. 8컷 모두 같은 해변·같은 개, 자막·워터마크·사람 0.",
+   "cut_evidence": "103프레임 차분 평균 12.55·중앙 13.54, 스파이크 0회. 임계 12.0을 0.55 넘긴 구간이라 편차(±30%)를 감안해도 여유가 작다.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(주의) — 모션 12.55로 임계 근접, 스파이크 0",
+    "2_original_creator": "PASS — 김콩 채널 1인칭",
+    "3_measured_only": "PASS — 구독 551 · 조회 254 · 좋아요 6 · 2023-11-22",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음(모래 위 그림자만)"
+   },
+   "note": "조회 254회로 이번 회차 최저. 화면 완성도는 좋으나 임계 여유가 작아 기획실장 확인 권장."
+  },
+  {
+   "id": "CFVE8_idObg",
+   "url": "https://www.youtube.com/shorts/CFVE8_idObg",
+   "title": "#kimkong🐶 #shorts #산책",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "56",
+   "likes_txt": "3",
+   "published": "2023-03-27",
+   "cat": "강아지",
+   "dur_s": 14.76,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 25.35,
+   "motion_med": 22.63,
+   "frames": 41,
+   "spike_times_s": [
+    0.1
+   ],
+   "stills": "stills23/c23_kimkong_path_run.png",
+   "why": "몰티즈가 흙길 산책로를 카메라 쪽으로 전력 질주해 오는 14.8초 단일 숏. 8컷 모두 같은 길·같은 개, 자막·워터마크·사람 0.",
+   "cut_evidence": "차분 평균 25.35·중앙 22.63, 스파이크는 0.1초 첫 프레임 1회. 다만 샘플이 41프레임(다른 편은 103)으로 듬성듬성해 수치 신뢰도가 상대적으로 낮다.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 25.35로 이번 회차 최고, 컷 0",
+    "2_original_creator": "PASS — 김콩 채널 1인칭",
+    "3_measured_only": "PASS — 구독 551 · 조회 56 · 좋아요 3 · 2023-03-27",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "조회 56회. 원본은 가장 역동적이지만 조회수가 사실상 노출 0인 영상이다."
+  },
+  {
+   "id": "8iepjqTuXeI",
+   "url": "https://www.youtube.com/shorts/8iepjqTuXeI",
+   "title": "#kimkong🐶 #maltese #산책 #walk #shorts",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "620",
+   "likes_txt": "20",
+   "published": "2023-03-18",
+   "cat": "강아지",
+   "dur_s": 15.04,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 18.53,
+   "motion_med": 19.24,
+   "frames": 103,
+   "spike_times_s": [],
+   "stills": "stills23/c23_kimkong_park_walk.png",
+   "why": "몰티즈가 소나무 숲길을 목줄에 묶인 채 카메라를 향해 걸어오는 15초 단일 숏. 8컷 모두 같은 숲·같은 개, 자막·워터마크·사람 0.",
+   "cut_evidence": "103프레임 차분 평균 18.53·중앙 19.24, 스파이크 0회.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 18.53(중앙 19.24), 스파이크 0",
+    "2_original_creator": "PASS — 김콩 채널 1인칭",
+    "3_measured_only": "PASS — 구독 551 · 조회 620 · 좋아요 20 · 2023-03-18",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "같은 계정 4편 중 화면·모션 균형이 가장 무난."
+  },
+  {
+   "id": "jgB9uoNJz1M",
+   "url": "https://www.youtube.com/shorts/jgB9uoNJz1M",
+   "title": "고양이에게 양치하자고 했을 때",
+   "channel": "냥초코",
+   "channel_id": "UCdsGN9bQLAjN4N9wo9Bg3_Q",
+   "subs_txt": "1.32K",
+   "views_txt": "14,709",
+   "likes_txt": "409",
+   "published": "2022-09-11",
+   "cat": "고양이",
+   "dur_s": 10.08,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 14.94,
+   "motion_med": 15.05,
+   "frames": 96,
+   "spike_times_s": [
+    0.49
+   ],
+   "stills": "stills23/c23_nyangchoco_abbyssinian.png",
+   "why": "아비시니안 고양이가 러그에서 카메라로 다가와 코를 렌즈에 들이미는 10초 단일 숏. 8컷 모두 같은 고양이·같은 방, 자막·브랜드스트립·워터마크·사람 0.",
+   "cut_evidence": "96프레임 차분 평균 14.94·중앙 15.05. 0.49초 스파이크 1회는 고양이가 화면을 채우며 생긴 변화로 컷이 아니다(전후 프레임 동일 구도).",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 14.94(중앙 15.05), 컷 0",
+    "2_original_creator": "PASS — 채널 소개 '수다쟁이 고양이와 함께 사는 집사 일상', 쇼츠 전편이 같은 아비시니안 1인칭",
+    "3_measured_only": "PASS — 구독 1.32K · 조회 14,709 · 좋아요 409 · 2022-09-11",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음(손도 등장하지 않음)"
+   },
+   "note": "이 채널은 다른 편에 한글 자막을 넣는 경우가 많아(이번 회차 2편 탈락) 이 편만 무자막 클린이다."
+  }
+ ],
+ "holds": [
+  {
+   "id": "U7_-fYuhAP4",
+   "channel": "My Cat",
+   "subs": "229",
+   "dur": 19.44,
+   "mean": 19.71,
+   "point": "기술 게이트 전부 통과(모션 19.71·컷 0·8컷 무자막·무사람). 다만 채널 소개가 'cutest cats even dogs and animals' 큐레이션 문구, 쇼츠 제목이 전부 'cute cat'/'lovable cat', 'oman summer #lifeofoman' 같은 타 지역 영상 혼재 → 재업·수집 계정 가능성. 원작자성(게이트②) 판정 필요."
+  },
+  {
+   "id": "iVZO9LtwnLA",
+   "channel": "Dog's Day",
+   "subs": "82.5K",
+   "dur": 98.46,
+   "mean": 14.55,
+   "point": "시바가 누워 손이 린트롤러·젤팩을 대는 0~10초 단일 숏(98초 장편). 자막·워터마크·사람 얼굴 0. 다만 채널 소개 'just started please support', 제목에 '#littlemamanyu #xiaobai' 등 타 유명견 이름이 섞여 재업 의심 + 동작이 '누워서 받는' 구도라 역동성 판정 필요."
+  },
+  {
+   "id": "MPzUYNBGZOY",
+   "channel": "쥐도리날아라",
+   "subs": "5.27K",
+   "dur": 78.18,
+   "mean": 13.75,
+   "point": "모션 13.75·컷 0·무자막으로 기술 게이트 통과. 4.5~7초 프레임에 보호자 다리(청바지)가 배경에 들어옴 — 게이트⑤(사람 전신·배경 등장) 판정 필요."
+  },
+  {
+   "id": "hi48_X6BxzY",
+   "channel": "My name is 김콩",
+   "subs": "551",
+   "dur": 15.06,
+   "mean": 13.37,
+   "point": "모션 13.37·컷 0·무자막. 0.3~4.5초 프레임 좌측에 사람 다리로 보이는 형체 — 게이트⑤ 판정 필요."
+  },
+  {
+   "id": "knGFmdZeMj0",
+   "channel": "셰퍼드 러브",
+   "subs": "2.13K",
+   "dur": 27.42,
+   "mean": 11.88,
+   "point": "모션 11.88(중앙 12.86)로 임계 근접, 샘플 48프레임. 재측정 필요."
+  },
+  {
+   "id": "CHI_GaU6mkM",
+   "channel": "랙돌고양이 식혜의 일상",
+   "subs": "20K",
+   "dur": 15.76,
+   "mean": 11.25,
+   "point": "모션 11.25(중앙 12.4)로 0.75 미달. 자는 고양이 구도라 육안상 정적."
+  },
+  {
+   "id": "eX-ZTbcCzzw",
+   "channel": "Shibabobliu",
+   "subs": "3.34K",
+   "dur": 52.46,
+   "mean": 9.76,
+   "point": "모션 9.76·샘플 40프레임 — 재측정 필요."
+  },
+  {
+   "id": "45f2efmv_NM",
+   "channel": "랙돌고양이 식혜의 일상",
+   "subs": "20K",
+   "dur": 10.82,
+   "mean": 26.99,
+   "point": "샘플 21프레임뿐(모션 26.99로 높음) — 샘플링 실패로 판정 불가, 재측정 필요."
+  },
+  {
+   "id": "GrBN38U_N38",
+   "channel": "Baby Cat Diaries",
+   "subs": "790",
+   "dur": 57.07,
+   "mean": 15.08,
+   "point": "샘플 12프레임뿐 — 재측정 필요."
+  }
+ ],
+ "undetermined": [
+  {
+   "id": "_PZ8RpfbQhs",
+   "channel": "냥초코",
+   "why": "캔버스 프레임 0 — 플레이어 로드 실패"
+  },
+  {
+   "id": "ahCbfT5vL8s",
+   "channel": "DailyBunnydotorg",
+   "why": "프레임 1개만 수집"
+  },
+  {
+   "id": "H72vWfcuEek",
+   "channel": "My name is 김콩",
+   "why": "캔버스 프레임 0 — 플레이어 로드 실패"
+  }
+ ],
+ "reject_breakdown": {
+  "모션 미달": 45,
+  "몽타주·컷": 20,
+  "자막·그래픽 박힘": 9,
+  "길이 10초 미만": 2,
+  "기타(프레임 실패·사람 등)": 4,
+  "주 사유 기준·중복 있음": true
+ },
+ "notes_for_기획실장": [
+  "확정 5편 중 4편이 같은 채널(김콩, 551명)·같은 몰티즈다. 계정 집중을 허용할지, 아니면 계정당 1~2편으로 제한할지 판정이 필요하다.",
+  "김콩 4편의 조회수가 56·254·620·1,615회로 매우 낮다. '조회수 하한' 기준이 있다면 4편 중 3편이 걸린다.",
+  "U7_-fYuhAP4(고양이·모션 19.71·완전 무자막)는 기술적으로 이번 회차 최상급이지만 채널 원작자성만 남았다. 채널 최근 30편을 사람이 훑으면 즉시 확정 가능하다.",
+  "iVZO9LtwnLA는 조회 234만·좋아요 4.1만의 대형 클립(시바 스파)이라 원작자성만 풀리면 이번 회차 최대어다.",
+  "8컷 검수로 상향한 결과, 22차 방식(4컷)이면 통과했을 bywS6KNpr88이 자막 때문에 탈락했다. 22차 확정 3편도 같은 방식으로 재검할 가치가 있다."
+ ]
+}
