@@ -1,6 +1,11 @@
 {
  "timeline_latest": [
   {
+   "date": "2026-11-17",
+   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
+   "title": "알티, thông báo phát sóng tối nay lúc 7 giờ 30 — Tuyên bố tách phát sóng cá nhân và phát sóng chính thức"
+  },
+  {
    "date": "2026-11-15",
    "tag": "Đội ngũ sản xuất phát ngôn trực tiếp",
    "title": "알티 phát sóng trở lại (Đã kết thúc · Tổng kết)"
@@ -9,11 +14,6 @@
    "date": "2026-11-13",
    "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
    "title": "알티, thông báo phát sóng trở lại vào tối Chủ nhật tuần này (15/11) — \"Việc phát triển gần như đã xong\""
-  },
-  {
-   "date": "2026-10-29",
-   "tag": "Đội ngũ sản xuất đăng bài trực tiếp",
-   "title": "팡이요, \"Hôm nay là ngày họp của máy chủ Alpang\" — thông báo nghỉ phát sóng vì cuộc họp quan trọng"
   }
  ],
  "status_slots": [
