@@ -1,0 +1,8181 @@
+{
+ "schema_version": 1,
+ "build_id": "alpang-db-20261015-0900",
+ "source_build_id": "alpang-db-20261014-0300 (+0500/0700 승인 조합)",
+ "source_manifest_sha256": {
+  "0500_build_manifest": "0e1902bf9015bd8287919dfe53485452e245c8dac3992100e4579a0d7a8e5c84",
+  "0700_build_manifest": "40a1a07ab0b18b035106953c76795dfd7c24ff1caa3c510a61c5b02af6a6d9ea"
+ },
+ "source_file_sha256": {
+  "mobs.json": "677aeb1f999a55e9138f5dd5fe9faaba044470e0d7e1d7a14aafbf2c08539e4b",
+  "provenance_mobs.json": "6109933ba7ff8745192987ab6ee1cc41d8d205a04c62f6d7f72a1c0119be2ec3"
+ },
+ "base_version": "GMS/95",
+ "stat_basis": "client_base_meta",
+ "note": "speed·방어율(raw)은 원본 숫자 그대로이며 %·피해 계산으로 변환하지 않음. mobs.json의 기존 값은 덮어쓰지 않음.",
+ "field_mapping": {
+  "level": "meta.level",
+  "hp": "meta.maxHP",
+  "mp": "meta.maxMP",
+  "exp": "meta.exp",
+  "physical_damage_raw": "meta.physicalDamage",
+  "magic_damage_raw": "meta.magicDamage",
+  "physical_defense": "meta.physicalDefense",
+  "magic_defense": "meta.magicDefense",
+  "accuracy": "meta.accuracy",
+  "evasion": "meta.evasion",
+  "movement_speed_raw": "meta.speed",
+  "physical_defense_rate_raw": "meta.physicalDefenseRate",
+  "magic_defense_rate_raw": "meta.magicDefenseRate"
+ },
+ "monsters": [
+  {
+   "id": 100100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 1,
+    "hp": 15,
+    "mp": null,
+    "exp": 3,
+    "physical_damage_raw": 2,
+    "magic_damage_raw": 1,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -65,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefenseRate",
+    "maxHP",
+    "physicalDamage",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 100100
+   }
+  },
+  {
+   "id": 100101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 2,
+    "hp": 20,
+    "mp": null,
+    "exp": 4,
+    "physical_damage_raw": 3,
+    "magic_damage_raw": 2,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefenseRate",
+    "maxHP",
+    "physicalDamage",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 100101
+   }
+  },
+  {
+   "id": 130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 8,
+    "hp": 95,
+    "mp": 10,
+    "exp": 13,
+    "physical_damage_raw": 30,
+    "magic_damage_raw": 25,
+    "physical_defense": null,
+    "magic_defense": 10,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -70,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 130100
+   }
+  },
+  {
+   "id": 130101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 5,
+    "hp": 50,
+    "mp": null,
+    "exp": 8,
+    "physical_damage_raw": 15,
+    "magic_damage_raw": 12,
+    "physical_defense": 3,
+    "magic_defense": 10,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 130101
+   }
+  },
+  {
+   "id": 150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 5,
+    "hp": 50,
+    "mp": null,
+    "exp": 8,
+    "physical_damage_raw": 15,
+    "magic_damage_raw": 12,
+    "physical_defense": 35,
+    "magic_defense": 35,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5,
+    "elementalAttributes": "F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 150000
+   }
+  },
+  {
+   "id": 150001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 6,
+    "hp": 65,
+    "mp": 10,
+    "exp": 10,
+    "physical_damage_raw": 19,
+    "magic_damage_raw": 16,
+    "physical_defense": 35,
+    "magic_defense": 45,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "S3F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 150001
+   }
+  },
+  {
+   "id": 150002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 8,
+    "hp": 110,
+    "mp": 10,
+    "exp": 15,
+    "physical_damage_raw": 34,
+    "magic_damage_raw": 30,
+    "physical_defense": 30,
+    "magic_defense": 10,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 150002
+   }
+  },
+  {
+   "id": 210100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 7,
+    "hp": 80,
+    "mp": 10,
+    "exp": 12,
+    "physical_damage_raw": 24,
+    "magic_damage_raw": 19,
+    "physical_defense": 5,
+    "magic_defense": 10,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "L3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 210100
+   }
+  },
+  {
+   "id": 1110100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "S1",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1110100
+   }
+  },
+  {
+   "id": 1110101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 10,
+    "hp": 125,
+    "mp": 10,
+    "exp": 17,
+    "physical_damage_raw": 41,
+    "magic_damage_raw": 35,
+    "physical_defense": 20,
+    "magic_defense": 10,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -70,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1110101
+   }
+  },
+  {
+   "id": 1120100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "L3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1120100
+   }
+  },
+  {
+   "id": 1150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 14,
+    "hp": 225,
+    "mp": 20,
+    "exp": 24,
+    "physical_damage_raw": 60,
+    "magic_damage_raw": 56,
+    "physical_defense": 100,
+    "magic_defense": 100,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "mpRecovery": 5,
+    "elementalAttributes": "H2D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1150000
+   }
+  },
+  {
+   "id": 1150001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 16,
+    "hp": 275,
+    "mp": 40,
+    "exp": 28,
+    "physical_damage_raw": 72,
+    "magic_damage_raw": 66,
+    "physical_defense": 40,
+    "magic_defense": 15,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -45,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1150001
+   }
+  },
+  {
+   "id": 1150002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 18,
+    "hp": 325,
+    "mp": 40,
+    "exp": 32,
+    "physical_damage_raw": 77,
+    "magic_damage_raw": 76,
+    "physical_defense": 35,
+    "magic_defense": 40,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1150002
+   }
+  },
+  {
+   "id": 1210100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 7,
+    "hp": 80,
+    "mp": 10,
+    "exp": 12,
+    "physical_damage_raw": 24,
+    "magic_damage_raw": 19,
+    "physical_defense": 5,
+    "magic_defense": 20,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1210100
+   }
+  },
+  {
+   "id": 1210101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 10,
+    "hp": 125,
+    "mp": 10,
+    "exp": 17,
+    "physical_damage_raw": 41,
+    "magic_damage_raw": 34,
+    "physical_defense": 10,
+    "magic_defense": 30,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1210101
+   }
+  },
+  {
+   "id": 1210102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 1210102
+   }
+  },
+  {
+   "id": 2110200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2110200
+   }
+  },
+  {
+   "id": 2130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 14,
+    "hp": 225,
+    "mp": 20,
+    "exp": 28,
+    "physical_damage_raw": 60,
+    "magic_damage_raw": 56,
+    "physical_defense": 50,
+    "magic_defense": 20,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2130100
+   }
+  },
+  {
+   "id": 2130103,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 19,
+    "hp": 350,
+    "mp": 40,
+    "exp": 33,
+    "physical_damage_raw": 101,
+    "magic_damage_raw": 80,
+    "physical_defense": 30,
+    "magic_defense": 30,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2130103
+   }
+  },
+  {
+   "id": 2150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 20,
+    "hp": 375,
+    "mp": 40,
+    "exp": 35,
+    "physical_damage_raw": 90,
+    "magic_damage_raw": 88,
+    "physical_defense": 50,
+    "magic_defense": 20,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "elementalAttributes": "F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2150000
+   }
+  },
+  {
+   "id": 2150001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 22,
+    "hp": 435,
+    "mp": 80,
+    "exp": 39,
+    "physical_damage_raw": 100,
+    "magic_damage_raw": 96,
+    "physical_defense": 50,
+    "magic_defense": 20,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2150001
+   }
+  },
+  {
+   "id": 2150002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 25,
+    "hp": 525,
+    "mp": 80,
+    "exp": 44,
+    "physical_damage_raw": 116,
+    "magic_damage_raw": 112,
+    "physical_defense": 45,
+    "magic_defense": 40,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2150002
+   }
+  },
+  {
+   "id": 2150003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 28,
+    "hp": 720,
+    "mp": 120,
+    "exp": 53,
+    "physical_damage_raw": 129,
+    "magic_damage_raw": 125,
+    "physical_defense": 50,
+    "magic_defense": 20,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2150003
+   }
+  },
+  {
+   "id": 2230101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 20,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230101
+   }
+  },
+  {
+   "id": 2230102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 19,
+    "hp": 350,
+    "mp": 40,
+    "exp": 33,
+    "physical_damage_raw": 98,
+    "magic_damage_raw": 80,
+    "physical_defense": 20,
+    "magic_defense": 30,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230102
+   }
+  },
+  {
+   "id": 2230103,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 47,
+    "hp": 2640,
+    "mp": 600,
+    "exp": 119,
+    "physical_damage_raw": 283,
+    "magic_damage_raw": 239,
+    "physical_defense": 52,
+    "magic_defense": 65,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "H2F3D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230103
+   }
+  },
+  {
+   "id": 2230104,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 48,
+    "hp": 2760,
+    "mp": 600,
+    "exp": 123,
+    "physical_damage_raw": 292,
+    "magic_damage_raw": 250,
+    "physical_defense": 75,
+    "magic_defense": 75,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "S1",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230104
+   }
+  },
+  {
+   "id": 2230110,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 28,
+    "hp": 720,
+    "mp": 120,
+    "exp": 53,
+    "physical_damage_raw": 125,
+    "magic_damage_raw": 122,
+    "physical_defense": 30,
+    "magic_defense": 40,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230110
+   }
+  },
+  {
+   "id": 2230112,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 20,
+    "hp": 375,
+    "mp": 40,
+    "exp": 35,
+    "physical_damage_raw": 92,
+    "magic_damage_raw": 82,
+    "physical_defense": 20,
+    "magic_defense": 30,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2230112
+   }
+  },
+  {
+   "id": 2300100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 11,
+    "hp": 150,
+    "mp": 20,
+    "exp": 19,
+    "physical_damage_raw": 52,
+    "magic_damage_raw": 40,
+    "physical_defense": 20,
+    "magic_defense": 20,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 5,
+    "minimumPushDamage": 20,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 2300100
+   }
+  },
+  {
+   "id": 3000000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 38,
+    "hp": 1700,
+    "mp": 300,
+    "exp": 89,
+    "physical_damage_raw": 181,
+    "magic_damage_raw": 209,
+    "physical_defense": 275,
+    "magic_defense": 85,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "mpRecovery": 3,
+    "elementalAttributes": "H2L2I3D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3000000
+   }
+  },
+  {
+   "id": 3000005,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 49,
+    "hp": 2880,
+    "mp": 600,
+    "exp": 126,
+    "physical_damage_raw": 264,
+    "magic_damage_raw": 238,
+    "physical_defense": 38,
+    "magic_defense": 40,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": -15,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3000005
+   }
+  },
+  {
+   "id": 3110101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 51,
+    "hp": 3200,
+    "mp": 800,
+    "exp": 135,
+    "physical_damage_raw": 270,
+    "magic_damage_raw": 264,
+    "physical_defense": 50,
+    "magic_defense": 70,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3110101
+   }
+  },
+  {
+   "id": 3110102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 44,
+    "hp": 2300,
+    "mp": 450,
+    "exp": 109,
+    "physical_damage_raw": 213,
+    "magic_damage_raw": 225,
+    "physical_defense": 65,
+    "magic_defense": 75,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": -5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3110102
+   }
+  },
+  {
+   "id": 3150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 31,
+    "hp": 990,
+    "mp": 200,
+    "exp": 64,
+    "physical_damage_raw": 148,
+    "magic_damage_raw": 142,
+    "physical_defense": 35,
+    "magic_defense": 40,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 200,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3150000
+   }
+  },
+  {
+   "id": 3150001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 33,
+    "hp": 1200,
+    "mp": 200,
+    "exp": 72,
+    "physical_damage_raw": 162,
+    "magic_damage_raw": 155,
+    "physical_defense": 100,
+    "magic_defense": 100,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 200,
+    "mpRecovery": 5,
+    "elementalAttributes": "H2D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3150001
+   }
+  },
+  {
+   "id": 3150002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 35,
+    "hp": 1400,
+    "mp": 200,
+    "exp": 79,
+    "physical_damage_raw": 166,
+    "magic_damage_raw": 169,
+    "physical_defense": 45,
+    "magic_defense": 40,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 200,
+    "elementalAttributes": "F3I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3150002
+   }
+  },
+  {
+   "id": 3210200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 36,
+    "hp": 1500,
+    "mp": 300,
+    "exp": 83,
+    "physical_damage_raw": 183,
+    "magic_damage_raw": 163,
+    "physical_defense": 60,
+    "magic_defense": 80,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210200
+   }
+  },
+  {
+   "id": 3210201,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 36,
+    "hp": 1500,
+    "mp": 300,
+    "exp": 83,
+    "physical_damage_raw": 178,
+    "magic_damage_raw": 177,
+    "physical_defense": 60,
+    "magic_defense": 80,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "L2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210201
+   }
+  },
+  {
+   "id": 3210202,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 36,
+    "hp": 1500,
+    "mp": 300,
+    "exp": 83,
+    "physical_damage_raw": 176,
+    "magic_damage_raw": 168,
+    "physical_defense": 60,
+    "magic_defense": 80,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210202
+   }
+  },
+  {
+   "id": 3210203,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 54,
+    "hp": 3800,
+    "mp": 800,
+    "exp": 151,
+    "physical_damage_raw": 294,
+    "magic_damage_raw": 284,
+    "physical_defense": 95,
+    "magic_defense": 95,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210203
+   }
+  },
+  {
+   "id": 3210204,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 53,
+    "hp": 3600,
+    "mp": 800,
+    "exp": 146,
+    "physical_damage_raw": 283,
+    "magic_damage_raw": 263,
+    "physical_defense": 70,
+    "magic_defense": 85,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210204
+   }
+  },
+  {
+   "id": 3210205,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 45,
+    "hp": 2400,
+    "mp": 450,
+    "exp": 112,
+    "physical_damage_raw": 239,
+    "magic_damage_raw": 217,
+    "physical_defense": 75,
+    "magic_defense": 75,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210205
+   }
+  },
+  {
+   "id": 3210206,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 56,
+    "hp": 4300,
+    "mp": 1000,
+    "exp": 164,
+    "physical_damage_raw": 314,
+    "magic_damage_raw": 289,
+    "physical_defense": 85,
+    "magic_defense": 105,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -35,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210206
+   }
+  },
+  {
+   "id": 3210207,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 68,
+    "hp": 9000,
+    "mp": 1500,
+    "exp": 274,
+    "physical_damage_raw": 396,
+    "magic_damage_raw": 389,
+    "physical_defense": 95,
+    "magic_defense": 90,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -70,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210207
+   }
+  },
+  {
+   "id": 3210208,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 46,
+    "hp": 2520,
+    "mp": 600,
+    "exp": 116,
+    "physical_damage_raw": 227,
+    "magic_damage_raw": 239,
+    "physical_defense": 90,
+    "magic_defense": 85,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210208
+   }
+  },
+  {
+   "id": 3210450,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 66,
+    "hp": 8000,
+    "mp": 1500,
+    "exp": 252,
+    "physical_damage_raw": 359,
+    "magic_damage_raw": 383,
+    "physical_defense": 90,
+    "magic_defense": 155,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": 25,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "elementalAttributes": "I2F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3210450
+   }
+  },
+  {
+   "id": 3230103,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 58,
+    "hp": 4900,
+    "mp": 1000,
+    "exp": 179,
+    "physical_damage_raw": 316,
+    "magic_damage_raw": 362,
+    "physical_defense": 120,
+    "magic_defense": 140,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 450,
+    "hpRecovery": 10,
+    "mpRecovery": 5,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230103
+   }
+  },
+  {
+   "id": 3230200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 38,
+    "hp": 1700,
+    "mp": 300,
+    "exp": 89,
+    "physical_damage_raw": 184,
+    "magic_damage_raw": 216,
+    "physical_defense": 100,
+    "magic_defense": 100,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "mpRecovery": 5,
+    "elementalAttributes": "H2D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230200
+   }
+  },
+  {
+   "id": 3230302,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 54,
+    "hp": 3800,
+    "mp": 800,
+    "exp": 151,
+    "physical_damage_raw": 293,
+    "magic_damage_raw": 272,
+    "physical_defense": 100,
+    "magic_defense": 130,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230302
+   }
+  },
+  {
+   "id": 3230303,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 57,
+    "hp": 4600,
+    "mp": 1000,
+    "exp": 172,
+    "physical_damage_raw": 316,
+    "magic_damage_raw": 309,
+    "physical_defense": 95,
+    "magic_defense": 115,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -25,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230303
+   }
+  },
+  {
+   "id": 3230304,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 60,
+    "hp": 5500,
+    "mp": 1000,
+    "exp": 194,
+    "physical_damage_raw": 321,
+    "magic_damage_raw": 323,
+    "physical_defense": 105,
+    "magic_defense": 125,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -10,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230304
+   }
+  },
+  {
+   "id": 3230305,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 57,
+    "hp": 4600,
+    "mp": 1000,
+    "exp": 172,
+    "physical_damage_raw": 321,
+    "magic_damage_raw": 313,
+    "physical_defense": 110,
+    "magic_defense": 130,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": 20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230305
+   }
+  },
+  {
+   "id": 3230306,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 73,
+    "hp": 13000,
+    "mp": 1800,
+    "exp": 361,
+    "physical_damage_raw": 440,
+    "magic_damage_raw": 408,
+    "physical_defense": 90,
+    "magic_defense": 120,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 700,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230306
+   }
+  },
+  {
+   "id": 3230307,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 50,
+    "hp": 3000,
+    "mp": 800,
+    "exp": 130,
+    "physical_damage_raw": 253,
+    "magic_damage_raw": 244,
+    "physical_defense": 60,
+    "magic_defense": 50,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -10,
+    "minimumPushDamage": 350,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230307
+   }
+  },
+  {
+   "id": 3230308,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 61,
+    "hp": 5900,
+    "mp": 1200,
+    "exp": 204,
+    "physical_damage_raw": 345,
+    "magic_damage_raw": 343,
+    "physical_defense": 120,
+    "magic_defense": 130,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -20,
+    "minimumPushDamage": 500,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230308
+   }
+  },
+  {
+   "id": 3230400,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 52,
+    "hp": 3400,
+    "mp": 800,
+    "exp": 141,
+    "physical_damage_raw": 267,
+    "magic_damage_raw": 271,
+    "physical_defense": 38,
+    "magic_defense": 40,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": -45,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "hpRecovery": 10,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 3230400
+   }
+  },
+  {
+   "id": 4130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 50,
+    "hp": 3000,
+    "mp": 800,
+    "exp": 130,
+    "physical_damage_raw": 252,
+    "magic_damage_raw": 252,
+    "physical_defense": 100,
+    "magic_defense": 100,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4130100
+   }
+  },
+  {
+   "id": 4130102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 42,
+    "hp": 2100,
+    "mp": 450,
+    "exp": 103,
+    "physical_damage_raw": 207,
+    "magic_damage_raw": 197,
+    "physical_defense": 170,
+    "magic_defense": 220,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "hpRecovery": 50,
+    "mpRecovery": 2,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4130102
+   }
+  },
+  {
+   "id": 4130104,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 42,
+    "hp": 2100,
+    "mp": 450,
+    "exp": 103,
+    "physical_damage_raw": 220,
+    "magic_damage_raw": 214,
+    "physical_defense": 170,
+    "magic_defense": 220,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "hpRecovery": 50,
+    "mpRecovery": 2,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "linksToOtherMob": 4130102
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4130104
+   }
+  },
+  {
+   "id": 4230100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 22,
+    "hp": 435,
+    "mp": 80,
+    "exp": 39,
+    "physical_damage_raw": 103,
+    "magic_damage_raw": 91,
+    "physical_defense": 80,
+    "magic_defense": 80,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230100
+   }
+  },
+  {
+   "id": 4230105,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 40,
+    "hp": 1900,
+    "mp": 300,
+    "exp": 96,
+    "physical_damage_raw": 198,
+    "magic_damage_raw": 202,
+    "physical_defense": 120,
+    "magic_defense": 120,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "hpRecovery": 30,
+    "mpRecovery": 2,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230105
+   }
+  },
+  {
+   "id": 4230106,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 41,
+    "hp": 2000,
+    "mp": 450,
+    "exp": 99,
+    "physical_damage_raw": 205,
+    "magic_damage_raw": 235,
+    "physical_defense": 145,
+    "magic_defense": 160,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "mpRecovery": 5,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230106
+   }
+  },
+  {
+   "id": 4230109,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 63,
+    "hp": 6700,
+    "mp": 1200,
+    "exp": 222,
+    "physical_damage_raw": 345,
+    "magic_damage_raw": 346,
+    "physical_defense": 110,
+    "magic_defense": 90,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -60,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "elementalAttributes": "L2I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230109
+   }
+  },
+  {
+   "id": 4230110,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 65,
+    "hp": 7500,
+    "mp": 1200,
+    "exp": 241,
+    "physical_damage_raw": 366,
+    "magic_damage_raw": 366,
+    "physical_defense": 130,
+    "magic_defense": 110,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230110
+   }
+  },
+  {
+   "id": 4230111,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 61,
+    "hp": 5900,
+    "mp": 1200,
+    "exp": 204,
+    "physical_damage_raw": 333,
+    "magic_damage_raw": 320,
+    "physical_defense": 190,
+    "magic_defense": 175,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "elementalAttributes": "I2F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230111
+   }
+  },
+  {
+   "id": 4230112,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 63,
+    "hp": 6700,
+    "mp": 1200,
+    "exp": 222,
+    "physical_damage_raw": 364,
+    "magic_damage_raw": 360,
+    "physical_defense": 210,
+    "magic_defense": 195,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230112
+   }
+  },
+  {
+   "id": 4230113,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 70,
+    "hp": 10000,
+    "mp": 1500,
+    "exp": 296,
+    "physical_damage_raw": 395,
+    "magic_damage_raw": 402,
+    "physical_defense": 160,
+    "magic_defense": 170,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -60,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230113
+   }
+  },
+  {
+   "id": 4230114,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 74,
+    "hp": 14000,
+    "mp": 1800,
+    "exp": 382,
+    "physical_damage_raw": 457,
+    "magic_damage_raw": 498,
+    "physical_defense": 130,
+    "magic_defense": 160,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -15,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 700,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230114
+   }
+  },
+  {
+   "id": 4230115,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 75,
+    "hp": 15000,
+    "mp": 1800,
+    "exp": 403,
+    "physical_damage_raw": 448,
+    "magic_damage_raw": 507,
+    "physical_defense": 170,
+    "magic_defense": 200,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 700,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230115
+   }
+  },
+  {
+   "id": 4230122,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 40,
+    "hp": 1900,
+    "mp": 300,
+    "exp": 96,
+    "physical_damage_raw": 201,
+    "magic_damage_raw": 196,
+    "physical_defense": 120,
+    "magic_defense": 120,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "hpRecovery": 30,
+    "mpRecovery": 2,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "linksToOtherMob": 4230105
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 4230122
+   }
+  },
+  {
+   "id": 5120000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 43,
+    "hp": 2200,
+    "mp": 450,
+    "exp": 106,
+    "physical_damage_raw": 215,
+    "magic_damage_raw": 243,
+    "physical_defense": 125,
+    "magic_defense": 265,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": -15,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "mpRecovery": 5,
+    "elementalAttributes": "I2F2L2H2D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5120000
+   }
+  },
+  {
+   "id": 5120001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 46,
+    "hp": 2520,
+    "mp": 600,
+    "exp": 116,
+    "physical_damage_raw": 225,
+    "magic_damage_raw": 275,
+    "physical_defense": 170,
+    "magic_defense": 210,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5120001
+   }
+  },
+  {
+   "id": 5120002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 46,
+    "hp": 2520,
+    "mp": 600,
+    "exp": 116,
+    "physical_damage_raw": 229,
+    "magic_damage_raw": 271,
+    "physical_defense": 170,
+    "magic_defense": 210,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "L2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5120002
+   }
+  },
+  {
+   "id": 5120003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 46,
+    "hp": 2520,
+    "mp": 600,
+    "exp": 116,
+    "physical_damage_raw": 231,
+    "magic_damage_raw": 223,
+    "physical_defense": 170,
+    "magic_defense": 210,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5120003
+   }
+  },
+  {
+   "id": 5130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 52,
+    "hp": 3400,
+    "mp": 800,
+    "exp": 141,
+    "physical_damage_raw": 276,
+    "magic_damage_raw": 270,
+    "physical_defense": 110,
+    "magic_defense": 150,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5130100
+   }
+  },
+  {
+   "id": 5130101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 20,
+    "hp": 375,
+    "mp": 40,
+    "exp": 35,
+    "physical_damage_raw": 89,
+    "magic_damage_raw": 81,
+    "physical_defense": 130,
+    "magic_defense": 100,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -70,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5130101
+   }
+  },
+  {
+   "id": 5130102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 23,
+    "hp": 465,
+    "mp": 80,
+    "exp": 40,
+    "physical_damage_raw": 101,
+    "magic_damage_raw": 95,
+    "physical_defense": 150,
+    "magic_defense": 200,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5130102
+   }
+  },
+  {
+   "id": 5150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5150000
+   }
+  },
+  {
+   "id": 5200000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 35,
+    "hp": 1400,
+    "mp": 200,
+    "exp": 79,
+    "physical_damage_raw": 201,
+    "magic_damage_raw": 157,
+    "physical_defense": 30,
+    "magic_defense": 40,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 200,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5200000
+   }
+  },
+  {
+   "id": 5200001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 39,
+    "hp": 1800,
+    "mp": 300,
+    "exp": 93,
+    "physical_damage_raw": 197,
+    "magic_damage_raw": 222,
+    "physical_defense": 275,
+    "magic_defense": 85,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5200001
+   }
+  },
+  {
+   "id": 5200002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 39,
+    "hp": 1800,
+    "mp": 300,
+    "exp": 93,
+    "physical_damage_raw": 189,
+    "magic_damage_raw": 216,
+    "physical_defense": 275,
+    "magic_defense": 85,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5200002
+   }
+  },
+  {
+   "id": 5300000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 40,
+    "hp": 1900,
+    "mp": 300,
+    "exp": 96,
+    "physical_damage_raw": 199,
+    "magic_damage_raw": 195,
+    "physical_defense": 45,
+    "magic_defense": 70,
+    "accuracy": 25,
+    "evasion": 8,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 250,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5300000
+   }
+  },
+  {
+   "id": 5300001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 42,
+    "hp": 2100,
+    "mp": 450,
+    "exp": 103,
+    "physical_damage_raw": 217,
+    "magic_damage_raw": 211,
+    "physical_defense": 60,
+    "magic_defense": 80,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5300001
+   }
+  },
+  {
+   "id": 5400000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 43,
+    "hp": 2200,
+    "mp": 450,
+    "exp": 106,
+    "physical_damage_raw": 216,
+    "magic_damage_raw": 208,
+    "physical_defense": 110,
+    "magic_defense": 100,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 300,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 5400000
+   }
+  },
+  {
+   "id": 6130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 54,
+    "hp": 3800,
+    "mp": 800,
+    "exp": 151,
+    "physical_damage_raw": 282,
+    "magic_damage_raw": 331,
+    "physical_defense": 190,
+    "magic_defense": 220,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6130100
+   }
+  },
+  {
+   "id": 6130200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 95,
+    "hp": 55000,
+    "mp": 2600,
+    "exp": 1166,
+    "physical_damage_raw": 813,
+    "magic_damage_raw": 767,
+    "physical_defense": 213,
+    "magic_defense": 229,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1100,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6130200
+   }
+  },
+  {
+   "id": 6150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 67,
+    "hp": 8500,
+    "mp": 1500,
+    "exp": 263,
+    "physical_damage_raw": 377,
+    "magic_damage_raw": 356,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6150000
+   }
+  },
+  {
+   "id": 6230100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 60,
+    "hp": 5500,
+    "mp": 1000,
+    "exp": 194,
+    "physical_damage_raw": 330,
+    "magic_damage_raw": 326,
+    "physical_defense": 180,
+    "magic_defense": 130,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": 30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230100
+   }
+  },
+  {
+   "id": 6230300,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 97,
+    "hp": 59000,
+    "mp": 2800,
+    "exp": 1234,
+    "physical_damage_raw": 832,
+    "magic_damage_raw": 988,
+    "physical_defense": 180,
+    "magic_defense": 254,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1200,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230300
+   }
+  },
+  {
+   "id": 6230400,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 96,
+    "hp": 57000,
+    "mp": 2800,
+    "exp": 1200,
+    "physical_damage_raw": 789,
+    "magic_damage_raw": 830,
+    "physical_defense": 190,
+    "magic_defense": 215,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1200,
+    "mpRecovery": 2,
+    "elementalAttributes": "L2I2H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230400
+   }
+  },
+  {
+   "id": 6230401,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 50,
+    "hp": 3000,
+    "mp": 800,
+    "exp": 130,
+    "physical_damage_raw": 247,
+    "magic_damage_raw": 260,
+    "physical_defense": 190,
+    "magic_defense": 220,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "S1H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230401
+   }
+  },
+  {
+   "id": 6230500,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 98,
+    "hp": 61000,
+    "mp": 2800,
+    "exp": 1268,
+    "physical_damage_raw": 838,
+    "magic_damage_raw": 998,
+    "physical_defense": 210,
+    "magic_defense": 250,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1200,
+    "mpRecovery": 2,
+    "elementalAttributes": "L2I1H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230500
+   }
+  },
+  {
+   "id": 6230600,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 56,
+    "hp": 4300,
+    "mp": 1000,
+    "exp": 164,
+    "physical_damage_raw": 291,
+    "magic_damage_raw": 347,
+    "physical_defense": 200,
+    "magic_defense": 230,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 450,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230600
+   }
+  },
+  {
+   "id": 6230601,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 58,
+    "hp": 4900,
+    "mp": 1000,
+    "exp": 179,
+    "physical_damage_raw": 302,
+    "magic_damage_raw": 311,
+    "physical_defense": 205,
+    "magic_defense": 250,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 450,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6230601
+   }
+  },
+  {
+   "id": 6300100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 74,
+    "hp": 14000,
+    "mp": 1800,
+    "exp": 382,
+    "physical_damage_raw": 451,
+    "magic_damage_raw": 407,
+    "physical_defense": 340,
+    "magic_defense": 330,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 700,
+    "elementalAttributes": "I3F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6300100
+   }
+  },
+  {
+   "id": 6400100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 106,
+    "hp": 77000,
+    "mp": 3000,
+    "exp": 1526,
+    "physical_damage_raw": 1140,
+    "magic_damage_raw": 1170,
+    "physical_defense": 400,
+    "magic_defense": 410,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1400,
+    "elementalAttributes": "I3F2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 6400100
+   }
+  },
+  {
+   "id": 7130000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 54,
+    "hp": 3800,
+    "mp": 800,
+    "exp": 151,
+    "physical_damage_raw": 286,
+    "magic_damage_raw": 335,
+    "physical_defense": 300,
+    "magic_defense": 320,
+    "accuracy": 36,
+    "evasion": 25,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 400,
+    "elementalAttributes": "S1H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130000
+   }
+  },
+  {
+   "id": 7130002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 99,
+    "hp": 63000,
+    "mp": 2800,
+    "exp": 1301,
+    "physical_damage_raw": 844,
+    "magic_damage_raw": 849,
+    "physical_defense": 335,
+    "magic_defense": 265,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1200,
+    "elementalAttributes": "L2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130002
+   }
+  },
+  {
+   "id": 7130003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 105,
+    "hp": 75000,
+    "mp": 3000,
+    "exp": 1495,
+    "physical_damage_raw": 1143,
+    "magic_damage_raw": 1292,
+    "physical_defense": 400,
+    "magic_defense": 400,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1300,
+    "elementalAttributes": "L2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130003
+   }
+  },
+  {
+   "id": 7130004,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 107,
+    "hp": 79000,
+    "mp": 3000,
+    "exp": 1557,
+    "physical_damage_raw": 1232,
+    "magic_damage_raw": 1143,
+    "physical_defense": 600,
+    "magic_defense": 450,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1400,
+    "elementalAttributes": "F3S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130004
+   }
+  },
+  {
+   "id": 7130010,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 112,
+    "hp": 89000,
+    "mp": 3000,
+    "exp": 1709,
+    "physical_damage_raw": 1448,
+    "magic_damage_raw": 1632,
+    "physical_defense": 700,
+    "magic_defense": 465,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1500,
+    "elementalAttributes": "H3F3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130010
+   }
+  },
+  {
+   "id": 7130100,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 62,
+    "hp": 6300,
+    "mp": 1200,
+    "exp": 213,
+    "physical_damage_raw": 396,
+    "magic_damage_raw": 352,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": 30,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "hpRecovery": 30,
+    "mpRecovery": 5,
+    "elementalAttributes": "S1",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130100
+   }
+  },
+  {
+   "id": 7130101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 64,
+    "hp": 7100,
+    "mp": 1200,
+    "exp": 232,
+    "physical_damage_raw": 351,
+    "magic_damage_raw": 339,
+    "physical_defense": 550,
+    "magic_defense": 400,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": 35,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 500,
+    "hpRecovery": 50,
+    "mpRecovery": 5,
+    "elementalAttributes": "S1F2L2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130101
+   }
+  },
+  {
+   "id": 7130500,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 97,
+    "hp": 59000,
+    "mp": 2800,
+    "exp": 1234,
+    "physical_damage_raw": 824,
+    "magic_damage_raw": 829,
+    "physical_defense": 235,
+    "magic_defense": 245,
+    "accuracy": 100,
+    "evasion": 81,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1200,
+    "hpRecovery": 50,
+    "mpRecovery": 10,
+    "elementalAttributes": "S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130500
+   }
+  },
+  {
+   "id": 7130501,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 103,
+    "hp": 71000,
+    "mp": 3000,
+    "exp": 1431,
+    "physical_damage_raw": 997,
+    "magic_damage_raw": 1014,
+    "physical_defense": 285,
+    "magic_defense": 295,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1300,
+    "hpRecovery": 50,
+    "mpRecovery": 20,
+    "elementalAttributes": "S2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130501
+   }
+  },
+  {
+   "id": 7130600,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 101,
+    "hp": 67000,
+    "mp": 3000,
+    "exp": 1367,
+    "physical_damage_raw": 905,
+    "magic_damage_raw": 885,
+    "physical_defense": 330,
+    "magic_defense": 260,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1300,
+    "elementalAttributes": "S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130600
+   }
+  },
+  {
+   "id": 7130601,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 105,
+    "hp": 75000,
+    "mp": 3000,
+    "exp": 1495,
+    "physical_damage_raw": 1135,
+    "magic_damage_raw": 1131,
+    "physical_defense": 400,
+    "magic_defense": 350,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1300,
+    "elementalAttributes": "S2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7130601
+   }
+  },
+  {
+   "id": 7140000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 110,
+    "hp": 85000,
+    "mp": 3000,
+    "exp": 1649,
+    "physical_damage_raw": 1330,
+    "magic_damage_raw": 1343,
+    "physical_defense": 710,
+    "magic_defense": 460,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1400,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7140000
+   }
+  },
+  {
+   "id": 7150000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 70,
+    "hp": 10000,
+    "mp": 1500,
+    "exp": 296,
+    "physical_damage_raw": 402,
+    "magic_damage_raw": 403,
+    "physical_defense": 40,
+    "magic_defense": 50,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -35,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7150000
+   }
+  },
+  {
+   "id": 7150001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 72,
+    "hp": 12000,
+    "mp": 1800,
+    "exp": 340,
+    "physical_damage_raw": 426,
+    "magic_damage_raw": 416,
+    "physical_defense": 180,
+    "magic_defense": 254,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 700,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7150001
+   }
+  },
+  {
+   "id": 7150002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 74,
+    "hp": 14000,
+    "mp": 1800,
+    "exp": 382,
+    "physical_damage_raw": 453,
+    "magic_damage_raw": 409,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 700,
+    "summonType": 27,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7150002
+   }
+  },
+  {
+   "id": 7150003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 76,
+    "hp": 17000,
+    "mp": 2000,
+    "exp": 446,
+    "physical_damage_raw": 468,
+    "magic_damage_raw": 452,
+    "physical_defense": 170,
+    "magic_defense": 210,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 800,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7150003
+   }
+  },
+  {
+   "id": 7150004,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 79,
+    "hp": 23000,
+    "mp": 2000,
+    "exp": 570,
+    "physical_damage_raw": 486,
+    "magic_damage_raw": 486,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 800,
+    "summonType": 27,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 7150004
+   }
+  },
+  {
+   "id": 8105000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 82,
+    "hp": 29000,
+    "mp": 2200,
+    "exp": 689,
+    "physical_damage_raw": 529,
+    "magic_damage_raw": 540,
+    "physical_defense": 170,
+    "magic_defense": 210,
+    "accuracy": 81,
+    "evasion": 64,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 900,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8105000
+   }
+  },
+  {
+   "id": 8140001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 109,
+    "hp": 83000,
+    "mp": 3000,
+    "exp": 1618,
+    "physical_damage_raw": 1314,
+    "magic_damage_raw": 1233,
+    "physical_defense": 650,
+    "magic_defense": 450,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1400,
+    "elementalAttributes": "S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140001
+   }
+  },
+  {
+   "id": 8140002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 112,
+    "hp": 89000,
+    "mp": 3000,
+    "exp": 1709,
+    "physical_damage_raw": 1435,
+    "magic_damage_raw": 1358,
+    "physical_defense": 700,
+    "magic_defense": 465,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1500,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140002
+   }
+  },
+  {
+   "id": 8140101,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 118,
+    "hp": 101000,
+    "mp": 3000,
+    "exp": 1884,
+    "physical_damage_raw": 1566,
+    "magic_damage_raw": 1552,
+    "physical_defense": 800,
+    "magic_defense": 495,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1600,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140101
+   }
+  },
+  {
+   "id": 8140102,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 118,
+    "hp": 101000,
+    "mp": 3000,
+    "exp": 1884,
+    "physical_damage_raw": 1678,
+    "magic_damage_raw": 1531,
+    "physical_defense": 800,
+    "magic_defense": 495,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1600,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140102
+   }
+  },
+  {
+   "id": 8140103,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 118,
+    "hp": 101000,
+    "mp": 3000,
+    "exp": 1884,
+    "physical_damage_raw": 1551,
+    "magic_damage_raw": 1557,
+    "physical_defense": 800,
+    "magic_defense": 495,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1600,
+    "elementalAttributes": "I2F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140103
+   }
+  },
+  {
+   "id": 8140110,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 114,
+    "hp": 93000,
+    "mp": 3000,
+    "exp": 1768,
+    "physical_damage_raw": 1515,
+    "magic_damage_raw": 1467,
+    "physical_defense": 760,
+    "magic_defense": 465,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1500,
+    "hpRecovery": 150,
+    "mpRecovery": 30,
+    "elementalAttributes": "H2I3D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140110
+   }
+  },
+  {
+   "id": 8140111,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 116,
+    "hp": 97000,
+    "mp": 3000,
+    "exp": 1826,
+    "physical_damage_raw": 1606,
+    "magic_damage_raw": 1482,
+    "physical_defense": 850,
+    "magic_defense": 480,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1600,
+    "hpRecovery": 200,
+    "mpRecovery": 10,
+    "elementalAttributes": "H2S2D3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140111
+   }
+  },
+  {
+   "id": 8140200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 102,
+    "hp": 69000,
+    "mp": 3000,
+    "exp": 1399,
+    "physical_damage_raw": 992,
+    "magic_damage_raw": 927,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1300,
+    "mpRecovery": 2,
+    "elementalAttributes": "H3F3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140200
+   }
+  },
+  {
+   "id": 8140300,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 105,
+    "hp": 75000,
+    "mp": 3000,
+    "exp": 1495,
+    "physical_damage_raw": 1137,
+    "magic_damage_raw": 1059,
+    "physical_defense": 380,
+    "magic_defense": 400,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1300,
+    "mpRecovery": 2,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140300
+   }
+  },
+  {
+   "id": 8140700,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 127,
+    "hp": 120000,
+    "mp": 4000,
+    "exp": 2149,
+    "physical_damage_raw": 2019,
+    "magic_damage_raw": 2094,
+    "physical_defense": 820,
+    "magic_defense": 480,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2000,
+    "elementalAttributes": "F3I2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140700
+   }
+  },
+  {
+   "id": 8140701,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 128,
+    "hp": 125000,
+    "mp": 4000,
+    "exp": 2226,
+    "physical_damage_raw": 2113,
+    "magic_damage_raw": 2087,
+    "physical_defense": 830,
+    "magic_defense": 500,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2000,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140701
+   }
+  },
+  {
+   "id": 8140702,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 131,
+    "hp": 140000,
+    "mp": 4000,
+    "exp": 2454,
+    "physical_damage_raw": 2336,
+    "magic_damage_raw": 2637,
+    "physical_defense": 840,
+    "magic_defense": 550,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 5,
+    "magic_defense_rate_raw": 5
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2400,
+    "elementalAttributes": "L3S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140702
+   }
+  },
+  {
+   "id": 8140703,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 133,
+    "hp": 150000,
+    "mp": 4000,
+    "exp": 2603,
+    "physical_damage_raw": 2314,
+    "magic_damage_raw": 2368,
+    "physical_defense": 850,
+    "magic_defense": 570,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2400,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8140703
+   }
+  },
+  {
+   "id": 8141000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 119,
+    "hp": 103000,
+    "mp": 3000,
+    "exp": 1912,
+    "physical_damage_raw": 1734,
+    "magic_damage_raw": 1682,
+    "physical_defense": 830,
+    "magic_defense": 530,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1600,
+    "elementalAttributes": "F2L3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8141000
+   }
+  },
+  {
+   "id": 8142000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 121,
+    "hp": 107000,
+    "mp": 4000,
+    "exp": 1968,
+    "physical_damage_raw": 1737,
+    "magic_damage_raw": 1730,
+    "physical_defense": 835,
+    "magic_defense": 530,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 1800,
+    "elementalAttributes": "H3I2F3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8142000
+   }
+  },
+  {
+   "id": 8150200,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 136,
+    "hp": 165000,
+    "mp": 6000,
+    "exp": 2823,
+    "physical_damage_raw": 2538,
+    "magic_damage_raw": 2418,
+    "physical_defense": 800,
+    "magic_defense": 500,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2800,
+    "elementalAttributes": "S2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8150200
+   }
+  },
+  {
+   "id": 8150201,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 142,
+    "hp": 195000,
+    "mp": 8000,
+    "exp": 3250,
+    "physical_damage_raw": 2917,
+    "magic_damage_raw": 2640,
+    "physical_defense": 800,
+    "magic_defense": 500,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 3200,
+    "elementalAttributes": "S2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8150201
+   }
+  },
+  {
+   "id": 8150300,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 134,
+    "hp": 155000,
+    "mp": 4000,
+    "exp": 2677,
+    "physical_damage_raw": 2440,
+    "magic_damage_raw": 2357,
+    "physical_defense": 830,
+    "magic_defense": 550,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2400,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8150300
+   }
+  },
+  {
+   "id": 8150301,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 137,
+    "hp": 170000,
+    "mp": 6000,
+    "exp": 2896,
+    "physical_damage_raw": 2533,
+    "magic_damage_raw": 2383,
+    "physical_defense": 850,
+    "magic_defense": 570,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2800,
+    "elementalAttributes": "F3I2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8150301
+   }
+  },
+  {
+   "id": 8150302,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 141,
+    "hp": 190000,
+    "mp": 8000,
+    "exp": 3180,
+    "physical_damage_raw": 2683,
+    "magic_damage_raw": 2713,
+    "physical_defense": 900,
+    "magic_defense": 580,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 3200,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8150302
+   }
+  },
+  {
+   "id": 8160000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 126,
+    "hp": 118000,
+    "mp": 4000,
+    "exp": 2122,
+    "physical_damage_raw": 1972,
+    "magic_damage_raw": 1984,
+    "physical_defense": 900,
+    "magic_defense": 650,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 2000,
+    "elementalAttributes": "L2",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8160000
+   }
+  },
+  {
+   "id": 8170000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 126,
+    "hp": 118000,
+    "mp": 4000,
+    "exp": 2122,
+    "physical_damage_raw": 2003,
+    "magic_damage_raw": 1924,
+    "physical_defense": 850,
+    "magic_defense": 680,
+    "accuracy": 169,
+    "evasion": 144,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 2000,
+    "elementalAttributes": "H3I2D2",
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8170000
+   }
+  },
+  {
+   "id": 8180000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 120,
+    "hp": 3700000,
+    "mp": 1500,
+    "exp": 13500,
+    "physical_damage_raw": 2599,
+    "magic_damage_raw": 2554,
+    "physical_defense": 900,
+    "magic_defense": 850,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 25,
+    "magic_defense_rate_raw": 25
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5000,
+    "hpRecovery": 300,
+    "mpRecovery": 20,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "hpTagColor": 1,
+    "hpTagBackgroundColor": 5,
+    "hpGaugeHide": true,
+    "revivesMonsterId": [],
+    "isBoss": true,
+    "isAutoAggro": true,
+    "publicReward": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8180000
+   }
+  },
+  {
+   "id": 8180001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 120,
+    "hp": 3700000,
+    "mp": 1500,
+    "exp": 13500,
+    "physical_damage_raw": 2626,
+    "magic_damage_raw": 2587,
+    "physical_defense": 900,
+    "magic_defense": 850,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 25,
+    "magic_defense_rate_raw": 25
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 5000,
+    "hpRecovery": 300,
+    "mpRecovery": 20,
+    "elementalAttributes": "L2S3",
+    "summonType": 1,
+    "hpTagColor": 1,
+    "hpTagBackgroundColor": 5,
+    "hpGaugeHide": true,
+    "revivesMonsterId": [],
+    "isBoss": true,
+    "isAutoAggro": true,
+    "publicReward": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8180001
+   }
+  },
+  {
+   "id": 8190000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 145,
+    "hp": 210000,
+    "mp": 8000,
+    "exp": 3458,
+    "physical_damage_raw": 3028,
+    "magic_damage_raw": 2843,
+    "physical_defense": 750,
+    "magic_defense": 680,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 3200,
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8190000
+   }
+  },
+  {
+   "id": 8190001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 145,
+    "hp": 210000,
+    "mp": 8000,
+    "exp": null,
+    "physical_damage_raw": 2805,
+    "magic_damage_raw": 2896,
+    "physical_defense": 750,
+    "magic_defense": 680,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 3200,
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isAutoAggro": true,
+    "monsterBookId": 8190000
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8190001
+   }
+  },
+  {
+   "id": 8190003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 147,
+    "hp": 220000,
+    "mp": 10000,
+    "exp": 3594,
+    "physical_damage_raw": 3047,
+    "magic_damage_raw": 3134,
+    "physical_defense": 800,
+    "magic_defense": 700,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 3600,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8190003
+   }
+  },
+  {
+   "id": 8190004,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 153,
+    "hp": 260000,
+    "mp": 12000,
+    "exp": 4146,
+    "physical_damage_raw": 3222,
+    "magic_damage_raw": 3257,
+    "physical_defense": 810,
+    "magic_defense": 710,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": true,
+    "minimumPushDamage": 4000,
+    "elementalAttributes": "H3D2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8190004
+   }
+  },
+  {
+   "id": 8190005,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 150,
+    "hp": 235000,
+    "mp": 10000,
+    "exp": 3795,
+    "physical_damage_raw": 3225,
+    "magic_damage_raw": 3053,
+    "physical_defense": 900,
+    "magic_defense": 600,
+    "accuracy": 225,
+    "evasion": 169,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 3600,
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "linksToOtherMob": 8190002
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8190005
+   }
+  },
+  {
+   "id": 8300000,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 103,
+    "hp": 142000,
+    "mp": 3000,
+    "exp": 2862,
+    "physical_damage_raw": 1002,
+    "magic_damage_raw": 1017,
+    "physical_defense": 850,
+    "magic_defense": 750,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 10,
+    "minimumPushDamage": 1300,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300000
+   }
+  },
+  {
+   "id": 8300001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 103,
+    "hp": 142000,
+    "mp": 3000,
+    "exp": 2862,
+    "physical_damage_raw": 1035,
+    "magic_damage_raw": 1050,
+    "physical_defense": 850,
+    "magic_defense": 750,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 10,
+    "minimumPushDamage": 1300,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300001
+   }
+  },
+  {
+   "id": 8300002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 104,
+    "hp": 146000,
+    "mp": 3000,
+    "exp": 2926,
+    "physical_damage_raw": 1051,
+    "magic_damage_raw": 1011,
+    "physical_defense": 900,
+    "magic_defense": 750,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 0,
+    "minimumPushDamage": 1300,
+    "elementalAttributes": "",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300002
+   }
+  },
+  {
+   "id": 8300003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 104,
+    "hp": 146000,
+    "mp": 3000,
+    "exp": 2926,
+    "physical_damage_raw": 1105,
+    "magic_damage_raw": 1060,
+    "physical_defense": 900,
+    "magic_defense": 750,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 0,
+    "minimumPushDamage": 1300,
+    "elementalAttributes": "",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300003
+   }
+  },
+  {
+   "id": 8300004,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 105,
+    "hp": 150000,
+    "mp": 3000,
+    "exp": 2990,
+    "physical_damage_raw": 1082,
+    "magic_damage_raw": 1039,
+    "physical_defense": 900,
+    "magic_defense": 750,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": 0,
+    "minimumPushDamage": 1300,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300004
+   }
+  },
+  {
+   "id": 8300005,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 120,
+    "hp": 3230000,
+    "mp": 1500,
+    "exp": 13000,
+    "physical_damage_raw": 2613,
+    "magic_damage_raw": 2431,
+    "physical_defense": 990,
+    "magic_defense": 900,
+    "accuracy": 144,
+    "evasion": 121,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": 25,
+    "magic_defense_rate_raw": 25
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "flySpeed": -20,
+    "minimumPushDamage": 9999,
+    "hpRecovery": 37000,
+    "mpRecovery": 20,
+    "elementalAttributes": "L2S3",
+    "summonType": 1,
+    "hpTagColor": 1,
+    "hpTagBackgroundColor": 5,
+    "hpGaugeHide": true,
+    "revivesMonsterId": [],
+    "isBoss": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300005
+   }
+  },
+  {
+   "id": 8300006,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 107,
+    "hp": 107000000,
+    "mp": 15000,
+    "exp": 320000,
+    "physical_damage_raw": 1693,
+    "magic_damage_raw": 1762,
+    "physical_defense": 1000,
+    "magic_defense": 950,
+    "accuracy": 121,
+    "evasion": 100,
+    "movement_speed_raw": 30,
+    "physical_defense_rate_raw": 25,
+    "magic_defense_rate_raw": 25
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 99999999,
+    "elementalAttributes": "",
+    "summonType": 1,
+    "hpTagColor": 1,
+    "hpTagBackgroundColor": 5,
+    "hpGaugeHide": true,
+    "revivesMonsterId": [],
+    "isBoss": true,
+    "isAutoAggro": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 8300006
+   }
+  },
+  {
+   "id": 9001003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 80,
+    "hp": 120000,
+    "mp": 510,
+    "exp": 2400,
+    "physical_damage_raw": 750,
+    "magic_damage_raw": 744,
+    "physical_defense": 260,
+    "magic_defense": 220,
+    "accuracy": 64,
+    "evasion": 49,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 25,
+    "magic_defense_rate_raw": 25
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 1500,
+    "hpRecovery": 100,
+    "mpRecovery": 20,
+    "summonType": 1,
+    "revivesMonsterId": [],
+    "isBoss": true,
+    "hideName": true
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9001003
+   }
+  },
+  {
+   "id": 9001015,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 20,
+    "hp": 375,
+    "mp": 40,
+    "exp": 35,
+    "physical_damage_raw": 88,
+    "magic_damage_raw": 87,
+    "physical_defense": 10,
+    "magic_defense": 60,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 50,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9001015
+   }
+  },
+  {
+   "id": 9001016,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 25,
+    "hp": 525,
+    "mp": 80,
+    "exp": 44,
+    "physical_damage_raw": 118,
+    "magic_damage_raw": 107,
+    "physical_defense": 20,
+    "magic_defense": 30,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9001016
+   }
+  },
+  {
+   "id": 9001017,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 30,
+    "hp": 900,
+    "mp": 120,
+    "exp": 60,
+    "physical_damage_raw": 139,
+    "magic_damage_raw": 136,
+    "physical_defense": 40,
+    "magic_defense": 40,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9001017
+   }
+  },
+  {
+   "id": 9300386,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 12,
+    "hp": 175,
+    "mp": 20,
+    "exp": 21,
+    "physical_damage_raw": 51,
+    "magic_damage_raw": 45,
+    "physical_defense": 10,
+    "magic_defense": 40,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300386
+   }
+  },
+  {
+   "id": 9300409,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 10,
+    "hp": 125,
+    "mp": 10,
+    "exp": 17,
+    "physical_damage_raw": 39,
+    "magic_damage_raw": 35,
+    "physical_defense": 45,
+    "magic_defense": 70,
+    "accuracy": 4,
+    "evasion": null,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 10,
+    "elementalAttributes": "S2",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300409
+   }
+  },
+  {
+   "id": 9300410,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 11,
+    "hp": 150,
+    "mp": 20,
+    "exp": 19,
+    "physical_damage_raw": 43,
+    "magic_damage_raw": 38,
+    "physical_defense": 255,
+    "magic_defense": 205,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -30,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300410
+   }
+  },
+  {
+   "id": 9300411,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 12,
+    "hp": 525,
+    "mp": 20,
+    "exp": 21,
+    "physical_damage_raw": 50,
+    "magic_damage_raw": 44,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300411
+   }
+  },
+  {
+   "id": 9300412,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 13,
+    "hp": 180,
+    "mp": 20,
+    "exp": 22,
+    "physical_damage_raw": 55,
+    "magic_damage_raw": 51,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": 9,
+    "evasion": 1,
+    "movement_speed_raw": -50,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 20,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300412
+   }
+  },
+  {
+   "id": 9300414,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 23,
+    "hp": 930,
+    "mp": 80,
+    "exp": null,
+    "physical_damage_raw": 105,
+    "magic_damage_raw": 98,
+    "physical_defense": 250,
+    "magic_defense": 260,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300414
+   }
+  },
+  {
+   "id": 9300418,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 30,
+    "hp": 1800,
+    "mp": 120,
+    "exp": null,
+    "physical_damage_raw": 133,
+    "magic_damage_raw": 134,
+    "physical_defense": 255,
+    "magic_defense": 205,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "elementalAttributes": "F2I3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300418
+   }
+  },
+  {
+   "id": 9300419,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 27,
+    "hp": 1300,
+    "mp": 120,
+    "exp": null,
+    "physical_damage_raw": 125,
+    "magic_damage_raw": 121,
+    "physical_defense": 250,
+    "magic_defense": 250,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": 20,
+    "magic_defense_rate_raw": 20
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9300419
+   }
+  },
+  {
+   "id": 9400400,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 25,
+    "hp": 525,
+    "mp": 80,
+    "exp": 44,
+    "physical_damage_raw": 118,
+    "magic_damage_raw": 111,
+    "physical_defense": 20,
+    "magic_defense": 35,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 100,
+    "elementalAttributes": "S3F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400400
+   }
+  },
+  {
+   "id": 9400401,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 50,
+    "hp": 3000,
+    "mp": 800,
+    "exp": 130,
+    "physical_damage_raw": 249,
+    "magic_damage_raw": 261,
+    "physical_defense": 115,
+    "magic_defense": 180,
+    "accuracy": 25,
+    "evasion": 16,
+    "movement_speed_raw": 10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 350,
+    "elementalAttributes": "L3F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400401
+   }
+  },
+  {
+   "id": 9400404,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 30,
+    "hp": 900,
+    "mp": 120,
+    "exp": 60,
+    "physical_damage_raw": 143,
+    "magic_damage_raw": 137,
+    "physical_defense": 60,
+    "magic_defense": 50,
+    "accuracy": 16,
+    "evasion": 4,
+    "movement_speed_raw": -40,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 150,
+    "elementalAttributes": "I3S3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400404
+   }
+  },
+  {
+   "id": 9400551,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 2,
+    "hp": 777,
+    "mp": 0,
+    "exp": 7,
+    "physical_damage_raw": 22,
+    "magic_damage_raw": 0,
+    "physical_defense": 0,
+    "magic_defense": 0,
+    "accuracy": 20,
+    "evasion": 0,
+    "movement_speed_raw": -45,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400551
+   }
+  },
+  {
+   "id": 9400614,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 8,
+    "hp": 80,
+    "mp": 45,
+    "exp": 15,
+    "physical_damage_raw": 42,
+    "magic_damage_raw": 0,
+    "physical_defense": 0,
+    "magic_defense": 10,
+    "accuracy": 42,
+    "evasion": 1,
+    "movement_speed_raw": 0,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400614
+   }
+  },
+  {
+   "id": 9400615,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 10,
+    "hp": 120,
+    "mp": 45,
+    "exp": 20,
+    "physical_damage_raw": 70,
+    "magic_damage_raw": 0,
+    "physical_defense": 10,
+    "magic_defense": 30,
+    "accuracy": 40,
+    "evasion": 2,
+    "movement_speed_raw": 5,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400615
+   }
+  },
+  {
+   "id": 9400616,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 15,
+    "hp": 250,
+    "mp": 25,
+    "exp": 26,
+    "physical_damage_raw": 82,
+    "magic_damage_raw": 0,
+    "physical_defense": 12,
+    "magic_defense": 40,
+    "accuracy": 45,
+    "evasion": 5,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "elementalAttributes": "S1",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400616
+   }
+  },
+  {
+   "id": 9400617,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 7,
+    "hp": 75,
+    "mp": 40,
+    "exp": 15,
+    "physical_damage_raw": 37,
+    "magic_damage_raw": 0,
+    "physical_defense": 5,
+    "magic_defense": 20,
+    "accuracy": 40,
+    "evasion": 0,
+    "movement_speed_raw": 0,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400617
+   }
+  },
+  {
+   "id": 9400620,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 10,
+    "hp": 250,
+    "mp": 10,
+    "exp": 18,
+    "physical_damage_raw": 65,
+    "magic_damage_raw": 0,
+    "physical_defense": 20,
+    "magic_defense": 10,
+    "accuracy": 42,
+    "evasion": 0,
+    "movement_speed_raw": -70,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "elementalAttributes": "F3",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400620
+   }
+  },
+  {
+   "id": 9400657,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 15,
+    "hp": 250,
+    "mp": 25,
+    "exp": 26,
+    "physical_damage_raw": 82,
+    "magic_damage_raw": 0,
+    "physical_defense": 12,
+    "magic_defense": 40,
+    "accuracy": 45,
+    "evasion": 5,
+    "movement_speed_raw": -20,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "isUndead": false,
+    "minimumPushDamage": 1,
+    "elementalAttributes": "S1",
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9400657
+   }
+  },
+  {
+   "id": 9500389,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": 66,
+    "hp": 8000,
+    "mp": 1500,
+    "exp": 428,
+    "physical_damage_raw": 359,
+    "magic_damage_raw": 371,
+    "physical_defense": 180,
+    "magic_defense": 190,
+    "accuracy": 49,
+    "evasion": 36,
+    "movement_speed_raw": -10,
+    "physical_defense_rate_raw": 10,
+    "magic_defense_rate_raw": 10
+   },
+   "raw_aux": {
+    "isBodyAttack": true,
+    "minimumPushDamage": 600,
+    "summonType": 1,
+    "revivesMonsterId": []
+   },
+   "present_source_fields": [
+    "accuracy",
+    "evasion",
+    "exp",
+    "level",
+    "magicDamage",
+    "magicDefense",
+    "magicDefenseRate",
+    "maxHP",
+    "maxMP",
+    "physicalDamage",
+    "physicalDefense",
+    "physicalDefenseRate",
+    "speed"
+   ],
+   "provenance_ref": {
+    "file": "provenance_mobs.json",
+    "id": 9500389
+   }
+  },
+  {
+   "id": 8200001,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200001
+   }
+  },
+  {
+   "id": 8200002,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200002
+   }
+  },
+  {
+   "id": 8200003,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200003
+   }
+  },
+  {
+   "id": 8200004,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200004
+   }
+  },
+  {
+   "id": 8200005,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200005
+   }
+  },
+  {
+   "id": 8200006,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200006
+   }
+  },
+  {
+   "id": 8200007,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200007
+   }
+  },
+  {
+   "id": 8200008,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200008
+   }
+  },
+  {
+   "id": 8200009,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200009
+   }
+  },
+  {
+   "id": 8200010,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200010
+   }
+  },
+  {
+   "id": 8200011,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200011
+   }
+  },
+  {
+   "id": 8200012,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8200012
+   }
+  },
+  {
+   "id": 8144007,
+   "detail_status": "confirmed",
+   "stats": {
+    "level": null,
+    "hp": null,
+    "mp": null,
+    "exp": null,
+    "physical_damage_raw": null,
+    "magic_damage_raw": null,
+    "physical_defense": null,
+    "magic_defense": null,
+    "accuracy": null,
+    "evasion": null,
+    "movement_speed_raw": null,
+    "physical_defense_rate_raw": null,
+    "magic_defense_rate_raw": null
+   },
+   "raw_aux": {},
+   "present_source_fields": [],
+   "provenance_ref": {
+    "file": "justice-preapply",
+    "id": 8144007
+   }
+  }
+ ]
+}

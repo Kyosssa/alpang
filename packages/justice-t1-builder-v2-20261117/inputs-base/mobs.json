@@ -1,0 +1,1829 @@
+{
+ "build_id": "alpang-db-20261014-0100",
+ "mobs": [
+  {
+   "id": 100100,
+   "name_en": "Snail",
+   "level": 1,
+   "maxHP": 15,
+   "exp": 3,
+   "name_ko_candidate": "달팽이",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100101,
+   "name_en": "Blue Snail",
+   "level": 2,
+   "maxHP": 20,
+   "exp": 4,
+   "name_ko_candidate": "파란 달팽이",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 130100,
+   "name_ko_candidate": "스텀프",
+   "name_ko_status": "candidate",
+   "name_en": "Stump",
+   "level": 8,
+   "maxHP": 95,
+   "exp": 13,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 130101,
+   "name_ko_candidate": "빨간 달팽이",
+   "name_ko_status": "candidate",
+   "name_en": "Red Snail",
+   "level": 5,
+   "maxHP": 50,
+   "exp": 8,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 150000,
+   "name_en": "Potted Sprout",
+   "level": 5,
+   "maxHP": 50,
+   "exp": 8,
+   "name_ko_candidate": "새싹 화분",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 150001,
+   "name_en": "Potted Morning Glory",
+   "level": 6,
+   "maxHP": 65,
+   "exp": 10,
+   "name_ko_candidate": "나팔꽃 화분",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 150002,
+   "name_en": "Grape Juice Bottle",
+   "level": 8,
+   "maxHP": 110,
+   "exp": 15,
+   "name_ko_candidate": "포도주스병",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 210100,
+   "name_en": "Slime",
+   "level": 7,
+   "maxHP": 80,
+   "exp": 12,
+   "name_ko_candidate": "슬라임",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1110100,
+   "name_en": "Green Mushroom",
+   "level": 7,
+   "maxHP": 80,
+   "exp": 12,
+   "name_ko_candidate": "초록버섯",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1110101,
+   "name_ko_candidate": "다크 스텀프",
+   "name_ko_status": "candidate",
+   "name_en": "Dark Stump",
+   "level": 10,
+   "maxHP": 125,
+   "exp": 17,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1120100,
+   "name_ko_candidate": "옥토퍼스",
+   "name_ko_status": "candidate",
+   "name_en": "Octopus",
+   "level": 8,
+   "maxHP": 95,
+   "exp": 13,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1150000,
+   "name_en": "Patrol Robot",
+   "level": 14,
+   "maxHP": 225,
+   "exp": 24,
+   "name_ko_candidate": "순찰로봇",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1150001,
+   "name_en": "Strange Sign",
+   "level": 16,
+   "maxHP": 275,
+   "exp": 28,
+   "name_ko_candidate": "이상한 이정표",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1150002,
+   "name_en": "Serpent",
+   "level": 18,
+   "maxHP": 325,
+   "exp": 32,
+   "name_ko_candidate": "구렁이",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1210100,
+   "name_ko_candidate": "돼지",
+   "name_ko_status": "candidate",
+   "name_en": "Pig",
+   "level": 7,
+   "maxHP": 80,
+   "exp": 12,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1210101,
+   "name_ko_candidate": "리본 돼지",
+   "name_ko_status": "candidate",
+   "name_en": "Ribbon Pig",
+   "level": 10,
+   "maxHP": 125,
+   "exp": 17,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 1210102,
+   "name_en": "Orange Mushroom",
+   "level": 6,
+   "maxHP": 65,
+   "exp": 10,
+   "name_ko_candidate": "주황버섯",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2110200,
+   "name_ko_candidate": "뿔버섯",
+   "name_ko_status": "candidate",
+   "name_en": "Horny Mushroom",
+   "level": 13,
+   "maxHP": 200,
+   "exp": 23,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2130100,
+   "name_ko_candidate": "다크 엑스텀프",
+   "name_ko_status": "candidate",
+   "name_en": "Dark Axe Stump",
+   "level": 14,
+   "maxHP": 225,
+   "exp": 28,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2130103,
+   "name_en": "Jr. Necki",
+   "level": 19,
+   "maxHP": 350,
+   "exp": 33,
+   "name_ko_candidate": "주니어 네키",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2150000,
+   "name_en": "Water Thief Monster",
+   "level": 20,
+   "maxHP": 375,
+   "exp": 35,
+   "name_ko_candidate": "물 도둑",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2150001,
+   "name_en": "Dust Box",
+   "level": 22,
+   "maxHP": 435,
+   "exp": 39,
+   "name_ko_candidate": "더스트 박스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2150002,
+   "name_en": "Streetlight",
+   "level": 25,
+   "maxHP": 525,
+   "exp": 44,
+   "name_ko_candidate": "가로등",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2150003,
+   "name_en": "Patrol Robot S",
+   "level": 28,
+   "maxHP": 720,
+   "exp": 53,
+   "name_ko_candidate": "순찰로봇S",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230101,
+   "name_ko_candidate": "좀비버섯",
+   "name_ko_status": "candidate",
+   "name_en": "Zombie Mushroom",
+   "level": 15,
+   "maxHP": 250,
+   "exp": 26,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230102,
+   "name_en": "Wild Boar",
+   "level": 19,
+   "maxHP": 350,
+   "exp": 33,
+   "name_ko_candidate": "와일드보어",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230103,
+   "name_ko_candidate": "트릭스터",
+   "name_ko_status": "candidate",
+   "name_en": "Trixter",
+   "level": 47,
+   "maxHP": 2640,
+   "exp": 119,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230104,
+   "name_ko_candidate": "그린 트릭스터",
+   "name_ko_status": "candidate",
+   "name_en": "Green Trixter",
+   "level": 48,
+   "maxHP": 2760,
+   "exp": 123,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230110,
+   "name_ko_candidate": "우드 마스크",
+   "name_ko_status": "candidate",
+   "name_en": "Wooden Mask",
+   "level": 28,
+   "maxHP": 720,
+   "exp": 53,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2230112,
+   "name_en": "Terrified Wild Boar",
+   "level": 20,
+   "maxHP": 375,
+   "exp": 35,
+   "name_ko_candidate": "겁먹은 와일드보어",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 2300100,
+   "name_ko_candidate": "스티지",
+   "name_ko_status": "candidate",
+   "name_en": "Stirge",
+   "level": 11,
+   "maxHP": 150,
+   "exp": 19,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3000000,
+   "name_en": "Sentinel",
+   "level": 38,
+   "maxHP": 1700,
+   "exp": 89,
+   "name_ko_candidate": "스톤볼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3000005,
+   "name_ko_candidate": "브라운테니",
+   "name_ko_status": "candidate",
+   "name_en": "Brown Teddy",
+   "level": 49,
+   "maxHP": 2880,
+   "exp": 126,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3110101,
+   "name_ko_candidate": "핑크테니",
+   "name_ko_status": "candidate",
+   "name_en": "Pink Teddy",
+   "level": 51,
+   "maxHP": 3200,
+   "exp": 135,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3110102,
+   "name_ko_candidate": "라츠",
+   "name_ko_status": "candidate",
+   "name_en": "Ratz",
+   "level": 44,
+   "maxHP": 2300,
+   "exp": 109,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3150000,
+   "name_en": "Safety First",
+   "level": 31,
+   "maxHP": 990,
+   "exp": 64,
+   "name_ko_candidate": "안전제일",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3150001,
+   "name_en": "Baby Boulder Muncher",
+   "level": 33,
+   "maxHP": 1200,
+   "exp": 72,
+   "name_ko_candidate": "아기 바위베어먹기",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3150002,
+   "name_en": "Big Boulder Muncher",
+   "level": 35,
+   "maxHP": 1400,
+   "exp": 79,
+   "name_ko_candidate": "큰 바위베어먹기",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210200,
+   "name_en": "Jr. Cellion",
+   "level": 36,
+   "maxHP": 1500,
+   "exp": 83,
+   "name_ko_candidate": "주니어 샐리온",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210201,
+   "name_en": "Jr. Lioner",
+   "level": 36,
+   "maxHP": 1500,
+   "exp": 83,
+   "name_ko_candidate": "주니어 라이오너",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210202,
+   "name_en": "Jr. Grupin",
+   "level": 36,
+   "maxHP": 1500,
+   "exp": 83,
+   "name_ko_candidate": "주니어 그류핀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210203,
+   "name_ko_candidate": "팬더테니",
+   "name_ko_status": "candidate",
+   "name_en": "Panda Teddy",
+   "level": 54,
+   "maxHP": 3800,
+   "exp": 151,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210204,
+   "name_ko_candidate": "더키 패밀리",
+   "name_ko_status": "candidate",
+   "name_en": "Roloduck",
+   "level": 53,
+   "maxHP": 3600,
+   "exp": 146,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210205,
+   "name_ko_candidate": "블랙 라츠",
+   "name_ko_status": "candidate",
+   "name_en": "Black Ratz",
+   "level": 45,
+   "maxHP": 2400,
+   "exp": 112,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210206,
+   "name_ko_candidate": "치크세이버",
+   "name_ko_status": "candidate",
+   "name_en": "Helly",
+   "level": 56,
+   "maxHP": 4300,
+   "exp": 164,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210207,
+   "name_ko_candidate": "티키",
+   "name_ko_status": "candidate",
+   "name_en": "Tick",
+   "level": 68,
+   "maxHP": 9000,
+   "exp": 274,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210208,
+   "name_ko_candidate": "레츠",
+   "name_ko_status": "candidate",
+   "name_en": "Retz",
+   "level": 46,
+   "maxHP": 2520,
+   "exp": 116,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3210450,
+   "name_en": "Scuba Pepe",
+   "level": 66,
+   "maxHP": 8000,
+   "exp": 252,
+   "name_ko_candidate": "스쿠버 페페",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230103,
+   "name_ko_candidate": "킹 블록퍼스",
+   "name_ko_status": "candidate",
+   "name_en": "King Bloctopus",
+   "level": 58,
+   "maxHP": 4900,
+   "exp": 179,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230200,
+   "name_en": "Star Pixie",
+   "level": 38,
+   "maxHP": 1700,
+   "exp": 89,
+   "name_ko_candidate": "스타픽시",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230302,
+   "name_ko_candidate": "블록퍼스",
+   "name_ko_status": "candidate",
+   "name_en": "Bloctopus",
+   "level": 54,
+   "maxHP": 3800,
+   "exp": 151,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230303,
+   "name_ko_candidate": "핑크세이버",
+   "name_ko_status": "candidate",
+   "name_en": "Propelly",
+   "level": 57,
+   "maxHP": 4600,
+   "exp": 172,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230304,
+   "name_ko_candidate": "스카이세이버",
+   "name_ko_status": "candidate",
+   "name_en": "Planey",
+   "level": 60,
+   "maxHP": 5500,
+   "exp": 194,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230305,
+   "name_ko_candidate": "장난감 목마",
+   "name_ko_status": "candidate",
+   "name_en": "Toy Trojan",
+   "level": 57,
+   "maxHP": 4600,
+   "exp": 172,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230306,
+   "name_ko_candidate": "크로노스",
+   "name_ko_status": "candidate",
+   "name_en": "Chronos",
+   "level": 73,
+   "maxHP": 13000,
+   "exp": 361,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230307,
+   "name_ko_candidate": "처프",
+   "name_ko_status": "candidate",
+   "name_en": "Chirppy",
+   "level": 50,
+   "maxHP": 3000,
+   "exp": 130,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230308,
+   "name_ko_candidate": "트위터",
+   "name_ko_status": "candidate",
+   "name_en": "Tweeter",
+   "level": 61,
+   "maxHP": 5900,
+   "exp": 204,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 3230400,
+   "name_ko_candidate": "북치는 토끼",
+   "name_ko_status": "candidate",
+   "name_en": "Drumming Bunny",
+   "level": 52,
+   "maxHP": 3400,
+   "exp": 141,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4130100,
+   "name_ko_candidate": "카파 드레이크",
+   "name_ko_status": "candidate",
+   "name_en": "Copper Drake",
+   "level": 50,
+   "maxHP": 3000,
+   "exp": 130,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4130102,
+   "name_en": "Dark Nependeath",
+   "level": 42,
+   "maxHP": 2100,
+   "exp": 103,
+   "name_ko_candidate": "다크 네펜데스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4130104,
+   "name_en": "Dark Nependeath",
+   "level": 42,
+   "maxHP": 2100,
+   "exp": 103,
+   "name_ko_candidate": "다크 네펜데스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230100,
+   "name_en": "Cold Eye",
+   "level": 22,
+   "maxHP": 435,
+   "exp": 39,
+   "name_ko_candidate": "콜드아이",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230105,
+   "name_en": "Nependeath",
+   "level": 40,
+   "maxHP": 1900,
+   "exp": 96,
+   "name_ko_candidate": "네펜데스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230106,
+   "name_en": "Lunar Pixie",
+   "level": 41,
+   "maxHP": 2000,
+   "exp": 99,
+   "name_ko_candidate": "루나픽시",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230109,
+   "name_ko_candidate": "블록골렘",
+   "name_ko_status": "candidate",
+   "name_en": "Block Golem",
+   "level": 63,
+   "maxHP": 6700,
+   "exp": 222,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230110,
+   "name_ko_candidate": "킹 블록골렘",
+   "name_ko_status": "candidate",
+   "name_en": "King Block Golem",
+   "level": 65,
+   "maxHP": 7500,
+   "exp": 241,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230111,
+   "name_ko_candidate": "로보토이",
+   "name_ko_status": "candidate",
+   "name_en": "Robo",
+   "level": 61,
+   "maxHP": 5900,
+   "exp": 204,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230112,
+   "name_ko_candidate": "마스터 로보",
+   "name_ko_status": "candidate",
+   "name_en": "Master Robo",
+   "level": 63,
+   "maxHP": 6700,
+   "exp": 222,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230113,
+   "name_ko_candidate": "틱톡",
+   "name_ko_status": "candidate",
+   "name_en": "Tick-Tock",
+   "level": 70,
+   "maxHP": 10000,
+   "exp": 296,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230114,
+   "name_ko_candidate": "플래툰 크로노스",
+   "name_ko_status": "candidate",
+   "name_en": "Platoon Chronos",
+   "level": 74,
+   "maxHP": 14000,
+   "exp": 382,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230115,
+   "name_ko_candidate": "마스터 크로노스",
+   "name_ko_status": "candidate",
+   "name_en": "Master Chronos",
+   "level": 75,
+   "maxHP": 15000,
+   "exp": 403,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 4230122,
+   "name_en": "Nependeath",
+   "level": 40,
+   "maxHP": 1900,
+   "exp": 96,
+   "name_ko_candidate": "네펜데스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5120000,
+   "name_en": "Luster Pixie",
+   "level": 43,
+   "maxHP": 2200,
+   "exp": 106,
+   "name_ko_candidate": "러스터픽시",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5120001,
+   "name_en": "Cellion",
+   "level": 46,
+   "maxHP": 2520,
+   "exp": 116,
+   "name_ko_candidate": "샐리온",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5120002,
+   "name_en": "Lioner",
+   "level": 46,
+   "maxHP": 2520,
+   "exp": 116,
+   "name_ko_candidate": "라이오너",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5120003,
+   "name_en": "Grupin",
+   "level": 46,
+   "maxHP": 2520,
+   "exp": 116,
+   "name_ko_candidate": "그류핀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5130100,
+   "name_ko_candidate": "드레이크",
+   "name_ko_status": "candidate",
+   "name_en": "Drake",
+   "level": 52,
+   "maxHP": 3400,
+   "exp": 141,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5130101,
+   "name_en": "Stone Golem",
+   "level": 20,
+   "maxHP": 375,
+   "exp": 35,
+   "name_ko_candidate": "스톤골렘",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5130102,
+   "name_en": "Dark Stone Golem",
+   "level": 23,
+   "maxHP": 465,
+   "exp": 40,
+   "name_ko_candidate": "다크 스톤골렘",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5150000,
+   "name_ko_candidate": "믹스골렘",
+   "name_ko_status": "candidate",
+   "name_en": "Mixed Golem",
+   "level": 26,
+   "maxHP": 580,
+   "exp": 47,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5200000,
+   "name_en": "Jr. Sentinel",
+   "level": 35,
+   "maxHP": 1400,
+   "exp": 79,
+   "name_ko_candidate": "주니어 스톤볼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5200001,
+   "name_en": "Ice Sentinel",
+   "level": 39,
+   "maxHP": 1800,
+   "exp": 93,
+   "name_ko_candidate": "아이스 스톤볼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5200002,
+   "name_en": "Fire Sentinel",
+   "level": 39,
+   "maxHP": 1800,
+   "exp": 93,
+   "name_ko_candidate": "파이어 스톤볼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5300000,
+   "name_en": "Leatty",
+   "level": 40,
+   "maxHP": 1900,
+   "exp": 96,
+   "name_ko_candidate": "리티",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5300001,
+   "name_en": "Dark Leatty",
+   "level": 42,
+   "maxHP": 2100,
+   "exp": 103,
+   "name_ko_candidate": "다크 리티",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 5400000,
+   "name_en": "Jr. Pepe",
+   "level": 43,
+   "maxHP": 2200,
+   "exp": 106,
+   "name_ko_candidate": "주니어 페페",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6130100,
+   "name_ko_candidate": "레드 드레이크",
+   "name_ko_status": "candidate",
+   "name_en": "Red Drake",
+   "level": 54,
+   "maxHP": 3800,
+   "exp": 151,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6130200,
+   "name_ko_candidate": "[★] 버피",
+   "name_ko_status": "candidate",
+   "name_en": "Buffy",
+   "level": 95,
+   "maxHP": 55000,
+   "exp": 1166,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6150000,
+   "name_en": "Guard Robot",
+   "level": 67,
+   "maxHP": 8500,
+   "exp": 263,
+   "name_ko_candidate": "경비로봇",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230100,
+   "name_ko_candidate": "와일드카고",
+   "name_ko_status": "candidate",
+   "name_en": "Wild Kargo",
+   "level": 60,
+   "maxHP": 5500,
+   "exp": 194,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230300,
+   "name_ko_candidate": "[★] 레이지 버피",
+   "name_ko_status": "candidate",
+   "name_en": "Lazy Buffy",
+   "level": 97,
+   "maxHP": 59000,
+   "exp": 1234,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230400,
+   "name_ko_candidate": "[★] 소울테니",
+   "name_ko_status": "candidate",
+   "name_en": "Soul Teddy",
+   "level": 96,
+   "maxHP": 57000,
+   "exp": 1200,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230401,
+   "name_en": "Jr. Lucida ",
+   "level": 50,
+   "maxHP": 3000,
+   "exp": 130,
+   "name_ko_candidate": "주니어 루이넬",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230500,
+   "name_ko_candidate": "[★] 마스터 소울테니",
+   "name_ko_status": "candidate",
+   "name_en": "Master Soul Teddy",
+   "level": 98,
+   "maxHP": 61000,
+   "exp": 1268,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230600,
+   "name_ko_candidate": "아이스 드레이크",
+   "name_ko_status": "candidate",
+   "name_en": "Ice Drake",
+   "level": 56,
+   "maxHP": 4300,
+   "exp": 164,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6230601,
+   "name_ko_candidate": "다크 드레이크",
+   "name_ko_status": "candidate",
+   "name_en": "Dark Drake",
+   "level": 58,
+   "maxHP": 4900,
+   "exp": 179,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6300100,
+   "name_ko_candidate": "[★] 버푼",
+   "name_ko_status": "candidate",
+   "name_en": "Buffoon",
+   "level": 74,
+   "maxHP": 14000,
+   "exp": 382,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 6400100,
+   "name_ko_candidate": "[★] 딥 버푼",
+   "name_ko_status": "candidate",
+   "name_en": "Deep Buffoon",
+   "level": 106,
+   "maxHP": 77000,
+   "exp": 1526,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130000,
+   "name_en": "Lucida",
+   "level": 54,
+   "maxHP": 3800,
+   "exp": 151,
+   "name_ko_candidate": "루이넬",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130002,
+   "name_en": "Beetle",
+   "level": 99,
+   "maxHP": 63000,
+   "exp": 1301,
+   "name_ko_candidate": "비틀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130003,
+   "name_en": "Dual Beetle",
+   "level": 105,
+   "maxHP": 75000,
+   "exp": 1495,
+   "name_ko_candidate": "듀얼 비틀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130004,
+   "name_en": "Hankie",
+   "level": 107,
+   "maxHP": 79000,
+   "exp": 1557,
+   "name_ko_candidate": "헹키",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130010,
+   "name_ko_candidate": "[★] 데스테니",
+   "name_ko_status": "candidate",
+   "name_en": "Death Teddy",
+   "level": 112,
+   "maxHP": 89000,
+   "exp": 1709,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130100,
+   "name_ko_candidate": "타우로마시스",
+   "name_ko_status": "candidate",
+   "name_en": "Tauromacis",
+   "level": 62,
+   "maxHP": 6300,
+   "exp": 213,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130101,
+   "name_ko_candidate": "타우로스피어",
+   "name_ko_status": "candidate",
+   "name_en": "Taurospear",
+   "level": 64,
+   "maxHP": 7100,
+   "exp": 232,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130500,
+   "name_en": "Rash",
+   "level": 97,
+   "maxHP": 59000,
+   "exp": 1234,
+   "name_ko_candidate": "레쉬",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130501,
+   "name_en": "Dark Rash",
+   "level": 103,
+   "maxHP": 71000,
+   "exp": 1431,
+   "name_ko_candidate": "다크 레쉬",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130600,
+   "name_en": "Hobi",
+   "level": 101,
+   "maxHP": 67000,
+   "exp": 1367,
+   "name_ko_candidate": "호브",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7130601,
+   "name_en": "Green Hobi",
+   "level": 105,
+   "maxHP": 75000,
+   "exp": 1495,
+   "name_ko_candidate": "핀호브",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7140000,
+   "name_ko_candidate": "[★] 파이렛",
+   "name_ko_status": "candidate",
+   "name_en": "Ghost Pirate",
+   "level": 110,
+   "maxHP": 85000,
+   "exp": 1649,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7150000,
+   "name_en": "Racoco",
+   "level": 70,
+   "maxHP": 10000,
+   "exp": 296,
+   "name_ko_candidate": "라키",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7150001,
+   "name_en": "Big Spider",
+   "level": 72,
+   "maxHP": 12000,
+   "exp": 340,
+   "name_ko_candidate": "빅 스파이더",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7150002,
+   "name_en": "Cart Bear",
+   "level": 74,
+   "maxHP": 14000,
+   "exp": 382,
+   "name_ko_candidate": "카트베어",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7150003,
+   "name_en": "Racaroni",
+   "level": 76,
+   "maxHP": 17000,
+   "exp": 446,
+   "name_ko_candidate": "라쿤",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 7150004,
+   "name_en": "Guard Robot L",
+   "level": 79,
+   "maxHP": 23000,
+   "exp": 570,
+   "name_ko_candidate": "경비로봇L",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8105000,
+   "name_en": "Raco",
+   "level": 82,
+   "maxHP": 29000,
+   "exp": 689,
+   "name_ko_candidate": "라칸",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140001,
+   "name_en": "Harp",
+   "level": 109,
+   "maxHP": 83000,
+   "exp": 1618,
+   "name_ko_candidate": "하프",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140002,
+   "name_en": "Blood Harp",
+   "level": 112,
+   "maxHP": 89000,
+   "exp": 1709,
+   "name_ko_candidate": "블러드 하프",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140101,
+   "name_en": "Black Kentaurus",
+   "level": 118,
+   "maxHP": 101000,
+   "exp": 1884,
+   "name_ko_candidate": "검은 켄타우로스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140102,
+   "name_en": "Red Kentaurus",
+   "level": 118,
+   "maxHP": 101000,
+   "exp": 1884,
+   "name_ko_candidate": "붉은 켄타우로스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140103,
+   "name_en": "Blue Kentaurus",
+   "level": 118,
+   "maxHP": 101000,
+   "exp": 1884,
+   "name_ko_candidate": "푸른 켄타우로스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140110,
+   "name_en": "Birk",
+   "level": 114,
+   "maxHP": 93000,
+   "exp": 1768,
+   "name_ko_candidate": "버크",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140111,
+   "name_en": "Dual Birk",
+   "level": 116,
+   "maxHP": 97000,
+   "exp": 1826,
+   "name_ko_candidate": "듀얼 버크",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140200,
+   "name_ko_candidate": "[★] 클라크",
+   "name_ko_status": "candidate",
+   "name_en": "Klock",
+   "level": 102,
+   "maxHP": 69000,
+   "exp": 1399,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140300,
+   "name_ko_candidate": "[★] 다크 클라크",
+   "name_ko_status": "candidate",
+   "name_en": "Dark Klock",
+   "level": 105,
+   "maxHP": 75000,
+   "exp": 1495,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140700,
+   "name_en": "Blue Dragon Turtle",
+   "level": 127,
+   "maxHP": 120000,
+   "exp": 2149,
+   "name_ko_candidate": "블루 드래곤터틀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140701,
+   "name_en": "Red Dragon Turtle",
+   "level": 128,
+   "maxHP": 125000,
+   "exp": 2226,
+   "name_ko_candidate": "레드 드래곤터틀",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140702,
+   "name_en": "Rexton",
+   "level": 131,
+   "maxHP": 140000,
+   "exp": 2454,
+   "name_ko_candidate": "리스튼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8140703,
+   "name_en": "Brexton",
+   "level": 133,
+   "maxHP": 150000,
+   "exp": 2603,
+   "name_ko_candidate": "브레스튼",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8141000,
+   "name_ko_candidate": "[★] 바이킹",
+   "name_ko_status": "candidate",
+   "name_en": "Spirit Viking",
+   "level": 119,
+   "maxHP": 103000,
+   "exp": 1912,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8142000,
+   "name_ko_candidate": "[★] 팬텀워치",
+   "name_ko_status": "candidate",
+   "name_en": "Phantom Watch",
+   "level": 121,
+   "maxHP": 107000,
+   "exp": 1968,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8150200,
+   "name_en": "Green Cornian",
+   "level": 136,
+   "maxHP": 165000,
+   "exp": 2823,
+   "name_ko_candidate": "그린코니언",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8150201,
+   "name_en": "Dark Cornian",
+   "level": 142,
+   "maxHP": 195000,
+   "exp": 3250,
+   "name_ko_candidate": "다크 코니언",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8150300,
+   "name_en": "Red Wyvern",
+   "level": 134,
+   "maxHP": 155000,
+   "exp": 2677,
+   "name_ko_candidate": "레드 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8150301,
+   "name_en": "Blue Wyvern",
+   "level": 137,
+   "maxHP": 170000,
+   "exp": 2896,
+   "name_ko_candidate": "블루 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8150302,
+   "name_en": "Dark Wyvern",
+   "level": 141,
+   "maxHP": 190000,
+   "exp": 3180,
+   "name_ko_candidate": "다크 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8160000,
+   "name_ko_candidate": "[★] 게이트키퍼",
+   "name_ko_status": "candidate",
+   "name_en": "Gatekeeper",
+   "level": 126,
+   "maxHP": 118000,
+   "exp": 2122,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8170000,
+   "name_ko_candidate": "[★] 타나토스",
+   "name_ko_status": "candidate",
+   "name_en": "Thanatos",
+   "level": 126,
+   "maxHP": 118000,
+   "exp": 2122,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8180000,
+   "name_en": "Manon",
+   "level": 120,
+   "maxHP": 3700000,
+   "exp": 13500,
+   "name_ko_candidate": "마뇽",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8180001,
+   "name_en": "Griffey",
+   "level": 120,
+   "maxHP": 3700000,
+   "exp": 13500,
+   "name_ko_candidate": "그리프",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8190000,
+   "name_en": "Jr. Newtie",
+   "level": 145,
+   "maxHP": 210000,
+   "exp": 3458,
+   "name_ko_candidate": "뉴트주니어",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8190001,
+   "name_en": "Jr. Newtie",
+   "level": 145,
+   "maxHP": 210000,
+   "exp": null,
+   "name_ko_candidate": "뉴트주니어",
+   "name_ko_status": "candidate",
+   "exp_status": "원본 응답 meta에 exp 필드 없음 — 미확인",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8190003,
+   "name_en": "Skelegon",
+   "level": 147,
+   "maxHP": 220000,
+   "exp": 3594,
+   "name_ko_candidate": "스켈레곤",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8190004,
+   "name_en": "Skelosaurus",
+   "level": 153,
+   "maxHP": 260000,
+   "exp": 4146,
+   "name_ko_candidate": "스켈로스",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8190005,
+   "name_en": "Nest Golem",
+   "level": 150,
+   "maxHP": 235000,
+   "exp": 3795,
+   "name_ko_candidate": "네스트골렘",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300000,
+   "name_en": "Soaring Hawk ",
+   "level": 103,
+   "maxHP": 142000,
+   "exp": 2862,
+   "name_ko_candidate": "플라잉 호크",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300001,
+   "name_en": "Soaring Eagle",
+   "level": 103,
+   "maxHP": 142000,
+   "exp": 2862,
+   "name_ko_candidate": "플라잉 이글",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300002,
+   "name_en": "Soaring Red Wyvern ",
+   "level": 104,
+   "maxHP": 146000,
+   "exp": 2926,
+   "name_ko_candidate": "플라잉 레드 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300003,
+   "name_en": "Soaring Blue Wyvern ",
+   "level": 104,
+   "maxHP": 146000,
+   "exp": 2926,
+   "name_ko_candidate": "플라잉 블루 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300004,
+   "name_en": "Soaring Black Wyvern ",
+   "level": 105,
+   "maxHP": 150000,
+   "exp": 2990,
+   "name_ko_candidate": "플라잉 블랙 와이번",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300005,
+   "name_en": "Soaring Griffey",
+   "level": 120,
+   "maxHP": 3230000,
+   "exp": 13000,
+   "name_ko_candidate": "플라잉 그리프",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 8300006,
+   "name_en": "Dragonoir",
+   "level": 107,
+   "maxHP": 107000000,
+   "exp": 320000,
+   "name_ko_candidate": "드래고니카",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9001003,
+   "name_ko_candidate": "다크로드의 분신",
+   "name_ko_status": "candidate",
+   "name_en": "Dark Lord's Clone",
+   "level": 80,
+   "maxHP": 120000,
+   "exp": 2400,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9001015,
+   "name_ko_candidate": "쉐도우 듀어러",
+   "name_ko_status": "candidate",
+   "name_en": "Shadow Dual Blade",
+   "level": 20,
+   "maxHP": 375,
+   "exp": 35,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9001016,
+   "name_ko_candidate": "자이언트 쉐도우",
+   "name_ko_status": "candidate",
+   "name_en": "Giant Shadow Blade",
+   "level": 25,
+   "maxHP": 525,
+   "exp": 44,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9001017,
+   "name_ko_candidate": "쉐도우 블레이드",
+   "name_ko_status": "candidate",
+   "name_en": "Shadow Blade Lord",
+   "level": 30,
+   "maxHP": 900,
+   "exp": 60,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300386,
+   "name_ko_candidate": "수련생 스포아",
+   "name_ko_status": "candidate",
+   "name_en": "Trainee Spore",
+   "level": 12,
+   "maxHP": 175,
+   "exp": 21,
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300409,
+   "name_en": "Training Robot A",
+   "level": 10,
+   "maxHP": 125,
+   "exp": 17,
+   "name_ko_candidate": "훈련로봇A",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300410,
+   "name_en": "Training Robot B",
+   "level": 11,
+   "maxHP": 150,
+   "exp": 19,
+   "name_ko_candidate": "훈련로봇B",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300411,
+   "name_en": "Training Robot C",
+   "level": 12,
+   "maxHP": 525,
+   "exp": 21,
+   "name_ko_candidate": "훈련로봇C",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300412,
+   "name_en": "Training Robot O",
+   "level": 13,
+   "maxHP": 180,
+   "exp": 22,
+   "name_ko_candidate": "훈련로봇 0",
+   "name_ko_status": "candidate",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300414,
+   "name_en": "Suspicious Thief",
+   "level": 23,
+   "maxHP": 930,
+   "exp": null,
+   "name_ko_candidate": "수상한 도적",
+   "name_ko_status": "candidate",
+   "exp_status": "원본 응답 meta에 exp 필드 없음 — 미확인",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300418,
+   "name_en": "Fabio's Firebomb",
+   "level": 30,
+   "maxHP": 1800,
+   "exp": null,
+   "name_ko_candidate": "파비오의 파이어봄",
+   "name_ko_status": "candidate",
+   "exp_status": "원본 응답 meta에 exp 필드 없음 — 미확인",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9300419,
+   "name_en": "Mansion Guard Robot",
+   "level": 27,
+   "maxHP": 1300,
+   "exp": null,
+   "name_ko_candidate": "저택 경비로봇",
+   "name_ko_status": "candidate",
+   "exp_status": "원본 응답 meta에 exp 필드 없음 — 미확인",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 9400400,
+   "name_ko_candidate": "하급닌자",
+   "name_ko_status": "adopted",
+   "name_en": "Genin",
+   "level": 25,
+   "maxHP": 525,
+   "exp": 44,
+   "name_ko_source": "ref_melandb",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (레퍼런스 대조 — 메랜디비 ID 대조, 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400401,
+   "name_ko_candidate": "중급닌자",
+   "name_ko_status": "adopted",
+   "name_en": "Chunin",
+   "level": 50,
+   "maxHP": 3000,
+   "exp": 130,
+   "name_ko_source": "ref_melandb",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (레퍼런스 대조 — 메랜디비 ID 대조, 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400404,
+   "name_ko_candidate": "아시가루",
+   "name_ko_status": "adopted",
+   "name_en": "Ashigaru",
+   "level": 30,
+   "maxHP": 900,
+   "exp": 60,
+   "name_ko_source": "ref_melandb",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (레퍼런스 대조 — 메랜디비 ID 대조, 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400551,
+   "name_ko_candidate": "밥",
+   "name_ko_status": "adopted",
+   "name_en": "Bob",
+   "level": 2,
+   "maxHP": 777,
+   "exp": 7,
+   "name_ko_source": "self_transliteration",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 음차 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400614,
+   "name_ko_candidate": "이상한 주황버섯",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Orange Mushroom",
+   "level": 8,
+   "maxHP": 80,
+   "exp": 15,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400615,
+   "name_ko_candidate": "이상한 리본 돼지",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Ribbon Pig",
+   "level": 10,
+   "maxHP": 120,
+   "exp": 20,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400616,
+   "name_ko_candidate": "이상한 초록버섯",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Green Mushroom",
+   "level": 15,
+   "maxHP": 250,
+   "exp": 26,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400617,
+   "name_ko_candidate": "이상한 돼지",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Pig",
+   "level": 7,
+   "maxHP": 75,
+   "exp": 15,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400620,
+   "name_ko_candidate": "이상한 다크 스텀프",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Dark Stump",
+   "level": 10,
+   "maxHP": 250,
+   "exp": 18,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9400657,
+   "name_ko_candidate": "이상한 초록버섯",
+   "name_ko_status": "adopted",
+   "name_en": "Strange Green Mushroom",
+   "level": 15,
+   "maxHP": 250,
+   "exp": 26,
+   "name_ko_source": "self_translation",
+   "name_ko_provenance": {
+    "adopted_by": "기술이사 게이트",
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 기술이사 게이트 채택 2026-10-28)",
+    "adopted_date": "2026-10-28",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "기술이사 게이트 채택 2026-10-28"
+   }
+  },
+  {
+   "id": 9500389,
+   "name_ko_candidate": "힘센 돌 도깨비",
+   "name_ko_status": "candidate",
+   "name_en": "Strong Stone Goblin",
+   "level": 66,
+   "maxHP": 8000,
+   "exp": 428,
+   "name_ko_source": "KMS 389"
+  }
+ ]
+}
