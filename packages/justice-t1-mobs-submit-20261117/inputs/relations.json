@@ -1,0 +1,1650 @@
+{
+ "build_id": "alpang-db-20261014-0100",
+ "relations": [
+  {
+   "map_id": 100040000,
+   "mob_id": 5130101,
+   "placements": 7
+  },
+  {
+   "map_id": 102040000,
+   "mob_id": 2230110,
+   "placements": 18
+  },
+  {
+   "map_id": 100040500,
+   "mob_id": 5150000,
+   "placements": 15
+  },
+  {
+   "map_id": 310050500,
+   "mob_id": 7150000,
+   "placements": 10
+  },
+  {
+   "map_id": 910540400,
+   "mob_id": 9001003,
+   "placements": 1
+  },
+  {
+   "map_id": 240040815,
+   "mob_id": 8190003,
+   "placements": 8
+  },
+  {
+   "map_id": 240040815,
+   "mob_id": 8190004,
+   "placements": 9
+  },
+  {
+   "map_id": 677000004,
+   "mob_id": 2130100,
+   "placements": 7
+  },
+  {
+   "map_id": 950100700,
+   "mob_id": 9500389,
+   "placements": 15
+  },
+  {
+   "map_id": 220010600,
+   "mob_id": 3000005,
+   "placements": 11
+  },
+  {
+   "map_id": 101030406,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 912030004,
+   "mob_id": 1110100,
+   "placements": 9
+  },
+  {
+   "map_id": 912030004,
+   "mob_id": 1210100,
+   "placements": 25
+  },
+  {
+   "map_id": 200020000,
+   "mob_id": 3230200,
+   "placements": 24
+  },
+  {
+   "map_id": 200080800,
+   "mob_id": 5200002,
+   "placements": 19
+  },
+  {
+   "map_id": 240010500,
+   "mob_id": 8140111,
+   "placements": 18
+  },
+  {
+   "map_id": 240020500,
+   "mob_id": 8140102,
+   "placements": 10
+  },
+  {
+   "map_id": 240020500,
+   "mob_id": 8140103,
+   "placements": 7
+  },
+  {
+   "map_id": 240040600,
+   "mob_id": 8190004,
+   "placements": 7
+  },
+  {
+   "map_id": 800040200,
+   "mob_id": 9400400,
+   "placements": 23
+  },
+  {
+   "map_id": 800040305,
+   "mob_id": 9400400,
+   "placements": 1
+  },
+  {
+   "map_id": 800040305,
+   "mob_id": 9400401,
+   "placements": 1
+  },
+  {
+   "map_id": 800040305,
+   "mob_id": 9400404,
+   "placements": 1
+  },
+  {
+   "map_id": 200010100,
+   "mob_id": 3210200,
+   "placements": 7
+  },
+  {
+   "map_id": 200010100,
+   "mob_id": 3210201,
+   "placements": 7
+  },
+  {
+   "map_id": 200010100,
+   "mob_id": 3210202,
+   "placements": 7
+  },
+  {
+   "map_id": 200010120,
+   "mob_id": 3210201,
+   "placements": 22
+  },
+  {
+   "map_id": 200010200,
+   "mob_id": 5120001,
+   "placements": 8
+  },
+  {
+   "map_id": 200010200,
+   "mob_id": 5120002,
+   "placements": 11
+  },
+  {
+   "map_id": 200010200,
+   "mob_id": 5120003,
+   "placements": 9
+  },
+  {
+   "map_id": 200010302,
+   "mob_id": 7130000,
+   "placements": 21
+  },
+  {
+   "map_id": 200040001,
+   "mob_id": 4130102,
+   "placements": 12
+  },
+  {
+   "map_id": 200040001,
+   "mob_id": 4230105,
+   "placements": 18
+  },
+  {
+   "map_id": 200070000,
+   "mob_id": 5120000,
+   "placements": 26
+  },
+  {
+   "map_id": 200080400,
+   "mob_id": 3000000,
+   "placements": 18
+  },
+  {
+   "map_id": 200080700,
+   "mob_id": 5200002,
+   "placements": 16
+  },
+  {
+   "map_id": 200081100,
+   "mob_id": 5200001,
+   "placements": 22
+  },
+  {
+   "map_id": 200081300,
+   "mob_id": 5300000,
+   "placements": 21
+  },
+  {
+   "map_id": 200081700,
+   "mob_id": 5300001,
+   "placements": 19
+  },
+  {
+   "map_id": 200082000,
+   "mob_id": 5400000,
+   "placements": 19
+  },
+  {
+   "map_id": 240010000,
+   "mob_id": 7130500,
+   "placements": 16
+  },
+  {
+   "map_id": 240010200,
+   "mob_id": 7130600,
+   "placements": 12
+  },
+  {
+   "map_id": 240010200,
+   "mob_id": 7130601,
+   "placements": 10
+  },
+  {
+   "map_id": 240010800,
+   "mob_id": 8140001,
+   "placements": 14
+  },
+  {
+   "map_id": 240011000,
+   "mob_id": 7130002,
+   "placements": 15
+  },
+  {
+   "map_id": 240020101,
+   "mob_id": 8140101,
+   "placements": 3
+  },
+  {
+   "map_id": 240020101,
+   "mob_id": 8140102,
+   "placements": 3
+  },
+  {
+   "map_id": 240020101,
+   "mob_id": 8180001,
+   "placements": 1
+  },
+  {
+   "map_id": 240020300,
+   "mob_id": 8140101,
+   "placements": 9
+  },
+  {
+   "map_id": 240020300,
+   "mob_id": 8140103,
+   "placements": 9
+  },
+  {
+   "map_id": 240030000,
+   "mob_id": 8140700,
+   "placements": 14
+  },
+  {
+   "map_id": 240030102,
+   "mob_id": 8150201,
+   "placements": 14
+  },
+  {
+   "map_id": 240040000,
+   "mob_id": 8150300,
+   "placements": 6
+  },
+  {
+   "map_id": 240040000,
+   "mob_id": 8150301,
+   "placements": 2
+  },
+  {
+   "map_id": 240040300,
+   "mob_id": 8150302,
+   "placements": 16
+  },
+  {
+   "map_id": 240040510,
+   "mob_id": 8190003,
+   "placements": 11
+  },
+  {
+   "map_id": 240040510,
+   "mob_id": 8190004,
+   "placements": 6
+  },
+  {
+   "map_id": 240040521,
+   "mob_id": 8190005,
+   "placements": 11
+  },
+  {
+   "map_id": 240080100,
+   "mob_id": 8300000,
+   "placements": 29
+  },
+  {
+   "map_id": 240080400,
+   "mob_id": 8300003,
+   "placements": 14
+  },
+  {
+   "map_id": 240080400,
+   "mob_id": 8300004,
+   "placements": 12
+  },
+  {
+   "map_id": 310010300,
+   "mob_id": 9300411,
+   "placements": 12
+  },
+  {
+   "map_id": 310020100,
+   "mob_id": 150001,
+   "placements": 10
+  },
+  {
+   "map_id": 310030110,
+   "mob_id": 1150002,
+   "placements": 13
+  },
+  {
+   "map_id": 310040000,
+   "mob_id": 2150003,
+   "placements": 18
+  },
+  {
+   "map_id": 310040400,
+   "mob_id": 3150002,
+   "placements": 12
+  },
+  {
+   "map_id": 310050300,
+   "mob_id": 6150000,
+   "placements": 12
+  },
+  {
+   "map_id": 310050600,
+   "mob_id": 7150001,
+   "placements": 10
+  },
+  {
+   "map_id": 931000420,
+   "mob_id": 9300414,
+   "placements": 5
+  },
+  {
+   "map_id": 200010000,
+   "mob_id": 3230200,
+   "placements": 38
+  },
+  {
+   "map_id": 200010110,
+   "mob_id": 3210200,
+   "placements": 22
+  },
+  {
+   "map_id": 200010111,
+   "mob_id": 5120001,
+   "placements": 29
+  },
+  {
+   "map_id": 200010121,
+   "mob_id": 5120002,
+   "placements": 30
+  },
+  {
+   "map_id": 200010130,
+   "mob_id": 3210202,
+   "placements": 23
+  },
+  {
+   "map_id": 200010131,
+   "mob_id": 5120003,
+   "placements": 28
+  },
+  {
+   "map_id": 200010300,
+   "mob_id": 7130000,
+   "placements": 8
+  },
+  {
+   "map_id": 200010301,
+   "mob_id": 6230401,
+   "placements": 14
+  },
+  {
+   "map_id": 200030000,
+   "mob_id": 4230122,
+   "placements": 22
+  },
+  {
+   "map_id": 200040000,
+   "mob_id": 4230106,
+   "placements": 29
+  },
+  {
+   "map_id": 200050000,
+   "mob_id": 4230106,
+   "placements": 36
+  },
+  {
+   "map_id": 200060000,
+   "mob_id": 4130104,
+   "placements": 22
+  },
+  {
+   "map_id": 200080000,
+   "mob_id": 5120000,
+   "placements": 31
+  },
+  {
+   "map_id": 200080200,
+   "mob_id": 5200000,
+   "placements": 23
+  },
+  {
+   "map_id": 200080300,
+   "mob_id": 5200000,
+   "placements": 25
+  },
+  {
+   "map_id": 200080500,
+   "mob_id": 3000000,
+   "placements": 22
+  },
+  {
+   "map_id": 200080600,
+   "mob_id": 3000000,
+   "placements": 16
+  },
+  {
+   "map_id": 200080900,
+   "mob_id": 5200002,
+   "placements": 21
+  },
+  {
+   "map_id": 200081000,
+   "mob_id": 5200001,
+   "placements": 25
+  },
+  {
+   "map_id": 200081200,
+   "mob_id": 5200001,
+   "placements": 20
+  },
+  {
+   "map_id": 200081400,
+   "mob_id": 5300000,
+   "placements": 15
+  },
+  {
+   "map_id": 200081500,
+   "mob_id": 5300000,
+   "placements": 23
+  },
+  {
+   "map_id": 200081600,
+   "mob_id": 5300000,
+   "placements": 16
+  },
+  {
+   "map_id": 200081600,
+   "mob_id": 5300001,
+   "placements": 9
+  },
+  {
+   "map_id": 200081800,
+   "mob_id": 5300001,
+   "placements": 17
+  },
+  {
+   "map_id": 200081900,
+   "mob_id": 5300001,
+   "placements": 26
+  },
+  {
+   "map_id": 200082100,
+   "mob_id": 5400000,
+   "placements": 23
+  },
+  {
+   "map_id": 200082300,
+   "mob_id": 3210450,
+   "placements": 19
+  },
+  {
+   "map_id": 240010100,
+   "mob_id": 7130501,
+   "placements": 24
+  },
+  {
+   "map_id": 240010101,
+   "mob_id": 7130500,
+   "placements": 6
+  },
+  {
+   "map_id": 240010101,
+   "mob_id": 7130501,
+   "placements": 30
+  },
+  {
+   "map_id": 240010300,
+   "mob_id": 7130004,
+   "placements": 14
+  },
+  {
+   "map_id": 240010400,
+   "mob_id": 8140110,
+   "placements": 17
+  },
+  {
+   "map_id": 240010600,
+   "mob_id": 8140002,
+   "placements": 14
+  },
+  {
+   "map_id": 240010700,
+   "mob_id": 8140001,
+   "placements": 8
+  },
+  {
+   "map_id": 240010700,
+   "mob_id": 8140002,
+   "placements": 2
+  },
+  {
+   "map_id": 240010900,
+   "mob_id": 7130003,
+   "placements": 18
+  },
+  {
+   "map_id": 240010901,
+   "mob_id": 7130002,
+   "placements": 4
+  },
+  {
+   "map_id": 240010901,
+   "mob_id": 7130003,
+   "placements": 17
+  },
+  {
+   "map_id": 240020000,
+   "mob_id": 8140102,
+   "placements": 11
+  },
+  {
+   "map_id": 240020100,
+   "mob_id": 8140101,
+   "placements": 12
+  },
+  {
+   "map_id": 240020100,
+   "mob_id": 8140102,
+   "placements": 12
+  },
+  {
+   "map_id": 240020102,
+   "mob_id": 8140101,
+   "placements": 3
+  },
+  {
+   "map_id": 240020102,
+   "mob_id": 8140102,
+   "placements": 3
+  },
+  {
+   "map_id": 240020102,
+   "mob_id": 8180001,
+   "placements": 1
+  },
+  {
+   "map_id": 240020200,
+   "mob_id": 8140101,
+   "placements": 14
+  },
+  {
+   "map_id": 240020400,
+   "mob_id": 8140103,
+   "placements": 22
+  },
+  {
+   "map_id": 240020401,
+   "mob_id": 8140103,
+   "placements": 6
+  },
+  {
+   "map_id": 240020401,
+   "mob_id": 8180000,
+   "placements": 1
+  },
+  {
+   "map_id": 240020402,
+   "mob_id": 8140103,
+   "placements": 6
+  },
+  {
+   "map_id": 240020402,
+   "mob_id": 8180000,
+   "placements": 1
+  },
+  {
+   "map_id": 240030100,
+   "mob_id": 8140701,
+   "placements": 19
+  },
+  {
+   "map_id": 240030101,
+   "mob_id": 8150200,
+   "placements": 10
+  },
+  {
+   "map_id": 240030200,
+   "mob_id": 8140702,
+   "placements": 15
+  },
+  {
+   "map_id": 240030300,
+   "mob_id": 8140703,
+   "placements": 10
+  },
+  {
+   "map_id": 240040100,
+   "mob_id": 8150300,
+   "placements": 6
+  },
+  {
+   "map_id": 240040100,
+   "mob_id": 8150301,
+   "placements": 6
+  },
+  {
+   "map_id": 240040200,
+   "mob_id": 8150302,
+   "placements": 13
+  },
+  {
+   "map_id": 240040400,
+   "mob_id": 8150300,
+   "placements": 5
+  },
+  {
+   "map_id": 240040400,
+   "mob_id": 8150301,
+   "placements": 5
+  },
+  {
+   "map_id": 240040400,
+   "mob_id": 8150302,
+   "placements": 5
+  },
+  {
+   "map_id": 240040500,
+   "mob_id": 8150302,
+   "placements": 6
+  },
+  {
+   "map_id": 240040511,
+   "mob_id": 8190003,
+   "placements": 8
+  },
+  {
+   "map_id": 240040511,
+   "mob_id": 8190004,
+   "placements": 9
+  },
+  {
+   "map_id": 240040520,
+   "mob_id": 8190000,
+   "placements": 8
+  },
+  {
+   "map_id": 240040520,
+   "mob_id": 8190001,
+   "placements": 5
+  },
+  {
+   "map_id": 240080200,
+   "mob_id": 8300001,
+   "placements": 29
+  },
+  {
+   "map_id": 240080300,
+   "mob_id": 8300002,
+   "placements": 14
+  },
+  {
+   "map_id": 240080300,
+   "mob_id": 8300003,
+   "placements": 9
+  },
+  {
+   "map_id": 240080500,
+   "mob_id": 8300004,
+   "placements": 9
+  },
+  {
+   "map_id": 240080500,
+   "mob_id": 8300005,
+   "placements": 1
+  },
+  {
+   "map_id": 240080600,
+   "mob_id": 8300006,
+   "placements": 1
+  },
+  {
+   "map_id": 310010100,
+   "mob_id": 9300409,
+   "placements": 16
+  },
+  {
+   "map_id": 310010200,
+   "mob_id": 9300410,
+   "placements": 10
+  },
+  {
+   "map_id": 310010400,
+   "mob_id": 9300412,
+   "placements": 14
+  },
+  {
+   "map_id": 310020000,
+   "mob_id": 150000,
+   "placements": 12
+  },
+  {
+   "map_id": 310020200,
+   "mob_id": 150002,
+   "placements": 9
+  },
+  {
+   "map_id": 310030000,
+   "mob_id": 1150000,
+   "placements": 13
+  },
+  {
+   "map_id": 310030100,
+   "mob_id": 1150001,
+   "placements": 14
+  },
+  {
+   "map_id": 310030200,
+   "mob_id": 2150000,
+   "placements": 12
+  },
+  {
+   "map_id": 310030300,
+   "mob_id": 2150001,
+   "placements": 15
+  },
+  {
+   "map_id": 310030310,
+   "mob_id": 2150002,
+   "placements": 12
+  },
+  {
+   "map_id": 310040100,
+   "mob_id": 3150000,
+   "placements": 16
+  },
+  {
+   "map_id": 310040300,
+   "mob_id": 3150001,
+   "placements": 14
+  },
+  {
+   "map_id": 310050200,
+   "mob_id": 6150000,
+   "placements": 10
+  },
+  {
+   "map_id": 310050510,
+   "mob_id": 7150003,
+   "placements": 10
+  },
+  {
+   "map_id": 310050520,
+   "mob_id": 8105000,
+   "placements": 7
+  },
+  {
+   "map_id": 310050700,
+   "mob_id": 7150002,
+   "placements": 16
+  },
+  {
+   "map_id": 310050800,
+   "mob_id": 7150004,
+   "placements": 11
+  },
+  {
+   "map_id": 931010010,
+   "mob_id": 9300419,
+   "placements": 6
+  },
+  {
+   "map_id": 931010030,
+   "mob_id": 9300418,
+   "placements": 7
+  },
+  {
+   "map_id": 101030405,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 103050340,
+   "mob_id": 9001016,
+   "placements": 21
+  },
+  {
+   "map_id": 910060000,
+   "mob_id": 210100,
+   "placements": 22
+  },
+  {
+   "map_id": 910060000,
+   "mob_id": 1210101,
+   "placements": 9
+  },
+  {
+   "map_id": 220020200,
+   "mob_id": 4230111,
+   "placements": 15
+  },
+  {
+   "map_id": 220040400,
+   "mob_id": 4230115,
+   "placements": 34
+  },
+  {
+   "map_id": 221021300,
+   "mob_id": 3230103,
+   "placements": 11
+  },
+  {
+   "map_id": 221021300,
+   "mob_id": 3230302,
+   "placements": 11
+  },
+  {
+   "map_id": 221022700,
+   "mob_id": 3210205,
+   "placements": 20
+  },
+  {
+   "map_id": 100010000,
+   "mob_id": 1210102,
+   "placements": 20
+  },
+  {
+   "map_id": 100020000,
+   "mob_id": 1110100,
+   "placements": 19
+  },
+  {
+   "map_id": 100020000,
+   "mob_id": 1210102,
+   "placements": 6
+  },
+  {
+   "map_id": 100040100,
+   "mob_id": 5130101,
+   "placements": 9
+  },
+  {
+   "map_id": 100040100,
+   "mob_id": 5130102,
+   "placements": 3
+  },
+  {
+   "map_id": 101010000,
+   "mob_id": 210100,
+   "placements": 13
+  },
+  {
+   "map_id": 101010000,
+   "mob_id": 1210102,
+   "placements": 4
+  },
+  {
+   "map_id": 102030000,
+   "mob_id": 2230102,
+   "placements": 20
+  },
+  {
+   "map_id": 102030000,
+   "mob_id": 2230112,
+   "placements": 13
+  },
+  {
+   "map_id": 103030000,
+   "mob_id": 2130103,
+   "placements": 31
+  },
+  {
+   "map_id": 104010000,
+   "mob_id": 100100,
+   "placements": 7
+  },
+  {
+   "map_id": 104010000,
+   "mob_id": 100101,
+   "placements": 7
+  },
+  {
+   "map_id": 101010102,
+   "mob_id": 1110100,
+   "placements": 16
+  },
+  {
+   "map_id": 101010102,
+   "mob_id": 1110101,
+   "placements": 18
+  },
+  {
+   "map_id": 101010102,
+   "mob_id": 9400620,
+   "placements": 4
+  },
+  {
+   "map_id": 101010102,
+   "mob_id": 9400657,
+   "placements": 5
+  },
+  {
+   "map_id": 101030401,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 101030402,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 101030403,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 101030404,
+   "mob_id": 4230100,
+   "placements": 17
+  },
+  {
+   "map_id": 102050000,
+   "mob_id": 130101,
+   "placements": 9
+  },
+  {
+   "map_id": 102050000,
+   "mob_id": 210100,
+   "placements": 8
+  },
+  {
+   "map_id": 102050000,
+   "mob_id": 1210102,
+   "placements": 16
+  },
+  {
+   "map_id": 103050310,
+   "mob_id": 9001015,
+   "placements": 21
+  },
+  {
+   "map_id": 103050370,
+   "mob_id": 9001017,
+   "placements": 20
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 1110100,
+   "placements": 7
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 1210100,
+   "placements": 8
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 1210101,
+   "placements": 12
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 1210102,
+   "placements": 9
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 9400614,
+   "placements": 2
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 9400615,
+   "placements": 2
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 9400616,
+   "placements": 1
+  },
+  {
+   "map_id": 104040001,
+   "mob_id": 9400617,
+   "placements": 2
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 1110100,
+   "placements": 11
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 1210101,
+   "placements": 13
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 1210102,
+   "placements": 11
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 9400614,
+   "placements": 3
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 9400615,
+   "placements": 2
+  },
+  {
+   "map_id": 104040002,
+   "mob_id": 9400616,
+   "placements": 2
+  },
+  {
+   "map_id": 910060100,
+   "mob_id": 9300386,
+   "placements": 19
+  },
+  {
+   "map_id": 910060101,
+   "mob_id": 9300386,
+   "placements": 19
+  },
+  {
+   "map_id": 910120000,
+   "mob_id": 210100,
+   "placements": 22
+  },
+  {
+   "map_id": 910120000,
+   "mob_id": 1110101,
+   "placements": 10
+  },
+  {
+   "map_id": 910220000,
+   "mob_id": 130100,
+   "placements": 29
+  },
+  {
+   "map_id": 910220000,
+   "mob_id": 1110101,
+   "placements": 6
+  },
+  {
+   "map_id": 910310000,
+   "mob_id": 130100,
+   "placements": 20
+  },
+  {
+   "map_id": 910310000,
+   "mob_id": 1120100,
+   "placements": 10
+  },
+  {
+   "map_id": 912030000,
+   "mob_id": 1110100,
+   "placements": 9
+  },
+  {
+   "map_id": 912030000,
+   "mob_id": 1210100,
+   "placements": 25
+  },
+  {
+   "map_id": 912030001,
+   "mob_id": 1110100,
+   "placements": 9
+  },
+  {
+   "map_id": 912030001,
+   "mob_id": 1210100,
+   "placements": 25
+  },
+  {
+   "map_id": 912030002,
+   "mob_id": 1110100,
+   "placements": 9
+  },
+  {
+   "map_id": 912030002,
+   "mob_id": 1210100,
+   "placements": 25
+  },
+  {
+   "map_id": 912030003,
+   "mob_id": 1110100,
+   "placements": 9
+  },
+  {
+   "map_id": 912030003,
+   "mob_id": 1210100,
+   "placements": 25
+  },
+  {
+   "map_id": 105010000,
+   "mob_id": 4130100,
+   "placements": 22
+  },
+  {
+   "map_id": 105010100,
+   "mob_id": 4130100,
+   "placements": 28
+  },
+  {
+   "map_id": 105020000,
+   "mob_id": 5130100,
+   "placements": 21
+  },
+  {
+   "map_id": 105020100,
+   "mob_id": 5130100,
+   "placements": 10
+  },
+  {
+   "map_id": 105020100,
+   "mob_id": 6130100,
+   "placements": 16
+  },
+  {
+   "map_id": 105020200,
+   "mob_id": 6130100,
+   "placements": 15
+  },
+  {
+   "map_id": 105020200,
+   "mob_id": 6230600,
+   "placements": 20
+  },
+  {
+   "map_id": 105020300,
+   "mob_id": 6230600,
+   "placements": 18
+  },
+  {
+   "map_id": 105020300,
+   "mob_id": 6230601,
+   "placements": 13
+  },
+  {
+   "map_id": 105020400,
+   "mob_id": 6230601,
+   "placements": 19
+  },
+  {
+   "map_id": 105020500,
+   "mob_id": 6230601,
+   "placements": 18
+  },
+  {
+   "map_id": 105030100,
+   "mob_id": 6230100,
+   "placements": 8
+  },
+  {
+   "map_id": 105030200,
+   "mob_id": 7130100,
+   "placements": 7
+  },
+  {
+   "map_id": 105030300,
+   "mob_id": 7130100,
+   "placements": 4
+  },
+  {
+   "map_id": 105030300,
+   "mob_id": 7130101,
+   "placements": 4
+  },
+  {
+   "map_id": 105030400,
+   "mob_id": 7130100,
+   "placements": 5
+  },
+  {
+   "map_id": 105030400,
+   "mob_id": 7130101,
+   "placements": 5
+  },
+  {
+   "map_id": 105030500,
+   "mob_id": 7130101,
+   "placements": 4
+  },
+  {
+   "map_id": 105040304,
+   "mob_id": 5130101,
+   "placements": 8
+  },
+  {
+   "map_id": 105040304,
+   "mob_id": 5130102,
+   "placements": 2
+  },
+  {
+   "map_id": 105050400,
+   "mob_id": 2110200,
+   "placements": 9
+  },
+  {
+   "map_id": 105050400,
+   "mob_id": 2230101,
+   "placements": 7
+  },
+  {
+   "map_id": 105050400,
+   "mob_id": 2300100,
+   "placements": 35
+  },
+  {
+   "map_id": 105090300,
+   "mob_id": 6130100,
+   "placements": 21
+  },
+  {
+   "map_id": 105090300,
+   "mob_id": 6230100,
+   "placements": 13
+  },
+  {
+   "map_id": 105090300,
+   "mob_id": 9400551,
+   "placements": 3
+  },
+  {
+   "map_id": 220010000,
+   "mob_id": 3230305,
+   "placements": 9
+  },
+  {
+   "map_id": 220010100,
+   "mob_id": 3210203,
+   "placements": 13
+  },
+  {
+   "map_id": 220010200,
+   "mob_id": 3210204,
+   "placements": 11
+  },
+  {
+   "map_id": 220010300,
+   "mob_id": 3110101,
+   "placements": 12
+  },
+  {
+   "map_id": 220010400,
+   "mob_id": 3000005,
+   "placements": 13
+  },
+  {
+   "map_id": 220010500,
+   "mob_id": 3000005,
+   "placements": 16
+  },
+  {
+   "map_id": 220010700,
+   "mob_id": 3110101,
+   "placements": 10
+  },
+  {
+   "map_id": 220010800,
+   "mob_id": 3210204,
+   "placements": 15
+  },
+  {
+   "map_id": 220010900,
+   "mob_id": 3210203,
+   "placements": 9
+  },
+  {
+   "map_id": 220011000,
+   "mob_id": 3230305,
+   "placements": 12
+  },
+  {
+   "map_id": 220020000,
+   "mob_id": 4230111,
+   "placements": 10
+  },
+  {
+   "map_id": 220020000,
+   "mob_id": 4230112,
+   "placements": 9
+  },
+  {
+   "map_id": 220020100,
+   "mob_id": 4230111,
+   "placements": 13
+  },
+  {
+   "map_id": 220020300,
+   "mob_id": 4230111,
+   "placements": 15
+  },
+  {
+   "map_id": 220020400,
+   "mob_id": 4230111,
+   "placements": 12
+  },
+  {
+   "map_id": 220020500,
+   "mob_id": 4230111,
+   "placements": 11
+  },
+  {
+   "map_id": 220020600,
+   "mob_id": 4230111,
+   "placements": 10
+  },
+  {
+   "map_id": 220020600,
+   "mob_id": 4230112,
+   "placements": 3
+  },
+  {
+   "map_id": 220030000,
+   "mob_id": 4230112,
+   "placements": 12
+  },
+  {
+   "map_id": 220030100,
+   "mob_id": 4230112,
+   "placements": 15
+  },
+  {
+   "map_id": 220030200,
+   "mob_id": 4230112,
+   "placements": 12
+  },
+  {
+   "map_id": 220030300,
+   "mob_id": 4230112,
+   "placements": 12
+  },
+  {
+   "map_id": 220030400,
+   "mob_id": 4230112,
+   "placements": 15
+  },
+  {
+   "map_id": 220040000,
+   "mob_id": 4230114,
+   "placements": 34
+  },
+  {
+   "map_id": 220040100,
+   "mob_id": 3230306,
+   "placements": 46
+  },
+  {
+   "map_id": 220040200,
+   "mob_id": 3210207,
+   "placements": 33
+  },
+  {
+   "map_id": 220040300,
+   "mob_id": 3230306,
+   "placements": 42
+  },
+  {
+   "map_id": 220050000,
+   "mob_id": 4230114,
+   "placements": 36
+  },
+  {
+   "map_id": 220050100,
+   "mob_id": 4230113,
+   "placements": 33
+  },
+  {
+   "map_id": 220050200,
+   "mob_id": 4230115,
+   "placements": 38
+  },
+  {
+   "map_id": 220060000,
+   "mob_id": 6130200,
+   "placements": 14
+  },
+  {
+   "map_id": 220060000,
+   "mob_id": 6230300,
+   "placements": 12
+  },
+  {
+   "map_id": 220060100,
+   "mob_id": 6300100,
+   "placements": 17
+  },
+  {
+   "map_id": 220060100,
+   "mob_id": 6400100,
+   "placements": 7
+  },
+  {
+   "map_id": 220060200,
+   "mob_id": 7140000,
+   "placements": 24
+  },
+  {
+   "map_id": 220060300,
+   "mob_id": 8141000,
+   "placements": 14
+  },
+  {
+   "map_id": 220060400,
+   "mob_id": 8160000,
+   "placements": 2
+  },
+  {
+   "map_id": 220070000,
+   "mob_id": 6230400,
+   "placements": 26
+  },
+  {
+   "map_id": 220070000,
+   "mob_id": 6230500,
+   "placements": 14
+  },
+  {
+   "map_id": 220070100,
+   "mob_id": 8140200,
+   "placements": 20
+  },
+  {
+   "map_id": 220070100,
+   "mob_id": 8140300,
+   "placements": 10
+  },
+  {
+   "map_id": 220070200,
+   "mob_id": 7130010,
+   "placements": 28
+  },
+  {
+   "map_id": 220070300,
+   "mob_id": 8142000,
+   "placements": 26
+  },
+  {
+   "map_id": 220070400,
+   "mob_id": 8170000,
+   "placements": 2
+  },
+  {
+   "map_id": 221020000,
+   "mob_id": 4230110,
+   "placements": 7
+  },
+  {
+   "map_id": 221020100,
+   "mob_id": 4230110,
+   "placements": 7
+  },
+  {
+   "map_id": 221020200,
+   "mob_id": 4230110,
+   "placements": 9
+  },
+  {
+   "map_id": 221020300,
+   "mob_id": 4230109,
+   "placements": 2
+  },
+  {
+   "map_id": 221020300,
+   "mob_id": 4230110,
+   "placements": 5
+  },
+  {
+   "map_id": 221020400,
+   "mob_id": 4230109,
+   "placements": 7
+  },
+  {
+   "map_id": 221020400,
+   "mob_id": 4230110,
+   "placements": 4
+  },
+  {
+   "map_id": 221020500,
+   "mob_id": 4230109,
+   "placements": 9
+  },
+  {
+   "map_id": 221020600,
+   "mob_id": 4230109,
+   "placements": 10
+  },
+  {
+   "map_id": 221020700,
+   "mob_id": 4230109,
+   "placements": 10
+  },
+  {
+   "map_id": 221020800,
+   "mob_id": 3230308,
+   "placements": 15
+  },
+  {
+   "map_id": 221020900,
+   "mob_id": 3230304,
+   "placements": 17
+  },
+  {
+   "map_id": 221021100,
+   "mob_id": 3230303,
+   "placements": 19
+  },
+  {
+   "map_id": 221021200,
+   "mob_id": 3230103,
+   "placements": 16
+  },
+  {
+   "map_id": 221021400,
+   "mob_id": 3230302,
+   "placements": 19
+  },
+  {
+   "map_id": 221021500,
+   "mob_id": 3210206,
+   "placements": 14
+  },
+  {
+   "map_id": 221021700,
+   "mob_id": 3230400,
+   "placements": 23
+  },
+  {
+   "map_id": 221021800,
+   "mob_id": 3230400,
+   "placements": 15
+  },
+  {
+   "map_id": 221021900,
+   "mob_id": 3230400,
+   "placements": 18
+  },
+  {
+   "map_id": 221022000,
+   "mob_id": 3230400,
+   "placements": 20
+  },
+  {
+   "map_id": 221022100,
+   "mob_id": 3230400,
+   "placements": 20
+  },
+  {
+   "map_id": 221022300,
+   "mob_id": 3230307,
+   "placements": 26
+  },
+  {
+   "map_id": 221022400,
+   "mob_id": 3230307,
+   "placements": 22
+  },
+  {
+   "map_id": 221022500,
+   "mob_id": 2230104,
+   "placements": 13
+  },
+  {
+   "map_id": 221022600,
+   "mob_id": 2230103,
+   "placements": 14
+  },
+  {
+   "map_id": 221022800,
+   "mob_id": 3210205,
+   "placements": 15
+  },
+  {
+   "map_id": 221022900,
+   "mob_id": 3110102,
+   "placements": 4
+  },
+  {
+   "map_id": 221022900,
+   "mob_id": 3210205,
+   "placements": 8
+  },
+  {
+   "map_id": 221023000,
+   "mob_id": 3110102,
+   "placements": 10
+  },
+  {
+   "map_id": 221023000,
+   "mob_id": 3210205,
+   "placements": 9
+  },
+  {
+   "map_id": 221023100,
+   "mob_id": 3110102,
+   "placements": 18
+  },
+  {
+   "map_id": 221023200,
+   "mob_id": 3110102,
+   "placements": 14
+  },
+  {
+   "map_id": 222020100,
+   "mob_id": 3210208,
+   "placements": 13
+  },
+  {
+   "map_id": 222020200,
+   "mob_id": 3210208,
+   "placements": 13
+  },
+  {
+   "map_id": 222020300,
+   "mob_id": 3210208,
+   "placements": 15
+  }
+ ]
+}

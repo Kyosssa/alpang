@@ -1,0 +1,7844 @@
+{
+ "build_id": "alpang-db-20261014-0200",
+ "maps": [
+  {
+   "id": 100000000,
+   "mob_ids": [],
+   "name_en": "Henesys",
+   "name_ko_candidate": "헤네시스",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    9010022,
+    1012000,
+    9010010,
+    1103001,
+    9200000,
+    9201001,
+    9201022,
+    9209000,
+    9201118,
+    9201088,
+    9000020,
+    9270075,
+    9000069,
+    9209008,
+    9250042,
+    1012102,
+    1022101,
+    9300010,
+    1012003,
+    1012106,
+    1012108,
+    9000021,
+    9010002,
+    9010000,
+    1012111
+   ],
+   "portalCount": 27,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Henesys",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100010000,
+   "mob_ids": [
+    1210102
+   ],
+   "name_en": "The Hill North of Henesys",
+   "name_ko_candidate": "헤네시스 북쪽언덕",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    1012110,
+    1012115,
+    1012116,
+    1012116,
+    1012116,
+    1012116
+   ],
+   "portalCount": 18,
+   "mobRate": 1.4999983310699463,
+   "state": "ok_mobs",
+   "street_en": "Henesys",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100020000,
+   "mob_ids": [
+    1110100,
+    1210102
+   ],
+   "name_en": "Spore Hill",
+   "name_ko_candidate": "포자언덕",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    1063003,
+    1012119
+   ],
+   "portalCount": 4,
+   "mobRate": 1.4999983310699463,
+   "state": "ok_mobs",
+   "street_en": "Singing Mushroom Forest",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100040000,
+   "mob_ids": [
+    5130101
+   ],
+   "name_en": "Golem's Temple Entrance",
+   "name_ko_candidate": "골렘의 사원 입구",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 0.6999999284744263,
+   "state": "ok_mobs",
+   "street_en": "Golem's Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100040100,
+   "mob_ids": [
+    5130101,
+    5130102
+   ],
+   "name_en": "Golem's Temple 1",
+   "name_ko_candidate": "골렘의 사원1",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.49999991059303284,
+   "state": "ok_mobs",
+   "street_en": "Golem's Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 100040500,
+   "mob_ids": [
+    5150000
+   ],
+   "name_en": "Golem's Castle Ruins",
+   "name_ko_candidate": "무너진 골렘의 성터",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.9999979734420776,
+   "state": "ok_mobs",
+   "street_en": "Golem's Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101000000,
+   "mob_ids": [],
+   "name_en": "Ellinia",
+   "name_ko_candidate": "엘리니아",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    1032002,
+    1032100,
+    9000041,
+    9000017,
+    1103003,
+    2041017,
+    9010022,
+    9000021,
+    1032102,
+    9010000,
+    9010010,
+    1012000,
+    1032101,
+    9100101,
+    9200000,
+    9000020,
+    9201121,
+    9010003,
+    9201024,
+    9270075,
+    9201151,
+    9300010,
+    1032003,
+    1032006,
+    1032104,
+    1032106,
+    1022101,
+    9250044,
+    9000040
+   ],
+   "portalCount": 28,
+   "mobRate": 0,
+   "state": "ok_empty",
+   "street_en": "Ellinia",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101010000,
+   "mob_ids": [
+    210100,
+    1210102
+   ],
+   "name_en": "Shining Forest Path",
+   "name_ko_candidate": "빛나는 숲의 통로",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    1032112
+   ],
+   "portalCount": 4,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_mobs",
+   "street_en": "Way to the Forest",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101010102,
+   "mob_ids": [
+    1110100,
+    1110101,
+    9400620,
+    9400657
+   ],
+   "name_en": "The Tree That Grew III",
+   "name_ko_candidate": "솟아오른나무3",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    9201129,
+    9201122,
+    1032103
+   ],
+   "portalCount": 21,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030401,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain II",
+   "name_ko_candidate": "동쪽바위산2",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030402,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain III",
+   "name_ko_candidate": "동쪽바위산3",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030403,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain IV",
+   "name_ko_candidate": "동쪽바위산4",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030404,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain V",
+   "name_ko_candidate": "동쪽바위산5",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030405,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain VI",
+   "name_ko_candidate": "동쪽바위산6",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 101030406,
+   "mob_ids": [
+    4230100
+   ],
+   "name_en": "East Rocky Mountain VII",
+   "name_ko_candidate": "동쪽바위산7",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 102000000,
+   "mob_ids": [],
+   "name_en": "Perion",
+   "name_ko_candidate": "페리온",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    1020000,
+    1022002,
+    9250045,
+    9010010,
+    9000040,
+    9000017,
+    1103004,
+    2041017,
+    9000041,
+    9000021,
+    9010022,
+    9270075,
+    1022003,
+    9100102,
+    9201119,
+    9000020,
+    9201027,
+    9010001,
+    9200000,
+    9201151,
+    9300010,
+    1022004,
+    1022005,
+    1022007,
+    1012000,
+    9040004,
+    9010000,
+    1022101
+   ],
+   "portalCount": 23,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Perion",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 102030000,
+   "mob_ids": [
+    2230102,
+    2230112
+   ],
+   "name_en": "Wild Boar Land",
+   "name_ko_candidate": "와일드보어의 땅",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    1022107
+   ],
+   "portalCount": 6,
+   "mobRate": 0.5999981164932251,
+   "state": "ok_mobs",
+   "street_en": "Burnt Land",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 102040000,
+   "mob_ids": [
+    2230110
+   ],
+   "name_en": "Initial Excavation Area",
+   "name_ko_candidate": "초기 발굴지역",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Excavation Site",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 102050000,
+   "mob_ids": [
+    130101,
+    210100,
+    1210102
+   ],
+   "name_en": "Sunset Sky",
+   "name_ko_candidate": "해질녘하늘",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 23,
+   "mobRate": 0.49999991059303284,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103000000,
+   "mob_ids": [],
+   "name_en": "Kerning City",
+   "name_ko_candidate": "커닝시티",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    1052000,
+    1052106,
+    9020000,
+    1052103,
+    1012000,
+    9100103,
+    9000017,
+    2041017,
+    1103002,
+    9010022,
+    9201023,
+    2042002,
+    1057001,
+    9000040,
+    9000041,
+    9000020,
+    9200000,
+    9270041,
+    9201120,
+    9250043,
+    9270075,
+    1022101,
+    9201151,
+    1052002,
+    9300010,
+    9000008,
+    1052102,
+    9000021,
+    9010010,
+    9010000,
+    1052017
+   ],
+   "portalCount": 37,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Kerning City",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103000100,
+   "mob_ids": [],
+   "name_en": "Subway Ticketing Booth",
+   "name_ko_candidate": "지하철매표소",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1052006,
+    1052007,
+    9201057,
+    1043002
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103030000,
+   "mob_ids": [
+    2130103
+   ],
+   "name_en": "The Swamp of Despair",
+   "name_ko_candidate": "방황의 늪",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 13,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Swamp Region",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050000,
+   "mob_ids": [],
+   "name_en": "Kerning City Back Alley",
+   "name_ko_candidate": "커닝시티 뒷골목",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 14,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050100,
+   "mob_ids": [],
+   "name_en": "The Secret Garden 2nd Floor",
+   "name_ko_candidate": "비화원 위층",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [
+    1057002
+   ],
+   "portalCount": 6,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050101,
+   "mob_ids": [],
+   "name_en": "Lady Syl's Room",
+   "name_ko_candidate": "설희의 방",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [
+    1056000
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050200,
+   "mob_ids": [],
+   "name_en": "The Secret Garden 1st Floor",
+   "name_ko_candidate": "비화원 아래층",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [
+    1057000
+   ],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050300,
+   "mob_ids": [],
+   "name_en": "The Secret Garden Basement",
+   "name_ko_candidate": "비화원 지하",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [
+    1057003,
+    1055002,
+    1055000
+   ],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050310,
+   "mob_ids": [
+    9001015
+   ],
+   "name_en": "Training Center 1",
+   "name_ko_candidate": "수련장1",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050340,
+   "mob_ids": [
+    9001016
+   ],
+   "name_en": "Training Center 2",
+   "name_ko_candidate": "수련장2",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050370,
+   "mob_ids": [
+    9001017
+   ],
+   "name_en": "Training Center 3",
+   "name_ko_candidate": "수련장3",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 103050400,
+   "mob_ids": [],
+   "name_en": "The Secret Garden Underground Prison",
+   "name_ko_candidate": "비화원 지하감옥",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 104000000,
+   "mob_ids": [],
+   "name_en": "Lith Harbor",
+   "name_ko_candidate": "리스항구",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    1200004,
+    20000,
+    1002006,
+    1002101,
+    9010000,
+    1022101,
+    1204033,
+    2084001,
+    9010010,
+    9000021,
+    9000017,
+    9000041,
+    1002001,
+    9000040,
+    1002103,
+    9200000,
+    9000020,
+    9270001,
+    9201151,
+    9300010,
+    1002100,
+    9000001,
+    9000009,
+    2041017,
+    1002003,
+    1012000,
+    1002005
+   ],
+   "portalCount": 31,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Lith Harbor",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 104010000,
+   "mob_ids": [
+    100100,
+    100101
+   ],
+   "name_en": "Right Around Lith Harbor",
+   "name_ko_candidate": "리스항구 외곽",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Port Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 104040001,
+   "mob_ids": [
+    1110100,
+    1210100,
+    1210101,
+    1210102,
+    9400614,
+    9400615,
+    9400616,
+    9400617
+   ],
+   "name_en": "Henesys Hunting Ground II",
+   "name_ko_candidate": "헤네시스사냥터2",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.4999983310699463,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 104040002,
+   "mob_ids": [
+    1110100,
+    1210101,
+    1210102,
+    9400614,
+    9400615,
+    9400616
+   ],
+   "name_en": "Henesys Hunting Ground III",
+   "name_ko_candidate": "헤네시스사냥터3",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    9201131
+   ],
+   "portalCount": 8,
+   "mobRate": 1.4999983310699463,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105000000,
+   "mob_ids": [],
+   "name_en": "Sleepywood",
+   "name_ko_candidate": "슬리피우드",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": true,
+   "npcs": [
+    1061000,
+    1061005,
+    1061019,
+    9010022,
+    1040001,
+    9000085,
+    9201151,
+    9000017,
+    2041017,
+    9300010,
+    1061006,
+    1061008,
+    2040050,
+    1061011,
+    9010010,
+    9000040,
+    9000041,
+    9000021
+   ],
+   "portalCount": 14,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Sleepywood",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105000010,
+   "mob_ids": [],
+   "name_en": "Sleepywood Hotel",
+   "name_ko_candidate": "슬리피우드 호텔로비",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061100
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Sleepywood",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105000011,
+   "mob_ids": [],
+   "name_en": "Regular Sauna",
+   "name_ko_candidate": "회복사우나실<일반>",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061002
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Sleepywood",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105000012,
+   "mob_ids": [],
+   "name_en": "VIP Sauna",
+   "name_ko_candidate": "회복사우나실<고급>",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061003
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Sleepywood",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105010000,
+   "mob_ids": [
+    4130100
+   ],
+   "name_en": "Silent Swamp",
+   "name_ko_candidate": "조용한 습지",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 6,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_mobs",
+   "street_en": "Swamp",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105010100,
+   "mob_ids": [
+    4130100
+   ],
+   "name_en": "Humid Swamp",
+   "name_ko_candidate": "축축한 습지",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063012
+   ],
+   "portalCount": 4,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_mobs",
+   "street_en": "Swamp",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020000,
+   "mob_ids": [
+    5130100
+   ],
+   "name_en": "Sunless Area",
+   "name_ko_candidate": "빛이 들지 않는 곳",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063014,
+    1063012
+   ],
+   "portalCount": 7,
+   "mobRate": 0.7999981641769409,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020100,
+   "mob_ids": [
+    5130100,
+    6130100
+   ],
+   "name_en": "Cave Cliff",
+   "name_ko_candidate": "동굴 낭떠러지",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063012
+   ],
+   "portalCount": 6,
+   "mobRate": 0.7999999523162842,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020200,
+   "mob_ids": [
+    6130100,
+    6230600
+   ],
+   "name_en": "Cold Wind",
+   "name_ko_candidate": "차가운 바람",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063013
+   ],
+   "portalCount": 8,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020300,
+   "mob_ids": [
+    6230600,
+    6230601
+   ],
+   "name_en": "Chilly Cave",
+   "name_ko_candidate": "서늘한 동굴",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063013
+   ],
+   "portalCount": 8,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020400,
+   "mob_ids": [
+    6230601
+   ],
+   "name_en": "Cave Exit",
+   "name_ko_candidate": "동굴의 출구",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1063013
+   ],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105020500,
+   "mob_ids": [
+    6230601
+   ],
+   "name_en": "Blue Drake Cave",
+   "name_ko_candidate": "드레이크의 푸른동굴",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Drake Cave",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030000,
+   "mob_ids": [],
+   "name_en": "Another Door",
+   "name_ko_candidate": "또 다른 문",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061012,
+    1061013,
+    1061001
+   ],
+   "portalCount": 4,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_empty",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030100,
+   "mob_ids": [
+    6230100
+   ],
+   "name_en": "Temple Entrance",
+   "name_ko_candidate": "신전의 입구",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030200,
+   "mob_ids": [
+    7130100
+   ],
+   "name_en": "Collapsed Temple",
+   "name_ko_candidate": "무너진 신전",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030300,
+   "mob_ids": [
+    7130100,
+    7130101
+   ],
+   "name_en": "Endless Hallway",
+   "name_ko_candidate": "끝없는 복도",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030400,
+   "mob_ids": [
+    7130100,
+    7130101
+   ],
+   "name_en": "Gloomy Temple",
+   "name_ko_candidate": "음산한 신전",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105030500,
+   "mob_ids": [
+    7130101
+   ],
+   "name_en": "Forbidden Altar",
+   "name_ko_candidate": "금지된 제단",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061009
+   ],
+   "portalCount": 5,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Cursed Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105040300,
+   "mob_ids": [],
+   "name_en": "Sleepywood",
+   "name_ko_candidate": "슬리피우드",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": true,
+   "npcs": [
+    9270002,
+    1061000,
+    9000041,
+    9000040,
+    1061019,
+    9010022,
+    9001102,
+    9201142,
+    1061005,
+    1061006,
+    1061008,
+    2040050,
+    1061011,
+    9100104,
+    9010010,
+    9000021
+   ],
+   "portalCount": 25,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Dungeon",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105040304,
+   "mob_ids": [
+    5130101,
+    5130102
+   ],
+   "name_en": "Sleepy Dungeon IV",
+   "name_ko_candidate": "슬리피던전4",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    9000034
+   ],
+   "portalCount": 11,
+   "mobRate": 1.0999982357025146,
+   "state": "ok_mobs",
+   "street_en": "Dungeon",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105050400,
+   "mob_ids": [
+    2110200,
+    2230101,
+    2300100
+   ],
+   "name_en": "Dark Cave",
+   "name_ko_candidate": "어두운통로",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    9201133
+   ],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Dungeon",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105090300,
+   "mob_ids": [
+    6130100,
+    6230100,
+    9400551
+   ],
+   "name_en": "Drake's Meal Table",
+   "name_ko_candidate": "드레이크의밥상",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Dungeon",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100000,
+   "mob_ids": [],
+   "name_en": "Stairway to the Underground Temple  ",
+   "name_ko_candidate": "지하로 내려가는 길",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061016
+   ],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100100,
+   "mob_ids": [],
+   "name_en": "Bottom of the Temple ",
+   "name_ko_candidate": "신전의 밑바닥",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061014
+   ],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100101,
+   "mob_ids": [],
+   "name_en": "Tristan's Tomb",
+   "name_ko_candidate": "트리스탄의 무덤",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061017
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100300,
+   "mob_ids": [],
+   "name_en": "Balrog's Tomb  ",
+   "name_ko_candidate": "발록의 무덤",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061018
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100301,
+   "mob_ids": [],
+   "name_en": "Balrog's Disappearance Site  ",
+   "name_ko_candidate": "발록이 사라진 자리",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100400,
+   "mob_ids": [],
+   "name_en": "Balrog's Tomb  ",
+   "name_ko_candidate": "발록의 무덤",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [
+    1061018
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 105100401,
+   "mob_ids": [],
+   "name_en": "Balrog's Disappearance Site  ",
+   "name_ko_candidate": "발록이 사라진 자리",
+   "name_ko_status": "candidate",
+   "region": "105-band",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Balrog Temple",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 180000000,
+   "mob_ids": [],
+   "name_en": "Ellinia",
+   "name_ko_candidate": "엘리니아",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": true,
+   "npcs": [
+    9900001,
+    9900000,
+    9010009
+   ],
+   "portalCount": 1,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 180000001,
+   "mob_ids": [],
+   "name_en": "Ellinia",
+   "name_ko_candidate": "엘리니아",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000000,
+   "mob_ids": [],
+   "name_en": "Orbis",
+   "name_ko_candidate": "오르비스",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2010000,
+    9000011,
+    9200000,
+    2041017,
+    9000017,
+    9000021,
+    9000070,
+    1022101,
+    9000020,
+    9201025,
+    9250046,
+    9000040,
+    2012012,
+    9000041,
+    9201151,
+    9300010,
+    2010006,
+    9010000,
+    2012019,
+    9001102,
+    2042000,
+    9270075,
+    9010010
+   ],
+   "portalCount": 36,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000001,
+   "mob_ids": [],
+   "name_en": "Orbis Weapon Store",
+   "name_ko_candidate": "오르비스 무기/방어구 상점",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012003,
+    2012004
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000002,
+   "mob_ids": [],
+   "name_en": "Orbis General Store",
+   "name_ko_candidate": "오르비스잡화상점",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012005,
+    2012011
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000100,
+   "mob_ids": [],
+   "name_en": "Orbis Station Entrance",
+   "name_ko_candidate": "오르비스 정거장 입구",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012000,
+    2012006
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000110,
+   "mob_ids": [],
+   "name_en": "Station Passageway <Victoria Bound>",
+   "name_ko_candidate": "정거장통로<빅토리아행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000111,
+   "mob_ids": [],
+   "name_en": "Station <Victoria Bound>",
+   "name_ko_candidate": "정거장<빅토리아행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012001
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000112,
+   "mob_ids": [],
+   "name_en": "Pre-Departure <Victoria Bound>",
+   "name_ko_candidate": "출발하기전<빅토리아행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012002
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000120,
+   "mob_ids": [],
+   "name_en": "Station Pathway<Ludibrium>",
+   "name_ko_candidate": "정거장통로<루디브리엄행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000121,
+   "mob_ids": [],
+   "name_en": "Station<Ludibrium>",
+   "name_ko_candidate": "정거장<루디브리엄행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012013
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000122,
+   "mob_ids": [],
+   "name_en": "Before the Departure <Ludibrium>",
+   "name_ko_candidate": "출발하기전<루디브리엄행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2041001
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000130,
+   "mob_ids": [],
+   "name_en": "Cabin Path <To Leafre>",
+   "name_ko_candidate": "정거장통로<리프레행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000131,
+   "mob_ids": [],
+   "name_en": "Cabin <To Leafre>",
+   "name_ko_candidate": "정거장<리프레행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012021
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000132,
+   "mob_ids": [],
+   "name_en": "Cabin <To Leafre>",
+   "name_ko_candidate": "정거장<리프레행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012022
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000140,
+   "mob_ids": [],
+   "name_en": "Cabin Path <To Mu Lung>",
+   "name_ko_candidate": "정거장통로<무릉행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000141,
+   "mob_ids": [],
+   "name_en": "Cabin <To Mu Lung>",
+   "name_ko_candidate": "정거장<무릉행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2090005
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000150,
+   "mob_ids": [],
+   "name_en": "Station Tunnel <To Ariant>",
+   "name_ko_candidate": "정거장통로<아리안트행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000151,
+   "mob_ids": [],
+   "name_en": "Station <To Ariant>",
+   "name_ko_candidate": "정거장<아리안트행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012025
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000152,
+   "mob_ids": [],
+   "name_en": "Station <To Ariant>",
+   "name_ko_candidate": "정거장<아리안트행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2012024
+   ],
+   "portalCount": 1,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000160,
+   "mob_ids": [],
+   "name_en": "Station Hall",
+   "name_ko_candidate": "정거장통로<에레브행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000161,
+   "mob_ids": [],
+   "name_en": "Station",
+   "name_ko_candidate": "정거장<에레브행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    1100008
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000170,
+   "mob_ids": [],
+   "name_en": "Station <Edelstein Bound>",
+   "name_ko_candidate": "정거장<에델슈타인행>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2150009
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000200,
+   "mob_ids": [],
+   "name_en": "Orbis Park",
+   "name_ko_candidate": "오르비스공원",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012010,
+    2010003,
+    2010004,
+    2012018,
+    9010022,
+    1002103,
+    1002003
+   ],
+   "portalCount": 9,
+   "mobRate": 0.8999999761581421,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000300,
+   "mob_ids": [],
+   "name_en": "Top of the Hill",
+   "name_ko_candidate": "만남의 언덕",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    9040004,
+    2012023
+   ],
+   "portalCount": 12,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200000301,
+   "mob_ids": [],
+   "name_en": "Guild Headquarters <Hall of Fame>",
+   "name_ko_candidate": "길드본부 <영웅의 전당>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2010007,
+    2010008,
+    2010009
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010000,
+   "mob_ids": [
+    3230200
+   ],
+   "name_en": "Cloud Park I",
+   "name_ko_candidate": "구름공원1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012020,
+    9010012
+   ],
+   "portalCount": 7,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010100,
+   "mob_ids": [
+    3210200,
+    3210201,
+    3210202
+   ],
+   "name_en": "The Road to Garden of 3 Colors",
+   "name_ko_candidate": "세가지빛정원으로가는길",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    9000068
+   ],
+   "portalCount": 10,
+   "mobRate": 0.8999999761581421,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010110,
+   "mob_ids": [
+    3210200
+   ],
+   "name_en": "Garden of Red I",
+   "name_ko_candidate": "붉은빛의정원1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.8000001907348633,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010111,
+   "mob_ids": [
+    5120001
+   ],
+   "name_en": "Garden of Red II",
+   "name_ko_candidate": "붉은빛의정원2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.8000001907348633,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010120,
+   "mob_ids": [
+    3210201
+   ],
+   "name_en": "Garden of Yellow I",
+   "name_ko_candidate": "노란빛의정원1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010121,
+   "mob_ids": [
+    5120002
+   ],
+   "name_en": "Garden of Yellow II",
+   "name_ko_candidate": "노란빛의정원2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010130,
+   "mob_ids": [
+    3210202
+   ],
+   "name_en": "Garden of Green I",
+   "name_ko_candidate": "푸른빛의정원1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010131,
+   "mob_ids": [
+    5120003
+   ],
+   "name_en": "Garden of Green II",
+   "name_ko_candidate": "푸른빛의정원2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010200,
+   "mob_ids": [
+    5120001,
+    5120002,
+    5120003
+   ],
+   "name_en": "Stairway to the Sky I",
+   "name_ko_candidate": "하늘계단1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 12,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010300,
+   "mob_ids": [
+    7130000
+   ],
+   "name_en": "Stairway to the Sky II",
+   "name_ko_candidate": "하늘계단2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 0.49999991059303284,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010301,
+   "mob_ids": [
+    6230401
+   ],
+   "name_en": "Garden of Darkness I",
+   "name_ko_candidate": "검은빛의정원1",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200010302,
+   "mob_ids": [
+    7130000
+   ],
+   "name_en": "Garden of Darkness II",
+   "name_ko_candidate": "검은빛의정원2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200020000,
+   "mob_ids": [
+    3230200
+   ],
+   "name_en": "Cloud Park II",
+   "name_ko_candidate": "구름공원2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200030000,
+   "mob_ids": [
+    4230122
+   ],
+   "name_en": "Strolling Path",
+   "name_ko_candidate": "산책로",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 9,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200040000,
+   "mob_ids": [
+    4230106
+   ],
+   "name_en": "Cloud Park III",
+   "name_ko_candidate": "구름공원3",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200040001,
+   "mob_ids": [
+    4130102,
+    4230105
+   ],
+   "name_en": "Disposed Flower Garden",
+   "name_ko_candidate": "버려진화원",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200050000,
+   "mob_ids": [
+    4230106
+   ],
+   "name_en": "Cloud Park IV",
+   "name_ko_candidate": "구름공원4",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 12,
+   "mobRate": 1.9000002145767212,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200050001,
+   "mob_ids": [],
+   "name_en": "Old Man's House",
+   "name_ko_candidate": "노파의집",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": true,
+   "npcs": [
+    2032001,
+    2032000
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200060000,
+   "mob_ids": [
+    4130104
+   ],
+   "name_en": "Strolling Path II",
+   "name_ko_candidate": "산책로2",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200070000,
+   "mob_ids": [
+    5120000
+   ],
+   "name_en": "Cloud Park V",
+   "name_ko_candidate": "구름공원5",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 12,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080000,
+   "mob_ids": [
+    5120000
+   ],
+   "name_en": "Cloud Park VI",
+   "name_ko_candidate": "구름공원6",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2030002
+   ],
+   "portalCount": 9,
+   "mobRate": 1.8000001907348633,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080100,
+   "mob_ids": [],
+   "name_en": "Entrance to Orbis Tower",
+   "name_ko_candidate": "오르비스탑입구",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080101,
+   "mob_ids": [],
+   "name_en": "The Unknown Tower",
+   "name_ko_candidate": "알 수 없는 탑<퇴장맵>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2013000
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080200,
+   "mob_ids": [
+    5200000
+   ],
+   "name_en": "Orbis Tower <20th Floor>",
+   "name_ko_candidate": "오르비스탑<20층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012014
+   ],
+   "portalCount": 6,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080300,
+   "mob_ids": [
+    5200000
+   ],
+   "name_en": "Orbis Tower <19th Floor>",
+   "name_ko_candidate": "오르비스탑<19층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080400,
+   "mob_ids": [
+    3000000
+   ],
+   "name_en": "Orbis Tower <18th Floor>",
+   "name_ko_candidate": "오르비스탑<18층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080500,
+   "mob_ids": [
+    3000000
+   ],
+   "name_en": "Orbis Tower <17th Floor>",
+   "name_ko_candidate": "오르비스탑<17층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080600,
+   "mob_ids": [
+    3000000
+   ],
+   "name_en": "Orbis Tower <16th Floor>",
+   "name_ko_candidate": "오르비스탑<16층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080601,
+   "mob_ids": [],
+   "name_en": "Orbis Tower <Secret Room>",
+   "name_ko_candidate": "오르비스탑<은밀한방>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012034
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080700,
+   "mob_ids": [
+    5200002
+   ],
+   "name_en": "Orbis Tower <15th Floor>",
+   "name_ko_candidate": "오르비스탑<15층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080800,
+   "mob_ids": [
+    5200002
+   ],
+   "name_en": "Orbis Tower <14th Floor>",
+   "name_ko_candidate": "오르비스탑<14층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2022002
+   ],
+   "portalCount": 4,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200080900,
+   "mob_ids": [
+    5200002
+   ],
+   "name_en": "Orbis Tower <13th Floor>",
+   "name_ko_candidate": "오르비스탑<13층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081000,
+   "mob_ids": [
+    5200001
+   ],
+   "name_en": "Orbis Tower <12th Floor>",
+   "name_ko_candidate": "오르비스탑<12층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081100,
+   "mob_ids": [
+    5200001
+   ],
+   "name_en": "Orbis Tower <11th Floor>",
+   "name_ko_candidate": "오르비스탑<11층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081200,
+   "mob_ids": [
+    5200001
+   ],
+   "name_en": "Orbis Tower <10th Floor>",
+   "name_ko_candidate": "오르비스탑<10층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081201,
+   "mob_ids": [],
+   "name_en": "Orbis Tower <Hidden Room>",
+   "name_ko_candidate": "오르비스탑<비밀의 방>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2030012
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081300,
+   "mob_ids": [
+    5300000
+   ],
+   "name_en": "Orbis Tower <9th Floor>",
+   "name_ko_candidate": "오르비스탑<9층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081400,
+   "mob_ids": [
+    5300000
+   ],
+   "name_en": "Orbis Tower <8th Floor>",
+   "name_ko_candidate": "오르비스탑<8층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2030005
+   ],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081500,
+   "mob_ids": [
+    5300000
+   ],
+   "name_en": "Orbis Tower <7th Floor>",
+   "name_ko_candidate": "오르비스탑<7층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081600,
+   "mob_ids": [
+    5300000,
+    5300001
+   ],
+   "name_en": "Orbis Tower <6th Floor>",
+   "name_ko_candidate": "오르비스탑<6층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081700,
+   "mob_ids": [
+    5300001
+   ],
+   "name_en": "Orbis Tower <5th Floor>",
+   "name_ko_candidate": "오르비스탑<5층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081800,
+   "mob_ids": [
+    5300001
+   ],
+   "name_en": "Orbis Tower <4th Floor>",
+   "name_ko_candidate": "오르비스탑<4층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200081900,
+   "mob_ids": [
+    5300001
+   ],
+   "name_en": "Orbis Tower <3rd Floor>",
+   "name_ko_candidate": "오르비스탑<3층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200082000,
+   "mob_ids": [
+    5400000
+   ],
+   "name_en": "Orbis Tower <2nd Floor>",
+   "name_ko_candidate": "오르비스탑<2층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200082100,
+   "mob_ids": [
+    5400000
+   ],
+   "name_en": "Orbis Tower <1st Floor>",
+   "name_ko_candidate": "오르비스탑<1층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012015
+   ],
+   "portalCount": 7,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200082200,
+   "mob_ids": [],
+   "name_en": "Orbis Tower<B1>",
+   "name_ko_candidate": "오르비스탑<지하1층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200082300,
+   "mob_ids": [
+    3210450
+   ],
+   "name_en": "Orbis Tower<B2>",
+   "name_ko_candidate": "오르비스탑<지하2층>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 200082301,
+   "mob_ids": [],
+   "name_en": "Orbis Tower<Hughes's Laboratory>",
+   "name_ko_candidate": "오르비스탑<휴즈의 연구실>",
+   "name_ko_status": "candidate",
+   "region": "Orbis",
+   "isTown": false,
+   "npcs": [
+    2012017
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Orbis",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000000,
+   "mob_ids": [],
+   "name_en": "Ludibrium",
+   "name_ko_candidate": "루디브리엄",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    9000017,
+    9000013,
+    2041017,
+    9010010,
+    9000021,
+    9010022,
+    9000020,
+    2023000,
+    2042000,
+    1022101,
+    9201026,
+    9200000,
+    2041004,
+    9250026,
+    9000040,
+    9000041,
+    9201151,
+    9300010,
+    2041014,
+    9000014,
+    2040046,
+    2041008,
+    2040050,
+    9010000,
+    9270075
+   ],
+   "portalCount": 35,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000001,
+   "mob_ids": [],
+   "name_en": "Ludibrium Weapon Store",
+   "name_ko_candidate": "루디브리엄무기방어구상점",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041003,
+    2041002
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000002,
+   "mob_ids": [],
+   "name_en": "Ludibrium General Store",
+   "name_ko_candidate": "루디브리엄잡화상점",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041006
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000003,
+   "mob_ids": [],
+   "name_en": "Ludibrium Plastic Surgery",
+   "name_ko_candidate": "루디브리엄성형외과",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041010,
+    2040019,
+    9200102
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000004,
+   "mob_ids": [],
+   "name_en": "Ludibrium Hair Salon",
+   "name_ko_candidate": "루디브리엄헤어샵",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041007,
+    2041009
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000005,
+   "mob_ids": [],
+   "name_en": "Ludibrium Skin Care",
+   "name_ko_candidate": "루디브리엄피부관리실",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041013
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000006,
+   "mob_ids": [],
+   "name_en": "Ludibrium Pet Walkway",
+   "name_ko_candidate": "루디 펫 산책로",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040032,
+    2040033
+   ],
+   "portalCount": 6,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000100,
+   "mob_ids": [],
+   "name_en": "Ludibrium Ticketing Place",
+   "name_ko_candidate": "루디브리엄 정거장 입구",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040000
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000110,
+   "mob_ids": [],
+   "name_en": "Station<Orbis>",
+   "name_ko_candidate": "정거장<오르비스행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041000
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000111,
+   "mob_ids": [],
+   "name_en": "Before the Departure <Orbis>",
+   "name_ko_candidate": "출발하기전<오르비스행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041001
+   ],
+   "portalCount": 1,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000300,
+   "mob_ids": [],
+   "name_en": "Ludibrium Village",
+   "name_ko_candidate": "루디브리엄 마을",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040014,
+    2040016,
+    9000068
+   ],
+   "portalCount": 13,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000301,
+   "mob_ids": [],
+   "name_en": "Korin's House",
+   "name_ko_candidate": "코린의 집",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041015
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000302,
+   "mob_ids": [],
+   "name_en": "Manager Karl's House",
+   "name_ko_candidate": "카호의 집",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041005
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000303,
+   "mob_ids": [],
+   "name_en": "Tara and Sarah's House",
+   "name_ko_candidate": "지로큰과 페이의 집",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040021,
+    2040020
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000304,
+   "mob_ids": [],
+   "name_en": "Chloe's House",
+   "name_ko_candidate": "클로이의 집",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040031
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000305,
+   "mob_ids": [],
+   "name_en": "Empty House I",
+   "name_ko_candidate": "빈집1",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000306,
+   "mob_ids": [],
+   "name_en": "Empty House II",
+   "name_ko_candidate": "빈집2",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000307,
+   "mob_ids": [],
+   "name_en": "Mason's House",
+   "name_ko_candidate": "매이션의 집",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2041027
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000400,
+   "mob_ids": [],
+   "name_en": "Eos Tower Entrance",
+   "name_ko_candidate": "에오스 탑 입구",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    2040030,
+    2041022
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220000500,
+   "mob_ids": [],
+   "name_en": "Helios Tower Entrance",
+   "name_ko_candidate": "핼리오스 탑 입구",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010000,
+   "mob_ids": [
+    3230305
+   ],
+   "name_en": "Cloud Terrace<5>",
+   "name_ko_candidate": "구름테라스<5>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010001,
+   "mob_ids": [],
+   "name_en": "Cloud Balcony",
+   "name_ko_candidate": "구름발코니",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010100,
+   "mob_ids": [
+    3210203
+   ],
+   "name_en": "Cloud Terrace<4>",
+   "name_ko_candidate": "구름테라스<4>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010200,
+   "mob_ids": [
+    3210204
+   ],
+   "name_en": "Cloud Terrace<3>",
+   "name_ko_candidate": "구름테라스<3>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010300,
+   "mob_ids": [
+    3110101
+   ],
+   "name_en": "Cloud Terrace<2>",
+   "name_ko_candidate": "구름테라스<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010400,
+   "mob_ids": [
+    3000005
+   ],
+   "name_en": "Cloud Terrace<1>",
+   "name_ko_candidate": "구름테라스<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010500,
+   "mob_ids": [
+    3000005
+   ],
+   "name_en": "Terrace Hall",
+   "name_ko_candidate": "테라스홀",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010600,
+   "mob_ids": [
+    3000005
+   ],
+   "name_en": "Sky Terrace<1>",
+   "name_ko_candidate": "하늘테라스<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010700,
+   "mob_ids": [
+    3110101
+   ],
+   "name_en": "Sky Terrace<2>",
+   "name_ko_candidate": "하늘테라스<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010800,
+   "mob_ids": [
+    3210204
+   ],
+   "name_en": "Sky Terrace<3>",
+   "name_ko_candidate": "하늘테라스<3>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220010900,
+   "mob_ids": [
+    3210203
+   ],
+   "name_en": "Sky Terrace<4>",
+   "name_ko_candidate": "하늘테라스<4>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220011000,
+   "mob_ids": [
+    3230305
+   ],
+   "name_en": "Sky Terrace<5>",
+   "name_ko_candidate": "하늘테라스<5>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.8000001907348633,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220011001,
+   "mob_ids": [],
+   "name_en": "Sky Terrace",
+   "name_ko_candidate": "하늘발코니",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020000,
+   "mob_ids": [
+    4230111,
+    4230112
+   ],
+   "name_en": "Toy Factory <Process 1> Zone 1",
+   "name_ko_candidate": "장난감공장<1공정>1구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040003
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020100,
+   "mob_ids": [
+    4230111
+   ],
+   "name_en": "Toy Factory <Process 1> Zone 2",
+   "name_ko_candidate": "장난감공장<1공정>2구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020200,
+   "mob_ids": [
+    4230111
+   ],
+   "name_en": "Toy Factory <Process 1> Zone 3",
+   "name_ko_candidate": "장난감공장<1공정>3구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020300,
+   "mob_ids": [
+    4230111
+   ],
+   "name_en": "Toy Factory <Main Process 1>",
+   "name_ko_candidate": "장난감공장<메인공정1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040015
+   ],
+   "portalCount": 6,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020400,
+   "mob_ids": [
+    4230111
+   ],
+   "name_en": "Toy Factory <Process 1> Zone 5",
+   "name_ko_candidate": "장난감공장<1공정>5구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020500,
+   "mob_ids": [
+    4230111
+   ],
+   "name_en": "Toy Factory <Process 1> Zone 6",
+   "name_ko_candidate": "장난감공장<1공정>6구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220020600,
+   "mob_ids": [
+    4230111,
+    4230112
+   ],
+   "name_en": "Toy Factory <Aparatus Room>",
+   "name_ko_candidate": "장난감공장<기계실>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040022
+   ],
+   "portalCount": 7,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220030000,
+   "mob_ids": [
+    4230112
+   ],
+   "name_en": "Toy Factory <Process 2> Zone 1",
+   "name_ko_candidate": "장난감공장<2공정>1구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220030100,
+   "mob_ids": [
+    4230112
+   ],
+   "name_en": "Toy Factory <Process 2> Zone 2",
+   "name_ko_candidate": "장난감공장<2공정>2구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041018
+   ],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220030200,
+   "mob_ids": [
+    4230112
+   ],
+   "name_en": "Toy Factory <Main Process 2>",
+   "name_ko_candidate": "장난감공장<메인공정2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041019
+   ],
+   "portalCount": 6,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220030300,
+   "mob_ids": [
+    4230112
+   ],
+   "name_en": "Toy Factory <Process 2> Zone 3",
+   "name_ko_candidate": "장난감공장<2공정>4구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220030400,
+   "mob_ids": [
+    4230112
+   ],
+   "name_en": "Toy Factory <Process 2> Zone 4",
+   "name_ko_candidate": "장난감공장<2공정>5구역",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041020
+   ],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220040000,
+   "mob_ids": [
+    4230114
+   ],
+   "name_en": "The Path of Time <1>",
+   "name_ko_candidate": "시간의길<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220040100,
+   "mob_ids": [
+    3230306
+   ],
+   "name_en": "The Path of Time <2>",
+   "name_ko_candidate": "시간의길<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220040200,
+   "mob_ids": [
+    3210207
+   ],
+   "name_en": "Crossroad of Time",
+   "name_ko_candidate": "시간의갈림길",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220040300,
+   "mob_ids": [
+    3230306
+   ],
+   "name_en": "The Path of Time <3>",
+   "name_ko_candidate": "시간의길<3>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220040400,
+   "mob_ids": [
+    4230115
+   ],
+   "name_en": "The Path of Time <4>",
+   "name_ko_candidate": "시간의길<4>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220050000,
+   "mob_ids": [
+    4230114
+   ],
+   "name_en": "Lost Time <1>",
+   "name_ko_candidate": "잃어버린시간<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040029
+   ],
+   "portalCount": 6,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220050100,
+   "mob_ids": [
+    4230113
+   ],
+   "name_en": "Whirlpool of Time",
+   "name_ko_candidate": "시간의소용돌이",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220050200,
+   "mob_ids": [
+    4230115
+   ],
+   "name_en": "Lost Time <2>",
+   "name_ko_candidate": "잃어버린시간<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220050300,
+   "mob_ids": [],
+   "name_en": "Path of Time",
+   "name_ko_candidate": "시간의 통로",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040051,
+    2041023,
+    2041021
+   ],
+   "portalCount": 6,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220060000,
+   "mob_ids": [
+    6130200,
+    6230300
+   ],
+   "name_en": "Warped Path of Time<1>",
+   "name_ko_candidate": "뒤틀린 시간의 길<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220060100,
+   "mob_ids": [
+    6300100,
+    6400100
+   ],
+   "name_en": "Warped Path of Time<2>",
+   "name_ko_candidate": "뒤틀린 시간의 길<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220060200,
+   "mob_ids": [
+    7140000
+   ],
+   "name_en": "Warped Path of Time<3>",
+   "name_ko_candidate": "뒤틀린 시간의 길<3>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220060300,
+   "mob_ids": [
+    8141000
+   ],
+   "name_en": "Warped Path of Time<4>",
+   "name_ko_candidate": "뒤틀린 시간의 길<4>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220060400,
+   "mob_ids": [
+    8160000
+   ],
+   "name_en": "Warped Passage",
+   "name_ko_candidate": "뒤틀린 회랑",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.6999999284744263,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220070000,
+   "mob_ids": [
+    6230400,
+    6230500
+   ],
+   "name_en": "Forgotten Path of Time<1>",
+   "name_ko_candidate": "잊혀진 시간의 길<1>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041026
+   ],
+   "portalCount": 10,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220070100,
+   "mob_ids": [
+    8140200,
+    8140300
+   ],
+   "name_en": "Forgotten Path of Time<2>",
+   "name_ko_candidate": "잊혀진 시간의 길<2>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220070200,
+   "mob_ids": [
+    7130010
+   ],
+   "name_en": "Forgotten Path of Time<3>",
+   "name_ko_candidate": "잊혀진 시간의 길<3>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220070300,
+   "mob_ids": [
+    8142000
+   ],
+   "name_en": "Forgotten Path of Time<4>",
+   "name_ko_candidate": "잊혀진 시간의 길<4>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220070400,
+   "mob_ids": [
+    8170000
+   ],
+   "name_en": "Forgotten Passage",
+   "name_ko_candidate": "잊혀진 회랑",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 0.6999999284744263,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220080000,
+   "mob_ids": [],
+   "name_en": "Deep Inside the Clocktower",
+   "name_ko_candidate": "시계탑 깊은 곳",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041024
+   ],
+   "portalCount": 6,
+   "mobRate": 0.49999991059303284,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 220080001,
+   "mob_ids": [],
+   "name_en": "Origin of Clocktower",
+   "name_ko_candidate": "시계탑의 근원",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041025
+   ],
+   "portalCount": 2,
+   "mobRate": 4.999997615814209,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020000,
+   "mob_ids": [
+    4230110
+   ],
+   "name_en": "Eos Tower 1st Floor",
+   "name_ko_candidate": "에오스 탑 1층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040027
+   ],
+   "portalCount": 5,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020100,
+   "mob_ids": [
+    4230110
+   ],
+   "name_en": "Eos Tower 2nd Floor",
+   "name_ko_candidate": "에오스 탑 2층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040013
+   ],
+   "portalCount": 10,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020200,
+   "mob_ids": [
+    4230110
+   ],
+   "name_en": "Eos Tower 3rd Floor",
+   "name_ko_candidate": "에오스 탑 3층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020300,
+   "mob_ids": [
+    4230109,
+    4230110
+   ],
+   "name_en": "Eos Tower 4th Floor",
+   "name_ko_candidate": "에오스 탑 4층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040012
+   ],
+   "portalCount": 11,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020400,
+   "mob_ids": [
+    4230109,
+    4230110
+   ],
+   "name_en": "Eos Tower 5th Floor",
+   "name_ko_candidate": "에오스 탑 5층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020500,
+   "mob_ids": [
+    4230109
+   ],
+   "name_en": "Eos Tower 6th Floor",
+   "name_ko_candidate": "에오스 탑 6층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020600,
+   "mob_ids": [
+    4230109
+   ],
+   "name_en": "Eos Tower 7th Floor",
+   "name_ko_candidate": "에오스 탑 7층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020700,
+   "mob_ids": [
+    4230109
+   ],
+   "name_en": "Eos Tower 8th Floor",
+   "name_ko_candidate": "에오스 탑 8층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020800,
+   "mob_ids": [
+    3230308
+   ],
+   "name_en": "Eos Tower 9th Floor",
+   "name_ko_candidate": "에오스 탑 9층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221020900,
+   "mob_ids": [
+    3230304
+   ],
+   "name_en": "Eos Tower 10th Floor",
+   "name_ko_candidate": "에오스 탑 10층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021000,
+   "mob_ids": [],
+   "name_en": "Eos Tower 11th - 30th Floor",
+   "name_ko_candidate": "에오스 탑 11층~30층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 28,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021100,
+   "mob_ids": [
+    3230303
+   ],
+   "name_en": "Eos Tower 31st Floor",
+   "name_ko_candidate": "에오스 탑 31층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021200,
+   "mob_ids": [
+    3230103
+   ],
+   "name_en": "Eos Tower 32nd Floor",
+   "name_ko_candidate": "에오스 탑 32층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040011,
+    2040026
+   ],
+   "portalCount": 5,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021300,
+   "mob_ids": [
+    3230103,
+    3230302
+   ],
+   "name_en": "Eos Tower 33rd Floor",
+   "name_ko_candidate": "에오스 탑 33층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040010
+   ],
+   "portalCount": 9,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021400,
+   "mob_ids": [
+    3230302
+   ],
+   "name_en": "Eos Tower 34th Floor",
+   "name_ko_candidate": "에오스 탑 34층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040009
+   ],
+   "portalCount": 9,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021500,
+   "mob_ids": [
+    3210206
+   ],
+   "name_en": "Eos Tower 35th Floor",
+   "name_ko_candidate": "에오스 탑 35층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021600,
+   "mob_ids": [],
+   "name_en": "Eos Tower 36th - 65th Floor",
+   "name_ko_candidate": "에오스 탑 36층~65층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040049
+   ],
+   "portalCount": 39,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021700,
+   "mob_ids": [
+    3230400
+   ],
+   "name_en": "Eos Tower 66th Floor",
+   "name_ko_candidate": "에오스 탑 66층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2041016
+   ],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021800,
+   "mob_ids": [
+    3230400
+   ],
+   "name_en": "Eos Tower 67th Floor",
+   "name_ko_candidate": "에오스 탑 67층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040008
+   ],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221021900,
+   "mob_ids": [
+    3230400
+   ],
+   "name_en": "Eos Tower 68th Floor",
+   "name_ko_candidate": "에오스 탑 68층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022000,
+   "mob_ids": [
+    3230400
+   ],
+   "name_en": "Eos Tower 69th Floor",
+   "name_ko_candidate": "에오스 탑 69층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022100,
+   "mob_ids": [
+    3230400
+   ],
+   "name_en": "Eos Tower 70th Floor",
+   "name_ko_candidate": "에오스 탑 70층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040025
+   ],
+   "portalCount": 4,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022200,
+   "mob_ids": [],
+   "name_en": "Eos Tower 71st - 90th Floor",
+   "name_ko_candidate": "에오스 탑 71층~90층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040007
+   ],
+   "portalCount": 34,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022300,
+   "mob_ids": [
+    3230307
+   ],
+   "name_en": "Eos Tower 91st Floor",
+   "name_ko_candidate": "에오스 탑 91층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022400,
+   "mob_ids": [
+    3230307
+   ],
+   "name_en": "Eos Tower 92nd Floor",
+   "name_ko_candidate": "에오스 탑 92층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022500,
+   "mob_ids": [
+    2230104
+   ],
+   "name_en": "Eos Tower 93rd Floor",
+   "name_ko_candidate": "에오스 탑 93층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040006
+   ],
+   "portalCount": 5,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022600,
+   "mob_ids": [
+    2230103
+   ],
+   "name_en": "Eos Tower 94th Floor",
+   "name_ko_candidate": "에오스 탑 94층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040023
+   ],
+   "portalCount": 10,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022700,
+   "mob_ids": [
+    3210205
+   ],
+   "name_en": "Eos Tower 95th Floor",
+   "name_ko_candidate": "에오스 탑 95층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022800,
+   "mob_ids": [
+    3210205
+   ],
+   "name_en": "Eos Tower 96th Floor",
+   "name_ko_candidate": "에오스 탑 96층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040005
+   ],
+   "portalCount": 11,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221022900,
+   "mob_ids": [
+    3110102,
+    3210205
+   ],
+   "name_en": "Eos Tower 97th Floor",
+   "name_ko_candidate": "에오스 탑 97층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221023000,
+   "mob_ids": [
+    3110102,
+    3210205
+   ],
+   "name_en": "Eos Tower 98th Floor",
+   "name_ko_candidate": "에오스 탑 98층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 10,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221023100,
+   "mob_ids": [
+    3110102
+   ],
+   "name_en": "Eos Tower 99th Floor",
+   "name_ko_candidate": "에오스 탑 99층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040004
+   ],
+   "portalCount": 10,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221023200,
+   "mob_ids": [
+    3110102
+   ],
+   "name_en": "Eos Tower 100th Floor",
+   "name_ko_candidate": "에오스 탑 100층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040001,
+    2040002,
+    2040024
+   ],
+   "portalCount": 12,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 221023300,
+   "mob_ids": [],
+   "name_en": "Eos Tower 101st Floor",
+   "name_ko_candidate": "에오스 탑 101층<입장맵>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040034
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020000,
+   "mob_ids": [],
+   "name_en": "Helios Tower <Library>",
+   "name_ko_candidate": "핼리오스 탑 도서관",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    2040052
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020100,
+   "mob_ids": [
+    3210208
+   ],
+   "name_en": "Helios Tower <2nd Floor>",
+   "name_ko_candidate": "핼리오스 탑 2층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 0.8999999761581421,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020110,
+   "mob_ids": [],
+   "name_en": "Elevator <To Ludibrium>",
+   "name_ko_candidate": "엘리베이터<루디브리엄행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020111,
+   "mob_ids": [],
+   "name_en": "Elevator <To Ludibrium>",
+   "name_ko_candidate": "엘리베이터<루디브리엄행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020200,
+   "mob_ids": [
+    3210208
+   ],
+   "name_en": "Helios Tower <99th Floor>",
+   "name_ko_candidate": "핼리오스 탑 99층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020210,
+   "mob_ids": [],
+   "name_en": "Elevator <To Korean Folk Town>",
+   "name_ko_candidate": "엘리베이터<아랫마을행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020211,
+   "mob_ids": [],
+   "name_en": "Elevator <To Korean Folk Town>",
+   "name_ko_candidate": "엘리베이터<아랫마을행>",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 222020300,
+   "mob_ids": [
+    3210208
+   ],
+   "name_en": "Helios Tower (100th Floor)",
+   "name_ko_candidate": "핼리오스 탑 100층",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Ludibrium",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000000,
+   "mob_ids": [],
+   "name_en": "Leafre",
+   "name_ko_candidate": "리프레",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    9000017,
+    2081000,
+    9270075,
+    9010022,
+    2023000,
+    9010010,
+    2041017,
+    9000020,
+    9200000,
+    9270005,
+    9000040,
+    9000041,
+    9010000,
+    9201151,
+    9300010,
+    9040004,
+    9000021,
+    2080005,
+    2080004,
+    2080000,
+    2080002,
+    2040050
+   ],
+   "portalCount": 24,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000001,
+   "mob_ids": [],
+   "name_en": "Chief's House",
+   "name_ko_candidate": "촌장의 집",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000002,
+   "mob_ids": [],
+   "name_en": "General Store",
+   "name_ko_candidate": "리프레잡화상점",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2080001
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000003,
+   "mob_ids": [],
+   "name_en": "Yaku's House",
+   "name_ko_candidate": "야쿠네 집",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2081003
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000004,
+   "mob_ids": [],
+   "name_en": "Ito's House",
+   "name_ko_candidate": "이토네 집",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2081002
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000005,
+   "mob_ids": [],
+   "name_en": "Kumo's House",
+   "name_ko_candidate": "쿠모네 집",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2081001
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000006,
+   "mob_ids": [],
+   "name_en": "Pam's House",
+   "name_ko_candidate": "팜의 집",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2081004
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000100,
+   "mob_ids": [],
+   "name_en": "Leafre Station Entrance",
+   "name_ko_candidate": "리프레 정거장 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2082000
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000110,
+   "mob_ids": [],
+   "name_en": "Station",
+   "name_ko_candidate": "정거장",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2082001,
+    2082003
+   ],
+   "portalCount": 8,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240000111,
+   "mob_ids": [],
+   "name_en": "Before Takeoff <To Orbis>",
+   "name_ko_candidate": "출발하기 전<오르비스행>",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": true,
+   "npcs": [
+    2082002
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010000,
+   "mob_ids": [
+    7130500
+   ],
+   "name_en": "West Leafre Forest",
+   "name_ko_candidate": "리프레 서쪽 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010100,
+   "mob_ids": [
+    7130501
+   ],
+   "name_en": "Minar Forest : West Border",
+   "name_ko_candidate": "미나르숲 서쪽 경계",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010101,
+   "mob_ids": [
+    7130500,
+    7130501
+   ],
+   "name_en": "Peach Monkey Forest",
+   "name_ko_candidate": "털복숭이의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010200,
+   "mob_ids": [
+    7130600,
+    7130601
+   ],
+   "name_en": "Cranky Forest",
+   "name_ko_candidate": "심술쟁이의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9010013,
+    9000084
+   ],
+   "portalCount": 7,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010300,
+   "mob_ids": [
+    7130004
+   ],
+   "name_en": "Steep Hill",
+   "name_ko_candidate": "가파른 언덕",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010400,
+   "mob_ids": [
+    8140110
+   ],
+   "name_en": "Forest : Crossroad",
+   "name_ko_candidate": "숲의 갈림길",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2081009
+   ],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010500,
+   "mob_ids": [
+    8140111
+   ],
+   "name_en": "Valley of the Antelope",
+   "name_ko_candidate": "산양의 골짜기1",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010501,
+   "mob_ids": [],
+   "name_en": "Forest of the Priest",
+   "name_ko_candidate": "사제의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2081100,
+    2081200,
+    2081300,
+    2081400,
+    2081500,
+    9201150
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010600,
+   "mob_ids": [
+    8140002
+   ],
+   "name_en": "Sky Nest II",
+   "name_ko_candidate": "하늘 둥지2",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 9,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010700,
+   "mob_ids": [
+    8140001,
+    8140002
+   ],
+   "name_en": "Sky Nest I",
+   "name_ko_candidate": "하늘 둥지1",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.7000001668930054,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010800,
+   "mob_ids": [
+    8140001
+   ],
+   "name_en": "Entrance to Sky Nest",
+   "name_ko_candidate": "하늘 둥지 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2080003
+   ],
+   "portalCount": 7,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010900,
+   "mob_ids": [
+    7130003
+   ],
+   "name_en": "Minar Forest : East Border",
+   "name_ko_candidate": "미나르숲 동쪽 경계",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000068
+   ],
+   "portalCount": 6,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240010901,
+   "mob_ids": [
+    7130002,
+    7130003
+   ],
+   "name_en": "Beetle Forest",
+   "name_ko_candidate": "투구벌레의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240011000,
+   "mob_ids": [
+    7130002
+   ],
+   "name_en": "Leafre : East Forest",
+   "name_ko_candidate": "리프레 동쪽 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020000,
+   "mob_ids": [
+    8140102
+   ],
+   "name_en": "The Area of Red Kentaurus",
+   "name_ko_candidate": "붉은 켄타우로스의 영역",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020100,
+   "mob_ids": [
+    8140101,
+    8140102
+   ],
+   "name_en": "Battlefield of Fire and Darkness",
+   "name_ko_candidate": "불과 어둠의 전장",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020101,
+   "mob_ids": [
+    8140101,
+    8140102,
+    8180001
+   ],
+   "name_en": "Griffey Forest",
+   "name_ko_candidate": "그리프의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.7999999523162842,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020102,
+   "mob_ids": [
+    8140101,
+    8140102,
+    8180001
+   ],
+   "name_en": "Griffey Forest",
+   "name_ko_candidate": "그리프의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.7999999523162842,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020200,
+   "mob_ids": [
+    8140101
+   ],
+   "name_en": "The Area of Black Kentaurus",
+   "name_ko_candidate": "검은 켄타우로스의 영역",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020300,
+   "mob_ids": [
+    8140101,
+    8140103
+   ],
+   "name_en": "Battlefield of Water and Darkness",
+   "name_ko_candidate": "물과 어둠의 전장",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020400,
+   "mob_ids": [
+    8140103
+   ],
+   "name_en": "The Area of Blue Kentaurus",
+   "name_ko_candidate": "푸른 켄타우로스의 영역",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 5,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020401,
+   "mob_ids": [
+    8140103,
+    8180000
+   ],
+   "name_en": "Manon's Forest",
+   "name_ko_candidate": "마뇽의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.7999999523162842,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020402,
+   "mob_ids": [
+    8140103,
+    8180000
+   ],
+   "name_en": "Manon's Forest",
+   "name_ko_candidate": "마뇽의 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.7999999523162842,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240020500,
+   "mob_ids": [
+    8140102,
+    8140103
+   ],
+   "name_en": "Battlefield of Fire and Water",
+   "name_ko_candidate": "불과 물의 전장",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1.100000023841858,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030000,
+   "mob_ids": [
+    8140700
+   ],
+   "name_en": "Entrance to Dragon Forest",
+   "name_ko_candidate": "용의 숲 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 5,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030100,
+   "mob_ids": [
+    8140701
+   ],
+   "name_en": "Dragon Forest I",
+   "name_ko_candidate": "용의 숲1",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 18,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030101,
+   "mob_ids": [
+    8150200
+   ],
+   "name_en": "The Burning Forest",
+   "name_ko_candidate": "불타는 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030102,
+   "mob_ids": [
+    8150201
+   ],
+   "name_en": "The Forest That Disappeared",
+   "name_ko_candidate": "사라진 숲",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2085002
+   ],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030200,
+   "mob_ids": [
+    8140702
+   ],
+   "name_en": "Dragon Forest II",
+   "name_ko_candidate": "용의 숲2",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240030300,
+   "mob_ids": [
+    8140703
+   ],
+   "name_en": "Dragon Forest III",
+   "name_ko_candidate": "용의 숲3",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040000,
+   "mob_ids": [
+    8150300,
+    8150301
+   ],
+   "name_en": "The Dragon Canyon",
+   "name_ko_candidate": "용의 협곡",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040100,
+   "mob_ids": [
+    8150300,
+    8150301
+   ],
+   "name_en": "Canyon : Crossroad",
+   "name_ko_candidate": "협곡의 갈림길",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 5,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040200,
+   "mob_ids": [
+    8150302
+   ],
+   "name_en": "Canyon : East Road",
+   "name_ko_candidate": "협곡의 동쪽길",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040300,
+   "mob_ids": [
+    8150302
+   ],
+   "name_en": "Canyon : West Road",
+   "name_ko_candidate": "협곡의 서쪽길",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.3000000715255737,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040400,
+   "mob_ids": [
+    8150300,
+    8150301,
+    8150302
+   ],
+   "name_en": "Wyvern Canyon",
+   "name_ko_candidate": "와이번의 협곡",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2081007
+   ],
+   "portalCount": 7,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040500,
+   "mob_ids": [
+    8150302
+   ],
+   "name_en": "Entrance to Dragon Nest",
+   "name_ko_candidate": "용의 둥지 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000084
+   ],
+   "portalCount": 7,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040510,
+   "mob_ids": [
+    8190003,
+    8190004
+   ],
+   "name_en": "Nest of a Dead Dragon",
+   "name_ko_candidate": "죽은 용의 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 0.8999999761581421,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040511,
+   "mob_ids": [
+    8190003,
+    8190004
+   ],
+   "name_en": "The Dragon Nest Left Behind",
+   "name_ko_candidate": "남겨진 용의 둥지1",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 7,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040520,
+   "mob_ids": [
+    8190000,
+    8190001
+   ],
+   "name_en": "Destroyed Dragon Nest",
+   "name_ko_candidate": "망가진 용의 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    9000034
+   ],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040521,
+   "mob_ids": [
+    8190005
+   ],
+   "name_en": "Dangerous Dragon Nest",
+   "name_ko_candidate": "위험한 용의 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040600,
+   "mob_ids": [
+    8190004
+   ],
+   "name_en": "Peak of the Big Nest",
+   "name_ko_candidate": "큰 둥지 봉우리",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040610,
+   "mob_ids": [],
+   "name_en": "Below the Dangerous Nest",
+   "name_ko_candidate": "위험한 둥지 밑",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040611,
+   "mob_ids": [],
+   "name_en": "Nine Spirit's Nest",
+   "name_ko_candidate": "나인스피릿의 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040700,
+   "mob_ids": [],
+   "name_en": "Cave of Life - Entrance",
+   "name_ko_candidate": "생명의 동굴 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2081005,
+    2081006
+   ],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240040815,
+   "mob_ids": [
+    8190003,
+    8190004
+   ],
+   "name_en": "The Restoring Memory",
+   "name_ko_candidate": "회복의 기억",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Mini Dungeon",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 240080000,
+   "mob_ids": [],
+   "name_en": "Crimson Sky Dock",
+   "name_ko_candidate": "천공의 나루터",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2085000,
+    2085001
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080040,
+   "mob_ids": [],
+   "name_en": "Crimson Sky Resurrection Site ",
+   "name_ko_candidate": "천공의 부활터",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080041,
+   "mob_ids": [],
+   "name_en": "Crimson Sky Resurrection Site ",
+   "name_ko_candidate": "천공의 부활터",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080050,
+   "mob_ids": [],
+   "name_en": "Cave of the Deceased",
+   "name_ko_candidate": "망자의 동굴",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080051,
+   "mob_ids": [],
+   "name_en": "Cave of the Deceased",
+   "name_ko_candidate": "망자의 동굴",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080100,
+   "mob_ids": [
+    8300000
+   ],
+   "name_en": "Crimson Sky 1 ",
+   "name_ko_candidate": "천공 지역 1",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2085001
+   ],
+   "portalCount": 3,
+   "mobRate": 2.9999992847442627,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080200,
+   "mob_ids": [
+    8300001
+   ],
+   "name_en": "Crimson Sky 2",
+   "name_ko_candidate": "천공 지역 2",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.9999992847442627,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080300,
+   "mob_ids": [
+    8300002,
+    8300003
+   ],
+   "name_en": "Crimson Sky 3 ",
+   "name_ko_candidate": "천공 지역 끝자락",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.9999992847442627,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080400,
+   "mob_ids": [
+    8300003,
+    8300004
+   ],
+   "name_en": "Crimson Sky 4",
+   "name_ko_candidate": "천공의 둥지 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.9999992847442627,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080500,
+   "mob_ids": [
+    8300004,
+    8300005
+   ],
+   "name_en": "Crimson Sky 5",
+   "name_ko_candidate": "천공의 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.9999992847442627,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 240080600,
+   "mob_ids": [
+    8300006
+   ],
+   "name_en": "Crimson Sky Edge ",
+   "name_ko_candidate": "크림슨 스카이 가장자리",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.499999761581421,
+   "state": "ok_mobs",
+   "street_en": "Leafre",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 240080700,
+   "mob_ids": [],
+   "name_en": "Crimson Sky Nest Entrance",
+   "name_ko_candidate": "크림슨 스카이 둥지 입구",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 240080800,
+   "mob_ids": [],
+   "name_en": "Crimson Sky Nest ",
+   "name_ko_candidate": "크림슨 스카이 둥지",
+   "name_ko_status": "candidate",
+   "region": "Leafre",
+   "isTown": false,
+   "npcs": [
+    2085002
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Leafre",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 310000000,
+   "mob_ids": [],
+   "name_en": "Edelstein",
+   "name_ko_candidate": "에델슈타인",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2152000,
+    2152001,
+    2152010,
+    2152011,
+    2152012,
+    2152013,
+    2152014,
+    2152015,
+    2152016,
+    2152017,
+    2152018,
+    9010010,
+    2152002,
+    9000021,
+    9010000,
+    9270075,
+    9200000,
+    2150000,
+    2150001,
+    2150002,
+    2150004,
+    2150007,
+    2152019,
+    2152003,
+    2150005,
+    2150006,
+    2159305,
+    9010022,
+    1022101,
+    9201151,
+    2041017,
+    9000017,
+    9300010,
+    2152004,
+    2152005,
+    2152006,
+    2152007,
+    2152008,
+    2152009
+   ],
+   "portalCount": 29,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Black Wing Territory",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310000001,
+   "mob_ids": [],
+   "name_en": "Edelstein City Hall",
+   "name_ko_candidate": "에델슈타인 의회",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310000003,
+   "mob_ids": [],
+   "name_en": "Edelstein Hair Salon",
+   "name_ko_candidate": "에델슈타인 헤어샵",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2150003
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310000004,
+   "mob_ids": [],
+   "name_en": "Mansion",
+   "name_ko_candidate": "저택",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310000010,
+   "mob_ids": [],
+   "name_en": "Edelstein Temporary Airport",
+   "name_ko_candidate": "에델슈타인 임시공항",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2150008
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010000,
+   "mob_ids": [],
+   "name_en": "Secret Plaza",
+   "name_ko_candidate": "비밀광장",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2151001,
+    2151002,
+    2151003,
+    2151008,
+    2151004
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010010,
+   "mob_ids": [],
+   "name_en": "Training Room Entrance",
+   "name_ko_candidate": "트레이닝 룸 입구",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2151000,
+    2151007,
+    2151006,
+    2151005
+   ],
+   "portalCount": 8,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010100,
+   "mob_ids": [
+    9300409
+   ],
+   "name_en": "Training Room A",
+   "name_ko_candidate": "트레이닝 룸 A",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010200,
+   "mob_ids": [
+    9300410
+   ],
+   "name_en": "Training Room B",
+   "name_ko_candidate": "트레이닝 룸 B",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010300,
+   "mob_ids": [
+    9300411
+   ],
+   "name_en": "Training Room C",
+   "name_ko_candidate": "트레이닝 룸 C",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310010400,
+   "mob_ids": [
+    9300412
+   ],
+   "name_en": "Training Room D",
+   "name_ko_candidate": "트레이닝 룸 D",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Resistance Headquarters",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310020000,
+   "mob_ids": [
+    150000
+   ],
+   "name_en": "Edelstein Park",
+   "name_ko_candidate": "에델슈타인 공원1",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310020100,
+   "mob_ids": [
+    150001
+   ],
+   "name_en": "Edelstein Park 2",
+   "name_ko_candidate": "에델슈타인 공원2",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310020200,
+   "mob_ids": [
+    150002
+   ],
+   "name_en": "Edelstein Park 3",
+   "name_ko_candidate": "에델슈타인 공원3",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030000,
+   "mob_ids": [
+    1150000
+   ],
+   "name_en": "Edelstein Strolling Path",
+   "name_ko_candidate": "에델슈타인 산책로1",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030100,
+   "mob_ids": [
+    1150001
+   ],
+   "name_en": "Edelstein Strolling Path 2",
+   "name_ko_candidate": "에델슈타인 산책로2",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030110,
+   "mob_ids": [
+    1150002
+   ],
+   "name_en": "Serpent Path",
+   "name_ko_candidate": "뱀 나오는 길",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030200,
+   "mob_ids": [
+    2150000
+   ],
+   "name_en": "Edelstein Strolling Path 3",
+   "name_ko_candidate": "에델슈타인 산책로3",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030300,
+   "mob_ids": [
+    2150001
+   ],
+   "name_en": "Edelstein Strolling Path 4",
+   "name_ko_candidate": "에델슈타인 산책로4",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310030310,
+   "mob_ids": [
+    2150002
+   ],
+   "name_en": "Streetlight Row",
+   "name_ko_candidate": "가로등길",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Concrete Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040000,
+   "mob_ids": [
+    2150003
+   ],
+   "name_en": "Road to the Mine 1",
+   "name_ko_candidate": "광산 가는 길1",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2153000
+   ],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040100,
+   "mob_ids": [
+    3150000
+   ],
+   "name_en": "Road to the Mine 2",
+   "name_ko_candidate": "광산 가는 길2",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040110,
+   "mob_ids": [],
+   "name_en": "Hidden Portal",
+   "name_ko_candidate": "숨겨진 포탈",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2153001,
+    2153004
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040200,
+   "mob_ids": [],
+   "name_en": "Mine Entrance",
+   "name_ko_candidate": "광산 입구",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2153003,
+    2153002
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040300,
+   "mob_ids": [
+    3150001
+   ],
+   "name_en": "Rocky Road",
+   "name_ko_candidate": "바위길",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310040400,
+   "mob_ids": [
+    3150002
+   ],
+   "name_en": "Ore Trail",
+   "name_ko_candidate": "광석길",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Dry Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050000,
+   "mob_ids": [],
+   "name_en": "Power Plant Lobby",
+   "name_ko_candidate": "발전소 로비",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2154002,
+    2154004,
+    2154005,
+    2154016
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050100,
+   "mob_ids": [],
+   "name_en": "Power Plant Security",
+   "name_ko_candidate": "발전소 보안대",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2154003,
+    2154000,
+    2154001
+   ],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050200,
+   "mob_ids": [
+    6150000
+   ],
+   "name_en": "Shaft Entrance 1",
+   "name_ko_candidate": "갱도 입구1",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2154006,
+    2159303
+   ],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050300,
+   "mob_ids": [
+    6150000
+   ],
+   "name_en": "Shaft Entrance 2",
+   "name_ko_candidate": "갱도 입구2",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050400,
+   "mob_ids": [],
+   "name_en": "First Square",
+   "name_ko_candidate": "제 1 광장",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2154008,
+    2154007
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050500,
+   "mob_ids": [
+    7150000
+   ],
+   "name_en": "Shaft 1",
+   "name_ko_candidate": "갱도1",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 4,
+   "mobRate": 1.4000000953674316,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050510,
+   "mob_ids": [
+    7150003
+   ],
+   "name_en": "Raccoon Nest",
+   "name_ko_candidate": "너구리 소굴",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050520,
+   "mob_ids": [
+    8105000
+   ],
+   "name_en": "Dangerous Raccoon Nest",
+   "name_ko_candidate": "위험한 너구리 소굴",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [
+    2159304
+   ],
+   "portalCount": 3,
+   "mobRate": 1.6000001430511475,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050600,
+   "mob_ids": [
+    7150001
+   ],
+   "name_en": "Shaft 2",
+   "name_ko_candidate": "갱도2",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050700,
+   "mob_ids": [
+    7150002
+   ],
+   "name_en": "Shaft 3",
+   "name_ko_candidate": "갱도3",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 310050800,
+   "mob_ids": [
+    7150004
+   ],
+   "name_en": "Shaft 4",
+   "name_ko_candidate": "갱도4",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.5000001192092896,
+   "state": "ok_mobs",
+   "street_en": "Verne Mine",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 502030000,
+   "mob_ids": [],
+   "name_en": "Entry Cube",
+   "name_ko_candidate": "진입 큐브",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.000000238418579,
+   "state": "ok_empty",
+   "street_en": "Mothership",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 502030020,
+   "mob_ids": [],
+   "name_en": "Proliferation Cube",
+   "name_ko_candidate": "증식 큐브",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 12,
+   "mobRate": 2.000000238418579,
+   "state": "ok_empty",
+   "street_en": "Mothership",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 502030040,
+   "mob_ids": [],
+   "name_en": "Control Cube",
+   "name_ko_candidate": "제어 큐브",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 11,
+   "mobRate": 2.000000238418579,
+   "state": "ok_empty",
+   "street_en": "Mothership",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 502030060,
+   "mob_ids": [],
+   "name_en": "Resurrection Cube",
+   "name_ko_candidate": "부활 큐브",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.000000238418579,
+   "state": "ok_empty",
+   "street_en": "Mothership",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 502030079,
+   "mob_ids": [],
+   "name_en": "Neutral Cube",
+   "name_ko_candidate": "중립 큐브",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.000000238418579,
+   "state": "ok_empty",
+   "street_en": "Mothership",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 677000004,
+   "mob_ids": [
+    2130100
+   ],
+   "name_en": "Andras Strolling Path",
+   "name_ko_candidate": "안드라스 산책로",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Mini Dungeon",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 800000000,
+   "mob_ids": [],
+   "name_en": "Mushroom Shrine",
+   "name_ko_candidate": "버섯신사",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [
+    9110003,
+    9110004,
+    1022101,
+    9000017,
+    2041017,
+    9010022,
+    9110107,
+    9201151,
+    9110005,
+    9110006,
+    9110007,
+    9110002,
+    9100105,
+    9000020,
+    9270012,
+    9010010
+   ],
+   "portalCount": 14,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Zipangu",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 800040200,
+   "mob_ids": [
+    9400400
+   ],
+   "name_en": "Castle Corridor",
+   "name_ko_candidate": "성 복도",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 8,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Zipangu",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 800040305,
+   "mob_ids": [
+    9400400,
+    9400401,
+    9400404
+   ],
+   "name_en": "Phantom's Room",
+   "name_ko_candidate": "카에데 성 몽환의 사이5",
+   "name_ko_status": "adopted",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Zipangu",
+   "name_ko_source": "planet_helper",
+   "name_ko_provenance": {
+    "adopted_by": "대표",
+    "status_text_original": "한국어 표시명 후보 (채택 확정 — 플래닛헬퍼 표기, 대표 채택 2026-10-21)",
+    "adopted_date": "2026-10-21",
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": "대표 채택 2026-10-21 (플래닛헬퍼 표기)"
+   }
+  },
+  {
+   "id": 801000100,
+   "mob_ids": [],
+   "name_en": "Locker Room (M)",
+   "name_ko_candidate": "탈의실 (남)",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    9120004
+   ],
+   "portalCount": 4,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Zipangu",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809000201,
+   "mob_ids": [],
+   "name_en": "Spa (F)",
+   "name_ko_candidate": "온천 (여)",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    9100107
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Zipangu",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050000,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 1",
+   "name_ko_candidate": "루디브리엄 미로 1",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050001,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 2",
+   "name_ko_candidate": "루디브리엄 미로 2",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050002,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 3",
+   "name_ko_candidate": "루디브리엄 미로 3",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050003,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 4",
+   "name_ko_candidate": "루디브리엄 미로 4",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050004,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 5",
+   "name_ko_candidate": "루디브리엄 미로 5",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050005,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 6",
+   "name_ko_candidate": "루디브리엄 미로 6",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050006,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 7",
+   "name_ko_candidate": "루디브리엄 미로 7",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050007,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 8",
+   "name_ko_candidate": "루디브리엄 미로 8",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050008,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 9",
+   "name_ko_candidate": "루디브리엄 미로 9",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050009,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 10",
+   "name_ko_candidate": "루디브리엄 미로 10",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050010,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 11",
+   "name_ko_candidate": "루디브리엄 미로 11",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050011,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 12",
+   "name_ko_candidate": "루디브리엄 미로 12",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050012,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 13",
+   "name_ko_candidate": "루디브리엄 미로 13",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050013,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 14",
+   "name_ko_candidate": "루디브리엄 미로 14",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050014,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 15",
+   "name_ko_candidate": "루디브리엄 미로 15",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 5,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050015,
+   "mob_ids": [],
+   "name_en": "Ludibrium Maze 16",
+   "name_ko_candidate": "루디브리엄 미로 16",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": true,
+   "npcs": [
+    9103000
+   ],
+   "portalCount": 3,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050016,
+   "mob_ids": [],
+   "name_en": "Exit of the Maze",
+   "name_ko_candidate": "미로의 출구",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    9103002
+   ],
+   "portalCount": 2,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 809050017,
+   "mob_ids": [],
+   "name_en": "Exit of the Maze",
+   "name_ko_candidate": "미로의 출구",
+   "name_ko_status": "candidate",
+   "region": "Ludibrium",
+   "isTown": false,
+   "npcs": [
+    9103003
+   ],
+   "portalCount": 2,
+   "mobRate": 1.2000000476837158,
+   "state": "ok_empty",
+   "street_en": "Ludibrium",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 910060000,
+   "mob_ids": [
+    210100,
+    1210101
+   ],
+   "name_en": "Bowman Training Center",
+   "name_ko_candidate": "궁수 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1012118
+   ],
+   "portalCount": 2,
+   "mobRate": 1.9999984502792358,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910060100,
+   "mob_ids": [
+    9300386
+   ],
+   "name_en": "Power B. Fore's Spore Training Center",
+   "name_ko_candidate": "왕연해의 스포아 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.9999984502792358,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910060101,
+   "mob_ids": [
+    9300386
+   ],
+   "name_en": "Power B. Fore's Borrowed Training Center ",
+   "name_ko_candidate": "왕연해의 대여된 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1.9999984502792358,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910120000,
+   "mob_ids": [
+    210100,
+    1110101
+   ],
+   "name_en": "Magician Training Center",
+   "name_ko_candidate": "마법사 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1032113
+   ],
+   "portalCount": 2,
+   "mobRate": 1.9999984502792358,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910220000,
+   "mob_ids": [
+    130100,
+    1110101
+   ],
+   "name_en": "Warrior Training Center",
+   "name_ko_candidate": "전사 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1022104
+   ],
+   "portalCount": 2,
+   "mobRate": 1.9999984502792358,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910310000,
+   "mob_ids": [
+    130100,
+    1120100
+   ],
+   "name_en": "Thief Training Center",
+   "name_ko_candidate": "도적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1052113
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000476837158,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 910540400,
+   "mob_ids": [
+    9001003
+   ],
+   "name_en": "Dimensional World",
+   "name_ko_candidate": "차원의 세계",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    1061010
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Hidden Street",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 912030000,
+   "mob_ids": [
+    1110100,
+    1210100
+   ],
+   "name_en": "Pirate Training Center",
+   "name_ko_candidate": "해적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1095001
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 912030001,
+   "mob_ids": [
+    1110100,
+    1210100
+   ],
+   "name_en": "Pirate Training Center",
+   "name_ko_candidate": "해적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1095001
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 912030002,
+   "mob_ids": [
+    1110100,
+    1210100
+   ],
+   "name_en": "Pirate Training Center",
+   "name_ko_candidate": "해적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1095001
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 912030003,
+   "mob_ids": [
+    1110100,
+    1210100
+   ],
+   "name_en": "Pirate Training Center",
+   "name_ko_candidate": "해적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1095001
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 912030004,
+   "mob_ids": [
+    1110100,
+    1210100
+   ],
+   "name_en": "Pirate Training Center",
+   "name_ko_candidate": "해적 수련장",
+   "name_ko_status": "candidate",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [
+    1095001
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Victoria Road",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 925020000,
+   "mob_ids": [],
+   "name_en": "Mu Lung Dojo Entrance",
+   "name_ko_candidate": "무릉도장 입구",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": true,
+   "npcs": [],
+   "portalCount": 6,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Mu Lung Dojo",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 925021303,
+   "mob_ids": [],
+   "name_en": "Mu Lung Dojo 13th Floor",
+   "name_ko_candidate": "무릉도장 13층",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    2091005
+   ],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Mu Lung Dojo",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 925022600,
+   "mob_ids": [],
+   "name_en": "Mu Lung Dojo 26th Floor",
+   "name_ko_candidate": "무릉도장 26층",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    2091005
+   ],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Mu Lung Dojo",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 925033804,
+   "mob_ids": [],
+   "name_en": "Mu Lung Dojo 38th Floor",
+   "name_ko_candidate": "무릉도장 38층",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [
+    2091005
+   ],
+   "portalCount": 9,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Mu Lung Dojo",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (정본 동계열 확정 표기 정합)",
+    "adopted_date": null,
+    "basis_ref": {
+     "series": [
+      {
+       "id": 925022600,
+       "name": "무릉도장 26층"
+      },
+      {
+       "id": 925021303,
+       "name": "무릉도장 13층"
+      },
+      {
+       "id": 925020000,
+       "name": "무릉도장 입구"
+      }
+     ],
+     "canonical_generation": "maps.json 0ed2bec13ad1601b5a6861cdc2d26e3aa5a0ba5ba51facda8fb18b53c091b105",
+     "note": "채택 기록 미연결로 candidate 유지 (승격 금지 판정)"
+    },
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 931000410,
+   "mob_ids": [],
+   "name_en": "Surl's Water Cellar",
+   "name_ko_candidate": "수아르의 물 창고",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 931000420,
+   "mob_ids": [
+    9300414
+   ],
+   "name_en": "Danger! Makeshift Airport",
+   "name_ko_candidate": "위험! 임시공항",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2159202
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 931010010,
+   "mob_ids": [
+    9300419
+   ],
+   "name_en": "Guarded Mansion",
+   "name_ko_candidate": "경계 심한 저택",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2159301
+   ],
+   "portalCount": 2,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 931010020,
+   "mob_ids": [],
+   "name_en": "Ulrika's Hideout",
+   "name_ko_candidate": "울리카의 아지트",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_empty",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 931010030,
+   "mob_ids": [
+    9300418
+   ],
+   "name_en": "Shady Hair Salon",
+   "name_ko_candidate": "수상쩍은 헤어샵",
+   "name_ko_status": "candidate",
+   "region": "Edelstein-area",
+   "isTown": true,
+   "npcs": [
+    2159300
+   ],
+   "portalCount": 2,
+   "mobRate": 1,
+   "state": "ok_mobs",
+   "street_en": "Edelstein",
+   "name_ko_source": "KMS 389"
+  },
+  {
+   "id": 950100700,
+   "mob_ids": [
+    9500389
+   ],
+   "name_en": "Goblin Cave 3",
+   "name_ko_candidate": "고블린 동굴 3",
+   "name_ko_status": "candidate",
+   "region": "etc",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 3,
+   "mobRate": 2.000000238418579,
+   "state": "ok_mobs",
+   "street_en": "Mini Dungeon",
+   "name_ko_source": "self_translation",
+   "name_ko_verification": "unverified",
+   "name_ko_provenance": {
+    "adopted_by": null,
+    "status_text_original": "한국어 표시명 후보 (자체 번역 — 실측 확인 안 됨)",
+    "adopted_date": null,
+    "normalization_ref": "기술이사 명명 판정 2026-11-02 (정규화 2차)",
+    "verdict_ref": null
+   }
+  },
+  {
+   "id": 101010101,
+   "mob_ids": [],
+   "name_en": "The Tree That Grew II",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Victoria Road"
+  },
+  {
+   "id": 101010103,
+   "mob_ids": [],
+   "name_en": "Top of the Tree That Grew",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Victoria Road"
+  },
+  {
+   "id": 104040000,
+   "mob_ids": [],
+   "name_en": "Henesys Hunting Ground I",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Victoria Road",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Victoria Road"
+  },
+  {
+   "id": 105040000,
+   "mob_ids": [],
+   "name_en": "Swampy Land in a Deep Forest",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105040301,
+   "mob_ids": [],
+   "name_en": "Sleepy Dungeon I",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105040303,
+   "mob_ids": [],
+   "name_en": "Sleepy Dungeon III",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105040305,
+   "mob_ids": [],
+   "name_en": "Sleepy Dungeon V",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105040400,
+   "mob_ids": [],
+   "name_en": "Sleepywood Hotel",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105050000,
+   "mob_ids": [],
+   "name_en": "Ant Tunnel I",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105050300,
+   "mob_ids": [],
+   "name_en": "Ant Tunnel IV",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105060000,
+   "mob_ids": [],
+   "name_en": "Dangerous Steam",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105090200,
+   "mob_ids": [],
+   "name_en": "Another Entrance",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105090301,
+   "mob_ids": [],
+   "name_en": "Wild Cargo's Area",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 105090310,
+   "mob_ids": [],
+   "name_en": "Drake Area",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Dungeon",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Dungeon"
+  },
+  {
+   "id": 120020000,
+   "mob_ids": [],
+   "name_en": "Coastal Forest",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Beach",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Beach"
+  },
+  {
+   "id": 502030004,
+   "mob_ids": [],
+   "name_en": "Proliferation Cube",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Mothership",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Mothership"
+  },
+  {
+   "id": 502030008,
+   "mob_ids": [],
+   "name_en": "Control Cube",
+   "name_ko_candidate": "",
+   "name_ko_status": "unmapped",
+   "region": "Mothership",
+   "isTown": false,
+   "npcs": [],
+   "portalCount": 0,
+   "mobRate": 1.1999982595443726,
+   "state": "ok_empty",
+   "street_en": "Mothership"
+  }
+ ]
+}
