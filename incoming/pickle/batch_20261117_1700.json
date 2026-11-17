@@ -4,8 +4,8 @@
  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
  "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
  "target": "정예 6~10편 (강아지 우선 + 고양이·쪼꼬미 균형) — 미달 편 억지 편입 금지",
- "delivered_count": 5,
- "hold_count": 9,
+ "delivered_count": 3,
+ "hold_count": 7,
  "undetermined_count": 3,
  "reject_count": 80,
  "judged_total": 97,
@@ -49,67 +49,13 @@
     "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
     "5_no_people": "PASS — 사람 없음, 목줄만 화면 하단에 걸침"
    },
-   "note": "구독 551·조회 1,615의 초소형 1인칭 계정. 원본 퀄리티는 깨끗하나 채널 체급이 낮다."
-  },
-  {
-   "id": "ea1BfRTHSKo",
-   "url": "https://www.youtube.com/shorts/ea1BfRTHSKo",
-   "title": "#kimkong  #shorts #walk #maltese",
-   "channel": "My name is 김콩 [kim kong's daily life]",
-   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
-   "subs_txt": "551",
-   "views_txt": "254",
-   "likes_txt": "6",
-   "published": "2023-11-22",
-   "cat": "강아지",
-   "dur_s": 20.76,
-   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
-   "motion_mean": 12.55,
-   "motion_med": 13.54,
-   "frames": 103,
-   "spike_times_s": [],
-   "stills": "stills23/c23_kimkong_beach.png",
-   "why": "몰티즈가 모래사장을 카메라 쪽으로 터벅터벅 걸어오는 20초 단일 숏. 8컷 모두 같은 해변·같은 개, 자막·워터마크·사람 0.",
-   "cut_evidence": "103프레임 차분 평균 12.55·중앙 13.54, 스파이크 0회. 임계 12.0을 0.55 넘긴 구간이라 편차(±30%)를 감안해도 여유가 작다.",
-   "gate_check": {
-    "1_uncut_motion": "PASS(주의) — 모션 12.55로 임계 근접, 스파이크 0",
-    "2_original_creator": "PASS — 김콩 채널 1인칭",
-    "3_measured_only": "PASS — 구독 551 · 조회 254 · 좋아요 6 · 2023-11-22",
-    "4_no_subs": "PASS — 8컷 전부 자막 0",
-    "5_no_people": "PASS — 사람 없음(모래 위 그림자만)"
-   },
-   "note": "조회 254회로 이번 회차 최저. 화면 완성도는 좋으나 임계 여유가 작아 기획실장 확인 권장."
-  },
-  {
-   "id": "CFVE8_idObg",
-   "url": "https://www.youtube.com/shorts/CFVE8_idObg",
-   "title": "#kimkong🐶 #shorts #산책",
-   "channel": "My name is 김콩 [kim kong's daily life]",
-   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
-   "subs_txt": "551",
-   "views_txt": "56",
-   "likes_txt": "3",
-   "published": "2023-03-27",
-   "cat": "강아지",
-   "dur_s": 14.76,
-   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
-   "motion_mean": 25.35,
-   "motion_med": 22.63,
-   "frames": 41,
-   "spike_times_s": [
-    0.1
-   ],
-   "stills": "stills23/c23_kimkong_path_run.png",
-   "why": "몰티즈가 흙길 산책로를 카메라 쪽으로 전력 질주해 오는 14.8초 단일 숏. 8컷 모두 같은 길·같은 개, 자막·워터마크·사람 0.",
-   "cut_evidence": "차분 평균 25.35·중앙 22.63, 스파이크는 0.1초 첫 프레임 1회. 다만 샘플이 41프레임(다른 편은 103)으로 듬성듬성해 수치 신뢰도가 상대적으로 낮다.",
-   "gate_check": {
-    "1_uncut_motion": "PASS — 모션 25.35로 이번 회차 최고, 컷 0",
-    "2_original_creator": "PASS — 김콩 채널 1인칭",
-    "3_measured_only": "PASS — 구독 551 · 조회 56 · 좋아요 3 · 2023-03-27",
-    "4_no_subs": "PASS — 8컷 전부 자막 0",
-    "5_no_people": "PASS — 사람 없음"
-   },
-   "note": "조회 56회. 원본은 가장 역동적이지만 조회수가 사실상 노출 0인 영상이다."
+   "note": "구독 551·조회 1,615의 초소형 1인칭 계정. 원본 퀄리티는 깨끗하나 채널 체급이 낮다.",
+   "author_confirm": "원작자 본인 계정 확인 — 채널 소개 '1.Name : 김콩(Kim kong) 2.Age : 3살배기 3.Dog breed : 말티즈 … 김콩이 일상을 소개 합니다', 핸들 @mynameiskimkongsdailylife752, 개설 2022-06-30, 쇼츠 48편 전부 같은 몰티즈(#kimkong 고정 태그, 2022~2023년 일상 지속 업로드). 제3자 편집·타 계정 영상 0.",
+   "author_confirm_evidence": "채널 /shorts 48편·/about 실측(YouTube HTML + Invidious API)",
+   "publish_date_confirmed": "2023-07-11",
+   "publish_date_source": "YouTube watch 페이지 ytInitialData dateText (일 단위 확정)",
+   "low_view_checked": "해당 없음 — 조회 1,615회(1,000 이상)",
+   "status_after_1810_review": "확정 유지"
   },
   {
    "id": "8iepjqTuXeI",
@@ -138,7 +84,13 @@
     "4_no_subs": "PASS — 8컷 전부 자막 0",
     "5_no_people": "PASS — 사람 없음"
    },
-   "note": "같은 계정 4편 중 화면·모션 균형이 가장 무난."
+   "note": "같은 계정 4편 중 화면·모션 균형이 가장 무난.",
+   "author_confirm": "원작자 본인 계정 확인 — 채널 소개 '1.Name : 김콩(Kim kong) 2.Age : 3살배기 3.Dog breed : 말티즈 … 김콩이 일상을 소개 합니다', 핸들 @mynameiskimkongsdailylife752, 개설 2022-06-30, 쇼츠 48편 전부 같은 몰티즈(#kimkong 고정 태그, 2022~2023년 일상 지속 업로드). 제3자 편집·타 계정 영상 0.",
+   "author_confirm_evidence": "채널 /shorts 48편·/about 실측(YouTube HTML + Invidious API)",
+   "publish_date_confirmed": "2023-03-18",
+   "publish_date_source": "YouTube watch 페이지 ytInitialData dateText (일 단위 확정)",
+   "low_view_checked": "저조회 확인 — 조회 620 · 원작자 본인 계정 · 게시 2023-03-18(3년 8개월 경과) · 모션 재측정 15.74(104프레임, 스파이크 0·최대 변화픽셀 0.368)",
+   "status_after_1810_review": "확정(23차 최종 2편 중 1편)"
   },
   {
    "id": "jgB9uoNJz1M",
@@ -173,22 +125,6 @@
   }
  ],
  "holds": [
-  {
-   "id": "U7_-fYuhAP4",
-   "channel": "My Cat",
-   "subs": "229",
-   "dur": 19.44,
-   "mean": 19.71,
-   "point": "기술 게이트 전부 통과(모션 19.71·컷 0·8컷 무자막·무사람). 다만 채널 소개가 'cutest cats even dogs and animals' 큐레이션 문구, 쇼츠 제목이 전부 'cute cat'/'lovable cat', 'oman summer #lifeofoman' 같은 타 지역 영상 혼재 → 재업·수집 계정 가능성. 원작자성(게이트②) 판정 필요."
-  },
-  {
-   "id": "iVZO9LtwnLA",
-   "channel": "Dog's Day",
-   "subs": "82.5K",
-   "dur": 98.46,
-   "mean": 14.55,
-   "point": "시바가 누워 손이 린트롤러·젤팩을 대는 0~10초 단일 숏(98초 장편). 자막·워터마크·사람 얼굴 0. 다만 채널 소개 'just started please support', 제목에 '#littlemamanyu #xiaobai' 등 타 유명견 이름이 섞여 재업 의심 + 동작이 '누워서 받는' 구도라 역동성 판정 필요."
-  },
   {
    "id": "MPzUYNBGZOY",
    "channel": "쥐도리날아라",
@@ -272,10 +208,130 @@
   "주 사유 기준·중복 있음": true
  },
  "notes_for_기획실장": [
-  "확정 5편 중 4편이 같은 채널(김콩, 551명)·같은 몰티즈다. 계정 집중을 허용할지, 아니면 계정당 1~2편으로 제한할지 판정이 필요하다.",
-  "김콩 4편의 조회수가 56·254·620·1,615회로 매우 낮다. '조회수 하한' 기준이 있다면 4편 중 3편이 걸린다.",
-  "U7_-fYuhAP4(고양이·모션 19.71·완전 무자막)는 기술적으로 이번 회차 최상급이지만 채널 원작자성만 남았다. 채널 최근 30편을 사람이 훑으면 즉시 확정 가능하다.",
-  "iVZO9LtwnLA는 조회 234만·좋아요 4.1만의 대형 클립(시바 스파)이라 원작자성만 풀리면 이번 회차 최대어다.",
-  "8컷 검수로 상향한 결과, 22차 방식(4컷)이면 통과했을 bywS6KNpr88이 자막 때문에 탈락했다. 22차 확정 3편도 같은 방식으로 재검할 가치가 있다."
- ]
+  "23차 확정은 3편으로 정정했다(김콩 2→1, CFVE8_idObg는 5.57초 프레임 전환으로 탈락, ea1BfRTHSKo는 예비 재고). 보류 2건(U7_-fYuhAP4·iVZO9LtwnLA)은 둘 다 재업·큐레이션 계정으로 확인돼 탈락 처리했다.",
+  "김콩 4편 재측정 결과 CFVE8_idObg에 5.57초 프레임 전환이 있었다. 8컷(0.3·1.5·3·4.5·6·8·9.2·10.1초)만으로는 4.5~6.0초 구간의 컷을 놓친다 — 10fps 차분 스파이크 스캔을 상시 병행해야 한다(플레이북 0장 (c) 반영).",
+  "22차 확정 3편 8컷 재검 결과: Eo8lMVLLWdE 유지, UU-BltIAc50 탈락(7.4~10.2초 한글 자막 '체급차이가....'), EqnkC2nxojk는 AI 생성 표기(영상 페이지 AI 배지, 'AI: Content was made with AI')로 ai_flag_hold — 플레이북에 AI 조항이 없어 기획실장 판정 대기.",
+  "Dog's Day 구독자 82,500명 실측 — 50만 미만 기본 등급으로 등급 게이트에는 걸리지 않았다. 다만 채널이 개설 3개월·24편에 불과하고 개체·손·담요가 전부 달라 재업으로 판정했다.",
+  "저조회(1,000 미만) 3편(56·254·620회)은 모두 원작자 본인 계정·게시일(2023-03-27/2023-11-22/2023-03-18)을 확인해 '저조회 확인' 표기를 넣었다."
+ ],
+ "reserve_pool": [
+  {
+   "id": "ea1BfRTHSKo",
+   "url": "https://www.youtube.com/shorts/ea1BfRTHSKo",
+   "title": "#kimkong  #shorts #walk #maltese",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "254",
+   "likes_txt": "6",
+   "published": "2023-11-22",
+   "cat": "강아지",
+   "dur_s": 20.76,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 12.55,
+   "motion_med": 13.54,
+   "frames": 103,
+   "spike_times_s": [],
+   "stills": "stills23/c23_kimkong_beach.png",
+   "why": "몰티즈가 모래사장을 카메라 쪽으로 터벅터벅 걸어오는 20초 단일 숏. 8컷 모두 같은 해변·같은 개, 자막·워터마크·사람 0.",
+   "cut_evidence": "103프레임 차분 평균 12.55·중앙 13.54, 스파이크 0회. 임계 12.0을 0.55 넘긴 구간이라 편차(±30%)를 감안해도 여유가 작다.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(주의) — 모션 12.55로 임계 근접, 스파이크 0",
+    "2_original_creator": "PASS — 김콩 채널 1인칭",
+    "3_measured_only": "PASS — 구독 551 · 조회 254 · 좋아요 6 · 2023-11-22",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음(모래 위 그림자만)"
+   },
+   "note": "조회 254회로 이번 회차 최저. 화면 완성도는 좋으나 임계 여유가 작아 기획실장 확인 권장.",
+   "author_confirm": "원작자 본인 계정 확인 — 채널 소개 '1.Name : 김콩(Kim kong) 2.Age : 3살배기 3.Dog breed : 말티즈 … 김콩이 일상을 소개 합니다', 핸들 @mynameiskimkongsdailylife752, 개설 2022-06-30, 쇼츠 48편 전부 같은 몰티즈(#kimkong 고정 태그, 2022~2023년 일상 지속 업로드). 제3자 편집·타 계정 영상 0.",
+   "author_confirm_evidence": "채널 /shorts 48편·/about 실측(YouTube HTML + Invidious API)",
+   "publish_date_confirmed": "2023-11-22",
+   "publish_date_source": "YouTube watch 페이지 ytInitialData dateText (일 단위 확정)",
+   "low_view_checked": "저조회 확인 — 조회 254 · 원작자 본인 계정 · 게시 2023-11-22(3년 경과) · 모션 12.55(103프레임)로 임계 근접·길이 20.76초로 골든 12초에서 가장 멀어 3순위",
+   "status_after_1810_review": "예비 재고(reserve_pool)",
+   "reserve_reason": "계정 상한(회차당 동일 계정 2편) 초과분. 김콩 4편 중 결 순위 3위 — 모션 12.55(중앙 13.54)로 임계 12.0을 0.55 넘긴 데다 20.76초로 4편 중 골든 12초에서 가장 멀다. 다음 회차 분산 편입 후보(편입 시 재측정 필수)."
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "CFVE8_idObg",
+   "url": "https://www.youtube.com/shorts/CFVE8_idObg",
+   "title": "#kimkong🐶 #shorts #산책",
+   "channel": "My name is 김콩 [kim kong's daily life]",
+   "channel_id": "UCQom-vHWH_np_W0JHbw3xbQ",
+   "subs_txt": "551",
+   "views_txt": "56",
+   "likes_txt": "3",
+   "published": "2023-03-27",
+   "cat": "강아지",
+   "dur_s": 14.76,
+   "resolution": "720x1280(oar2 실측) · 디코드 240x426",
+   "motion_mean": 25.35,
+   "motion_med": 22.63,
+   "frames": 41,
+   "spike_times_s": [
+    0.1
+   ],
+   "stills": "stills23/c23_kimkong_path_run.png",
+   "why": "몰티즈가 흙길 산책로를 카메라 쪽으로 전력 질주해 오는 14.8초 단일 숏. 8컷 모두 같은 길·같은 개, 자막·워터마크·사람 0.",
+   "cut_evidence": "차분 평균 25.35·중앙 22.63, 스파이크는 0.1초 첫 프레임 1회. 다만 샘플이 41프레임(다른 편은 103)으로 듬성듬성해 수치 신뢰도가 상대적으로 낮다.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 25.35로 이번 회차 최고, 컷 0",
+    "2_original_creator": "PASS — 김콩 채널 1인칭",
+    "3_measured_only": "PASS — 구독 551 · 조회 56 · 좋아요 3 · 2023-03-27",
+    "4_no_subs": "PASS — 8컷 전부 자막 0",
+    "5_no_people": "PASS — 사람 없음"
+   },
+   "note": "조회 56회. 원본은 가장 역동적이지만 조회수가 사실상 노출 0인 영상이다.",
+   "author_confirm": "원작자 본인 계정 확인 — 채널 소개 '1.Name : 김콩(Kim kong) 2.Age : 3살배기 3.Dog breed : 말티즈 … 김콩이 일상을 소개 합니다', 핸들 @mynameiskimkongsdailylife752, 개설 2022-06-30, 쇼츠 48편 전부 같은 몰티즈(#kimkong 고정 태그, 2022~2023년 일상 지속 업로드). 제3자 편집·타 계정 영상 0.",
+   "author_confirm_evidence": "채널 /shorts 48편·/about 실측(YouTube HTML + Invidious API)",
+   "publish_date_confirmed": "2023-03-27",
+   "publish_date_source": "YouTube watch 페이지 ytInitialData dateText (일 단위 확정)",
+   "low_view_checked": "저조회 확인 — 조회 56 · 원작자 본인 계정 · 게시 2023-03-27(3년 8개월 경과)",
+   "status_after_1810_review": "탈락(게이트① 위반)",
+   "reject_reason": "게이트① 위반 — 5.57초 프레임 전환(근접 앵글 → 원거리 와이드) 확인. 10fps 차분 스캔에서 5.55→5.60초 변화픽셀 0.64(주변 0.30~0.49), 0.02초 간격 스틸(5.52·5.54·5.56 → 5.58·5.60·5.63)에서 중간 블러 없이 화면이 단번에 바뀜. 23차 8컷(0.3·1.5·3·4.5·6·8·9.2·10.1초)은 4.5~6.0초 사이 공백이라 놓쳤고, 23차 모션 측정도 41프레임만 잡혀 스파이크를 검출하지 못했다.",
+   "reject_evidence": "work/sourcing_v2/tmp24/ · browser/c23_CFVE8_idObg_cut_zoom-2026-11-17-182812.png · browser/c23_CFVE8_idObg_dense-2026-11-17-182643.png",
+   "remeasured_motion": {
+    "frames": 105,
+    "mean": 20.49,
+    "med": 20.62,
+    "spike_s": [
+     5.578
+    ],
+    "max_ratio": 0.626,
+    "window": "0.108~10.403초"
+   }
+  }
+ ],
+ "hold_resolved": [
+  {
+   "id": "U7_-fYuhAP4",
+   "channel": "My Cat",
+   "subs": "229",
+   "result": "탈락 — 게이트②(원작자 본인 계정) 위반",
+   "evidence": "채널 쇼츠 48편을 전수 확인(개설 2015-08-18, 핸들 @mycatginjr). 썸네일 실물 확인 결과 서로 다른 고양이·집·사람이 섞여 있음: 이탈리아 마을에서 고양이 떼에 둘러싸인 금발 여성(1vevklfsgMQ, 유명 '이탈리아 고양이 아가씨' 영상), 나무 창고에서 길고양이에게 밥 주는 남성(KaLcgJQI1wI), 가을 낙엽 위 카오리 고양이(U6lFwckgPqQ), 나무를 짚는 태비(iGoJy3-xngo), 미니어처 인형 마을 영상(Afr1vgDyXXE). 조회는 대부분 1~40회, 일부만 1~3천회.",
+   "channel_signals": "소개 'cutest cats even dogs and animals … Cat fails, Daily cat vlogs, Dogs videos', 제목 대부분 'cute cat'/'Cute cat'/'lovable cat' 반복, 'oman summer #lifeofoman'(오만 여행) 혼재",
+   "detail": "대상 영상 자체는 19.44초·모션 19.71·8컷 무자막·무사람으로 기술 게이트는 통과(게시 2025-11-05 · 조회 3,151 · 좋아요 27). 계정 성격만으로 탈락.",
+   "still_evidence": "work/sourcing_v2/stills22_8cut/ch_mycat_thumb_sheet.png"
+  },
+  {
+   "id": "iVZO9LtwnLA",
+   "channel": "Dog's Day",
+   "subs": "82,500",
+   "result": "탈락 — 게이트②(원작자 본인 계정) 위반",
+   "evidence": "채널 개설 2026-08-07(3개월), 업로드 전량 24편(쇼츠 24·일반영상 0), 구독 82,500명(about interactionStatistic 실측). 썸네일 실물 확인 결과 시바 puppies·흰 비숑/푸들·회색 태비 등 서로 다른 개체가 서로 다른 손·담요(파란 털·분홍 털)·그릇에서 '스파 ASMR' 형식으로 반복 — 한 집 1인칭 계정이 아니라 타 계정 영상 수집·재업.",
+   "channel_signals": "제목 전편 'Dog's Day/Dogs Day/Special Dogs day + #dogsspa #asmr #shibainu', 태그에 #littlemanyu #xiaobai #mayu #husky 혼재, 'Cat Spa'·'Amazing cat spa' 영상까지 포함, 소개 'just started please support ☺️😀☺️'",
+   "detail": "대상 영상은 98.46초·조회 2,343,006·좋아요 41,409·게시 2026-08-13(채널 개설 6일 후)로 이번 회차 최대어였으나, 계정 성격으로 탈락. 구독자 등급: 82,500명 = 8.25만 → '50만 미만 기본 등급'으로 등급 게이트에 걸리지 않음(50만~100만 보류 구간 아님).",
+   "still_evidence": "work/sourcing_v2/stills22_8cut/ch_dogsday_thumb_sheet.png"
+  }
+ ],
+ "reserve_count": 1,
+ "rejected_after_review_count": 3,
+ "corrections_20261117_1810": {
+  "기준": "기획실장 판정(2026-11-17 18:05) — ① 회차당 동일 계정 2편 상한 ② 조회 1,000 미만 '저조회 확인' 분리 ③ 8컷(0.3~10.1초) 전수 육안 검수",
+  "확정 편수": "5편 → 3편 (김콩 2 → 1, 나머지 1편은 예비 재고; CFVE8_idObg는 재검에서 프레임 전환 검출로 탈락)",
+  "김콩 4편 결 순위": "1위 l67syR6P-gk(모션 15.97·15.24초·조회 1,615) → 확정 / 2위 8iepjqTuXeI(모션 재측정 15.74·15.04초·조회 620) → 확정 / 3위 ea1BfRTHSKo(12.55·20.76초·254) → 예비 재고 / 4위 CFVE8_idObg(20.49 재측정·5.57초 프레임 전환·56) → 탈락",
+  "보류 2건": "U7_-fYuhAP4 · iVZO9LtwnLA 모두 탈락 판정(원작자성). 보류 9편 → 7편",
+  "검수 방식": "4컷 폐기, 8컷 + 10fps 차분 스파이크 스캔 병행"
+ }
 }
