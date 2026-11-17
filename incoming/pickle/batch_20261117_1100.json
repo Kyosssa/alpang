@@ -1,0 +1,221 @@
+{
+ "batch": "21차 정기 소싱 (2026-11-17 11:00 KST)",
+ "run_at": "2026-11-17T11:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md",
+ "target": "정예 6~10편 (강아지·고양이 우선) — 미달 편 억지 편입 금지",
+ "delivered_count": 2,
+ "hold_count": 1,
+ "near_miss_count": 22,
+ "browser_screened": 25,
+ "prescreened": 235,
+ "method_21": {
+  "pool_sourcing": "20차가 발굴한 347채널 · 11,752쇼츠를 재활용해 20차 판정분(62편)과 누적 원장 173 ID·111채널을 전수 제외 → 잔여 9,944편에서 강아지 120·고양이 120·쪼꼬미 45·기타 6 = 291편 재선별(tmp21/q21.json). 신규 채널 발굴 없이 20차 잔여 풀을 먼저 소진하는 원칙을 지켰다.",
+  "prescreen": "oar2.jpg 실치수 세로 720p+ 235편 → 8×3 접촉시트 10장 육안 스캔으로 자막·사람·워터마크·AI/게임 영상 사전 제거 → 25편 브라우저 판정.",
+  "verify": "원격 브라우저 watch 페이지 + hd1080 강제. 이번 세션은 플레이어가 hd1080을 선택했다고 보고하면서도 실제 <video> 디코드는 240p(240x426)에 머무는 현상이 있어(BROWSER_VERIFY_15의 1080x1920 확보 실패), 모션은 240p 디코드 프레임 기준으로 측정했다. 원본 해상도는 oar2.jpg 실치수(1080x1920)로 별도 확인.",
+  "sampling": "실시간 재생 폴링이 디코드 fps 저하로 프레임이 중복돼 값을 희석시키는 문제가 있어, **0.099초 버킷마다 currentTime을 직접 시킹하고 'seeked' 뒤 프레임을 그려 차분**하는 방식으로 바꿨다. 재생 클록이 아니라 영상 클록에 정확히 고정된다(차분 정의는 verify.py와 동일: 160×90 gray mean abs diff).",
+  "stills": "0.5·3.5·7·10.2초 4프레임을 2×2 캔버스에 그려 스크린샷 1회로 육안 검수(stills21/).",
+  "meta": "시청 페이지 ytInitialData 실측(tmp21/meta21.json) + /about 가입일·쇼츠 목록(tmp20/chan_shorts20.json)."
+ },
+ "delivered": [
+  {
+   "id": "3dQY8PbYdkU",
+   "url": "https://www.youtube.com/shorts/3dQY8PbYdkU",
+   "channel": "Mundo mascot",
+   "subs_txt": "2.2K",
+   "views_txt": "2,186",
+   "likes_txt": "29",
+   "published": "2026-01-02",
+   "cat": "강아지",
+   "dur_s": 13.0,
+   "resolution": "1080x1920(oar2 실측)",
+   "motion_mean": 19.74,
+   "motion_med": 21.48,
+   "ratios_max": 0.59,
+   "spike_times_s": [],
+   "stills": "stills21/c21_mundo_bordercollie.png",
+   "why": "보더콜리 퍼피 두 마리가 흙길에서 카메라를 향해 나란히 달려오는 13.0초 단일 숏. 0.5·3.5·7·10.2초 4컷 모두 같은 길·같은 두 마리, 카메라 고정. 자막·브랜드스트립·워터마크·사람 0.",
+   "cut_evidence": "10fps(0.099초 버킷) 103프레임 차분 평균 19.74·중앙 21.48, 컷 스파이크 0회(최대 변화픽셀비율 0.59). 0~10.3초 전 구간 실측.",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 0~10초 무컷, 모션 평균 19.74 (중앙 21.48), 스파이크 0",
+    "2_original_creator": "PASS(주의) — 스페인어 1인칭 개인 계정 @mundo-mascot, 48편 전부 자기 반려동물 일상('Así demuestra cariño mi gato' 등). 다만 고양이·강아지가 섞인 계정이라 재업 계정 가능성 완전 배제 못함",
+    "3_measured_only": "PASS — 구독 2,200 · 조회 2,186 · 좋아요 29 · 2026-01-02 (시청 페이지 ytInitialData 실측)",
+    "4_no_subs": "PASS — 4컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 없음, 타 채널 워터마크 없음"
+   },
+   "note": "채널이 고양이·강아지 혼합 계정이라 원작자성은 '가정' 수준. 기획실장이 채널 /about·최근 30편로 재업 여부 한 번 더 볼 것을 권장."
+  },
+  {
+   "id": "q-ht4j6Iqc8",
+   "url": "https://www.youtube.com/shorts/q-ht4j6Iqc8",
+   "channel": "Ariel the Cat 🐈",
+   "subs_txt": "878",
+   "views_txt": "230",
+   "likes_txt": "11",
+   "published": "2023-09-19",
+   "cat": "고양이",
+   "dur_s": 28.0,
+   "resolution": "1080x1920(oar2 실측)",
+   "motion_mean": 13.52,
+   "motion_med": 11.26,
+   "ratios_max": 0.85,
+   "spike_times_s": [
+    0.15
+   ],
+   "stills": "stills21/c21_arielthecat_calico.png",
+   "why": "캘리코 고양이 Ariel이 침대 위에서 캣닙 쥐 장난감을 물고 뒹굴며 앞발로 차는 28.0초 단일 숏. 0.5·3.5·7·10.2초 4컷 모두 같은 침대·같은 개체, 자막·워터마크·사람 0.",
+   "cut_evidence": "10fps 103프레임 차분 평균 13.52·중앙 11.26. 0.15초에 변화픽셀비율 0.85 스파이크 1회 — 시작 프레임 전환(첫 프레임 노출)이며 0.5초 이후 10.3초까지 스파이크 0.",
+   "gate_check": {
+    "1_uncut_motion": "PASS(경계) — 0~10.3초 무컷, 모션 평균 13.52 (중앙 11.26). 임계 12.0 대비 여유 1.5",
+    "2_original_creator": "PASS — 채널 8편 전부 같은 고양이 Ariel 1인칭('OUR KITTEN PLAYS FETCH!', 'Waiting to pounce!' 등)",
+    "3_measured_only": "PASS — 구독 878 · 조회 230 · 좋아요 11 · 2023-09-19 (실측)",
+    "4_no_subs": "PASS — 4컷 자막·브랜드스트립 0",
+    "5_no_people": "PASS — 사람 없음(손도 미등장), 워터마크 없음"
+   },
+   "note": "20차 보류(측정이 0~7.1초에서 끊겨 무컷 입증 불충분) 건을 0~10.3초 전 구간 재측정해 통과시켰다. 모션 중앙값 11.26으로 낮아 여유는 크지 않다."
+  }
+ ],
+ "holds": [
+  {
+   "id": "x2l3m7C6BXk",
+   "url": "https://www.youtube.com/shorts/x2l3m7C6BXk",
+   "channel": "Smudge the Beagle",
+   "subs_txt": "5.65K",
+   "views_txt": "2만",
+   "published": "4년 전",
+   "dur_s": 12.6,
+   "motion_mean": 1.65,
+   "motion_med": 0,
+   "spike_times_s": [],
+   "reason": "비글 Smudge가 해변에서 아빠를 향해 전속력으로 달려오는 단일 숏(채널 설명 'starts from way in the distance ... zooms towards us'). 정황상 게이트① 최적 후보이나 0~4초 구간 개가 원거리 점 크기로 차분 1.65에 그쳤고 그 지점에서 측정이 끊겼다. 4~10초 접근 구간 재측정 필요."
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "_CqZvEz62Sc",
+   "channel": "Dog life Thailand",
+   "reason": "길이 8초 — 10초 하한 미달(디스크 캐치 장면)"
+  },
+  {
+   "id": "ffJIkmU7wP8",
+   "channel": "Big Brother Cats",
+   "reason": "길이 3초 — 10초 하한 미달"
+  },
+  {
+   "id": "4P0PJNhckFM",
+   "channel": "The Explorer Cat",
+   "reason": "길이 4초 — 10초 하한 미달"
+  },
+  {
+   "id": "VDKfzlH6ehE",
+   "channel": "Kissa Katt",
+   "reason": "길이 9초 — 10초 하한 미달"
+  },
+  {
+   "id": "zt8VGd8OX9w",
+   "channel": "Zoomies Daily",
+   "reason": "길이 정확 10.00초 경계 + 2.03·2.13초 컷 스파이크 2회(0.88)"
+  },
+  {
+   "id": "cxg-J3DE-t8",
+   "channel": "That Dog Life Company",
+   "reason": "모션 16.54·컷 0이나 10.2초 프레임에 파란 'SUBSCRIBE!' 대형 오버레이 — 자막·브랜드 금지 위반"
+  },
+  {
+   "id": "4xlWURp9jOo",
+   "channel": "Donny & Fluff's Cat Toy",
+   "reason": "모션 16.49이나 52초 장편 + 5.45·7.53초 컷 스파이크(0.79) — 몽타주"
+  },
+  {
+   "id": "3WmZfiiwiWI",
+   "channel": "Golden Crest Retrievers",
+   "reason": "모션 27.82로 최상급이나 71초 장편 + 5.1초 컷 스파이크(0.74) — 몽타주"
+  },
+  {
+   "id": "JjKoW_PxTF4",
+   "channel": "Growing up husky",
+   "reason": "93초 장편 + 0.45초 스파이크 0.94, 모션 8.87 — 몽타주"
+  },
+  {
+   "id": "bf2BuuKyPao",
+   "channel": "Chewy Dog",
+   "reason": "0.55초 컷 스파이크 0.97 — 시작부터 몽타주 전환"
+  },
+  {
+   "id": "RAQh9vaH5mg",
+   "channel": "Chewy Dog",
+   "reason": "모션 11.63 임계 근접 + 0.74초 스파이크 0.88 — 몽타주 의심"
+  },
+  {
+   "id": "fXNrtmFJTpk",
+   "channel": "Azalea diary",
+   "reason": "모션 13.11이나 3.81초 프레이밍 전환 스파이크(0.68)"
+  },
+  {
+   "id": "8GaIRwuva0k",
+   "channel": "Homestead, Hounds & Hairballs",
+   "reason": "모션 12.45 + 1.44초 스파이크(0.77)"
+  },
+  {
+   "id": "8TFKTmo6oN0",
+   "channel": "Dixie the Dingo",
+   "reason": "모션 9.4 미달 + 1.63초 스파이크(0.77)"
+  },
+  {
+   "id": "77RMGRn6B6M",
+   "channel": "GTA5 and Squirrels",
+   "reason": "모션 11.71 미달 + 3.5초 프레임에 사람 다리·신발 노출"
+  },
+  {
+   "id": "OlayRO0-Kh4",
+   "channel": "Kitty Antics",
+   "reason": "모션 9.22 — 자세 유지형, 임계 미달"
+  },
+  {
+   "id": "PpYF1cqhVSk",
+   "channel": "Amazing Grace",
+   "reason": "모션 9.02 — 개가 화면에서 작아 차분 미달"
+  },
+  {
+   "id": "8mSbLrRFuDc",
+   "channel": "Around the Jack Russell",
+   "reason": "모션 9.19 미달"
+  },
+  {
+   "id": "kY7xK8fxOtM",
+   "channel": "Rambo Adventures",
+   "reason": "모션 1.66 — 정지 화면"
+  },
+  {
+   "id": "DvHDS3Y_yzU",
+   "channel": "Sugar the Maltese puppy",
+   "reason": "모션 4.84 — 정적 실내"
+  },
+  {
+   "id": "G_8wqCHYYBQ",
+   "channel": "고양이님들 사료값 벌기",
+   "reason": "모션 6.59 — 카메라 고정 캣휠"
+  },
+  {
+   "id": "yvzk11rqmY0",
+   "channel": "Homestead, Hounds & Hairballs",
+   "reason": "플레이어 loadVideoById 2회 거부 — 판정 불가(다음 회차 재시도)"
+  }
+ ],
+ "artifacts": {
+  "stills": "work/sourcing_v2/stills21/ (2장)",
+  "contact_sheets": "tmp21/th/sheet_0~9.jpg",
+  "pools": "tmp21/q21.json(291편) · tmp21/vert_ids.json(235) · tmp21/judge.jsonl(25편 판정 원장)",
+  "meta": "tmp21/meta21.json",
+  "screened": "tmp21/measured.txt"
+ },
+ "notes": [
+  "확정 2편(강아지 1 · 고양이 1). 목표 6~10편에 크게 미달 — 기준을 낮추지 않고 통과분만 담았다.",
+  "통과 2편 중 1편(q-ht4j6Iqc8)은 20차 보류 건의 재측정 승격이다. 20차가 '측정 구간 0~7.1초 절단'으로 남긴 숙제를 해소했다.",
+  "탈락 1위는 여전히 모션 미달(9편)이고, 2위가 몽타주(컷 스파이크, 7편)다. 접촉시트에서 자막을 걷어낸 뒤 남는 클립이 '무자막·정적' 아니면 '무자막·여러 컷 이어붙임' 양극단으로 갈린다.",
+  "이번 회차 하네스 변경 — 재생 폴링 → 0.099초 버킷 시킹. 재생 폴링은 이 환경에서 디코드가 10fps로 떨어져 같은 프레임이 2~3번 샘플링되며 모션을 최대 40%까지 깎았다(같은 클립이 5.66↔9.22로 갈림). 시킹 방식은 버킷마다 새 프레임을 보장한다.",
+  "디코드 해상도 저하(1080p 요청 → 240p 실제 디코드)는 이번 세션의 신규 제약이다. 240p 다운스케일은 디테일이 줄어 차분이 낮게 나올 수 있어, 12.0 근처 값(11.5~13)은 보류로 몰아 육안 확인을 병행했다.",
+  "브라우저 플레이어가 1~2편마다 loadVideoById를 거부해 재내비게이션이 필요했다. 판정 1편당 평균 60~90초.",
+  "원본 mp4 보관 불가(SABR 전용)는 15차와 동일 — 항소 대비 원본 보존 미해결."
+ ]
+}
