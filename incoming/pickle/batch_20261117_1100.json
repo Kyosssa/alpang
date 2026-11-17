@@ -87,7 +87,8 @@
    "motion_mean": 1.65,
    "motion_med": 0,
    "spike_times_s": [],
-   "reason": "비글 Smudge가 해변에서 아빠를 향해 전속력으로 달려오는 단일 숏(채널 설명 'starts from way in the distance ... zooms towards us'). 정황상 게이트① 최적 후보이나 0~4초 구간 개가 원거리 점 크기로 차분 1.65에 그쳤고 그 지점에서 측정이 끊겼다. 4~10초 접근 구간 재측정 필요."
+   "reason": "비글 Smudge가 해변에서 아빠를 향해 전속력으로 달려오는 단일 숏(채널 설명 'starts from way in the distance ... zooms towards us'). 정황상 게이트① 최적 후보이나 0~4초 구간 개가 원거리 점 크기로 차분 1.65에 그쳤고 그 지점에서 측정이 끊겼다. 4~10초 접근 구간 재측정 필요. 추가로 4~8초 구간을 따로 측정했으나 차분 평균 4.35(스파이크 0)로 접근 구간도 낮았다. 남은 확인 구간은 8~10.3초 근접 구간뿐.",
+   "motion_mean_4_8s": 4.35
   }
  ],
  "near_miss": [
