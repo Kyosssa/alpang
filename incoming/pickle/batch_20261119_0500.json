@@ -1,0 +1,843 @@
+{
+ "batch": "35차 정기 소싱 (2026-11-19 05:00)",
+ "file": "batch_20261119_0500.json",
+ "date": "2026-11-19",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17 (4대 확정 규칙 적용)",
+ "pool": {
+  "base": "31차 고양이 미확인 풀(30차 cat_cands30 999 + cat_cands_sphynx 414 + cat_cands_mined 84 = 1,444)",
+  "after_history_dedupe": 1375,
+  "date_measured": 1299,
+  "date_fail": 76,
+  "one_year_plus": 539,
+  "portrait_1080": 500,
+  "thumb_ocr_clean": 135,
+  "thumb_ocr_false_positive": 43,
+  "measured_this_round": 38
+ },
+ "delivered": [],
+ "delivered_count": 0,
+ "holds": [
+  "zSlfSENTzDw"
+ ],
+ "near_miss": [
+  "P9I6MTmVcfA",
+  "oFA-aMYZ3BU"
+ ],
+ "rejected_after_review": [
+  "63r10JmnhJw",
+  "9EHOe5SLRzk",
+  "AxCPNW8BxoI",
+  "dNMpSki8SKU",
+  "utH_-7DT1R4",
+  "lajNCPNivls",
+  "zPtej6cFp3A",
+  "Xuu_B73yxAc",
+  "-9YwSyNaOBs",
+  "_alkM7bmLSA",
+  "8RpZxS_dRfI",
+  "6qJVjW6dPsI",
+  "7mXBq1FU3mw",
+  "gFVdISQV_1s",
+  "UXJe8UqpsEo",
+  "HrxRWPovkAQ",
+  "96LujjIcskQ",
+  "Cc_GIJ1EtcM",
+  "tSdLmxZksW4",
+  "nQmHqWCr_rU",
+  "UolQaVGAdFw",
+  "PQIEkxpQA9I",
+  "mzTNRqnSK1o",
+  "nduLpEzL42I",
+  "BIZmH3k59u0",
+  "S3GJdkUgBfE",
+  "xlzRYuc2MpA",
+  "z3of9XfgC7Y",
+  "E0X7_uxZDgE",
+  "A_jLEGpkui8",
+  "MBgN2FPp6_Y",
+  "h-V20BhTNfA",
+  "Ccixz4lBYDw",
+  "egpWPEZnMzc",
+  "e8BpjOTBDhs"
+ ],
+ "judged_total": 38,
+ "items": [
+  {
+   "id": "zSlfSENTzDw",
+   "url": "https://www.youtube.com/shorts/zSlfSENTzDw",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Didi and Odin are playing with a fir branch 🙀",
+   "published": "Jan 3, 2024",
+   "views": "1,659 views",
+   "ai_badge": false,
+   "dur": 60.04,
+   "motion_mean": 11.0,
+   "motion_med": 8.72,
+   "motion_min": 0.38,
+   "spikes": [],
+   "verdict": "hold",
+   "reason": "모션 11.00(2회 측정 11.15/11.00) 임계 12.0 미달·컷 0·무자막 확인 → 기획실장 판정"
+  },
+  {
+   "id": "P9I6MTmVcfA",
+   "url": "https://www.youtube.com/shorts/P9I6MTmVcfA",
+   "channel": "CAT MAN CHRIS",
+   "subs": "1.39M subscribers",
+   "title": "Savaged by 3 Baby Ginger Kittens!",
+   "published": "Jul 3, 2023",
+   "views": "57,772 views",
+   "ai_badge": false,
+   "dur": 29.6,
+   "motion_mean": 9.91,
+   "motion_med": 7.65,
+   "motion_min": 2.24,
+   "spikes": [],
+   "verdict": "near_miss",
+   "reason": "모션 9.91 미달 + 구독 1.39M(50만 초과 체급 예외 대상)"
+  },
+  {
+   "id": "oFA-aMYZ3BU",
+   "url": "https://www.youtube.com/shorts/oFA-aMYZ3BU",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "The Tragic Lives of Diana & Odin (The Unbelievable Stories of the World's Most Famous Cats)",
+   "published": "Nov 11, 2024",
+   "views": "819 views",
+   "ai_badge": false,
+   "dur": 28.9,
+   "motion_mean": 10.09,
+   "motion_med": 10.5,
+   "motion_min": 2.08,
+   "spikes": [],
+   "verdict": "near_miss",
+   "reason": "모션 10.09 미달(근접) — \"The Tragic Lives…Stories\" 서술형 제목, 자막·내레이션 위험"
+  },
+  {
+   "id": "63r10JmnhJw",
+   "url": "https://www.youtube.com/shorts/63r10JmnhJw",
+   "channel": "Ginger Cat & Grey Cat",
+   "subs": "2.8K subscribers",
+   "title": "Gray cat opens the door meowing",
+   "published": "Mar 7, 2024",
+   "views": "125,054 views",
+   "ai_badge": false,
+   "dur": 10,
+   "motion_mean": 7.05,
+   "motion_med": 4.74,
+   "motion_min": 0.28,
+   "spikes": [
+    [
+     0.0,
+     0.71
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "모션 7.05 미달(12.0)"
+  },
+  {
+   "id": "9EHOe5SLRzk",
+   "url": "https://www.youtube.com/shorts/9EHOe5SLRzk",
+   "channel": "Ginger Cat & Grey Cat",
+   "subs": "2.8K subscribers",
+   "title": "Gray cat runs home meowing",
+   "published": "Mar 10, 2024",
+   "views": "10,370 views",
+   "ai_badge": false,
+   "dur": 8,
+   "motion_mean": 25.11,
+   "motion_med": 27.11,
+   "motion_min": 3.92,
+   "spikes": [
+    [
+     0,
+     0.84
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "10초 미만(8초)"
+  },
+  {
+   "id": "AxCPNW8BxoI",
+   "url": "https://www.youtube.com/shorts/AxCPNW8BxoI",
+   "channel": "Ginger Cat & Grey Cat",
+   "subs": "2.8K subscribers",
+   "title": "Ginger the cat is preparing to attack",
+   "published": "Dec 16, 2024",
+   "views": "15,882 views",
+   "ai_badge": false,
+   "dur": 17,
+   "motion_mean": 3.27,
+   "motion_med": 3.09,
+   "motion_min": 0.57,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 3.27 미달"
+  },
+  {
+   "id": "dNMpSki8SKU",
+   "url": "https://www.youtube.com/shorts/dNMpSki8SKU",
+   "channel": "Hazel The Tabby",
+   "subs": "44.7K subscribers",
+   "title": "Cat purrs like a leopard",
+   "published": "Feb 4, 2023",
+   "views": "22,344 views",
+   "ai_badge": false,
+   "dur": 8,
+   "motion_mean": 19.51,
+   "motion_med": 18.19,
+   "motion_min": 2.51,
+   "spikes": [
+    [
+     0.01,
+     0.66
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "10초 미만(8초)"
+  },
+  {
+   "id": "utH_-7DT1R4",
+   "url": "https://www.youtube.com/shorts/utH_-7DT1R4",
+   "channel": "Hazel The Tabby",
+   "subs": "44.7K subscribers",
+   "title": "Little kitten purrs very loudly 🐯",
+   "published": "Feb 12, 2023",
+   "views": "46,090 views",
+   "ai_badge": false,
+   "dur": 5,
+   "motion_mean": 15.37,
+   "motion_med": 13.92,
+   "motion_min": 3.74,
+   "spikes": [
+    [
+     0,
+     0.66
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "10초 미만(5초)"
+  },
+  {
+   "id": "lajNCPNivls",
+   "url": "https://www.youtube.com/shorts/lajNCPNivls",
+   "channel": "CuteCats4You",
+   "subs": "85 subscribers",
+   "title": "why is she sitting like that 😅",
+   "published": "Sep 11, 2025",
+   "views": "1,360 views",
+   "ai_badge": false,
+   "dur": 4.82,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(4.8초)"
+  },
+  {
+   "id": "zPtej6cFp3A",
+   "url": "https://www.youtube.com/shorts/zPtej6cFp3A",
+   "channel": "Hazel The Tabby",
+   "subs": "44.7K subscribers",
+   "title": "Found a cute cat in the house",
+   "published": "Feb 18, 2023",
+   "views": "31,553 views",
+   "ai_badge": false,
+   "dur": 7,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "Xuu_B73yxAc",
+   "url": "https://www.youtube.com/shorts/Xuu_B73yxAc",
+   "channel": "CuteCats4You",
+   "subs": "85 subscribers",
+   "title": "purring kitten falls asleep 😍😴",
+   "published": "Sep 2, 2025",
+   "views": "1,393 views",
+   "ai_badge": false,
+   "dur": 34.4,
+   "motion_mean": 5.38,
+   "motion_med": 4.11,
+   "motion_min": 0.6,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 5.38 미달"
+  },
+  {
+   "id": "-9YwSyNaOBs",
+   "url": "https://www.youtube.com/shorts/-9YwSyNaOBs",
+   "channel": "CuteCats4You",
+   "subs": "85 subscribers",
+   "title": "Kitten explores the outside for the first time 🥰",
+   "published": "Aug 24, 2025",
+   "views": "2,601 views",
+   "ai_badge": false,
+   "dur": 9.24,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(9.2초)"
+  },
+  {
+   "id": "_alkM7bmLSA",
+   "url": "https://www.youtube.com/shorts/_alkM7bmLSA",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin Loves His Toy!",
+   "published": "Oct 12, 2023",
+   "views": "1,804 views",
+   "ai_badge": false,
+   "dur": 42.9,
+   "motion_mean": 8.38,
+   "motion_med": 7.49,
+   "motion_min": 2.62,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.38 미달"
+  },
+  {
+   "id": "8RpZxS_dRfI",
+   "url": "https://www.youtube.com/shorts/8RpZxS_dRfI",
+   "channel": "The Life of Sphynx Cats",
+   "subs": "48.3K subscribers",
+   "title": "Cat Drifting 😤 |",
+   "published": "Feb 4, 2025",
+   "views": "106,418 views",
+   "ai_badge": false,
+   "dur": 41.7,
+   "motion_mean": 15.11,
+   "motion_med": 15.35,
+   "motion_min": 0.74,
+   "spikes": [
+    [
+     1.29,
+     0.77
+    ],
+    [
+     2.11,
+     0.65
+    ],
+    [
+     4.09,
+     0.88
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "컷/프레임 전환 3회(1.29·2.11·4.09초)"
+  },
+  {
+   "id": "6qJVjW6dPsI",
+   "url": "https://www.youtube.com/shorts/6qJVjW6dPsI",
+   "channel": "The Life of Sphynx Cats",
+   "subs": "48.3K subscribers",
+   "title": "Reverse Video Cat ASMR pt.6",
+   "published": "Feb 27, 2025",
+   "views": "2,408 views",
+   "ai_badge": false,
+   "dur": 6.42,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(6.4초)"
+  },
+  {
+   "id": "7mXBq1FU3mw",
+   "url": "https://www.youtube.com/shorts/7mXBq1FU3mw",
+   "channel": "My Cat Daily Life 222",
+   "subs": "838 subscribers",
+   "title": "My cat funny and cute videos😂",
+   "published": "Sep 27, 2025",
+   "views": "18,133 views",
+   "ai_badge": false,
+   "dur": 10.96,
+   "motion_mean": 11.97,
+   "motion_med": 7.49,
+   "motion_min": 1.17,
+   "spikes": [
+    [
+     1.69,
+     0.83
+    ],
+    [
+     3.39,
+     0.73
+    ],
+    [
+     4.98,
+     0.67
+    ],
+    [
+     6.57,
+     0.76
+    ],
+    [
+     8.14,
+     0.75
+    ],
+    [
+     9.7,
+     0.84
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "1.7초 간격 프레임 전환 6회(몽타주)"
+  },
+  {
+   "id": "gFVdISQV_1s",
+   "url": "https://www.youtube.com/shorts/gFVdISQV_1s",
+   "channel": "My Cat Daily Life 222",
+   "subs": "838 subscribers",
+   "title": "(￣ー￣)",
+   "published": "Apr 25, 2025",
+   "views": "18,538 views",
+   "ai_badge": false,
+   "dur": 7.56,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(7.6초)"
+  },
+  {
+   "id": "UXJe8UqpsEo",
+   "url": "https://www.youtube.com/shorts/UXJe8UqpsEo",
+   "channel": "Kitten Growing Up",
+   "subs": "405 subscribers",
+   "title": "My kitty's grown up",
+   "published": "Jul 2, 2024",
+   "views": "770 views",
+   "ai_badge": false,
+   "dur": 12.07,
+   "motion_mean": 9.24,
+   "motion_med": 5.45,
+   "motion_min": 0.08,
+   "spikes": [
+    [
+     2.32,
+     0.61
+    ],
+    [
+     2.41,
+     0.66
+    ],
+    [
+     4.87,
+     0.85
+    ],
+    [
+     7.96,
+     0.73
+    ],
+    [
+     8.35,
+     0.87
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "컷 5회 + 모션 9.24 미달"
+  },
+  {
+   "id": "HrxRWPovkAQ",
+   "url": "https://www.youtube.com/shorts/HrxRWPovkAQ",
+   "channel": "Kitten Growing Up",
+   "subs": "405 subscribers",
+   "title": "Cute kitty. Don't be afraid. I'm here.",
+   "published": "Jun 27, 2024",
+   "views": "1,707 views",
+   "ai_badge": false,
+   "dur": 13.44,
+   "motion_mean": 6.06,
+   "motion_med": 3.8,
+   "motion_min": 0.76,
+   "spikes": [
+    [
+     9.32,
+     0.61
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "모션 6.06 미달"
+  },
+  {
+   "id": "96LujjIcskQ",
+   "url": "https://www.youtube.com/shorts/96LujjIcskQ",
+   "channel": "bengal cat",
+   "subs": "87 subscribers",
+   "title": "#veryfunny",
+   "published": "Apr 4, 2023",
+   "views": "2 views",
+   "ai_badge": false,
+   "dur": 15.92,
+   "motion_mean": 20.33,
+   "motion_med": 19.33,
+   "motion_min": 0.79,
+   "spikes": [
+    [
+     0.51,
+     0.65
+    ],
+    [
+     3.98,
+     0.9
+    ],
+    [
+     5.77,
+     0.85
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "컷 3회(0.51·3.98·5.77초, 변화픽셀 0.9)"
+  },
+  {
+   "id": "Cc_GIJ1EtcM",
+   "url": "https://www.youtube.com/shorts/Cc_GIJ1EtcM",
+   "channel": "Maine Coon Adventures",
+   "subs": "179K subscribers",
+   "title": "Buster's Branch",
+   "published": "Sep 24, 2025",
+   "views": "36,739 views",
+   "ai_badge": false,
+   "dur": 28.32,
+   "motion_mean": 23.99,
+   "motion_med": 25.02,
+   "motion_min": 5.45,
+   "spikes": [
+    [
+     1.31,
+     0.72
+    ],
+    [
+     5.28,
+     0.71
+    ],
+    [
+     9.71,
+     0.68
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "8컷 육안 확인 — 0.3초 와이드→1.5초 클로즈 컷, 6.0초 앵글 전환(컷 3회)"
+  },
+  {
+   "id": "tSdLmxZksW4",
+   "url": "https://www.youtube.com/shorts/tSdLmxZksW4",
+   "channel": "Mr. ViVo ",
+   "subs": "147K subscribers",
+   "title": "Staring contest.",
+   "published": "Jul 28, 2025",
+   "views": "49,664 views",
+   "ai_badge": false,
+   "dur": 26.62,
+   "motion_mean": 5.15,
+   "motion_med": 4.22,
+   "motion_min": 1.88,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 5.15 미달(정적 응시)"
+  },
+  {
+   "id": "nQmHqWCr_rU",
+   "url": "https://www.youtube.com/shorts/nQmHqWCr_rU",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Sphynx Cat Hunting",
+   "published": "Feb 21, 2023",
+   "views": "2,049 views",
+   "ai_badge": false,
+   "dur": 12.02,
+   "motion_mean": 3.69,
+   "motion_med": 3.3,
+   "motion_min": 0.61,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 3.69 미달"
+  },
+  {
+   "id": "UolQaVGAdFw",
+   "url": "https://www.youtube.com/shorts/UolQaVGAdFw",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin plays 😸 and annoys Diana😾",
+   "published": "Nov 11, 2023",
+   "views": "1,603 views",
+   "ai_badge": false,
+   "dur": 49.22,
+   "motion_mean": 9.07,
+   "motion_med": 8.47,
+   "motion_min": 2.6,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 9.07 미달"
+  },
+  {
+   "id": "PQIEkxpQA9I",
+   "url": "https://www.youtube.com/shorts/PQIEkxpQA9I",
+   "channel": "The Life of Sphynx Cats",
+   "subs": "48.3K subscribers",
+   "title": "CAT DANCE!! 😂",
+   "published": "Feb 9, 2025",
+   "views": "10,500 views",
+   "ai_badge": false,
+   "dur": 5.96,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(6.0초)"
+  },
+  {
+   "id": "mzTNRqnSK1o",
+   "url": "https://www.youtube.com/shorts/mzTNRqnSK1o",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin annoys his sister Diana 🙀",
+   "published": "Sep 25, 2023",
+   "views": "2,470 views",
+   "ai_badge": false,
+   "dur": 37.3,
+   "motion_mean": 4.42,
+   "motion_med": 2.56,
+   "motion_min": 0.0,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 4.42 미달"
+  },
+  {
+   "id": "nduLpEzL42I",
+   "url": "https://www.youtube.com/shorts/nduLpEzL42I",
+   "channel": "Hazel The Tabby",
+   "subs": "44.7K subscribers",
+   "title": "Cutest cat in the county",
+   "published": "Feb 8, 2023",
+   "views": "20,074 views",
+   "ai_badge": false,
+   "dur": 9.24,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(9.2초)"
+  },
+  {
+   "id": "BIZmH3k59u0",
+   "url": "https://www.youtube.com/shorts/BIZmH3k59u0",
+   "channel": "Mr. ViVo ",
+   "subs": "147K subscribers",
+   "title": "Greetings from Mr. ViVo",
+   "published": "May 19, 2025",
+   "views": "37,485 views",
+   "ai_badge": false,
+   "dur": 19.38,
+   "motion_mean": 7.0,
+   "motion_med": 6.33,
+   "motion_min": 0.91,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 7.00 미달"
+  },
+  {
+   "id": "S3GJdkUgBfE",
+   "url": "https://www.youtube.com/shorts/S3GJdkUgBfE",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin has a very interesting conversation with insects ❤️🌻🐝",
+   "published": "Aug 25, 2023",
+   "views": "3,468 views",
+   "ai_badge": false,
+   "dur": 19.74,
+   "motion_mean": 8.36,
+   "motion_med": 3.86,
+   "motion_min": 0.64,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.36 미달"
+  },
+  {
+   "id": "xlzRYuc2MpA",
+   "url": "https://www.youtube.com/shorts/xlzRYuc2MpA",
+   "channel": "DizzyKitten ASMR",
+   "subs": "96.2K subscribers",
+   "title": "What's That In Your Ear??",
+   "published": "Mar 10, 2023",
+   "views": "27,342 views",
+   "ai_badge": false,
+   "dur": 58.5,
+   "motion_mean": 8.15,
+   "motion_med": 7.16,
+   "motion_min": 0.79,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.15 미달"
+  },
+  {
+   "id": "z3of9XfgC7Y",
+   "url": "https://www.youtube.com/shorts/z3of9XfgC7Y",
+   "channel": "Ginger Cat & Grey Cat",
+   "subs": "2.8K subscribers",
+   "title": "When the cat saw the bird",
+   "published": "Jul 7, 2024",
+   "views": "12,399 views",
+   "ai_badge": false,
+   "dur": 13.02,
+   "motion_mean": 8.96,
+   "motion_med": 7.97,
+   "motion_min": 1.1,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.96 미달"
+  },
+  {
+   "id": "E0X7_uxZDgE",
+   "url": "https://www.youtube.com/shorts/E0X7_uxZDgE",
+   "channel": "",
+   "subs": "577 thousand subscribers",
+   "title": "Uhh… 😺Which string am I supposed to pull!? えーど、どのヒモ引けばいいの！？😺手が足りニャいってば！",
+   "published": "May 26, 2025",
+   "views": "2,169,626 views",
+   "ai_badge": false,
+   "dur": 7.76,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(7.8초)"
+  },
+  {
+   "id": "A_jLEGpkui8",
+   "url": "https://www.youtube.com/shorts/A_jLEGpkui8",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin choreographed for us 🕺😽",
+   "published": "Jan 30, 2024",
+   "views": "2,611 views",
+   "ai_badge": false,
+   "dur": 14.28,
+   "motion_mean": 4.72,
+   "motion_med": 4.07,
+   "motion_min": 1.04,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 4.72 미달"
+  },
+  {
+   "id": "MBgN2FPp6_Y",
+   "url": "https://www.youtube.com/shorts/MBgN2FPp6_Y",
+   "channel": "My sweet but crazy cats",
+   "subs": "33 subscribers",
+   "title": "Kittens with mama",
+   "published": "Jun 3, 2024",
+   "views": "2,177 views",
+   "ai_badge": false,
+   "dur": 8.28,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(8.3초)"
+  },
+  {
+   "id": "h-V20BhTNfA",
+   "url": "https://www.youtube.com/shorts/h-V20BhTNfA",
+   "channel": "",
+   "subs": "155 thousand subscribers",
+   "title": "Isnt she the fluffiest? 🥹🥹🥹",
+   "published": "Jun 4, 2025",
+   "views": "507,287 views",
+   "ai_badge": false,
+   "dur": 9.18,
+   "motion_mean": null,
+   "motion_med": null,
+   "motion_min": null,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "10초 미만(9.2초)"
+  },
+  {
+   "id": "Ccixz4lBYDw",
+   "url": "https://www.youtube.com/shorts/Ccixz4lBYDw",
+   "channel": "The Life of Sphynx Cats",
+   "subs": "48.3K subscribers",
+   "title": "Funny Cat Moments 😂 (Hairless Too!)",
+   "published": "Feb 1, 2025",
+   "views": "5,412 views",
+   "ai_badge": false,
+   "dur": 33.76,
+   "motion_mean": 18.68,
+   "motion_med": 13.66,
+   "motion_min": 1.79,
+   "spikes": [
+    [
+     2.12,
+     0.81
+    ],
+    [
+     3.8,
+     0.68
+    ],
+    [
+     7.14,
+     0.9
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "컷 3회 + 제목상 \"Funny Cat Moments\" 컴필레이션"
+  },
+  {
+   "id": "egpWPEZnMzc",
+   "url": "https://www.youtube.com/shorts/egpWPEZnMzc",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Basking in the Sun: Odin's Relaxation Hour Under Diana's Watchful Gaze 🌞😺",
+   "published": "Oct 11, 2023",
+   "views": "1,952 views",
+   "ai_badge": false,
+   "dur": 41.76,
+   "motion_mean": 7.23,
+   "motion_med": 4.89,
+   "motion_min": 1.6,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 7.23 미달"
+  },
+  {
+   "id": "e8BpjOTBDhs",
+   "url": "https://www.youtube.com/shorts/e8BpjOTBDhs",
+   "channel": "Royal Sphynx",
+   "subs": "37.7K subscribers",
+   "title": "Odin and Diana Kissing🥰",
+   "published": "Aug 21, 2023",
+   "views": "2,150 views",
+   "ai_badge": false,
+   "dur": 22.24,
+   "motion_mean": 3.9,
+   "motion_med": 3.71,
+   "motion_min": 0.01,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 3.90 미달(키스 장면 정적)"
+  }
+ ],
+ "status_note": "확정 0편. 기준(1080x1920·10초 이상·무컷·모션 12.0·무자막·AI 배지 0)은 한 줄도 낮추지 않았다. 보류 1편(zSlfSENTzDw 모션 11.00), 근접 2편(P9I6MTmVcfA 9.91·oFA-aMYZ3BU 10.09).",
+ "harness_calibration": "34차 확정편 2a1C7J8CSiU 재측정 12.23(34차 12.77, 편차 4%) — 하니스 이상 없음 확인",
+ "measured_at": "2026-11-19T05:00+09:00",
+ "unmeasured_left": {
+  "thumb_ocr_clean": 118,
+  "thumb_ocr_false_positive": 25,
+  "note": "이번 회차 실측 38편(캘리브레이션 제외). 남은 후보는 인계 참조."
+ }
+}
