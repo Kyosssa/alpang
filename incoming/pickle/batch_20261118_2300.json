@@ -1,0 +1,463 @@
+{
+ "batch": "33차 정기 소싱 (2026-11-18 23:00)",
+ "run_at": "2026-11-18T23:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 + 1장 5대 게이트, 2026-11-17 확정본 그대로. 기준 완화 0)",
+ "harness": "BROWSER_VERIFY_15 계열 + 33차 프리스크린: i.ytimg.com/vi/<ID>/oar1~3.jpg(원본 비율 3프레임, 차분) → RapidOCR(432x768, 3프레임) → /shorts/<ID> 페이지에서 ytInitialPlayerResponse(원본 해상도·길이·게시일·AI배지) + 1.3초 워밍업 후 0초 재측정 10fps 160x90 gray 차분 → 8컷 캔버스 그리드(1920x993 1장) + 스파이크 구간 밀집 스틸 → 육안 검수",
+ "target": "정예 6~10편 (기준 미달 시 편수 축소, 절대 기준 완화 금지)",
+ "judged_total": 28,
+ "delivered_count": 2,
+ "delivered_by_cat": {
+  "고양이": 1,
+  "강아지": 1
+ },
+ "near_miss_count": 1,
+ "reject_count": 25,
+ "reject_breakdown": {
+  "게시 1년 미만": 6,
+  "모션 12.0 미달·정지": 8,
+  "길이 10초 미만": 3,
+  "컷·스파이크": 4,
+  "자막·워터마크": 1,
+  "사람·아기 등장": 3
+ },
+ "account_cap_violation": "없음 — 확정 2편의 계정이 서로 다름(Bengal AGMA Cattery / Bailey The Beagle). 동일 계정 2편 초과 0",
+ "screening_stats": {
+  "고양이_31차_인계풀": "tmp31/cat_pool.json 140편 중 중복 10편 제외 130편 전수 oar 프리스크린 → 원본 전부 1080x1920 세로(해상도 탈락 0) → RapidOCR 3프레임 텍스트 0건 25편 / 텍스트 검출 105편",
+  "고양이_실측": 9,
+  "강아지_32차_인계": "dog136 중 1080x1920·OCR 무자막·미실측 5편 전수 + dog136 미판정 56편 중 일부 실측",
+  "강아지_실측": 19,
+  "AI배지": "판정 전편 HTML 'AI: Content was made with AI' 0건 — AI 표기 영상 0"
+ },
+ "delivered": [
+  {
+   "id": "StP9Ws6bCqY",
+   "url": "https://www.youtube.com/shorts/StP9Ws6bCqY",
+   "title": "Funny Bengal Kittens",
+   "channel": "Bengal AGMA Cattery",
+   "handle": "@Bengal_Agma_Cattery",
+   "channel_id": "UC_Z0cq29UdbqMhLN2Uv3pvA",
+   "subs_txt": "239 (구독자 239명 · 채널 페이지 실측)",
+   "views_txt": "16,426",
+   "likes_txt": "149",
+   "published": "2025-06-09",
+   "cat": "고양이(벵갈 키튼 2마리)",
+   "dur_s": 34,
+   "resolution": "1080x1920",
+   "decode_resolution": "360x640",
+   "motion_mean": 20.51,
+   "motion_med": 16.91,
+   "motion_min": 3.78,
+   "frames": 106,
+   "ratios_max": 0.73,
+   "spike_times_s": [
+    0.1,
+    6.94,
+    7.04
+   ],
+   "measure_window": "0.02초 시크 → 1.3초 워밍업 → 0초 재측정 · 0~10.4초 · 10fps(0.099초 버킷) 160x90 gray 차분",
+   "stills": "stills33/StP9Ws6bCqY_cuts8.png (8컷) · StP9Ws6bCqY_spike6.9-7.1.png (5.6~7.8초 밀집 확인)",
+   "why": "벵갈 키튼 2마리가 도넛형 터널 안팎에서 앞발로 서로를 치고 쫓는 34초 단일 숏. 0.3초부터 터널 구멍으로 발이 나오고, 6.9초 카메라가 한 번 휙 돌았다가 같은 구도로 복귀, 8.0~10.1초 키튼 얼굴 클로즈업까지 이어진다.",
+   "cut_evidence": "10fps 106프레임 차분 평균 20.51(중앙 16.91·최저 3.78). 스파이크 3회(0.1 · 6.94 · 7.04초, 최대 변화픽셀 0.73)는 5.6·6.2·6.8·6.9·7.0·7.1·7.3·7.8초 밀집 스틸로 확인한 결과 7.0초 프레임이 모션블러로 번지는 카메라 휘두름이며 컷 아님.",
+   "people": "사람 0 — 8컷·밀집 스틸 전부 손·얼굴·전신 없음",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 20.51 · 컷 0 · 34초 무컷",
+    "2_original_creator": "PASS — @Bengal_Agma_Cattery 1인칭 사육 채널(채널 소개 'Daily life of bengal cats', 동영상 73개 전부 동일 벵갈 개체군). AI 배지 0(HTML 문자열 검사)",
+    "3_measured_only": "PASS — 구독 239 · 조회 16,426 · 좋아요 149 · 게시 2025-06-09(쇼츠 playerResponse publishDate)",
+    "4_no_subs": "PASS — 8컷 그리드 RapidOCR 텍스트 0건, 브랜드 스트립·타채널 워터마크 0",
+    "5_no_people": "PASS — 사람 얼굴·전신·아기 0"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널명이 캐터리(Bengal AGMA Cattery)이고 채널 소개·업로드 73편이 모두 자기 사육 벵갈 개체 영상.",
+   "author_confirm_evidence": "채널 페이지(/@Bengal_Agma_Cattery) 실측: 구독자 239명 · 동영상 73개 · 소개 'Daily life of bengal cats'. 쇼츠 페이지 채널 링크 @Bengal_Agma_Cattery 동일.",
+   "publish_date_confirmed": "2025-06-09",
+   "publish_date_source": "쇼츠 페이지 ytInitialPlayerResponse.microformat.playerMicroformatRenderer.publishDate",
+   "low_view_checked": "해당 없음 — 조회 16,426회(1,000 이상)",
+   "flags": [
+    "소형 채널(구독 239명, 1K 미만) — 게이트③ 우선 탐색 대역(1K~499K) 밖",
+    "브리더(캐터리) 운영 채널 — 사육자 본인 영상이나 판매 목적 채널 성격은 기획실장 확인 권장"
+   ],
+   "note": "31차 인계 고양이 미실측 풀(tmp31/cat_pool.json) 1순위 소화분. 판매·분양 문구는 영상 내 0(자막 없음).",
+   "verdict": "confirmed"
+  },
+  {
+   "id": "lqaERvV9Aeo",
+   "url": "https://www.youtube.com/shorts/lqaERvV9Aeo",
+   "title": "Bailey Wants More? Yep, You Guessed It 😂❤️🐕❤️",
+   "channel": "Bailey The Beagle",
+   "handle": "@BaileyTheBeagle",
+   "channel_id": "UCc1UQq4u82hN7fMgNzBF0Vg",
+   "subs_txt": "5,580 (31차 채널 HTML 실측 승계)",
+   "views_txt": "1,300",
+   "likes_txt": "미확인",
+   "published": "2025-08-30",
+   "cat": "강아지(비글)",
+   "dur_s": 92,
+   "resolution": "1080x1920",
+   "decode_resolution": "720x1280",
+   "motion_mean": 15.04,
+   "motion_med": 13.12,
+   "motion_min": 2.74,
+   "frames": 106,
+   "ratios_max": 0.49,
+   "spike_times_s": [],
+   "measure_window": "0.02초 시크 → 1.3초 워밍업 → 0초 재측정 · 0~10.4초 · 10fps(0.099초 버킷) 160x90 gray 차분",
+   "stills": "stills33/lqaERvV9Aeo_cuts8.png (8컷)",
+   "why": "비글이 카메라 렌즈에 코를 들이밀고 꼬리를 흔들며 애교를 부탁하는 0~10초 단일 숏(원본 92초). 0.3초부터 코끝이 화면을 채우고, 1.5·6.0·8.0·9.2·10.1초 계속 같은 앵글에서 얼굴·목을 비빈다.",
+   "cut_evidence": "10fps 106프레임 차분 평균 15.04(중앙 13.12·최저 2.74), 변화픽셀 60% 초과 스파이크 0 — 컷·프레이밍 전환 없음.",
+   "people": "사람 0 — 화면 하단에 보호자 발(검은 양말) 끝만 걸침(플레이북 허용 범위: 손·발 일부, 얼굴·전신 아님)",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 15.04 · 스파이크 0 · 10초+ 무컷",
+    "2_original_creator": "PASS — @BaileyTheBeagle 1인칭 사육 채널(개체명 Bailey = 채널명). AI 배지 0",
+    "3_measured_only": "PASS — 구독 5,580(31차 채널 HTML) · 조회 1,300 · 좋아요 미확인 · 게시 2025-08-30",
+    "4_no_subs": "PASS — 8컷 그리드 RapidOCR 자체 라벨 외 텍스트 0, 워터마크 0",
+    "5_no_people": "PASS — 얼굴·전신·아기 0, 발끝만 하단 노출"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널명이 개체명(Bailey The Beagle), 31차 dog_pass_meta에서 채널 성격 확인된 1인칭 사육 채널.",
+   "author_confirm_evidence": "31차 dog136/dog_pass_meta(채널·영상 HTML ytInitialData 실측) + 이번 회차 쇼츠 페이지 채널 링크 @BaileyTheBeagle",
+   "publish_date_confirmed": "2025-08-30",
+   "publish_date_source": "쇼츠 페이지 playerResponse publishDate",
+   "low_view_checked": "해당 없음 — 조회 1,300회(1,000 이상)",
+   "flags": [
+    "보호자 발끝(검은 양말)이 0~10초 하단에 계속 걸림 — 크롭 시 제거 가능",
+    "원본 92초 장편 — 원석 구간은 0~10초(그 외 구간은 미검수)"
+   ],
+   "note": "32차 인계 강아지 무자막·1080x1920 미실측 5편 중 하나(OCR 무자막 22편 계열).",
+   "verdict": "confirmed"
+  }
+ ],
+ "near_miss_pool": [
+  {
+   "id": "T4_pnDaUFk0",
+   "url": "https://www.youtube.com/shorts/T4_pnDaUFk0",
+   "title": "JBLittle Josie ❤️ #puppy#maltese #whitepuppy",
+   "ch": "JBLittleMaltese",
+   "date": "2025-05-24",
+   "dur_s": 60,
+   "res": "1080x1920",
+   "mean": 20.35,
+   "med": 20.5,
+   "min": 4.04,
+   "rmax": 0.52,
+   "spikes": [],
+   "ai": false,
+   "stills": "stills33/T4_pnDaUFk0_cuts8.png · T4_pnDaUFk0_zoom3.1-4.6.png",
+   "verdict": "near_miss",
+   "reason": "8컷 전체 무자막·무인물·무워터마크, 모션 20.35(중앙 20.5)로 게이트① 수치 통과. 3.1→4.0초 구도 변화는 6프레임 밀집 확인 결과 연속 줌아웃(컷 아님). 다만 4.5·6.0초에 흰 말티즈가 프레임에서 멀어져 주인공이 사라져 '레전드 원석성(주인공 유지)' 판정 필요.",
+   "flag": "주인공 프레임 이탈(4.5~6.0초)"
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "Cc9JQbpfBT8",
+   "ch": "michael orange cat",
+   "title": "Teaching Michael the orange cat not to scratch furniture",
+   "date": "2024-12-26",
+   "dur_s": 36,
+   "mean": 19.24,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "8컷 전 구간 보호자 팔·손이 주 피사체로 노출(게이트⑤). 손이 소파를 긁는 시늉을 하는 구성이라 손을 뺄 수 없음."
+  },
+  {
+   "id": "8wgLa__zhrs",
+   "ch": "Mr. Kitters the Cat",
+   "title": "Who wants to play with me?!",
+   "date": "2026-09-29",
+   "dur_s": 60,
+   "mean": 30.63,
+   "spikes": "21회",
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-09-29로 1년 미만 + 차분 스파이크 21회(2~10초) = 컷/몽타주성"
+  },
+  {
+   "id": "EE1ZI4HLQjY",
+   "ch": "Crazy Maine Coon Family",
+   "title": "Our 5 Royal Maine Coon Kittens Are 10 Days Old!",
+   "date": "2026-10-20",
+   "dur_s": 57,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-10-20 — 1년 미만(모션 측정 생략, 조기 탈락)"
+  },
+  {
+   "id": "GQVCQ8ZBXY0",
+   "ch": "Maine Coon Cat Gelic",
+   "title": "Gelic Is Love",
+   "date": "2026-11-06",
+   "dur_s": 69,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-11-06 — 1년 미만(측정 생략)"
+  },
+  {
+   "id": "d9djqh0UeAg",
+   "ch": "Pearl's Ragdolls",
+   "title": "The new kitten wants to make friends but also wants to growl",
+   "date": "2026-10-16",
+   "dur_s": 88,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-10-16 — 1년 미만(측정 생략)"
+  },
+  {
+   "id": "TLUmyetyOX4",
+   "ch": "Pearl's Ragdolls",
+   "title": "I figured out it is the playful kittens that Copper likes",
+   "date": "2026-10-17",
+   "dur_s": 65,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-10-17 — 1년 미만(측정 생략)"
+  },
+  {
+   "id": "daCL_CHwf-k",
+   "ch": "My cat is crazy!佐佐",
+   "title": "#萌寵版咳嗽手勢舞來了",
+   "date": "2026-11-10",
+   "dur_s": 14,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-11-10 — 1년 미만(측정 생략)"
+  },
+  {
+   "id": "tBCRd2wYnkk",
+   "ch": "JBLittleMaltese",
+   "title": "JBLittle Taro",
+   "date": "2025-05-26",
+   "dur_s": 31,
+   "mean": 9.88,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 9.88 (12.0 미달) — 인형을 물고 앉아 있는 정지형"
+  },
+  {
+   "id": "-b3Ent4Ntpo",
+   "ch": "JBLittleMaltese",
+   "title": "Lead training JBLittle Josie",
+   "date": "2025-07-13",
+   "dur_s": 45,
+   "mean": 14.36,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "8컷 전 구간 보호자 다리·상체 등장(게이트⑤) + 원본음 상업 팝(The Black Eyed Peas 'Rock That Body')"
+  },
+  {
+   "id": "6ATihOAA2RI",
+   "ch": "The Toy Poodle Channel",
+   "title": "TOY POODLE giving birth!",
+   "date": "2023-07-31",
+   "dur_s": 15,
+   "mean": 10.79,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 10.79 (12.0 미달) — 출산 장면으로 사람 손 개입"
+  },
+  {
+   "id": "KBfZPKw15uE",
+   "ch": "Zeus The Stubborn Husky",
+   "title": "Stubborn Husky continues his reign of tantrums",
+   "date": "2016-08-06",
+   "dur_s": 60,
+   "mean": 8.27,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 8.27 (12.0 미달) — 누워서 떼쓰는 정지형"
+  },
+  {
+   "id": "cz-RN8DJI-w",
+   "ch": "Leo The Beagle King",
+   "title": "Beagle 🐶 Vs Kitty Kat 😸",
+   "date": "2024-01-26",
+   "dur_s": 22,
+   "mean": 7.97,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 7.97 (12.0 미달) — 마주보고 서 있는 정지형"
+  },
+  {
+   "id": "ZnLhSOlqn8Y",
+   "ch": "Haru the Shiba Inu",
+   "title": "Baby prepares The Moon for dog",
+   "date": "2023-10-13",
+   "dur_s": 30,
+   "mean": 10.53,
+   "spikes": [
+    1.01,
+    4.06,
+    5.46,
+    9.04
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "모션 10.53 미달 + 스파이크 4회 + 제목·화면상 아기 등장(게이트⑤)"
+  },
+  {
+   "id": "KKC9kvAjOtg",
+   "ch": "Emmy the Maltese",
+   "title": "#emmythemaltese #shorts",
+   "date": "2025-04-08",
+   "dur_s": 9,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 9초(10초 미만)"
+  },
+  {
+   "id": "5QXrH-ZsykQ",
+   "ch": "Teddy the Dachshund",
+   "title": "Cute dachshund wants his sun lounger all to himself",
+   "date": "2024-06-22",
+   "dur_s": 14,
+   "mean": 17.93,
+   "spikes": [
+    2.99,
+    8.82
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "8컷에 영어 자막(\"Only I am allowed to lie on the sun lounger!!!\") 고정 — 게이트④"
+  },
+  {
+   "id": "qg6woGpVvxE",
+   "ch": "Orca the border collie",
+   "title": "Cute but Useless Tricks I taught my Dog",
+   "date": "2025-08-04",
+   "dur_s": 15,
+   "mean": 15.16,
+   "spikes": [
+    6.06,
+    9.21,
+    10.31
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "차분 스파이크 3회 = 트릭별 구도 전환(몽타주성)"
+  },
+  {
+   "id": "7FUi2GNiCY4",
+   "ch": "Baloo the Little Dachshund",
+   "title": "Did you know dachshunds are solar-powered?",
+   "date": "2025-10-18",
+   "dur_s": 15,
+   "mean": 15.78,
+   "spikes": [
+    3.19,
+    5.16,
+    7.25,
+    8.62
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "차분 스파이크 4회 = 컷 전환 다수"
+  },
+  {
+   "id": "-aHknB0o1OM",
+   "ch": "Kenji The Shiba",
+   "title": "u must pay the security guard in headpats to enter",
+   "date": "2022-12-13",
+   "dur_s": 19,
+   "mean": 9.82,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 9.82 (12.0 미달) — 문가에 앉아 있는 정지형"
+  },
+  {
+   "id": "OpKmM4tTOWg",
+   "ch": "Max and Sunny",
+   "title": "Max acts like a dog",
+   "date": "2024-11-17",
+   "dur_s": 7,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 7초(10초 미만)"
+  },
+  {
+   "id": "Ijrq76ii6yM",
+   "ch": "Shiba Inu Moca",
+   "title": "Heat stove BBQ #shiba",
+   "date": "2025-01-10",
+   "dur_s": 15,
+   "mean": 13.78,
+   "spikes": [
+    2.48,
+    5.85
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "2.45→2.50초(난로→문틈), 5.80→5.90초(문틈→난로 위 손) 하드컷 육안 확인 — 게이트①"
+  },
+  {
+   "id": "faPfNgFh11k",
+   "ch": "Pearson’s Beagles",
+   "title": "January 4, 2024",
+   "date": "2024-01-04",
+   "dur_s": 33,
+   "mean": 20.64,
+   "spikes": "28회",
+   "verdict": "rejected_after_review",
+   "reason": "차분 스파이크 28회(4.5~9.8초) = 컷 몽타주"
+  },
+  {
+   "id": "jkdYIU2z_Rk",
+   "ch": "Loki The Siberian Husky",
+   "title": "Who is walking who?",
+   "date": "2024-03-16",
+   "dur_s": 19,
+   "mean": 19.9,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "8컷 전 구간 유모차에 탄 아기·보호자 손 등장(게이트⑤) — 유아차 끄는 구성"
+  },
+  {
+   "id": "mEglCjjSpLA",
+   "ch": "The Beagle Lady",
+   "title": "Pepper and Daisy Chasing Balls For Cardio Work",
+   "date": "2024-03-25",
+   "dur_s": 13,
+   "mean": 11.56,
+   "spikes": [
+    2.11
+   ],
+   "verdict": "rejected_after_review",
+   "reason": "모션 11.56 (12.0 미달, 임계 근접) + 스파이크 1회"
+  },
+  {
+   "id": "670bu_bzids",
+   "ch": "Teddy the Dachshund",
+   "title": "A dachshund always gets what he wants",
+   "date": "2024-01-21",
+   "dur_s": 15,
+   "mean": 3.41,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 3.41 (12.0 미달) — 정지형(샘플 52프레임)"
+  },
+  {
+   "id": "svejSxbJa40",
+   "ch": "MLA Pets - Cute Maltipoo & Maltese Puppies UK",
+   "title": "I used to be so beautiful",
+   "date": "2025-08-21",
+   "dur_s": 6,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 6초(10초 미만)"
+  }
+ ],
+ "flags": {
+  "large_channel_over_1m": "0건 (확정 최대 채널 Bailey The Beagle 5,580)",
+  "tier_over_500k": "0건",
+  "small_channel_under_1k": "1건 — StP9Ws6bCqY Bengal AGMA Cattery(구독 239). 게이트③ 우선 대역(1K~499K) 밖이나 원작자 사육 채널·조회 16,426으로 확정 편입",
+  "nonstandard_or_landscape": "0건 — 확정 2편 전부 1080x1920 세로",
+  "cut_over_detection_suspicion": "StP9Ws6bCqY 6.94~7.04초 스파이크는 카메라 휘두름(블러 프레임)으로 판정, 실컷 아님을 밀집 스틸로 남김",
+  "low_view_included": "없음 — 확정 2편 조회 16,426 / 1,300",
+  "motion_over_measurement": "이번 회차 확정분은 없음(과대계측 의심 없음)"
+ },
+ "notes_for_기획실장": [
+  "고양이 31차 인계 풀 130편은 게시일이 2026년인 최신 영상 비중이 높았다 — 실측 9편 중 6편이 1년 미만으로 조기 탈락. 31차 크롤이 최신순 위주였던 것으로 보이며, 다음 회차는 날짜 미확인 780편 중 오래된 순 정렬이 필요하다.",
+  "확정 2편 중 StP9Ws6bCqY는 구독 239명 소형 캐터리 채널, lqaERvV9Aeo는 조회 1,300회 — 둘 다 규모는 작지만 게이트 ①~⑤를 실제로 통과한 클린 원본이다.",
+  "T4_pnDaUFk0(JBLittleMaltese, 말티즈)은 기술 게이트 전부 통과하고 8컷도 깨끗한데 4.5~6.0초에 주인공이 프레임에서 멀어진다 — 보류 1편으로 올린다.",
+  "강아지 풀은 8~9초 쇼츠 비중이 여전히 높고(이번 탈락 4편이 10초 미만), 정지형(모션 3~11)이 8편이었다. 모션 12.0 임계는 유지했다.",
+  "노션 마스터보드는 이번에도 건드리지 않았다."
+ ]
+}
