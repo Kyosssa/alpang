@@ -1,0 +1,346 @@
+{
+ "batch": "34차 정기 소싱 (2026-11-19 02:00)",
+ "run_at": "2026-11-19T02:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 확정 규칙 포함)",
+ "harness": "work/sourcing_v2/BROWSER_VERIFY_15.md 계열 + 34차 프리스크린: 31차 429 실패 780편 전수 게시일 실측(watch HTML videoPrimaryInfoRenderer.dateText) → 오래된 순 정렬 → i.ytimg oar1~3 썸네일 해상도·차분 → RapidOCR 3프레임 → /shorts/<ID> 에서 ytInitialPlayerResponse 원본 해상도·길이·AI배지 + 10fps 160x90 gray 차분(모션·스파이크) → 8컷 캔버스 그리드 육안 + 스파이크 구간 밀집 스틸",
+ "target": "정예 6~10편 (기준 미달 시 편수 축소, 절대 기준 완화 금지)",
+ "judged_total": 33,
+ "delivered_count": 4,
+ "delivered_by_cat": {
+  "고양이": 1,
+  "강아지": 3
+ },
+ "near_miss_count": 3,
+ "reject_count": 26,
+ "reject_breakdown": {
+  "게이트① 모션 12.0 미달·정지": 10,
+  "게이트① 10초 미만": 4,
+  "게이트① 컷·스파이크": 6,
+  "게이트① 프레이밍 전환·다견 혼재": 2,
+  "게이트⑤ 사람(얼굴·다리) 등장": 3,
+  "접근불가(404)": 1
+ },
+ "account_cap_violation": "없음 — 확정 4편의 계정이 모두 다름(CallaLily Cavapoo / JBLittleMaltese / Shadow Moon and Sigyn / FOFRescueCenter). 동일 계정 2편 초과 0",
+ "screening_stats": {
+  "31차_429실패풀": "780편 전수 게시일 실측 성공 667편 · 실패 58편(접근불가) · 날짜 미검출 55편",
+  "1년_이상": "282편 (게시일 2014-09-10 ~ 2025-11-18) · 1년 미만 385편",
+  "oar_프리스크린": "780편 중 세로 1900px 이상 494편 / 이미지 없음 85편",
+  "1년이상_1080세로": "111편 → RapidOCR 3프레임 텍스트 0건 46편",
+  "브라우저_실측": "강아지 24편 + 고양이 3편 = 27편(34차) · 33차 보류 1편 재측정",
+  "채널_실측": "확정·후보 31개 채널 /channel/<chid>/shorts HTML 직접 파싱(소개·쇼츠 수)",
+  "AI배지": "판정 전편 watch HTML 'AI: Content was made with AI' 0건 — AI 표기 영상 0"
+ },
+ "flags": {
+  "large_channel_over_1m": "0건",
+  "tier_over_500k": "0건 (최대 Life with Labrador Lucy 84.9천 — 보류분)",
+  "small_channel_under_1k": "2건 — CallaLily Cavapoo(61), JBLittleMaltese(33). 둘 다 원작자 사육·브리더 계정으로 확인해 편입",
+  "nonstandard_or_landscape": "확정 4편 전부 1080x1920. 보류 KQsEY8NsJ7s만 1080x1916(9:16 상하 4px 부족)",
+  "low_view_included": "YkwJRN7KeEQ 조회 258 — '저조회 확인' 표기(원작자 계정·게시 2016-01-08)",
+  "pop_exception": "09mZ8kz8DO4 — 원본음 'Crazy · Gnarls Barkley' [팝송 예외 후보]",
+  "motion_borderline": "2a1C7J8CSiU 12.77 · 보류 RKBbHQPzahs 13.33 — ±30% 편차 고려해 업로드 전 원본 재확인 권장"
+ },
+ "delivered": [
+  {
+   "id": "YkwJRN7KeEQ",
+   "url": "https://www.youtube.com/shorts/YkwJRN7KeEQ",
+   "title": "www.callalilycavapoo.com",
+   "channel": "CallaLily Cavapoo",
+   "cat": "강아지(캐버푸 키튼)",
+   "dur_s": 16,
+   "resolution": "1080x1920",
+   "decode": "1080x1920",
+   "motion_mean": 15.49,
+   "motion_med": 14.89,
+   "motion_min": 3.25,
+   "spikes": [],
+   "stills": "stills34/YkwJRN7KeEQ_cuts8.png",
+   "gate": "①16초 무컷·모션 15.49 / ②@CallaLilyCavapoo — 'Exclusive Cavapoo Love for over 20 years' 브리더 본인 계정(쇼츠 14편 동일 캐버푸) / ③실측 / ④무자막 / ⑤사람 0(손만)",
+   "low_view_checked": "저조회 확인 — 조회 258 · 원작자 본인 계정(@CallaLilyCavapoo, 소개 'Exclusive Cavapoo Love for over 20 years', 쇼츠 전편 동일 캐버푸) · 게시 2016-01-08(10년 10개월 경과)",
+   "audio": "원본 현장음(Audionautix 'A Brighter Heart' — 로열티프리)",
+   "note": "0.3~10.1초 카펫 위 캐버푸가 장난감·핸드로 사료를 파먹는 장면. 6.0·10.1초에 보호자 손끝만 등장(플레이북 허용). 8컷 그리드·OCR 교차 결과 영상 내 텍스트 0건.",
+   "published": "Jan 8, 2016",
+   "views_txt": "258 views",
+   "subs_txt": "61 subscribers",
+   "handle": "@CallaLilyCavapoo",
+   "ai_badge": false
+  },
+  {
+   "id": "T4_pnDaUFk0",
+   "url": "https://www.youtube.com/shorts/T4_pnDaUFk0",
+   "title": "JBLittle Josie ❤️ #puppy#maltese #whitepuppy  #pets #cute #doglife",
+   "channel": "JBLittleMaltese",
+   "cat": "강아지(말티즈 Josie)",
+   "dur_s": 60,
+   "resolution": "1080x1920",
+   "decode": "720x1280",
+   "motion_mean": 19.35,
+   "motion_med": 19.29,
+   "motion_min": 5.23,
+   "spikes": [],
+   "stills": "stills34/T4_pnDaUFk0_dense.png · stills33/T4_pnDaUFk0_cuts8.png",
+   "gate": "①60초 무컷·모션 19.35(34차 재측정) / ②@jblittlemaltese 말티즈 브리더 본인 계정 / ③실측 / ④무자막 / ⑤사람 0",
+   "rejudge": "33차 보류 → 34차 확정. 33차가 '4.5·6.0초 주인공 소실'로 본 것은 8컷 그리드 축소본(타일 275x229)에서 흰 말티즈가 컬러 러그 위에 작게 잡혀 놓친 오판이었다. 34차에 3.3·4.0·5.0·6.0·6.5·7.0·7.5·8.5초 밀집 스틸(타일 475x495)로 재확인한 결과 주인공은 3.3~8.5초 전 구간 프레임 안에 있었다(4.2·4.5·4.8초 확대 스틸에서 러그 위 말티즈 확인, 6.1초는 코앞 클로즈업).",
+   "note": "실내 광각 고정샷에서 말티즈가 러그 위 장난감과 노는 60초 무컷. 주인공이 화면 대비 작게 잡히는 구간(4~6초)이 있어 컷 편집 시 0~10초 앞부분 위주 사용 권장.",
+   "published": "May 24, 2025",
+   "views_txt": "1,397 views",
+   "subs_txt": "33 subscribers",
+   "handle": "@jblittlemaltese",
+   "ai_badge": false
+  },
+  {
+   "id": "09mZ8kz8DO4",
+   "url": "https://www.youtube.com/shorts/09mZ8kz8DO4",
+   "title": "Witness Shadow's Crazy Antics At The Dog Park",
+   "channel": "Shadow Moon and Sigyn (HuskyVizsla)",
+   "cat": "강아지(비즐라 Shadow)",
+   "dur_s": 29,
+   "resolution": "1080x1920",
+   "decode": "1080x1920",
+   "motion_mean": 21.0,
+   "motion_med": 20.88,
+   "motion_min": 7.86,
+   "spikes": [],
+   "stills": "stills34/09mZ8kz8DO4_cuts8.png",
+   "gate": "①29초 무컷·모션 21.00·스파이크 0 / ②@huskyvizsla — 'Meet Shadow, the Vizsla, and Sigyn, the Husky' 본인 사육 계정 / ③실측 / ④무자막 / ⑤사람 0(0~10.1초 전 구간 확인)",
+   "pop_exception": "[팝송 예외 후보] 원본음이 상업 팝 'Crazy · Gnarls Barkley'. 플레이북 4장 3항에 따라 뷰포인트는 확실하므로 기획실장 건별 판정용으로 태그해 올린다(업로드 시 원본음 유지 여부 결정 필요).",
+   "note": "야간 도그파크에서 비즐라가 카메라를 향해 달려들어 혀를 내미는 클로즈업 지속. 0.3~10.1초 내 사람·타견 미등장.",
+   "published": "Jan 8, 2024",
+   "views_txt": "3,938 views",
+   "subs_txt": "3.93 thousand subscribers",
+   "handle": "@huskyvizsla",
+   "ai_badge": false
+  },
+  {
+   "id": "2a1C7J8CSiU",
+   "url": "https://www.youtube.com/shorts/2a1C7J8CSiU",
+   "title": "Ramsay Showing How He Eats Snacks All By Himself! 😍🥰❤️",
+   "channel": "FOFRescueCenter",
+   "cat": "고양이(샴 믹스 램지)",
+   "dur_s": 87,
+   "resolution": "1080x1920",
+   "decode": "1080x1920",
+   "motion_mean": 12.77,
+   "motion_med": 11.96,
+   "motion_min": 3.43,
+   "spikes": [],
+   "stills": "stills34/2a1C7J8CSiU_cuts8.png",
+   "gate": "①87초 무컷·모션 12.77(임계 12.0 상회, 편차 ±30% 고려해도 12.0 이상) / ②@FOFRescueCenter 구조단체 본인 계정(보호 중인 개체 직접 촬영) / ③실측 / ④무자막 / ⑤사람 0",
+   "note": "샴 믹스 램지가 사료그릇에 얼굴을 비비며 옆으로 누워 간식을 먹는 장면. 8.0~10.1초에 두 번째 고양이 머리가 하단으로 들어오지만 주인공은 계속 프레임 안. 모션 12.77은 임계 근접값이라 업로드 전 원본 재확인 권장.",
+   "published": "Sep 17, 2025",
+   "views_txt": "12,333 views",
+   "subs_txt": "54.6 thousand subscribers",
+   "handle": "@FOFRescueCenter",
+   "ai_badge": false
+  }
+ ],
+ "near_miss_pool": [
+  {
+   "id": "RKBbHQPzahs",
+   "url": "https://www.youtube.com/shorts/RKBbHQPzahs",
+   "title": "Labrador loves morning scratchies🥰 #labrador #dog #petvideos #dogvideos #pets #funny #animals#cute",
+   "ch": "Life with Labrador Lucy",
+   "date": "2024-09-12",
+   "dur_s": 42,
+   "res": "1080x1920",
+   "mean": 13.33,
+   "med": 12.97,
+   "min": 4.33,
+   "spikes": [],
+   "stills": "stills34/RKBbHQPzahs_cuts8.png",
+   "verdict": "near_miss",
+   "reason": "8컷 무자막·무워터마크·사람 얼굴 0(보호자 문신 팔만 등장, 허용 범위). 다만 모션 13.33이 임계 12.0 근접이고 화면 움직임의 대부분이 쓰다듬는 손에서 나온다 — 라브라도가 누워 손길 받는 정적 구도라 '역동적 몸동작' 판정 필요.",
+   "flag": "정적 구도·모션 임계 근접(13.33, 손 움직임 기인)",
+   "measured": "구독 84.9천 · 조회 10,638 · 게시 2024-09-12 · AI 배지 0",
+   "published": "Sep 12, 2024",
+   "views_txt": "10,638 views",
+   "subs_txt": "84.9 thousand subscribers",
+   "handle": "@lifewithlabradorlucy",
+   "ai_badge": false
+  },
+  {
+   "id": "KQsEY8NsJ7s",
+   "url": "https://www.youtube.com/shorts/KQsEY8NsJ7s",
+   "title": "Hickory, Sable Male #Sheltie #bluefoxshelties #sheltiepuppy #shetlandsheepdog",
+   "ch": "Blue Fox Shelties of Utah",
+   "date": "2025-09-27",
+   "dur_s": 18,
+   "res": "1080x1916",
+   "mean": 15.0,
+   "med": 13.25,
+   "min": 4.19,
+   "spikes": [],
+   "stills": "stills34/KQsEY8NsJ7s_cuts8.png",
+   "verdict": "near_miss",
+   "reason": "0.3~1.5초 셸티 키튼 얼굴 클로즈업이 훅으로 좋고 무자막·무워터마크. 다만 3.0~10.1초는 보호자 팔(전완)이 화면 절반을 차지하며 강아지를 뒤집어 든 채라 몸동작이 손 회전에 의존한다. 원본 해상도도 1080x1916(9:16에서 상하 4px 부족).",
+   "flag": "보호자 전완 전면 등장 + 원본 1080x1916(4px 부족)",
+   "measured": "구독 49 · 조회 1,200 · 게시 2025-09-27 · AI 배지 0",
+   "published": "Sep 27, 2025",
+   "views_txt": "1,200 views",
+   "subs_txt": "49 subscribers",
+   "handle": "@UtahShelties",
+   "ai_badge": false
+  },
+  {
+   "id": "KRujtUmpH94",
+   "url": "https://www.youtube.com/shorts/KRujtUmpH94",
+   "title": "#shorts #short #yorkshire #cute #dog #pets #puppy",
+   "ch": "yorkshire terrier (@terrier_03W)",
+   "date": "2025-11-03",
+   "dur_s": 12,
+   "res": "1080x1920",
+   "mean": 16.05,
+   "med": 14.84,
+   "min": 2.78,
+   "spikes": [],
+   "stills": "stills34/KRujtUmpH94_cuts8.png",
+   "verdict": "near_miss",
+   "reason": "0.3~4.5초 요키 키튼이 장난감을 물고 뒹구는 구간은 원석. 다만 6.0~10.1초는 카메라가 내려앉아 털 클로즈업만 4초 이상 이어져 주인공 형체가 사라진다. 자막·사람·워터마크 0.",
+   "flag": "후반 4초 털 클로즈업(주인공 형체 소실)",
+   "measured": "구독 11 · 조회 2,020 · 좋아요 50 · 게시 2025-11-03 · AI 배지 0 · 음원 Monkeys Spinning Monkeys(Kevin MacLeod, 로열티프리)",
+   "published": "Nov 3, 2025",
+   "views_txt": "2,020 views",
+   "subs_txt": "11 subscribers",
+   "handle": "@terrier_03W",
+   "ai_badge": false
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "Ad0AW2oDaPI",
+   "gate": "게이트⑤",
+   "reason": "도그파크 다견 + 여러 견주 다리·상반신 전 구간 등장(모션 30.00)"
+  },
+  {
+   "id": "7mTwBuAQwE0",
+   "gate": "게이트①",
+   "reason": "모션 10.65 — 12.0 미달"
+  },
+  {
+   "id": "0BdP-PM01fE",
+   "gate": "게이트①④",
+   "reason": "아키타 가족견 4~5마리 동시 등장 + 6.0초 프레이밍 전환(스파이크 0.71) + 보호자 팔"
+  },
+  {
+   "id": "BxgLLZKImcI",
+   "gate": "게이트①",
+   "reason": "하드컷 4회(2.22·4.47·6.75·8.34초, 변화픽셀 0.76~0.82) — 장면 전환 확인"
+  },
+  {
+   "id": "j4b9I9EDikDo",
+   "gate": "접근불가",
+   "reason": "영상 404(삭제·비공개)"
+  },
+  {
+   "id": "BxHNU9Vio5o",
+   "gate": "게이트①",
+   "reason": "모션 7.81 — 12.0 미달"
+  },
+  {
+   "id": "rM328TbWbog",
+   "gate": "게이트①",
+   "reason": "모션 3.43 — 눈밭 원거리 정지 화면"
+  },
+  {
+   "id": "9cPP83h7n8g",
+   "gate": "게이트①",
+   "reason": "길이 8초 — 10초 미만"
+  },
+  {
+   "id": "NhH71d9U670",
+   "gate": "게이트①",
+   "reason": "모션 16.63이나 9.2~10.1초 주인공 프레임 이탈 + 원거리 와이드샷"
+  },
+  {
+   "id": "_zp51QTCQXI",
+   "gate": "게이트⑤",
+   "reason": "보호자 여성 얼굴(선글라스) 등장 — 0.3초부터"
+  },
+  {
+   "id": "-u6vAfdCz0s",
+   "gate": "게이트①",
+   "reason": "하드컷 4회(0.79~0.89, 1.21·3.69·6.06·9.33초)"
+  },
+  {
+   "id": "MV3wVvzKe14",
+   "gate": "게이트①",
+   "reason": "길이 8초 — 10초 미만"
+  },
+  {
+   "id": "ScWF8cPTmMg",
+   "gate": "게이트①",
+   "reason": "5.76초 하드컷(실내→호수 보트, 0.63) + 다견"
+  },
+  {
+   "id": "ta5fitZJV5Q",
+   "gate": "게이트①⑤",
+   "reason": "스파이크 10회(0.64~0.76) 반복 카메라 휘두름 + 비즐라·콜리 2견 + 보호자 다리"
+  },
+  {
+   "id": "Ynm9pLaqbDw",
+   "gate": "게이트⑤①",
+   "reason": "보호자 얼굴(입·턱) 상단 지속 등장 + 7초대 구도 전환. 해상도도 1068x1920"
+  },
+  {
+   "id": "g7HWPrjsjRE",
+   "gate": "게이트①",
+   "reason": "모션 11.48 — 12.0 미달"
+  },
+  {
+   "id": "xYBKqLbrDmQ",
+   "gate": "게이트①",
+   "reason": "모션 6.43 — 정지"
+  },
+  {
+   "id": "_d6qvPq-5KU",
+   "gate": "게이트①",
+   "reason": "모션 11.68 — 12.0 미달(바구니 강아지 군집)"
+  },
+  {
+   "id": "dWhjZPXfH_E",
+   "gate": "게이트①",
+   "reason": "길이 7초 — 10초 미만"
+  },
+  {
+   "id": "rc1FysgGC6k",
+   "gate": "게이트①",
+   "reason": "모션 10.67 — 12.0 미달"
+  },
+  {
+   "id": "Usjv95C36s4",
+   "gate": "게이트①",
+   "reason": "스파이크 8회(0.61~0.74) — 걷는 중 다수 프레임 전환"
+  },
+  {
+   "id": "CvezA046nh4",
+   "gate": "게이트①",
+   "reason": "모션 6.48 — 정지. 반려동물 아님(거북이 스노클링), 타인 음원 소스 표기"
+  },
+  {
+   "id": "qg9LvuSBEzQ",
+   "gate": "게이트①",
+   "reason": "모션 11.22 — 12.0 미달(고양이 ASMR)"
+  },
+  {
+   "id": "qciqi7J7mTM",
+   "gate": "게이트①",
+   "reason": "모션 7.27 + 5.54초 스파이크 0.77"
+  },
+  {
+   "id": "7NR8MS3emt4",
+   "gate": "게이트①",
+   "reason": "길이 9초 — 10초 미만"
+  },
+  {
+   "id": "3xkFF8R8Eas",
+   "gate": "게이트①",
+   "reason": "스파이크 8회·중앙모션 0.81 — 정지 프레임 몽타주"
+  }
+ ],
+ "notes_for_기획실장": [
+  "34차 최우선 지시였던 '31차 429 실패 780편 오래된 순 소화'를 완료했다 — 780편 전수 게시일을 watch HTML dateText로 실측해 282편이 1년 이상임을 확정했다(33차 인계의 '최신순 크롤 편중' 진단이 맞았다: 780편 중 385편이 1년 미만).",
+  "33차 보류 T4_pnDaUFk0(말티즈 Josie)은 34차 밀집 스틸 재검에서 '주인공 소실'이 8컷 축소본 오판으로 확인돼 확정으로 정리했다. 교훈: 축소 그리드(타일 275px)에서는 흰 소형견이 컬러 러그 위에서 사라져 보인다 — 주인공 유무 판정은 타일 475px 이상 + 0.5초 간격 밀집 스틸로 해야 한다.",
+  "확정 4편 중 3편이 조회 1만 미만 소형 채널(33~2천 구독)이다. 게이트③ 우선 대역은 1K~499K지만, 대형 채널 클립은 대부분 컴필레이션·자막·사람 등장으로 게이트 ②④⑤에서 탈락해 실질 후보가 소형 원작자 채널에 몰린다.",
+  "고양이는 31차 인계 OCR 무자막 25편 중 미실측 16편을 전수 날짜 실측했으나 12편이 2026년 게시(1년 미만)·집계 채널(Funnycats·Dodo Kids 등)이어서 실측 가능한 원작자 후보가 3편뿐이었다. 그중 2a1C7J8CSiU 1편 확정.",
+  "노션 마스터보드는 이번에도 건드리지 않았다."
+ ]
+}
