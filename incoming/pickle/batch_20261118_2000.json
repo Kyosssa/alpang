@@ -1,0 +1,428 @@
+{
+ "batch": "32차 정기 소싱 (2026-11-18 20:00)",
+ "run_at": "2026-11-18T20:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 + 1장 5대 게이트, 2026-11-17 확정본 그대로. 기준 완화 0)",
+ "harness": "work/sourcing_v2/BROWSER_VERIFY_15.md 계열 + 32차 신규 프리스크린: i.ytimg.com/vi/<ID>/oar1~3.jpg(원본 비율 3프레임)로 해상도·정지·텍스트 사전 판정(RapidOCR) → /shorts/<ID> 페이지에서 ytInitialPlayerResponse(해상도·길이·AI배지) + 10fps 160x90 gray 차분 → 8컷 캔버스 그리드 육안",
+ "target": "정예 6~10편 (기준 미달 시 편수 축소, 절대 기준 완화 금지)",
+ "judged_total": 28,
+ "delivered_count": 1,
+ "delivered_count_with_tier_exception": 2,
+ "tier_exception_count": 1,
+ "pop_song_candidate_count": 1,
+ "near_miss_count": 4,
+ "reject_count": 21,
+ "delivered_by_cat": {
+  "강아지": 1,
+  "고양이": 1
+ },
+ "account_cap_violation": "없음 — 확정 2편의 계정이 서로 다름(Oliver the Beagle / Ginger - The Spoiled Cat). 동일 계정 2편 초과 0",
+ "delivered": [
+  {
+   "id": "pPJ-y_q33Ro",
+   "url": "https://www.youtube.com/shorts/pPJ-y_q33Ro",
+   "title": "Oliver eats popcorn adorably",
+   "channel": "Oliver the Beagle",
+   "handle": "@OlivertheBeagle",
+   "channel_id": "UCnluX3r32F8RQzmyEDPZqWw",
+   "subs_txt": "387,000 (38.7만)",
+   "views_txt": "161,820",
+   "likes_txt": "7,952",
+   "published": "2025-01-26",
+   "cat": "강아지(비글)",
+   "dur_s": 24,
+   "resolution": "2160x3840 (원본 4K 세로)",
+   "decode_resolution": "360x640 (숏츠 페이지 자동 화질)",
+   "motion_mean": 14.37,
+   "motion_med": 13.68,
+   "motion_min": 4.84,
+   "frames": 90,
+   "ratios_max": null,
+   "spike_times_s": [],
+   "measure_window": "0.05초 시크 → 1.3초 워밍업 → 0초 재측정 · 0~10.4초 · 10fps(0.099초 버킷) 160x90 gray 차분",
+   "stills": "stills32/pPJ-y_q33Ro_cutsA.png · pPJ-y_q33Ro_cutsB.png + 후반 12·16·20·23초 4컷(pPJ_late)",
+   "why": "소파 위 비글이 사람 손이 건네는 팝콘을 먹고, 이어 앉아서 카메라를 응시하는 24초 단일 숏. 0초부터 입·머리 동작이 끊기지 않고, 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)과 후반 12·16·20·23초 모두 같은 방·같은 개·같은 앵글로 이어진다.",
+   "cut_evidence": "10fps 90프레임 차분 평균 14.37(중앙 13.68·최저 4.84), 변화픽셀 60% 초과 스파이크 0.",
+   "people": "사람 0 — 4.5초에 팝콘을 쥔 손 끝만 등장(플레이북 허용 범위)",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 14.37 · 스파이크 0 · 24초 무컷",
+    "2_original_creator": "PASS — @OlivertheBeagle 1인칭 사육 채널(비글 Oliver 단일 개체, 쇼츠 전편 동일 견). AI 배지 0",
+    "3_measured_only": "PASS — 구독 387,000 · 조회 161,820 · 좋아요 7,952 · 게시 2025-01-26(31차 watch HTML dateText 실측값)",
+    "4_no_subs": "PASS — 8컷·후반 4컷 전부 자막·브랜드 스트립·타채널 워터마크 0",
+    "5_no_people": "PASS — 얼굴·전신 0, 손만 1회"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널명이 개체명(Oliver the Beagle), 구독 38.7만 규모의 1인칭 사육 채널.",
+   "author_confirm_evidence": "31차 dog_pass_meta(채널·영상 HTML ytInitialData 실측) + 이번 회차 숏츠 페이지 @OlivertheBeagle 채널 링크 확인",
+   "publish_date_confirmed": "2025-01-26",
+   "publish_date_source": "31차 watch HTML videoPrimaryInfoRenderer dateText",
+   "low_view_checked": "해당 없음 — 조회 161,820회(1,000 이상)",
+   "note": "31차 인계 강아지 풀(1년 이상·AI 배지 0) 136편 중 최우선 실측분. 4K 원본이라 리프레이밍 여유가 가장 크다."
+  },
+  {
+   "id": "Dj1xRS1AuGY",
+   "url": "https://www.youtube.com/shorts/Dj1xRS1AuGY",
+   "title": "I want seconds",
+   "channel": "Ginger - The Spoiled Cat",
+   "handle": "@GingerTheSpoiledCat",
+   "channel_id": null,
+   "subs_txt": "525,000 (52.5만)",
+   "views_txt": "68,290",
+   "likes_txt": "5,057",
+   "published": "2023-03-08",
+   "cat": "고양이(오렌지 태비)",
+   "dur_s": 16,
+   "resolution": "1080x1920",
+   "decode_resolution": "720x1280",
+   "motion_mean": 21.7,
+   "motion_med": 19.14,
+   "motion_min": 8.63,
+   "frames": 91,
+   "ratios_max": 0.81,
+   "spike_times_s": [
+    6.07,
+    7.64,
+    14.86,
+    15.1,
+    15.22,
+    15.61,
+    15.73
+   ],
+   "measure_window": "0.05초 시크 → 1.3초 워밍업 → 0초 재측정 · 0~10.4초 + 후속 10.4~16초 구간 별도 스캔",
+   "stills": "stills32/Dj1xRS1AuGY_cutsA.png · _cutsB.png · _spike7.4-7.95.png + 후반 11·12.5·14·15.5초(Ginger_late)",
+   "why": "오렌지 태비가 사람 손에 든 츄르 봉지를 16초 내내 놓지 않고 핥아대는 단일 숏. 7.6초에 카메라가 휙 돌아 화면이 번지는데(모션블러 프레임 확인) 그 앞뒤로 같은 방·같은 고양이가 이어져 컷이 아니다.",
+   "cut_evidence": "10fps 91프레임 차분 평균 21.7(중앙 19.14·최저 8.63). 스파이크 7회는 전부 카메라 휘두름(7.6초 블러 프레임, 14.9~15.7초 테일 구간 블러 프레임 육안 확인). 컷 없음.",
+   "people": "사람 0 — 츄르를 쥔 손·팔 일부만 등장(플레이북 허용 범위)",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 21.7 · 컷 0(스파이크는 카메라 이동으로 확인)",
+    "2_original_creator": "PASS — @GingerTheSpoiledCat 1인칭 사육 채널(개체명 Ginger). AI 배지 0",
+    "3_measured_only": "PASS — 구독 52.5만 · 조회 68,290 · 좋아요 5,057 · 게시 2023-03-08(watch 페이지 dateText 실측)",
+    "4_no_subs": "PASS — 8컷·후반 4컷·테일 4컷 전부 자막·스트립·워터마크 0",
+    "5_no_people": "PASS — 얼굴·전신 0, 손·팔만"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널명이 개체명(Ginger - The Spoiled Cat), 영상·쇼츠 전편 동일 오렌지 태비.",
+   "author_confirm_evidence": "watch?v=Dj1xRS1AuGY ytInitialData(videoOwnerRenderer @GingerTheSpoiledCat · 구독자 5.25만명 · 게시 2023. 3. 8. · 조회수 68,290회)",
+   "publish_date_confirmed": "2023-03-08",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 68,290회(1,000 이상)",
+   "tier_exception": "체급 예외 판정 필요 — 구독 52.5만(50만 이상). 플레이북 1장 게이트③: 50만 이상은 B등급 상한 초과로 대표·기획실장 예외 판정 대상. 이번 회차 '확정 편수'에는 넣지 않고 별도 표기.",
+   "note": "31차 고양이 미실측 풀(tmp31/cat_pool.json 140편, 스토리보드 사전 스크린)에서 최상위 모션 후보로 발굴."
+  }
+ ],
+ "pop_song_candidates": [
+  {
+   "id": "uM8ZlEaqPxw",
+   "ch": "Athena the Shiba Inu",
+   "dur": 15,
+   "res": "1080x1920",
+   "n": 91,
+   "mean": 17.26,
+   "med": 15.29,
+   "min": 4.84,
+   "spikes": [
+    [
+     4.29,
+     0.62
+    ]
+   ],
+   "ai": false,
+   "cuts8": "no text/watermark; spike 4.29=zoom-out(4.1/4.25/4.35/4.6 연속), 6.0 위에서 내려본 앵글→8.0 와이드: 스파이크 없음=카메라 이동",
+   "audio": "The Fate of Ophelia · Taylor Swift (상업 팝)",
+   "verdict": "pop_song_candidate",
+   "reason": "게이트①·④ 통과했으나 원본음이 상업 팝송 → 플레이북 4장 [팝송 예외 후보] 기획실장 건별 판정",
+   "views": 3100,
+   "date": null,
+   "subs": 271
+  }
+ ],
+ "near_miss_pool": [
+  {
+   "id": "bahAzD__AAk",
+   "ch": "Max and Sunny",
+   "dur": 18,
+   "res": "1080x1920",
+   "n": 92,
+   "mean": 20.65,
+   "med": 19.2,
+   "min": 5.39,
+   "spikes": [
+    [
+     4.96,
+     0.68
+    ]
+   ],
+   "ai": false,
+   "cuts8": "no text/watermark; spike 4.96 = camera pan (4.6/4.85/5.05/5.3 연속 확인)",
+   "verdict": "near_miss",
+   "reason": "모션 20.65로 수치는 통과했으나 주 동작원인이 밝은 TV 화면 변화(깜빡임)이고 실제 동물 동작은 8초 흑묘 횡단 정도 - 모션 과대계측. 8컷에 자막·워터마크·사람 없음.",
+   "flag": "모션 과대계측 의심"
+  },
+  {
+   "id": "266b8wOL7hs",
+   "ch": "Bailey The Beagle",
+   "dur": 103,
+   "res": "1080x1920",
+   "n": 91,
+   "mean": 18.7,
+   "med": 19.44,
+   "min": 3.07,
+   "spikes": [],
+   "ai": false,
+   "cuts8": "no text/watermark/people; 6.0 문 열고 나감→8.0 파티오→9.2/10.1 개 원거리 소실",
+   "verdict": "near_miss",
+   "reason": "103초 장편·모션 18.7·스파이크 0으로 기술 게이트는 통과하나 8~10.1초에 개가 원거리로 멀어져 주인공 소실. 레전드 원석성 미달.",
+   "views": 1200,
+   "subs": 5580,
+   "flag": "장편·주인공 원거리"
+  },
+  {
+   "id": "MLKPd-Vy3YE",
+   "dur": 11,
+   "res": "2160x3840",
+   "n": 91,
+   "mean": 10.74,
+   "med": 10.06,
+   "min": 1.41,
+   "spikes": [],
+   "verdict": "near_miss",
+   "reason": "모션 10.74로 임계 12.0에 근접(±30% 편차 대역). 4K 원본·11초로 화질은 최상. 플레이북 0장(c) '임계 근처는 보류로 모아 기획실장 판정' 적용.",
+   "flag": "임계 근접"
+  },
+  {
+   "id": "4z43ygJWoQg",
+   "dur": 31,
+   "res": "1080x1920",
+   "n": 91,
+   "mean": 13.07,
+   "med": 9.22,
+   "min": 0.08,
+   "spikes": [],
+   "verdict": "near_miss",
+   "reason": "평균 모션 13.07이나 중앙 9.22·정지구간(min 0.08) 존재. 31초 중 대부분이 정지.",
+   "flag": "정지 구간"
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "uDl3yzYii80",
+   "channel": "Oliver the Beagle",
+   "dur_s": 22,
+   "resolution": "1080x1920",
+   "motion_mean": 14.55,
+   "reason": "REJECT - English caption at 3.0s & 4.5s: 'too early for questions'",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "J12rcM9xgHI",
+   "channel": null,
+   "dur_s": 9,
+   "resolution": "1080x1920",
+   "motion_mean": null,
+   "reason": "길이 9초(10초 미만)",
+   "category": "길이 10초 미만"
+  },
+  {
+   "id": "gQull4xyZyc",
+   "channel": null,
+   "dur_s": 16,
+   "resolution": "1080x1920",
+   "motion_mean": 17.17,
+   "reason": "10fps 차분 스파이크 5회(2~10초) = 컷/프레임 전환",
+   "category": "컷·프레임 전환"
+  },
+  {
+   "id": "JWoTdiX42q8",
+   "channel": null,
+   "dur_s": 8,
+   "resolution": "1080x1920",
+   "motion_mean": null,
+   "reason": "길이 8초(10초 미만)",
+   "category": "길이 10초 미만"
+  },
+  {
+   "id": "494JUHBAygA",
+   "channel": null,
+   "dur_s": 8,
+   "resolution": "1080x1920",
+   "motion_mean": null,
+   "reason": "길이 8초(10초 미만)",
+   "category": "길이 10초 미만"
+  },
+  {
+   "id": "5fV7JbuJNyY",
+   "channel": null,
+   "dur_s": 58,
+   "resolution": "1080x1920",
+   "motion_mean": 2.53,
+   "reason": "모션 2.53 (12.0 미달) - 정지형",
+   "category": "모션 미달·정지"
+  },
+  {
+   "id": "gkmNuO4mTro",
+   "channel": null,
+   "dur_s": 9,
+   "resolution": "1080x1920",
+   "motion_mean": null,
+   "reason": "길이 9초(10초 미만)",
+   "category": "길이 10초 미만"
+  },
+  {
+   "id": "F-geqGSiyrw",
+   "channel": null,
+   "dur_s": 60,
+   "resolution": "1080x1920",
+   "motion_mean": 28.49,
+   "reason": "10fps 스파이크 9회(3.1~9.4초) = 컷 몽타주",
+   "category": "컷·프레임 전환"
+  },
+  {
+   "id": "jqiSTTUpSOY",
+   "channel": null,
+   "dur_s": 15,
+   "resolution": "1080x1920",
+   "motion_mean": 6.74,
+   "reason": "모션 6.74 (12.0 미달)",
+   "category": "모션 미달·정지"
+  },
+  {
+   "id": "fRcRlReLZa8",
+   "channel": null,
+   "dur_s": 15,
+   "resolution": "1080x1920",
+   "motion_mean": 11.17,
+   "reason": "모션 11.17 (12.0 미달) - 자는 시바",
+   "category": "모션 미달·정지"
+  },
+  {
+   "id": "cKnfKXDRUCk",
+   "channel": null,
+   "dur_s": 20,
+   "resolution": "2160x3840",
+   "motion_mean": 32.53,
+   "reason": "10fps 스파이크 12회(1.9~9.7초) = 컷 몽타주",
+   "category": "컷·프레임 전환"
+  },
+  {
+   "id": "CyFbd4us5HM",
+   "channel": null,
+   "dur_s": 21,
+   "resolution": "1080x1920",
+   "motion_mean": 27.26,
+   "reason": "8컷에서 좌하단 워터마크 \"Little tiger\" 고정 + 1.5초 사람 팔 등장 (게이트④⑤)",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "GFcsyaK_EIQ",
+   "channel": null,
+   "dur_s": 26,
+   "resolution": "1080x1920",
+   "motion_mean": 14.91,
+   "reason": "8컷 전체에 영어 자막 \"What do you mean Aston and Rolls arent the youngest babies anymore?\"",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "7HPblwBm5xw",
+   "channel": null,
+   "dur_s": 58,
+   "resolution": "1080x1920",
+   "motion_mean": 18.21,
+   "reason": "8컷: 분홍 \"Happy Valentines Day!\" 자막 고정 + 0.3초 남성 얼굴·전신 등장 (게이트④⑤)",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "CEsaqexoUbQ",
+   "channel": null,
+   "dur_s": 55,
+   "resolution": "1080x1920",
+   "motion_mean": 9.8,
+   "reason": "모션 9.8 (12.0 미달)",
+   "category": "모션 미달·정지"
+  },
+  {
+   "id": "BnJAkpsAPbQ",
+   "channel": "sunset cat",
+   "dur_s": null,
+   "resolution": null,
+   "motion_mean": null,
+   "reason": "게이트②: Roblox mm2 게임 플레이 채널(1인칭 사육 원작자 아님) - 측정 생략",
+   "category": "채널 성격(원작자 아님)"
+  },
+  {
+   "id": "IUOIJ-eMuv4",
+   "channel": null,
+   "dur_s": 16,
+   "resolution": "1080x1920",
+   "motion_mean": 40.2,
+   "reason": "10fps 스파이크 33회 = 컷 전환 다수(몽타주성)",
+   "category": "컷·프레임 전환"
+  },
+  {
+   "id": "WUWmPruQSJk",
+   "channel": null,
+   "dur_s": 33,
+   "resolution": "1080x1920",
+   "motion_mean": 21.95,
+   "reason": "8컷 4.5초에 영어 자막 \"WATCHING YOU KNEAD LIKE THAT MAKES MY HEART SO FULL!\" (게이트④)",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "GKAnZjnL4fE",
+   "channel": null,
+   "dur_s": 24,
+   "resolution": "1080x1920",
+   "motion_mean": 4.08,
+   "reason": "모션 4.08 (12.0 미달) - 정지형",
+   "category": "모션 미달·정지"
+  },
+  {
+   "id": "xKVPgAbgxV4",
+   "channel": null,
+   "dur_s": 28,
+   "resolution": "1080x1920",
+   "motion_mean": 14.96,
+   "reason": "8컷: 보호자 팔·손(시계·타투)이 주 피사체로 전 구간 노출(게이트⑤), 브리더 판매 채널(게이트② 의심)",
+   "category": "자막·워터마크·사람"
+  },
+  {
+   "id": "ZC0CtlfyVPQ",
+   "channel": null,
+   "dur_s": 20,
+   "resolution": "1080x1920",
+   "motion_mean": 3.82,
+   "reason": "모션 3.82 (12.0 미달) - 정지형",
+   "category": "모션 미달·정지"
+  }
+ ],
+ "reject_breakdown": {
+  "자막·워터마크·사람": 6,
+  "길이 10초 미만": 4,
+  "컷·프레임 전환": 4,
+  "모션 미달·정지": 6,
+  "채널 성격(원작자 아님)": 1
+ },
+ "flags": {
+  "large_channel_over_1m": "0건 (이번 판정 최대 채널 Ginger 52.5만)",
+  "tier_over_500k": "1건 — Dj1xRS1AuGY(Ginger - The Spoiled Cat, 52.5만) → 체급 예외 판정 대기",
+  "nonstandard_or_landscape": "0건 — 확정 2편 전부 세로(1080x1920 이상)",
+  "cut_over_detection_suspicion": "Dj1xRS1AuGY 7.64초 스파이크(0.81)는 7.6초 모션블러 프레임으로 카메라 휘두름 판정. 실컷 아님을 별도 스틸로 남김",
+  "motion_over_measurement": "bahAzD__AAk — TV 화면 밝기 변화가 차분을 끌어올린 사례. 다음 회차 하니스 개선 후보(중앙값·하위영역 가중)",
+  "decode_resolution_variance": "숏츠 페이지는 자동 화질(240x426~720x1280)로 디코드되며 hd1080 강제가 먹지 않음. 해상도는 playerResponse 원본값으로 판정",
+  "low_view_included": "없음 — 확정 2편 조회 68,290 / 161,820 (1,000 이상)"
+ },
+ "pool_carryover": {
+  "dog_pool_inherited": 136,
+  "dog_resolution_1080_pass": 76,
+  "dog_text_clean_after_ocr": 22,
+  "dog_measured_this_round": 20,
+  "cat_pool_screened_precomputed": 140,
+  "cat_measured_this_round": 8,
+  "note": "강아지 풀은 1080x1920 76편 중 텍스트 0인 22편을 우선 실측. 남은 무자막 후보 4편( -b3Ent4Ntpo·T4_pnDaUFk0·6ATihOAA2RI·tBCRd2wYnkk·7tllZ0T3o20 )은 구독 26~33명 재업로드 의심 계정이라 보류. 고양이 풀 140편은 스토리보드 사전 스크리닝값이 있어 다음 회차 즉시 재개 가능."
+ },
+ "method_32": "(1) curl·yt-dlp 직접 차단(구글 어비스 302·봇 체크) 지속, Invidious 전 인스턴스 사망(403/500/000) → 브라우저 단일 경로. (2) 신규 프리스크린: i.ytimg.com의 oar1~3.jpg가 원본 비율·해상도(1080x1920 여부)와 서로 다른 3프레임을 주므로 이미지 호스트만으로 해상도·정지·텍스트를 무료 판정. 136편 중 76편 통과, OCR로 무자막 22편 압축. (3) 모션·8컷은 /shorts/<ID>에서 videoWidth>0 활성 video를 고르고, 페이지에 1080x1920 캔버스를 fixed로 붙여 2x2(540x960 셀 = 원본 50%) 그리드를 그린 뒤 스크린샷 2장으로 육안 검수. (4) 8컷 사이 스파이크는 ±0.5초 4컷을 추가로 떠서 컷/카메라 이동을 구분.",
+ "stills_dir": "work/sourcing_v2/stills32/",
+ "notes_for_기획실장": [
+  "확정 1편(pPJ-y_q33Ro, 강아지)은 예외 없는 통과. 목표 6~10편에 크게 미달 — 기준은 한 줄도 낮추지 않았다.",
+  "Dj1xRS1AuGY(Ginger, 고양이)는 게이트 ①~⑤ 전부 통과했으나 구독 52.5만으로 게이트③ 상한(50만) 초과 — 대표·기획실장 체급 예외 판정 1건 필요. 승인되면 이번 회차 산출은 2편이 된다.",
+  "uM8ZlEaqPxw(Athena the Shiba Inu)는 화질·모션·무자막 모두 통과했고 원본음이 Taylor Swift 'The Fate of Ophelia' — 플레이북 4장 [팝송 예외 후보] 태그로 회부.",
+  "판정 28편 중 21편이 탈락했고, 그중 5편이 10초 미만(8·9초)이었다. 강아지 풀 자체가 8~9초 쇼츠 비중이 높다.",
+  "노션 마스터보드는 이번에도 건드리지 않았다."
+ ]
+}
