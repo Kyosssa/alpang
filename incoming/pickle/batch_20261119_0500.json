@@ -12,12 +12,18 @@
   "portrait_1080": 500,
   "thumb_ocr_clean": 135,
   "thumb_ocr_false_positive": 43,
-  "measured_this_round": 38
+  "measured_this_round": 48
  },
- "delivered": [],
- "delivered_count": 0,
+ "delivered": [
+  "abviYsbCB44",
+  "T53sUbi0xI0",
+  "2tuE_lCUVZc",
+  "rmv-fFpsJrM"
+ ],
+ "delivered_count": 4,
  "holds": [
-  "zSlfSENTzDw"
+  "zSlfSENTzDw",
+  "3ZN1yNQhOM0"
  ],
  "near_miss": [
   "P9I6MTmVcfA",
@@ -58,10 +64,83 @@
   "h-V20BhTNfA",
   "Ccixz4lBYDw",
   "egpWPEZnMzc",
-  "e8BpjOTBDhs"
+  "e8BpjOTBDhs",
+  "M6rlj_Wyl7k",
+  "PnNnsFdLSvA",
+  "AGzHyXHW_i4",
+  "fDAY2fJDfF0",
+  "lZ2uIou9oG0"
  ],
- "judged_total": 38,
+ "judged_total": 48,
  "items": [
+  {
+   "id": "abviYsbCB44",
+   "url": "https://www.youtube.com/shorts/abviYsbCB44",
+   "channel": "Ragdoll The Cat",
+   "subs": "171 subscribers",
+   "title": "kitten playing",
+   "published": "May 23, 2025",
+   "views": "2,028 views",
+   "ai_badge": false,
+   "dur": 28.78,
+   "motion_mean": 14.63,
+   "motion_med": 13.4,
+   "motion_min": 2.78,
+   "spikes": [],
+   "verdict": "delivered",
+   "reason": "8컷 무자막·무워터마크·사람 0 · 주인공 랙돌 키튼 0.3~10.1초 프레임 내 유지"
+  },
+  {
+   "id": "T53sUbi0xI0",
+   "url": "https://www.youtube.com/shorts/T53sUbi0xI0",
+   "channel": "",
+   "subs": "54.6 thousand subscribers",
+   "title": "A small video of Rosa Maria's first play session!!! Isn't this happy?? 😃",
+   "published": "Aug 13, 2025",
+   "views": "8,906 views",
+   "ai_badge": false,
+   "dur": 20.64,
+   "motion_mean": 12.44,
+   "motion_med": 12.47,
+   "motion_min": 2.94,
+   "spikes": [],
+   "verdict": "delivered",
+   "reason": "8컷 무자막·무워터마크·사람 0 · 새끼고양이가 장난감을 물고 노는 단일 숏(모션 12.44 임계 근접)"
+  },
+  {
+   "id": "2tuE_lCUVZc",
+   "url": "https://www.youtube.com/shorts/2tuE_lCUVZc",
+   "channel": "",
+   "subs": "261 subscribers",
+   "title": "Cat and dog finally playing together!",
+   "published": "Aug 24, 2025",
+   "views": "6,360 views",
+   "ai_badge": false,
+   "dur": 26.62,
+   "motion_mean": 16.82,
+   "motion_med": 16.6,
+   "motion_min": 3.42,
+   "spikes": [],
+   "verdict": "delivered",
+   "reason": "8컷 무자막·무워터마크·사람 0 · 고양이와 개가 바닥에서 26초 내내 몸싸움·추격"
+  },
+  {
+   "id": "rmv-fFpsJrM",
+   "url": "https://www.youtube.com/shorts/rmv-fFpsJrM",
+   "channel": "The World of Cats",
+   "subs": "897K subscribers",
+   "title": "Crazy Finger Warmer.",
+   "published": "Sep 16, 2025",
+   "views": "221,858 views",
+   "ai_badge": false,
+   "dur": 52,
+   "motion_mean": 21.37,
+   "motion_med": 20.65,
+   "motion_min": 10.54,
+   "spikes": [],
+   "verdict": "delivered",
+   "reason": "8컷 무자막·무워터마크·얼굴 0(손만) · 캘리코 키튼이 52초 내내 손과 몸싸움. 구독 89.7만 — 체급 예외 판정 대상"
+  },
   {
    "id": "zSlfSENTzDw",
    "url": "https://www.youtube.com/shorts/zSlfSENTzDw",
@@ -78,6 +157,23 @@
    "spikes": [],
    "verdict": "hold",
    "reason": "모션 11.00(2회 측정 11.15/11.00) 임계 12.0 미달·컷 0·무자막 확인 → 기획실장 판정"
+  },
+  {
+   "id": "3ZN1yNQhOM0",
+   "url": "https://www.youtube.com/shorts/3ZN1yNQhOM0",
+   "channel": "My sweet but crazy cats",
+   "subs": "33 subscribers",
+   "title": "Just playing with my cat Bella",
+   "published": "May 25, 2024",
+   "views": "502 views",
+   "ai_badge": false,
+   "dur": 35.02,
+   "motion_mean": 15.23,
+   "motion_med": 14.55,
+   "motion_min": 5.38,
+   "spikes": [],
+   "verdict": "hold",
+   "reason": "모션 15.23·컷 0이지만 8컷상 손(빨간 매니큐어)이 프레임을 지배하고 새끼고양이는 안겨 있는 정적 구도 — \"역동적 몸동작\" 판정 필요"
   },
   {
    "id": "P9I6MTmVcfA",
@@ -830,11 +926,134 @@
    "spikes": [],
    "verdict": "rejected",
    "reason": "모션 3.90 미달(키스 장면 정적)"
+  },
+  {
+   "id": "M6rlj_Wyl7k",
+   "url": "https://www.youtube.com/shorts/M6rlj_Wyl7k",
+   "channel": "CuteCats4You",
+   "subs": "85 subscribers",
+   "title": "Kittens playing together 🎀😍",
+   "published": "Oct 15, 2025",
+   "views": "1,233 views",
+   "ai_badge": false,
+   "dur": 28.36,
+   "motion_mean": 31.14,
+   "motion_med": 30.11,
+   "motion_min": 9.56,
+   "spikes": [
+    [
+     4.69,
+     0.6
+    ],
+    [
+     4.78,
+     0.67
+    ],
+    [
+     4.88,
+     0.72
+    ],
+    [
+     4.96,
+     0.67
+    ],
+    [
+     5.05,
+     0.71
+    ],
+    [
+     5.18,
+     0.75
+    ],
+    [
+     5.26,
+     0.67
+    ],
+    [
+     5.35,
+     0.72
+    ],
+    [
+     5.48,
+     0.62
+    ]
+   ],
+   "verdict": "rejected",
+   "reason": "8컷상 1.5~6.0초 주인공(검은 고양이) 미확인·나뭇잎만 — 주인공 프레임 이탈"
+  },
+  {
+   "id": "PnNnsFdLSvA",
+   "url": "https://www.youtube.com/shorts/PnNnsFdLSvA",
+   "channel": "Azula’s Kittens",
+   "subs": "87 subscribers",
+   "title": "Kittens are fighting 😅",
+   "published": "Nov 27, 2023",
+   "views": "504 views",
+   "ai_badge": false,
+   "dur": 34.2,
+   "motion_mean": 8.48,
+   "motion_med": 8.11,
+   "motion_min": 1.51,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.48 미달"
+  },
+  {
+   "id": "AGzHyXHW_i4",
+   "url": "https://www.youtube.com/shorts/AGzHyXHW_i4",
+   "channel": "",
+   "subs": null,
+   "title": "",
+   "published": null,
+   "views": null,
+   "ai_badge": false,
+   "dur": 40,
+   "motion_mean": 8.74,
+   "motion_med": 7.5,
+   "motion_min": 0,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 8.74 미달 + 게시 2026-05-12(1년 미만)"
+  },
+  {
+   "id": "fDAY2fJDfF0",
+   "url": "https://www.youtube.com/shorts/fDAY2fJDfF0",
+   "channel": "My crazy cat",
+   "subs": "11 subscribers",
+   "title": "cat playing with water",
+   "published": "Sep 13, 2023",
+   "views": "184 views",
+   "ai_badge": false,
+   "dur": 32,
+   "motion_mean": 6.47,
+   "motion_med": 3.64,
+   "motion_min": 0.85,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 6.47 미달"
+  },
+  {
+   "id": "lZ2uIou9oG0",
+   "url": "https://www.youtube.com/shorts/lZ2uIou9oG0",
+   "channel": "Funny And Cute Cat's Life",
+   "subs": "257K subscribers",
+   "title": "His favorite pose",
+   "published": "Aug 11, 2023",
+   "views": "17,034 views",
+   "ai_badge": false,
+   "dur": 17,
+   "motion_mean": 4.67,
+   "motion_med": 3.82,
+   "motion_min": 0.47,
+   "spikes": [],
+   "verdict": "rejected",
+   "reason": "모션 4.67 미달"
   }
  ],
  "status_note": "확정 0편. 기준(1080x1920·10초 이상·무컷·모션 12.0·무자막·AI 배지 0)은 한 줄도 낮추지 않았다. 보류 1편(zSlfSENTzDw 모션 11.00), 근접 2편(P9I6MTmVcfA 9.91·oFA-aMYZ3BU 10.09).",
  "harness_calibration": "34차 확정편 2a1C7J8CSiU 재측정 12.23(34차 12.77, 편차 4%) — 하니스 이상 없음 확인",
  "measured_at": "2026-11-19T05:00+09:00",
+ "delivered_note": "확정 4편(정예 3 + 체급 예외 1). 계정 상한: 4편 4계정(동일 계정 0).",
  "unmeasured_left": {
   "thumb_ocr_clean": 118,
   "thumb_ocr_false_positive": 25,
