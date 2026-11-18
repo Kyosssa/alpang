@@ -1,0 +1,4249 @@
+{
+ "round": "OCR 수치 변경 134건 독립 2차 독해",
+ "date": "2026-11-19",
+ "author": "피클(독립 2차 판독)",
+ "blind": {
+  "claude_result_read": false,
+  "note": "클로드 판독 결과(reread-results.json)를 읽기 전에 본 파일을 작성·고정했다."
+ },
+ "method": {
+  "source": "네이버 원본 이미지(postfiles ?type=w966) 전량 재다운로드 후 원본 해상도에서 판독. 134건 전부 육안 확인.",
+  "zoom": "대화창 crop_box 기준 4배 확대 + 우선 7건은 원본 전체 3배 확대, 수치·아이템명은 6배까지 확대",
+  "no_guess": "이미지에서 확인되지 않는 값은 기록하지 않음"
+ },
+ "summary": {
+  "total": 134,
+  "by_category_group": {
+   "npc_quest": 25,
+   "player_info": 72,
+   "watermark": 5,
+   "game_ui": 32
+  }
+ },
+ "records": [
+  {
+   "rec_index": 92,
+   "quest_topic": "크로스헌터 라이카",
+   "post_url": "https://blog.naver.com/cho8684/100150826203",
+   "source_image": "cho8684_100150826203_12.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120212_249/cho8684_1329013619248sqR6a_PNG/MapleStory_2012-02-09_03-13-31-08.png",
+   "image_size": [
+    330,
+    456
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "COMPLETE 도장이 찍힌 퀘스트 완료 화면. 보상 목록에 '십자 코인 30개', '저스티스 코인 30개'가 보인다. 화면 좌상단에 'S급 헌터' 칭호와 'Lv.140' 몬스터 표기가 함께 있다. NPC 대사 본문은 없음.",
+   "numbers": [
+    {
+     "value": "30",
+     "unit": "개",
+     "context": "십자 코인"
+    },
+    {
+     "value": "30",
+     "unit": "개",
+     "context": "저스티스 코인"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/fa3c18c4214a2f4d.jpg",
+   "crop_box": [
+    15,
+    155,
+    244,
+    411
+   ],
+   "note": "OCR '십자 인 3on / cY인 a' → 코인 30개 두 줄"
+  },
+  {
+   "rec_index": 94,
+   "quest_topic": "크로스헌터 라이카",
+   "post_url": "https://blog.naver.com/cho8684/100150826203",
+   "source_image": "cho8684_100150826203_16.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120212_55/cho8684_1329013623487mRImO_PNG/MapleStory_2012-02-09_03-17-31-24.png",
+   "image_size": [
+    516,
+    517
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "퀘스트 완료창. 본문 '(내가 한 고생을 생각하면 당연히 기분이 좋아지지!) 하하, 네, 저도 기분이 좋네요. / 이제 가벼운 얘기는 여기까지 하기로 할까. 이 정도면 더 보지 않아도 충분할 것 같으니까 말야.' 보상: 십자 코인 10개, 크로스헌터 최상급 체력 포션 100개, 크로스헌터 최상급 마력 포션 100개, 경험치 5694351 + 512491(감성 추가 경험치) exp. 창 아래에 '해줄 말이 있으면 잠시 뒤에 다시 말을 걸도록 해. 괜히 다른 곳으로 도망가지 말고, 알았지?'가 이어진다.",
+   "numbers": [
+    {
+     "value": "10",
+     "unit": "개",
+     "context": "십자 코인"
+    },
+    {
+     "value": "100",
+     "unit": "개",
+     "context": "크로스헌터 최상급 체력 포션"
+    },
+    {
+     "value": "100",
+     "unit": "개",
+     "context": "크로스헌터 최상급 마력 포션"
+    },
+    {
+     "value": "5694351",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "512491",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/a09518d6d870e01f.jpg",
+   "crop_box": [
+    157,
+    91,
+    496,
+    359
+   ],
+   "note": "OCR '1o' → 10개, '5694351+ 512491' 확인"
+  },
+  {
+   "rec_index": 122,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_00.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_175/fly181_1313828944534RMdkV_JPEG/Maple0015.jpg",
+   "image_size": [
+    498,
+    190
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "신전관리인 퀘스트 완료창. 본문 '망각의 사제 999명을 쓰러뜨리고 돌아오셨군요. 축하합니다. 이제 당신께 이동 허가를 드리도록 하겠습니다.' 보상: 힘의 크리스탈 1개, 경험치 3416000 + 51240(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "999",
+     "unit": "명",
+     "context": "쓰러뜨린 망각의 사제"
+    },
+    {
+     "value": "1",
+     "unit": "개",
+     "context": "힘의 크리스탈"
+    },
+    {
+     "value": "3416000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "51240",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/70a1959c3416b861.jpg",
+   "crop_box": [
+    35,
+    125,
+    425,
+    157
+   ],
+   "note": "크롭 경계 밖 좌측 본문(999명)까지 원본 확인. exp 3416000 확정(0 3개)"
+  },
+  {
+   "rec_index": 128,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_09.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_82/fly181_1313828947227MO7cj_JPEG/Maple0009.jpg",
+   "image_size": [
+    498,
+    190
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "122와 같은 퀘스트 완료창의 다른 컷. 보상: 지혜의 크리스탈 1개, 경험치 3416000 + 51240(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "개",
+     "context": "지혜의 크리스탈"
+    },
+    {
+     "value": "3416000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "51240",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/cc13b3f69c1e65c2.jpg",
+   "crop_box": [
+    35,
+    125,
+    425,
+    157
+   ],
+   "note": "우선 7건. 아이템명 '지혜의 크리스탈' 확정(직전 라운드 '시해의'는 오독). exp 3416000"
+  },
+  {
+   "rec_index": 133,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_17.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_297/fly181_1313828952187SVSmd_JPEG/Maple0155.jpg",
+   "image_size": [
+    498,
+    190
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "같은 퀘스트 완료창의 다른 컷. 보상: 민첩성의 크리스탈 1개, 경험치 3416000 + 51240(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "개",
+     "context": "민첩성의 크리스탈"
+    },
+    {
+     "value": "3416000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "51240",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/dd1ced8e2cc61b18.jpg",
+   "crop_box": [
+    35,
+    125,
+    425,
+    157
+   ],
+   "note": "우선 7건. 아이템명 '민첩성의 크리스탈' 확정(직전 라운드 '빈점성의'는 오독)"
+  },
+  {
+   "rec_index": 139,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_28.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_80/fly181_13138289610013f3gv_JPEG/Maple0173.jpg",
+   "image_size": [
+    498,
+    190
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "같은 퀘스트 완료창의 다른 컷. 보상: 행운의 크리스탈 1개, 경험치 3416000 + 51240(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "개",
+     "context": "행운의 크리스탈"
+    },
+    {
+     "value": "3416000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "51240",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/8f3ce9461d095b7c.jpg",
+   "crop_box": [
+    35,
+    125,
+    425,
+    157
+   ],
+   "note": "우선 7건. 122·128·133과 동일 퀘스트의 다른 보상 컷"
+  },
+  {
+   "rec_index": 143,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_32.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_153/fly181_13138289638470TisU_JPEG/Maple0180.jpg",
+   "image_size": [
+    281,
+    343
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_notice",
+   "independent_reading": "퀘스트 알림창(중앙 시스템 문구). '신전관리인은 더 깊은 곳에 가고 싶다면 망각의 길 5에 있는 신전 수호수, 라이카를 쓰러뜨리고 오라고 말했다.' 퀘스트 진행 표시 '라이카 0 / 1'.",
+   "numbers": [
+    {
+     "value": "5",
+     "unit": "층·구간",
+     "context": "망각의 길"
+    },
+    {
+     "value": "0",
+     "unit": "마리",
+     "context": "라이카 처치(진행)"
+    },
+    {
+     "value": "1",
+     "unit": "마리",
+     "context": "라이카 목표"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/18644645572563c8.jpg",
+   "crop_box": [
+    8,
+    105,
+    266,
+    191
+   ],
+   "note": "OCR '라아카'→'라이카', '5에 있는' 확인"
+  },
+  {
+   "rec_index": 147,
+   "quest_topic": "망각의 길 시행(라이카 시험)",
+   "post_url": "https://blog.naver.com/fly181/80137891505",
+   "source_image": "fly181_80137891505_41.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110820_103/fly181_1313828970912waofY_JPEG/Maple0003.jpg",
+   "image_size": [
+    755,
+    468
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "하단 MP 게이지 '[3256/3256] MP'. NPC·퀘스트 본문 없음.",
+   "numbers": [
+    {
+     "value": "3256",
+     "unit": "MP",
+     "context": "현재/최대 MP"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0ce782741aeb0dc9.jpg",
+   "crop_box": [
+    62,
+    431,
+    177,
+    453
+   ],
+   "note": "OCR 'ISZ5E7E25EMB!' → MP 3256/3256"
+  },
+  {
+   "rec_index": 172,
+   "quest_topic": "라이카/카오스의 구슬/결계 대사",
+   "post_url": "https://blog.naver.com/fly181/80138052767",
+   "source_image": "fly181_80138052767_13.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110822_41/fly181_1314011283399BeMDu_JPEG/Maple0045.jpg",
+   "image_size": [
+    281,
+    343
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_notice",
+   "independent_reading": "143과 같은 퀘스트 알림창. '...망각의 길 5에 있는 신전 수호수, 라이카를 쓰러뜨리고 오라고 말했다.' 진행 표시 '라이카 1 / 1'.",
+   "numbers": [
+    {
+     "value": "5",
+     "unit": "층·구간",
+     "context": "망각의 길"
+    },
+    {
+     "value": "1",
+     "unit": "마리",
+     "context": "라이카 처치(진행)"
+    },
+    {
+     "value": "1",
+     "unit": "마리",
+     "context": "라이카 목표"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/c479604848a8b433.jpg",
+   "crop_box": [
+    8,
+    105,
+    266,
+    191
+   ],
+   "note": "143의 완료 상태 컷"
+  },
+  {
+   "rec_index": 174,
+   "quest_topic": "라이카/카오스의 구슬/결계 대사",
+   "post_url": "https://blog.naver.com/fly181/80138052767",
+   "source_image": "fly181_80138052767_15.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110822_125/fly181_131401128439255TeW_JPEG/Maple0048.jpg",
+   "image_size": [
+    498,
+    190
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "우선 7건. 신전관리인 퀘스트 완료창. 보상: 어둠의 크리스탈 1개, 경험치 3416000 + 51240(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "개",
+     "context": "어둠의 크리스탈"
+    },
+    {
+     "value": "3416000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "51240",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/22fc31e688103bd3.jpg",
+   "crop_box": [
+    35,
+    125,
+    425,
+    157
+   ],
+   "note": "우선 7건. 원본 전체 확대 확인. 아이템명 '어둠의 크리스탈', exp 3416000(0 3개)"
+  },
+  {
+   "rec_index": 205,
+   "quest_topic": "과거의 길(입장 첫퀘)",
+   "post_url": "https://blog.naver.com/civilized92/140138371619",
+   "source_image": "civilized92_140138371619_19.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110804_279/civilized92_13124337141961q7J0_JPEG/%BA%ED%B7%CE%B1%D7-%B4%F1%B1%DB%B1%B8%B0%C9%BF%EB.jpg",
+   "image_size": [
+    350,
+    312
+   ],
+   "category_group": "watermark",
+   "category": "blog_banner",
+   "independent_reading": "화면 하단 캐릭터 이름표와 블로그 워터마크 'Civilization's blog / blog : http://civilized92.blog.me/'가 겹친 영역. NPC 대사·수치 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7db5371b2d82a5aa.jpg",
+   "crop_box": [
+    3,
+    241,
+    345,
+    312
+   ],
+   "note": "OCR '6og / Hog s hthallcitized92Mlog mel' → 워터마크+이름표 병합"
+  },
+  {
+   "rec_index": 218,
+   "quest_topic": "추억의 길5(도도)",
+   "post_url": "https://blog.naver.com/civilized92/140139013047",
+   "source_image": "civilized92_140139013047_21.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110804_279/civilized92_13124337141961q7J0_JPEG/%BA%ED%B7%CE%B1%D7-%B4%F1%B1%DB%B1%B8%B0%C9%BF%EB.jpg",
+   "image_size": [
+    350,
+    312
+   ],
+   "category_group": "watermark",
+   "category": "blog_banner",
+   "independent_reading": "205와 같은 워터마크 화면. 'Civilization's blog · blog : http://civilized92.blog.me/'.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7db5371b2d82a5aa.jpg",
+   "crop_box": [
+    3,
+    241,
+    345,
+    312
+   ],
+   "note": "워터마크"
+  },
+  {
+   "rec_index": 225,
+   "quest_topic": "후회의 길1",
+   "post_url": "https://blog.naver.com/civilized92/140139132177",
+   "source_image": "civilized92_140139132177_18.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110912_221/civilized92_1315814336590uGt17_JPEG/Maple0007.jpg",
+   "image_size": [
+    517,
+    203
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_ui",
+   "independent_reading": "퀘스트 목록 창의 링크와 이름표. '▶ 후회의 길을 걷는 자1 (완료가능)', 이름표 '신전관리인'.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "편",
+     "context": "후회의 길을 걷는 자1"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/a3078672f31065a9.jpg",
+   "crop_box": [
+    44,
+    122,
+    360,
+    147
+   ],
+   "note": "OCR '것는자i'→'걷는 자1', 이름표 병합 해소"
+  },
+  {
+   "rec_index": 229,
+   "quest_topic": "후회의 길1",
+   "post_url": "https://blog.naver.com/civilized92/140139132177",
+   "source_image": "civilized92_140139132177_23.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110804_279/civilized92_13124337141961q7J0_JPEG/%BA%ED%B7%CE%B1%D7-%B4%F1%B1%DB%B1%B8%B0%C9%BF%EB.jpg",
+   "image_size": [
+    350,
+    312
+   ],
+   "category_group": "watermark",
+   "category": "blog_banner",
+   "independent_reading": "239 등과 같은 워터마크 영역. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7db5371b2d82a5aa.jpg",
+   "crop_box": [
+    3,
+    241,
+    345,
+    312
+   ],
+   "note": "워터마크"
+  },
+  {
+   "rec_index": 239,
+   "quest_topic": "추억의 길1",
+   "post_url": "https://blog.naver.com/civilized92/140138442704",
+   "source_image": "civilized92_140138442704_27.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110804_279/civilized92_13124337141961q7J0_JPEG/%BA%ED%B7%CE%B1%D7-%B4%F1%B1%DB%B1%B8%B0%C9%BF%EB.jpg",
+   "image_size": [
+    350,
+    312
+   ],
+   "category_group": "watermark",
+   "category": "blog_banner",
+   "independent_reading": "블로그 워터마크와 이름표가 겹친 영역. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7db5371b2d82a5aa.jpg",
+   "crop_box": [
+    3,
+    241,
+    345,
+    312
+   ],
+   "note": "워터마크"
+  },
+  {
+   "rec_index": 240,
+   "quest_topic": "도도 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118167919",
+   "source_image": "maple_arke_110118167919_01.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110908_22/maple_arke_1315488107287SSfX4_JPEG/maple3013.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "사냥 화면(타임로드 추억의 길 5). 이름표 '윤활: 원리버스민들레군', HUD LV.185(닉 o시작과끝o)·아크메이지(썬,콜) Lv.186, HP 3268/3717, MP 13229/24551, EXP 455180136(89.77%), 데미지 7865·46647·134321·88867.",
+   "numbers": [
+    {
+     "value": "186",
+     "unit": "레벨",
+     "context": "캐릭터 Lv."
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e2dd1f67b938f2dd.jpg",
+   "crop_box": [
+    0,
+    532,
+    134,
+    580
+   ],
+   "note": "NPC·퀘스트 본문 없음. 크롭이 빗나가 원본으로 재확인"
+  },
+  {
+   "rec_index": 242,
+   "quest_topic": "도도 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118167919",
+   "source_image": "maple_arke_110118167919_03.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110908_120/maple_arke_1315487727747Upo82_JPEG/maple3015.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 사냥 화면 다른 컷. HP 2557/3717, MP 11872/24551, EXP 455180136(90.04%), 데미지 34686. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/8cf1eae3addff573.jpg",
+   "crop_box": [
+    0,
+    534,
+    324,
+    580
+   ],
+   "note": "원본 재확인"
+  },
+  {
+   "rec_index": 243,
+   "quest_topic": "도도 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118167919",
+   "source_image": "maple_arke_110118167919_04.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110908_177/maple_arke_1315488561874dX6tg_JPEG/maple3017.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "도도(NPC/몬스터)의 말풍선 '추억에 얽매여 있는 자는 앞으로 나갈 수가 없는 법...'이 화면 좌상단에 떠 있고 하단 채팅로그에도 같은 문장이 남아 있다. 아이템 획득 알림 '카리시마 (+50) / 경험치를 얻었습니다 (+183750)'. 수치가 있는 본문 대사는 없음.",
+   "numbers": [
+    {
+     "value": "50",
+     "unit": "개",
+     "context": "아이템 획득 수량(카리시마)"
+    },
+    {
+     "value": "183750",
+     "unit": "exp",
+     "context": "경험치 획득 알림"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/d7c7f4439f4ca444.jpg",
+   "crop_box": [
+    0,
+    532,
+    322,
+    580
+   ],
+   "note": "OCR '어 없때여...' → '추억에 얽매여 있는 자는 앞으로 나갈 수가 없는 법...'"
+  },
+  {
+   "rec_index": 249,
+   "quest_topic": "라이카 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118244446",
+   "source_image": "maple_arke_110118244446_00.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110909_76/maple_arke_1315560151774pnjqm_JPEG/maple3044.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅 'o시작과끝o : 요 녀석이 라이카~!'와 HUD. NPC 대사 아님.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0f9b60232b9ac43d.jpg",
+   "crop_box": [
+    0,
+    484,
+    189,
+    580
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 250,
+   "quest_topic": "라이카 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118244446",
+   "source_image": "maple_arke_110118244446_03.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110909_238/maple_arke_1315561361131USYAv_JPEG/maple3056.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "라이카 전투 화면 HUD. LV.187 아크메이지(썬,콜) 'o시작과끝o', HP 3535/3535, MP 10255/25048, EXP 464408318(46.21%).",
+   "numbers": [
+    {
+     "value": "10255",
+     "unit": "MP",
+     "context": "현재 MP"
+    },
+    {
+     "value": "25048",
+     "unit": "MP",
+     "context": "최대 MP"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/86b414acf7c502af.jpg",
+   "crop_box": [
+    291,
+    551,
+    430,
+    580
+   ],
+   "note": "원본 재확인"
+  },
+  {
+   "rec_index": 251,
+   "quest_topic": "라이카 분석",
+   "post_url": "https://blog.naver.com/maple_arke/110118244446",
+   "source_image": "maple_arke_110118244446_05.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110909_86/maple_arke_1315561950906lrwmH_JPEG/maple3047.jpg",
+   "image_size": [
+    773,
+    580
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "라이카 전투 화면 HUD. HP 3935/3935, MP 12181/25048, EXP 46030815(8.38%), 채팅 'o시작과끝o : 요녀석이 라이카~!'.",
+   "numbers": [
+    {
+     "value": "12181",
+     "unit": "MP",
+     "context": "현재 MP"
+    },
+    {
+     "value": "25048",
+     "unit": "MP",
+     "context": "최대 MP"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/81e2fbbd01a25d5f.jpg",
+   "crop_box": [
+    290,
+    550,
+    430,
+    580
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 256,
+   "quest_topic": "핑크빈 도전기",
+   "post_url": "https://blog.naver.com/didwltn13/120154291514",
+   "source_image": "didwltn13_120154291514_04.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120305_2/didwltn13_1330873949673KcLTL_JPEG/Maple0006.jpg",
+   "image_size": [
+    241,
+    352
+   ],
+   "category_group": "player_info",
+   "category": "party_window",
+   "independent_reading": "파티 창(MAPLE USER LIST). 파티 온 2/8 — Lemon뿌야(비숍) 158, 디원더(데몬슬레이어) 200 / 파티 오프 1/8 — 천사이미(플레임위자드) 120.",
+   "numbers": [
+    {
+     "value": "158",
+     "unit": "레벨",
+     "context": "파티원 Lemon뿌야"
+    },
+    {
+     "value": "200",
+     "unit": "레벨",
+     "context": "파티원 디원더"
+    },
+    {
+     "value": "120",
+     "unit": "레벨",
+     "context": "파티원 천사이미"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/41d71ed3a9846c66.jpg",
+   "crop_box": [
+    9,
+    79,
+    213,
+    202
+   ],
+   "note": "파티원 개인 정보"
+  },
+  {
+   "rec_index": 261,
+   "quest_topic": "시간의 신전 167UP",
+   "post_url": "https://blog.naver.com/dmsqls3780/110116606901",
+   "source_image": "dmsqls3780_110116606901_02.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110822_186/dmsqls3780_1313990662754l4cKu_JPEG/%BE%EE_%B7%B9%C0%CE%BA%B8%BF%EC...jpg",
+   "image_size": [
+    218,
+    434
+   ],
+   "category_group": "game_ui",
+   "category": "cash_shop",
+   "independent_reading": "캐시샵 '스페셜 레인보우 패키지' 구성 화면. 레인보우 셈플 상자 3100캐시, 레인보우 탑 2600캐시, 그래스그린 팬츠 1600캐시, 레인보우 스타 4900캐시, 화이트 쉐이드 1800캐시, TOTAL 14000캐시.",
+   "numbers": [
+    {
+     "value": "3100",
+     "unit": "캐시",
+     "context": "레인보우 셈플 상자"
+    },
+    {
+     "value": "2600",
+     "unit": "캐시",
+     "context": "레인보우 탑"
+    },
+    {
+     "value": "1600",
+     "unit": "캐시",
+     "context": "그래스그린 팬츠"
+    },
+    {
+     "value": "4900",
+     "unit": "캐시",
+     "context": "레인보우 스타"
+    },
+    {
+     "value": "1800",
+     "unit": "캐시",
+     "context": "화이트 쉐이드"
+    },
+    {
+     "value": "14000",
+     "unit": "캐시",
+     "context": "TOTAL"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/0ff82d3703d4506f.jpg",
+   "crop_box": [
+    46,
+    93,
+    215,
+    120
+   ],
+   "note": "OCR '스페셜 레인보무패AP'만 잡힘 → 가격표 다수"
+  },
+  {
+   "rec_index": 266,
+   "quest_topic": "시간의 신전 167UP",
+   "post_url": "https://blog.naver.com/dmsqls3780/110116606901",
+   "source_image": "dmsqls3780_110116606901_19.jpg",
+   "image_url": "https://postfiles.pstatic.net/20110822_42/dmsqls3780_1313990662231NczKC_JPEG/%B8%B6%B1%CD%B0%A1%C0%D5%B4%C2%B5%A5.jpg",
+   "image_size": [
+    449,
+    163
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "위험지역 수상택시(중앙택시) NPC 대사. '안녕하십니까! 위험지역 중앙택시입니다! 시간의 통로에서 투디브리얼까지 운행하고 있습니다! 가격은 35000메소로 조금 비싸지만, 이용하셔서 절대 후회하지 않으실 거예요!'",
+   "numbers": [
+    {
+     "value": "35000",
+     "unit": "메소",
+     "context": "운행 요금"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/964733f412ca8f17.jpg",
+   "crop_box": [
+    138,
+    39,
+    427,
+    83
+   ],
+   "note": "우선 7건. OCR '5매소'가 아니라 '35000메소' — 자리수 2개가 잘려 있었음"
+  },
+  {
+   "rec_index": 284,
+   "quest_topic": "망각의 길 뚫기",
+   "post_url": "https://blog.naver.com/woa425/90138893188",
+   "source_image": "woa425_90138893188_17.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120317_133/woa425_1331989929141PWdQk_PNG/18.png",
+   "image_size": [
+    520,
+    228
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "기록자 NPC 대사·보상창. '정확한 이유는 말해줄 수 없소. 어째서인지는 신전관리인이 잘 알고 있을 것이오. 그렇게만 전해주면 된다오. 그럼, 이만.' 보상: 경험치 341600 + 10248(감성 추가 경험치) exp, 성향 통찰력 80.",
+   "numbers": [
+    {
+     "value": "341600",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "10248",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    },
+    {
+     "value": "80",
+     "unit": "통찰력",
+     "context": "성향 보상"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/87c2a8fe897ffc3c.jpg",
+   "crop_box": [
+    179,
+    122,
+    431,
+    164
+   ],
+   "note": "고배율 확대에서 '성향 통찰력 80' 확인"
+  },
+  {
+   "rec_index": 314,
+   "quest_topic": "기억을 잃은 신관 퀘(스크린샷 다수)",
+   "post_url": "https://blog.naver.com/leuro/110135136074",
+   "source_image": "leuro_110135136074_30.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120330_143/stndrd_1333078330792MLM7a_JPEG/Maple0038.jpg",
+   "image_size": [
+    609,
+    371
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "마법제련술사 NPC 대화창. '일반 방문객은 받지 않는다고 했는데 왜 사람이지? 여긴 무슨 일이야?' 대사에 수치는 없음.",
+   "numbers": [],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/9d2a4e29b4962578.jpg",
+   "crop_box": [
+    226,
+    96,
+    557,
+    134
+   ],
+   "note": "OCR '웹 사람'→'왜 사람'"
+  },
+  {
+   "rec_index": 319,
+   "quest_topic": "기억을 잃은 신관 퀘(스크린샷 다수)",
+   "post_url": "https://blog.naver.com/leuro/110135136074",
+   "source_image": "leuro_110135136074_36.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120330_244/stndrd_1333078334023FJn1z_JPEG/Maple0042.jpg",
+   "image_size": [
+    521,
+    262
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅줄 '세아르린시 : 망각의 수호대장 Lv.166 망각의 수호대장'과 칭호 'S급 헌터 자격증', 하단 '크로스헌터 마스터'. 플레이어 채팅·칭호 표시.",
+   "numbers": [
+    {
+     "value": "166",
+     "unit": "레벨",
+     "context": "망각의 수호대장"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/4b4d70c67bd3e2d7.jpg",
+   "crop_box": [
+    111,
+    216,
+    406,
+    255
+   ],
+   "note": "몬스터 레벨을 옮긴 채팅"
+  },
+  {
+   "rec_index": 335,
+   "quest_topic": "기억을 잃은 신관 퀘(스크린샷 다수)",
+   "post_url": "https://blog.naver.com/leuro/110135136074",
+   "source_image": "leuro_110135136074_61.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120330_173/stndrd_1333078726556iK1ob_JPEG/Maple0066.jpg",
+   "image_size": [
+    534,
+    227
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "기억을 잃은 신관 NPC 대화창. '그 기억의 비약이 효과가 있는 것 같아요. 조금씩 기억이 돌아오는 것 같아요. 복면을 쓴 어떤 사람을 따라가서 그가 난폭한 몬스터들을 쳐치하는 것을 구경했었고... 그리고 또, 책이 많은 도서관에서 어떤 지도 같은 것을 제가 몰래 슬쩍두었었나봐요. 어때요? 곧 기억이 되돌아올 것 같죠? 후후. 그리고 드디어 제 이름이 생각났어요.' 수치 없음.",
+   "numbers": [],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/afc50c8d30d4cd11.jpg",
+   "crop_box": [
+    36,
+    41,
+    502,
+    148
+   ],
+   "note": "OCR '시람'→'사람'"
+  },
+  {
+   "rec_index": 341,
+   "quest_topic": "본섭 1.2.170 아스완 해방전",
+   "post_url": "https://blog.naver.com/manager_ods/100164853686",
+   "source_image": "manager_ods_100164853686_00.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121118_74/manager_ods_1353219677913nQ47p_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BA%BB%BC%B7_1.2.170_%B8%B1%B8%AE%C1%EE_01_-_%BE%C6%BD%BA%BF%CF_%C7%D8%B9%E6%C0%FC.PNG",
+   "image_size": [
+    403,
+    546
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "아스완 해방전 UI(ROUND 1~6, TOTAL 0). 안내문 '아스완 해방전은 오후 2시부터 오후 8시까지 진행됩니다. 매 정시부터 50분까지 아스완 해방전이 시작되며 10분의 휴전기간이 지나고 다음 라운드가 시작됩니다.'",
+   "numbers": [
+    {
+     "value": "2",
+     "unit": "시",
+     "context": "시작 시각(오후)"
+    },
+    {
+     "value": "8",
+     "unit": "시",
+     "context": "종료 시각(오후)"
+    },
+    {
+     "value": "50",
+     "unit": "분",
+     "context": "라운드 진행"
+    },
+    {
+     "value": "10",
+     "unit": "분",
+     "context": "휴전기간"
+    },
+    {
+     "value": "6",
+     "unit": "라운드",
+     "context": "ROUND 수"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/6271aaeaed7886fa.jpg",
+   "crop_box": [
+    24,
+    341,
+    337,
+    528
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 342,
+   "quest_topic": "본섭 1.2.170 아스완 해방전",
+   "post_url": "https://blog.naver.com/manager_ods/100164853686",
+   "source_image": "manager_ods_100164853686_01.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121118_12/manager_ods_13532197396805tkLK_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BA%BB%BC%B7_1.2.170_%B8%B1%B8%AE%C1%EE_02_-_%BE%C6%BD%BA%BF%CF_%C7%D8%B9%E6%C0%FC_%B8%F0%B5%E5.PNG",
+   "image_size": [
+    452,
+    373
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "아스완 해방전 입장 UI(EASY/NORMAL/HARD/HELL, SOLO/PARTY). '명성치는 월드간 대결이 진행되는 오후 2시부터 오후 8시에만 획득할 수 있습니다.'",
+   "numbers": [
+    {
+     "value": "2",
+     "unit": "시",
+     "context": "시작 시각(오후)"
+    },
+    {
+     "value": "8",
+     "unit": "시",
+     "context": "종료 시각(오후)"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/5cb6d77efdab78b7.jpg",
+   "crop_box": [
+    29,
+    39,
+    427,
+    270
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 346,
+   "quest_topic": "노말 힐라 완벽 공략(공식)",
+   "post_url": "https://blog.naver.com/manager_ods/100152533557",
+   "source_image": "manager_ods_100152533557_01.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121207_95/manager_ods_1354842762777OlCAb_PNG/%B8%DE%C0%CC%C7%C3%C4%AE%B7%E7%B3%AA_%B1%E2%C8%B9%C6%C0%C0%C7_4%B9%F8%C2%B0_%C0%CC%BE%DF%B1%E2_-_%B3%EB%B8%BB_%C8%FA%B6%F3_%BF%CF%BA%AE_%B0%F8%B7%AB_02_-_%C8%FA%B6%F3_%BF%F8%C1%A4%B4%EB.PNG",
+   "image_size": [
+    273,
+    394
+   ],
+   "category_group": "player_info",
+   "category": "party_window",
+   "independent_reading": "원정대 만들기 창. 'LV.120-200 헐리원정대 / LV.170-200 시그너스원정대', 정원 3/3.",
+   "numbers": [
+    {
+     "value": "120",
+     "unit": "레벨",
+     "context": "원정대 최소"
+    },
+    {
+     "value": "200",
+     "unit": "레벨",
+     "context": "원정대 최대"
+    },
+    {
+     "value": "3",
+     "unit": "명",
+     "context": "정원"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/f4d48024251f4af4.jpg",
+   "crop_box": [
+    41,
+    70,
+    170,
+    135
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 357,
+   "quest_topic": "노말 힐라 완벽 공략(공식)",
+   "post_url": "https://blog.naver.com/manager_ods/100152533557",
+   "source_image": "manager_ods_100152533557_30.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121207_25/manager_ods_1354842777740Qp249_PNG/%B8%DE%C0%CC%C7%C3%C4%AE%B7%E7%B3%AA_%B1%E2%C8%B9%C6%C0%C0%C7_4%B9%F8%C2%B0_%C0%CC%BE%DF%B1%E2_-_%B3%EB%B8%BB_%C8%FA%B6%F3_%BF%CF%BA%AE_%B0%F8%B7%AB_31_-_%B3%EB%B8%BB_%C8%FA%B6%F3_%B5%E5%B6%F8_%BE%C6%C0%CC%C5%DB.PNG",
+   "image_size": [
+    773,
+    391
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "아이템 툴팁 3종. '지옥의 불꽃'(REQ LEV 130, STR·DEX·INT·LUK +7, MaxHP/MaxMP +100, 공격력·마력 +2, 물리·마법방어력 +100, 업그레이드 가능 횟수 5), '네크로 한손무기 공격력 주문서 60%'(성공률 60%, 실패 시 50% 확률로 파괴, 물리공격력 +3), '영생의 돌'(REQ LEV 0, 포켓 아이템, STR+3 등).",
+   "numbers": [
+    {
+     "value": "130",
+     "unit": "레벨",
+     "context": "지옥의 불꽃 착용"
+    },
+    {
+     "value": "7",
+     "unit": "스탯",
+     "context": "STR/DEX/INT/LUK"
+    },
+    {
+     "value": "100",
+     "unit": "HP·MP·방어",
+     "context": "MaxHP/MaxMP·방어력"
+    },
+    {
+     "value": "5",
+     "unit": "회",
+     "context": "업그레이드 가능 횟수"
+    },
+    {
+     "value": "60",
+     "unit": "%",
+     "context": "주문서 성공률"
+    },
+    {
+     "value": "50",
+     "unit": "%",
+     "context": "실패 시 파괴 확률"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/22f6a4a7389acdd0.jpg",
+   "crop_box": [
+    545,
+    221,
+    763,
+    269
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 359,
+   "quest_topic": "아스완 해방전 정리",
+   "post_url": "https://blog.naver.com/dkwnaak0194/130134709620",
+   "source_image": "dkwnaak0194_130134709620_03.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120326_101/dkwnaak0194_1332756547269Yzgjx_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BE%C6%BD%BA%BF%CF%C7%D8%B9%E6%C0%FC_%283%29.png",
+   "image_size": [
+    498,
+    584
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "아스완 해방전 연합판(ROUND 1, 지역별 12/0/1/11·TOTAL). 안내문 '...오후 2시부터 오후 8시까지... 매 정시부터 50분까지... 10분의 휴전기간...'",
+   "numbers": [
+    {
+     "value": "2",
+     "unit": "시",
+     "context": "시작(오후)"
+    },
+    {
+     "value": "8",
+     "unit": "시",
+     "context": "종료(오후)"
+    },
+    {
+     "value": "50",
+     "unit": "분",
+     "context": "라운드 진행"
+    },
+    {
+     "value": "10",
+     "unit": "분",
+     "context": "휴전기간"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d80d0ecc6670bcf4.jpg",
+   "crop_box": [
+    77,
+    321,
+    483,
+    563
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 366,
+   "quest_topic": "아스완 해방전 정리",
+   "post_url": "https://blog.naver.com/dkwnaak0194/130134709620",
+   "source_image": "dkwnaak0194_130134709620_12.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120326_116/dkwnaak0194_1332756551580rVQPN_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BE%C6%BD%BA%BF%CF%C7%D8%B9%E6%C0%FC_%2812%29.png",
+   "image_size": [
+    522,
+    1063
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "공식 안내 이미지 '명예와 이너 어빌리티'. 명예레벨 4, 명성치 896(71%), 이너 어빌리티 최대 3개, 등급 C·B·A·S, 10급 서큘레이터, '2레벨 달성 이너 어빌리티 1개 확장 / 30레벨 2개 / 70레벨 3개 / 10레벨마다 더 높은 등급 서큘레이터'.",
+   "numbers": [
+    {
+     "value": "4",
+     "unit": "레벨",
+     "context": "명예 레벨"
+    },
+    {
+     "value": "896",
+     "unit": "명성치",
+     "context": "보유 명성치"
+    },
+    {
+     "value": "71",
+     "unit": "%",
+     "context": "명성치 게이지"
+    },
+    {
+     "value": "3",
+     "unit": "개",
+     "context": "이너 어빌리티 최대"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/7812edb3e8b32b93.jpg",
+   "crop_box": [
+    21,
+    8,
+    452,
+    664
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 367,
+   "quest_topic": "아스완 해방전 정리",
+   "post_url": "https://blog.naver.com/dkwnaak0194/130134709620",
+   "source_image": "dkwnaak0194_130134709620_12.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120326_116/dkwnaak0194_1332756551580rVQPN_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BE%C6%BD%BA%BF%CF%C7%D8%B9%E6%C0%FC_%2812%29.png",
+   "image_size": [
+    522,
+    1063
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "같은 안내 이미지의 이어지는 부분. '서큘레이터는 이너 어빌리티 능력을 재설정할 수 있는 아이템... 2레벨 달성 이너 어빌리티 1개 확장 / 30레벨 2개 확장 / 70레벨 3개 확장 / 10레벨 달성 시마다 더 높은 등급의 서큘레이터 획득'.",
+   "numbers": [
+    {
+     "value": "2",
+     "unit": "레벨",
+     "context": "1개 확장"
+    },
+    {
+     "value": "30",
+     "unit": "레벨",
+     "context": "2개 확장"
+    },
+    {
+     "value": "70",
+     "unit": "레벨",
+     "context": "3개 확장"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/7812edb3e8b32b93.jpg",
+   "crop_box": [
+    25,
+    703,
+    482,
+    1038
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 368,
+   "quest_topic": "아스완 해방전 정리",
+   "post_url": "https://blog.naver.com/dkwnaak0194/130134709620",
+   "source_image": "dkwnaak0194_130134709620_13.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120326_124/dkwnaak0194_1332756552583NliRn_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BE%C6%BD%BA%BF%CF%C7%D8%B9%E6%C0%FC_%2813%29.png",
+   "image_size": [
+    521,
+    1604
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "공식 안내 이미지 '아스완 해방전 전용 상점'. 5급 서큘레이터 4개, 4급 5개, 3급 6개, 2급 7개, 특급 10개. '아스완 한손무기 공격력 주문서 60%'(성공확률 60%, 물리 공격력 +4, 업그레이드 가능 횟수 2 소모), '엠페러스 피어 제작 레시피'(제작 가능 횟수 1회), '엠페러스 피어'(REQ LEV 130, 공격력 +114, 명중률 +50, 업그레이드 가능 횟수 8, 장착 시 1회에 한해 매력 90 경험치).",
+   "numbers": [
+    {
+     "value": "4",
+     "unit": "개",
+     "context": "5급 서큘레이터"
+    },
+    {
+     "value": "5",
+     "unit": "개",
+     "context": "4급 서큘레이터"
+    },
+    {
+     "value": "6",
+     "unit": "개",
+     "context": "3급 서큘레이터"
+    },
+    {
+     "value": "7",
+     "unit": "개",
+     "context": "2급 서큘레이터"
+    },
+    {
+     "value": "10",
+     "unit": "개",
+     "context": "특급 서큘레이터"
+    },
+    {
+     "value": "60",
+     "unit": "%",
+     "context": "주문서 성공률"
+    },
+    {
+     "value": "114",
+     "unit": "공격력",
+     "context": "엠페러스 피어"
+    },
+    {
+     "value": "130",
+     "unit": "레벨",
+     "context": "엠페러스 피어 착용"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/c2fad181bd31ece0.jpg",
+   "crop_box": [
+    26,
+    0,
+    487,
+    1558
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 375,
+   "quest_topic": "아스완 해방전 정리",
+   "post_url": "https://blog.naver.com/dkwnaak0194/130134709620",
+   "source_image": "dkwnaak0194_130134709620_15.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120326_74/dkwnaak0194_13327565535709aGLL_PNG/%B8%DE%C0%CC%C7%C3%BD%BA%C5%E4%B8%AE_%BE%C6%BD%BA%BF%CF%C7%D8%B9%E6%C0%FC_%2815%29.png",
+   "image_size": [
+    519,
+    282
+   ],
+   "category_group": "game_ui",
+   "category": "guide",
+   "independent_reading": "공식 안내 이미지 '보너스 경험치 혜택 — 오후 8시~10시 30% 추가 경험치 획득'.",
+   "numbers": [
+    {
+     "value": "8",
+     "unit": "시",
+     "context": "시작(오후)"
+    },
+    {
+     "value": "10",
+     "unit": "시",
+     "context": "종료(오후)"
+    },
+    {
+     "value": "30",
+     "unit": "%",
+     "context": "추가 경험치"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/84b68c0cd2faf4a9.jpg",
+   "crop_box": [
+    38,
+    113,
+    341,
+    208
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 384,
+   "quest_topic": "아스완 해방전 공략(스샷)",
+   "post_url": "https://blog.naver.com/zzeby68/100148680743",
+   "source_image": "zzeby68_100148680743_20.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120117_292/zzeby68_1326762045663pknCQ_JPEG/%C0%E5%BA%F1%BF%A4%B1%D32.jpg",
+   "image_size": [
+    460,
+    319
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "아스완 상점(상점나가기)·아이템팔기 화면. 엠페러스 링 제작 레시피 75개, 하얀 포션 87메소, 컨커러스 슈즈 제작 레시피 75개, 컨커러스 벨트 제작 레시피 75개, 엠페러스 슬레이터 제작 레시피 75개. 소지 메소 16,172,566.",
+   "numbers": [
+    {
+     "value": "75",
+     "unit": "개",
+     "context": "엠페러스 링 제작 레시피"
+    },
+    {
+     "value": "87",
+     "unit": "메소",
+     "context": "하얀 포션"
+    },
+    {
+     "value": "16172566",
+     "unit": "메소",
+     "context": "보유 메소"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/36a1ae508d1525fe.jpg",
+   "crop_box": [
+    16,
+    87,
+    210,
+    315
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 385,
+   "quest_topic": "아스완 해방전 공략(스샷)",
+   "post_url": "https://blog.naver.com/zzeby68/100148680743",
+   "source_image": "zzeby68_100148680743_20.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120117_292/zzeby68_1326762045663pknCQ_JPEG/%C0%E5%BA%F1%BF%A4%B1%D32.jpg",
+   "image_size": [
+    460,
+    319
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "같은 화면의 아이템팔기 목록. 몽둥이 1메소, 빨간색 머리띠 100메소, 마제스티 케인 33,000메소, 블루 메탈 기어 500메소, 하프 이어링 750메소.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "메소",
+     "context": "몽둥이"
+    },
+    {
+     "value": "100",
+     "unit": "메소",
+     "context": "빨간색 머리띠"
+    },
+    {
+     "value": "33000",
+     "unit": "메소",
+     "context": "마제스티 케인"
+    },
+    {
+     "value": "500",
+     "unit": "메소",
+     "context": "블루 메탈 기어"
+    },
+    {
+     "value": "750",
+     "unit": "메소",
+     "context": "하프 이어링"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/36a1ae508d1525fe.jpg",
+   "crop_box": [
+    279,
+    89,
+    449,
+    315
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 388,
+   "quest_topic": "제니스 보스",
+   "post_url": "https://blog.naver.com/minju_________/60174346288",
+   "source_image": "minju__________60174346288_09.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121027_103/anicoool_1351331129711Ot6Hq_PNG/MapleStory_2012-10-26_23-45-30-10.png",
+   "image_size": [
+    370,
+    269
+   ],
+   "category_group": "player_info",
+   "category": "combat",
+   "independent_reading": "전투 화면. 데미지 566993·5257974, 'MISS', 칭호 'S급 헌터 자격증', 하단 '진정한 리프레의 영웅이다!'. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/1bea642acef0c6ca.jpg",
+   "crop_box": [
+    0,
+    242,
+    359,
+    269
+   ],
+   "note": "데미지 숫자는 플레이어 전투 수치"
+  },
+  {
+   "rec_index": 392,
+   "quest_topic": "제니스 보스",
+   "post_url": "https://blog.naver.com/minju_________/60174346288",
+   "source_image": "minju__________60174346288_17.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121027_172/anicoool_1351331132216voG56_PNG/MapleStory_2012-10-27_00-21-20-54.png",
+   "image_size": [
+    424,
+    215
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "마스터리북 3종. '[마스터리북] 미러 이미징' 1개당 149,999,999메소 — '50%의 확률로 미러 이미징의 마스터 레벨을 20까지 올려준다. 직업: 슬래셔, 조건: 스킬 레벨 100이상'. '[마스터리북] 프레이 오브 아르테일' 1개당 9,999,999메소, 또 다른 마스터리북 1개당 3,999,999메소.",
+   "numbers": [
+    {
+     "value": "149999999",
+     "unit": "메소",
+     "context": "미러 이미징 마스터리북"
+    },
+    {
+     "value": "9999999",
+     "unit": "메소",
+     "context": "마스터리북 1종(프레이 오브 아…)"
+    },
+    {
+     "value": "3999999",
+     "unit": "메소",
+     "context": "마스터리북 1종"
+    },
+    {
+     "value": "50",
+     "unit": "%",
+     "context": "마스터 레벨 상승 확률"
+    },
+    {
+     "value": "20",
+     "unit": "레벨",
+     "context": "마스터 레벨"
+    },
+    {
+     "value": "100",
+     "unit": "레벨",
+     "context": "스킬 레벨 조건"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/db44ebdcaac5b8b9.jpg",
+   "crop_box": [
+    42,
+    72,
+    369,
+    113
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 398,
+   "quest_topic": "제니스 보스",
+   "post_url": "https://blog.naver.com/minju_________/60174346288",
+   "source_image": "minju__________60174346288_66.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121027_76/anicoool_1351331145271WSz9M_PNG/MapleStory_2012-10-27_16-44-27-60.png",
+   "image_size": [
+    462,
+    266
+   ],
+   "category_group": "player_info",
+   "category": "combat",
+   "independent_reading": "전투·레벨업 화면. 상승 표시 '191UP / 193UP / 198UP / 181UP / 170UP', 데미지 다수. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/cfaee85aa06d98f3.jpg",
+   "crop_box": [
+    16,
+    94,
+    297,
+    147
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 402,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_01.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_108/jeeheelover_1330523448887vIJuk_JPEG/Maple0333.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "힐라의 탑 화면. 남은시간 36분 49초, 맵 안내 '바닥을 조심하세요! 비석이 나타나는 곳은 위험해요!', HUD LV.131 듀얼블레이더, HP 4307/6984, MP 1530/3401.",
+   "numbers": [
+    {
+     "value": "36",
+     "unit": "분",
+     "context": "남은시간"
+    },
+    {
+     "value": "49",
+     "unit": "초",
+     "context": "남은시간"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/659156cc4a770227.jpg",
+   "crop_box": [
+    0,
+    385,
+    103,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 404,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_02.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_281/jeeheelover_1330523449670P8p5L_JPEG/Maple0334.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 힐라의 탑 화면. 남은시간 25분 06초, 맵 안내 '만병통치약이나 디스펠로 힐라의 저주를 풀어야 해요!', HP 5556/9823, MP 1887/3531, EXP 1338963(9.44%).",
+   "numbers": [
+    {
+     "value": "25",
+     "unit": "분",
+     "context": "남은시간"
+    },
+    {
+     "value": "6",
+     "unit": "초",
+     "context": "남은시간"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/6a5dd75aa93758f7.jpg",
+   "crop_box": [
+    3,
+    369,
+    441,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 405,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_04.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_115/jeeheelover_1330523298325Vd4pG_JPEG/Maple0369.jpg",
+   "image_size": [
+    293,
+    312
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 창 대화. '나임수교임당'과 's첵던풍s67'의 잡담('왜가 ㅋㅋ / 요즘 / 가끔 들여가는데 ...'). NPC 본문·수치 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/a9a680f78aab04e4.jpg",
+   "crop_box": [
+    48,
+    125,
+    155,
+    229
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 406,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_08.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_237/jeeheelover_1330523301264gPwSo_JPEG/Maple0379.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "game_ui",
+   "category": "shop_fee",
+   "independent_reading": "개인상점·메신저·거래 수수료표. 수수료: 10만 메소 이상 0.80%, 100만 이상 1.80%, 500만 이상 3.00%, 1000만 이상 4.00%, 2500만 이상 5.00%, 1억 이상 6.00%.",
+   "numbers": [
+    {
+     "value": "0.80",
+     "unit": "%",
+     "context": "10만 메소 이상"
+    },
+    {
+     "value": "1.80",
+     "unit": "%",
+     "context": "100만 메소 이상"
+    },
+    {
+     "value": "3.00",
+     "unit": "%",
+     "context": "500만 메소 이상"
+    },
+    {
+     "value": "4.00",
+     "unit": "%",
+     "context": "1000만 메소 이상"
+    },
+    {
+     "value": "5.00",
+     "unit": "%",
+     "context": "2500만 메소 이상"
+    },
+    {
+     "value": "6.00",
+     "unit": "%",
+     "context": "1억 메소 이상"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/bec4f54f1060bddf.jpg",
+   "crop_box": [
+    1,
+    51,
+    490,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 407,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_09.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_156/jeeheelover_1330523302048JGI55_JPEG/Maple0380.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "개인상점 진열 화면. 판매가 1·3000·3500 메소 항목과 수수료표가 함께 보인다.",
+   "numbers": [
+    {
+     "value": "3000",
+     "unit": "메소",
+     "context": "진열 상품가"
+    },
+    {
+     "value": "3500",
+     "unit": "메소",
+     "context": "진열 상품가"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/1d8ee6292398cf81.jpg",
+   "crop_box": [
+    1,
+    51,
+    490,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 408,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_11.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_297/jeeheelover_1330495242986OypPe_JPEG/Maple0004.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "NPC '창고지기'의 말풍선. '돈이나 메소를 맡길 곳이 필요한가? 여기 다해~' (NPC 고정 대사). 수치 없음.",
+   "numbers": [],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/a74616e0a67d4eed.jpg",
+   "crop_box": [
+    0,
+    369,
+    441,
+    412
+   ],
+   "note": "OCR '승회린 최습의이이는을 금릭고지난' → 창고지기 인사말"
+  },
+  {
+   "rec_index": 409,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_12.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_212/jeeheelover_1330495243861YTIfo_JPEG/Maple0005.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "무릉도장(무투도장) 화면. 스테이지 타이머 0:0:1:43, STAGE 게이지, '보이는 대로 입력하세요' 00:57 입력창, LV.133 듀얼블레이더, HP 6817/7049, MP 1885/3531.",
+   "numbers": [
+    {
+     "value": "133",
+     "unit": "레벨",
+     "context": "캐릭터"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/57ef398bd04ae19e.jpg",
+   "crop_box": [
+    25,
+    368,
+    138,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 410,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_13.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_147/jeeheelover_1330495244317M5HMB_JPEG/Maple0006.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "무릉도장 ROUND 19, 남은 타이머 0:08:0x, LV.133, HP 7043/7049, MP 933/3531.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/ecfdbfe27156b389.jpg",
+   "crop_box": [
+    0,
+    385,
+    103,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 411,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_14.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_234/jeeheelover_1330495245294T2WAa_JPEG/Maple0007.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "무릉도장 CLEAR 화면, LV.134, HP 7080/7080, MP 961/3531, EXP 79343/1070910.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/08619b80147d5fa5.jpg",
+   "crop_box": [
+    215,
+    386,
+    389,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 412,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_15.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_61/jeeheelover_1330495245626un5EM_JPEG/Maple0008.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "리프레 잔혹 지역 관자락 사냥 화면. 남은시간 17분 18초, HP/MP·EXP 게이지, 데미지. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e39bdf4d1f0918ad.jpg",
+   "crop_box": [
+    495,
+    166,
+    550,
+    210
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 413,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_15.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_61/jeeheelover_1330495245626un5EM_JPEG/Maple0008.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역 다른 컷. 남은시간 16분 50초, HUD 수치 위주.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e39bdf4d1f0918ad.jpg",
+   "crop_box": [
+    265,
+    385,
+    391,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 414,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_16.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_243/jeeheelover_1330495245969xhPQU_JPEG/Maple0009.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역 컷. 남은시간 16분 50초, LV.134, HP 3676/3719, MP 1215/3531, 칭호 '크로스헌터 마스터'.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/2ae2f2c0efe0e0ed.jpg",
+   "crop_box": [
+    495,
+    166,
+    550,
+    209
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 415,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_18.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_223/jeeheelover_1330495246764i6FXb_JPEG/Maple0012.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "리프레 전곤의 둥지 사냥 화면. 남은시간 19분 36초, 채팅·획득 알림 위주.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0860d9666021caed.jpg",
+   "crop_box": [
+    494,
+    166,
+    549,
+    210
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 416,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_18.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_223/jeeheelover_1330495246764i6FXb_JPEG/Maple0012.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역 컷. 아이템 획득 알림(+164246, +9638, +58, +30)과 HUD.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0860d9666021caed.jpg",
+   "crop_box": [
+    265,
+    385,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 417,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_19.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_265/jeeheelover_1330495247113e9UUe_JPEG/Maple0013.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "마을 화면. 이름표·데미지·HUD(LV.135, HP 3748/3748, MP 1406/3531). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/71509818906a2efe.jpg",
+   "crop_box": [
+    213,
+    384,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 418,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_21.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_203/jeeheelover_1330495247878cWMwl_JPEG/Maple0015.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "자동 경비 구역 5단계. 남은시간 11분 43초, 부활 안내창 '확인을 누르시면 부활하게 됩니다...', EXP 116859/21181548, LV.135.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/9c3e61f67b13ddf6.jpg",
+   "crop_box": [
+    1,
+    369,
+    106,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 419,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_22.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_107/jeeheelover_1330495248642XR1Cg_JPEG/Maple0017.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "얼음비늘굴 사냥 중 NPC 대화창. '이번엔 내 계획이 실패했군. 일단 작전 상 후퇴다. 크크.' 수치 없음.",
+   "numbers": [],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/d202e03881c752f6.jpg",
+   "crop_box": [
+    0,
+    385,
+    103,
+    412
+   ],
+   "note": "OCR '벽과 미되미 줄기한다' → 대사 본문"
+  },
+  {
+   "rec_index": 423,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_25.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_99/jeeheelover_1330495249992nbkqA_JPEG/Maple0024.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "얼음비늘굴 3. 남은시간 17분 44초, LV.135, HP 5289/7103, MP 1287/3437.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/d050a1c6111e1f13.jpg",
+   "crop_box": [
+    0,
+    385,
+    103,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 424,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_27.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_131/jeeheelover_1330495250971qpngE_JPEG/Maple0026.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "뉴 오시리아 항만 — 위험한 경비병. 퀘스트 진행 '오베로드 A 4/50, 오베로드 B 3/50', 남은시간 29분 57초.",
+   "numbers": [
+    {
+     "value": "4",
+     "unit": "마리",
+     "context": "오베로드 A 처치"
+    },
+    {
+     "value": "50",
+     "unit": "마리",
+     "context": "오베로드 A 목표"
+    },
+    {
+     "value": "3",
+     "unit": "마리",
+     "context": "오베로드 B 처치"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/ca7feed52fdc2f5c.jpg",
+   "crop_box": [
+    0,
+    368,
+    391,
+    412
+   ],
+   "note": "퀘스트 진행 표시이지만 시스템 카운터"
+  },
+  {
+   "rec_index": 426,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_30.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_281/jeeheelover_133049525277574M9A_JPEG/Maple0029.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "뉴 오시리아 위험한 파괴된 다리. 남은시간 29분 25초, 퀘스트 카운터 '엠슈트A 7/30, 엠슈트B 7/30, 엠슈트C 1/30', 부활 팝업.",
+   "numbers": [
+    {
+     "value": "7",
+     "unit": "마리",
+     "context": "엠슈트A"
+    },
+    {
+     "value": "30",
+     "unit": "마리",
+     "context": "엠슈트A 목표"
+    },
+    {
+     "value": "1",
+     "unit": "마리",
+     "context": "엠슈트C"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/745c40de37251e85.jpg",
+   "crop_box": [
+    1,
+    369,
+    106,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 427,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_35.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_296/jeeheelover_1330495257541Mu7qD_JPEG/Maple0035.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "자동 경비 구역 1단계. 남은시간 19분 09초, NP_스피겔만 말풍선 일부, 데미지.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/60ff13c33772d440.jpg",
+   "crop_box": [
+    0,
+    369,
+    291,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 428,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_36.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_41/jeeheelover_1330495258132XRNjT_JPEG/Maple0036.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "자동 경비 구역 1단계. 남은시간 19분 06초, LV.135, HP 7438/9748, MP 1318/3531.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/fb1ff0cc6b444926.jpg",
+   "crop_box": [
+    6,
+    370,
+    292,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 429,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_37.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_192/jeeheelover_1330495258638ULvTm_JPEG/Maple0037.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "자동 경비 구역 2단계. 남은시간 17분 19초, LV.136, HP 3777/3777, MP 1332/3531, LEVEL UP 표시.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/b54c5824567f5f10.jpg",
+   "crop_box": [
+    0,
+    369,
+    165,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 431,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_40.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_176/jeeheelover_1330495260482aQjcS_JPEG/Maple0040.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "사자왕의 성 첫번째 탑. 채팅·획득 알림('일반화를 얻었습니다 (+243600)', '이면을 얻었습니다 (+4990)'), LV.136, EXP 7297037(34.14%).",
+   "numbers": [
+    {
+     "value": "243600",
+     "unit": "exp",
+     "context": "획득 알림"
+    },
+    {
+     "value": "4990",
+     "unit": "exp",
+     "context": "획득 알림"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/fa3e42f47f99fe66.jpg",
+   "crop_box": [
+    0,
+    327,
+    149,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 432,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_41.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_28/jeeheelover_1330495261079MSGqf_JPEG/Maple0041.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "사자왕의 성. 퀘스트 카운터 '150/200', LV.136, HP 1314/10067, MP 1309/3531.",
+   "numbers": [
+    {
+     "value": "150",
+     "unit": "마리",
+     "context": "퀘스트 진행"
+    },
+    {
+     "value": "200",
+     "unit": "마리",
+     "context": "퀘스트 목표"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/01c46c943bb9596c.jpg",
+   "crop_box": [
+    0,
+    369,
+    543,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 433,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_44.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_179/jeeheelover_1330495262941Rbbau_JPEG/Maple0047.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "사자왕의 성 성벽. 퀘스트 '200/200', MISS, LV.136.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e02d0dd6bff2b2d2.jpg",
+   "crop_box": [
+    0,
+    369,
+    543,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 435,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_47.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_290/jeeheelover_1330495264753cbvBa_JPEG/Maple0050.jpg",
+   "image_size": [
+    356,
+    373
+   ],
+   "category_group": "game_ui",
+   "category": "trade_window",
+   "independent_reading": "교환창과 수수료표, 채팅. 수수료 10만 0.80% / 100만 1.80% / 500만 3.00% / 1000만 4.00% / 2500만 5.00% / 1억 6.00%. 아이템 설명 '깨진 구이 — HP를 약 1500 회복시킨다'.",
+   "numbers": [
+    {
+     "value": "1500",
+     "unit": "HP",
+     "context": "깨진 구이 회복량"
+    },
+    {
+     "value": "0.80",
+     "unit": "%",
+     "context": "수수료(10만 이상)"
+    },
+    {
+     "value": "6.00",
+     "unit": "%",
+     "context": "수수료(1억 이상)"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/57c434c5717f9243.jpg",
+   "crop_box": [
+    189,
+    15,
+    290,
+    98
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 436,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_48.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_190/jeeheelover_1330495265434Dl7tm_JPEG/Maple0051.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "마지막의 미로 자궁의 제단(남은시간 49분 49초). NPC 아몬 말풍선 '더 좋은데 그만두고 싶다면 나에게 말을 걸어주게.' 수치 없음.",
+   "numbers": [],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/ff4c97ae0ddca525.jpg",
+   "crop_box": [
+    493,
+    189,
+    550,
+    232
+   ],
+   "note": "OCR '도 좋은데 그만두고...' → 말풍선 확인"
+  },
+  {
+   "rec_index": 437,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_57.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_238/jeeheelover_1330495271819GT0Ek_JPEG/Maple0060.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역. 남은시간 1분 16초, MISS, LV.136.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/050a0cacf2f34835.jpg",
+   "crop_box": [
+    0,
+    369,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 438,
+   "quest_topic": "힐라 반레온",
+   "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+   "source_image": "jeeheelover_90137542848_58.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120229_137/jeeheelover_1330495272604VK9c0_JPEG/Maple0061.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역. 남은시간 0분 58초, '경험치를 얻었습니다 (+3603400)', LV.136.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/3da42e9bf2d41f5f.jpg",
+   "crop_box": [
+    0,
+    369,
+    391,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 439,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_00.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_77/anscodnjs321_13459778715107RUQ3_GIF/1.GIF",
+   "image_size": [
+    262,
+    318
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('나가는건가여? / 즐때하세요~전우피중이당 ㅋ'). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/4816294271a4464a.jpg",
+   "crop_box": [
+    9,
+    163,
+    188,
+    210
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 440,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_01.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_260/anscodnjs321_1345978086767jsjdU_JPEG/1.GIF",
+   "image_size": [
+    468,
+    335
+   ],
+   "category_group": "player_info",
+   "category": "guild_window",
+   "independent_reading": "길드 창. 길드명 'Midnight (3개월만에)', GP 481800/640000, 내 기여도 12460(12위), 온라인 21/100.",
+   "numbers": [
+    {
+     "value": "481800",
+     "unit": "GP",
+     "context": "길드 GP"
+    },
+    {
+     "value": "640000",
+     "unit": "GP",
+     "context": "길드 GP 최대"
+    },
+    {
+     "value": "12460",
+     "unit": "점",
+     "context": "내 기여도"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/6730cbadbf0bc277.jpg",
+   "crop_box": [
+    18,
+    102,
+    173,
+    121
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 441,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_07.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_241/anscodnjs321_1345978136747BQ848_JPEG/Maple0024.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "힐라의 탑(남은시간 36분 45초). LV.159 '메르제데스', HP 6247/8949, MP 15058/15058.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/97e7e184737bba11.jpg",
+   "crop_box": [
+    0,
+    369,
+    441,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 442,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_08.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_38/anscodnjs321_1345978137248SILyR_JPEG/Maple0028.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "힐라 전투. 채팅 '춘빵빵빵빵 : 오래걸려요?', LV.159, HP 9838/9838, MP 14658/14658.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/acda1ccf57c97b69.jpg",
+   "crop_box": [
+    0,
+    369,
+    106,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 443,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_08.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_38/anscodnjs321_1345978137248SILyR_JPEG/Maple0028.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "힐라 전투 다른 컷. HP/MP 게이지와 데미지.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/acda1ccf57c97b69.jpg",
+   "crop_box": [
+    265,
+    385,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 445,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_12.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_285/anscodnjs321_1345978139275VYYf2_JPEG/Maple0033.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "stat_window",
+   "independent_reading": "캐릭터 스탯 창(CHARACTER STAT). LVL 160 '메르제데스', 인기도 31, 서버 랭킹 39780470(34%), 공격력 62490~73517, 크리티컬확률 100%, 방어력 3466(2966+500), 마법방어력 2655, 명중률 4239, 회피율 2318, 이동속도 1374, 점프력 51%, HP 8773/14315, MP 8452/8452, STR 373 / DEX 1661 / INT 131 / LUK 146.",
+   "numbers": [
+    {
+     "value": "160",
+     "unit": "레벨",
+     "context": "캐릭터"
+    },
+    {
+     "value": "62490~73517",
+     "unit": "공격력",
+     "context": "공격력 범위"
+    },
+    {
+     "value": "100",
+     "unit": "%",
+     "context": "크리티컬확률"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/06efbaa178c47751.jpg",
+   "crop_box": [
+    211,
+    384,
+    390,
+    412
+   ],
+   "note": "플레이어 스탯"
+  },
+  {
+   "rec_index": 446,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_13.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_197/anscodnjs321_1345978139770msuwS_JPEG/Maple0034.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "메르제데스 사냥. 획득 알림(+164880, +4770), LV.160→161.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e3c1e299fd69512c.jpg",
+   "crop_box": [
+    0,
+    369,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 448,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_14.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_10/anscodnjs321_1345978140318ciu4Q_JPEG/Maple0036.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "리프레 전곤의 둥지(남은시간 19분 40초). 달성률 게이지, LV.161.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/6c713c4366506adb.jpg",
+   "crop_box": [
+    0,
+    369,
+    140,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 449,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_14.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_10/anscodnjs321_1345978140318ciu4Q_JPEG/Maple0036.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역. 획득 알림(+164880, +4770), 데미지.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/6c713c4366506adb.jpg",
+   "crop_box": [
+    213,
+    385,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 451,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_20.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_296/anscodnjs321_1345980158658nDlcy_JPEG/Maple0047.jpg",
+   "image_size": [
+    449,
+    262
+   ],
+   "category_group": "game_ui",
+   "category": "trade_window",
+   "independent_reading": "교환창·수수료표·채팅. 상품가 130,000,000 메소 표시. 수수료 10만 0.80%~1억 6.00%.",
+   "numbers": [
+    {
+     "value": "130000000",
+     "unit": "메소",
+     "context": "교환 상품가"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d4de7bf2ad9e59ce.jpg",
+   "crop_box": [
+    277,
+    7,
+    418,
+    86
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 454,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_24.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_152/anscodnjs321_1345978145841kgABx_JPEG/Maple0052.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "전투 화면. LV.161, HP 8252/8252.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7f75caffbe317204.jpg",
+   "crop_box": [
+    0,
+    369,
+    156,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 456,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_25.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_9/anscodnjs321_1345980595513BsCQl_JPEG/Maple0054.jpg",
+   "image_size": [
+    310,
+    217
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "우선 7건. NPC 상점 '장비' 탭 판매 목록. 거대 변신비약 10,000메소, 펫장비 지력 주문서 60% 10,000메소, 두손무기 공격력 주문서 60% 10,000메소, 상급 마나의 비약 제작 레시피 10,000메소, 리버스 데아스 헨드 제작 레시피 10,000메소.",
+   "numbers": [
+    {
+     "value": "10000",
+     "unit": "메소",
+     "context": "판매가(5종 공통)"
+    },
+    {
+     "value": "60",
+     "unit": "%",
+     "context": "주문서 성공률"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/92b75101c5a5d711.jpg",
+   "crop_box": [
+    31,
+    104,
+    145,
+    216
+   ],
+   "note": "OCR의 '100 / 100'은 좌측이 잘린 '10,000'의 일부. 100메소 상품은 없음"
+  },
+  {
+   "rec_index": 458,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_27.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_32/anscodnjs321_1345980804430SwtPP_JPEG/Maple0059.jpg",
+   "image_size": [
+    361,
+    343
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "전투 화면. HP 12992/8730, MP 12530/12585, 데미지 96148·86797.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/e7a8552ee5ef5cdd.jpg",
+   "crop_box": [
+    80,
+    317,
+    253,
+    343
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 459,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_28.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_139/anscodnjs321_13459807744647AiQN_JPEG/Maple0060.jpg",
+   "image_size": [
+    365,
+    391
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "전투 화면. HP 7215/8730, MP 9508/12585.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/64a11e6adc019ab8.jpg",
+   "crop_box": [
+    31,
+    363,
+    202,
+    391
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 460,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_29.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_139/anscodnjs321_13459781488788bB1V_JPEG/Maple0063.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "마지막의 미로 자궁의 제단(남은시간 46분 36초). HP 8610/8610, MP 11436/13361, 데미지 103073·123846.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/34ce8c00d4ff2a86.jpg",
+   "crop_box": [
+    0,
+    370,
+    390,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 461,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_34.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_117/anscodnjs321_1345981364593fAlps_GIF/1.GIF",
+   "image_size": [
+    550,
+    347
+   ],
+   "category_group": "player_info",
+   "category": "map",
+   "independent_reading": "월드맵 'Temple of Time — 기억자의 방' 지도 화면. 수치 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/82619541b9ef814d.jpg",
+   "crop_box": [
+    348,
+    320,
+    448,
+    347
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 472,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_52.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_54/anscodnjs321_1345978181212hE4GM_JPEG/Maple0093.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "리프레 전곤의 둥지(남은시간 19분 52초). 필드 안내 '미나르 마을을 괴롭히는 드레곤 라이더를 무찔러라!', 월드대사, HP 9755/9755, MP 1989/1989.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/4302ad01583f826f.jpg",
+   "crop_box": [
+    266,
+    386,
+    391,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 474,
+   "quest_topic": "핑크빈 입장 퀘(스샷)",
+   "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+   "source_image": "anscodnjs321_130145707460_55.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120826_179/anscodnjs321_1345978182220661Kw_JPEG/Maple0095.jpg",
+   "image_size": [
+    550,
+    412
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "같은 지역(남은시간 19분 42초). 데미지 143254·9963·125969, MISS, HP 9456/9755.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/17d106b3d228bd65.jpg",
+   "crop_box": [
+    0,
+    370,
+    177,
+    412
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 496,
+   "quest_topic": "핑크빈 입장 재료",
+   "post_url": "https://blog.naver.com/pok_cleaner/10153504298",
+   "source_image": "pok_cleaner_10153504298_37.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121203_168/pok_cleaner_1354537146628rvjxv_JPEG/Maple0043.jpg",
+   "image_size": [
+    550,
+    194
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅('스탑일군 : 38분...'), 데미지, MISS. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/48e30cd17cfe1fd7.jpg",
+   "crop_box": [
+    55,
+    52,
+    166,
+    75
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 498,
+   "quest_topic": "핑크빈 입장 재료",
+   "post_url": "https://blog.naver.com/pok_cleaner/10153504298",
+   "source_image": "pok_cleaner_10153504298_41.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121203_126/pok_cleaner_1354537152716SMv8m_JPEG/Maple0047.jpg",
+   "image_size": [
+    550,
+    416
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "전투 채팅 화면('빅만의소녀 : 40' 등). 수치 대사 아님.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/39bc8ef2f71f94d7.jpg",
+   "crop_box": [
+    30,
+    232,
+    514,
+    291
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 507,
+   "quest_topic": "핑크빈 입장 재료",
+   "post_url": "https://blog.naver.com/pok_cleaner/10153504298",
+   "source_image": "pok_cleaner_10153504298_49.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121203_164/pok_cleaner_1354538683423HFMyk_JPEG/Maple0056.jpg",
+   "image_size": [
+    550,
+    451
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "부활 팝업과 채팅 화면. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/58c16a842a0bed32.jpg",
+   "crop_box": [
+    338,
+    199,
+    422,
+    258
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 513,
+   "quest_topic": "핑크빈 입장 재료",
+   "post_url": "https://blog.naver.com/pok_cleaner/10153504298",
+   "source_image": "pok_cleaner_10153504298_55.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121203_121/pok_cleaner_1354538694063YGCar_JPEG/Maple0065.jpg",
+   "image_size": [
+    550,
+    305
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "NPC(기억을 잃은 사제) 대화창. '저 기억은 망각의 강으로 흘러가버린 것일까요?' 수치 없음.",
+   "numbers": [],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/6b532c7fdc34c803.jpg",
+   "crop_box": [
+    50,
+    125,
+    124,
+    176
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 532,
+   "quest_topic": "핑크빈 입장 재료",
+   "post_url": "https://blog.naver.com/pok_cleaner/10153504298",
+   "source_image": "pok_cleaner_10153504298_83.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121203_95/pok_cleaner_1354540231730PjU1x_JPEG/Maple0009.jpg",
+   "image_size": [
+    550,
+    69
+   ],
+   "category_group": "watermark",
+   "category": "promo_chat",
+   "independent_reading": "블로그 홍보 문구가 박힌 채팅줄. '〈2011 크리스마스 문장〉 ... 동둥이 생일축하해~~!! ~ 네이버 <동둥의메이플> ~'. NPC 본문·게임 수치 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/f36ac6ff1c6ad4fa.jpg",
+   "crop_box": [
+    6,
+    0,
+    535,
+    32
+   ],
+   "note": "블로그 유입용 문구"
+  },
+  {
+   "rec_index": 533,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_02.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_179/kmhdssj1_1351770204336Xxa3v_PNG/2.PNG",
+   "image_size": [
+    367,
+    220
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅 '회귀빈 : 16개 있... 의자'. 플레이어 잡담.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/4dbe42b5f50293db.jpg",
+   "crop_box": [
+    136,
+    20,
+    346,
+    52
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 543,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_22.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_37/kmhdssj1_1351770288811At3dz_PNG/22.PNG",
+   "image_size": [
+    293,
+    354
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('Leiレoi : 그 봉투는?!' 등). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/fa80805ca4e5b471.jpg",
+   "crop_box": [
+    7,
+    120,
+    157,
+    297
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 560,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_38.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_66/kmhdssj1_1351770302419RMJlR_PNG/38.PNG",
+   "image_size": [
+    315,
+    312
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "말풍선 대화('원으로써 좋은 견해' 등). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/64a2d512a0e586e9.jpg",
+   "crop_box": [
+    43,
+    54,
+    146,
+    99
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 580,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_61.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_102/kmhdssj1_1351770416605ukUW2_PNG/61.PNG",
+   "image_size": [
+    300,
+    236
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "말풍선 대화. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/6216bfbab552ef16.jpg",
+   "crop_box": [
+    33,
+    39,
+    235,
+    72
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 585,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_64.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_269/kmhdssj1_1351770419159tDbbI_PNG/64.PNG",
+   "image_size": [
+    450,
+    226
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "말풍선 대화 'LeiReoi : 죽였어' / '결1밤요 : 쓰레기...더미...', 이름표 아래 '메이플 캐슬의 VIP'. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/7092b2863ce06735.jpg",
+   "crop_box": [
+    298,
+    179,
+    405,
+    216
+   ],
+   "note": "OCR '비비크럼' → 'VIP'"
+  },
+  {
+   "rec_index": 597,
+   "quest_topic": "핑크빈·힐라 여섯번째 포스팅",
+   "post_url": "https://blog.naver.com/kmhdssj1/50153759660",
+   "source_image": "kmhdssj1_50153759660_96.jpg",
+   "image_url": "https://postfiles.pstatic.net/20121101_84/kmhdssj1_1351770537484fpLyM_PNG/23.PNG",
+   "image_size": [
+    296,
+    357
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('레이님 / 이제 뵙네요 / 저 본편입니다 ㅎㅎ'). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/226ddc2fda4b7fd4.jpg",
+   "crop_box": [
+    10,
+    99,
+    210,
+    300
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 609,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_17.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_130/123rlatjsxo_1334645751505mIp1X_PNG/MapleStory_2012-04-14_09-59-04-81.png",
+   "image_size": [
+    332,
+    460
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "크로스헌터 코인 상점. 베테랑 크로스 벨트 50개, 베테랑 크로스 숄더 40개.",
+   "numbers": [
+    {
+     "value": "50",
+     "unit": "개",
+     "context": "베테랑 크로스 벨트"
+    },
+    {
+     "value": "40",
+     "unit": "개",
+     "context": "베테랑 크로스 숄더"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d65739240d07900b.jpg",
+   "crop_box": [
+    50,
+    6,
+    247,
+    133
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 610,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_17.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_130/123rlatjsxo_1334645751505mIp1X_PNG/MapleStory_2012-04-14_09-59-04-81.png",
+   "image_size": [
+    332,
+    460
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "같은 상점 하단. 베테랑 크로스 숄더 강화 주문서 20% 15개·60% 15개, 베테랑 크로스 펜던트 강화 주문서 20% 25개·60% 25개, 보유 코인 46개.",
+   "numbers": [
+    {
+     "value": "15",
+     "unit": "개",
+     "context": "숄더 강화 주문서(20%·60%)"
+    },
+    {
+     "value": "25",
+     "unit": "개",
+     "context": "펜던트 강화 주문서(20%·60%)"
+    },
+    {
+     "value": "46",
+     "unit": "개",
+     "context": "보유 코인"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d65739240d07900b.jpg",
+   "crop_box": [
+    10,
+    243,
+    318,
+    454
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 637,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_61.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_88/123rlatjsxo_13346458799983UOCq_PNG/MapleStory_2012-04-14_10-15-15-45.png",
+   "image_size": [
+    519,
+    187
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_notice",
+   "independent_reading": "메이플 우체통 NPC 안내문. '메이플 월드의 누군가 당신에게 전할 이야기가 있다고 합니다. ⭐ 수행 가능한 이벤트 — ▶ 세인트 세이버 7일째! 선물을 드려요! ▶ 세인트 세이버 필드 정보'.",
+   "numbers": [
+    {
+     "value": "7",
+     "unit": "일째",
+     "context": "세인트 세이버 이벤트"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/2fbf97a0b363e87e.jpg",
+   "crop_box": [
+    37,
+    95,
+    379,
+    128
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 638,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_63.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_92/123rlatjsxo_1334645882740S1lms_PNG/MapleStory_2012-04-14_10-15-29-14.png",
+   "image_size": [
+    517,
+    192
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_dialogue",
+   "independent_reading": "카산드라 NPC 대사. '고급 장비강화 주문서 3개 — 내가 준비한 선물은 바로 이거야. 내일도, 또 남은 기간도 부탁할께. 빛나라, 아니 세인트세이버 너만 믿는다구!'",
+   "numbers": [
+    {
+     "value": "3",
+     "unit": "개",
+     "context": "고급 장비강화 주문서"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/4a6eb24b88e8d350.jpg",
+   "crop_box": [
+    50,
+    79,
+    487,
+    119
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 639,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_64.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_291/123rlatjsxo_1334645884236keRhE_PNG/MapleStory_2012-04-14_10-15-38-23.png",
+   "image_size": [
+    338,
+    431
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_event",
+   "independent_reading": "세인트 세이버 이벤트 창. 이벤트 기간 2012.03.29 ~ 2012.04.18, '7일째 출석 완료!', 세인트세이버 8·9·10일, '8일 달성하면 스페셜 잠재능력 부여 주문서 3개'.",
+   "numbers": [
+    {
+     "value": "7",
+     "unit": "일",
+     "context": "출석 일수"
+    },
+    {
+     "value": "8",
+     "unit": "일",
+     "context": "보상 지급일"
+    },
+    {
+     "value": "3",
+     "unit": "개",
+     "context": "스페셜 잠재능력 부여 주문서"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/f8b8af48e690f894.jpg",
+   "crop_box": [
+    11,
+    22,
+    305,
+    132
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 648,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_75.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_89/123rlatjsxo_1334645901493h44UW_PNG/MapleStory_2012-04-14_14-16-47-89.png",
+   "image_size": [
+    289,
+    355
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "'고급 장비강화 주문서' 툴팁. 강화 성공확률 1성 100%, 2성 90%, 3성 80%, 4성 70%, 5성 60%, 6성 50%, 7성 40%, 8성 30%, 9성 20%, 10성 10%, 11성 이상 5% 이하. 교환 불가.",
+   "numbers": [
+    {
+     "value": "100",
+     "unit": "%",
+     "context": "1성 성공확률"
+    },
+    {
+     "value": "10",
+     "unit": "%",
+     "context": "10성 성공확률"
+    },
+    {
+     "value": "5",
+     "unit": "%",
+     "context": "11성 이상 성공확률"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/65e27846eb8ee4e6.jpg",
+   "crop_box": [
+    86,
+    287,
+    256,
+    352
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 661,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_95.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_13/123rlatjsxo_1334646052572bP7RO_PNG/MapleStory_2012-04-14_15-03-45-00.png",
+   "image_size": [
+    244,
+    531
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "'카이오스 혼테일의 목걸이 (+3)' 툴팁. REQ LEV 120, STR+31, DEX+30, INT+25, LUK+31, MaxHP +10%, MaxMP +10%, 공격력+10, 물리방어력+562, 마법방어력+570, 명중치+3, 회피치+181, 업그레이드 가능 횟수 0, HP회복 +40%/+30%.",
+   "numbers": [
+    {
+     "value": "120",
+     "unit": "레벨",
+     "context": "착용 제한"
+    },
+    {
+     "value": "31",
+     "unit": "스탯",
+     "context": "STR/LUK"
+    },
+    {
+     "value": "562",
+     "unit": "방어력",
+     "context": "물리방어력"
+    },
+    {
+     "value": "181",
+     "unit": "회피",
+     "context": "회피치"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/c32baceae68dc6ab.jpg",
+   "crop_box": [
+    7,
+    37,
+    230,
+    289
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 662,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_96.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_155/123rlatjsxo_1334646059676cpFxh_PNG/MapleStory_2012-04-14_15-22-20-70.png",
+   "image_size": [
+    235,
+    434
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "'정의로운 영웅의 벳지' 툴팁. 2012년 4월 14일 17시 49분 붕인해제, REQ LEV 10, STR·DEX·INT·LUK +10, 공격력·마력 +10, 물리·마법방어력 +125, 이동속도 +10, 점프력 +20.",
+   "numbers": [
+    {
+     "value": "2012",
+     "unit": "년",
+     "context": "붕인해제 연도"
+    },
+    {
+     "value": "10",
+     "unit": "레벨",
+     "context": "착용 제한"
+    },
+    {
+     "value": "125",
+     "unit": "방어력",
+     "context": "물리·마법방어력"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/0135f24274450a4e.jpg",
+   "crop_box": [
+    14,
+    404,
+    230,
+    433
+   ],
+   "note": "날짜 '2012-04-14 17:49'"
+  },
+  {
+   "rec_index": 667,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_100.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_177/123rlatjsxo_1334646069057t88aw_PNG/MapleStory_2012-04-14_15-27-04-12.png",
+   "image_size": [
+    550,
+    250
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "전투 화면(칠흑의 보스 추정). 칭호 'VIENTO', 데미지 숫자 다수. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/a5f688b44a0091ec.jpg",
+   "crop_box": [
+    63,
+    172,
+    152,
+    198
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 673,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_111.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_44/123rlatjsxo_1334646096986c3u7n_PNG/MapleStory_2012-04-14_15-49-07-81.png",
+   "image_size": [
+    301,
+    483
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('S2빛나리 : 근데 그 캐릭 지금은 없구? / 와일드털유 : 있음 ...'). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/9cf210a84c46235d.jpg",
+   "crop_box": [
+    6,
+    115,
+    131,
+    296
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 674,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_112.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_146/123rlatjsxo_1334646099700UKzSg_PNG/MapleStory_2012-04-14_15-50-53-18.png",
+   "image_size": [
+    296,
+    355
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/5a11205b9a274292.jpg",
+   "crop_box": [
+    9,
+    116,
+    276,
+    278
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 678,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_115.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_188/123rlatjsxo_1334646108038u0ddT_PNG/MapleStory_2012-04-14_15-55-52-46.png",
+   "image_size": [
+    299,
+    486
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('디스펠주세요 : ㅋㅋㅋ...'). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0cd1ec5f47074e86.jpg",
+   "crop_box": [
+    7,
+    120,
+    274,
+    349
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 679,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_116.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_128/123rlatjsxo_1334646110849JcxmH_PNG/MapleStory_2012-04-14_15-57-33-04.png",
+   "image_size": [
+    300,
+    485
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화('S2빛나리 : 잘못쳤네ㅋㅋ ...'). NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/0722a8580bb99351.jpg",
+   "crop_box": [
+    8,
+    114,
+    276,
+    317
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 680,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_117.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_9/123rlatjsxo_1334646114019M5Kj1_PNG/MapleStory_2012-04-14_15-59-54-34.png",
+   "image_size": [
+    298,
+    359
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "메신저 대화. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/8e25eeac9a27d1f0.jpg",
+   "crop_box": [
+    10,
+    121,
+    277,
+    322
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 681,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_123.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_291/123rlatjsxo_133464613844234vDx_PNG/MapleStory_2012-04-14_16-08-04-35.png",
+   "image_size": [
+    462,
+    254
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅 말풍선, 칭호 '크로스헌터 마스터'. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/835948aa2fca4bed.jpg",
+   "crop_box": [
+    6,
+    170,
+    172,
+    224
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 691,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_149.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_199/123rlatjsxo_1334646409225Id4Ox_PNG/MapleStory_2012-04-14_16-28-09-04.png",
+   "image_size": [
+    300,
+    278
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "말풍선·칭호 'VIENTO'. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/4114154bdedbb23a.jpg",
+   "crop_box": [
+    162,
+    199,
+    269,
+    257
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 693,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_151.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_23/123rlatjsxo_13346464173747wuEs_PNG/MapleStory_2012-04-14_16-31-06-40.png",
+   "image_size": [
+    217,
+    339
+   ],
+   "category_group": "player_info",
+   "category": "system_window",
+   "independent_reading": "패밀리·명성도 창. '이름난 모험가의 특권 [06/07]', '나만의 경험치 1.2배(30분)', '명성도 소비 2,000, 회수제한 1/1', 효과 '몬스터 사냥 시 얻는 경험치가 1.2배'.",
+   "numbers": [
+    {
+     "value": "1.2",
+     "unit": "배",
+     "context": "경험치 배율"
+    },
+    {
+     "value": "30",
+     "unit": "분",
+     "context": "지속시간"
+    },
+    {
+     "value": "2000",
+     "unit": "명성도",
+     "context": "소비"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/54b7bcb6dfe616cc.jpg",
+   "crop_box": [
+    12,
+    145,
+    204,
+    332
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 694,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_155.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120417_291/123rlatjsxo_1334646434150sfk7D_PNG/MapleStory_2012-04-14_17-07-07-79.png",
+   "image_size": [
+    420,
+    280
+   ],
+   "category_group": "player_info",
+   "category": "chat",
+   "independent_reading": "채팅·칭호 '크로스헌터 마스터'. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/932ec3ade330fb30.jpg",
+   "crop_box": [
+    87,
+    221,
+    199,
+    278
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 701,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_165.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120418_101/123rlatjsxo_1334736600476hdCI5_PNG/MapleStory_2012-04-15_09-10-48-03.png",
+   "image_size": [
+    463,
+    326
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "상점 판매 목록(소비/기타/설치). 펫장비 힘 주문서 60% 10,000메소, 펫장비 지력 주문서 60% 10,000메소, 중급 회복의 비약 제작 레시피 10,000메소, 경험 축적의 비약 제작 레시피 10,000메소, 타임리스 그라베 제작 레시피 10,000메소. 보유 메소 16,410,232.",
+   "numbers": [
+    {
+     "value": "10000",
+     "unit": "메소",
+     "context": "판매가"
+    },
+    {
+     "value": "16410232",
+     "unit": "메소",
+     "context": "보유 메소"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/4240bec60b337a75.jpg",
+   "crop_box": [
+    248,
+    90,
+    409,
+    319
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 706,
+   "quest_topic": "마법제련술사 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136393609",
+   "source_image": "123rlatjsxo_30136393609_170.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120418_278/123rlatjsxo_1334736623784Id4i4_PNG/MapleStory_2012-04-15_09-21-22-23.png",
+   "image_size": [
+    550,
+    64
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "HUD 화면. LV.154 아크메이지(썬,콜) 'S2빛나리', HP 4284/4284, MP 24026/24026, EXP 52225610(36%).",
+   "numbers": [
+    {
+     "value": "154",
+     "unit": "레벨",
+     "context": "캐릭터"
+    }
+   ],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/bdb65a95419a2e1c.jpg",
+   "crop_box": [
+    4,
+    31,
+    545,
+    59
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 723,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_25.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_124/123rlatjsxo_1335069540834rDQdm_PNG/MapleStory_2012-04-15_11-44-47-35.png",
+   "image_size": [
+    521,
+    358
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "제작 레시피·장비 툴팁. '타임리스 카이트 실드 제작 레시피'(제작 가능 횟수 1회, 장비 제작 1레벨 이상), '타임리스 카이트 실드'(REQ LEV 120, STR+7, DEX+5, 물리방어력+100, 마법방어력+35, 회피치+5, 업그레이드 가능 횟수 7, 매력 90 경험치).",
+   "numbers": [
+    {
+     "value": "120",
+     "unit": "레벨",
+     "context": "착용 제한"
+    },
+    {
+     "value": "7",
+     "unit": "회",
+     "context": "업그레이드 가능 횟수"
+    },
+    {
+     "value": "90",
+     "unit": "매력",
+     "context": "장착 시 경험치"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/ac001f39f95cd238.jpg",
+   "crop_box": [
+    36,
+    284,
+    147,
+    344
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 729,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_32.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_173/123rlatjsxo_13350695466184Ntzn_PNG/MapleStory_2012-04-15_12-14-48-89.png",
+   "image_size": [
+    233,
+    321
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "상점 판매 목록. 깃털 펜 1메소, 고급 왁스 10,000메소, 카페라떼 한잔 10,000메소, 펫장비 지력 주문서 60% 10,000메소, 체력의 하운드 이어링 제작 레시피 10,000메소.",
+   "numbers": [
+    {
+     "value": "1",
+     "unit": "메소",
+     "context": "깃털 펜"
+    },
+    {
+     "value": "10000",
+     "unit": "메소",
+     "context": "판매가(4종)"
+    },
+    {
+     "value": "60",
+     "unit": "%",
+     "context": "주문서 성공률"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/96e7b27e7a98743c.jpg",
+   "crop_box": [
+    20,
+    88,
+    207,
+    316
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 739,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_41.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_250/123rlatjsxo_133506968564177REO_PNG/MapleStory_2012-04-15_12-17-28-04.png",
+   "image_size": [
+    229,
+    326
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "같은 상점의 다른 컷(체재구매 창). 잉크 1메소, 고급 왁스 10,000메소, 카페라떼 한잔 10,000메소, 펫장비 지력 주문서 60% 10,000메소, 체력의 하운드 이어링 제작 레시피 10,000메소.",
+   "numbers": [
+    {
+     "value": "10000",
+     "unit": "메소",
+     "context": "판매가"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/62c4773925c04e25.jpg",
+   "crop_box": [
+    15,
+    91,
+    203,
+    320
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 749,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_47.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_240/123rlatjsxo_13350696932823Qj3A_PNG/MapleStory_2012-04-15_12-48-18-79.png",
+   "image_size": [
+    522,
+    230
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "기록자 NPC 보상창. 본문 '정확한 이유는 말해줄 수 없소. 어째서인지는 신전관리인이 잘 알고 있을 것이오. 그렇게만 전해주면 된다오. 그럼, 이만.' 보상: 경험치 341600 + 10248(감성 추가 경험치) exp, 성향 통찰력 80.",
+   "numbers": [
+    {
+     "value": "341600",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "10248",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    },
+    {
+     "value": "80",
+     "unit": "통찰력",
+     "context": "성향 보상"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/943023e71fa608ad.jpg",
+   "crop_box": [
+    181,
+    123,
+    430,
+    164
+   ],
+   "note": "284와 같은 보상창의 다른 컷"
+  },
+  {
+   "rec_index": 762,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_59.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_163/123rlatjsxo_1335069710161bhUao_PNG/MapleStory_2012-04-15_12-49-44-68.png",
+   "image_size": [
+    521,
+    194
+   ],
+   "category_group": "npc_quest",
+   "category": "quest_reward",
+   "independent_reading": "기억을 잃은 신관 NPC 보상 대사 '헤헤, 제 이름이 궁금하세요? 알려드릴까요?'에 대한 보상: 경험치 1041000 + 31230(감성 추가 경험치) exp.",
+   "numbers": [
+    {
+     "value": "1041000",
+     "unit": "exp",
+     "context": "경험치"
+    },
+    {
+     "value": "31230",
+     "unit": "exp",
+     "context": "감성 추가 경험치"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/a8f1689132460db3.jpg",
+   "crop_box": [
+    31,
+    107,
+    233,
+    125
+   ],
+   "note": "OCR이 '기억을 있은 신관경험치'까지만 잡음 → 고배율 확대에서 1041000 + 31230 확인"
+  },
+  {
+   "rec_index": 765,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_65.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_252/123rlatjsxo_1335069720243us0gO_PNG/MapleStory_2012-04-15_12-55-22-17.png",
+   "image_size": [
+    332,
+    459
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "크로스헌터 코인 상점. 베테랑 크로스 벨트 50개, 베테랑 크로스 숄더 40개.",
+   "numbers": [
+    {
+     "value": "50",
+     "unit": "개",
+     "context": "벨트"
+    },
+    {
+     "value": "40",
+     "unit": "개",
+     "context": "숄더"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d949ecb918e26153.jpg",
+   "crop_box": [
+    52,
+    5,
+    248,
+    132
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 766,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_65.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_252/123rlatjsxo_1335069720243us0gO_PNG/MapleStory_2012-04-15_12-55-22-17.png",
+   "image_size": [
+    332,
+    459
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "같은 상점 하단. 숄더 강화 주문서 20%/60% 각15개, 펜던트 강화 주문서 20%/60% 각25개, 보유 코인 43개.",
+   "numbers": [
+    {
+     "value": "15",
+     "unit": "개",
+     "context": "숄더 강화 주문서"
+    },
+    {
+     "value": "25",
+     "unit": "개",
+     "context": "펜던트 강화 주문서"
+    },
+    {
+     "value": "43",
+     "unit": "개",
+     "context": "보유 코인"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/d949ecb918e26153.jpg",
+   "crop_box": [
+    11,
+    262,
+    318,
+    453
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 774,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_102.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_68/123rlatjsxo_1335072936763LodAd_PNG/MapleStory_2012-04-15_18-51-31-76.png",
+   "image_size": [
+    233,
+    329
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "상점 판매 목록. 잉크 1메소, 고급 왁스 10,000메소, 카페라떼 한잔 10,000메소, 펫장비 지력 주문서 60% 10,000메소, 체력의 하운드 이어링 제작 레시피 10,000메소, [마스터리북] 신비의 마스터리북 10,000메소.",
+   "numbers": [
+    {
+     "value": "10000",
+     "unit": "메소",
+     "context": "판매가"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/c36a3dc719e51de9.jpg",
+   "crop_box": [
+    18,
+    90,
+    213,
+    319
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 775,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_105.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_205/123rlatjsxo_1335072941836VgGYu_PNG/MapleStory_2012-04-15_18-55-34-21.png",
+   "image_size": [
+    523,
+    193
+   ],
+   "category_group": "npc_quest",
+   "category": "npc_notice",
+   "independent_reading": "메이플 우체통 NPC 안내문. '슈피겔만의 100% 발견 탐험보 [슈피겔만의 공동품 비밀문]'.",
+   "numbers": [
+    {
+     "value": "100",
+     "unit": "%",
+     "context": "슈피겔만 발견 탐험보"
+    }
+   ],
+   "verdict": "정정",
+   "evidence_image": "/workspace/work/imgs/f571eca8f863b931.jpg",
+   "crop_box": [
+    39,
+    98,
+    348,
+    131
+   ],
+   "note": "OCR '1 발격탈침봇' → '100% 발견 탐험보'"
+  },
+  {
+   "rec_index": 779,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_111.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_73/123rlatjsxo_1335072958218zhBOg_PNG/MapleStory_2012-04-15_18-57-18-04.png",
+   "image_size": [
+    334,
+    456
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "크로스헌터 코인 상점. 베테랑 크로스 벨트·숄더 목록과 보유 코인 표시.",
+   "numbers": [],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/9bcc9136698bc132.jpg",
+   "crop_box": [
+    25,
+    4,
+    250,
+    132
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 780,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_111.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_73/123rlatjsxo_1335072958218zhBOg_PNG/MapleStory_2012-04-15_18-57-18-04.png",
+   "image_size": [
+    334,
+    456
+   ],
+   "category_group": "game_ui",
+   "category": "shop",
+   "independent_reading": "같은 상점 하단. 숄더 강화 주문서 20%/60%, 펜던트 강화 주문서 20%/60%, 보유 코인 43개.",
+   "numbers": [
+    {
+     "value": "43",
+     "unit": "개",
+     "context": "보유 코인"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/9bcc9136698bc132.jpg",
+   "crop_box": [
+    12,
+    241,
+    319,
+    452
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 783,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_120.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_282/123rlatjsxo_1335072981399pOsPY_PNG/MapleStory_2012-04-15_19-10-32-62.png",
+   "image_size": [
+    369,
+    279
+   ],
+   "category_group": "player_info",
+   "category": "hud",
+   "independent_reading": "캐릭터 이름표·HUD 영역. NPC 본문 없음.",
+   "numbers": [],
+   "verdict": "해당 없음",
+   "evidence_image": "/workspace/work/imgs/b8684e3911fec5f2.jpg",
+   "crop_box": [
+    191,
+    173,
+    304,
+    229
+   ],
+   "note": ""
+  },
+  {
+   "rec_index": 789,
+   "quest_topic": "기억을 잃은 사제/라이카 스크린샷",
+   "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+   "source_image": "123rlatjsxo_30136669448_127.jpg",
+   "image_url": "https://postfiles.pstatic.net/20120422_110/123rlatjsxo_13350730065389COxa_PNG/MapleStory_2012-04-15_19-12-20-21.png",
+   "image_size": [
+    236,
+    374
+   ],
+   "category_group": "game_ui",
+   "category": "item_tooltip",
+   "independent_reading": "'2012 슈피겔만의 유물 발굴자' 칭호 툴팁. REQ LEV 10, STR·DEX·INT·LUK +2, 공격력·마력 +3, 물리·마법방어력 +100, 이동속도 +15, 점프력 +15.",
+   "numbers": [
+    {
+     "value": "10",
+     "unit": "레벨",
+     "context": "착용 제한"
+    },
+    {
+     "value": "2",
+     "unit": "스탯",
+     "context": "STR/DEX/INT/LUK"
+    },
+    {
+     "value": "100",
+     "unit": "방어력",
+     "context": "물리·마법방어력"
+    }
+   ],
+   "verdict": "확인",
+   "evidence_image": "/workspace/work/imgs/2282a3c2721b4387.jpg",
+   "crop_box": [
+    11,
+    158,
+    224,
+    222
+   ],
+   "note": ""
+  }
+ ]
+}
