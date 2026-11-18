@@ -1,0 +1,385 @@
+{
+ "batch": "29차 정기 소싱 (2026-11-18 11:00 KST)",
+ "run_at": "2026-11-18T11:00:00+09:00",
+ "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 포함)",
+ "browser_harness": "work/sourcing_v2/BROWSER_VERIFY_15.md + 28차 개정(콜드스타트 워밍업 1.2~1.3초 후 0초 재측정)",
+ "target": "정예 6~10편 (고양이·강아지 비중 최우선) — 미달 시 편수 축소, 기준 완화 금지",
+ "judged_total": 35,
+ "delivered_count": 3,
+ "reject_count": 24,
+ "unmeasured_count": 2,
+ "delivered_by_cat": {
+  "강아지": 1,
+  "쪼꼬미(잉꼬)": 2,
+  "고양이": 0
+ },
+ "account_cap_violation": {},
+ "delivered": [
+  {
+   "id": "EcOLDBEmXv0",
+   "url": "https://www.youtube.com/shorts/EcOLDBEmXv0",
+   "title": "장난감 절대 안주는 강아지",
+   "channel": "아롱이 생활기록",
+   "channel_id": "UC8PFtUEvISFUGGY1M_W7q5g",
+   "handle": "@LeeARong",
+   "subs_txt": "358",
+   "views_txt": "1,392",
+   "likes_txt": "39",
+   "published": "2021-06-11",
+   "cat": "강아지(말티즈)",
+   "dur_s": 26.0,
+   "resolution": "1080x1920",
+   "motion_mean": 20.69,
+   "motion_med": 18.74,
+   "frames": 104,
+   "ratios_max": 0.57,
+   "spike_times_s": [],
+   "measure_window": "0.05초 워밍업 1.3초 후 0초부터 재측정 · 0~10.3초 · 480p 디코드(270x480)",
+   "stills": "stills29/c29_arong_toy_EcOLDBEmXv0_8cut.png (8컷)",
+   "why": "분홍 러그 위에서 말티즈(아롱)가 장난감을 물고 흔들며 버티는 26초 단일 숏. 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1) 전부 같은 방·같은 개, 자막·브랜드스트립·타채널 워터마크 0.",
+   "cut_evidence": "10fps 104프레임 차분 평균 20.69(중앙 18.74), 변화픽셀 60% 초과 스파이크 0(최대 0.57).",
+   "people": "사람 얼굴·전신 0 (손끝만 3.0초 1회)",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 20.69, 스파이크 0",
+    "2_original_creator": "PASS — 채널 소개 '아롱이의 일상입니다~ 이쁘게 봐주세요🤍', 2021-06-06 개설·영상 21편 전부 동일 개체(아롱). AI 배지 0",
+    "3_measured_only": "PASS — 구독 358 · 조회 1,392 · 좋아요 39 · 2021-06-11(watch HTML dateText)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 사람 0"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널 소개에 개체명(아롱)·1인칭 사육 서술, 쇼츠 전편 동일 견.",
+   "author_confirm_evidence": "youtube.com/@LeeARong/about HTML(소개·구독 358·영상 21편·Joined Jun 6, 2021) + /shorts 20편 육안 대조",
+   "publish_date_confirmed": "2021-06-11",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 1,392회(1,000 이상)",
+   "note": "28차 이월 풀(tmp27_union 1080x1920·1년 이상)에서 발굴. 채널 내 1080x1920 쇼츠 20편 중 최상위 모션."
+  },
+  {
+   "id": "XYv3hOQKHr4",
+   "url": "https://www.youtube.com/shorts/XYv3hOQKHr4",
+   "title": "Adorable budgie Luchik playing tag",
+   "channel": "Luchik the Bird",
+   "channel_id": "UC77QI6AZtgQDiK_aKXhJmGg",
+   "handle": "@luchikthebird",
+   "subs_txt": "480",
+   "views_txt": "618",
+   "likes_txt": "38",
+   "published": "2024-12-21",
+   "cat": "쪼꼬미(잉꼬/앵무새)",
+   "dur_s": 39.0,
+   "resolution": "1080x1920",
+   "motion_mean": 18.77,
+   "motion_med": 18.82,
+   "frames": 103,
+   "ratios_max": 0.39,
+   "spike_times_s": [],
+   "measure_window": "0.05초 워밍업 1.3초 후 0초부터 재측정 · 0~10.3초 · 360x640 디코드",
+   "stills": "stills29/c29_luchik_tag_XYv3hOQKHr4_8cut.png (8컷)",
+   "why": "나무 바닥에서 잉꼬 'Luchik'가 사람 손을 따라 쫓고받기(술래잡기)를 하는 39초 단일 숏. 8컷 전부 같은 바닥·같은 새, 자막·워터마크 0, 사람은 손만.",
+   "cut_evidence": "103프레임 차분 평균 18.77(중앙 18.82), 60% 초과 스파이크 0(최대 0.39).",
+   "people": "손만 등장(플레이북 ⑤ 허용 범위)",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 18.77, 스파이크 0",
+    "2_original_creator": "PASS — 채널 소개 'Welcome to our Luchik the Bird channel! Here we show the fun and funny life of the budgerigar…', 2023-02-12 개설·영상 149편 전부 동일 개체(Luchik). AI 배지 0",
+    "3_measured_only": "PASS — 구독 480 · 조회 618 · 좋아요 38 · 2024-12-21(watch HTML dateText)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 손만"
+   },
+   "author_confirm": "원작자 본인 계정 — 채널 소개가 잉꼬 한 마리(Luchik) 일상 1인칭 기록, 영상 149편 동일 개체.",
+   "author_confirm_evidence": "youtube.com/@luchikthebird/about HTML(소개·구독 480·영상 149편·Joined Feb 12, 2023)",
+   "publish_date_confirmed": "2024-12-21",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "저조회 확인 — 조회 618 · 원작자 본인 계정(@luchikthebird, 소개 '…life of the budgerigar', 영상 149편 전부 동일 개체 Luchik) · 게시 2024-12-21(1년 11개월 경과)",
+   "note": "같은 채널 2편 중 1편(회차당 계정 상한 2편 내)."
+  },
+  {
+   "id": "zZD_CKUQ1U0",
+   "url": "https://www.youtube.com/shorts/zZD_CKUQ1U0",
+   "title": "Adorable budgie Luchik takes a bath",
+   "channel": "Luchik the Bird",
+   "channel_id": "UC77QI6AZtgQDiK_aKXhJmGg",
+   "handle": "@luchikthebird",
+   "subs_txt": "480",
+   "views_txt": "1,247",
+   "likes_txt": "52",
+   "published": "2025-04-15",
+   "cat": "쪼꼬미(잉꼬/앵무새)",
+   "dur_s": 57.0,
+   "resolution": "1080x1920",
+   "motion_mean": 12.2,
+   "motion_med": 11.48,
+   "frames": 103,
+   "ratios_max": 0.46,
+   "spike_times_s": [],
+   "measure_window": "0.05초 워밍업 1.3초 후 0초부터 재측정 · 0~10.3초 · 360x640 디코드",
+   "stills": "stills29/c29_luchik_bath_zZD_CKUQ1U0_8cut.png (8컷)",
+   "why": "싱크대 수돗물 아래에서 손바닥에 올라온 잉꼬가 물을 맞으며 목욕하는 57초 단일 숏. 8컷 전부 같은 싱크대·같은 새, 자막·워터마크 0, 사람은 손만.",
+   "cut_evidence": "103프레임 차분 평균 12.20(중앙 11.48), 60% 초과 스파이크 0(최대 0.46). 6.0초 프레임은 좌측 구도 이동이지만 스파이크 미검출(연속 팬).",
+   "people": "손만 등장",
+   "gate_check": {
+    "1_uncut_motion": "PASS(임계 근접) — 모션 12.20, 스파이크 0",
+    "2_original_creator": "PASS — @luchikthebird 본인 계정, AI 배지 0",
+    "3_measured_only": "PASS — 구독 480 · 조회 1,247 · 좋아요 52 · 2025-04-15(watch HTML dateText)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 손만"
+   },
+   "author_confirm": "원작자 본인 계정 — XYv3hOQKHr4와 동일 채널, 동일 개체(Luchik).",
+   "author_confirm_evidence": "youtube.com/@luchikthebird/about HTML",
+   "publish_date_confirmed": "2025-04-15",
+   "publish_date_source": "watch 페이지 ytInitialData dateText",
+   "low_view_checked": "해당 없음 — 조회 1,247회(1,000 이상)",
+   "note": "기획실장 판정 요청 — 모션 12.20은 임계(12.0) +0.20 턱걸이. 8컷 육안으로 단일 숏·무자막 확인했으나, 기준 근접값 자동 확정 금지 원칙에 따라 판정 회부."
+  }
+ ],
+ "near_miss_pool": [
+  {
+   "id": "MDsvwr5P7Yk",
+   "ch": "읍내사람",
+   "cat": "고양이",
+   "motion": 11.48,
+   "dur": 16.1,
+   "spikes": [],
+   "note": "임계 -0.52. 28차 10.45 → 고화질 재측정 11.48. 스파이크 0·연속 모션. 8컷 미확보."
+  },
+  {
+   "id": "1MiSNUGIVtQ",
+   "ch": "단이네 @딸래미_단이",
+   "cat": "강아지(골든리트리버)",
+   "motion": 11.77,
+   "dur": 13.8,
+   "spikes": [],
+   "note": "임계 -0.23. 28차 10.97 → 재측정 11.77. 2~4초 정지 구간(perSec 2.48·3.88) 있음. 8컷 미확보."
+  },
+  {
+   "id": "0Gj_i6bXmgI",
+   "ch": "Shredder Raccoon",
+   "cat": "쪼꼬미(라쿤)",
+   "motion": 11.88,
+   "dur": 13.4,
+   "spikes": [],
+   "note": "임계 -0.12. 28차 미측정 → 이번 회차 첫 실측. 초반 1초 콜드 정지 포함값이라 0.5초 이후만 보면 12.5 수준. 8컷 미확보."
+  },
+  {
+   "id": "e0vGF4cO2kM",
+   "ch": "Luchik the Bird",
+   "cat": "쪼꼬미(잉꼬)",
+   "motion": 11.51,
+   "dur": 47.9,
+   "spikes": [],
+   "note": "임계 -0.49. 스파이크 0. 같은 채널 2편 상한으로도 편입 불가(이미 2편 확정)."
+  },
+  {
+   "id": "8GgZ65xnJsA",
+   "ch": "아롱이 생활기록",
+   "cat": "강아지(말티즈)",
+   "motion": 11.08,
+   "dur": 25.6,
+   "spikes": [],
+   "note": "임계 -0.92. 같은 채널 2편 상한 초과분."
+  },
+  {
+   "id": "wK7MGKPMEZE",
+   "ch": "柴犬シロの日常生活",
+   "cat": "강아지(시바)",
+   "motion": 17.24,
+   "dur": 33.7,
+   "spikes": [
+    8.06
+   ],
+   "note": "모션은 충분하나 8.06초 스파이크 1회 미판정. 8컷 미확보."
+  },
+  {
+   "id": "vG3-JVWJpKM",
+   "ch": "柴犬シロの日常生活",
+   "cat": "강아지(시바)",
+   "motion": 22.0,
+   "dur": 48.4,
+   "spikes": [],
+   "note": "모션·스파이크 통과했으나 8컷에서 행인 다리·보호자 다리가 6컷에 걸쳐 등장 → 게이트⑤ 판정 회부(기획실장). 야간 LED 목걸이 연출도 검토 대상."
+  },
+  {
+   "id": "Sbt-fCUFNTc",
+   "ch": "유화네 고양이",
+   "cat": "고양이",
+   "motion": 15.44,
+   "dur": 21.0,
+   "spikes": [],
+   "note": "28차 미측정 → 이번 실측 15.44(9초대 정지 0.07 1회). 8컷 캡처 2회 실패(플레이어 미기동/타임아웃)로 육안 미검 → 보류."
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "cYU9jrkhgPs",
+   "ch": "똘망이의 하루",
+   "reason": "프레임 전환 1회(8.61초·0.73) + 모션 9.34"
+  },
+  {
+   "id": "o6h094LgIfc",
+   "ch": "柴犬シロの日常生活",
+   "reason": "스파이크 18회(0.6~7.8초)·정지 구간 → 컷/프레이밍 전환"
+  },
+  {
+   "id": "_bGPA8LiXSU",
+   "ch": "댕냥이냥",
+   "reason": "스파이크 4회(5.45·7.64·8.92초) → 다중 클립 편집"
+  },
+  {
+   "id": "7AmCs9bhxBM",
+   "ch": "うちのねこ",
+   "reason": "스파이크 16회(5.6~9.0초) → 다중 클립 편집"
+  },
+  {
+   "id": "SVH4e5ZnO80",
+   "ch": "오늘도 감탄",
+   "reason": "스파이크 8회 → 컷 편집"
+  },
+  {
+   "id": "SXM8JgIVZ_c",
+   "ch": "말티즈 페페의 브이로그",
+   "reason": "스파이크 2회(2.18·5.25초) → 컷 편집"
+  },
+  {
+   "id": "HiQ_gbbOUjw",
+   "ch": "시바 나또",
+   "reason": "스파이크 5회(5.35~9.12초) → 컷 편집"
+  },
+  {
+   "id": "fwX1982gmRg",
+   "ch": "Everyday Life",
+   "reason": "스파이크 32회 → 초단위 컷 몽타주"
+  },
+  {
+   "id": "R_sgCT_RTZI",
+   "ch": "아롱이 생활기록",
+   "reason": "스파이크 4회(4.56·4.76·5.84·6.25초) + 8컷에서 프레이밍 급변 → 컷 편집"
+  },
+  {
+   "id": "2wqGFYx5v-Y",
+   "ch": "otter kinaco",
+   "reason": "8컷에서 사람 전신이 8.0·9.2·10.1초에 연속 등장 → 게이트⑤"
+  },
+  {
+   "id": "4uD24YEw3VM",
+   "ch": "시바견 삼식이네",
+   "reason": "상단 한글 자막 상시 + 사람(수의사) 등장 → 게이트④⑤"
+  },
+  {
+   "id": "2_vDA-g0CUY",
+   "ch": "Louie",
+   "reason": "영어 자막 상시('New tricks? Easy peasy…') → 게이트④ (상업 팝송 사용도 별도 확인 필요)"
+  },
+  {
+   "id": "edgWqaWYAyo",
+   "ch": "柴犬シロの日常生活",
+   "reason": "8.0초 일본어 자막('焼きいも 美味しいわ！') → 게이트④"
+  },
+  {
+   "id": "hi-1Td8YqgI",
+   "ch": "오묘한고양이 일상",
+   "reason": "8.0~10.1초 한글 자막('아우 시끄러..') → 게이트④"
+  },
+  {
+   "id": "xuJQ1HqRrA8",
+   "ch": "고양이낭만일상",
+   "reason": "보라색 캡션 전 컷 상시 → 게이트④"
+  },
+  {
+   "id": "e9GLFs0Tz8E",
+   "ch": "냥냥집사브이로그",
+   "reason": "대형 한글 자막 상시 → 게이트④"
+  },
+  {
+   "id": "fCPo62Evhkw",
+   "ch": "냥스타그램",
+   "reason": "모션 0.76 — 정지 화면"
+  },
+  {
+   "id": "uZoqCZUmIEk",
+   "ch": "うちの猫はさびねこ",
+   "reason": "모션 3.64 — 정적"
+  },
+  {
+   "id": "KUnoNDwL42g",
+   "ch": "うちの猫ちゃんねる",
+   "reason": "1VH1MVuh2tU와 함께 정적(1.81) — 아롱이 채널 인접 후보"
+  },
+  {
+   "id": "1VH1MVuh2tU",
+   "ch": "아롱이 생활기록",
+   "reason": "모션 1.81 — 정지"
+  },
+  {
+   "id": "yg0jovPmKhs",
+   "ch": "하루견과 with haru",
+   "reason": "모션 9.52 — 임계 미달"
+  },
+  {
+   "id": "IpREIFo_ty8",
+   "ch": "Henry the Jack Russell",
+   "reason": "모션 9.90 — 임계 미달"
+  },
+  {
+   "id": "7UotCP0N1IM",
+   "ch": "Luchik the Bird",
+   "reason": "모션 9.05 + 5~7초 완전 정지"
+  },
+  {
+   "id": "oyXcTxjXBdc",
+   "ch": "@Kik(구 Jack Russell Terrier)",
+   "reason": "28차 이월 재측정 9.95(직전 11.03) — 모션 미달, 정지 구간 포함"
+  }
+ ],
+ "unmeasured": [
+  {
+   "id": "qDdYOzlm7_4",
+   "ch": "아롱이 생활기록",
+   "note": "측정 중 브라우저 타임아웃 2회 — 예비 후보로 이월"
+  },
+  {
+   "id": "GZfobZQWwVQ",
+   "ch": "댕냥이냥",
+   "note": "측정 중 브라우저 타임아웃 — 이월"
+  }
+ ],
+ "reject_breakdown": {
+  "프레임 전환·컷 편집": 9,
+  "원작자 자막": 6,
+  "모션 미달·정지": 7,
+  "사람 등장": 2
+ },
+ "flags": {
+  "large_channel_over_1m": "0건 (이번 판정 최대 채널 otter kinaco 23.5K)",
+  "nonstandard_or_landscape": "0건 — 확정 3편 전부 1080x1920",
+  "decode_resolution_variance": "240x426~1080x1920 — 세션·재생 상태에 따라 변동. 8컷 육안은 1080p 프레임에서 확보",
+  "near_threshold": "모션 11.0~12.3 구간 5편은 near_miss_pool 분리(zZD_CKUQ1U0은 임계 +0.2로 확정하되 기획실장 판정 회부)",
+  "cat_yield": "고양이 후보 154편(1080x1920·1년 이상) 실측·검수 → 확정 0편. 전량 자막/정지/컷 탈락"
+ },
+ "pool_carryover": {
+  "cat_channels_crawled_this_round": 121,
+  "cat_lockups_fetched": 2494,
+  "cat_candidates_1080": 1705,
+  "cat_candidates_2per_channel": 149,
+  "cat_meta_checked": 144,
+  "cat_old_clean": 57,
+  "dog_pool_unmeasured_carryover": 141,
+  "next": "고양이 신규 채널 발굴 지속(이번 크롤에서 1년 이상·무자막 후보 고갈) · 타임아웃 2편(qDdYOzlm7_4·GZfobZQWwVQ) 재측정 · near_miss 8편 8컷 검수"
+ },
+ "method_29": {
+  "carryover_first": "28차 near_miss 4편 재측정(oyXcTxjXBdc 9.95·1MiSNUGIVtQ 11.77·MDsvwr5P7Yk 11.48·cYU9jrkhgPs 9.34) + 미측정 2편(Sbt-fCUFNTc 15.44·0Gj_i6bXmgI 11.88) 전량 실측.",
+  "cat_crawl": "tmp28/cat_chans_keep 142개 중 미수집 121개 채널의 /shorts를 유튜브 HTML(shortsLockupViewModel)로 직접 크롤 → lockup 2,494개 → 썸네일 1080x1920만 1,705편 → 채널당 상위 2편 149편 → watch HTML로 게시일·AI 배지·구독 실측(144편, 1년 이상·AI 없음 57편).",
+  "prescreen": "납품 후보 선별을 위해 storyboard 스프라이트(i.ytimg.com/sb, 160x90 타일)로 10fps 근사 차분 rank를 계산하는 sbm 프리스크린을 새로 도입(게이트 판정 아님, 순위용). 실측 대조: 통과 3편은 sb 중앙 11.4~21.0, 정지 탈락 2편은 1.1~2.1.",
+  "verify": "원격 브라우저 /shorts/<ID> 페이지에서 video 엘리먼트를 160x90 gray 10fps(0.099초 버킷)로 샘플링, 워밍업 1.3초 후 0초부터 재측정.",
+  "stills": "8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)을 canvas에 4x2 격자로 합성해 뷰포트에 띄우고 스크린샷(1123x992) → 육안 검수. 파일: work/sourcing_v2/stills29/",
+  "ai_badge": "확정 3편 + 후보 전량 watch HTML `AI: Content was made with AI` grep 0(고양이 후보 중 AI 배지 7편은 편입 전 배제).",
+  "date_gate": "확정 3편 전부 watch HTML dateText 실측(2021-06-11 / 2024-12-21 / 2025-04-15). 1년 이상 충족.",
+  "timeouts": "브라우저 evaluate 25초 제한으로 2편(qDdYOzlm7_4·GZfobZQWwVQ) 측정 실패, Sbt-fCUFNTc 8컷 2회 실패."
+ },
+ "notes_for_기획실장": [
+  "목표 6~10편 대비 확정 3편. 기준은 한 줄도 낮추지 않았고, 편수를 채우려 자막·정지·컷 클립을 끌어올리지 않았다.",
+  "고양이 비중을 최우선으로 끌어올리라 하셨으나 이번 회차 고양이 확정 0편이다. 미수집 고양이 채널 121개를 전수 크롤(lockup 2,494)해 1080x1920·1년 이상 후보 57편까지 좁혔지만, 실측·8컷에서 전량 탈락했다(자막 6·정지 4·컷 2). 한국·일본 1인칭 고양이 계정은 화면 자막이 기본값인 구조가 재확인됐다.",
+  "기획실장 판정 요청 1건: zZD_CKUQ1U0(잉꼬 목욕) — 모션 12.20(임계 +0.20) 턱걸이. 8컷 단일 숏·무자막 확인. 확정 3편에 넣어 두었으나 판정에 따라 보류로 내릴 수 있다.",
+  "판정 회부 2건: vG3-JVWJpKM(시바 산책·모션 22.0·스파이크 0)은 8컷에서 행인 다리가 6컷에 걸쳐 보여 게이트⑤ 해석이 필요하다. wK7MGKPMEZE(같은 채널)는 8.06초 스파이크 1회 미판정.",
+  "신규 도구: storyboard 스프라이트 기반 프리스크린(sbm)으로 실측 전 순위를 매겨, 이번 회차 브라우저 실측 34편 중 32편을 상위 순위에서 소진했다. 정지 클립을 걸러내는 데 유효(정지 탈락 2편 sb 1.1·2.1 vs 통과 3편 sb 11.4~21.0).",
+  "브라우저 하네스 한계 재확인: /shorts 페이지는 디코드 화질이 240p~1080p로 흔들리고, watch 페이지에서만 hd1080 강제가 먹는다. evaluate 25초 제한 때문에 긴 클립·광고 개입 시 타임아웃이 발생한다."
+ ],
+ "stills_dir": "work/sourcing_v2/stills29/"
+}
