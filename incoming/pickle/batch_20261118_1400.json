@@ -4,10 +4,10 @@
  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 포함)",
  "browser_harness": "watch 페이지 hd1080 강제 + 160x90 gray 10fps(0.1초 버킷) · 워밍업 1.3초 후 0초 재측정 · 8컷 4x2 격자 캔버스 스크린샷",
  "target": "정예 6~10편 (영어권 무자막 고양이 최우선 + 강아지 보강) — 미달 시 편수 축소, 기준 완화 금지",
- "judged_total": 41,
+ "judged_total": 42,
  "delivered_count": 5,
  "reject_count": 32,
- "near_miss_count": 8,
+ "near_miss_count": 9,
  "delivered_by_cat": {
   "고양이": 5,
   "강아지": 0,
@@ -209,6 +209,14 @@
    "motion": 12.01,
    "dur": 22.2,
    "note": "임계 +0.01. 65프레임, 스파이크 0이나 min 0(정지 구간 1회). 8컷 미촬영 — 판정 회부."
+  },
+  {
+   "id": "wro7N0WJGXc",
+   "ch": "ASMR Cats",
+   "cat": "고양이",
+   "motion": 13.97,
+   "dur": 62.1,
+   "note": "측정 불안정 — 2회 모두 프레임 수 34/12(버퍼링). 평균 13.97·min 0, 스파이크 0. 재측정 필요."
   },
   {
    "id": "JJ2hDxqJXwY",
