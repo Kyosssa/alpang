@@ -4,23 +4,23 @@
  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 확정 규칙 포함)",
  "harness": "work/sourcing_v2/BROWSER_VERIFY_15.md 계열 + 34차 프리스크린: 31차 429 실패 780편 전수 게시일 실측(watch HTML videoPrimaryInfoRenderer.dateText) → 오래된 순 정렬 → i.ytimg oar1~3 썸네일 해상도·차분 → RapidOCR 3프레임 → /shorts/<ID> 에서 ytInitialPlayerResponse 원본 해상도·길이·AI배지 + 10fps 160x90 gray 차분(모션·스파이크) → 8컷 캔버스 그리드 육안 + 스파이크 구간 밀집 스틸",
  "target": "정예 6~10편 (기준 미달 시 편수 축소, 절대 기준 완화 금지)",
- "judged_total": 33,
- "delivered_count": 4,
+ "judged_total": 36,
+ "delivered_count": 5,
  "delivered_by_cat": {
   "고양이": 1,
-  "강아지": 3
+  "강아지": 4
  },
  "near_miss_count": 3,
- "reject_count": 26,
+ "reject_count": 28,
  "reject_breakdown": {
-  "게이트① 모션 12.0 미달·정지": 10,
+  "게이트① 모션 12.0 미달·정지": 11,
   "게이트① 10초 미만": 4,
-  "게이트① 컷·스파이크": 6,
+  "게이트① 컷·스파이크": 7,
   "게이트① 프레이밍 전환·다견 혼재": 2,
   "게이트⑤ 사람(얼굴·다리) 등장": 3,
   "접근불가(404)": 1
  },
- "account_cap_violation": "없음 — 확정 4편의 계정이 모두 다름(CallaLily Cavapoo / JBLittleMaltese / Shadow Moon and Sigyn / FOFRescueCenter). 동일 계정 2편 초과 0",
+ "account_cap_violation": "없음 — CallaLily Cavapoo 2편(회차 상한 2편 이내), 나머지는 각 1편",
  "screening_stats": {
   "31차_429실패풀": "780편 전수 게시일 실측 성공 667편 · 실패 58편(접근불가) · 날짜 미검출 55편",
   "1년_이상": "282편 (게시일 2014-09-10 ~ 2025-11-18) · 1년 미만 385편",
@@ -28,7 +28,8 @@
   "1년이상_1080세로": "111편 → RapidOCR 3프레임 텍스트 0건 46편",
   "브라우저_실측": "강아지 24편 + 고양이 3편 = 27편(34차) · 33차 보류 1편 재측정",
   "채널_실측": "확정·후보 31개 채널 /channel/<chid>/shorts HTML 직접 파싱(소개·쇼츠 수)",
-  "AI배지": "판정 전편 watch HTML 'AI: Content was made with AI' 0건 — AI 표기 영상 0"
+  "AI배지": "판정 전편 watch HTML 'AI: Content was made with AI' 0건 — AI 표기 영상 0",
+  "잔여소진": "1년 이상·1080 세로·OCR 무자막 46편 중 34편 실측 완료 — 남은 12편은 케널·집계 채널(Sarthak Dog vlog·Unedited Pet Videos·RAW UNCUT)이라 게이트② 사전 배제"
  },
  "flags": {
   "large_channel_over_1m": "0건",
@@ -63,6 +64,24 @@
    "subs_txt": "61 subscribers",
    "handle": "@CallaLilyCavapoo",
    "ai_badge": false
+  },
+  {
+   "id": "nKjrKza-R4k",
+   "url": "https://www.youtube.com/shorts/nKjrKza-R4k",
+   "title": "March 29, 2025",
+   "channel": "CallaLily Cavapoo",
+   "cat": "강아지(캐버푸 새끼 4~5마리)",
+   "dur_s": 18,
+   "resolution": "1080x1920",
+   "decode": "1080x1920",
+   "motion_mean": 29.26,
+   "motion_med": 31.54,
+   "motion_min": 3.56,
+   "spikes": [],
+   "stills": "stills34/nKjrKza-R4k_cuts8.png",
+   "gate": "①18초 무컷·모션 29.26·스파이크 0 / ②@CallaLilyCavapoo 본인 브리더 계정(회차 2편 — 상한 내) / ③실측 / ④무자막 / ⑤사람 0",
+   "low_view_checked": "저조회 확인 — 조회 789 · 원작자 본인 계정(@CallaLilyCavapoo, 'Exclusive Cavapoo Love for over 20 years') · 게시 2025-03-29(1년 7개월 경과)",
+   "note": "잔디밭에서 캐버푸 새끼 4~5마리가 서로 기대 눕고 기어가는 18초 무컷. 햇빛 아래 털 결이 살아 있고, 0.3~10.1초 전 구간 강아지가 프레임을 채운다. 8컷 그리드·OCR 교과 텍스트 0건."
   },
   {
    "id": "T4_pnDaUFk0",
@@ -334,11 +353,22 @@
    "id": "3xkFF8R8Eas",
    "gate": "게이트①",
    "reason": "스파이크 8회·중앙모션 0.81 — 정지 프레임 몽타주"
+  },
+  {
+   "id": "0cxh6iRJsjk",
+   "gate": "게이트①",
+   "reason": "모션 11.49(중앙 8.3) — 12.0 미달"
+  },
+  {
+   "id": "KQxIjczeieA",
+   "gate": "게이트①",
+   "reason": "하드컷 6회(1.32·1.42·3.27·3.78·6.34·7.94초, 0.67~0.82) + 원본음 상업 팝 'Anxiety · Doechii'"
   }
  ],
  "notes_for_기획실장": [
   "34차 최우선 지시였던 '31차 429 실패 780편 오래된 순 소화'를 완료했다 — 780편 전수 게시일을 watch HTML dateText로 실측해 282편이 1년 이상임을 확정했다(33차 인계의 '최신순 크롤 편중' 진단이 맞았다: 780편 중 385편이 1년 미만).",
   "33차 보류 T4_pnDaUFk0(말티즈 Josie)은 34차 밀집 스틸 재검에서 '주인공 소실'이 8컷 축소본 오판으로 확인돼 확정으로 정리했다. 교훈: 축소 그리드(타일 275px)에서는 흰 소형견이 컬러 러그 위에서 사라져 보인다 — 주인공 유무 판정은 타일 475px 이상 + 0.5초 간격 밀집 스틸로 해야 한다.",
+  "CallaLily Cavapoo에서 2편 확정됐다(2016년 원본 YkwJRN7KeEQ + 2025년 리터 nKjrKza-R4k). 같은 브리더가 10년간 같은 개체 라인을 올린 채널이라 결이 일관된다 — 회차 상한 2편을 정확히 채웠고 다음 회차에는 이 채널을 다시 쓰지 않는 편이 좋다.",
   "확정 4편 중 3편이 조회 1만 미만 소형 채널(33~2천 구독)이다. 게이트③ 우선 대역은 1K~499K지만, 대형 채널 클립은 대부분 컴필레이션·자막·사람 등장으로 게이트 ②④⑤에서 탈락해 실질 후보가 소형 원작자 채널에 몰린다.",
   "고양이는 31차 인계 OCR 무자막 25편 중 미실측 16편을 전수 날짜 실측했으나 12편이 2026년 게시(1년 미만)·집계 채널(Funnycats·Dodo Kids 등)이어서 실측 가능한 원작자 후보가 3편뿐이었다. 그중 2a1C7J8CSiU 1편 확정.",
   "노션 마스터보드는 이번에도 건드리지 않았다."
