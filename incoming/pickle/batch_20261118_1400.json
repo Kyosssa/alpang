@@ -4,12 +4,12 @@
  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 포함)",
  "browser_harness": "watch 페이지 hd1080 강제 + 160x90 gray 10fps(0.1초 버킷) · 워밍업 1.3초 후 0초 재측정 · 8컷 4x2 격자 캔버스 스크린샷",
  "target": "정예 6~10편 (영어권 무자막 고양이 최우선 + 강아지 보강) — 미달 시 편수 축소, 기준 완화 금지",
- "judged_total": 40,
- "delivered_count": 4,
+ "judged_total": 41,
+ "delivered_count": 5,
  "reject_count": 32,
  "near_miss_count": 8,
  "delivered_by_cat": {
-  "고양이": 4,
+  "고양이": 5,
   "강아지": 0,
   "쪼꼬미": 0
  },
@@ -162,6 +162,43 @@
    "publish_date_source": "watch 페이지 dateText",
    "low_view_checked": "저조회 확인 — 조회 336 · 원작자 본인 계정(Crazy Catish, 쇼츠 16편 동일 키튼 2마리) · 게시 2021-07-26(5년 3개월 경과)",
    "note": "같은 채널 2편 중 2편. **모션 임계 근접(+0.11)** — 29차 zZD_CKUQ1U0(12.20) 선례와 같이 확정하되 기획실장 판정 회부."
+  },
+  {
+   "id": "zx6DF2rnW0c",
+   "url": "https://www.youtube.com/shorts/zx6DF2rnW0c",
+   "title": "Cat ADDICTED to her first Puppuccino?!",
+   "channel": "Rue the Sphynx",
+   "channel_id": "UCHpKiSEm2aTfo1QMjUBDupQ",
+   "subs_txt": "2.4K",
+   "views_txt": "1,021",
+   "likes_txt": "34",
+   "published": "2022-12-03",
+   "cat": "고양이(스핑크스)",
+   "dur_s": 59.2,
+   "resolution": "1080x1920",
+   "motion_mean": 20.76,
+   "motion_med": 19.47,
+   "frames": 87,
+   "ratios_max": null,
+   "spike_times_s": [],
+   "measure_window": "watch 페이지 · hd1080 강제 · 워밍업 1.8초 후 0초 재측정 · 0~10.3초 (87프레임)",
+   "stills": "stills30/c30_ruesphynx_zx6DF2rnW0c_8cut.png (8컷)",
+   "why": "야외 마당에서 스핑크스가 손에 든 푸퍼치노 컵에 얼굴을 박고 핥아먹는 59초 단일 숏. 카메라가 같은 구도에서 따라가고 8컷 전부 같은 고양이·같은 손.",
+   "cut_evidence": "87프레임 차분 평균 20.76(중앙 19.47), 60% 초과 스파이크 0건.",
+   "people": "손만 등장 — 게이트⑤ 허용 범위",
+   "gate_check": {
+    "1_uncut_motion": "PASS — 모션 20.76, 스파이크 0",
+    "2_original_creator": "PASS — 1인칭 반려 기록 계정(@Rue the Sphynx, 2.4K). AI 배지 0",
+    "3_measured_only": "PASS — 구독 2.4K · 조회 1,021 · 좋아요 34 · 2022-12-03(watch HTML dateText)",
+    "4_no_subs": "PASS — 8컷 전부 자막·스트립 0",
+    "5_no_people": "PASS — 손만"
+   },
+   "author_confirm": "원작자 본인 계정 — 개체명(Rue) 1인칭 사육 기록, 쇼츠 전편 동일 스핑크스.",
+   "author_confirm_evidence": "youtube.com/@RuetheSphynx /shorts 목록 + 채널 소개",
+   "publish_date_confirmed": "2022-12-03",
+   "publish_date_source": "watch 페이지 ytInitialData videoPrimaryInfoRenderer.dateText",
+   "low_view_checked": "해당 없음 — 조회 1,021회(1,000 이상)",
+   "note": "30차 고양이 확정 5호. 신규 발굴 채널(chsearch 영어 질의 → 385채널 /shorts 크롤) 후보."
   }
  ],
  "near_miss_pool": [
@@ -407,11 +444,11 @@
   }
  ],
  "flags": {
-  "large_channel_over_500k": "0건 — 확정 4편 최대 구독 37.7K(Royal Sphynx)",
-  "resolution": "확정 4편 중 Y6QxhVg4X_Y 1편이 원본 608x1080(가용 hd720). 나머지 3편 1080x1920",
+  "large_channel_over_500k": "0건 — 확정 5편 최대 구독 37.7K(Royal Sphynx)",
+  "resolution": "확정 5편 중 Y6QxhVg4X_Y 1편이 원본 608x1080(가용 hd720). 나머지 4편 1080x1920",
   "near_threshold": "f0GaauW-WwI 12.11(임계 +0.11) 확정하되 회부 · near_miss 4편이 11.7~12.0 구간",
   "human_in_frame": "Y6QxhVg4X_Y는 보호자 니트 몸통이 하단에 걸림(얼굴·전신 아님) — 게이트⑤ 해석 회부",
-  "cat_yield": "이번 회차 고양이 후보 실측 20편 → 확정 4편. 영어권 고양이는 컷 편집·자막이 여전히 다수"
+  "cat_yield": "이번 회차 고양이 후보 실측 21편 → 확정 5편. 영어권 고양이는 컷 편집·자막이 여전히 다수"
  },
  "pool_carryover": {
   "cat_channels_crawled": 385,
@@ -431,7 +468,7 @@
   "resolution_check": "브라우저 getAvailableQualityLevels() + videoHeight로 원본 최대 화질 확인. 썸네일 1080x1920은 원본 해상도를 보증하지 않음(360x640 원본 다수 확인).",
   "verify": "watch 페이지에서 loadVideoById → hd1080 강제 → 워밍업 후 0초 재측정 10fps 차분. 버퍼링으로 프레임 수(n)가 60 미만인 측정은 재측정.",
   "stills": "8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)을 canvas 4x2 격자로 합성해 스크린샷 → 육안 검수. 파일: work/sourcing_v2/stills30/",
-  "ai_badge": "확정 4편 + 후보 전량 watch HTML 'AI: Content was made with AI' 문자열 0 확인."
+  "ai_badge": "확정 5편 + 후보 전량 watch HTML 'AI: Content was made with AI' 문자열 0 확인."
  },
  "notes_for_기획실장": [
   "목표 6~10편 대비 확정 4편(전부 고양이). 기준은 한 줄도 낮추지 않았고, 편수를 채우려 자막·컷·저해상도 클립을 끌어올리지 않았다.",
