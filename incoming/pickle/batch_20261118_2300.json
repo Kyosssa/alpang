@@ -4,18 +4,18 @@
  "playbook": "work/sourcing_v2/SOURCING_GATE_PLAYBOOK.md (0장 4대 기준 + 1장 5대 게이트, 2026-11-17 확정본 그대로. 기준 완화 0)",
  "harness": "BROWSER_VERIFY_15 계열 + 33차 프리스크린: i.ytimg.com/vi/<ID>/oar1~3.jpg(원본 비율 3프레임, 차분) → RapidOCR(432x768, 3프레임) → /shorts/<ID> 페이지에서 ytInitialPlayerResponse(원본 해상도·길이·게시일·AI배지) + 1.3초 워밍업 후 0초 재측정 10fps 160x90 gray 차분 → 8컷 캔버스 그리드(1920x993 1장) + 스파이크 구간 밀집 스틸 → 육안 검수",
  "target": "정예 6~10편 (기준 미달 시 편수 축소, 절대 기준 완화 금지)",
- "judged_total": 28,
+ "judged_total": 33,
  "delivered_count": 2,
  "delivered_by_cat": {
   "고양이": 1,
   "강아지": 1
  },
  "near_miss_count": 1,
- "reject_count": 25,
+ "reject_count": 30,
  "reject_breakdown": {
-  "게시 1년 미만": 6,
-  "모션 12.0 미달·정지": 8,
-  "길이 10초 미만": 3,
+  "게시 1년 미만": 7,
+  "모션 12.0 미달·정지": 9,
+  "길이 10초 미만": 6,
   "컷·스파이크": 4,
   "자막·워터마크": 1,
   "사람·아기 등장": 3
@@ -23,9 +23,9 @@
  "account_cap_violation": "없음 — 확정 2편의 계정이 서로 다름(Bengal AGMA Cattery / Bailey The Beagle). 동일 계정 2편 초과 0",
  "screening_stats": {
   "고양이_31차_인계풀": "tmp31/cat_pool.json 140편 중 중복 10편 제외 130편 전수 oar 프리스크린 → 원본 전부 1080x1920 세로(해상도 탈락 0) → RapidOCR 3프레임 텍스트 0건 25편 / 텍스트 검출 105편",
-  "고양이_실측": 9,
+  "고양이_실측": 10,
   "강아지_32차_인계": "dog136 중 1080x1920·OCR 무자막·미실측 5편 전수 + dog136 미판정 56편 중 일부 실측",
-  "강아지_실측": 19,
+  "강아지_실측": 23,
   "AI배지": "판정 전편 HTML 'AI: Content was made with AI' 0건 — AI 표기 영상 0"
  },
  "delivered": [
@@ -442,6 +442,61 @@
    "spikes": [],
    "verdict": "rejected_after_review",
    "reason": "길이 6초(10초 미만)"
+  },
+  {
+   "id": "lRaN0LXamsM",
+   "ch": "Orca the border collie",
+   "title": "That's my doggy. She's iconic",
+   "date": "2025-08-09",
+   "dur_s": 8,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 8초(10초 미만)"
+  },
+  {
+   "id": "4hd7W6hzqnM",
+   "ch": "MLA Pets - Cute Maltipoo & Maltese Puppies UK",
+   "title": "Are you feeling ok?",
+   "date": "2025-08-26",
+   "dur_s": 8,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 8초(10초 미만)"
+  },
+  {
+   "id": "ZmYKifurbro",
+   "ch": "Loki The Siberian Husky",
+   "title": "When I look into his eyes..",
+   "date": "2023-09-03",
+   "dur_s": 8,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "길이 8초(10초 미만)"
+  },
+  {
+   "id": "vufnJ2dXYAA",
+   "ch": "Michael Sheldrake",
+   "title": "Phoebe and her kitten babies",
+   "date": "2026-07-19",
+   "dur_s": 151,
+   "mean": null,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-07-19 — 1년 미만(측정 생략)"
+  },
+  {
+   "id": "DpLXRRAcxnY",
+   "ch": "me and my dachshund Bob",
+   "title": "#dogmom #dogmomlife (닥스훈트 Bob)",
+   "date": "2023-09-15",
+   "dur_s": 31,
+   "mean": 10.75,
+   "spikes": [],
+   "verdict": "rejected_after_review",
+   "reason": "모션 10.75 (12.0 미달) — 걷는 장면 위주로 차분 낮음"
   }
  ],
  "flags": {
