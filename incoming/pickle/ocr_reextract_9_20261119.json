@@ -1,0 +1,345 @@
+{
+  "round": "OCR 재추출 9건 판독 (수수료표 1 · 장비 툴팁 1 · NPC·보스 말풍선 4)",
+  "date": "2026-11-19",
+  "time": "04:00 KST",
+  "author": "피클",
+  "basis": {
+    "verdict": "verdicts/VERDICT-OCR재제출-762채택·경계14건규칙-20261119.md",
+    "rule_applied": "§3 요소 단위 규칙 — 레코드 단위가 아니라 요소 단위로 판정. 플레이어 고유 정보(닉네임·길드명·개인 수치·채팅·파티·HUD·획득 알림)가 섞인 레코드는 제외하고, 같은 이미지의 게임 지정 요소만 새 레코드로 재추출",
+    "excluded_records": [406, 407, 435, 451, 723, 243, 408, 419, 436],
+    "excluded_reason": "원 레코드 후보에 플레이어 정보 또는 채팅이 섞임. 아래 6개 요소는 기존 후보 문자열을 오려 쓰지 않고 각 이미지에서 새로 판독한 것"
+  },
+  "policy": {
+    "origin": "수집본 기준",
+    "check_mark": false,
+    "note": "판정서 §3 규칙 4 — 재추출 요소는 출처 '수집본 기준'이며 ✅를 붙이지 않는다"
+  },
+  "method": {
+    "image_acquisition": "각 레코드 image_url에 ?type=w966을 붙여 원본을 다시 받았다(work/ocr_reread_20261119/imgs_new/). ?type 없이 받으면 100x75 썸네일이 오므로 쓰지 않았다. 243은 966x725, 나머지는 550x412·356x373·449x262·521x358로 레코드 image_size와 일치",
+    "zoom": "수수료표 5~8배, 장비 툴팁 3~6배, 말풍선 8~16배 LANCZOS 확대. 숫자·구간 표기는 8배 이상",
+    "no_guess": "이미지에서 확인되지 않는 글자는 채우지 않았다. 가려지거나 잘린 부분은 occluded·note로 따로 표기",
+    "element_cut": "판정서 §3 규칙 3에 따라 후보 OCR 문자열을 참조하지 않고 요소 영역만 잘라 판독"
+  },
+  "summary": {
+    "elements": 6,
+    "sources": 9,
+    "by_kind": {
+      "fee_table": 1,
+      "item_tooltip": 1,
+      "npc_bubble": 4
+    },
+    "speaker_confirmed": [408, 436],
+    "speaker_from_image_evidence": [243],
+    "speaker_unknown": [419]
+  },
+  "records": [
+    {
+      "element_id": "REE-01",
+      "kind": "fee_table",
+      "label": "개인상점·거래 수수료표 (표 1개 · 출처 4건)",
+      "category_group": "game_ui",
+      "category": "shop_fee",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "panel_title": null,
+        "panel_title_note": "이 툴팁에는 제목 표시줄이 없다. 회색 안내 상자 + '가격/수수료율' 2단 표만 있다",
+        "notice": "거래창에 입력되는 메소에서 아래의 수수료율을 차감한 금액이 판매자에게 전달됩니다.",
+        "columns": ["가격", "수수료율"],
+        "rows": [
+          {"price_range": "10만 메소 이상", "fee_rate": "0.80%"},
+          {"price_range": "100만 메소 이상", "fee_rate": "1.80%"},
+          {"price_range": "500만 메소 이상", "fee_rate": "3.00%"},
+          {"price_range": "1000만 메소 이상", "fee_rate": "4.00%"},
+          {"price_range": "2500만 메소 이상", "fee_rate": "5.00%"},
+          {"price_range": "1억 메소 이상", "fee_rate": "6.00%"}
+        ],
+        "row_count": 6
+      },
+      "consistency_check": {
+        "checked": "406 · 407 · 435 · 451 네 장에서 안내 문구·표 머리글·6개 구간의 가격 표기와 수수료율을 각각 같은 배율(5~8배)로 다시 잘라 글자 단위 대조",
+        "notice_identical": true,
+        "rows_identical": true,
+        "verdict": "4장 모두 같은 표. 값 차이 없음",
+        "differences": [
+          "435: 캡처가 패널 좌측을 1~2px 잘라 안내문 첫 글자 '거'가 테두리에 걸쳐 있다. 표의 가격·수수료율 칸은 온전",
+          "435: 해상도가 356x373으로 가장 낮아 안내문 마지막 단어가 '수수료율을'/'수수료를' 사이로 흔들린다. 표 값 판독에는 영향 없음",
+          "451: 패널 폭이 좁아 안내문이 2줄로 접힌다. 문구와 표 값은 같음"
+        ]
+      },
+      "sources": [
+        {
+          "rec_index": 406,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_08.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_237/jeeheelover_1330523301264gPwSo_JPEG/Maple0379.jpg",
+          "image_request": "?type=w966",
+          "image_size": [550, 412],
+          "image_sha256": "7bef55f3add581a5834cfcc62f1d8dc363258da83d4bbf39f36d94ebea94c141",
+          "crop_box": [97, 252, 272, 371],
+          "reading_scale": "8배",
+          "note": "표 전체가 한 화면에 온전히 잡힌 기준 컷"
+        },
+        {
+          "rec_index": 407,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_09.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_156/jeeheelover_1330523302048JGI55_JPEG/Maple0380.jpg",
+          "image_request": "?type=w966",
+          "image_size": [550, 412],
+          "image_sha256": "e5accfd86af3cf7b8ccac745647e3c75353d1fc45537f348f668c5cee19eb95f",
+          "crop_box": [97, 252, 272, 371],
+          "reading_scale": "8배",
+          "note": "406과 같은 위치·같은 표"
+        },
+        {
+          "rec_index": 435,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_47.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_290/jeeheelover_1330495264753cbvBa_JPEG/Maple0050.jpg",
+          "image_request": "?type=w966",
+          "image_size": [356, 373],
+          "image_sha256": "b670b052164d4dbe566aea6d654e1b045478eaaef9970a5eebfa5bfcf0be21b8",
+          "crop_box": [0, 207, 183, 322],
+          "reading_scale": "8배",
+          "note": "교환창 오른쪽에 뜬 같은 표. 패널 좌측이 캡처 경계에 걸려 안내문 첫 글자가 일부 잘림"
+        },
+        {
+          "rec_index": 451,
+          "post_url": "https://blog.naver.com/anscodnjs321/130145707460",
+          "source_image": "anscodnjs321_130145707460_20.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120826_296/anscodnjs321_1345980158658nDlcy_JPEG/Maple0047.jpg",
+          "image_request": "?type=w966",
+          "image_size": [449, 262],
+          "image_sha256": "deeb9097cfb903b180fcc6033660ab8a2a34c6cafebe796743671f8bb2812a0e",
+          "crop_box": [276, 153, 449, 262],
+          "reading_scale": "8배",
+          "note": "다른 블로그(핑크빈 입장 퀘 스샷)의 같은 표. 해상도가 가장 좋아 구간 표기가 가장 선명"
+        }
+      ],
+      "evidence_stills": [
+        "incoming/pickle/reextract9_stills/406_fee_table.jpg",
+        "incoming/pickle/reextract9_stills/407_fee_table.jpg",
+        "incoming/pickle/reextract9_stills/435_fee_table.jpg",
+        "incoming/pickle/reextract9_stills/451_fee_table.jpg"
+      ],
+      "notes": [
+        "이 4장의 원 레코드는 채팅·닉네임·판매가가 섞여 제외했고, 게임이 정한 표만 따로 세웠다",
+        "435 같은 이미지의 장이 구이 아이템 툴팁은 이번 6개 요소에 넣지 않았다(다음 라운드 재추출 후보로 남김)"
+      ]
+    },
+    {
+      "element_id": "REE-02",
+      "kind": "item_tooltip",
+      "label": "장비 툴팁 — 타임리스 카이트 실드",
+      "category_group": "game_ui",
+      "category": "item_tooltip",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "item_name": "타임리스 카이트 실드",
+        "equip_note": "장착시 교환 불가",
+        "requirements": [
+          {"label": "REQ LEV", "value": "120"},
+          {"label": "REQ STR", "value": "370", "display_color": "붉은색(요건 미충족 표시)"},
+          {"label": "REQ DEX", "value": "0"},
+          {"label": "REQ INT", "value": "0"},
+          {"label": "REQ LUK", "value": "0"},
+          {"label": "REQ POP", "value": "-"}
+        ],
+        "item_lev": "1",
+        "item_exp": "0 %",
+        "classes": "초보자 전사 마법사 궁수 도적 해적",
+        "classes_note": "초보자만 붉은색(착용 불가), 나머지는 흰색",
+        "equip_category": "장비분류 : 방패",
+        "stats": [
+          {"label": "STR", "value": "+7"},
+          {"label": "DEX", "value": "+5"},
+          {"label": "물리방어력", "value": "+100"},
+          {"label": "마법방어력", "value": "+35"},
+          {"label": "회피치", "value": "+5"}
+        ],
+        "upgrade_slots": "업그레이드 가능 횟수 : 7",
+        "description": "장착 시 1회에 한해 매력 90의 경험치를 얻으실 수 있습니다.",
+        "full_text": "타임리스 카이트 실드 / 장착시 교환 불가 / REQ LEV : 120 / REQ STR : 370 / REQ DEX : 0 / REQ INT : 0 / REQ LUK : 0 / REQ POP : - / ITEM LEV : 1 / ITEM EXP : 0 % / 초보자 전사 마법사 궁수 도적 해적 / 장비분류 : 방패 / STR : +7 / DEX : +5 / 물리방어력 : +100 / 마법방어력 : +35 / 회피치 : +5 / 업그레이드 가능 횟수 : 7 / 장착 시 1회에 한해 매력 90의 경험치를 얻으실 수 있습니다."
+      },
+      "sources": [
+        {
+          "rec_index": 723,
+          "post_url": "https://blog.naver.com/123rlatjsxo/30136669448",
+          "source_image": "123rlatjsxo_30136669448_25.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120422_124/123rlatjsxo_1335069540834rDQdm_PNG/MapleStory_2012-04-15_11-44-47-35.png",
+          "image_request": "?type=w966",
+          "image_size": [521, 358],
+          "image_sha256": "011d982af330c90912c71cdc4e1e9869fb330925b71e846a924c555d3fa1076c",
+          "crop_box": [296, 8, 521, 354],
+          "reading_scale": "3~6배",
+          "note": "툴팁 패널 전체(아이템 아이콘 포함). 패널 우측은 캡처 경계(521)에 닿아 잘림"
+        }
+      ],
+      "evidence_stills": ["incoming/pickle/reextract9_stills/723_item_tooltip.jpg"],
+      "notes": [
+        "원 레코드 후보가 닉네임·칭호 문자열이어서 제외하고, 오른쪽 장비 툴팁 패널만 다시 읽었다",
+        "왼쪽의 제작 레시피·스킬 패널은 이 요소에 넣지 않았다",
+        "REQ STR 370은 저해상도에서 37O로도 보이나, 6배 확대에서 0의 형태가 확인되어 370으로 판독"
+      ]
+    },
+    {
+      "element_id": "REE-03",
+      "kind": "npc_bubble",
+      "label": "보스 말풍선 — 도도",
+      "category_group": "npc_quest",
+      "category": "npc_dialogue",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "speaker": "도도",
+        "speaker_confidence": "높음(같은 이미지 하단 채팅로그가 '도도 :'로 화자를 적고 있음)",
+        "speaker_evidence": "이미지 하단 채팅로그 첫 줄 '도도 : 추억에 얽매여 있는 자는 앞으로 나갈 수가 없는 법...' — 말풍선 문구와 같은 문장",
+        "text": "추억에 얽매여 있는 자는 앞으로 나갈 수가 없는 법...",
+        "text_lines": ["추억에 얽매여", "있는 자는 앞으", "로 나갈 수가 없", "는 법..."],
+        "scene": "채집·사냥 중 보스 대사 연출(말풍선 + 채팅로그 동시 표시)"
+      },
+      "sources": [
+        {
+          "rec_index": 243,
+          "post_url": "https://blog.naver.com/maple_arke/110118167919",
+          "source_image": "maple_arke_110118167919_04.jpg",
+          "image_url": "https://postfiles.pstatic.net/20110908_177/maple_arke_1315488561874dX6tg_JPEG/maple3017.jpg",
+          "image_request": "?type=w966",
+          "image_size": [966, 725],
+          "image_sha256": "ac1079c56f8a17b41f7ca83c2046bad77db708a567043d2ff99ae309a11df005",
+          "crop_box": [198, 68, 286, 140],
+          "reading_scale": "8배",
+          "note": "말풍선 영역만. 화면 하단 아이템 획득 알림(카리시마 +50, 경험치 +183750)과 채팅로그는 이 요소에서 제외"
+        }
+      ],
+      "evidence_stills": ["incoming/pickle/reextract9_stills/243_bubble.jpg"],
+      "notes": [
+        "판정서는 243을 화자 미상으로 남겼으나, 같은 이미지의 채팅로그가 화자를 '도도'로 표기하고 있어 이미지상 단서로 화자를 확정했다",
+        "획득 알림의 수치(50개·183750)는 플레이어 개인 정보라 이 요소에 넣지 않았다"
+      ]
+    },
+    {
+      "element_id": "REE-04",
+      "kind": "npc_bubble",
+      "label": "NPC 말풍선 — 창고지기",
+      "category_group": "npc_quest",
+      "category": "npc_dialogue",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "speaker": "창고지기",
+        "speaker_display": "NPC 이름표 '이서방', 기능 표기 '창고지기'",
+        "speaker_confidence": "높음(이름표·기능 표기가 화면에 있고, 판정서도 창고지기로 확인)",
+        "text": "물건이나 메소를 맡길 곳이 필요한가해? 여기다해~",
+        "text_lines": ["물건이나 메소", "를 맡길 곳이 필", "요한가해? 여기", "다해~"]
+      },
+      "sources": [
+        {
+          "rec_index": 408,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_11.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_297/jeeheelover_1330495242986OypPe_JPEG/Maple0004.jpg",
+          "image_request": "?type=w966",
+          "image_size": [550, 412],
+          "image_sha256": "fb5ac62ef4f598ffd7ee1c70fcd0e230b6d650b004d91a84d1d4fd6b352be5c6",
+          "crop_box": [281, 45, 373, 106],
+          "reading_scale": "10배(첫 글자는 16배)",
+          "note": "말풍선 영역만"
+        }
+      ],
+      "evidence_stills": ["incoming/pickle/reextract9_stills/408_bubble.jpg"],
+      "notes": [
+        "첫 줄 첫 글자 '물'이 말풍선 테두리와 겹쳐 왼쪽이 잘려 보인다. 16배 확대에서 ㄴ·ㅜ·ㄹ 획을 확인해 '물'로 판독",
+        "'필요한가해?'는 이미지에 띄어쓰기 없이 찍힌 그대로 적었다(맞춤법 교정하지 않음)",
+        "교차 확인(채택 근거 아님): assets/npcs-rest.json의 창고지기 대사도 같은 문구"
+      ]
+    },
+    {
+      "element_id": "REE-05",
+      "kind": "npc_bubble",
+      "label": "보스 대사 배너 — 화자 미상",
+      "category_group": "npc_quest",
+      "category": "npc_dialogue",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "speaker": null,
+        "speaker_confidence": "미상 — 초상만 있고 이름 표기가 없다",
+        "speaker_visual": "배너 왼쪽에 녹색 고블린형 NPC 초상",
+        "text": "이번엔 내 계획이 실패했군. 일단 작전 상 후퇴다. 크크.",
+        "text_lines": ["이번엔 내 계획이 실패했군. 일단 작전 상 후퇴다. 크크."],
+        "banner_type": "초상 + 한 줄 대사가 한 줄 띠로 뜨는 보스 대사 배너",
+        "scene_map": "얼음비늘굴 / 안녕 빙하동굴"
+      },
+      "sources": [
+        {
+          "rec_index": 419,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_22.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_107/jeeheelover_1330495248642XR1Cg_JPEG/Maple0017.jpg",
+          "image_request": "?type=w966",
+          "image_size": [550, 412],
+          "image_sha256": "af2a718ab33df9e656482f71da20baa6a492adf3e6a6df6304349381663b93de",
+          "crop_box": [97, 104, 458, 154],
+          "reading_scale": "4~8배",
+          "note": "배너 띠 전체(초상 포함). 같은 화면의 채팅·HUD·획득 알림은 제외"
+        }
+      ],
+      "evidence_stills": ["incoming/pickle/reextract9_stills/419_banner.jpg"],
+      "notes": [
+        "'작전 상 후퇴다'의 '작전 상'은 이미지에 띄어쓰기가 있는 그대로 적었다",
+        "화자는 판정서대로 미상으로 둔다. 초상 외에 이름표·채팅로그 화자 표기가 이 화면에 없다"
+      ]
+    },
+    {
+      "element_id": "REE-06",
+      "kind": "npc_bubble",
+      "label": "NPC 말풍선 — 아몬",
+      "category_group": "npc_quest",
+      "category": "npc_dialogue",
+      "origin": "수집본 기준",
+      "verified_mark": false,
+      "player_info_excluded": true,
+      "fields": {
+        "speaker": "아몬",
+        "speaker_confidence": "높음(판정서 확인 + 화면 왼쪽 아래 NPC 이름표 '아몬')",
+        "text": "언제라도 도중에 그만두고 싶다면 나에게 말을 걸어주게.",
+        "text_lines": ["언제라도 도중", "에 그만두고 싶", "다면 나에게 말", "을 걸어주게."],
+        "legible_fragment": "…라도 도중 / 에 그만두고 싶 / 다면 나에게 말 / 을 걸어주게.",
+        "occluded": {
+          "where": "말풍선 첫 줄 앞부분",
+          "by": "화면 좌상단 UI 칩('…가이드')",
+          "chars": "약 2~3자",
+          "note": "가려진 자리 뒤로 '라도 도중'이 보여 '언제라도 도중'으로 읽힌다. 가려진 글자 자체는 이미지에서 볼 수 없다"
+        },
+        "scene_map": "마지막의 미로 / 자궁의 제단 (남은시간 49분 49초)"
+      },
+      "sources": [
+        {
+          "rec_index": 436,
+          "post_url": "https://blog.naver.com/jeeheelover/90137542848",
+          "source_image": "jeeheelover_90137542848_48.jpg",
+          "image_url": "https://postfiles.pstatic.net/20120229_190/jeeheelover_1330495265434Dl7tm_JPEG/Maple0051.jpg",
+          "image_request": "?type=w966",
+          "image_size": [550, 412],
+          "image_sha256": "1ab3a41d002f3cfcc51a0a3cca8f21463d85de57a49f6bae764139a44cd6ae5c",
+          "crop_box": [34, 86, 106, 142],
+          "reading_scale": "8~14배",
+          "note": "말풍선 영역만(칩이 겹친 좌상단 포함). HUD·남은시간·채팅은 제외"
+        }
+      ],
+      "evidence_stills": ["incoming/pickle/reextract9_stills/436_bubble.jpg"],
+      "notes": [
+        "교차 확인(채택 근거 아님): assets/npcs-rest.json 아몬(2030010) 대사 '언제라도 도중에 그만두고 싶다면 나에게 말을 걸어주게.'와 읽히는 부분이 일치",
+        "'언제라도' 세 글자는 가려져 있어 이미지만으로는 확정할 수 없다. 이 점을 남겨 둔다"
+      ]
+    }
+  ]
+}
