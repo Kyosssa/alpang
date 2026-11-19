@@ -1,0 +1,1586 @@
+{
+ "batch": "36차 정기 소싱 (2026-11-19 08:00)",
+ "file": "batch_20261119_0800.json",
+ "date": "2026-11-19",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17(4대 기준) + 5대 게이트. 계정당 회차 2편 상한, 저조회 확인 분리, 8컷+10fps 스파이크, AI 배지 0.",
+ "pool": {
+  "35차 인계 — 고양이 1년 이상·무자막 잔여": "96편(실측 0 → 이번 회차 판정)",
+  "35차 인계 — OCR 오탐 풀 잔여": "34편(실측 0 → 이번 회차 판정)",
+  "35차 인계 — 게시일 실측 실패": "76편 → 76/76 재측정 성공, 1년 이상 59편 확인",
+  "신규 크롤 — 검색 쿼리": "35개(영어권 강아지·고양이+개·foster)",
+  "신규 크롤 — shorts 후보 수집": 703,
+  "신규 크롤 — 10초 이상": 576,
+  "신규 크롤 — 1080x1920 렌디션 보유": 404,
+  "신규 크롤 — 1년 이상 + 1080x1920": 112,
+  "신규 크롤 — 채널 프로필 수집": 89,
+  "신규 크롤 — 1인칭 채널 /shorts 재크롤": "13개 채널 592편 → 10초 이상·1080x1920·1년 이상 45편",
+  "썸네일 프리스크린(oar 3프레임 + RapidOCR)": "검색 후보 112편 + 채널 후보 45편 = 157편 스캔, 무자막 판정 15편",
+  "브라우저 실물 검증": 31
+ },
+ "delivered": [
+  {
+   "id": "A4u9oLGUEaw",
+   "url": "https://www.youtube.com/shorts/A4u9oLGUEaw",
+   "verdict": "delivered",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2020-12-14",
+   "views": 22534,
+   "duration_s": 41.02,
+   "motion": {
+    "mean": 13.3,
+    "median": 12.56,
+    "min": 1.12,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷 무자막·무워터마크·사람 0 · 시바 3마리 뒷마당 몸싸움·추격 41초 단일 숏"
+  }
+ ],
+ "delivered_count": 1,
+ "holds": [
+  {
+   "id": "aUB5oAX5ljo",
+   "url": "https://www.youtube.com/shorts/aUB5oAX5ljo",
+   "verdict": "hold",
+   "channel": "goldenbearollie",
+   "subs": 296000,
+   "published": "2023-03-25",
+   "views": 4851587,
+   "duration_s": 15.0,
+   "motion": {
+    "mean": 21.65,
+    "median": 21.67,
+    "min": 6.51,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 21.65·무자막·AI배지 0이지만 보호자 상반신(얼굴 제외)이 전 구간 프레임의 40% 이상 점유, 강아지가 공중에 고정된 구도 — 게이트⑤ \"손만 허용\" 범위 판정 필요"
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "DQCjXD_u36k",
+   "url": "https://www.youtube.com/shorts/DQCjXD_u36k",
+   "verdict": "near_miss",
+   "channel": "HoundofmyHeart",
+   "subs": null,
+   "published": "2025-10-09",
+   "views": 1349,
+   "duration_s": 57.54,
+   "motion": {
+    "mean": 11.41,
+    "median": 9.77,
+    "min": 2.24,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 11.41 임계 12.0 미달(근접) — 강아지 4마리 장난감 놀이, 컷 0·자막 없음(8컷 미실시)"
+  },
+  {
+   "id": "PD4XRUYORXQ",
+   "url": "https://www.youtube.com/shorts/PD4XRUYORXQ",
+   "verdict": "near_miss",
+   "channel": "Stephanie Urrutty",
+   "subs": null,
+   "published": "2023-06-06",
+   "views": 52013,
+   "duration_s": 35.38,
+   "motion": {
+    "mean": 11.09,
+    "median": 7.87,
+    "min": 0.88,
+    "spikes_over_0.6": [
+     [
+      5.07,
+      0.71
+     ],
+     [
+      8.24,
+      0.68
+     ],
+     [
+      9.61,
+      0.67
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 11.09 미달 + 0~10초 내 프레임 전환 3회(5.07·8.24·9.61초) — 새끼고양이 방 세팅 영상"
+  },
+  {
+   "id": "ek-znK8BQNo",
+   "url": "https://www.youtube.com/shorts/ek-znK8BQNo",
+   "verdict": "near_miss",
+   "channel": "Tabby cat and Wolfy",
+   "subs": 974,
+   "published": "2025-04-26",
+   "views": 50,
+   "duration_s": 36.06,
+   "motion": {
+    "mean": 10.88,
+    "median": 8.52,
+    "min": 0.05,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": false,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 10.88 임계 미달(근접) + 플레이어 최대 360x640(1080x1920 렌디션 없음)"
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "DFtisTL54zQ",
+   "url": "https://www.youtube.com/shorts/DFtisTL54zQ",
+   "verdict": "rejected",
+   "channel": "Tabby Cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 5.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(5초)"
+  },
+  {
+   "id": "TMMKmCSPKxU",
+   "url": "https://www.youtube.com/shorts/TMMKmCSPKxU",
+   "verdict": "rejected",
+   "channel": "My Crazy Cats",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "nsmpyWI4IZs",
+   "url": "https://www.youtube.com/shorts/nsmpyWI4IZs",
+   "verdict": "rejected",
+   "channel": "Ragdoll The Cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "qKDNygaQCSw",
+   "url": "https://www.youtube.com/shorts/qKDNygaQCSw",
+   "verdict": "rejected",
+   "channel": "bengal cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "1ZLbh4nPgq4",
+   "url": "https://www.youtube.com/shorts/1ZLbh4nPgq4",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2024-07-17",
+   "views": 14701860,
+   "duration_s": 9.96,
+   "motion": {
+    "mean": 16.03,
+    "median": 13.17,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.97,
+      0.72
+     ],
+     [
+      7.83,
+      0.61
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(9.96초) + 프레임 전환"
+  },
+  {
+   "id": "O-jn14sxX9o",
+   "url": "https://www.youtube.com/shorts/O-jn14sxX9o",
+   "verdict": "rejected",
+   "channel": null,
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 82.02,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": false,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 608x1080(1080x1920 렌디션 없음)"
+  },
+  {
+   "id": "R0qV1tUNJTc",
+   "url": "https://www.youtube.com/shorts/R0qV1tUNJTc",
+   "verdict": "rejected",
+   "channel": "Greek Garden Maine Coons",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 22.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 480x854"
+  },
+  {
+   "id": "9jeIgGoI-aQ",
+   "url": "https://www.youtube.com/shorts/9jeIgGoI-aQ",
+   "verdict": "rejected",
+   "channel": "Greek Garden Maine Coons",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 60.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 608x1080"
+  },
+  {
+   "id": "rkJXnlKG4XI",
+   "url": "https://www.youtube.com/shorts/rkJXnlKG4XI",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2025-05-30",
+   "views": 1898757,
+   "duration_s": 37.24,
+   "motion": {
+    "mean": 27.94,
+    "median": 23.17,
+    "min": 5.66,
+    "spikes_over_0.6": [
+     [
+      1.79,
+      0.74
+     ],
+     [
+      3.77,
+      0.8
+     ],
+     [
+      6.54,
+      0.74
+     ],
+     [
+      7.33,
+      0.66
+     ],
+     [
+      7.55,
+      0.8
+     ],
+     [
+      8.73,
+      0.74
+     ],
+     [
+      10.03,
+      0.81
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 10회 — 수중/수면 화면 교체 반복(몽타주)"
+  },
+  {
+   "id": "6jg1Qu2aIwA",
+   "url": "https://www.youtube.com/shorts/6jg1Qu2aIwA",
+   "verdict": "rejected",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": "2024-01-02",
+   "views": 7019,
+   "duration_s": 16.58,
+   "motion": {
+    "mean": 15.28,
+    "median": 15.02,
+    "min": 6.27,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 보호자 전신(걷는 사람)이 전 구간 등장 — 게이트⑤"
+  },
+  {
+   "id": "Kxr-uE5kTag",
+   "url": "https://www.youtube.com/shorts/Kxr-uE5kTag",
+   "verdict": "rejected",
+   "channel": "Hudson Be Good",
+   "subs": 150000,
+   "published": "2023-06-30",
+   "views": 1132417,
+   "duration_s": 16.68,
+   "motion": {
+    "mean": 20.52,
+    "median": 18.8,
+    "min": 7.07,
+    "spikes_over_0.6": [
+     [
+      7.65,
+      0.6
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 영어 자막 박스(\"MY FIRST BIG BOY SWIM...\") 상시 노출 — 게이트④"
+  },
+  {
+   "id": "zHDVeMvOpsU",
+   "url": "https://www.youtube.com/shorts/zHDVeMvOpsU",
+   "verdict": "rejected",
+   "channel": "Tiny Chihuahua Cedric",
+   "subs": 342000,
+   "published": "2024-07-30",
+   "views": 48115,
+   "duration_s": 13.36,
+   "motion": {
+    "mean": 7.11,
+    "median": 6.95,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 7.11 미달(수영 정적)"
+  },
+  {
+   "id": "rLJLp9wbw4o",
+   "url": "https://www.youtube.com/shorts/rLJLp9wbw4o",
+   "verdict": "rejected",
+   "channel": "Life of Summer & Holly",
+   "subs": 3750,
+   "published": "2022-03-03",
+   "views": 1506,
+   "duration_s": 16.14,
+   "motion": {
+    "mean": 23.2,
+    "median": 21.6,
+    "min": 9.72,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 프레이밍 전환 반복(0.3 근접→1.5 원경→3.0 미디엄→4.5 와이드) — 단일 무컷 숏 아님"
+  },
+  {
+   "id": "UW35HUWMoSo",
+   "url": "https://www.youtube.com/shorts/UW35HUWMoSo",
+   "verdict": "rejected",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2020-12-14",
+   "views": 1095,
+   "duration_s": 20.56,
+   "motion": {
+    "mean": 5.76,
+    "median": 5.16,
+    "min": 0.97,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 5.76 미달(땅파기)"
+  },
+  {
+   "id": "3KSsWv4qwHw",
+   "url": "https://www.youtube.com/shorts/3KSsWv4qwHw",
+   "verdict": "rejected",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2021-01-29",
+   "views": 385,
+   "duration_s": 11.94,
+   "motion": {
+    "mean": 12.12,
+    "median": 12.0,
+    "min": 0.03,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 12.12이지만 8컷상 3.0·6.0초에 주인공 프레임 이탈(빈 마당만) — 단일 숏 불성립"
+  },
+  {
+   "id": "v38y8EUyV9U",
+   "url": "https://www.youtube.com/shorts/v38y8EUyV9U",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2025-10-04",
+   "views": 405206,
+   "duration_s": 24.24,
+   "motion": {
+    "mean": 23.25,
+    "median": 20.55,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.89,
+      0.78
+     ],
+     [
+      4.46,
+      0.85
+     ],
+     [
+      5.99,
+      0.6
+     ],
+     [
+      6.73,
+      0.63
+     ],
+     [
+      7.83,
+      0.73
+     ],
+     [
+      8.84,
+      0.75
+     ],
+     [
+      9.91,
+      0.81
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 8회 — 몽타주"
+  },
+  {
+   "id": "6Ml3J0nGGx4",
+   "url": "https://www.youtube.com/shorts/6Ml3J0nGGx4",
+   "verdict": "rejected",
+   "channel": "Nats Furbabies",
+   "subs": 1640,
+   "published": "2025-06-18",
+   "views": 2803,
+   "duration_s": 30.96,
+   "motion": {
+    "mean": 24.07,
+    "median": 22.92,
+    "min": 2.58,
+    "spikes_over_0.6": [
+     [
+      2.98,
+      0.69
+     ],
+     [
+      5.06,
+      0.66
+     ],
+     [
+      5.66,
+      0.83
+     ],
+     [
+      8.61,
+      0.74
+     ],
+     [
+      10.2,
+      0.76
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "컷 5회(몽타주)"
+  },
+  {
+   "id": "RULozh28V6s",
+   "url": "https://www.youtube.com/shorts/RULozh28V6s",
+   "verdict": "rejected",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": "2024-08-28",
+   "views": 10940,
+   "duration_s": 13.78,
+   "motion": {
+    "mean": 23.03,
+    "median": 21.7,
+    "min": 5.76,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 앵글 전환 반복 + 보호자 손·소매가 프레임 지배"
+  },
+  {
+   "id": "q8mZJdp24aQ",
+   "url": "https://www.youtube.com/shorts/q8mZJdp24aQ",
+   "verdict": "rejected",
+   "channel": "My crazy cat",
+   "subs": null,
+   "published": null,
+   "views": 289,
+   "duration_s": 28.52,
+   "motion": {
+    "mean": 4.25,
+    "median": 3.82,
+    "min": 0.79,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.25 미달"
+  },
+  {
+   "id": "h7j4xzr2aI0",
+   "url": "https://www.youtube.com/shorts/h7j4xzr2aI0",
+   "verdict": "rejected",
+   "channel": "bengal cat",
+   "subs": null,
+   "published": null,
+   "views": 265,
+   "duration_s": 53.08,
+   "motion": {
+    "mean": 5.91,
+    "median": 3.03,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.2,
+      0.96
+     ],
+     [
+      2.38,
+      0.85
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 5.91 미달 + 프레임 전환"
+  },
+  {
+   "id": "Ch-E12KH878",
+   "url": "https://www.youtube.com/shorts/Ch-E12KH878",
+   "verdict": "rejected",
+   "channel": "Royal Sphynx",
+   "subs": 37700,
+   "published": null,
+   "views": 1608,
+   "duration_s": 36.48,
+   "motion": {
+    "mean": 4.06,
+    "median": 2.21,
+    "min": 0.19,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.06 미달(스크래처 정적)"
+  },
+  {
+   "id": "tbnY2Kyr61I",
+   "url": "https://www.youtube.com/shorts/tbnY2Kyr61I",
+   "verdict": "rejected",
+   "channel": "This cat is crazy",
+   "subs": null,
+   "published": null,
+   "views": 6,
+   "duration_s": 57.08,
+   "motion": {
+    "mean": 7.3,
+    "median": 5.76,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 7.30 미달"
+  },
+  {
+   "id": "BGRmQNF1t_c",
+   "url": "https://www.youtube.com/shorts/BGRmQNF1t_c",
+   "verdict": "rejected",
+   "channel": "Orange Cat",
+   "subs": null,
+   "published": null,
+   "views": 828,
+   "duration_s": 85.02,
+   "motion": {
+    "mean": 0.01,
+    "median": 0.0,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 0.01 — 정지 이미지 영상"
+  },
+  {
+   "id": "SdtYAqLnIx4",
+   "url": "https://www.youtube.com/shorts/SdtYAqLnIx4",
+   "verdict": "rejected",
+   "channel": "Charles Darby",
+   "subs": 5350,
+   "published": "2025-09-10",
+   "views": 19275,
+   "duration_s": 58.72,
+   "motion": {
+    "mean": 28.88,
+    "median": 27.72,
+    "min": 7.25,
+    "spikes_over_0.6": [
+     [
+      8.73,
+      0.62
+     ],
+     [
+      9.02,
+      0.76
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 보호자 얼굴 등장 + 8.8초 이후 다른 개로 교체(몽타주) + 영어 자막 박스"
+  },
+  {
+   "id": "WEA2KOh_Hgk",
+   "url": "https://www.youtube.com/shorts/WEA2KOh_Hgk",
+   "verdict": "rejected",
+   "channel": "The pawfect mother",
+   "subs": 5650,
+   "published": "2025-08-24",
+   "views": 1238,
+   "duration_s": 25.96,
+   "motion": {
+    "mean": 16.96,
+    "median": 17.87,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷 전 프레임에 영어 자막 박스(\"When foster pups team up...\") + 아기 등장 — 게이트④⑤"
+  },
+  {
+   "id": "HVFWWuaPoQg",
+   "url": "https://www.youtube.com/shorts/HVFWWuaPoQg",
+   "verdict": "rejected",
+   "channel": "Laffey and Amy",
+   "subs": 339000,
+   "published": "2025-04-25",
+   "views": 85804,
+   "duration_s": 14.24,
+   "motion": {
+    "mean": 4.46,
+    "median": 3.21,
+    "min": 0.52,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.46 미달(정적 누움)"
+  }
+ ],
+ "judged_total": 31,
+ "items": [
+  {
+   "id": "A4u9oLGUEaw",
+   "url": "https://www.youtube.com/shorts/A4u9oLGUEaw",
+   "verdict": "delivered",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2020-12-14",
+   "views": 22534,
+   "duration_s": 41.02,
+   "motion": {
+    "mean": 13.3,
+    "median": 12.56,
+    "min": 1.12,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷 무자막·무워터마크·사람 0 · 시바 3마리 뒷마당 몸싸움·추격 41초 단일 숏"
+  },
+  {
+   "id": "aUB5oAX5ljo",
+   "url": "https://www.youtube.com/shorts/aUB5oAX5ljo",
+   "verdict": "hold",
+   "channel": "goldenbearollie",
+   "subs": 296000,
+   "published": "2023-03-25",
+   "views": 4851587,
+   "duration_s": 15.0,
+   "motion": {
+    "mean": 21.65,
+    "median": 21.67,
+    "min": 6.51,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 21.65·무자막·AI배지 0이지만 보호자 상반신(얼굴 제외)이 전 구간 프레임의 40% 이상 점유, 강아지가 공중에 고정된 구도 — 게이트⑤ \"손만 허용\" 범위 판정 필요"
+  },
+  {
+   "id": "DQCjXD_u36k",
+   "url": "https://www.youtube.com/shorts/DQCjXD_u36k",
+   "verdict": "near_miss",
+   "channel": "HoundofmyHeart",
+   "subs": null,
+   "published": "2025-10-09",
+   "views": 1349,
+   "duration_s": 57.54,
+   "motion": {
+    "mean": 11.41,
+    "median": 9.77,
+    "min": 2.24,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 11.41 임계 12.0 미달(근접) — 강아지 4마리 장난감 놀이, 컷 0·자막 없음(8컷 미실시)"
+  },
+  {
+   "id": "PD4XRUYORXQ",
+   "url": "https://www.youtube.com/shorts/PD4XRUYORXQ",
+   "verdict": "near_miss",
+   "channel": "Stephanie Urrutty",
+   "subs": null,
+   "published": "2023-06-06",
+   "views": 52013,
+   "duration_s": 35.38,
+   "motion": {
+    "mean": 11.09,
+    "median": 7.87,
+    "min": 0.88,
+    "spikes_over_0.6": [
+     [
+      5.07,
+      0.71
+     ],
+     [
+      8.24,
+      0.68
+     ],
+     [
+      9.61,
+      0.67
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 11.09 미달 + 0~10초 내 프레임 전환 3회(5.07·8.24·9.61초) — 새끼고양이 방 세팅 영상"
+  },
+  {
+   "id": "ek-znK8BQNo",
+   "url": "https://www.youtube.com/shorts/ek-znK8BQNo",
+   "verdict": "near_miss",
+   "channel": "Tabby cat and Wolfy",
+   "subs": 974,
+   "published": "2025-04-26",
+   "views": 50,
+   "duration_s": 36.06,
+   "motion": {
+    "mean": 10.88,
+    "median": 8.52,
+    "min": 0.05,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": false,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 10.88 임계 미달(근접) + 플레이어 최대 360x640(1080x1920 렌디션 없음)"
+  },
+  {
+   "id": "DFtisTL54zQ",
+   "url": "https://www.youtube.com/shorts/DFtisTL54zQ",
+   "verdict": "rejected",
+   "channel": "Tabby Cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 5.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(5초)"
+  },
+  {
+   "id": "TMMKmCSPKxU",
+   "url": "https://www.youtube.com/shorts/TMMKmCSPKxU",
+   "verdict": "rejected",
+   "channel": "My Crazy Cats",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "nsmpyWI4IZs",
+   "url": "https://www.youtube.com/shorts/nsmpyWI4IZs",
+   "verdict": "rejected",
+   "channel": "Ragdoll The Cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "qKDNygaQCSw",
+   "url": "https://www.youtube.com/shorts/qKDNygaQCSw",
+   "verdict": "rejected",
+   "channel": "bengal cat",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 7.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(7초)"
+  },
+  {
+   "id": "1ZLbh4nPgq4",
+   "url": "https://www.youtube.com/shorts/1ZLbh4nPgq4",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2024-07-17",
+   "views": 14701860,
+   "duration_s": 9.96,
+   "motion": {
+    "mean": 16.03,
+    "median": 13.17,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.97,
+      0.72
+     ],
+     [
+      7.83,
+      0.61
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "10초 미만(9.96초) + 프레임 전환"
+  },
+  {
+   "id": "O-jn14sxX9o",
+   "url": "https://www.youtube.com/shorts/O-jn14sxX9o",
+   "verdict": "rejected",
+   "channel": null,
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 82.02,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": false,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 608x1080(1080x1920 렌디션 없음)"
+  },
+  {
+   "id": "R0qV1tUNJTc",
+   "url": "https://www.youtube.com/shorts/R0qV1tUNJTc",
+   "verdict": "rejected",
+   "channel": "Greek Garden Maine Coons",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 22.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 480x854"
+  },
+  {
+   "id": "9jeIgGoI-aQ",
+   "url": "https://www.youtube.com/shorts/9jeIgGoI-aQ",
+   "verdict": "rejected",
+   "channel": "Greek Garden Maine Coons",
+   "subs": null,
+   "published": null,
+   "views": null,
+   "duration_s": 60.0,
+   "motion": {
+    "mean": null,
+    "median": null,
+    "min": null,
+    "spikes_over_0.6": [],
+    "samples": 0
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 해상도 미달 — 플레이어 608x1080"
+  },
+  {
+   "id": "rkJXnlKG4XI",
+   "url": "https://www.youtube.com/shorts/rkJXnlKG4XI",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2025-05-30",
+   "views": 1898757,
+   "duration_s": 37.24,
+   "motion": {
+    "mean": 27.94,
+    "median": 23.17,
+    "min": 5.66,
+    "spikes_over_0.6": [
+     [
+      1.79,
+      0.74
+     ],
+     [
+      3.77,
+      0.8
+     ],
+     [
+      6.54,
+      0.74
+     ],
+     [
+      7.33,
+      0.66
+     ],
+     [
+      7.55,
+      0.8
+     ],
+     [
+      8.73,
+      0.74
+     ],
+     [
+      10.03,
+      0.81
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 10회 — 수중/수면 화면 교체 반복(몽타주)"
+  },
+  {
+   "id": "6jg1Qu2aIwA",
+   "url": "https://www.youtube.com/shorts/6jg1Qu2aIwA",
+   "verdict": "rejected",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": "2024-01-02",
+   "views": 7019,
+   "duration_s": 16.58,
+   "motion": {
+    "mean": 15.28,
+    "median": 15.02,
+    "min": 6.27,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 보호자 전신(걷는 사람)이 전 구간 등장 — 게이트⑤"
+  },
+  {
+   "id": "Kxr-uE5kTag",
+   "url": "https://www.youtube.com/shorts/Kxr-uE5kTag",
+   "verdict": "rejected",
+   "channel": "Hudson Be Good",
+   "subs": 150000,
+   "published": "2023-06-30",
+   "views": 1132417,
+   "duration_s": 16.68,
+   "motion": {
+    "mean": 20.52,
+    "median": 18.8,
+    "min": 7.07,
+    "spikes_over_0.6": [
+     [
+      7.65,
+      0.6
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 영어 자막 박스(\"MY FIRST BIG BOY SWIM...\") 상시 노출 — 게이트④"
+  },
+  {
+   "id": "zHDVeMvOpsU",
+   "url": "https://www.youtube.com/shorts/zHDVeMvOpsU",
+   "verdict": "rejected",
+   "channel": "Tiny Chihuahua Cedric",
+   "subs": 342000,
+   "published": "2024-07-30",
+   "views": 48115,
+   "duration_s": 13.36,
+   "motion": {
+    "mean": 7.11,
+    "median": 6.95,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 7.11 미달(수영 정적)"
+  },
+  {
+   "id": "rLJLp9wbw4o",
+   "url": "https://www.youtube.com/shorts/rLJLp9wbw4o",
+   "verdict": "rejected",
+   "channel": "Life of Summer & Holly",
+   "subs": 3750,
+   "published": "2022-03-03",
+   "views": 1506,
+   "duration_s": 16.14,
+   "motion": {
+    "mean": 23.2,
+    "median": 21.6,
+    "min": 9.72,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 프레이밍 전환 반복(0.3 근접→1.5 원경→3.0 미디엄→4.5 와이드) — 단일 무컷 숏 아님"
+  },
+  {
+   "id": "UW35HUWMoSo",
+   "url": "https://www.youtube.com/shorts/UW35HUWMoSo",
+   "verdict": "rejected",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2020-12-14",
+   "views": 1095,
+   "duration_s": 20.56,
+   "motion": {
+    "mean": 5.76,
+    "median": 5.16,
+    "min": 0.97,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 5.76 미달(땅파기)"
+  },
+  {
+   "id": "3KSsWv4qwHw",
+   "url": "https://www.youtube.com/shorts/3KSsWv4qwHw",
+   "verdict": "rejected",
+   "channel": "Jogoso Shibas",
+   "subs": 411,
+   "published": "2021-01-29",
+   "views": 385,
+   "duration_s": 11.94,
+   "motion": {
+    "mean": 12.12,
+    "median": 12.0,
+    "min": 0.03,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "모션 12.12이지만 8컷상 3.0·6.0초에 주인공 프레임 이탈(빈 마당만) — 단일 숏 불성립"
+  },
+  {
+   "id": "v38y8EUyV9U",
+   "url": "https://www.youtube.com/shorts/v38y8EUyV9U",
+   "verdict": "rejected",
+   "channel": "Cactus",
+   "subs": 406000,
+   "published": "2025-10-04",
+   "views": 405206,
+   "duration_s": 24.24,
+   "motion": {
+    "mean": 23.25,
+    "median": 20.55,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.89,
+      0.78
+     ],
+     [
+      4.46,
+      0.85
+     ],
+     [
+      5.99,
+      0.6
+     ],
+     [
+      6.73,
+      0.63
+     ],
+     [
+      7.83,
+      0.73
+     ],
+     [
+      8.84,
+      0.75
+     ],
+     [
+      9.91,
+      0.81
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 8회 — 몽타주"
+  },
+  {
+   "id": "6Ml3J0nGGx4",
+   "url": "https://www.youtube.com/shorts/6Ml3J0nGGx4",
+   "verdict": "rejected",
+   "channel": "Nats Furbabies",
+   "subs": 1640,
+   "published": "2025-06-18",
+   "views": 2803,
+   "duration_s": 30.96,
+   "motion": {
+    "mean": 24.07,
+    "median": 22.92,
+    "min": 2.58,
+    "spikes_over_0.6": [
+     [
+      2.98,
+      0.69
+     ],
+     [
+      5.06,
+      0.66
+     ],
+     [
+      5.66,
+      0.83
+     ],
+     [
+      8.61,
+      0.74
+     ],
+     [
+      10.2,
+      0.76
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "컷 5회(몽타주)"
+  },
+  {
+   "id": "RULozh28V6s",
+   "url": "https://www.youtube.com/shorts/RULozh28V6s",
+   "verdict": "rejected",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": "2024-08-28",
+   "views": 10940,
+   "duration_s": 13.78,
+   "motion": {
+    "mean": 23.03,
+    "median": 21.7,
+    "min": 5.76,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 앵글 전환 반복 + 보호자 손·소매가 프레임 지배"
+  },
+  {
+   "id": "q8mZJdp24aQ",
+   "url": "https://www.youtube.com/shorts/q8mZJdp24aQ",
+   "verdict": "rejected",
+   "channel": "My crazy cat",
+   "subs": null,
+   "published": null,
+   "views": 289,
+   "duration_s": 28.52,
+   "motion": {
+    "mean": 4.25,
+    "median": 3.82,
+    "min": 0.79,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.25 미달"
+  },
+  {
+   "id": "h7j4xzr2aI0",
+   "url": "https://www.youtube.com/shorts/h7j4xzr2aI0",
+   "verdict": "rejected",
+   "channel": "bengal cat",
+   "subs": null,
+   "published": null,
+   "views": 265,
+   "duration_s": 53.08,
+   "motion": {
+    "mean": 5.91,
+    "median": 3.03,
+    "min": 0.0,
+    "spikes_over_0.6": [
+     [
+      2.2,
+      0.96
+     ],
+     [
+      2.38,
+      0.85
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 5.91 미달 + 프레임 전환"
+  },
+  {
+   "id": "Ch-E12KH878",
+   "url": "https://www.youtube.com/shorts/Ch-E12KH878",
+   "verdict": "rejected",
+   "channel": "Royal Sphynx",
+   "subs": 37700,
+   "published": null,
+   "views": 1608,
+   "duration_s": 36.48,
+   "motion": {
+    "mean": 4.06,
+    "median": 2.21,
+    "min": 0.19,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.06 미달(스크래처 정적)"
+  },
+  {
+   "id": "tbnY2Kyr61I",
+   "url": "https://www.youtube.com/shorts/tbnY2Kyr61I",
+   "verdict": "rejected",
+   "channel": "This cat is crazy",
+   "subs": null,
+   "published": null,
+   "views": 6,
+   "duration_s": 57.08,
+   "motion": {
+    "mean": 7.3,
+    "median": 5.76,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 7.30 미달"
+  },
+  {
+   "id": "BGRmQNF1t_c",
+   "url": "https://www.youtube.com/shorts/BGRmQNF1t_c",
+   "verdict": "rejected",
+   "channel": "Orange Cat",
+   "subs": null,
+   "published": null,
+   "views": 828,
+   "duration_s": 85.02,
+   "motion": {
+    "mean": 0.01,
+    "median": 0.0,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 0.01 — 정지 이미지 영상"
+  },
+  {
+   "id": "SdtYAqLnIx4",
+   "url": "https://www.youtube.com/shorts/SdtYAqLnIx4",
+   "verdict": "rejected",
+   "channel": "Charles Darby",
+   "subs": 5350,
+   "published": "2025-09-10",
+   "views": 19275,
+   "duration_s": 58.72,
+   "motion": {
+    "mean": 28.88,
+    "median": 27.72,
+    "min": 7.25,
+    "spikes_over_0.6": [
+     [
+      8.73,
+      0.62
+     ],
+     [
+      9.02,
+      0.76
+     ]
+    ],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 보호자 얼굴 등장 + 8.8초 이후 다른 개로 교체(몽타주) + 영어 자막 박스"
+  },
+  {
+   "id": "WEA2KOh_Hgk",
+   "url": "https://www.youtube.com/shorts/WEA2KOh_Hgk",
+   "verdict": "rejected",
+   "channel": "The pawfect mother",
+   "subs": 5650,
+   "published": "2025-08-24",
+   "views": 1238,
+   "duration_s": 25.96,
+   "motion": {
+    "mean": 16.96,
+    "median": 17.87,
+    "min": 0.0,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷 전 프레임에 영어 자막 박스(\"When foster pups team up...\") + 아기 등장 — 게이트④⑤"
+  },
+  {
+   "id": "HVFWWuaPoQg",
+   "url": "https://www.youtube.com/shorts/HVFWWuaPoQg",
+   "verdict": "rejected",
+   "channel": "Laffey and Amy",
+   "subs": 339000,
+   "published": "2025-04-25",
+   "views": 85804,
+   "duration_s": 14.24,
+   "motion": {
+    "mean": 4.46,
+    "median": 3.21,
+    "min": 0.52,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 4.46 미달(정적 누움)"
+  }
+ ],
+ "status_note": "확정 1편. 기준(1080x1920·10초 이상·무컷·모션 12.0·무자막·AI 배지 0)은 한 줄도 낮추지 않았다. 보류 1편(aUB5oAX5ljo — 보호자 상반신 점유), 근접 3편(DQCjXD_u36k 11.41·PD4XRUYORXQ 11.09·ek-znK8BQNo 10.88).",
+ "harness_calibration": "샘플 100프레임/편(0~10.3초), 버퍼 선확보 후 측정. 35차 확정편 재측정은 이번 회차 시간 부족으로 미실시.",
+ "measured_at": "2026-11-19 08:00~09:22 KST",
+ "method_note": "/shorts/<ID> HTML의 ytInitialPlayerResponse에서 길이·채널·1080x1920 렌디션 유무·AI 배지·publishDate를 curl로 일괄 선별(703편) → 브라우저는 통과 후보만. 모션은 160x90 gray 10fps 차분(0~10.3초), 8컷은 4x2 캔버스(270x480) 캡처."
+}
