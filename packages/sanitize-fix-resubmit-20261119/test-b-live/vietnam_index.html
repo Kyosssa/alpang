@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpang.gg - Cơ sở dữ liệu thông tin quái vật · vật phẩm · bản đồ của máy chủ Alpang, MapleStory Worlds</title>
+<meta name="description" content="Cơ sở dữ liệu thông tin tập hợp thông tin quái vật · vật phẩm · bản đồ và ghi chép phát ngôn của đội ngũ sản xuất về máy chủ Alpang trong MapleStory Worlds. Tổng hợp các thông tin đã xác nhận, những mục chưa xác nhận và điểm thay đổi của bản cập nhật Big Bang ở bản gốc.">
+<link rel="alternate" hreflang="ko" href="https://alpang.gg/">
+<link rel="alternate" hreflang="zh-TW" href="https://alpang.gg/taiwan/">
+<link rel="alternate" hreflang="vi" href="https://alpang.gg/vietnam/">
+<link rel="alternate" hreflang="x-default" href="https://alpang.gg/">
+<link rel="canonical" href="https://alpang.gg/vietnam/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="알팡지지">
+<meta property="og:title" content="Alpang.gg - Cơ sở dữ liệu thông tin quái vật · vật phẩm · bản đồ của máy chủ Alpang, MapleStory Worlds">
+<meta property="og:description" content="Cơ sở dữ liệu thông tin tập hợp thông tin quái vật · vật phẩm · bản đồ và ghi chép phát ngôn của đội ngũ sản xuất về máy chủ Alpang trong MapleStory Worlds. Tổng hợp các thông tin đã xác nhận, những mục chưa xác nhận và điểm thay đổi của bản cập nhật Big Bang ở bản gốc.">
+<meta property="og:url" content="https://alpang.gg/vietnam/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:image" content="https://alpang.gg/assets/og-vn.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var t=null;try{t=localStorage.getItem('alpang-theme');}catch(e){}if(t!=='dark'&&t!=='light'){t='dark';}document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+  :root{
+    --bg:#faf9f6; --card:#ffffff; --line:#e6e1d8; --text:#1f1c18;
+    --sub:#6f6a5e; --accent:#FF7E36;--accent-btn:#C45100; --accent-soft:#FFF1E8; --ok:#2e7d1e; --warn:#9a7b00; --unknown:#6b6250; --accent-dark:#B65100;
+    --hero-ink:#123524;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;letter-spacing:-0.025em;line-height:1.7;padding:0 0 48px}
+  button,input,select,textarea{font-family:inherit}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 16px}
+  /* 상단 GNB — 전체 폭 바 + 안쪽 1280px */
+  .gnb{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .gnb-in{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 10px}
+  .gnb .logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none}
+  .gnb nav{display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:2px}
+  .gnb nav a{color:var(--sub);text-decoration:none;font-size:15px;font-weight:600;margin-left:14px;white-space:nowrap}
+  .gnb nav a.on{color:var(--accent-dark)}
+  /* 히어로 — 브라우저 폭 전체(full-bleed) 이미지 배너 (디렉터 제작 완성본, 텍스트 포함) */
+  .site-h1{font-size:26px;font-weight:800;letter-spacing:-0.03em;margin:18px 0 10px;color:var(--text)}.site-h1{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .hero{background:#fdfcf9;padding:18px 16px 6px}
+  .banner{position:relative;overflow:hidden;max-width:1248px;margin:0 auto;border-radius:16px;box-shadow:0 2px 10px rgba(30,25,15,.12);touch-action:pan-y}
+  .slides{display:flex;transition:transform .55s ease}
+  .slide{min-width:100%;display:block;text-decoration:none;line-height:0}
+  .slide img{width:100%;height:auto;display:block}
+  .dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:2px}
+  .pause-btn{position:absolute;right:6px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(18,53,36,.35);background:rgba(255,255,255,.65);color:var(--hero-ink);font-size:13px;cursor:pointer;line-height:1}
+  .dots button{width:44px;height:44px;border:none;background:transparent;cursor:pointer;padding:0;position:relative}
+  .dots button::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.85);box-shadow:0 0 4px rgba(0,0,0,.45);transition:width .3s}
+  .dots button.on::after{background:var(--accent);width:22px;border-radius:99px}
+  .badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent-dark);margin-top:14px}
+  .hero-note{text-align:center}
+  /* 통합 검색 안내 바 (검색 기능은 준비 중 — 도감·목록으로 안내) */
+  .searchbar{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,25,15,.05)}
+  .sb-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sb-ic{font-size:19px}
+  .sb-in input{flex:1;min-width:180px;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:#f7f4ee;color:var(--text);font-family:inherit}
+  .sb-btn{display:inline-block;background:var(--accent-btn);color:#fff;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;border:none;cursor:pointer;font-family:inherit;min-height:44px}
+  .sb-note{font-size:13.5px;color:var(--sub);margin-top:9px}
+  .sb-wrap{position:relative;flex:1;min-width:180px;display:flex}
+  .sb-wrap input{flex:1;min-width:0}
+  .sb-results{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:60;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(30,25,15,.14);max-height:420px;overflow-y:auto;display:none;text-align:left}
+  .sb-results.open{display:block}
+  .sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--text);border-bottom:1px solid var(--line)}
+  .sb-item:last-child{border-bottom:none}
+  .sb-item.sel,.sb-item:hover{background:var(--accent-soft)}
+  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--accent-btn)}
+  .sb-badge.map{background:#7A6A53}
+  .sb-badge.item{background:#4A6FA5}
+  .sb-badge.npc{background:#8A5AA5}
+  .sb-badge.quest{background:#B7791F}
+  .sb-icon{flex:none;width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+  .sb-nm{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-en{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-unv{flex:none;font-size:11px;font-weight:700;color:var(--unknown);background:#f4f1ea;border-radius:4px;padding:2px 6px}
+  .sb-none{padding:14px;font-size:14px;color:var(--sub)}
+  .sb-more{display:block;width:100%;padding:11px;font-size:14px;font-weight:700;color:var(--accent-dark);background:transparent;border:none;border-top:1px solid var(--line);cursor:pointer;font-family:inherit;min-height:44px}
+  /* 카테고리 배너형 카드 (배경 아트 위에 다크 그라데이션 + HTML 텍스트) */
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+  .bcard{position:relative;display:block;height:104px;border-radius:14px;overflow:hidden;text-decoration:none;background:#241B12;box-shadow:0 1px 3px rgba(30,25,15,.08)}
+  .bcard-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
+  .bcard-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,9,14,.90) 0%,rgba(10,9,14,.74) 55%,rgba(10,9,14,.18) 100%)}
+  .bcard-txt{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;padding:12px 14px;max-width:78%}
+  .bcard-txt h3{font-size:16.5px;font-weight:800;color:#FFF7EA;line-height:1.3;display:flex;align-items:center;gap:7px}
+  .bcard-txt p{font-size:13px;color:rgba(255,243,224,.82);margin-top:3px;line-height:1.45}
+  .bcard .soon-badge{flex:none;font-size:10.5px;font-weight:800;color:#110B29;background:#FFC94D;border-radius:4px;padding:2px 6px}
+  .bcard.soon{cursor:default}
+  .bcard.soon .bcard-txt{opacity:.92}
+  a.bcard:hover{outline:2px solid var(--accent);outline-offset:-2px}
+  .bcard.t-timeline{background:#2A1B3D}.bcard.t-faq{background:#17301F}.bcard.t-changes{background:#3A1408}
+  .bcard.t-npcs{background:#2A1B12}.bcard.t-mobs{background:#123524}.bcard.t-maps{background:#14263A}
+  .bcard.t-items{background:#351B72}.bcard.t-guide{background:#20301A}.bcard.t-hunting{background:#2E2A10}
+  .bcard.t-orbis{background:#173A3A}.bcard.t-edel{background:#33231A}.bcard.t-jobs{background:#0E2233}
+  /* 대시보드 2단 */
+  .dash{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+  .dash section{margin-top:0;background:#f5f1ea;padding:18px 16px}
+  .tl-row{display:block;text-decoration:none;color:var(--text);padding:11px 0;border-bottom:1px solid #f0ece3}
+  .tl-row:last-of-type{border-bottom:none}
+  .tl-row .d{font-size:13px;font-weight:800;color:var(--accent-dark)}
+  .tl-row .t{display:block;font-size:15px;font-weight:700;margin-top:2px;line-height:1.5}
+  .tl-row .m{font-size:13.5px;color:var(--sub)}
+  .more{display:inline-block;margin-top:10px;font-size:14px;font-weight:700}
+  .qa{padding:10px 0;border-bottom:1px solid #f0ece3}
+  .qa:first-of-type{padding-top:2px}
+  .qa:last-of-type{border-bottom:none}
+  .qa .q{font-size:15px;font-weight:800}
+  .qa .a{font-size:15px;color:var(--sub);line-height:1.6;margin-top:2px}
+  section{scroll-margin-top:80px;padding:20px 2px 4px;margin-top:16px}
+  section h2{font-size:18px;font-weight:700;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:10px}
+  h2 .em{color:var(--accent)}
+  p{font-size:16px;color:var(--text)}
+  .small{font-size:13.5px;color:var(--sub)}
+  ul{list-style:none}
+  li{font-size:15px;padding:9px 0;border-bottom:1px solid #f0ece3}
+  li:last-child{border-bottom:none}
+  .st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:8px;white-space:nowrap;vertical-align:2px}
+  .mbadge{font-size:11px;font-weight:800;padding:2px 6px;border-radius:4px;margin-right:6px;white-space:nowrap}
+@media (max-width:860px){.mbadge{white-space:normal}}
+  .mb-say{background:#ffe9d6;color:#8a3b00} .mb-say2{background:#fdf0d0;color:#7a4a00} .mb-post{background:#e1eefb;color:#17548f} .mb-etc{background:#f4f1ea;color:#6b6250}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--accent-dark);color:#fff;font-size:11px;font-weight:800;margin-right:7px;vertical-align:2px}
+  .st.ok{background:#e5f2dd;color:var(--ok)}
+  .st.mid{background:#fdf3cd;color:var(--warn)}
+  .st.no{background:#efece5;color:var(--unknown)}
+  .note{font-size:14px;color:var(--sub);margin-top:10px}
+  a{color:var(--accent-dark)}
+  .cta{display:block;text-align:center;background:var(--accent-btn);color:#fff;font-weight:800;font-size:16px;padding:14px;border-radius:12px;text-decoration:none;margin-top:16px}
+  footer{text-align:center;color:var(--unknown);font-size:12.5px;margin-top:28px;line-height:1.8}
+  @media (max-width:960px){ .cats{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:480px){ .cats{grid-template-columns:1fr} .bcard-txt{max-width:88%} }
+  @media (max-width:860px){ .dash{grid-template-columns:1fr} }
+  @media (max-width:560px){
+    .gnb .logo{font-size:18px} .gnb nav a{font-size:14px;margin-left:10px}
+  .gnb nav a{display:inline-flex;align-items:center;min-height:44px}
+    .dots{justify-content:flex-start;gap:0}}
+  .theme-toggle{flex:none;width:34px;height:34px;margin-left:12px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;padding:0}
+  .theme-toggle svg{width:18px;height:18px;display:block}
+  .theme-toggle .ic-sun{display:none}
+  [data-theme="dark"]{--bg:#121417;--card:#1E2229;--line:#2E3238;--text:#ECE9E2;--sub:#AEA392;--accent-dark:#FF9E57;--accent-soft:#2A1C0F;--unknown:#A79E8B;--ok:#8BD17F;--warn:#EBCB6B;color-scheme:dark}
+  [data-theme="dark"] body{letter-spacing:-0.01em}
+  [data-theme="dark"] .theme-toggle .ic-sun{display:block}
+  [data-theme="dark"] .theme-toggle .ic-moon{display:none}
+  [data-theme="dark"] .gnb{background:rgba(18,20,23,.92)}
+  [data-theme="dark"] .hero{background:var(--bg)}
+  [data-theme="dark"] .banner{border:1px solid rgba(255,255,255,0.12);box-shadow:0 12px 32px rgba(0,0,0,0.5)}
+  [data-theme="dark"] .slide img{filter:brightness(0.95) contrast(1.02)}
+  [data-theme="dark"] .searchbar{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+  [data-theme="dark"] .sb-in input{background:#22252B}
+  [data-theme="dark"] .dash section{background:#1E2229}
+  [data-theme="dark"] .tl-row,[data-theme="dark"] .qa,[data-theme="dark"] li{border-bottom-color:var(--line)}
+  [data-theme="dark"] .mb-say{background:#452A12;color:#FFBE82}
+  [data-theme="dark"] .mb-say2{background:#40350F;color:#F0D48C}
+  [data-theme="dark"] .mb-post{background:#17374F;color:#A5CFF5}
+  [data-theme="dark"] .mb-etc{background:#26292F;color:#B9BEC7}
+  [data-theme="dark"] .st.ok{background:#21301B}
+  [data-theme="dark"] .st.mid{background:#362D10}
+  [data-theme="dark"] .st.no{background:#26292F}
+  [data-theme="dark"] .num{background:var(--accent);color:#241203}
+:focus-visible{outline:2px solid var(--accent-btn);outline-offset:2px}
+[data-theme="dark"] :focus-visible{outline-color:#FF9E57}
+.skip-link{position:absolute;left:8px;top:-48px;z-index:300;background:var(--accent-btn);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:8px}
+
+  .new-dot{display:none;width:7px;height:7px;border-radius:50%;background:#E5484D;margin-left:5px;vertical-align:super}
+  .new-dot.on{display:inline-block}
+
+.dic{width:1.15em;height:1.15em;image-rendering:pixelated;vertical-align:-.18em}
+  @media (max-width:768px){.gnb-in{flex-wrap:nowrap}.gnb nav{flex-wrap:nowrap;overflow-x:auto;flex:1 1 auto;min-width:0;justify-content:flex-start;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 84%,transparent);mask-image:linear-gradient(to right,#000 84%,transparent)}.gnb nav::-webkit-scrollbar{display:none}.gnb nav a{flex-shrink:0}}
+
+/* 홈 대시보드 1단계 (시안) */
+.statusbar{display:flex;gap:12px;flex-wrap:wrap;max-width:1280px;margin:12px auto 0;padding:0 16px}
+.statusbar .slot{flex:1 1 200px;border:1px solid var(--line,#e3e6ea);border-radius:10px;padding:9px 14px;font-size:12.5px;color:var(--sub);background:var(--card,#fff)}
+.statusbar .slot b{color:var(--text);margin-right:6px}
+.hero .banner{max-height:400px}
+.hero .banner .slide img{height:400px;object-fit:cover;object-position:center 30%}
+.hero .banner .slide:nth-child(1) img{object-position:center 50%}
+.hero .banner .slide:nth-child(2) img{object-position:center 65%}
+.hero .banner .slide:nth-child(3) img{object-position:center 60%}
+.hero .banner .slide:nth-child(4) img{object-position:center 60%}
+.hero .banner .slide:nth-child(5) img{object-position:center 30%}
+.hero .banner .slide:nth-child(6) img{object-position:center 40%}
+.hero .banner .slide:nth-child(7) img{object-position:center 30%}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1280px;margin:16px auto 0;padding:0 16px}
+.dash .dcard{border:1px solid var(--line,#e3e6ea);border-radius:14px;padding:14px 16px;background:var(--card,#fff)}
+.dash .dcard h3{font-size:15px;margin:0 0 10px}
+.dash .dcard ul{list-style:none;margin:0;padding:0}
+.dash .dcard li{font-size:13px;padding:5px 0;border-top:1px dashed var(--line,#e3e6ea)}
+.dash .dcard li:first-child{border-top:0}
+.dash .dcard .d{color:var(--sub);font-size:11.5px;margin-right:6px}
+.dash .empty{color:var(--sub);font-size:12.5px}
+.dash .q a{display:block;padding:6px 0;font-size:13.5px}
+@media (max-width:860px){.dash{grid-template-columns:1fr}}
+@media (min-width:500px) and (max-width:768px){
+  .hero{margin-top:6px}
+  .hero-note{margin-top:8px}.searchbar{margin-top:8px;position:sticky;top:0;z-index:30}
+  .statusbar{margin-top:8px}.dash{gap:8px;margin-top:12px}
+}
+@media (max-width:768px){.hero .banner{max-height:none}.hero .banner .slide img{height:auto;object-fit:initial}  @media (max-width:768px){.statusbar .slot{font-size:11.5px;padding:12px 14px;line-height:1.55}}
+</style>
+<link rel="stylesheet" href="/assets/motion.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"vi"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-start">Đi đến nội dung chính</a>
+  <div class="gnb"><div class="gnb-in"><a href="/vietnam/" class="logo" aria-label="Trang chủ Alpang.gg"><img src="/assets/logo-global.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/vietnam/" class="on">Trang chủ</a><a href="/vietnam/timeline/">Dòng thời gian<span class="new-dot" id="tlNewDot" aria-label="Có bài viết mới"></span></a><a href="/vietnam/faq/">FAQ</a><a href="/mobs/">Tra cứu quái vật</a><a href="/maps/">Khám phá bản đồ</a><a href="/items/">Vật phẩm</a><a href="/npcs/">NPC · Nhiệm vụ</a><a href="/jobs/">Nghề nghiệp · Kỹ năng</a><a href="/calculator/cube/">Máy tính giá trị Cube</a><a href="/calculator/onehit/">Máy tính một đòn kết liễu</a></nav><button type="button" class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ tối"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button></div></div>
+
+  <div class="statusbar" id="statusBar">
+    <div class="slot" data-slot="event"><b>Sự kiện / Thông báo</b><span>Lịch mở máy chủ Alpang — đang chờ thông báo chính thức</span></div>
+    <div class="slot" data-slot="timer"><b>Bộ hẹn giờ</b><span>Thời gian đặt lại — sẽ hiển thị sau khi có xác nhận chính thức</span></div>
+    <div class="slot" data-slot="server"><b>Trạng thái máy chủ</b><span>Trước khi mở — máy chủ chưa hoạt động</span></div>
+  </div>
+  <div class="hero">
+    <h1 id="main-start" tabindex="-1" class="site-h1">Alpang.gg — Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds</h1>
+<div class="banner" id="banner">
+      <div class="slides" id="slides">
+        <a class="slide" href="/vietnam/timeline/"><img src="/assets/i18n/vietnam/hero-timeline.webp" alt="Dòng thời gian Alpang" width="1024" height="434" fetchpriority="high"></a>
+        <a class="slide" href="/vietnam/faq/"><img src="/assets/i18n/vietnam/hero-qa.webp" alt="Q&A Máy chủ Alpang" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/mobs/"><img src="/assets/i18n/vietnam/hero-mobs.webp" alt="Tra cứu quái vật" width="1024" height="434" loading="lazy" decoding="async"></a> <a class="slide" href="/maps/"><img src="/assets/i18n/vietnam/hero-maps.webp" alt="Khám phá bản đồ" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/items/"><img src="/assets/i18n/vietnam/hero-items.webp" alt="Từ điển vật phẩm" width="1024" height="434" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/npcs/"><img src="/assets/i18n/vietnam/hero-6.webp" alt="Tra cứu NPC · Nhiệm vụ" width="1584" height="672" loading="lazy" decoding="async"></a>
+        <a class="slide" href="/vietnam/timeline/"><img src="/assets/i18n/vietnam/hero-update.webp" alt="Đang cập nhật trang web" width="1024" height="434" loading="lazy" decoding="async"></a>
+      </div>
+      <div class="dots" id="dots"></div>
+      <button class="pause-btn" id="pauseBtn" aria-label="Dừng tự động chuyển banner">⏸</button>
+    </div>
+  </div>
+
+<div class="wrap">
+  <div class="hero-note"><span class="badge" data-stagger>Cơ sở dữ liệu thông tin máy chủ Alpang của MapleStory Worlds · Đang chuẩn bị mở</span></div>
+
+  <div class="searchbar">
+    <div class="sb-in">
+      <span class="sb-ic"><img class="dic" src="/assets/icons/icon-search.png" alt=""></span>
+      <div class="sb-wrap">
+        <input type="text" id="alpangSearch" disabled aria-disabled="true" placeholder="Tìm kiếm tổng hợp quái vật · bản đồ · vật phẩm · NPC · nhiệm vụ" aria-label="Tìm kiếm tổng hợp" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sbResults">
+        <div class="sb-results" id="sbResults" role="listbox"></div>
+      </div>
+      <button type="button" class="sb-btn" id="sbGo" aria-label="Tìm kiếm">Tìm kiếm</button>
+    </div>
+    <p class="sb-note">Có thể tìm kiếm cùng lúc 175 loại quái vật, 419 bản đồ, 14.577 vật phẩm bằng tên tiếng Hàn · tiếng Anh. Tên tiếng Hàn là tên hiển thị đề xuất.</p><p class="sb-note sb-disabled-note">Tìm kiếm đang trong quá trình chuẩn bị bản dịch, nên hiện tại chưa dùng được.</p>
+  </div>
+
+  <section class="dash" id="dashBoard">
+    <div class="dcard">
+      <h3>Dòng thời gian</h3>
+      <ul id="dashNews">
+         <li><span class="d">2026-11-17</span><a href="/vietnam/timeline/">알티, thông báo phát sóng tối nay lúc 7 giờ 30 — Tuyên bố tách phát sóng cá nhân và phát sóng chính thức</a></li>
+         <li><span class="d">2026-11-15</span><a href="/vietnam/timeline/">알티 phát sóng trở lại (Đã kết thúc · Tổng kết)</a></li>
+         <li><span class="d">2026-11-13</span><a href="/vietnam/timeline/">알티, thông báo phát sóng trở lại vào tối Chủ nhật tuần này (15/11) — &quot;Việc phát triển gần như đã xong&quot;</a></li>
+       </ul>
+      <a class="more" href="/vietnam/timeline/">Xem toàn bộ dòng thời gian</a>
+    </div>
+  
+    <div class="dcard">
+      <h3>Từ khóa tìm kiếm gợi ý</h3>
+      <ul id="dashRecommend">
+      <li>1. <a href="/mobs/#mob-210100">슬라임</a></li>
+      <li>2. <a href="/mobs/#mob-1210102">주황버섯</a></li>
+      <li>3. <a href="/maps/#map-310000000">에델슈타인</a></li>
+      <li>4. <a href="/items/use.html#it2070005">뇌전 수리검</a></li>
+      <li>5. <a href="/maps/#map-104000000">리스항구</a></li>
+      </ul>
+    </div>
+    <div class="dcard q">
+      <h3>Tiện ích nhanh</h3>
+      <a href="/calculator/onehit/">Máy tính một đòn kết liễu</a>
+      <a href="/calculator/cube/">Máy tính giá trị Cube</a>
+      <a href="#" id="dashSearchLink">Tìm kiếm tổng hợp tra cứu (ô tìm kiếm bên dưới · phím '/')</a>
+    </div>
+  </section>
+  <nav class="cats">
+    <a class="bcard t-faq" href="/vietnam/faq/" aria-label="FAQ phát ngôn đã xác nhận"><img class="bcard-img" src="/assets/card-faq.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>FAQ phát ngôn đã xác nhận</h3><p>Chỉ trả lời câu hỏi thường gặp bằng phát ngôn thực tế</p></span></a>
+    <a class="bcard t-npcs" href="/npcs/" aria-label="Tra cứu NPC · nhiệm vụ"><img class="bcard-img" src="/assets/card-npc.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Tra cứu NPC · Nhiệm vụ</h3><p>Vị trí · hội thoại của 1.836 NPC và điều kiện · phần thưởng của 3.412 nhiệm vụ</p></span></a>
+    <a class="bcard t-mobs" href="/mobs/" aria-label="Tra cứu quái vật"><img class="bcard-img" src="/assets/card-mobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Tra cứu quái vật</h3><p>Xem nhanh cấp · HP · bản đồ xuất hiện của 175 loại quái vật đã thu thập</p></span></a>
+    <a class="bcard t-maps" href="/maps/" aria-label="Khám phá bản đồ"><img class="bcard-img" src="/assets/card-maps.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Khám phá bản đồ</h3><p>Duyệt 419 bản đồ đã thu thập theo khu vực</p></span></a>
+    <a class="bcard t-items" href="/items/" aria-label="Danh sách vật phẩm"><img class="bcard-img" src="/assets/card-items.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Danh sách vật phẩm</h3><p>Danh sách đề xuất gồm 14.577 vật phẩm, được sắp xếp theo phân loại</p></span></a>
+    <a class="bcard t-jobs" href="/jobs/" aria-label="Tra cứu nghề · Kỹ năng"><img class="bcard-img" src="/assets/card-jobs.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Tra cứu nghề · Kỹ năng</h3><p>Xem nhanh 86 nghề và 610 kỹ năng, điều kiện chuyển nghề và chỉ số kỹ năng</p></span></a>
+    <div class="bcard t-guide soon" aria-label="Hướng dẫn bắt đầu đang chuẩn bị"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Hướng dẫn khởi đầu <span class="soon-badge">Đang chuẩn bị</span></h3><p>Đang chuẩn bị cho ngày mở: từ chọn nghề đến lộ trình săn quái đầu game</p></span></div>
+    <a class="bcard t-hunting" href="/vietnam/guide/hunting/" aria-label="Điểm săn đầu game gợi ý"><img class="bcard-img" src="/assets/card-hunting.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Địa điểm săn quái đầu game (đề xuất)</h3><p>So sánh quái vật xuất hiện tại 39 bản đồ đầu game ở đảo Victoria</p></span></a>
+    <a class="bcard t-orbis" href="/vietnam/guide/orbis-leafre/" aria-label="Tham quan Orbis và Leafre"><img class="bcard-img" src="/assets/card-orbis.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Tham quan Orbis & Leafre</h3><p>Vùng đất của bầu trời và tinh linh, xem trước 60 loại quái vật xuất hiện</p></span></a>
+    <a class="bcard t-edel" href="/vietnam/guide/edelstein/" aria-label="Ngó qua Edelstein"><img class="bcard-img" src="/assets/card-edelstein.webp" alt="" width="1280" height="318" loading="lazy" decoding="async"><span class="bcard-shade"></span><span class="bcard-txt"><h3>Hé lộ Edelstein</h3><p>Thành phố mỏ của Black Wing và 27 loại quái vật xuất hiện</p></span></a>
+
+  </nav>
+
+
+  <main>
+  <div class="dash">
+    <section>
+      <h2><span class="em">Q&amp;A</span> cốt lõi Tóm tắt</h2>
+      <div class="qa"><div class="q"><span class="num">1</span>Lịch mở máy chủ thì sao?</div><div class="a">Chưa có lịch trình nào được hứa hẹn. Đội ngũ sản xuất cho biết sẽ công bố lịch trình ngay trước giai đoạn closed beta.</div></div>
+      <div class="qa"><div class="q"><span class="num">6</span>Máy chủ có reset không?</div><div class="a">Đã khẳng định rõ ràng sẽ không hard reset. Soft reset vẫn ở giai đoạn lên ý tưởng, chưa phải là quyết định xác định.</div></div>
+      <div class="qa"><div class="q">Hệ số kinh nghiệm thì sao?</div><div class="a">Chưa có phát ngôn xác định về hệ số. Chỉ xác nhận được phần giải thích theo ý “hệ số 1x cũng đã nhanh”.</div></div>
+      <div class="qa"><div class="q"><span class="num">7</span>Quyền lợi khi ủng hộ thì sao?</div><div class="a">Đã cho biết sẽ không có chuyện ưu ái một người chơi cụ thể nào tùy theo mức độ ủng hộ.</div></div>
+      <a class="more" href="/vietnam/faq/">Kiểm tra bằng phát ngôn gốc</a>
+    </section>
+  <section>
+    <h2>Máy chủ Alpang — <span class="em">những gì đã biết đến nay</span></h2>
+    <ul>
+      <li><span class="st ok">Đã xác nhận phát ngôn</span>Thế giới mới của MapleStory Worlds, do hai streamer MapleStory nổi tiếng <b>팡이요</b> và <b>알티</b> cùng hợp tác chuẩn bị <span class="small">(Đã xác nhận văn bản gốc bài đăng · phát ngôn trên sóng của đội ngũ sản xuất — xem <a href="/vietnam/timeline/">dòng thời gian</a>)</span></li>
+      <li><span class="st ok">Đã xác nhận phát ngôn</span>“Máy chủ Alpang” là tên tạm thời; tên chính thức dự kiến được công bố vào thời điểm ra mắt <span class="small">(Nguồn: thông báo trên bảng tin của 팡이요 · phát ngôn gốc trên sóng của 알티)</span></li>
+      <li><span class="st ok">Đã xác nhận phát ngôn</span>Hướng đến MapleStory xưa theo phiên bản sau Big Bang <span class="small">(Nguồn: phát ngôn gốc trên sóng của 알티)</span></li>
+      <li><span class="st no">Chưa xác nhận</span>Tên chính thức — chưa có văn bản chính thức để xác nhận</li>
+      <li><span class="st no">Chưa xác nhận</span>Lịch mở máy chủ — chưa có thông báo lịch trình chính thức</li>
+      <li><span class="st no">Chưa xác nhận</span>Phạm vi nội dung triển khai (nghề · khu vực · boss) — chưa có hướng dẫn chính thức</li>
+    </ul>
+    <p class="note">Trang này ghi rõ trạng thái xác nhận cho từng thông tin. “Tin truyền miệng cộng đồng” là nội dung được nhắc đến trên sóng và trong cộng đồng, có thể khác với thông báo chính thức đã xác định, nên chúng tôi ghi kèm trạng thái thu thập nguồn cho từng mục. Những thông tin dễ gây hiểu lầm nếu khẳng định chắc chắn — như lịch mở máy chủ và phạm vi triển khai — sẽ không được đăng cho đến khi có căn cứ chính thức.</p>
+  </section>
+  </div>
+
+  <section id="changes">
+    <h2>Điều người chơi MapleLand cần biết</h2>
+    <p class="small" style="margin-bottom:8px">Nội dung này được tổng hợp theo tiêu chuẩn các bản vá Big Bang ~ Chaos của MapleStory gốc. Có thể khác với triển khai thực tế của máy chủ Alpang; sau khi mở, chúng tôi sẽ kiểm chứng theo máy chủ thực tế và cập nhật.</p>
+    <ul>
+      <li><b>Tốc độ trưởng thành</b> — Lượng kinh nghiệm yêu cầu giảm mạnh, lên cấp nhanh hơn nhiều</li>
+      <li><b>Công thức chiến đấu</b> — Các công thức chiến đấu như trúng đòn và né tránh đã thay đổi. Cách phân bổ chỉ số sẽ được hướng dẫn khi công thức và điều kiện trang bị của Alpang được xác nhận</li>
+      <li><b>Địa hình đảo Victoria thay đổi lớn</b> — Cấu trúc làng và lộ trình di chuyển thay đổi toàn bộ. Đây là đoạn đường dễ lạc nếu tìm theo cảm giác MapleLand</li>
+      <li><b>Mở rộng nhóm nghề</b> — Sau Adventurer · Cygnus Knight · Aran · Evan · Dual Blade, Resistance xuất hiện (Battle Mage · Wild Hunter, sau đó là Mechanic). Khu vực căn cứ Edelstein cũng được thêm vào</li>
+      <li><b>Thay đổi lớn về kỹ năng</b> — Chỉ số và cấu trúc kỹ năng của các nghề hiện có thay đổi lớn. Không thể dùng nguyên cây kỹ năng kiểu MapleLand</li>
+    </ul>
+    <p class="note">Nguồn: thông báo bản vá chính thức của NEXON — <a href="https://maplestory.nexon.com/News/Update/140" target="_blank" rel="noopener">Cập nhật Big Bang (1.2.101)</a> · <a href="https://maplestory.nexon.com/news/update/147?page=64" target="_blank" rel="noopener">Thêm Resistance (1.2.105)</a> · <a href="https://maplestory.nexon.com/News/Update/149" target="_blank" rel="noopener">Thêm Mechanic (1.2.108)</a></p>
+  </section>
+
+  <section>
+    <h2>Dữ liệu đã chuẩn bị hiện tại <img class="dic" src="/assets/icons/icon-mapleleaf.png" alt=""></h2>
+    <p>Dựa trên giai đoạn ngay sau Big Bang của MapleStory gốc (GMS 95), chúng tôi đã thu thập và sắp xếp 419 bản đồ · 175 loại quái vật · 14.577 vật phẩm. Bạn có thể xem ngay tại Tra cứu quái vật · Khám phá bản đồ · Danh sách vật phẩm.</p>
+    <p class="note">※ Dữ liệu này là tài liệu tham khảo, chưa xác nhận có áp dụng cho máy chủ Alpang thực tế hay không. Sau khi máy chủ mở, chúng tôi sẽ xác nhận bằng đo lường thực tế và gắn nhãn kiểm chứng.</p>
+  </section>
+
+  <section>
+    <h2>Đang chuẩn bị</h2>
+    <ul>
+      <li>Tóm tắt nghề · kỹ năng và hướng dẫn địa điểm săn quái theo cấp</li>
+      <li>Danh sách kiểm tra vật phẩm cần chuẩn bị cho chuyển nghề · nhiệm vụ điều kiện</li>
+      <li>Kiểm chứng trên máy chủ thực tế sau khi mở — đánh dấu các mục khác với dữ liệu bản gốc</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nơi cập nhật tin tức sớm nhất</h2>
+    <p>Chúng tôi đăng tin mới qua kênh Telegram, nơi tổng hợp mỗi ngày tin tức về MapleStory Worlds, bao gồm cả máy chủ Alpang.</p>
+    <a class="cta" href="https://t.me/alpang_gg" target="_blank" rel="noopener"><img class="dic" src="/assets/icons/icon-megaphone.png" alt=""> Đăng ký kênh Telegram của Alpang.gg</a>
+  </section>
+  </main>
+
+  <footer>
+    Alpang.gg là trang thông tin do người hâm mộ vận hành, không liên quan đến NEXON và các streamer.<br>
+    <a href="/privacy/" style="color:var(--sub)">Chính sách bảo mật</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">Liên hệ</a><br>
+    Tiêu chuẩn dữ liệu: giai đoạn ngay sau Big Bang của MapleStory gốc (GMS 95) · Ngày cập nhật trang: 27/10/2026
+  <br>
+    <span style="font-size:12px;color:var(--sub)">Dữ liệu trò chơi trên trang này được tổng hợp dựa trên bản gốc GMS 95, tham khảo maplestory.io.<br>
+    Bản quyền của MapleStory cùng hình ảnh · tài liệu liên quan thuộc về NEXON, và Alpang.gg là trang người hâm mộ không chính thức, không liên quan đến NEXON.</span> <div class="lang-switch" style="margin-top:8px;font-size:13px"><a href="/" style="color:var(--sub)">한국어</a> · <a href="/taiwan/" style="color:var(--sub)">繁體中文</a> · <strong aria-current="true">Tiếng Việt</strong></div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var slides = document.getElementById('slides');
+  var dotsBox = document.getElementById('dots');
+  var n = slides.children.length, cur = 0, timer = null;
+  for (var i = 0; i < n; i++) {
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', (i+1) + '번 배너');
+    (function(idx){ b.addEventListener('click', function(e){ e.preventDefault(); go(idx); restart(); }); })(i);
+    dotsBox.appendChild(b);
+  }
+  function paint(){ slides.style.transform = 'translateX(' + (-cur*100) + '%)';
+    for (var j = 0; j < n; j++) { dotsBox.children[j].className = (j === cur ? 'on' : '');
+      slides.children[j].tabIndex = (j === cur ? 0 : -1);
+      slides.children[j].setAttribute('aria-hidden', j === cur ? 'false' : 'true'); } }
+  function go(i){ cur = (i + n) % n; paint(); }
+  var paused = false;
+  function restart(){ if (timer) clearInterval(timer); if (!paused) timer = setInterval(function(){ go(cur+1); }, 5000); }
+  var banner = document.getElementById('banner');
+  banner.addEventListener('mouseenter', function(){ if (timer) clearInterval(timer); });
+  banner.addEventListener('mouseleave', restart);
+  banner.addEventListener('focusin', function(){ if (timer) clearInterval(timer); });
+  banner.addEventListener('focusout', restart);
+  var pauseBtn = document.getElementById('pauseBtn');
+  pauseBtn.addEventListener('click', function(e){ e.preventDefault();
+    paused = !paused;
+    pauseBtn.textContent = paused ? '▶' : '⏸';
+    pauseBtn.setAttribute('aria-label', paused ? '배너 자동 전환 재개' : '배너 자동 전환 정지');
+    restart(); });
+  // 터치 스와이프 (2026-10-16): 핸들러는 #banner 컨테이너에 붙인다 — 슬라이드 내부가 HTML 오버레이 구조로 바뀌어도 유지된다.
+  var sx = 0, sy = 0, swiped = false;
+  banner.addEventListener('touchstart', function(e){ var t = e.changedTouches[0]; sx = t.clientX; sy = t.clientY; }, {passive:true});
+  banner.addEventListener('touchend', function(e){
+    var t = e.changedTouches[0];
+    var dx = t.clientX - sx, dy = t.clientY - sy;
+    if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      swiped = true;
+      go(cur + (dx < 0 ? 1 : -1));
+      restart();
+      setTimeout(function(){ swiped = false; }, 350);
+    }
+  }, {passive:true});
+  // 스와이프 직후 슬라이드 링크로 새는 클릭 1회만 차단 (도트·일시정지 버튼은 대상 아님)
+  banner.addEventListener('click', function(e){
+    if (swiped && e.target.closest && e.target.closest('#slides')) { e.preventDefault(); e.stopPropagation(); swiped = false; }
+  }, true);
+  paint(); restart();
+})();
+</script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b){return;}b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('alpang-theme',n);}catch(e){}});})();</script>
+<script src="/assets/search.js?v=5" data-index="/assets/alpang-search-20261028-10.json" defer></script>
+<script src="/assets/hit.js?v=2" defer></script>
+<script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
+<script>
+/* 홈 대시보드 1단계 (시안): 상태 바 데이터 분리 + '/' 단축키 */
+(function(){
+  fetch('/assets/home-dashboard-data-vi.json').then(function(r){return r.json()}).then(function(d){
+    var rec=document.getElementById('dashRecommend');
+    if(rec&&(d.recommended_keywords||[]).length){
+      rec.innerHTML=(d.recommended_keywords||[]).map(function(r,i){return '<li>'+(i+1)+'. <a href="'+r.url+'">'+r.keyword+'</a></li>';}).join('');
+    }
+    (d.status_slots||[]).forEach(function(s){
+      var el=document.querySelector('.statusbar .slot[data-slot="'+s.id+'"] span');
+      if(el&&s.text){el.textContent=s.text;}
+    });
+  }).catch(function(){});
+  document.addEventListener('keydown', function(e){
+    if(e.key!=='/'||e.metaKey||e.ctrlKey||e.altKey){return;}
+    var a=document.activeElement;
+    if(a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.isContentEditable)){return;}
+    var inp=document.getElementById('alpangSearch');
+    if(inp){e.preventDefault();inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}
+  });
+  var q=document.getElementById('dashSearchLink');
+  if(q){q.addEventListener('click',function(e){e.preventDefault();var inp=document.getElementById('alpangSearch');if(inp){inp.focus();inp.scrollIntoView({block:'center',behavior:'smooth'});}});}
+})();
+</script><script src="/assets/motion.js" defer></script>
+</body>
+</html>
