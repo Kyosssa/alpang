@@ -1,0 +1,699 @@
+{
+ "batch": "39차 정기 소싱 (2026-11-19 17:00)",
+ "file": "batch_20261119_1700.json",
+ "date": "2026-11-19",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17(4대 기준) + 5대 게이트. 계정당 회차 2편 상한, 저조회 확인 분리, 8컷+10fps 스파이크, AI 배지 0, 1년 이상.",
+ "pool": {
+  "38차 인계 무자막 클린 잔여(54편)": "메타 확인 결과 대부분 Royal Sphynx(정지 구도 누적 탈락)·Kokong Koa(보호자 전신)·캠핑/게임/재업 채널로 우선순위 제외. 이 중 1편(Kokong Koa 8CQkZBFTWF4)만 실물 측정",
+  "신규 채널 발굴(강아지 보강 쿼리 선두)": "채널 검색 58쿼리 → 신규 채널 176개 → /shorts 5,889편 → 채널별 상위 5편 750편 → 메타 1년 이상·1080x1920·10~70초·AI 0 통과 145편 → 썸네일 RapidOCR 프리스크린 무자막 74편",
+  "기존 확정 채널 재고(원작자 검증 완료 채널)": "납품 이력 143채널 중 28채널 chid 해석 → /shorts 1,120편 → 채널별 6편 159편 샘플 → 썸네일 무자막 104편",
+  "브라우저 실물 검증": "30편 측정(모션·8컷·스파이크·메타 동시 수집)"
+ },
+ "delivered": [
+  {
+   "id": "rvGZ_jtXl64",
+   "url": "https://www.youtube.com/shorts/rvGZ_jtXl64",
+   "channel": "My puppy Dachshund Dong",
+   "chid": "UC9iGYD2W85tTRlXs0j0PHCQ",
+   "subs": "1.93K subscribers",
+   "channel_joined": "Joined May 17, 2020",
+   "channel_videos": "407 videos",
+   "channel_desc": "Dog relaxing music · calming music for dogs home alone … 🐾 Meet Dong, our real dachshund. (닥스훈트 본인 계정)",
+   "published": "2025-10-14",
+   "views": 1781,
+   "likes": null,
+   "duration_s": 12.3,
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "title": "A short break with Dong-i in the front yard.",
+   "verdict": "delivered",
+   "motion": {
+    "mean": 17.9,
+    "median": 18.77,
+    "min": 4.49,
+    "max": 27.76,
+    "spikes_over_0.6": [],
+    "samples": 101,
+    "decode": "240x426 브라우저 디코드(160x90 gray·mean abs diff·10fps 버킷·rVFC)",
+    "note": "requestVideoFrameCallback 10fps · 표본 101 · 정지 구간 없음(min 4.49) · 변화픽셀 0.6 초과 0회"
+   },
+   "cuts8_checked": true,
+   "content": "닥스훈트 '동이'가 벽돌길 앞마당에서 코를 바닥에 붙이고 걸어가다 카메라 쪽으로 다가오는 12.3초 단일 숏. 핸드헬드 추적, 배경은 같은 벽돌길·관목으로 연속.",
+   "reason": "8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 전 시점을 재생 중 rVFC로 캡처해 육안 검수: 같은 앞마당·같은 벽돌길이 끊김 없이 이어지고 컷 전환 0(스파이크 0회) · 원작자 자막 0 · 브랜드 스트립 0 · 타 채널 워터마크 0 · 사람 얼굴·전신 0(손도 미등장) · AI 배지 0. 게시 2025-10-14(1년 1개월 경과) · 조회 1,781 · 원본 1080x1920. 채널 'My puppy Dachshund Dong'는 소개란에 \"Meet Dong, our real dachshund\"라고 밝힌 본인 사육 계정(2020-05-17 개설·407편) — 게이트② 충족.",
+   "stills": "browser/c39_rvGZ_A-2026-11-19-171411.png · browser/c39_rvGZ_B-2026-11-19-171421.png",
+   "edit_memo": "12.3초 통편 사용. 0.3~1.5초 코를 땅에 대고 걸어오는 구간이 첫 1초 훅, 6.0초 이후 렌즈 쪽 접근이 후킹 구간."
+  },
+  {
+   "id": "q3K5nmZ4L0o",
+   "url": "https://www.youtube.com/shorts/q3K5nmZ4L0o",
+   "channel": "My puppy Dachshund Dong",
+   "chid": "UC9iGYD2W85tTRlXs0j0PHCQ",
+   "subs": "1.93K subscribers",
+   "channel_joined": "Joined May 17, 2020",
+   "channel_videos": "407 videos",
+   "channel_desc": "Dog relaxing music · calming music for dogs home alone … 🐾 Meet Dong, our real dachshund. (닥스훈트 본인 계정)",
+   "published": "2025-10-23",
+   "views": 1698,
+   "likes": null,
+   "duration_s": 50.4,
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "title": "Cute Dog Getting Praised After a Walk | Heartwarming Moment With My Dachshund",
+   "verdict": "delivered",
+   "motion": {
+    "mean": 14.82,
+    "median": 13.6,
+    "min": 5.9,
+    "max": 33.65,
+    "spikes_over_0.6": [],
+    "samples": 98,
+    "decode": "240x426 브라우저 디코드(160x90 gray·mean abs diff·10fps 버킷·rVFC)",
+    "note": "0~10.4초 구간 측정 · 표본 98 · 스파이크 0 · 측정 구간 내 컷 없음"
+   },
+   "cuts8_checked": true,
+   "content": "산책 후 칭찬받는 닥스훈트 얼굴 클로즈업 — 카메라를 응시하다 손이 머리를 쓰다듬자 눈을 감는 10초 이상 단일 숏(전체 50.4초 중 앞구간 사용).",
+   "reason": "8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 육안 검수: 같은 거실·같은 목줄 차림으로 연속, 컷 전환 0 · 자막·브랜드 스트립·워터마크 0 · 사람 얼굴·전신 0(손만 등장 — 게이트⑤ 허용 범위) · AI 배지 0. 게시 2025-10-23(1년 1개월) · 조회 1,698 · 1080x1920. 같은 채널 2편째(회차 상한 내).",
+   "stills": "browser/c39_q3K_A-2026-11-19-173903.png · browser/c39_q3K_B-2026-11-19-173913.png",
+   "edit_memo": "앞 10.4초 무컷 구간만 사용 권장. 0.3초 정면 응시가 첫 프레임 훅, 8.0초 머리 쓰다듬기·9.2초 눈 감기가 감정 훅."
+  },
+  {
+   "id": "SuS1mY1I2Es",
+   "url": "https://www.youtube.com/shorts/SuS1mY1I2Es",
+   "channel": "Juliana & Marley the border collie",
+   "chid": "UCOgow83mgN5dc0XLlbPbEsA",
+   "subs": "516 subscribers",
+   "channel_joined": "Joined Jul 23, 2020",
+   "channel_videos": null,
+   "channel_desc": "Instagram marleynesta_bordercollie — 보더콜리 Marley 1인칭 계정",
+   "published": "2025-05-17",
+   "views": 4606,
+   "likes": null,
+   "duration_s": 21.1,
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "title": "Border collie playing in the front yard",
+   "verdict": "delivered",
+   "motion": {
+    "mean": 15.77,
+    "median": 14.57,
+    "min": 2.23,
+    "max": 33.74,
+    "spikes_over_0.6": [],
+    "samples": 97,
+    "decode": "240x426 브라우저 디코드(160x90 gray·mean abs diff·10fps 버킷·rVFC)",
+    "note": "표본 97 · 스파이크 0 · min 2.23은 10.1초 손이 장난감을 들 때의 짧은 정지"
+   },
+   "cuts8_checked": true,
+   "content": "보더콜리 Marley가 앞마당 잔디에서 공을 쫓아 전력으로 달려오는 21.1초 단일 숏. 10.1초에 보호자 손이 파란 장난감을 듦.",
+   "reason": "8컷 육안 검수: 0.3~9.2초 같은 잔디밭·같은 낮 조명으로 연속(카메라 팬만), 컷 전환 0 · 자막·브랜드 스트립·워터마크 0 · 사람 얼굴·전신 0(10.1초에 손과 장난감만 — 허용) · AI 배지 0. 게시 2025-05-17(1년 6개월) · 조회 4,606 · 1080x1920 · 채널 516구독 2020-07-23 개설, 소개란에 본인 인스타 핸들(marleynesta_bordercollie)만 기재한 원작자 계정.",
+   "stills": "browser/c39_SuS1_A-2026-11-19-172035.png · browser/c39_SuS1_B-2026-11-19-172044.png",
+   "edit_memo": "0~9.2초 구간이 가장 깔끔. 0.5~1.5초 정면 돌진이 첫 1초 훅."
+  }
+ ],
+ "delivered_count": 3,
+ "holds": [
+  {
+   "id": "skKtiQssjm4",
+   "channel": "AussieGal",
+   "url": "https://www.youtube.com/shorts/skKtiQssjm4",
+   "published": "2015-09-24",
+   "views": 201518,
+   "duration_s": 16.3,
+   "res_1080x1920_available": true,
+   "motion": {
+    "mean": 11.64,
+    "median": 10.94,
+    "min": 4.98,
+    "spikes_over_0.6": [],
+    "samples": 100
+   },
+   "verdict": "hold",
+   "reason": "38차 보류 재측정. 오렌지 고양이와 아기고양이가 16초 내내 격투, 8컷 육안 전 시점 무자막·무워터마크·사람 0(38차 확인 유지). 모션 11.64로 기준 12.0에 0.36 미달 — 2회 연속 임계 근처(38차 11.39). 플레이북 2장 '임계 근처 자동 판정 금지'에 따라 기획실장 판정 요청."
+  },
+  {
+   "id": "a0GAo5QMlKs",
+   "channel": "猫と森で暮らす",
+   "url": "https://www.youtube.com/shorts/a0GAo5QMlKs",
+   "published": "2025-08-22",
+   "views": 14094,
+   "duration_s": 32.3,
+   "res_1080x1920_available": true,
+   "motion": {
+    "mean": 11.5,
+    "median": 11.53,
+    "min": 5.06,
+    "spikes_over_0.6": [],
+    "samples": 84
+   },
+   "verdict": "hold",
+   "reason": "고양이가 물웅덩이에 빠진 뒤 목욕시키는 클립. 모션 11.50으로 12.0에 0.5 미달 — 육안 확인 전 수치만으로 탈락시키지 않고 보류(스틸 미확인)."
+  },
+  {
+   "id": "skNmh-eHTY0",
+   "channel": "Juliana & Marley the border collie",
+   "url": "https://www.youtube.com/shorts/skNmh-eHTY0",
+   "published": "2025-07-30",
+   "views": 8320,
+   "duration_s": 19.7,
+   "res_1080x1920_available": true,
+   "motion": {
+    "mean": 11.08,
+    "median": 10.31,
+    "min": 2.66,
+    "spikes_over_0.6": [],
+    "samples": 98
+   },
+   "verdict": "hold",
+   "reason": "비 오는 날 보더콜리와 실내 놀이. 모션 11.08로 12.0에 0.92 미달 — 임계 근처 보류."
+  }
+ ],
+ "holds_count": 3,
+ "rejected_after_review": [
+  {
+   "id": "jnrAwkHGaE8",
+   "channel": "犬と私",
+   "published": "2023-11-20",
+   "views": 10627,
+   "duration_s": 11.6,
+   "motion": {
+    "mean": 12.58,
+    "median": 12.46,
+    "min": 2.06,
+    "max": 30.87,
+    "samples": 101,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "집 마당에서 사람(파란 점퍼)이 전신으로 등장하고 개는 창가에 작게 걸림 — 게이트⑤ 사람 전신 + 주인공 이탈"
+  },
+  {
+   "id": "SEqvGaBprDQ",
+   "channel": "登山犬 ジャックラッセルテリアのモカです",
+   "published": "2025-04-28",
+   "views": 67000,
+   "duration_s": 46.2,
+   "motion": {
+    "mean": 19.09,
+    "median": 19.0,
+    "min": 6.64,
+    "max": 72.18,
+    "samples": 100,
+    "spikes_over_0.6": [
+     1.94,
+     4.2,
+     8.58
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "GoPro 하이킹 몽타주 — 1.94·4.2·8.58초 프레이밍 전환(8컷 4.5초에서 배경 전환 확인), 0.3~1.5초 개가 원거리 점状 — 게이트① 컷"
+  },
+  {
+   "id": "pIPr4N6CTGo",
+   "channel": "犬席屋",
+   "published": "2025-09-10",
+   "views": 297895,
+   "duration_s": 9.8,
+   "motion": {
+    "mean": 6.91,
+    "median": 7.16,
+    "min": 1.79,
+    "max": 12.09,
+    "samples": 92,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "9.8초로 10초 미만 + 모션 6.91 — 게이트① 미충족(강아지카페 홍보 클립)"
+  },
+  {
+   "id": "vyk-kET6E04",
+   "channel": "登山犬 ジャックラッセルテリアのモカです",
+   "published": "2025-04-28",
+   "views": 24776,
+   "duration_s": 25.3,
+   "motion": {
+    "mean": 4.8,
+    "median": 2.98,
+    "min": 0.86,
+    "max": 60.2,
+    "samples": 100,
+    "spikes_over_0.6": [
+     9.54
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "하이킹 후 잠든 개 — 모션 4.80, 정지 구도(게이트①)"
+  },
+  {
+   "id": "gs-3_D_g3ZQ",
+   "channel": "퍼피트랙 PuppyTrack",
+   "published": "2024-04-11",
+   "views": 4103,
+   "duration_s": 13.5,
+   "motion": {
+    "mean": 10.07,
+    "median": 8.11,
+    "min": 1.29,
+    "max": 66.6,
+    "samples": 100,
+    "spikes_over_0.6": [
+     3.17,
+     5.27,
+     9.57
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "모션 10.07 미달 + 스파이크 3회(3.17·5.27·9.57초) 컷"
+  },
+  {
+   "id": "dk_hlbye9CQ",
+   "channel": "퍼피트랙 PuppyTrack",
+   "published": "2024-06-19",
+   "views": 6554,
+   "duration_s": 38.2,
+   "motion": {
+    "mean": 19.92,
+    "median": 17.95,
+    "min": 5.04,
+    "max": 59.8,
+    "samples": 100,
+    "spikes_over_0.6": [
+     3.1,
+     3.5,
+     5.73
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 한글 자막 '강아지가 / 잔디밭에 뒹굴며 / 댄스 발광' 상시 노출 + 3.0→4.5초 장면 전환 — 게이트④"
+  },
+  {
+   "id": "PvSHJZ1bEG8",
+   "channel": "Remysek",
+   "published": "2021-03-13",
+   "views": 1654,
+   "duration_s": 21.5,
+   "motion": {
+    "mean": 15.09,
+    "median": 10.8,
+    "min": 0.74,
+    "max": 106.69,
+    "samples": 99,
+    "spikes_over_0.6": [
+     6.41,
+     6.81,
+     9.31
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 'Food' 카드보드 텍스트·소품 컷 + 6.4~9.3초 프레임 전환 — 게이트④ 컷/자막"
+  },
+  {
+   "id": "oGK8Vh5gFCc",
+   "channel": "Golden Retriever‘s Journey",
+   "published": "2025-04-30",
+   "views": 9804,
+   "duration_s": 14.5,
+   "motion": {
+    "mean": 16.3,
+    "median": 14.07,
+    "min": 4.39,
+    "max": 62.64,
+    "samples": 98,
+    "spikes_over_0.6": [
+     5.1
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "5.1초 스파이크 = 실제 컷 확인(4.5초 거실 카펫 → 6.0초 타일 바닥·근접 손가락) — 게이트① 컷"
+  },
+  {
+   "id": "Y9f1xkgBs3k",
+   "channel": "【アウトドア犬】ユキちゃんねる",
+   "published": "2021-09-07",
+   "views": 2056,
+   "duration_s": 15.1,
+   "motion": {
+    "mean": 25.87,
+    "median": 25.79,
+    "min": 14.72,
+    "max": 130.8,
+    "samples": 100,
+    "spikes_over_0.6": [
+     0.17
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 일본어 제목 자막 '子犬の水遊び' 고정 노출 + 3.0→4.5초 화면 전환 — 게이트④"
+  },
+  {
+   "id": "TUoL4VZlbyg",
+   "channel": "Remysek",
+   "published": "2021-03-18",
+   "views": 1902,
+   "duration_s": 15.3,
+   "motion": {
+    "mean": 14.09,
+    "median": 9.52,
+    "min": 2.03,
+    "max": 94.35,
+    "samples": 80,
+    "spikes_over_0.6": [
+     1.64,
+     7.38,
+     9.17
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 영어 밈 자막 다수 + 1.6/7.4/9.2초 컷 — 게이트④"
+  },
+  {
+   "id": "xz-2B7iwnCE",
+   "channel": "Vlog no commentary",
+   "published": "2023-05-20",
+   "views": 1603,
+   "duration_s": 22.3,
+   "motion": {
+    "mean": 2.53,
+    "median": 2.5,
+    "min": 0.6,
+    "max": 4.63,
+    "samples": 99,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "고양이가 카메라 냄새만 맡는 정지 구도 — 모션 2.53(게이트①)"
+  },
+  {
+   "id": "Ery46fKfqqY",
+   "channel": "柴犬らんまる",
+   "published": "2021-01-23",
+   "views": 194526,
+   "duration_s": 30,
+   "motion": {
+    "mean": 6.94,
+    "median": 6.51,
+    "min": 0.83,
+    "max": 20.88,
+    "samples": 101,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "배를 만지는 정지 구도 — 모션 6.94(게이트①)"
+  },
+  {
+   "id": "0Eue9anT-hM",
+   "channel": "Chinchilla Krysulya",
+   "published": "2025-10-06",
+   "views": 2027,
+   "duration_s": 14.9,
+   "motion": {
+    "mean": 13.41,
+    "median": 13.36,
+    "min": 2.59,
+    "max": 23.4,
+    "samples": 98,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 친칠라가 케이지 안에 작게 정지, 모션은 카메라 이동분 — 게이트① '주인공 몸동작' 미충족"
+  },
+  {
+   "id": "zOaO5q4UGlM",
+   "channel": "猫と森で暮らす",
+   "published": "2025-09-05",
+   "views": 22657,
+   "duration_s": 24.5,
+   "motion": {
+    "mean": 8.49,
+    "median": 8.84,
+    "min": 1.72,
+    "max": 16.11,
+    "samples": 81,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "숲 고양이 산책, 모션 8.49 미달"
+  },
+  {
+   "id": "uBMrv_fwySA",
+   "channel": "Izy Staffy Wolfpack",
+   "published": "2026-11-17",
+   "views": 8978,
+   "duration_s": 23.2,
+   "motion": {
+    "mean": 20.31,
+    "median": 17.66,
+    "min": 1.29,
+    "max": 66.88,
+    "samples": 100,
+    "spikes_over_0.6": [
+     1.83
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-11-17 — 1년 미만(2일) + 스파이크 1회"
+  },
+  {
+   "id": "gi-qmldE9e0",
+   "channel": "Dogs in My Life",
+   "published": "2026-07-31",
+   "views": 1827,
+   "duration_s": 19,
+   "motion": {
+    "mean": 15.82,
+    "median": 15.8,
+    "min": 5.14,
+    "max": 29.08,
+    "samples": 99,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-07-31 — 1년 미만(4개월)"
+  },
+  {
+   "id": "pX5tZiNLzLo",
+   "channel": "Izy Staffy Wolfpack",
+   "published": "2026-10-04",
+   "views": 14358,
+   "duration_s": 63.4,
+   "motion": {
+    "mean": 17.86,
+    "median": 17.88,
+    "min": 9.75,
+    "max": 27.76,
+    "samples": 99,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "게시 2026-10-04 — 1년 미만(1.5개월)"
+  },
+  {
+   "id": "7ootrqbtnRs",
+   "channel": "LOONZOOM",
+   "published": "2024-04-11",
+   "views": 13565,
+   "duration_s": 18.2,
+   "motion": {
+    "mean": 8.05,
+    "median": 7.84,
+    "min": 4.07,
+    "max": 34.33,
+    "samples": 98,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "구조견 첫 바닷가 — 모션 8.05 미달"
+  },
+  {
+   "id": "IBQBJfKTL4o",
+   "channel": "퍼피트랙 PuppyTrack",
+   "published": "2024-06-07",
+   "views": 8016,
+   "duration_s": 38.6,
+   "motion": {
+    "mean": 9.82,
+    "median": 7.85,
+    "min": 2.93,
+    "max": 44.4,
+    "samples": 97,
+    "spikes_over_0.6": [
+     4.3
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "수달 목욕 — 모션 9.82 미달 + 4.3초 스파이크"
+  },
+  {
+   "id": "i5l2e48YTSg",
+   "channel": "빵야네",
+   "published": "2024-05-26",
+   "views": 54045,
+   "duration_s": 55.1,
+   "motion": {
+    "mean": 12.62,
+    "median": 12.71,
+    "min": 5.23,
+    "max": 34.02,
+    "samples": 99,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 한글 자막 '낮잠자고 일어난 진도견' 상시 노출 — 게이트④"
+  },
+  {
+   "id": "9KxKD6clKmE",
+   "channel": "Sanja Pjega",
+   "published": "2016-02-20",
+   "views": 1129,
+   "duration_s": 12.1,
+   "motion": {
+    "mean": 15.85,
+    "median": 14.94,
+    "min": 6.42,
+    "max": 28.14,
+    "samples": 98,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 쇼핑몰에서 사람 전신 다수 등장(달마시안 산책) — 게이트⑤"
+  },
+  {
+   "id": "G7ItQakfMW8",
+   "channel": "Broken Circle Stock Dogs",
+   "published": "2016-02-07",
+   "views": 135,
+   "duration_s": 12.3,
+   "motion": {
+    "mean": 6.93,
+    "median": 7.3,
+    "min": 0.84,
+    "max": 12.97,
+    "samples": 100,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "모션 6.93 미달"
+  },
+  {
+   "id": "3la6dwCzMco",
+   "channel": "Juliana & Marley the border collie",
+   "published": "2025-07-08",
+   "views": 28386,
+   "duration_s": 10.2,
+   "motion": {
+    "mean": 12.99,
+    "median": 12.48,
+    "min": 5.0,
+    "max": 21.99,
+    "samples": 96,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 스트롤러에 탄 유아의 손·의류가 프레임에 등장(줄을 잡음) — 게이트⑤ 아기 등장"
+  },
+  {
+   "id": "eCrXh4bnXSI",
+   "channel": "FLAVIGULA",
+   "published": "2025-01-14",
+   "views": 3461,
+   "duration_s": 60.8,
+   "motion": {
+    "mean": 20.76,
+    "median": 18.95,
+    "min": 10.87,
+    "max": 56.7,
+    "samples": 97,
+    "spikes_over_0.6": [
+     0.27,
+     0.4,
+     0.5,
+     2.9,
+     9.67
+    ]
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 'Cute & Boulder' 워터마크 고정 + 사람 다리·공공장소 행인 + 3.0초 컷 — 게이트④⑤"
+  },
+  {
+   "id": "1mmxdmwjVQc",
+   "channel": "ポノちゃんねる 【猫と犬と島暮らし】",
+   "published": "2023-11-08",
+   "views": 3197,
+   "duration_s": 60,
+   "motion": {
+    "mean": 16.74,
+    "median": 13.82,
+    "min": 5.12,
+    "max": 35.53,
+    "samples": 97,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: TikTok 워터마크(@m_co…·TikTok 로고) 상시 노출 — 게이트⑤"
+  },
+  {
+   "id": "GF0cWiTlTEU",
+   "channel": "The Trained Ferret",
+   "published": "2022-07-02",
+   "views": 4843,
+   "duration_s": 29.7,
+   "motion": {
+    "mean": 8.65,
+    "median": 6.78,
+    "min": 1.25,
+    "max": 28.87,
+    "samples": 97,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "1080x1920 원본 없음(res1080 false) + 모션 8.65 — 게이트③①"
+  },
+  {
+   "id": "4OmIGITul6k",
+   "channel": "otter kinaco",
+   "published": "2024-07-16",
+   "views": 2330,
+   "duration_s": 15,
+   "motion": {
+    "mean": 5.39,
+    "median": 3.23,
+    "min": 0.74,
+    "max": 27.41,
+    "samples": 78,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "고양이 등 위에서 정지 — 모션 5.39"
+  },
+  {
+   "id": "8CQkZBFTWF4",
+   "channel": "Kokong Koa",
+   "published": "2024-06-17",
+   "views": 943,
+   "duration_s": 13.2,
+   "motion": {
+    "mean": 15.25,
+    "median": 13.73,
+    "min": 7.61,
+    "max": 26.58,
+    "samples": 99,
+    "spikes_over_0.6": []
+   },
+   "verdict": "rejected_after_review",
+   "reason": "8컷 육안: 4.5초까지 개가 주인공이나 8.0~10.1초 개가 원거리 점状으로 축소(카메라 스윙) — 게이트① 주인공 이탈"
+  }
+ ],
+ "rejected_count": 28,
+ "unmeasured_next": [
+  "38차 인계 잔여 Royal Sphynx 12편 · Kokong Koa 11편 · Vlog no commentary 3편 · Azula’s Kittens · Bengal Cats Pride · My sweet but crazy cats · Ferrets zoomies",
+  "신규 발굴 풀 미측정: 駄犬と私 vBvlWHgHXbI(36s) · Golden Retriever’s Journey 5ywWbzKEFSM(10s) · My Dog Happy 4편 · ユキちゃんねる 3편 · Suryakant Dog Trainer 3편 · Juliana & Marley 3la6dwCzMco(유아 등장으로 탈락, 잔여 없음)",
+  "검증 채널 재고 미측정: cute fancy rat 3편 · Guinea Pig Shorts 6편 · Parrot player 4편 · Red Squirrel Studios 잔여 4편 · Rio cockatiel 4편 · もんたの日常 3편 · SHIBA DOG RANMARU 3편 · Fluffy Dog Vlog 3편 · Simon the Siamese 3편 · Tabby Cat Hiroshi 3편"
+ ],
+ "judged": 34,
+ "notes": [
+  "확정 3편 모두 강아지 라인. 38차에서 지적된 강아지 라인 소진을 신규 채널 발굴 58쿼리로 보강해 뚫었다.",
+  "이번 회차 방법 확립: p.getPlayerResponse()로 게시일·조회수·1080x1920 여부·제목을 브라우저 안에서 함께 읽어, curl /shorts HTML이 LOGIN_REQUIRED로 막힌 뒤에도 게이트③ 실측을 유지했다.",
+  "8컷 스틸은 재생 중 rVFC로 8시점을 캔버스 그리드에 직접 그려 2장(4컷씩)으로 캡처 — seek 미갱신 오측정 없음.",
+  "브라우저 세션 후반(17:40경) 한 번 플레이어가 얼어붙어(스냅샷 무응답) 후보 1편(fzFWDWicKK8)을 측정하지 못했다. 새 watch 페이지로 이동해 복구.",
+  "저조회(<1,000) 확정은 이번 회차 없다(확정 3편 조회 1,698~4,606)."
+ ]
+}
