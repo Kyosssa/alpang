@@ -1,0 +1,862 @@
+{
+ "batch": "37차 정기 소싱 (2026-11-19 11:00)",
+ "file": "batch_20261119_1100.json",
+ "date": "2026-11-19",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17(4대 기준) + 5대 게이트. 계정당 회차 2편 상한, 저조회 확인 분리, 8컷+10fps 스파이크, AI 배지 0, 1년 이상.",
+ "pool": {
+  "36차 인계 — 미검증 1년 이상·1080x1920 (old_search)": "112편 → 중복 14 제외 98편",
+  "36차 인계 — 1인칭 채널 재크롤 (old_ch)": "45편 → 중복 5 제외 40편",
+  "36차 인계 — 고양이 무자막 잔여": "96편 → 중복 11 제외 85편",
+  "36차 인계 — OCR 오탐 풀": "34편 → 중복 0 제외 34편",
+  "인계 4풀 합계 / 기계 프리필터(10초+·1080x1920·AI 0)": "257편 / 229편",
+  "신규 크롤 — InnerTube 검색 36쿼리": "924편 수집 → 중복 7 제외 917편",
+  "신규 크롤 — 10초 이상 / 1080x1920 렌디션": "781편 / 560편",
+  "신규 크롤 — 10~45초·1080x1920·AI 0": "418편 / 334채널",
+  "신규 크롤 — 구독 20만 미만·비집계 채널": "214채널 / 264편",
+  "썸네일 프리스크린(oar 1~3프레임 + RapidOCR)": "155편 스캔(인계풀 129 + 신규 우선 26) → 무자막 판정 82편",
+  "채널 프로필 실측(/about)": "116채널 + 334채널",
+  "브라우저 실물 검증": 13
+ },
+ "delivered": [
+  {
+   "id": "-I96iKqTvGM",
+   "url": "https://www.youtube.com/shorts/-I96iKqTvGM",
+   "verdict": "delivered",
+   "channel": "michael orange cat",
+   "chid": "UCSrB2XsbvMxFD2WsMCUN8mA",
+   "subs": 81,
+   "published": "2025-02-11",
+   "views": 0,
+   "duration_s": 27.6,
+   "motion": {
+    "mean": 18.11,
+    "median": 18.56,
+    "min": 4.28,
+    "max": 39.71,
+    "spikes_over_0.6": [],
+    "samples": 89,
+    "decode": "1080x1920"
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "low_view_checked": "저조회 확인 — 조회 0(11-19 05:00 검색 크롤 실측, 1,000 미만) · 원작자 본인 계정(채널 @michael_orangecat 81구독, 쇼츠 48편 전부 'Michael the orange cat' 동일 개체, 소개 'Michael is an orange cat. This channel contents are about his activities') · 게시 2025-02-11(1년 9개월 경과)",
+   "content": "주황 고양이 마이클이 자기 화장실 모래 트레이 둘레를 냄새 맡으며 살피고 표정이 바뀌는 28초 단일 무컷. 카메라가 천천히 좌우로 팬.",
+   "reason": "8컷 무자막·무워터마크·사람 0 · 고양이가 8컷 전부 프레임 안 · AI 배지 0(브라우저 ytInitialData 검사 + /shorts HTML grep 0) · 모션 18.11(최저 4.28, 정지 프레임 없음) · 스파이크 0",
+   "stills": "work/sourcing_v2/stills37/-I96iKqTvGM_cuts8.png",
+   "edit_memo": "28초 통편 사용 가능. 0~3초가 트레이 쪽으로 다가가는 진입 동작이라 훅으로 쓰기 좋다."
+  }
+ ],
+ "delivered_count": 1,
+ "holds": [
+  {
+   "id": "Imy89IMvdW4",
+   "url": "https://www.youtube.com/shorts/Imy89IMvdW4",
+   "verdict": "hold",
+   "channel": "Becki Ferret",
+   "chid": null,
+   "subs": 508,
+   "published": "2022-12-08",
+   "views": null,
+   "duration_s": 21.2,
+   "likes": 370,
+   "motion": {
+    "mean": 11.13,
+    "median": 8.51,
+    "min": 4.45,
+    "max": 48.38,
+    "spikes_over_0.6": [],
+    "samples": 90,
+    "decode": "1080x1920",
+    "note": "1차 480p 측정 11.52 → 1080p 재측정 11.13. 임계 12.0 미달이지만 ±30% 편차 구간"
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "content": "거실에서 페럿 2마리가 서로 달려들며 방방 뛰는 21초 단일 무컷(고정 카메라).",
+   "reason": "모션 11.13~11.52로 절대기준 12.0 미달 — 다만 8컷 육안상 두 마리가 계속 몸싸움·도약하고 스파이크 0·무자막·무워터마크·사람 0. 플레이북 2장 '임계 근처는 자동 판정 금지, 육안·기획실장 병행'에 따라 보류로 올린다.",
+   "stills": "work/sourcing_v2/stills37/Imy89IMvdW4_cuts8.png",
+   "views_measured": false
+  }
+ ],
+ "near_miss": [
+  {
+   "id": "24nI03t5-Yo",
+   "url": "https://www.youtube.com/shorts/24nI03t5-Yo",
+   "verdict": "inconclusive",
+   "channel": "SquirrelGirl",
+   "subs": 529,
+   "published": null,
+   "views": null,
+   "duration_s": 32.3,
+   "motion": {
+    "mean": 3.34,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 38.12,
+    "spikes_over_0.6": [],
+    "samples": 34
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "재생이 끊겨 10.4초 구간에서 34프레임만 샘플(중앙값 0) — 수치 신뢰 불가. 썸네일 프리스크린은 깨끗(무자막·1080x1920). 다음 회차 재측정 1순위.",
+   "views_measured": false
+  },
+  {
+   "id": "sd1JF0OVHrQ",
+   "url": "https://www.youtube.com/shorts/sd1JF0OVHrQ",
+   "verdict": "inconclusive",
+   "channel": "michael orange cat",
+   "subs": 81,
+   "published": "2025-05-05",
+   "views": null,
+   "duration_s": 21.0,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "재생이 시작되지 않아 n=0 (프리롤/일시정지 아님, 플레이어 paused=true 고착). 다음 회차 재측정 대상 — 같은 채널 2편째 후보",
+   "views_measured": false
+  }
+ ],
+ "rejected_after_review": [
+  {
+   "id": "Nyts2FAe_kE",
+   "url": "https://www.youtube.com/shorts/Nyts2FAe_kE",
+   "verdict": "rejected_after_review",
+   "channel": "Moon & Nala (@Moonthecinnamonferret)",
+   "subs": 163000,
+   "published": null,
+   "views": null,
+   "duration_s": 20.1,
+   "motion": {
+    "mean": 11.36,
+    "median": 6.68,
+    "min": 0.54,
+    "max": 68.77,
+    "spikes_over_0.6": [
+     [
+      2.62,
+      0.81
+     ],
+     [
+      5.84,
+      0.78
+     ],
+     [
+      7.72,
+      0.86
+     ]
+    ],
+    "samples": 94
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 11.36 미달 + 변화픽셀 0.6 초과 스파이크 3회 — 클립을 이어붙인 편집본",
+   "views_measured": false
+  },
+  {
+   "id": "B6FP2HXkI5w",
+   "url": "https://www.youtube.com/shorts/B6FP2HXkI5w",
+   "verdict": "rejected_after_review",
+   "channel": "Moon & Nala (@Moonthecinnamonferret)",
+   "subs": 163000,
+   "published": null,
+   "views": null,
+   "duration_s": 20.2,
+   "motion": {
+    "mean": 12.0,
+    "median": 6.05,
+    "min": 0.28,
+    "max": 77.44,
+    "spikes_over_0.6": [
+     [
+      0.56,
+      0.81
+     ],
+     [
+      2.87,
+      0.78
+     ],
+     [
+      3.58,
+      0.78
+     ],
+     [
+      4.71,
+      0.7
+     ],
+     [
+      6.2,
+      0.84
+     ],
+     [
+      7.43,
+      0.7
+     ],
+     [
+      9.9,
+      0.66
+     ]
+    ],
+    "samples": 100
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 7회 — '두 가지 무드' 몽타주(클립 전환)",
+   "views_measured": false
+  },
+  {
+   "id": "Rj1n0hhJnB0",
+   "url": "https://www.youtube.com/shorts/Rj1n0hhJnB0",
+   "verdict": "rejected_after_review",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": null,
+   "views": null,
+   "duration_s": 13.0,
+   "motion": {
+    "mean": 32.29,
+    "median": 31.42,
+    "min": 15.42,
+    "max": 60.27,
+    "spikes_over_0.6": [
+     [
+      1.7,
+      0.64
+     ],
+     [
+      3.43,
+      0.62
+     ],
+     [
+      4.36,
+      0.62
+     ],
+     [
+      4.46,
+      0.7
+     ],
+     [
+      4.77,
+      0.63
+     ],
+     [
+      8.47,
+      0.61
+     ],
+     [
+      8.6,
+      0.78
+     ],
+     [
+      8.8,
+      0.63
+     ]
+    ],
+    "samples": 98
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 8.0초에 주인공 프레임 이탈(빈 잔디) + 9.2~10.1초 보호자 손·빨간 소매 등장 — 0~10초 연속 몸동작 불성립",
+   "stills": "work/sourcing_v2/stills37/cuts37_Rj1n0hhJnB0_v2-2026-11-19-113054.png",
+   "views_measured": false
+  },
+  {
+   "id": "5kG50c9taRM",
+   "url": "https://www.youtube.com/shorts/5kG50c9taRM",
+   "verdict": "rejected_after_review",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": null,
+   "views": null,
+   "duration_s": 12.6,
+   "motion": {
+    "mean": 29.31,
+    "median": 26.61,
+    "min": 12.45,
+    "max": 53.68,
+    "spikes_over_0.6": [
+     [
+      1.88,
+      0.69
+     ],
+     [
+      2.68,
+      0.66
+     ],
+     [
+      4.54,
+      0.63
+     ],
+     [
+      5.57,
+      0.73
+     ],
+     [
+      5.81,
+      0.66
+     ]
+    ],
+    "samples": 73
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 6.0초에 주인공 프레임 이탈(울타리·땅만) + 전 구간 보호자 손·팔이 화면 30~40% 점유 — 게이트⑤ '손만 허용' 범위 초과",
+   "stills": "work/sourcing_v2/stills37/cuts37_5kG50c9taRM-2026-11-19-114155.png",
+   "views_measured": false
+  },
+  {
+   "id": "koTQzjPl7qs",
+   "url": "https://www.youtube.com/shorts/koTQzjPl7qs",
+   "verdict": "rejected_after_review",
+   "channel": "Azula's Kittens",
+   "subs": 87,
+   "published": null,
+   "views": null,
+   "duration_s": 15.0,
+   "motion": {
+    "mean": 6.02,
+    "median": 3.42,
+    "min": 0.34,
+    "max": 71.08,
+    "spikes_over_0.6": [
+     [
+      9.06,
+      0.74
+     ]
+    ],
+    "samples": 89
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 6.02 미달(중앙 3.42) + 9.06초 프레임 전환. 영상 제목이 튀르키예어로 'Sevimli Yavru Kediler' — 채널 정체성과 불일치",
+   "views_measured": false
+  },
+  {
+   "id": "_yQgf13uOZk",
+   "url": "https://www.youtube.com/shorts/_yQgf13uOZk",
+   "verdict": "rejected_after_review",
+   "channel": "The Patton Menagerie",
+   "subs": 1310,
+   "published": null,
+   "views": null,
+   "duration_s": 16.0,
+   "likes": 170,
+   "motion": {
+    "mean": 24.86,
+    "median": 22.87,
+    "min": 10.48,
+    "max": 52.02,
+    "spikes_over_0.6": [
+     [
+      7.49,
+      0.62
+     ],
+     [
+      8.46,
+      0.61
+     ]
+    ],
+    "samples": 88
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 0~9.2초 페럿 2마리가 침대에 누워 정지, 10.1초에야 고개 듦 — '0초부터 몸동작 시작' 미충족. 측정 모션 24.86은 손떨림 기인으로 판단",
+   "stills": "work/sourcing_v2/stills37/cuts37__yQgf13uOZk-2026-11-19-115204.png",
+   "views_measured": false
+  },
+  {
+   "id": "RZbDZbs7Zjw",
+   "url": "https://www.youtube.com/shorts/RZbDZbs7Zjw",
+   "verdict": "rejected_after_review",
+   "channel": "Millie the Dog (@MillieUnleashed)",
+   "subs": 30,
+   "published": null,
+   "views": null,
+   "duration_s": 23.1,
+   "motion": {
+    "mean": 39.05,
+    "median": 37.18,
+    "min": 22.41,
+    "max": 72.07,
+    "spikes_over_0.6": [
+     [
+      3.11,
+      0.61
+     ],
+     [
+      4.16,
+      0.78
+     ],
+     [
+      5.2,
+      0.62
+     ],
+     [
+      9.01,
+      0.62
+     ],
+     [
+      10.21,
+      0.62
+     ]
+    ],
+    "samples": 87
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 0.3~9.2초 전 프레임에 강아지 없음(나무·울타리·마당만), 10.1초에야 멀리 흰 개 등장 — 주인공 프레임 이탈",
+   "stills": "work/sourcing_v2/stills37/cuts37_RZbDZbs7Zjw-2026-11-19-115309.png",
+   "views_measured": false
+  },
+  {
+   "id": "w_FMjVDUq8o",
+   "url": "https://www.youtube.com/shorts/w_FMjVDUq8o",
+   "verdict": "rejected_after_review",
+   "channel": "Kitsu the Corgi",
+   "subs": 34,
+   "published": "2026-09-09",
+   "views": null,
+   "duration_s": 10.8,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "게시 2026-09-09 — '1년 이상' 기준 미달(2개월 경과). 모션 측정은 재생 정지로 실패",
+   "views_measured": false
+  },
+  {
+   "id": "IOPjj3lawMA",
+   "url": "https://www.youtube.com/shorts/IOPjj3lawMA",
+   "verdict": "rejected_after_review",
+   "channel": "Ragdoll The Cat",
+   "subs": 171,
+   "published": "2023-01-22",
+   "views": null,
+   "duration_s": 15.0,
+   "likes": 113,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 음원이 상업용 팝송 'Somebody to Love · Jefferson Airplane' — 클린 원본 1순위 위반(팝송 예외 후보로도 미제출: 내용이 포옹 정지 구도라 뷰포인트 근거 없음). 모션 측정 재생 정지로 실패",
+   "views_measured": false
+  }
+ ],
+ "judged_total": 13,
+ "items": [
+  {
+   "id": "-I96iKqTvGM",
+   "url": "https://www.youtube.com/shorts/-I96iKqTvGM",
+   "verdict": "delivered",
+   "channel": "michael orange cat",
+   "chid": "UCSrB2XsbvMxFD2WsMCUN8mA",
+   "subs": 81,
+   "published": "2025-02-11",
+   "views": 0,
+   "duration_s": 27.6,
+   "motion": {
+    "mean": 18.11,
+    "median": 18.56,
+    "min": 4.28,
+    "max": 39.71,
+    "spikes_over_0.6": [],
+    "samples": 89,
+    "decode": "1080x1920"
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "low_view_checked": "저조회 확인 — 조회 0(11-19 05:00 검색 크롤 실측, 1,000 미만) · 원작자 본인 계정(채널 @michael_orangecat 81구독, 쇼츠 48편 전부 'Michael the orange cat' 동일 개체, 소개 'Michael is an orange cat. This channel contents are about his activities') · 게시 2025-02-11(1년 9개월 경과)",
+   "content": "주황 고양이 마이클이 자기 화장실 모래 트레이 둘레를 냄새 맡으며 살피고 표정이 바뀌는 28초 단일 무컷. 카메라가 천천히 좌우로 팬.",
+   "reason": "8컷 무자막·무워터마크·사람 0 · 고양이가 8컷 전부 프레임 안 · AI 배지 0(브라우저 ytInitialData 검사 + /shorts HTML grep 0) · 모션 18.11(최저 4.28, 정지 프레임 없음) · 스파이크 0",
+   "stills": "work/sourcing_v2/stills37/-I96iKqTvGM_cuts8.png",
+   "edit_memo": "28초 통편 사용 가능. 0~3초가 트레이 쪽으로 다가가는 진입 동작이라 훅으로 쓰기 좋다."
+  },
+  {
+   "id": "Imy89IMvdW4",
+   "url": "https://www.youtube.com/shorts/Imy89IMvdW4",
+   "verdict": "hold",
+   "channel": "Becki Ferret",
+   "chid": null,
+   "subs": 508,
+   "published": "2022-12-08",
+   "views": null,
+   "duration_s": 21.2,
+   "likes": 370,
+   "motion": {
+    "mean": 11.13,
+    "median": 8.51,
+    "min": 4.45,
+    "max": 48.38,
+    "spikes_over_0.6": [],
+    "samples": 90,
+    "decode": "1080x1920",
+    "note": "1차 480p 측정 11.52 → 1080p 재측정 11.13. 임계 12.0 미달이지만 ±30% 편차 구간"
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "content": "거실에서 페럿 2마리가 서로 달려들며 방방 뛰는 21초 단일 무컷(고정 카메라).",
+   "reason": "모션 11.13~11.52로 절대기준 12.0 미달 — 다만 8컷 육안상 두 마리가 계속 몸싸움·도약하고 스파이크 0·무자막·무워터마크·사람 0. 플레이북 2장 '임계 근처는 자동 판정 금지, 육안·기획실장 병행'에 따라 보류로 올린다.",
+   "stills": "work/sourcing_v2/stills37/Imy89IMvdW4_cuts8.png",
+   "views_measured": false
+  },
+  {
+   "id": "24nI03t5-Yo",
+   "url": "https://www.youtube.com/shorts/24nI03t5-Yo",
+   "verdict": "inconclusive",
+   "channel": "SquirrelGirl",
+   "subs": 529,
+   "published": null,
+   "views": null,
+   "duration_s": 32.3,
+   "motion": {
+    "mean": 3.34,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 38.12,
+    "spikes_over_0.6": [],
+    "samples": 34
+   },
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "재생이 끊겨 10.4초 구간에서 34프레임만 샘플(중앙값 0) — 수치 신뢰 불가. 썸네일 프리스크린은 깨끗(무자막·1080x1920). 다음 회차 재측정 1순위.",
+   "views_measured": false
+  },
+  {
+   "id": "Nyts2FAe_kE",
+   "url": "https://www.youtube.com/shorts/Nyts2FAe_kE",
+   "verdict": "rejected_after_review",
+   "channel": "Moon & Nala (@Moonthecinnamonferret)",
+   "subs": 163000,
+   "published": null,
+   "views": null,
+   "duration_s": 20.1,
+   "motion": {
+    "mean": 11.36,
+    "median": 6.68,
+    "min": 0.54,
+    "max": 68.77,
+    "spikes_over_0.6": [
+     [
+      2.62,
+      0.81
+     ],
+     [
+      5.84,
+      0.78
+     ],
+     [
+      7.72,
+      0.86
+     ]
+    ],
+    "samples": 94
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 11.36 미달 + 변화픽셀 0.6 초과 스파이크 3회 — 클립을 이어붙인 편집본",
+   "views_measured": false
+  },
+  {
+   "id": "B6FP2HXkI5w",
+   "url": "https://www.youtube.com/shorts/B6FP2HXkI5w",
+   "verdict": "rejected_after_review",
+   "channel": "Moon & Nala (@Moonthecinnamonferret)",
+   "subs": 163000,
+   "published": null,
+   "views": null,
+   "duration_s": 20.2,
+   "motion": {
+    "mean": 12.0,
+    "median": 6.05,
+    "min": 0.28,
+    "max": 77.44,
+    "spikes_over_0.6": [
+     [
+      0.56,
+      0.81
+     ],
+     [
+      2.87,
+      0.78
+     ],
+     [
+      3.58,
+      0.78
+     ],
+     [
+      4.71,
+      0.7
+     ],
+     [
+      6.2,
+      0.84
+     ],
+     [
+      7.43,
+      0.7
+     ],
+     [
+      9.9,
+      0.66
+     ]
+    ],
+    "samples": 100
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "변화픽셀 0.6 초과 스파이크 7회 — '두 가지 무드' 몽타주(클립 전환)",
+   "views_measured": false
+  },
+  {
+   "id": "Rj1n0hhJnB0",
+   "url": "https://www.youtube.com/shorts/Rj1n0hhJnB0",
+   "verdict": "rejected_after_review",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": null,
+   "views": null,
+   "duration_s": 13.0,
+   "motion": {
+    "mean": 32.29,
+    "median": 31.42,
+    "min": 15.42,
+    "max": 60.27,
+    "spikes_over_0.6": [
+     [
+      1.7,
+      0.64
+     ],
+     [
+      3.43,
+      0.62
+     ],
+     [
+      4.36,
+      0.62
+     ],
+     [
+      4.46,
+      0.7
+     ],
+     [
+      4.77,
+      0.63
+     ],
+     [
+      8.47,
+      0.61
+     ],
+     [
+      8.6,
+      0.78
+     ],
+     [
+      8.8,
+      0.63
+     ]
+    ],
+    "samples": 98
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 8.0초에 주인공 프레임 이탈(빈 잔디) + 9.2~10.1초 보호자 손·빨간 소매 등장 — 0~10초 연속 몸동작 불성립",
+   "stills": "work/sourcing_v2/stills37/cuts37_Rj1n0hhJnB0_v2-2026-11-19-113054.png",
+   "views_measured": false
+  },
+  {
+   "id": "5kG50c9taRM",
+   "url": "https://www.youtube.com/shorts/5kG50c9taRM",
+   "verdict": "rejected_after_review",
+   "channel": "Kokong Koa",
+   "subs": 4670,
+   "published": null,
+   "views": null,
+   "duration_s": 12.6,
+   "motion": {
+    "mean": 29.31,
+    "median": 26.61,
+    "min": 12.45,
+    "max": 53.68,
+    "spikes_over_0.6": [
+     [
+      1.88,
+      0.69
+     ],
+     [
+      2.68,
+      0.66
+     ],
+     [
+      4.54,
+      0.63
+     ],
+     [
+      5.57,
+      0.73
+     ],
+     [
+      5.81,
+      0.66
+     ]
+    ],
+    "samples": 73
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 6.0초에 주인공 프레임 이탈(울타리·땅만) + 전 구간 보호자 손·팔이 화면 30~40% 점유 — 게이트⑤ '손만 허용' 범위 초과",
+   "stills": "work/sourcing_v2/stills37/cuts37_5kG50c9taRM-2026-11-19-114155.png",
+   "views_measured": false
+  },
+  {
+   "id": "koTQzjPl7qs",
+   "url": "https://www.youtube.com/shorts/koTQzjPl7qs",
+   "verdict": "rejected_after_review",
+   "channel": "Azula's Kittens",
+   "subs": 87,
+   "published": null,
+   "views": null,
+   "duration_s": 15.0,
+   "motion": {
+    "mean": 6.02,
+    "median": 3.42,
+    "min": 0.34,
+    "max": 71.08,
+    "spikes_over_0.6": [
+     [
+      9.06,
+      0.74
+     ]
+    ],
+    "samples": 89
+   },
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "모션 6.02 미달(중앙 3.42) + 9.06초 프레임 전환. 영상 제목이 튀르키예어로 'Sevimli Yavru Kediler' — 채널 정체성과 불일치",
+   "views_measured": false
+  },
+  {
+   "id": "_yQgf13uOZk",
+   "url": "https://www.youtube.com/shorts/_yQgf13uOZk",
+   "verdict": "rejected_after_review",
+   "channel": "The Patton Menagerie",
+   "subs": 1310,
+   "published": null,
+   "views": null,
+   "duration_s": 16.0,
+   "likes": 170,
+   "motion": {
+    "mean": 24.86,
+    "median": 22.87,
+    "min": 10.48,
+    "max": 52.02,
+    "spikes_over_0.6": [
+     [
+      7.49,
+      0.62
+     ],
+     [
+      8.46,
+      0.61
+     ]
+    ],
+    "samples": 88
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 0~9.2초 페럿 2마리가 침대에 누워 정지, 10.1초에야 고개 듦 — '0초부터 몸동작 시작' 미충족. 측정 모션 24.86은 손떨림 기인으로 판단",
+   "stills": "work/sourcing_v2/stills37/cuts37__yQgf13uOZk-2026-11-19-115204.png",
+   "views_measured": false
+  },
+  {
+   "id": "RZbDZbs7Zjw",
+   "url": "https://www.youtube.com/shorts/RZbDZbs7Zjw",
+   "verdict": "rejected_after_review",
+   "channel": "Millie the Dog (@MillieUnleashed)",
+   "subs": 30,
+   "published": null,
+   "views": null,
+   "duration_s": 23.1,
+   "motion": {
+    "mean": 39.05,
+    "median": 37.18,
+    "min": 22.41,
+    "max": 72.07,
+    "spikes_over_0.6": [
+     [
+      3.11,
+      0.61
+     ],
+     [
+      4.16,
+      0.78
+     ],
+     [
+      5.2,
+      0.62
+     ],
+     [
+      9.01,
+      0.62
+     ],
+     [
+      10.21,
+      0.62
+     ]
+    ],
+    "samples": 87
+   },
+   "ai_badge": false,
+   "cuts8_checked": true,
+   "reason": "8컷상 0.3~9.2초 전 프레임에 강아지 없음(나무·울타리·마당만), 10.1초에야 멀리 흰 개 등장 — 주인공 프레임 이탈",
+   "stills": "work/sourcing_v2/stills37/cuts37_RZbDZbs7Zjw-2026-11-19-115309.png",
+   "views_measured": false
+  },
+  {
+   "id": "w_FMjVDUq8o",
+   "url": "https://www.youtube.com/shorts/w_FMjVDUq8o",
+   "verdict": "rejected_after_review",
+   "channel": "Kitsu the Corgi",
+   "subs": 34,
+   "published": "2026-09-09",
+   "views": null,
+   "duration_s": 10.8,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "게시 2026-09-09 — '1년 이상' 기준 미달(2개월 경과). 모션 측정은 재생 정지로 실패",
+   "views_measured": false
+  },
+  {
+   "id": "IOPjj3lawMA",
+   "url": "https://www.youtube.com/shorts/IOPjj3lawMA",
+   "verdict": "rejected_after_review",
+   "channel": "Ragdoll The Cat",
+   "subs": 171,
+   "published": "2023-01-22",
+   "views": null,
+   "duration_s": 15.0,
+   "likes": 113,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "원본 음원이 상업용 팝송 'Somebody to Love · Jefferson Airplane' — 클린 원본 1순위 위반(팝송 예외 후보로도 미제출: 내용이 포옹 정지 구도라 뷰포인트 근거 없음). 모션 측정 재생 정지로 실패",
+   "views_measured": false
+  },
+  {
+   "id": "sd1JF0OVHrQ",
+   "url": "https://www.youtube.com/shorts/sd1JF0OVHrQ",
+   "verdict": "inconclusive",
+   "channel": "michael orange cat",
+   "subs": 81,
+   "published": "2025-05-05",
+   "views": null,
+   "duration_s": 21.0,
+   "ai_badge": false,
+   "cuts8_checked": false,
+   "reason": "재생이 시작되지 않아 n=0 (프리롤/일시정지 아님, 플레이어 paused=true 고착). 다음 회차 재측정 대상 — 같은 채널 2편째 후보",
+   "views_measured": false
+  }
+ ],
+ "status_note": "확정 1편. 목표 6~10편에 크게 미달했고 기준은 한 줄도 낮추지 않았다. 인계 4풀 257편 + 신규 크롤 418편을 프리스크린까지 통과시켰으나, 12:20 이후 브라우저 재생이 10초 이상 구간에서 반복적으로 끊겨(샘플 34 이하) 실물 모션 측정이 가능한 편수가 13편으로 제한됐다.",
+ "harness_calibration": "모션은 160x90 그레이 10fps 차분(0~10.3초). 480p(large) 디코드로 측정하고 통과 후보만 hd1080으로 8컷 캡처 — 1080p 측정은 버퍼링으로 샘플이 34~40프레임까지 떨어졌다. 스파이크 임계 0.6(변화픽셀 비율).",
+ "measured_at": "2026-11-19 11:00~13:10 KST",
+ "method_note": "① 인계 4풀 + 신규 크롤을 sourced_history 746 ID와 대조해 중복 배제 ② 인계풀은 tmp36/meta36.py(/shorts HTML)로 길이·1080x1920·AI 배지 재실측 ③ 썸네일 oar1~3 + RapidOCR로 무자막 사전 선별 ④ 브라우저는 /shorts/<ID>에서 재생→모션→8컷 캔버스 그리드 ⑤ 채널 성격·게시일·AI 배지는 브라우저 window.ytInitialPlayerResponse/ytInitialData로 교차 확인 ⑥ 12:20 이후 /shorts HTML이 videoDetails·streamingData 없는 축약본을 돌려주기 시작해 curl 메타 경로가 신뢰 불가가 됐다(브라우저 메타로 대체)."
+}
