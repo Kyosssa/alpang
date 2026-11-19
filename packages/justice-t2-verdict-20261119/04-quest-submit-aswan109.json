@@ -1,0 +1,760 @@
+{
+ "문서": "1단 퀘스트 제출물 — 아스완 13종 + 신규 109건 공식 근거 (ID 상태 포함)",
+ "핵심_한계": "공식 Update 공지는 퀘스트를 이름으로 열거할 뿐 숫자 ID를 주지 않는다. 그래서 이 제출물의 \"공식 근거\"는 이름·버전·Update 번호까지이며, 숫자 퀘스트 ID는 전건 \"원천 확보 필요\"다 — ID를 추정으로 채우지 않는다. ID 원천 후보: KMS 클라이언트 퀘스트 데이터 대조 (피클 추가 수집).",
+ "아스완_13종": {
+  "근거": "본섭 공식 명세 1.2.150 (2012-01-12, Update/215) 승격 확정 (Claude 판정 2026-11-16)",
+  "건수": 13,
+  "목록": [
+   {
+    "quest_name": "사막의 오벨리스크",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "지하도시 아스완",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "멸망의 이유",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완에 남겨진 것",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "장님의 전쟁",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 이지모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 노말모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 하드모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 헬모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "무녀의 구슬",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "어리석은 자",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "어리석은 자",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "영혼을 위한 노래",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   }
+  ]
+ },
+ "신규_109건": {
+  "근거": "rev2 수집본의 본섭 공식 11개 버전 퀘스트 — 정본 대조 연결 0 · 전건 정본 밖 신규 (R1R2)",
+  "버전별": {
+   "1.2.150": 13,
+   "1.2.152": 11,
+   "1.2.155": 12,
+   "1.2.157": 28,
+   "1.2.163": 13,
+   "1.2.164": 5,
+   "1.2.165": 5,
+   "1.2.167": 6,
+   "1.2.169": 7,
+   "1.2.170": 4,
+   "1.2.173": 5
+  },
+  "목록": [
+   {
+    "quest_name": "사막의 오벨리스크",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "지하도시 아스완",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "멸망의 이유",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완에 남겨진 것",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "장님의 전쟁",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 이지모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 노말모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 하드모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아스완 해방전 : 헬모드",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "무녀의 구슬",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "어리석은 자",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "어리석은 자",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "영혼을 위한 노래",
+    "version": "1.2.150",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "잃어버린 깃털펜 (145, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "이상한 조각함 (145, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "길을 잃은 신관 (140, 기억을 잃은 신관)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기억을 잃은 신관 (140, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "잃어버린 기억을 찾아서 (140, 관조자)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기억을 되찾는 약 (140, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기억의 비약 (140, 마법제련술사)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "돌아오지 않는 기억 (140, 마법제련술사)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "최후의 방법 (140, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "시간 속을 헤매는 자 (140, 기록자)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "그의 이름은? (140, 신전관리인)",
+    "version": "1.2.152",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "슈피겔만의 갤러리 개장 (50~120)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "계절 연작 감상 (50~120)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "발표할 수 없는 작품 (50~120)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "시나몬의 부탁 (35, 팬텀)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "에레브에서의 새로운 시작 (10, 미하일)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기사 크롬의 행방을 찾아서… (14, 미하일)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "새로운 동료 (22, 미하일)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "2차 전직 (미하일, 30)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "3차 전직 (미하일, 70)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "4차 전직 (미하일, 120)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "최고 사령관의 영예 (200, 미하일)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "고귀한 정신 (시그너스 퀘스트 — 미하일 조건 추가)",
+    "version": "1.2.155",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "[판타스틱 테마파크] 어색한 축하 (슈피겔만) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "오픈 이벤트 : 보물 찾기 (마담 밍) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "Big3 즐기기 (마담 밍) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "유령의 집 (올리버) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "고장난 자이로드롭 (올리버) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "판타스틱 바이킹 (올리버) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "잃어버린 입장권 (에일리) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "사라진 신상품 망토 (에일리) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "혼돈의 회전목마 (체키) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "체키의 아르바이트 (체키) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "길 잃은 그레이 (길잃은 그레이) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "다시 만난 친구들 (길잃은 그레이) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "완벽한 잠복근무 1 (요원 냐옹) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "완벽한 잠복근무 2 (요원 냐옹) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "물물교환 (알시오네) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "아이들을 위한 간식 (일렉스) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "이상한 거래 (알시오네) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "사라진 아이들 (일렉스) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "숨바꼭질 (뚱뚱이) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "술래가 바뀌었다! (똘똘이) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "무서운 판스 (똘똘이) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "귀여운 아이들 (울리카) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "추억 남기기 (토니) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "낙서 절대 금지! (알시오네) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "수상한 곰인형 (에일리) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "판타스틱 애니멀쇼 (마담 밍) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "위험한 공연 (올리버) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "초대받지 않은 손님 (슈피겔만) — 레벨 120 이상",
+    "version": "1.2.157",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "태공의 부탁:떠내려온 물건 (70, 태공)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "섬나라 이야기 (사서 위즈)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "까마귀떼의 습격 / 은밀한 부탁 (카메데야)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "상인의 딸 / 사쿠라 공주님에 대한 소문 (호시)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "또 다른 소문 (우스케)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "벚꽃성 안으로… (소스케)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "이상한 낌새 / 탐정 나가레 (사이)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "중급 닌자 조사 / 별궁의 그녀 (나가레)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "후지에게 있는 정보 / 달과 벚꽃의 무사 / 아오이를 위한 선물 (사쿠라 공주)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "사악한 그림자 / 결계파괴의 열쇠 / 두꺼비 요괴 퇴치 (후지)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "메탈 아머의 비밀 기능 (10레벨 이상, 체키)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "메카닉이 강해지기 위한 방법 (50레벨 이상, 체키)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "메카닉의 신무기 (120레벨 이상, 체키)",
+    "version": "1.2.163",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "전직퀘스트 수행 레벨: 3차 Lv.70 → Lv.60, 4차 Lv.120 → Lv.100 (대상: 모험가·레지스탕스·미하일·듀얼블레이드·캐논슈터·영웅 직업군)",
+    "version": "1.2.164",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "전직 퀘스트용 몬스터의 레벨·난이도 조절",
+    "version": "1.2.164",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "모험가 4차 전직 시 사제의 숲 전직관과 대화해 마뇽의 숲·그리프의 숲으로 바로 이동",
+    "version": "1.2.164",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기사단장의 스킬(정령의 힘) 퀘스트 수행 레벨 70·80·90·100·110 → 70·75·80·85·90",
+    "version": "1.2.164",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "미하일 '여제의 은총' 내용 수정(페리도트 드롭 몬스터 하프·블러드하프 → 레쉬)",
+    "version": "1.2.164",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "스토리(빛/어둠 2계열): 여정의 시작(10)·광채를 발하다(10)·재활 훈련(10)·돌아온 빛의 수호자(10)·수백 년의 시간이 흐른 사이(10)·마법도서관(10)·도서관의 서동(10)·빛의 문양(10)·도둑맞은 청소 도구(10) 외 15·18·22·23·28·29·30·37·42·46·50·56·60·63·66·70·74·95·100·110·115·130 구간",
+    "version": "1.2.165",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "튜토리얼: 빛 속의 어둠·어둠 속의 빛(2차 이상), 보이드 프레셔 사용해 보기(2차 이상), 빛과 어둠을 넘어…(3차 이상), 스펙트러 라이트 사용해 보기(3차 이상)",
+    "version": "1.2.165",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "전직: 제 3의 길을 찾아서(30)·수백 년만의 재회(30)·비보의 힘을 하나로(60)·숨겨진 오로라의 비보(60)·갑자기 찾아온 깨달음(100)",
+    "version": "1.2.165",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "재래 (130)",
+    "version": "1.2.165",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "엘린 숲 연계: 사라지지 않은 어둠의 기운·구와르의 흔적·부활한 구와르·과거의 한자락 (95)",
+    "version": "1.2.165",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "카이저, 각성하다(10) 외 판테온 전용 스토리 다수",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "노바의 정수 한계치 돌파 (카이저 1차, 30)",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "최종 각성 카이저! (카이저 2차, 60)",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "전대 카이저의 부름 (카이저 3차, 100)",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "카이저의 극의 (카이저 4차, 200)",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "펜릴에게 가자 (80)",
+    "version": "1.2.167",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "에스카다의 정체(10) 외 전용 스토리 다수(10~94)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "정의의 대리인 (30)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "핑크색이 너무 강해지는 것 아냐? (60)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "강해지기 위한 추가 계약 (100)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "모든 이의 슈퍼스타 (200)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "에스카다의 선물 1 (60)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "에스카다의 선물 2 (100)",
+    "version": "1.2.169",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "카이저 전용: 벨더의 부름(90)·탈환 본부 지원·위기의 탈환 본부·스펙터의 침공·요인 구출 등 90레벨 라인 + 스펙터의 광석 제련·성문의 봉인재료·방어전·기사대장 카이저·각오와 현실 등 95레벨 라인",
+    "version": "1.2.170",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "엔젤릭버스터 전용: 카이저는 어디 갔지?(90)·후방은 나에게 맡겨!·전장의 여신? 내가?·증표의 정체는 ?! ~ 전장의 아이돌, 데뷔!(102)",
+    "version": "1.2.170",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "기타 직업: 판테온으로(90)·탈환 본부 지원·노바족의 부름(102)·트레글로에게 가는 길(100)",
+    "version": "1.2.170",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "폭풍의 성채 지역 퀘스트(전 직업)",
+    "version": "1.2.170",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "수상한 움직임 / 남겨진 자 / 겔리메르의 지하 연구실 (100, 지그문트)",
+    "version": "1.2.173",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "연구실 탐색 (100, 유저)",
+    "version": "1.2.173",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "이볼빙 시스템 / 가상 세계 1·2 / 내가 만든 세계 / [기초·강화·시스템개선] 프로그램 (100, ESS)",
+    "version": "1.2.173",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "칭호 도전! 이볼빙 시스템 마스터 (100, ESS)",
+    "version": "1.2.173",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   },
+   {
+    "quest_name": "새로운 무기 (30, 네벨) / 특별한 무기를 당신에게 (100, 네벨)",
+    "version": "1.2.173",
+    "quest_id": null,
+    "id_status": "원천 확보 필요"
+   }
+  ]
+ }
+}

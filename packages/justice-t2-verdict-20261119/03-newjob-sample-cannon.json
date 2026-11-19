@@ -1,0 +1,294 @@
+{
+ "문서": "2단 신규 직업 JSON 샘플 — 캐논슈터 (세트 B 기준)",
+ "형식": "정본 스킬 레코드와 같은 모양의 샘플. skill_id는 전건 null (원천 확보 필요 — JUSTICE-T2-SKILL-ID-LIST-20261119.json 참조). 수치는 판정 대기 포함 상태를 status에 명시한다.",
+ "job": "캐논슈터",
+ "set": "B (1.2.157)",
+ "skills": [
+  {
+   "skill_id": null,
+   "name_ko": "캐논 스플래셔",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "기간틱 백스탭",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "빌드업 캐논",
+   "max_level": 10,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "펀칭 캐논",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "몽키 러쉬붐",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": "50% · 8명 3회 · 300% 폭발",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 28 소비, 50% 데미지로 최대 8명의 적을 3번 공격, 100% 확률로 넉백, 일정 거리 이동 후 300%의 데미지로 폭발'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "몽키 매직",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 마스터리",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 부스터",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "크리티컬 파이어",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "파이렛 트레이닝",
+   "max_level": 10,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "슬러그 샷",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": "220%",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 24 소비, 220% 데미지로 최대 4명의 적을 2번 공격'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "몽키 웨이브",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": "860%",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 55 소비, 최대 860% 데미지로 공격, 95% 확률로 기절, 크리티컬 시 20% 확률로 최고 출력'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "몽키 파워붐",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 스파이크",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": "240%",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 36 소비, 240% 데미지로 최대 6명의 적을 3번 공격'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 점프",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "오크통 룰렛",
+   "max_level": 10,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "럭키 다이스",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "리인포스 캐논",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "바이탈 익스트림",
+   "max_level": 20,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "반격의 슈터",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 바주카",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": "500% · 6명 4회",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 75 소비, 500% 데미지로 최대 6명의 적을 4번 공격'",
+    "B5 leaf_first/90142521221 (2012-05-06) '600% 2번 6명 공격에서 500% 4번 6명 공격으로 상향'",
+    "B6 dltngus79/90142158845 (2012-04-30) '캐논 바주카가 500% 2대에서… 500% 4대로 바뀌었습니다'",
+    "B4 지식iN 150786878 답변 (2012-05-15) '캐논바주카 500% 4번때리고'",
+    "구간 밖 보강: dongbu603/20164792349 (2012-08-20) '마스터시에 500%로 4번때립니다'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "캐논 버스터",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": "320% · 후딜 810ms",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 63 소비, 320% 데미지로 5번 공격, 추가 크리티컬 확률 15%'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "전함 노틸러스",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "파이렛 스피릿",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "마그네틱 앵커",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": "400% · 추가 520%",
+   "status": "F12 역산 승격 주장 — 규칙 ⑤⑥ 판정 대기 (후딜 등 분리 항목은 비고)",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+   "basis_mc": [
+    "F12 '변경 전 — MP 86 소비, 20초동안 소환, 주기적으로 400%의 데미지 … 지속시간 경과 시 520%의 추가 데미지'"
+   ]
+  },
+  {
+   "skill_id": null,
+   "name_ko": "서포트 몽키 트윈스",
+   "max_level": 15,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "더블 럭키 다이스",
+   "max_level": 5,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "하이퍼 몽키 스펠",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  },
+  {
+   "skill_id": null,
+   "name_ko": "오버버닝 캐논",
+   "max_level": 30,
+   "M_judge": "✅",
+   "value_setB": null,
+   "status": "M 확정 · 수치 판정 대기",
+   "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+  }
+ ]
+}

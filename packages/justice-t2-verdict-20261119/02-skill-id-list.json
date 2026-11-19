@@ -1,0 +1,1220 @@
+{
+ "문서": "2단 tier-2 스킬-ID 목록 (세트 B 기준)",
+ "기준": "v6_1 세트 B (1.2.157) M 항목 + 2단 보강 수집. ID 상태: 피클 수집본 전부에 숫자 스킬 ID가 없어 전건 \"원천 확보 필요\"로 둔다 — ID를 추정으로 채우지 않는다.",
+ "ID_확보_경로": [
+  "maplestory.io 후대 버전 단건 (2026-11-19 실측: job 경로 503 · skill 단건 404 · 타임아웃 — 현 경로 불가)",
+  "KMS/후대 GMS 클라이언트 데이터 기반 대조 (피클 추가 수집 또는 별도 원천)",
+  "ID가 특정되면 이름·M과 교차 대조해 건별로 확정"
+ ],
+ "jobs": {
+  "캐논슈터": [
+   {
+    "skill": "캐논 스플래셔",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "기간틱 백스탭",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "빌드업 캐논",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "펀칭 캐논",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "몽키 러쉬붐",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "몽키 매직",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 마스터리",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 부스터",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "크리티컬 파이어",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "파이렛 트레이닝",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "슬러그 샷",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "몽키 웨이브",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "몽키 파워붐",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 스파이크",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 점프",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "오크통 룰렛",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "럭키 다이스",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "리인포스 캐논",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "바이탈 익스트림",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "반격의 슈터",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 바주카",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "캐논 버스터",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "전함 노틸러스",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "파이렛 스피릿",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "마그네틱 앵커",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "서포트 몽키 트윈스",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "더블 럭키 다이스",
+    "M": 5,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "하이퍼 몽키 스펠",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   },
+   {
+    "skill": "오버버닝 캐논",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)"
+   }
+  ],
+  "메르세데스": [
+   {
+    "skill": "스피드 듀얼샷",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "샤프 에이밍",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "아크로바틱 점프",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "포텐셜 파워",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "피지컬 트레이닝",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "듀얼보우건 마스터리",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "듀얼보우건 부스터",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "스피릿 인퓨전",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "차지 드라이브",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "파이널 샷",
+    "M": 5,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "파이널 어택",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "어드밴스드 파이널 어택",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "크로스 피어싱",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "스트라이크 듀얼샷",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "리프 토네이도",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "거스트 다이브",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "하이킥 데몰리션",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "엘리멘탈 나이트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "이그니스 로어",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "유니콘 스파이크",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "워터 실드",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "디펜스 브레이크",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "듀얼보우건 엑스퍼트",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "이슈타르의 링",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "레전드리 스피어",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "라이트닝 엣지",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "롤링 문썰트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "앤시언트 스피릿",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   },
+   {
+    "skill": "메이플 용사",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381"
+   }
+  ],
+  "데몬슬레이어": [
+   {
+    "skill": "데빌 윙즈",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 점프",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데스 커쓰",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데모닉 블러드",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬스 퓨리",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데빌 사이더",
+    "M": 15,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 부스터",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 어질리티",
+    "M": 10,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "HP 증가",
+    "M": 10,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 슬래시",
+    "M": 10,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "소울 이터",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 쓰러스트",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 트레이스",
+    "M": 15,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 리벤지",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "웨폰 마스터리",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "피지컬 트레이닝",
+    "M": 10,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "아웃레이지",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 슬래시 1차 강화",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 저지먼트",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데쓰 드로우",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "블러디 레이븐",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 인듀어",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데모닉 브레스",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "이블 토쳐",
+    "M": 15,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "컨센트레이션",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "포스 가드",
+    "M": 15,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "맥스포스",
+    "M": 5,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 슬래시 2차 강화",
+    "M": 1,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 익스플로젼",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데몬 임팩트",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "뱀피릭 터치",
+    "M": 10,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "데빌 크라이",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "메이플 용사",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "메타모포시스",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "다크 바인드",
+    "M": 20,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "인피니티 포스",
+    "M": 15,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "어드밴스드 웨폰 마스터리",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   },
+   {
+    "skill": "하드 스킨",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F8 (Update/196)"
+   }
+  ],
+  "팬텀": [
+   {
+    "skill": "더블 피어싱",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "스위프트 팬텀",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "콜 오브 페이트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "브리즈 카르트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "퀵 이베이전",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "블랑 카르트",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "케인 부스터",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "플래시 앤 플리",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "케인 마스터리",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "럭 모노폴리",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "코트 오브 암즈",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "럭 오브 팬텀시프",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "미스 포츈 프로텍션",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "문 라이트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "팬텀 차지",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "어큐트 센스",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "느와르 카르트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "얼티밋 드라이브",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "트와일라이트",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "프레이 오브 아리아",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "케인 엑스퍼트",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "템페스트 오브 카드",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "소울 스틸",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "메이플 용사",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 maplestorn/20155675192·tjsgur456/40157289788 2곳)"
+   },
+   {
+    "skill": "탤런트 오브 팬텀시프 Ⅰ",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "탤런트 오브 팬텀시프 Ⅱ",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "탤런트 오브 팬텀시프 Ⅲ",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "탤런트 오브 팬텀시프 Ⅳ",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "하이 덱스터러티",
+    "M": 1,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "데들리 인스팅트",
+    "M": 1,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   },
+   {
+    "skill": "저지먼트",
+    "M": 1,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)"
+   }
+  ],
+  "미하일": [
+   {
+    "skill": "HP 증가",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 실드",
+    "M": 15,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 어질리티",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 점프",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 블레이드",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "피지컬 트레이닝",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소드 마스터리",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "파이널 어택",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소드 부스터",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "분노",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 드라이버",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "샤이닝 체이스",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "셀프 리커버리",
+    "M": 30,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "인텐션",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 어택",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "샤이닝 차지",
+    "M": 10,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 인듀어",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "매직 크래쉬",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "샤이닝 버스터",
+    "M": 20,
+    "M_judge": "✅",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "어드밴스드 소드 마스터리",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "소울 어썰트",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   },
+   {
+    "skill": "샤이닝 블라스트",
+    "M": 30,
+    "M_judge": "✅ 공식",
+    "skill_id": null,
+    "id_status": "원천 확보 필요",
+    "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다"
+   }
+  ]
+ },
+ "counts": {
+  "캐논슈터": 29,
+  "메르세데스": 29,
+  "데몬슬레이어": 38,
+  "팬텀": 31,
+  "미하일": 22
+ }
+}
