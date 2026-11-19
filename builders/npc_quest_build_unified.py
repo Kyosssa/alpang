@@ -427,7 +427,7 @@ def build_npcs():
   var PAGE = 50, revealed = PAGE;
   var TOTAL_ALL = {len(conf)};
   var grid = document.getElementById('npcGrid'), cards = Array.prototype.slice.call(grid.children),
-      restLoaded = false, restLoading = null,
+      restLoaded = false, restLoading = null, restFailed = false,
       count = document.getElementById('npcCount'), empty = document.getElementById('npcEmpty'),
       moreBtn = document.getElementById('npcMore');
   // 스프라이트 빈 이미지 판정 → 플레이스홀더 전환 (핫픽스 ④: 1x1 투명 응답·로드 오류를 판정 후에만 교체)
@@ -464,7 +464,7 @@ def build_npcs():
       }});
       restLoaded = true;
       var note = document.getElementById('npcRestNote'); if (note) note.hidden = true;
-    }}).catch(function () {{ restLoading = null; }});
+    }}).catch(function () {{ restLoading = null; restFailed = true; }});
     return restLoading;
   }}
   function bindSprite(c) {{
@@ -474,7 +474,7 @@ def build_npcs():
     if (img.complete && img.naturalWidth <= 1) spritePh(img);
   }}
   function apply() {{
-    if (!restLoaded && (q || main !== 'all' || nameF !== 'all' || rfActive())) {{ loadRest().then(function () {{ apply(); }}); }}
+    if (!restLoaded && !restFailed && (q || main !== 'all' || nameF !== 'all' || rfActive())) {{ loadRest().then(function () {{ apply(); }}); }}
     restoreRest();
     var shown = 0, stayed = 0, pg = paging(), rf = rfActive();
     cards.forEach(function (c, i) {{
@@ -536,10 +536,18 @@ def build_npcs():
   bind('npcMainFilters', 'data-f', function (v) {{ main = v; }});
   bind('npcNameFilters', 'data-n', function (v) {{ nameF = v; }});
   document.getElementById('npcSearch').addEventListener('input', function () {{ q = norm(this.value); apply(); }});
+  var hashTried = {{}};
   function goHash() {{
     if (!location.hash) return;
-    var t = document.querySelector(location.hash);
-    if (!t) {{ loadRest().then(function () {{ goHash(); }}); return; }}
+    var t = null;
+    try {{ t = document.querySelector(location.hash); }} catch (e) {{ return; }}
+    if (!t) {{
+      // 대상 앵커가 없으면 나머지 NPC를 한 번만 불러 재시도하고, 그래도 없으면 즉시 중단 (무한 재귀 방지)
+      if (restLoaded || hashTried[location.hash]) return;
+      hashTried[location.hash] = 1;
+      loadRest().then(function () {{ goHash(); }});
+      return;
+    }}
     var idx = cards.indexOf(t);
     if (idx >= 0) {{
       // 직접 링크로 들어온 카드가 페이징 범위 밖이면 그 지점까지 확장
@@ -686,6 +694,7 @@ CSS = """
   .rel-more .qtag{margin-top:4px}
   .empty{text-align:center;color:var(--sub);padding:30px 0}
   .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
+  .qmore[hidden]{display:none}
   .more-btn{display:block;margin:16px auto 4px;padding:11px 34px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent-dark);font-size:15px;font-weight:800;cursor:pointer}
   .more-btn:hover{border-color:var(--accent)}
   .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}

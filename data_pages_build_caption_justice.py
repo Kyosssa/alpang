@@ -602,7 +602,7 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{{background:linear-gr
 </html>
 """
 os.makedirs(f"{SITE}/mobs", exist_ok=True)
-html_mobs = html_mobs.replace(".fnores{font-size:14px;color:var(--sub);text-align:center;padding:18px 0 4px}", ".fnores{font-size:14px;color:var(--sub);text-align:center;padding:18px 0 4px}\n  .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}", 1)  # 더보기 버튼 규칙 — mobs 전용 (라이브 세대 위치)
+html_mobs = html_mobs.replace(".fnores{font-size:14px;color:var(--sub);text-align:center;padding:18px 0 4px}", ".fnores{font-size:14px;color:var(--sub);text-align:center;padding:18px 0 4px}\n  .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}\n  .qmore[hidden]{display:none}", 1)  # 더보기 버튼 규칙 — mobs 전용 (라이브 세대 위치)
 open(f"{SITE}/mobs/index.html", "w").write(html_mobs)
 
 # ---------- 페이지 2: 맵 탐색 ----------

@@ -590,6 +590,7 @@ CSS = """
   .cap-note{margin-top:16px}
   .empty{text-align:center;color:var(--sub);padding:30px 0}
   .qmore{display:block;margin:14px auto 4px;font:inherit;font-size:14.5px;font-weight:700;padding:10px 26px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--accent-dark);cursor:pointer}
+  .qmore[hidden]{display:none}
   .unc-box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
   .unc-box summary{cursor:pointer;font-weight:700;font-size:14.5px}
   .unc-note{font-size:13px;color:var(--sub);margin-top:8px;line-height:1.6}
