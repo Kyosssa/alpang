@@ -1,0 +1,15 @@
+/* 현행 홈 .sb-* 중 시안에 빠진 규칙을 시안 변수명으로 옮긴 것 (2026-11-20). 시안 <style>의 .sb-more 규칙 아래에 붙여 넣는다 */
+  .sb-results.open{display:block}
+  .sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--txt);border-bottom:1px solid var(--line)}
+  .sb-item:last-child{border-bottom:none}
+  .sb-item.sel,.sb-item:hover{background:rgba(242,118,46,.14)}
+  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--acc)}
+  .sb-badge.map{background:#7A6A53}
+  .sb-badge.item{background:#4A6FA5}
+  .sb-badge.npc{background:#8A5AA5}
+  .sb-badge.quest{background:#B7791F}
+  .sb-icon{flex:none;width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+  .sb-nm{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-en{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-unv{flex:none;font-size:11px;font-weight:700;color:var(--dim);background:var(--card2);border-radius:4px;padding:2px 6px}
+  .sb-none{padding:14px;font-size:14px;color:var(--sub)}
