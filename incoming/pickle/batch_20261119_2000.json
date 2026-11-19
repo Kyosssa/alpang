@@ -1,0 +1,464 @@
+{
+ "batch": "40차 정기 소싱 (2026-11-19 20:00)",
+ "file": "batch_20261119_2000.json",
+ "date": "2026-11-19",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17(4대 기준) + 5대 게이트. 계정당 회차 2편 상한, 저조회 확인 분리, 8컷+10fps 스파이크, AI 배지 0, 1년 이상, 1080x1920 원본. 39차 보류 3편(모션 12.0 미달)은 19:58 피드백으로 탈락 확정.",
+ "pool": {
+  "39차 인계 신규 발굴 잔여(무자막 클린 51편)": "빈도 낮음 — 실측 17편(대부분 정지·카메라 스윙)",
+  "39차 인계 검증 채널 재고 잔여(무자막 클린 99편)": "실측 14편",
+  "40차 신규 채널 발굴(고양이 격투·질주 + 쪼꼬미 + 강아지)": "쿼리 38개 → 신규 채널 134개 → /shorts 7,022편",
+  "40차 2차 발굴(캣휠·페럿워댄스·실내 줌미)": "쿼리 16개 → 신규 채널 34개 → /shorts 1,135편",
+  "썸네일 프리스크린": "594편 해상도·3프레임 차분 → 1080x1920 400편",
+  "HTML 메타 실측": "477편 → 1년 이상·1080x1920·AI 0 통과 120편 (+우선 채널 66편 별도)"
+ },
+ "delivered": [
+  {
+   "id": "3UlFSy4QjJI",
+   "url": "https://www.youtube.com/shorts/3UlFSy4QjJI",
+   "line": "고양이",
+   "channel": "Gardening with Cats",
+   "subs": 332,
+   "chid": "UCoabUDv3fmQEkarIoba90Pg",
+   "channel_note": "원작자 본인 계정 — 채널 소개란 'I share my garden with my four cats including tabby siblings Miles and Maisy', /shorts 전편이 같은 마당·같은 고양이",
+   "title": "Cat has a special 'dance' to lure the moles out!",
+   "secs": 12,
+   "pub": "2023-01-13",
+   "views": 2164,
+   "likes": 38,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 14.37,
+    "med": 14.46,
+    "min": 6.18,
+    "max": 22.28,
+    "n": 81,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "고개 숙여 앞발로 땅 긁기 시작",
+    "1.5": "몸을 쭉 뻗어 좌우로 흔들기",
+    "3.0": "뒷모습으로 지면 파기",
+    "4.5": "몸 말아 돌기",
+    "6.0": "다시 뒷모습 파기",
+    "8.0": "고개 숙여 냄새·긁기",
+    "9.2": "옆으로 구르기",
+    "10.1": "측면에서 앞발 들기"
+   },
+   "visual_check": "8컷 모두 같은 마당·같은 조명 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 0(손도 미등장)",
+   "still": "work/sourcing_v2/stills40/c40_3UlFSy-2026-11-19-201723.png",
+   "edit_memo": "12초 통편 가능. 0.3초부터 앞발 파기 모션. 첫 프레임 훅 = 고개 숙여 땅을 긁는 동작."
+  },
+  {
+   "id": "aqXhi7GXtWA",
+   "url": "https://www.youtube.com/shorts/aqXhi7GXtWA",
+   "line": "고양이",
+   "channel": "Kitten School",
+   "subs": 65099,
+   "chid": "UCpctqLPhNorp8w2oiwKBteg",
+   "channel_note": "원작자 본인 계정 — 임보 · 훈련 채널('A fun and interactive place for learning about cat behavior'), 쇼츠 전편이 같은 임보 새끼고양이",
+   "title": "kitten mayhem on the terrazzo! 😸",
+   "secs": 58,
+   "pub": "2022-06-01",
+   "views": 1783,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 12.71,
+    "med": 13.3,
+    "min": 3.46,
+    "max": 19.12,
+    "n": 86,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "검은 성묘 전경 눕기 + 흰 아깽이 우측 등장",
+    "1.5": "아깽이 오른쪽으로 질주",
+    "3.0": "아깽이 가운데로 방향 전환",
+    "4.5": "아깽이 좌측으로 횡단",
+    "6.0": "아깽이 뒤쪽에서 달려옴",
+    "8.0": "아깽이 중앙 정지 후 몸 흔들기",
+    "9.2": "아깽이 좌측 재질주",
+    "10.1": "아깽이 우측으로 달려 나감"
+   },
+   "visual_check": "고정 카메라 단일 무컷(컷 0) · 자막 0 · 워터마크 0 · 사람 0. 전경 검은 성묘는 정지 상태로 프레임 하단 고정",
+   "still": "work/sourcing_v2/stills40/c40_aqXhi-2026-11-19-205053.png",
+   "edit_memo": "앞 10.4초가 3/4 테라조 바닥. 검은 성묘를 하단 앵커로 쓰고 아깽이 동선만 크롭하면 훅 강화 가능(좌우반전·단순 크롭 재사용 회피 규칙 주의 — 크롭은 사용하지 말 것)."
+  },
+  {
+   "id": "IVeiNiAkFz0",
+   "url": "https://www.youtube.com/shorts/IVeiNiAkFz0",
+   "line": "강아지",
+   "channel": "That Spotty Dog Runs",
+   "subs": 1750,
+   "chid": "UCTR6NKxqYTC8Xm36VBS60aA",
+   "channel_note": "원작자 본인 계정 — 'UK based Canicross team with Dizzy (Dalmatian) and Peggy (Greyster)', 본인 견만 등장",
+   "title": "Dizzy doing his BEST thing 🐶🚀🐄 #canicross #dalmatian #running #crosscountry",
+   "secs": 33,
+   "pub": "2023-08-01",
+   "views": 1035,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 12.29,
+    "med": 12.27,
+    "min": 5.8,
+    "max": 19.54,
+    "n": 87,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "달마시안이 잔디밭 카메라 쪽으로 전력 질주",
+    "1.5": "계속 접근, 하네스 줄 보임",
+    "3.0": "측면 전환하며 질주",
+    "4.5": "몸이 화면 중앙 크게",
+    "6.0": "계속 달리며 프레임 하단에 줄",
+    "8.0": "질주 지속, 잔디 흐름",
+    "9.2": "카메라 좌측으로 통과",
+    "10.1": "다시 정면 질주"
+   },
+   "visual_check": "33초 단일 무컷(컷 0) · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 얼굴·전신 0(카니크로스 하네스 줄과 보호자 그림자만)",
+   "still": "work/sourcing_v2/stills40/c40_IVeiNi-2026-11-19-202131.png",
+   "edit_memo": "33초 통편 또는 12~15초 크롭 편집. 질주가 0.3초부터 시작."
+  },
+  {
+   "id": "nZVkORUNrqQ",
+   "url": "https://www.youtube.com/shorts/nZVkORUNrqQ",
+   "line": "강아지",
+   "channel": "That Spotty Dog Runs",
+   "subs": 1750,
+   "chid": "UCTR6NKxqYTC8Xm36VBS60aA",
+   "channel_note": "같은 채널 2편째 — 회차 상한(2편) 도달",
+   "title": "When you know your post run snack is in the car… #sprintfinish #sprintforhome",
+   "secs": 14,
+   "pub": "2023-08-13",
+   "views": 1032,
+   "likes": 44,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 17.84,
+    "med": 17.79,
+    "min": 13.59,
+    "max": 23.9,
+    "n": 86,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "달마시안 정면 질주, 황금빛 들판",
+    "1.5": "접근 지속, 다리 굴림 선명",
+    "3.0": "중앙에서 몸 전체 보임",
+    "4.5": "최근접, 얼굴 클로즈업 직전",
+    "6.0": "지나가며 측면 전환",
+    "8.0": "다시 정면 질주",
+    "9.2": "접근 반복",
+    "10.1": "화면 하단까지 접근"
+   },
+   "visual_check": "14.4초 단일 무컷(컷 0) · 자막 0 · 워터마크 0 · 사람 0(줄만) · 10프레임 전 구간 최저 모션 13.59로 정지 구간 없음",
+   "still": "work/sourcing_v2/stills40/c40_nZVkOR-2026-11-19-210037.png",
+   "edit_memo": "14.4초 통편. 전 구간 모션 13.6 이상 — 컷 편집 없이 그대로 쓰는 것이 가장 강하다."
+  }
+ ],
+ "delivered_count": 4,
+ "holds": [
+  {
+   "id": "Rcav0pDxlDQ",
+   "url": "https://www.youtube.com/shorts/Rcav0pDxlDQ",
+   "line": "강아지",
+   "channel": "That Spotty Dog Runs",
+   "subs": 1750,
+   "title": "How do you approach an uphill start? For us it's a no brainier… SPRINT!!",
+   "secs": 18,
+   "pub": "2023-07-10",
+   "views": 1068,
+   "p1080": true,
+   "ai_badge": false,
+   "motion": {
+    "avg": 21.6,
+    "med": 18.09,
+    "min": 11.77,
+    "max": 45.98,
+    "n": 87,
+    "spikes": 0
+   },
+   "reason": "모션 21.60으로 이번 회차 최고치이고 18초 단일 무컷·무자막·무워터마크. 다만 6.0~9.2초에 보호자 다리 그림자와 신발 앞부분이 프레임 하단에 들어온다. 게이트⑤('보호자 전신·얼굴 0, 손만 허용')의 경계선이라 임의 확정하지 않고 기획실장 판정 요청.",
+   "still": "work/sourcing_v2/stills40/c40_Rcav0p-2026-11-19-202034.png"
+  }
+ ],
+ "holds_count": 1,
+ "rejected_after_review": [
+  {
+   "id": "55ViW6UzER0",
+   "ch": "ポノちゃんねる",
+   "line": "고양이",
+   "pub": "2023-10-17",
+   "views": 2021,
+   "motion": 19.39,
+   "reason": "원작자 타이틀카드 '第1話' + 하단 '走る猫、襲来' 고정 + TikTok 워터마크 — 게이트④⑤"
+  },
+  {
+   "id": "2qsETDYH8h0",
+   "ch": "Gardening with Cats",
+   "line": "고양이",
+   "pub": "2022-12-19",
+   "views": 235,
+   "motion": 2.94,
+   "reason": "모션 2.94(정지 구도)"
+  },
+  {
+   "id": "BFAIo9QpP2Y",
+   "ch": "Gardening with Cats",
+   "line": "고양이",
+   "pub": "2023-01-17",
+   "views": 2065,
+   "motion": 17.29,
+   "reason": "카메라 스윙·주인공 이탈(1.5초 빈 바닥, 3.0~4.5초 원거리)·스파이크 1회"
+  },
+  {
+   "id": "39J_f8NLzEo",
+   "ch": "Gardening with Cats",
+   "line": "고양이",
+   "pub": "2023-01-04",
+   "views": 1541,
+   "motion": 11.65,
+   "reason": "모션 11.65 — 12.0 미달"
+  },
+  {
+   "id": "Z8J9re07jLg",
+   "ch": "そり耳ネコもすけのパパ物語",
+   "line": "고양이",
+   "pub": "2025-11-12",
+   "views": 214729,
+   "motion": 4.97,
+   "reason": "모션 4.97(정지 위주)"
+  },
+  {
+   "id": "pTx_fRNDqy4",
+   "ch": "허리네 고양이",
+   "line": "고양이",
+   "pub": "2025-04-11",
+   "views": 13964,
+   "motion": 5.76,
+   "reason": "모션 5.76"
+  },
+  {
+   "id": "qdBZKqk7nHs",
+   "ch": "고양이홍대리 Cheese_gangster",
+   "line": "고양이",
+   "pub": "2025-05-28",
+   "views": 16846,
+   "motion": 0.53,
+   "reason": "측정 실패(플레이어 정지·타임아웃, 샘플 41) — 재측정 필요"
+  },
+  {
+   "id": "H76Seo7uEDc",
+   "ch": "ミコとヌコ達",
+   "line": "고양이",
+   "pub": "2023-12-30",
+   "views": 900,
+   "motion": 7.78,
+   "reason": "모션 7.78"
+  },
+  {
+   "id": "VwDW0S4ugfo",
+   "ch": "NoLi",
+   "line": "고양이",
+   "pub": "2023-03-17",
+   "views": 4141,
+   "motion": 0.93,
+   "reason": "모션 0.93(정지)"
+  },
+  {
+   "id": "YYhljrUWh4k",
+   "ch": "cutecat2",
+   "line": "고양이",
+   "pub": "2025-10-25",
+   "views": 4807,
+   "motion": 9.56,
+   "reason": "모션 9.56"
+  },
+  {
+   "id": "Dyrjip98N9c",
+   "ch": "ENCANTADORA DE GATOS",
+   "line": "고양이",
+   "pub": "2025-06-06",
+   "views": 6480,
+   "motion": 8.93,
+   "reason": "모션 8.93"
+  },
+  {
+   "id": "iYtsMKZuGjo",
+   "ch": "保護猫のおうち 20匹の保護猫",
+   "line": "고양이",
+   "pub": "2024-03-05",
+   "views": 2747,
+   "motion": 7.06,
+   "reason": "모션 7.06"
+  },
+  {
+   "id": "ed-dWqO62HU",
+   "ch": "고양이는이상해",
+   "line": "고양이",
+   "pub": "2026-10-31",
+   "views": 2058,
+   "motion": 8.73,
+   "reason": "길이 5초(10초 미만) + 모션 8.73"
+  },
+  {
+   "id": "cxDeu_wKxMc",
+   "ch": "Herman, Weasel, and Teddy Bear",
+   "line": "고양이",
+   "pub": "2020-06-04",
+   "views": 4459,
+   "motion": 16.17,
+   "reason": "1080x1920 미제공(720x720 정사각) — 캣휠 벵갈 2마리 질주, 모션 16.17로 내용은 최상급이나 원본 화질 게이트 미달. 채널 내 다른 캣휠 클립 동일 화질"
+  },
+  {
+   "id": "cH15_-3xjh8",
+   "ch": "Mabel the Squirrel",
+   "line": "쪼꼬미",
+   "pub": "2024-11-19",
+   "views": 583,
+   "motion": 8.73,
+   "reason": "모션 8.73 + 스파이크 2회"
+  },
+  {
+   "id": "Hg2oFELwdqM",
+   "ch": "SWOT",
+   "line": "쪼꼬미",
+   "pub": "2025-05-04",
+   "views": 1138,
+   "motion": 1.8,
+   "reason": "모션 1.80(카메라트랩 정지)"
+  },
+  {
+   "id": "zjjXiEYLPGY",
+   "ch": "Piggy island",
+   "line": "쪼꼬미",
+   "pub": "2023-02-24",
+   "views": 1784,
+   "motion": 15.93,
+   "reason": "6.0~9.2초 주인공 이탈·빈 잔디 + 스파이크 2회"
+  },
+  {
+   "id": "EUGR_pqASkM",
+   "ch": "The Trained Ferret",
+   "line": "쪼꼬미",
+   "pub": "2023-12-31",
+   "views": 5216,
+   "motion": 5.61,
+   "reason": "모션 5.61"
+  },
+  {
+   "id": "7hDJg391mdw",
+   "ch": "The Fur Four Crew",
+   "line": "쪼꼬미",
+   "pub": "2026-11-09",
+   "views": 1256,
+   "motion": 8.56,
+   "reason": "1년 미만(10일) + 모션 8.56·스파이크 2회"
+  },
+  {
+   "id": "BEHTVyZSdTs",
+   "ch": "Red Squirrel Studios",
+   "line": "쪼꼬미",
+   "pub": "2025-03-02",
+   "views": 7138,
+   "motion": 5.26,
+   "reason": "모션 5.26"
+  },
+  {
+   "id": "2lDCc8SU8YQ",
+   "ch": "Vanilla and Swirly - Guinea pigs",
+   "line": "쪼꼬미",
+   "pub": "2024-02-27",
+   "views": 377,
+   "motion": 11.25,
+   "reason": "모션 11.25 — 12.0 미달(0.75 차이)"
+  },
+  {
+   "id": "3dfZrvShRgc",
+   "ch": "cute fancy rat",
+   "line": "쪼꼬미",
+   "pub": "2025-11-24",
+   "views": 62334,
+   "motion": 13.93,
+   "reason": "1년 미만(11개월 26일) + 10.1초 보호자 맨팔 등장·스파이크 1회"
+  },
+  {
+   "id": "_C_2pNeod1A",
+   "ch": "1st Hamster",
+   "line": "쪼꼬미",
+   "pub": "2026-10-13",
+   "views": 3090,
+   "motion": 9.92,
+   "reason": "1년 미만 + 모션 9.92"
+  },
+  {
+   "id": "VhMwIWb9ad8",
+   "ch": "Freddie the zoomie Labrador",
+   "line": "강아지",
+   "pub": "2024-03-06",
+   "views": 3321,
+   "motion": 12.07,
+   "reason": "개가 원거리 점状·카메라 스윙(하늘/땅 번갈아)"
+  },
+  {
+   "id": "ZWImUybL7sM",
+   "ch": "Sterling",
+   "line": "강아지",
+   "pub": "2024-09-25",
+   "views": 14107,
+   "motion": 17.56,
+   "reason": "1080x1920 미제공 + 스파이크 1회"
+  },
+  {
+   "id": "awykpVtD2Oo",
+   "ch": "ShiroandMee",
+   "line": "강아지",
+   "pub": "2024-07-25",
+   "views": 581,
+   "motion": 7.28,
+   "reason": "모션 7.28"
+  },
+  {
+   "id": "f0bhC4QPYl0",
+   "ch": "登山犬 ジャックラッセルテリアのモカです",
+   "line": "강아지",
+   "pub": "2025-04-27",
+   "views": 11305,
+   "motion": 17.44,
+   "reason": "GoPro 견체 장착 POV·프레이밍 급변·스파이크 2회"
+  },
+  {
+   "id": "RU3bXOgSerw",
+   "ch": "Dog Farm Days",
+   "line": "강아지",
+   "pub": "2026-10-30",
+   "views": 1631,
+   "motion": 19.38,
+   "reason": "1년 미만 + 스파이크 5회(멀티컷) + 1080 미제공"
+  }
+ ],
+ "rejected_count": 27,
+ "unmeasured_next": [
+  "39차 인계 신규 발굴 잔여 51편 중 이번 실측 17편 — 잔여 34편(대부분 Gardening with Cats·Kitten School 외 소형 채널)",
+  "39차 인계 검증 채널 재고 잔여 99편 중 실측 14편 — 잔여 85편(1st Hamster·Guinea Pig Shorts·Parrot player·Rio cockatiel·Shiba Ranmaru 등)",
+  "40차 신규 발굴 34채널·1,135편 중 실측 5편 — 잔여 대부분(캣휠 채널 Herman·Valley Himalayans·BoomaZoo, 실내 줌미 Binky Bunny·Floofy Pup·Phenluno)",
+  "고양이홍대리 qdBZKqk7nHs — 플레이어 정지로 측정 실패, 재측정 필요"
+ ],
+ "judged": 32,
+ "notes": [
+  "39차 보류 3편(skKtiQssjm4·a0GAo5QMlKs·skNmh-eHTY0)은 19:58 기획실장 판정으로 모션 12.0 미달 탈락 확정. sourced_history.json 39차 배치의 holds를 비우고 rejected_after_review로 이동해 정합화했다.",
+  "이번 회차부터 0.0초 즉각 모션 기준을 적용해 8컷 중 0.3초 프레임의 동작 유무를 1차 판정 항목으로 삼았다.",
+  "모션 평균 12.0 이상 통과 4편(14.37·12.71·12.29·17.84). 12.0~13 구간이 3편으로, 임계 완화 없이 통과한 하한선 사례가 늘었다.",
+  "쪼꼬미 라인은 이번에도 0편 — 페럿·수달·다람쥐·기니피그 후보 12편 실측 전부 모션 11.25 이하이거나 스파이크·주인공 이탈.",
+  "환경 이슈: /shorts/{id} HTML curl이 LOGIN_REQUIRED로 다시 막혀(20:40 이후) 메타는 브라우저 movie_player.getPlayerResponse()로만 읽었다. 브라우저 fetch도 차단되어 메타 일괄 수집은 불가."
+ ]
+}
