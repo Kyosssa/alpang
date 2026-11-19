@@ -1,0 +1,106 @@
+--- a/sitemap.xml
++++ b/sitemap.xml
+@@ -474,8 +474,6 @@
+     <changefreq>monthly</changefreq>
+     <priority>0.6</priority>
+   </url>
+-    <changefreq>monthly</changefreq>
+-    <priority>0.6</priority>
+   <url>
+     <loc>https://alpang.gg/guide/early-quests/</loc>
+     <changefreq>weekly</changefreq>
+--- a/market/index.html
++++ b/market/index.html
+@@ -2,6 +2,7 @@
+ <html lang="ko">
+ <head>
+ <meta charset="utf-8">
++<meta name="robots" content="noindex">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>시세 트래커 — 알팡지지</title>
+ <link rel="canonical" href="https://alpang.gg/market/">
+--- a/privacy/index.html
++++ b/privacy/index.html
+@@ -68,20 +68,21 @@
+   <div class="gnb"><a href="/" class="logo" aria-label="알팡지지 홈"><img src="/assets/logo.png" alt="알팡지지" style="height:30px;width:auto;display:block"></a><nav><a href="/">홈</a><a href="/timeline/">타임라인</a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href=
+   <div class="intro">
+     <h1 id="main-start" tabindex="-1">개인정보<span>처리방침</span></h1>
+-    <div class="tag">시행일: 2026년 10월 14일</div>
++    <div class="tag">시행일: 2026년 10월 14일 · 개정일: 2026년 11월 20일</div>
+   </div>
+   <main>
+ <section class="card"><h2>1. 총칙</h2><p>알팡지지(alpang.gg, 이하 '사이트')는 이용자의 개인정보를 중요하게 여기며, 개인정보 보호법 등 관련 법령을 준수합니다. 본 방침은 사이트가 어떤 정보를 어떻게 다루는지 안내합니다.</p></sectio
+-<section class="card"><h2>2. 수집하는 개인정보</h2><p>사이트는 회원가입·로그인 기능이 없는 정적 정보 사이트로, 이용자의 개인정보를 직접 수집하지 않습니다. 다만 이용자가 문의 이메일(<a href="mailto:alpangland@gmail.com">alpangland@gmail.
+-<section class="card"><h2>3. 쿠키와 광고</h2><p>사이트는 구글 애드센스 등 제3자 광고 서비스를 사용할 수 있습니다. 이 경우 광고 제공자가 쿠키를 이용해 이용자의 방문 기록에 기반한 맞춤 광고를 표시할 수 있습니다. 이용자는 브�
+-<section class="card"><h2>4. 개인정보의 제3자 제공</h2><p>사이트는 수집한 정보를 제3자에게 제공하지 않습니다. 단, 법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우는 예외로 합니다.</p></section>
+-<section class="card"><h2>5. 개인정보 보호책임자 및 문의</h2><p>개인정보 처리에 관한 문의는 아래 이메일로 연락해 주세요.<br>이메일: <a href="mailto:alpangland@gmail.com">alpangland@gmail.com</a></p></section>
+-<section class="card"><h2>6. 방침의 변경</h2><p>본 방침이 변경되는 경우 변경 내용을 본 페이지에 공지하고 시행일을 함께 표기합니다.</p></section>
++<section class="card"><h2>2. 수집하는 개인정보</h2><p>사이트는 회원가입·로그인 기능이 없는 정적 정보 사이트로, 이용자의 개인정보를 직접 수집하지 않습니다. 사이트 이용 통계는 아래 3항과 같이 개인을 식별할 수 없는 형태로만
++<section class="card"><h2>3. 익명 방문 통계</h2><p>사이트는 서비스 개선을 위해 방문 통계를 수집합니다. 페이지를 열 때 접속한 <b>페이지 경로</b>, <b>이전 사이트의 도메인 이름</b>(주소 전체가 아니라 도메인 이름만), <b>기기 종류</b
++<section class="card"><h2>4. 쿠키와 광고</h2><p>사이트는 구글 애드센스 등 제3자 광고 서비스를 사용할 수 있습니다. Google을 포함한 제3자 공급업체는 쿠키를 사용하여 이용자가 이 사이트나 다른 사이트를 방문한 기록을 바탕으로 광
++<section class="card"><h2>5. 개인정보의 제3자 제공</h2><p>사이트는 수집한 정보를 제3자에게 제공하지 않습니다. 단, 법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우는 예외로 합니다.</p></section>
++<section class="card"><h2>6. 개인정보 보호책임자 및 문의</h2><p>개인정보 처리에 관한 문의는 아래 이메일로 연락해 주세요.<br>이메일: <a href="mailto:alpangland@gmail.com">alpangland@gmail.com</a></p></section>
++<section class="card"><h2>7. 방침의 변경</h2><p>본 방침이 변경되는 경우 변경 내용을 본 페이지에 공지하고 시행일을 함께 표기합니다.</p></section>
+   </main>
+   <footer>
+     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+-    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="
+-    페이지 갱신일: 2026-10-14
++    <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
++    페이지 갱신일: 2026-11-20
+   <br>
+     <span style="font-size:12px;color:var(--sub)">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+     메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+--- a/items/index.html
++++ b/items/index.html
+@@ -5,13 +5,13 @@
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>아이템 목록 — 알팡지지</title>
+-<meta name="description" content="알팡지지 아이템 목록 후보 14,577개 — 카테고리별 안내. 본진 빅뱅 직후(GMS 95) 기준, 한글 이름은 표시명 후보입니다.">
++<meta name="description" content="알팡지지 아이템 목록 14,577개 — 카테고리별 안내. 본진 빅뱅 직후(GMS 95) 기준.">
+ <link rel="canonical" href="https://alpang.gg/items/">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="알팡지지">
+ <meta property="og:title" content="아이템 목록 — 알팡지지">
+-<meta property="og:description" content="알팡지지 아이템 목록 후보 14,577개 — 카테고리별 안내. 본진 빅뱅 직후(GMS 95) 기준, 한글 이름은 표시명 후보입니다.">
++<meta property="og:description" content="알팡지지 아이템 목록 14,577개 — 카테고리별 안내. 본진 빅뱅 직후(GMS 95) 기준.">
+ <meta property="og:url" content="https://alpang.gg/items/">
+ <link rel="icon" href="/favicon.ico" sizes="any">
+ <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+@@ -230,11 +230,11 @@
+ <button type="button" class="tabcard" role="tab" data-cat="Cash" aria-selected="false"><span class="tslot"><img class="tic" src="/assets/cat-icons/cash-effect.png" alt="" onerror="this.closest('.tslot').classList.add('noimg');this.remove()"></span><span class="tlb">캐시 · Cash</span><span class=
+ <button type="button" class="tabcard" role="tab" data-cat="Setup" aria-selected="false"><span class="tslot"><img class="tic" src="/assets/cat-icons/setup-chair.png" alt="" onerror="this.closest('.tslot').classList.add('noimg');this.remove()"></span><span class="tlb">설치 · Setup</span><span clas
+ </div>
+-<section class="card tabpanel" data-panel="Equip"><h2>장비 (Equip) · 8,174개</h2><p class="legend"><a href="/items/equip.html">장비 전체 보기</a></p><div class="grow"><span class="glb">무기</span><div class="catgrid"><a class="catcard" href="/items/equip-cash.html"><span class="cslot"><
+-<section class="card tabpanel" data-panel="Use" hidden><h2>소비 (Use) · 2,707개</h2><p class="legend"><a href="/items/use.html">소비 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/use.html#consumable"><span class="cslot"><img class="cic" src="/assets/cat-icons/use-c
+-<section class="card tabpanel" data-panel="Etc" hidden><h2>기타 (Etc) · 2,695개</h2><p class="legend"><a href="/items/etc.html">기타 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/etc.html#quest-item"><span class="cslot"><img class="cic" src="/assets/cat-icons/etc-q
+-<section class="card tabpanel" data-panel="Cash" hidden><h2>캐시 (Cash) · 660개</h2><p class="legend"><a href="/items/cash.html">캐시 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/cash.html#effect"><span class="cslot"><img class="cic" src="/assets/cat-icons/cash-ef
+-<section class="card tabpanel" data-panel="Setup" hidden><h2>설치 (Setup) · 341개</h2><p class="legend"><a href="/items/setup.html">설치 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/setup.html#decoration"><span class="cslot"><img class="cic" src="/assets/cat-icons
++<section class="card tabpanel" data-panel="Equip"><h2>장비 (Equip) · 8,174개</h2><p class="legend"><a href="/items/equip">장비 전체 보기</a></p><div class="grow"><span class="glb">무기</span><div class="catgrid"><a class="catcard" href="/items/equip-cash"><span class="cslot"><img class=
++<section class="card tabpanel" data-panel="Use" hidden><h2>소비 (Use) · 2,707개</h2><p class="legend"><a href="/items/use">소비 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/use#consumable"><span class="cslot"><img class="cic" src="/assets/cat-icons/use-consumable.
++<section class="card tabpanel" data-panel="Etc" hidden><h2>기타 (Etc) · 2,695개</h2><p class="legend"><a href="/items/etc">기타 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/etc#quest-item"><span class="cslot"><img class="cic" src="/assets/cat-icons/etc-quest-item.
++<section class="card tabpanel" data-panel="Cash" hidden><h2>캐시 (Cash) · 660개</h2><p class="legend"><a href="/items/cash">캐시 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/cash#effect"><span class="cslot"><img class="cic" src="/assets/cat-icons/cash-effect.png" 
++<section class="card tabpanel" data-panel="Setup" hidden><h2>설치 (Setup) · 341개</h2><p class="legend"><a href="/items/setup">설치 전체 보기</a></p><div class="catgrid"><a class="catcard" href="/items/setup#decoration"><span class="cslot"><img class="cic" src="/assets/cat-icons/setup-dec
+   <footer>
+     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
+     <a href="/privacy/" style="color:var(--sub)">개인정보처리방침</a> · <a href="/terms/" style="color:var(--sub)">이용약관</a> · <a href="/about/" style="color:var(--sub)">사이트 소개</a> · <a href="mailto:alpangland@gmail.com" style="color:var(--sub)">문의하기</a><br>
+--- a/items/cash.html
++++ b/items/cash.html
+@@ -5,13 +5,13 @@
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>아이템 목록 · 캐시(Cash) — 알팡지지</title>
+-<meta name="description" content="알팡지지 아이템 목록 후보 — 캐시 카테고리 660개. 본진 빅뱅 직후(GMS 95) 기준, 한글 이름은 표시명 후보입니다.">
++<meta name="description" content="알팡지지 아이템 목록 — 캐시 카테고리 660개. 본진 빅뱅 직후(GMS 95) 기준.">
+ <link rel="canonical" href="https://alpang.gg/items/cash">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="알팡지지">
+ <meta property="og:title" content="아이템 목록 · 캐시(Cash) — 알팡지지">
+-<meta property="og:description" content="알팡지지 아이템 목록 후보 — 캐시 카테고리 660개. 본진 빅뱅 직후(GMS 95) 기준, 한글 이름은 표시명 후보입니다.">
++<meta property="og:description" content="알팡지지 아이템 목록 — 캐시 카테고리 660개. 본진 빅뱅 직후(GMS 95) 기준.">
+ <meta property="og:url" content="https://alpang.gg/items/cash">
+ <link rel="icon" href="/favicon.ico" sizes="any">
+ <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
