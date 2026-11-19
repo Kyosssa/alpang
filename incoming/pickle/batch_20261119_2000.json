@@ -248,15 +248,6 @@
    "reason": "모션 5.76"
   },
   {
-   "id": "qdBZKqk7nHs",
-   "ch": "고양이홍대리 Cheese_gangster",
-   "line": "고양이",
-   "pub": "2025-05-28",
-   "views": 16846,
-   "motion": 0.53,
-   "reason": "측정 실패(플레이어 정지·타임아웃, 샘플 41) — 재측정 필요"
-  },
-  {
    "id": "H76Seo7uEDc",
    "ch": "ミコとヌコ達",
    "line": "고양이",
@@ -448,6 +439,7 @@
  ],
  "rejected_count": 27,
  "unmeasured_next": [
+  "고양이홍대리 qdBZKqk7nHs — 플레이어 정지로 측정 실패(표본 41, 모션 0.53) → 재측정 필요",
   "39차 인계 신규 발굴 잔여 51편 중 이번 실측 17편 — 잔여 34편(대부분 Gardening with Cats·Kitten School 외 소형 채널)",
   "39차 인계 검증 채널 재고 잔여 99편 중 실측 14편 — 잔여 85편(1st Hamster·Guinea Pig Shorts·Parrot player·Rio cockatiel·Shiba Ranmaru 등)",
   "40차 신규 발굴 34채널·1,135편 중 실측 5편 — 잔여 대부분(캣휠 채널 Herman·Valley Himalayans·BoomaZoo, 실내 줌미 Binky Bunny·Floofy Pup·Phenluno)",
