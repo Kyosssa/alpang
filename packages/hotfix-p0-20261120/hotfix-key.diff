@@ -1,0 +1,24 @@
++  .lk-form select{width:100%;min-width:0;height:43px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-size:15.5px;outline:none;text-overflow:ellipsis}
++  .lk-form select:focus{border-color:var(--accent)}
+-    <p class="sb-note">한글·영문 이름으로 몬스터 175종, 맵 419곳, 아이템 14,577개를 한 번에 검색할 수 있어요. 한글 이름은 표시명 후보입니다.</p>
++    <p class="sb-note">한글·영문 이름으로 몬스터 188종, 맵 419곳, 아이템 14,577개를 한 번에 검색할 수 있어요. 한글 이름은 표시명 후보입니다.</p>
++  .qmore[hidden]{display:none}
+-      restLoaded = false, restLoading = null,
++      restLoaded = false, restLoading = null, restFailed = false,
+-    }).catch(function () { restLoading = null; });
++    }).catch(function () { restLoading = null; restFailed = true; });
+-    if (!restLoaded && (q || main !== 'all' || nameF !== 'all' || rfActive())) { loadRest().then(function () { apply(); }); }
++    if (!restLoaded && !restFailed && (q || main !== 'all' || nameF !== 'all' || rfActive())) { loadRest().then(function () { apply(); }); }
++  var hashTried = {};
+-    var t = document.querySelector(location.hash);
+-    if (!t) { loadRest().then(function () { goHash(); }); return; }
++    var t = null;
++    try { t = document.querySelector(location.hash); } catch (e) { return; }
++    if (!t) {
++      // 대상 앵커가 없으면 나머지 NPC를 한 번만 불러 재시도하고, 그래도 없으면 즉시 중단 (무한 재귀 방지)
++      if (restLoaded || hashTried[location.hash]) return;
++      hashTried[location.hash] = 1;
++      loadRest().then(function () { goHash(); });
++      return;
++    }
++  <url><loc>https://alpang.gg/guide/mushroom-shrine/</loc></url>
