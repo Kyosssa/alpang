@@ -1,0 +1,969 @@
+{
+ "batch": "42차 정기 소싱 (2026-11-20 02:00)",
+ "file": "batch_20261120_0200.json",
+ "date": "2026-11-20",
+ "policy": "SOURCING_GATE_PLAYBOOK v2026-11-17(4대 기준) + 5대 게이트. 회차 계정당 2편 상한, 저조회 확인 분리, 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초)+10fps 차분 스파이크, AI 배지 0, 1년 이상, 1080x1920 원본, 모션 평균 12.0 이상·정지 구간 0(0.0초 즉각 모션 기준 유지).",
+ "pool": {
+  "41차 예비 재고(9gK5CAaPdUM)": "재측정 후 편입(모션 20.01·최저 13.07)",
+  "42차 브라우저 실물 검증": "92편 판정 — 모션·8컷·스파이크·메타·AI 배지 동시 수집",
+  "39차 검증 채널 /shorts 전수 수집": "29채널 + 추가 12채널 = tmp42/chan_shorts42*.json",
+  "OCR 무자막 프리스크린(tmp39/screen·vscreen)": "1080x1920 무텍스트 60편 우선 실측"
+ },
+ "delivered": [
+  {
+   "id": "9gK5CAaPdUM",
+   "url": "https://www.youtube.com/shorts/9gK5CAaPdUM",
+   "line": "강아지",
+   "channel": "Freddie the zoomie Labrador",
+   "chid": "UCYdVufHYmd-dxG6ispbLKKA",
+   "subs": 1960,
+   "subs_txt": "1.96K subscribers",
+   "channel_note": "원작자 본인 계정 — 소개 \"I'm Freddie a boy … zoomies rolling on grass\" · 2023-04-03 개설 · 555편 · 109만 회. 41차에서 CvmaTDwDmHI·QNxfuElnKJg 2편 확정한 채널",
+   "title": "Boy it’s Sunday zoomie time woof woof be happy be kind be positive 🐶🐶",
+   "secs": 11,
+   "pub": "2024-03-24",
+   "views": 6382,
+   "likes": 146,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 20.01,
+    "med": 19.25,
+    "min": 13.07,
+    "max": 39.04,
+    "n": 97,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "검은 래브라도가 잔디밭에서 달리기 시작(원거리)",
+    "1.5": "몸을 낮추고 좌측으로 질주",
+    "3.0": "잔디 위 전력 질주",
+    "4.5": "달리며 프레임 가운데로",
+    "6.0": "카메라 쪽으로 접근",
+    "8.0": "얼굴 클로즈업 질주",
+    "9.2": "카메라 앞을 가로질러 통과",
+    "10.1": "도약하며 프레임 이동(같은 공원·같은 개)"
+   },
+   "visual_check": "8컷 모두 같은 공원 잔디·같은 개 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 0. 9.9~10.4초 0.03초 간격 대조(차분 30~33·변화픽셀 0.5 이하) 결과 접근·도약이며 컷 아님",
+   "still": "work/sourcing_v2/stills42/c42_9gK5C-2026-11-20-020240.png",
+   "edit_memo": "41차 예비 재고 → 이번 회차 재측정(20.01·최저 13.07) 통과로 편입. 11초 통편 가능. 0.3초부터 개가 달리고 있어 첫 프레임 훅이 확실하다."
+  },
+  {
+   "id": "t6dqfx-Q4Fk",
+   "url": "https://www.youtube.com/shorts/t6dqfx-Q4Fk",
+   "line": "강아지",
+   "channel": "Freddie the zoomie Labrador",
+   "chid": "UCYdVufHYmd-dxG6ispbLKKA",
+   "subs": 1960,
+   "subs_txt": "1.96K subscribers",
+   "channel_note": "같은 채널 2편째 — 회차 계정 상한(2편) 도달",
+   "title": "Boy look at me go now for the water woof woof be happy be kind be positive 🐶🐶",
+   "secs": 22,
+   "pub": "2024-03-10",
+   "views": 14439,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 14.93,
+    "med": 15.04,
+    "min": 9.06,
+    "max": 20.05,
+    "n": 96,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "공원 잔디에서 개가 달리기 시작",
+    "1.5": "달리며 프레임 안 이동",
+    "3.0": "전력 질주",
+    "4.5": "잔디 위 질주 지속",
+    "6.0": "카메라 쪽으로 방향 전환",
+    "8.0": "몸이 커지며 접근",
+    "9.2": "질주 지속",
+    "10.1": "프레임 앞 통과"
+   },
+   "visual_check": "8컷 모두 같은 공원·같은 개 연속, 컷 0 · 자막 0 · 워터마크 0 · 사람 0",
+   "still": "work/sourcing_v2/stills42/c42_t6dqf-2026-11-20-021126.png",
+   "edit_memo": "22초 통편 가능. 물을 향해 달려가는 구간이 후반부에 이어져 마무리로 쓰기 좋다. 41차 CvmaT·QNxfu와 같은 공원·같은 개라 3편 연속 편성은 피할 것."
+  },
+  {
+   "id": "pqLJzbVD6kI",
+   "url": "https://www.youtube.com/shorts/pqLJzbVD6kI",
+   "line": "쪼꼬미(수달)",
+   "channel": "FLAVIGULA",
+   "chid": "UCY8cPCVZ0Zw6ZtrbHXp0BoA",
+   "subs": 1530,
+   "subs_txt": "1.53K subscribers",
+   "channel_note": "원작자 본인 계정 — 인도네시아 거주 보호자의 반려 수달 'CiCi & Bowie'(2022-05-15 개설·28편). 41차에서 oHRLObHzW4I·uutplp_L5MA 2편 확정한 채널",
+   "title": "Otters have their own way of drinking  #otterlove #animals #otter #cute  #adorable  #cuteanimals",
+   "secs": 56,
+   "pub": "2024-11-22",
+   "views": 3230,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 26.31,
+    "med": 25.86,
+    "min": 11.3,
+    "max": 41.88,
+    "n": 96,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "잔디밭 캐리어 옆에서 수달 머리 들어올림",
+    "1.5": "보호자 손이 물병 뚜껑을 여는 동안 수달 대기",
+    "3.0": "수달이 몸을 세우고 물병 쪽으로",
+    "4.5": "물병에 입을 대고 마심",
+    "6.0": "계속 마시며 고개 젖힘",
+    "8.0": "수달 얼굴 클로즈업",
+    "9.2": "고개 들어 보호자 손 쪽 응시",
+    "10.1": "다시 물병 쪽으로 몸을 뻗음"
+   },
+   "visual_check": "8컷 모두 같은 잔디·같은 수달 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 얼굴 0(손·팔만 등장 — 게이트⑤ 허용 범위). 추가 확인: 0.1·0.4초 스틸에도 수달 머리가 프레임 안에 있어 0.0초 즉각 모션 충족",
+   "still": "work/sourcing_v2/stills42/c42_pqLJz-2026-11-20-021544.png",
+   "still_head": "work/sourcing_v2/stills42/c42_pqLJz_head-2026-11-20-023506.png",
+   "edit_memo": "4K 원본. 0.4~2.0초 물병이 화면 상단을 덮으므로 편집 시 앞 2초를 덜어내고 2.4초(수달이 두 발로 서는 순간)부터 쓰면 훅이 더 세다."
+  },
+  {
+   "id": "BAD2o7c_eD4",
+   "url": "https://www.youtube.com/shorts/BAD2o7c_eD4",
+   "line": "쪼꼬미(페럿)",
+   "channel": "Weasel Warriors Ferret Sanctuary",
+   "chid": "UCRIaeSpI5ckHRjsZnaf0Sjg",
+   "subs": 354,
+   "subs_txt": "354 subscribers",
+   "channel_note": "원작자 본인 계정 — 미국 501(c)(3) 페럿 보호소(2017-07-18 개설·468편). 소개 \"provide a safe, healthy, happy home and veterinary care for any ferret that comes our way\" — 보호소가 직접 기르는 페럿을 촬영",
+   "title": "Adorable Ferret",
+   "secs": 16,
+   "pub": "2018-12-16",
+   "views": 148,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": "저조회 확인 — 조회 148 · 원작자 본인 계정(Weasel Warriors Ferret Sanctuary 354구독·468편·2017-07-18 개설, 501(c)(3) 페럿 보호소) · 게시 2018-12-16(7년 11개월 경과)",
+   "motion": {
+    "avg": 19.84,
+    "med": 19.35,
+    "min": 5.06,
+    "max": 37.63,
+    "n": 98,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "페럿이 침구 위에서 몸 뒤척이며 시작",
+    "1.5": "옆으로 구르며 발버둥",
+    "3.0": "머리 들어 몸 비틀기",
+    "4.5": "다시 옆으로 구르기",
+    "6.0": "배를 보이고 뒤척임",
+    "8.0": "발로 침구 박차기",
+    "9.2": "몸통 회전",
+    "10.1": "다시 뒤척이며 구름"
+   },
+   "visual_check": "8컷 모두 같은 침구·같은 페럿 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 0(손도 미등장)",
+   "still": "work/sourcing_v2/stills42/c42_BAD2o-2026-11-20-022435.png",
+   "edit_memo": "16초 통편 가능. 페럿이 뒹구는 동작이 끊기지 않아 '발버둥' 계열 리액션으로 쓸 수 있다. 조회 148회 저조회 원본이라 검증 가치는 높지만 화제성은 낮다."
+  },
+  {
+   "id": "LKX6_pW_TrE",
+   "url": "https://www.youtube.com/shorts/LKX6_pW_TrE",
+   "line": "고양이",
+   "channel": "Cute Kittens animal",
+   "chid": "UC4MuzGWvcFPfo2ZFD4aVNbg",
+   "subs": 370,
+   "subs_txt": "370 subscribers",
+   "channel_note": "원작자 본인 계정 — 2022년 업로드 전편이 같은 집·같은 흰 고양이(Simba·Anin·Fadil·Gemoy·Peaknose). 41차에서 ntZfeAE1_Lk 1편 확정한 채널(2017-12-06 개설·143편)",
+   "title": "cat playing rope#shorts",
+   "secs": 59,
+   "pub": "2022-02-03",
+   "views": 6,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": "저조회 확인 — 조회 6 · 원작자 본인 계정(Cute Kittens animal 370구독·143편·2017-12-06 개설, 2022년 전편이 같은 집·같은 흰 고양이, 41차 ntZfeAE1_Lk로 동일 개체 검증) · 게시 2022-02-03(4년 9개월 경과)",
+   "motion": {
+    "avg": 18.59,
+    "med": 18.75,
+    "min": 6.64,
+    "max": 30.67,
+    "n": 103,
+    "spikes": 0
+   },
+   "shots8": {
+    "0.3": "흰 고양이 두 마리가 청록 끈 장난감에 얽혀 있음",
+    "1.5": "한 마리가 끈을 물고 당김",
+    "3.0": "발로 끈을 차며 몸을 구름",
+    "4.5": "두 마리 머리를 맞대고 끈 다툼",
+    "6.0": "몸을 말며 뒹굴기",
+    "8.0": "끈 위로 뛰어오름",
+    "9.2": "다시 얽혀 구르기",
+    "10.1": "끈을 물고 정면 응시"
+   },
+   "visual_check": "8컷 모두 같은 돌바닥·같은 두 흰 고양이 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 0(손 미등장)",
+   "still": "work/sourcing_v2/stills42/c42_LKX6p-2026-11-20-023235.png",
+   "edit_memo": "59초 중 앞 12~15초가 가장 강함(4.5~9.2초 두 마리 동시 구르기). 41차 ntZfeAE1_Lk와 같은 집·같은 개체이나 다른 놀이 장면이라 연속 편성은 피할 것."
+  },
+  {
+   "id": "hnCmn82CYzU",
+   "url": "https://www.youtube.com/shorts/hnCmn82CYzU",
+   "line": "고양이",
+   "channel": "Kitten School",
+   "chid": "UCpctqLPhNorp8w2oiwKBteg",
+   "subs": 65100,
+   "subs_txt": "65.1K subscribers",
+   "channel_note": "원작자 본인 계정 — 미국 고양이 임시보호(foster)·행동교육 채널(2016-02-06 개설·200편). 소개 \"Kitten School is a loving foster home for cats and kittens\" — 직접 보육 중인 새끼고양이 촬영",
+   "title": "Cute + Tiny 3-Week Old Kitten Has Something To Say | #shorts",
+   "secs": 47,
+   "pub": "2022-04-04",
+   "views": 2598,
+   "likes": null,
+   "p1080": true,
+   "ai_badge": false,
+   "low_view_checked": null,
+   "motion": {
+    "avg": 12.45,
+    "med": 11.86,
+    "min": 0.0,
+    "max": 32.66,
+    "n": 103,
+    "spikes": 0,
+    "note": "2회 측정 — 1차 12.42(최저 0.00·최대 31.21) / 2차 12.45(최저 0.00·최대 32.66). 최저 0.00은 1프레임 샘플 아티팩트로 보이며 8컷 상 정지 구간 없음"
+   },
+   "shots8": {
+    "0.3": "손바닥 위 3주 아기고양이가 입을 벌려 울음",
+    "1.5": "고개를 옆으로 돌림",
+    "3.0": "옆모습으로 입 다물고 응시",
+    "4.5": "정면으로 카메라 응시(눈 크게)",
+    "6.0": "손가락을 붙잡고 다시 울음",
+    "8.0": "고개 숙이고 손 안에서 몸부림",
+    "9.2": "다시 정면 응시",
+    "10.1": "입 벌려 울음"
+   },
+   "visual_check": "8컷 모두 같은 손·같은 아기고양이 연속, 컷 0 · 자막 0 · 브랜드 스트립 0 · 워터마크 0 · 사람 얼굴 0(손만 등장 — 게이트⑤ 허용 범위)",
+   "still": "work/sourcing_v2/stills42/c42_hnCmn-2026-11-20-023324.png",
+   "edit_memo": "47초 중 0~12초 구간 사용 권장. 모션 12.4로 이번 회차 확정분 중 가장 낮아 우선순위는 뒤로. 아기고양이 울음 소리를 살리면 몰입이 오른다."
+  }
+ ],
+ "delivered_count": 6,
+ "line_mix": {
+  "강아지": 2,
+  "쪼꼬미(수달)": 1,
+  "쪼꼬미(페럿)": 1,
+  "고양이": 2
+ },
+ "reserve_pool": [],
+ "holds": [],
+ "holds_count": 0,
+ "rejected_after_review": [
+  {
+   "id": "EFRbM9RRHJE",
+   "channel": "Mabel the Squirrel",
+   "title": "Xerxes the Indian Ringneck Clown",
+   "pub": "2024-12-17",
+   "motion_avg": null,
+   "reason": "영상 삭제·비공개 — 재생 불가(플레이어 0:00 고정)"
+  },
+  {
+   "id": "vCl4skE-NfI",
+   "channel": "FLAVIGULA",
+   "title": "Two happy otters playing with their new human buddy",
+   "pub": "2024-12-29",
+   "motion_avg": 24.16,
+   "reason": "우상단 'CiCi & Bowie' 텍스트 워터마크 고정(게이트④) + 6~10초 아기(사람) 등장(게이트⑤)"
+  },
+  {
+   "id": "ydLCL3LmWB0",
+   "channel": "FLAVIGULA",
+   "title": "Otter Morning Playdate",
+   "pub": "2024-12-10",
+   "motion_avg": 24.52,
+   "reason": "4.5→6.0초 구도 급변(수달 품은 클로즈업→잔디 위 두 마리)·5.24초 정지 프레임 — 무컷 단일 숏 미충족"
+  },
+  {
+   "id": "Kw-uQYS0vco",
+   "channel": "FLAVIGULA",
+   "title": "The otter can't wait to swim",
+   "pub": "2024-12-27",
+   "motion_avg": 14.47,
+   "reason": "최저 모션 0.00 + 9.11초 변화픽셀 0.63 스파이크 — 컷/정지 의심"
+  },
+  {
+   "id": "LUoQYPg9Luw",
+   "channel": "FLAVIGULA",
+   "title": "Otters know how to enjoy a snack",
+   "pub": "2024-12-05",
+   "motion_avg": 14.46,
+   "reason": "0.2초 변화픽셀 0.66 스파이크(시작 컷) + 3~4초 정지 구도"
+  },
+  {
+   "id": "KQTkD847J0c",
+   "channel": "FLAVIGULA",
+   "title": "An enthusiastic otter experiencing its first time playing outdoor",
+   "pub": "2024-11-19",
+   "motion_avg": 8.82,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "cWRliKQ6s5o",
+   "channel": "FLAVIGULA",
+   "title": "Otter and its new friend",
+   "pub": "2024-11-11",
+   "motion_avg": 7.97,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "tGEC-K4_c1I",
+   "channel": "FLAVIGULA",
+   "title": "Nyam nyam nyam",
+   "pub": "2024-11-12",
+   "motion_avg": 4.27,
+   "reason": "모션 12.0 미달(먹방 클로즈업 정지 구도)"
+  },
+  {
+   "id": "GXw9Gui8B_4",
+   "channel": "FLAVIGULA",
+   "title": "Love is in the Air: Otter Edition Part1",
+   "pub": "2024-12-06",
+   "motion_avg": 6.21,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "77yG7ACyZQY",
+   "channel": "FLAVIGULA",
+   "title": "Energetic Mornings",
+   "pub": "2025-06-23",
+   "motion_avg": null,
+   "reason": "원본 720x1280(1080x1920 미달)"
+  },
+  {
+   "id": "kpbVZBEZd58",
+   "channel": "써리랑애기",
+   "title": "파우치 공격하는 고양이",
+   "pub": "2021-05-29",
+   "motion_avg": 2.05,
+   "reason": "모션 12.0 미달(정지 구도)"
+  },
+  {
+   "id": "NwNQLloaE7g",
+   "channel": "써리랑애기",
+   "title": "치킨 건들지마라",
+   "pub": "2018-10-26",
+   "motion_avg": 9.66,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "pN47kiEWzII",
+   "channel": "써리랑애기",
+   "title": "고양이 영수증 드리블",
+   "pub": "2021-05-23",
+   "motion_avg": 11.48,
+   "reason": "모션 12.0 미달(0.52 차이)"
+  },
+  {
+   "id": "DR22JzZ04t8",
+   "channel": "써리랑애기",
+   "title": "간식 먹을까??",
+   "pub": "2018-08-16",
+   "motion_avg": 7.77,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "1pFq-RU6zvs",
+   "channel": "써리랑애기",
+   "title": "강아지 과수원 달리기",
+   "pub": "2025-08-23",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "GZSUHf_WHrI",
+   "channel": "Cute Kittens animal",
+   "title": "cat playing running",
+   "pub": "2022-02-03",
+   "motion_avg": 31.87,
+   "reason": "5.15~5.64초 9회 스파이크 = 5.2초 무대 전환(돌난간→다른 장소) — 무컷 아님"
+  },
+  {
+   "id": "TJyBHqsaNac",
+   "channel": "Cute Kittens animal",
+   "title": "Cat funny slip",
+   "pub": "2022-02-10",
+   "motion_avg": 11.1,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "kUp2UpiRngQ",
+   "channel": "Cute Kittens animal",
+   "title": "Peaknose playing",
+   "pub": "2022-02-07",
+   "motion_avg": null,
+   "reason": "원본 480x848"
+  },
+  {
+   "id": "i26rm5NFClQ",
+   "channel": "Cute Kittens animal",
+   "title": "cute kittens playing",
+   "pub": "2022-02-02",
+   "motion_avg": null,
+   "reason": "원본 480x768"
+  },
+  {
+   "id": "tsO9bnVK0WM",
+   "channel": "Marigold Loves You",
+   "title": "Babes the white ferret dancing and playing",
+   "pub": "2024-03-06",
+   "motion_avg": 15.28,
+   "reason": "전 구간 TikTok 로고 워터마크(게이트⑤)"
+  },
+  {
+   "id": "0Cz09GIRvZc",
+   "channel": "Marigold Loves You",
+   "title": "Audrey, seymour, and babes playing",
+   "pub": "2024-06-24",
+   "motion_avg": 28.95,
+   "reason": "0.1~4.36초 8회 스파이크(짧은 컷 이어붙임) — 무컷 아님"
+  },
+  {
+   "id": "jqWm9NlFPSc",
+   "channel": "Guinea Pig Shorts",
+   "title": "Aggressive petting",
+   "pub": "2024-06-21",
+   "motion_avg": 14.19,
+   "reason": "손으로 쓰다듬는 클로즈업 — 모션은 카메라 흔들림이며 피사체 동작이 약함(잔잔 구도)"
+  },
+  {
+   "id": "m9ijuzbNY_g",
+   "channel": "빵야네",
+   "title": "진도견도 무서워하는 군인아저씨",
+   "pub": "2024-05-08",
+   "motion_avg": 14.13,
+   "reason": "화면 전체 한글 자막 3컷 + 아저씨(사람) 전신 등장 — 게이트④·⑤"
+  },
+  {
+   "id": "QKyAP8Djp4U",
+   "channel": "Luffy the Dog",
+   "title": "Puppy's Poop Gets Stuck!",
+   "pub": "2023-08-09",
+   "motion_avg": 23.1,
+   "reason": "전 구간 영어 자막('MY POOP IS STUCK!!')·이모지 그래픽 — 게이트④"
+  },
+  {
+   "id": "XYERD3KWQfA",
+   "channel": "Brownie & Daisy Otter",
+   "title": "SUARA OTTER MANJA",
+   "pub": "2024-05-28",
+   "motion_avg": 16.46,
+   "reason": "보호자 얼굴이 8컷 전부에 등장 — 게이트⑤"
+  },
+  {
+   "id": "yvTnNZTurBE",
+   "channel": "Suryakant Dog Trainer",
+   "title": "leg bite practice",
+   "pub": "2023-10-04",
+   "motion_avg": 27.48,
+   "reason": "훈련사 전신이 전 구간 등장 — 게이트⑤"
+  },
+  {
+   "id": "ACRMhroWmlI",
+   "channel": "犬席屋",
+   "title": "はじめまして！｢犬席屋｣です！",
+   "pub": "2025-09-07",
+   "motion_avg": 25.46,
+   "reason": "1.39~7.72초 7회 스파이크 = 컷 이어붙인 몽타주"
+  },
+  {
+   "id": "kTtB4fZiXc8",
+   "channel": "Mabel the Squirrel",
+   "title": "Xerxes the Indian Ringneck Clown",
+   "pub": "2024-12-17",
+   "motion_avg": 14.16,
+   "reason": "0.1·0.49·3.56·7.72초 스파이크 4회 — 컷 전환"
+  },
+  {
+   "id": "6FyeTLmLA9U",
+   "channel": "LOONZOOM",
+   "title": "Trying To Work With A Husky",
+   "pub": "2024-08-21",
+   "motion_avg": 12.06,
+   "reason": "8.3~9.2초 스파이크 7회(끝부분 컷) + 중앙 모션 5.15 정지 위주"
+  },
+  {
+   "id": "RLafxma5Wgw",
+   "channel": "Dakota the Husky",
+   "title": "She Didn't know what to do",
+   "pub": "2023-03-22",
+   "motion_avg": 10.8,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "U2hGKF8KvBs",
+   "channel": "That Spotty Dog Runs",
+   "title": "Run a sub 3 min km with Peggy",
+   "pub": "2025-02-19",
+   "motion_avg": 11.88,
+   "reason": "모션 12.0 미달(0.12 차이)"
+  },
+  {
+   "id": "aQH0PPBQMZs",
+   "channel": "Hanna Aliff",
+   "title": "BUNNY THUMP",
+   "pub": "2021-01-25",
+   "motion_avg": null,
+   "reason": "원본 512x960"
+  },
+  {
+   "id": "A2MkuMkUB84",
+   "channel": "Hanna Aliff",
+   "title": "MINI LOP BINKY!",
+   "pub": "2021-01-05",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "Bu8POrmS6y8",
+   "channel": "Hanna Aliff",
+   "title": "Treat treat for the bun bun",
+   "pub": "2021-10-11",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "xnBAT_lgfAE",
+   "channel": "Hanna Aliff",
+   "title": "MINI LOP BUNNY SHOWER",
+   "pub": "2021-01-05",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "z2VB1q0cOOg",
+   "channel": "The Trained Ferret",
+   "title": "Simon the ferret's piano practice",
+   "pub": "2023-09-24",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "Do7yTolcMt8",
+   "channel": "The Trained Ferret",
+   "title": "Simon the Hiking Ferret",
+   "pub": "2023-11-28",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "oy3Mliovwsc",
+   "channel": "The Trained Ferret",
+   "title": "Ferret having salmon oil dreams",
+   "pub": "2023-04-18",
+   "motion_avg": 3.77,
+   "reason": "모션 12.0 미달(잠든 페럿)"
+  },
+  {
+   "id": "f4W_gqjRKoE",
+   "channel": "cute fancy rat",
+   "title": "My Jumpy Fancy Rat",
+   "pub": "2025-07-07",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "7gt7Egfxvs4",
+   "channel": "cute fancy rat",
+   "title": "Round2 ready go!",
+   "pub": "2025-05-01",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "kqZL6R7BUD4",
+   "channel": "cute fancy rat",
+   "title": "GO GO DON'T FOLLOW ME. I'M A CAT.",
+   "pub": "2025-04-03",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "8BbIyu64az0",
+   "channel": "cute fancy rat",
+   "title": "I'm Lightning, U can't catch me",
+   "pub": "2025-02-10",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "Qymh0urybhw",
+   "channel": "cute fancy rat",
+   "title": "Hide, Ready? Fight!",
+   "pub": "2025-01-12",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "cSp1ljMDHkM",
+   "channel": "Red Squirrel Studios",
+   "title": "두 도토리 물기",
+   "pub": "2022-12-10",
+   "motion_avg": null,
+   "reason": "길이 5초(10초 미만)"
+  },
+  {
+   "id": "bUJ4_ciPAc0",
+   "channel": "Red Squirrel Studios",
+   "title": "This Red Squirrel is EXTRA HAPPY!",
+   "pub": "2022-11-12",
+   "motion_avg": null,
+   "reason": "원본 720x1280 + 길이 7초"
+  },
+  {
+   "id": "XSl_46kf1IE",
+   "channel": "Red Squirrel Studios",
+   "title": "nut waiting behind my door",
+   "pub": "2022-09-28",
+   "motion_avg": null,
+   "reason": "원본 720x1280 + 길이 8초"
+  },
+  {
+   "id": "RqEI50t5KWM",
+   "channel": "Red Squirrel Studios",
+   "title": "Red Squirrels in the Nut Queue",
+   "pub": "2022-09-17",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "WeQGjHj4h_g",
+   "channel": "Red Squirrel Studios",
+   "title": "Cuddly Critters",
+   "pub": "2023-01-29",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "22TFM5e4Ne4",
+   "channel": "Red Squirrel Studios",
+   "title": "How many fatballs Jay takes?",
+   "pub": "2023-02-15",
+   "motion_avg": 6.0,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "Ua6ZbMvpV-0",
+   "channel": "Dorin - Training with Mali",
+   "title": "Conquer a Towering Wall",
+   "pub": "2023-06-06",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "OwVKNbUWjCU",
+   "channel": "Dorin - Training with Mali",
+   "title": "Ice Skating and Barrel Roll",
+   "pub": "2023-02-18",
+   "motion_avg": null,
+   "reason": "원본 460x816 + 길이 4초"
+  },
+  {
+   "id": "OGXmpLg_F74",
+   "channel": "Dorin - Training with Mali",
+   "title": "EPIC midair catch!",
+   "pub": "2024-04-20",
+   "motion_avg": 8.58,
+   "reason": "모션 12.0 미달(공 던지기 전 대기 구간)"
+  },
+  {
+   "id": "Zt5CpBC_xVw",
+   "channel": "Dorin - Training with Mali",
+   "title": "Master the Agility Tunnel",
+   "pub": "2024-08-11",
+   "motion_avg": null,
+   "reason": "길이 9초 + 원본 608x1080"
+  },
+  {
+   "id": "uC173pjQRoE",
+   "channel": "Dorin - Training with Mali",
+   "title": "Mali jump over fence, and back",
+   "pub": "2023-02-11",
+   "motion_avg": 18.78,
+   "reason": "야간 설원 촬영으로 피사체 식별 곤란 + 3~9초 개가 프레임에서 점상(원거리)"
+  },
+  {
+   "id": "Uo9nA8yP3ik",
+   "channel": "もんたの日常",
+   "title": "蚊を一瞬で仕留めます",
+   "pub": "2022-08-13",
+   "motion_avg": 2.7,
+   "reason": "모션 12.0 미달(정지 구도)"
+  },
+  {
+   "id": "GRN_44ADbWE",
+   "channel": "もんたの日常",
+   "title": "空中戦が苦手な猫",
+   "pub": "2024-03-18",
+   "motion_avg": 7.74,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "RSd88QJdVCY",
+   "channel": "もんたの日常",
+   "title": "猫なのに走り方がウサギ",
+   "pub": "2022-01-14",
+   "motion_avg": null,
+   "reason": "원본 1080x1080(세로 아님) + 길이 6초"
+  },
+  {
+   "id": "lToOQycZdZk",
+   "channel": "もんたの日常",
+   "title": "びっくりした～",
+   "pub": "2022-07-20",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "w7koQs-L3aQ",
+   "channel": "もんたの日常",
+   "title": "これでも本気",
+   "pub": "2026-02-25",
+   "motion_avg": null,
+   "reason": "1년 미만(8개월)"
+  },
+  {
+   "id": "HhYM_0rc1II",
+   "channel": "Simon the Siamese Cat",
+   "title": "Cat Pounces on Mouse Toy",
+   "pub": "2026-08-27",
+   "motion_avg": null,
+   "reason": "1년 미만(2개월)"
+  },
+  {
+   "id": "2VuoOM-sMWA",
+   "channel": "Simon the Siamese Cat",
+   "title": "Cat Pounces on Feather Toy",
+   "pub": "2026-08-21",
+   "motion_avg": null,
+   "reason": "1년 미만"
+  },
+  {
+   "id": "ChhpBUIvt5k",
+   "channel": "Simon the Siamese Cat",
+   "title": "Cat Plays Fetch",
+   "pub": "2026-08-24",
+   "motion_avg": null,
+   "reason": "1년 미만"
+  },
+  {
+   "id": "YsZnwH2Y0C8",
+   "channel": "HeyThere",
+   "title": "—",
+   "pub": "2026-11-15",
+   "motion_avg": null,
+   "reason": "1년 미만(5일)"
+  },
+  {
+   "id": "5HiUl6bqeYg",
+   "channel": "HeyThere",
+   "title": "—",
+   "pub": "2026-10-31",
+   "motion_avg": null,
+   "reason": "1년 미만"
+  },
+  {
+   "id": "1YfxvU-w9aU",
+   "channel": "HeyThere",
+   "title": "—",
+   "pub": "2026-10-31",
+   "motion_avg": null,
+   "reason": "1년 미만 + 길이 6초"
+  },
+  {
+   "id": "qnC97-Ojc1E",
+   "channel": "HeyThere",
+   "title": "—",
+   "pub": "2026-10-28",
+   "motion_avg": null,
+   "reason": "1년 미만"
+  },
+  {
+   "id": "e-XOFUEM_9U",
+   "channel": "BUBCvision",
+   "title": "—",
+   "pub": "2026-11-18",
+   "motion_avg": null,
+   "reason": "1년 미만(2일)"
+  },
+  {
+   "id": "v0FpSO_PEp8",
+   "channel": "1st Hamster",
+   "title": "Hamster Time Warp",
+   "pub": "2026-10-09",
+   "motion_avg": null,
+   "reason": "1년 미만(1개월)"
+  },
+  {
+   "id": "MQ0Vhu0-crs",
+   "channel": "BlueCollarBreeds",
+   "title": "—",
+   "pub": "2026-10-21",
+   "motion_avg": null,
+   "reason": "1년 미만 + 길이 9.7초"
+  },
+  {
+   "id": "KDjJe42nVpo",
+   "channel": "Vanilla and Swirly - Guinea pigs",
+   "title": "Peruvian Dad wants to eat my Guinea pigs",
+   "pub": "2024-08-21",
+   "motion_avg": null,
+   "reason": "길이 8.8초(10초 미만)"
+  },
+  {
+   "id": "snlVlCBxsGQ",
+   "channel": "Guinea Pig Shorts",
+   "title": "Frozen in time",
+   "pub": "2024-07-06",
+   "motion_avg": null,
+   "reason": "길이 6.9초 + 원본 720x1280"
+  },
+  {
+   "id": "GTfHnX7OlHY",
+   "channel": "Fluffy Dog Vlog",
+   "title": "Ok Google what's Pizzle?",
+   "pub": "2024-08-27",
+   "motion_avg": 11.06,
+   "reason": "모션 12.0 미달(간식 제품 소개)"
+  },
+  {
+   "id": "mrk92nYNaI4",
+   "channel": "otter kinaco",
+   "title": "カワウソのヘソ天",
+   "pub": "2025-03-25",
+   "motion_avg": 7.56,
+   "reason": "모션 12.0 미달(누워 있는 수달)"
+  },
+  {
+   "id": "lGCyBdK8kCw",
+   "channel": "otter kinaco",
+   "title": "寝起きが可愛すぎるカワウソ",
+   "pub": "2025-01-31",
+   "motion_avg": null,
+   "reason": "길이 6초"
+  },
+  {
+   "id": "SL3VQWrigyc",
+   "channel": "otter kinaco",
+   "title": "一生懸命なカワウソ",
+   "pub": "2024-11-17",
+   "motion_avg": null,
+   "reason": "길이 8초"
+  },
+  {
+   "id": "hcgMZsswLg0",
+   "channel": "otter kinaco",
+   "title": "寝起きがアザラシなカワウソ",
+   "pub": "2024-10-20",
+   "motion_avg": null,
+   "reason": "길이 8초"
+  },
+  {
+   "id": "3i0nP8-1jNo",
+   "channel": "CAT vs ChinChilla - Twitty vs Izzy",
+   "title": "Izzy the cutest chinchilla",
+   "pub": "2020-11-02",
+   "motion_avg": 10.53,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "B-f55pbWeyI",
+   "channel": "CAT GAMES VIDEO",
+   "title": "CAT GAMES - COCKROACHES",
+   "pub": "2025-10-26",
+   "motion_avg": 3.0,
+   "reason": "모션 12.0 미달(모니터 화면 재생 영상)"
+  },
+  {
+   "id": "NbtOu4fZy_c",
+   "channel": "퍼피트랙 PuppyTrack",
+   "title": "강아지의 이상행동!",
+   "pub": "2024-05-19",
+   "motion_avg": 4.53,
+   "reason": "모션 12.0 미달"
+  },
+  {
+   "id": "sEMqgvAzC0Y",
+   "channel": "Dogs in My Life",
+   "title": "He always forgets to look up",
+   "pub": "2026-04-16",
+   "motion_avg": null,
+   "reason": "1년 미만(7개월)"
+  },
+  {
+   "id": "6tzC1OXmFhY",
+   "channel": "Border Collie Frankie",
+   "title": "flip jumps",
+   "pub": "2021-10-17",
+   "motion_avg": null,
+   "reason": "원본 406x720 + 길이 7.7초"
+  },
+  {
+   "id": "kUe8cLmKs3Q",
+   "channel": "Border Collie Frankie",
+   "title": "Dog does CPR",
+   "pub": "2021-10-25",
+   "motion_avg": null,
+   "reason": "원본 720x1280"
+  },
+  {
+   "id": "zDpK4MDoqaE",
+   "channel": "Tabby Cat Hiroshi",
+   "title": "ひろしの尻尾遊び",
+   "pub": "2014-04-24",
+   "motion_avg": null,
+   "reason": "원본 270x360"
+  },
+  {
+   "id": "COd4t7Epn54",
+   "channel": "柴犬らんまる",
+   "title": "家族を見つけきゅるん顔になる柴犬",
+   "pub": "2021-02-20",
+   "motion_avg": 11.54,
+   "reason": "모션 12.0 미달 + 실제 디코드 480x854"
+  },
+  {
+   "id": "_WoURyjx-Xc",
+   "channel": "Weasel Warriors Ferret Sanctuary",
+   "title": "Ferret Water Bowl Digging",
+   "pub": "2018-01-16",
+   "motion_avg": null,
+   "reason": "원본 810x1440"
+  },
+  {
+   "id": "LTcHSNfkbPM",
+   "channel": "Weasel Warriors Ferret Sanctuary",
+   "title": "Sleeping Tongue Flicking Ferret",
+   "pub": "2019-04-24",
+   "motion_avg": null,
+   "reason": "원본 810x1440"
+  }
+ ],
+ "rejected_count": 86,
+ "judged": 92,
+ "unmeasured_next": [
+  "39차 검증 채널 재고 잔여(1st Hamster·Parrot player·Simon the Siamese Cat 등은 최근 업로드가 1년 미만이라 실질 잔여 적음) — /shorts 전수 목록은 tmp42/chan_shorts42*.json에 수집",
+  "meta_ok 잔여(41차 풀41 중복·이력 제외 93편) — 이번 회차 30여 편 실측, 나머지 대부분은 화질(720)·1년 미만·상품·BGM 채널",
+  "FLAVIGULA 잔여: 6Yvss-qWVR8(Part2)·J4t3LuwCsuk(잠든 수달)·vCl4skE-NfI 계열 — 수달 달리기 시리즈는 41차에서 2편 소진, 남은 편은 정지 구도 위주",
+  "미측정 등록분: 3yg-TfBPCcc(하품)·0RMxJRZsm_g(Dorin 밤 설원)·6rmaLcu7cvg(もんた)·jzOmFTuAwBQ·SUxrN_fd4bU·RW3JBW6TVq0·4dswRIBCA_k(기니피그)·tFIMATRU7QQ(다람쥐)",
+  "신규 발굴 후보 채널(1년 미만 다수): BoomaZoo·Izy Staffy Wolfpack·HeyThere·BUBCvision·BlueCollarBreeds·GreenEye·CorgiLifeForever — 대부분 2026년 업로드, 2027년 이후 재검토 대상"
+ ],
+ "notes": [
+  "이번 회차 확정 6편 — 강아지 2 · 고양이 2 · 쪼꼬미 2(수달 1·페럿 1). 목표 6~10편의 하한에 맞췄다.",
+  "게이트 완화 0 — 모션 12.0 미달 21편(11.88·11.48·11.54·11.10 등 0.1~0.9 차이 근접 탈락 4편 포함)은 예외 없이 탈락 처리했다.",
+  "화질 관문이 이번 회차 최대 병목 — 후보 40여 편이 720x1280·810x1440·480x848 등으로 탈락했다. 검증 채널 대부분이 2021년 이전 업로드라 1080x1920 세로 원본이 드물다.",
+  "1년 미만 탈락이 두 번째 병목 — BoomaZoo·Izy Staffy·HeyThere·Simon the Siamese 등 소규모 원작자 채널의 최근 업로드가 전부 2026년이라 제외했다.",
+  "컷 판정은 스파이크만으로 탈락시키지 않고 0.02~0.03초 간격 프레임 대조로 확인했다(9gK5CAaPdUM 10.1초 프레임 전환은 접근·도약으로 확인해 통과, GZSUHf_WHrI 5.2초는 실제 장면 전환으로 탈락).",
+  "환경: 영상 삭제·비공개 ID(EFRbM9RRHJE)를 불러오면 플레이어가 0:00에서 멈춰 세션을 두 번 재시작했다. 재시작 후 하네스를 다시 정의해 회차를 마무리했다.",
+  "대표님 결정이 급히 필요한 건 없음. 체급/팝송 예외로 올릴 후보도 이번 회차에는 없다."
+ ],
+ "updated_at": "2026-11-20T02:37:18"
+}
