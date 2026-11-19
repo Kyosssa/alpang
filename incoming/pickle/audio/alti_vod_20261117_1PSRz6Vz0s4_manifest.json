@@ -36,10 +36,11 @@
     },
     {
       "role": "source_opus_original",
-      "location": "workspace:work/sourcing_v2/tmp36/audio249.webm",
+      "location": "workspace:downloads/alti_vod_20261117_1PSRz6Vz0s4_source_opus48k.webm",
       "in_repo": false,
       "bytes": 109734013,
-      "format": "webm/opus 48kbps 48kHz stereo"
+      "format": "webm/opus 48kbps 48kHz stereo",
+      "sha256": "41f8fc911cc964cffeb8660b3e298b9921ed09122fead276754941ec767b26d6"
     }
   ],
   "captions": {
