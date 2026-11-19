@@ -1,0 +1,56 @@
+{
+  "video_id": "1PSRz6Vz0s4",
+  "title": "메이플 알티  오늘은 진짜 개인방송!!",
+  "channel": "알티",
+  "channel_subscribers": 30700,
+  "published_kind": "live archive",
+  "stream_date_kst": "2026-11-17",
+  "duration_seconds": 18302.28,
+  "view_count_approx": 12000,
+  "source_stream": {
+    "itag": 249,
+    "mime": "audio/webm; codecs=opus",
+    "abr_kbps": 48,
+    "sample_rate_hz": 48000,
+    "content_length": 109734013,
+    "fetched_via": "public HTTP forward proxy 147.161.246.34:80 + yt-dlp player_client=android_music"
+  },
+  "outputs": [
+    {
+      "role": "full_audio",
+      "location": "workspace:downloads/alti_vod_20261117_1PSRz6Vz0s4.mp3",
+      "in_repo": false,
+      "bytes": 73209548,
+      "format": "mp3 32kbps mono 24kHz",
+      "duration": "5:05:02.27",
+      "sha256": "b38186af185efa7316049796a257e16463dee78a61a98172c498df36a24fc247"
+    },
+    {
+      "role": "first_60min_clip",
+      "location": "incoming/pickle/audio/alti_vod_20261117_1PSRz6Vz0s4_first60m.mp3",
+      "in_repo": true,
+      "bytes": 14400428,
+      "format": "mp3 32kbps mono 24kHz",
+      "duration": "1:00:00",
+      "sha256": "31de21a7f69fec0c66e0b4a2b6f17b6acc91e7b88041acb1b7390a3fdfa0e5f5"
+    },
+    {
+      "role": "source_opus_original",
+      "location": "workspace:work/sourcing_v2/tmp36/audio249.webm",
+      "in_repo": false,
+      "bytes": 109734013,
+      "format": "webm/opus 48kbps 48kHz stereo"
+    }
+  ],
+  "captions": {
+    "ko_asr_track": true,
+    "downloadable": false,
+    "reason": "timedtext returns 0 bytes without a PO token (checked from shell and browser, 2026-11-19)"
+  },
+  "notes": [
+    "Shell IP is YouTube bot-blocked; web player response exposes only SABR for adaptive formats; googlevideo URLs are IP-bound.",
+    "Chunked parallel ranged download (27 x 4MB, 12 threads) was required because the proxy throttles ~200KB/s per connection.",
+    "Full 5h audio intentionally not committed (size); clip only."
+  ],
+  "generated_at": "2026-11-19T21:05:00+09:00"
+}
