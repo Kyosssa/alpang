@@ -7,11 +7,51 @@
   "37차 인계 무자막 클린 후보(tmp37/screen·screen2)": "85편 클린 판정 → 중복·37차 판정 13편 제외 → 74편",
   "74편 메타 일괄 실측(curl /shorts + /channel about)": "74편 → 1년 이상·1080x1920·10~70초·AI 0 → 70편",
   "채널 정체성 사전 배제(게이트②)": "AirCast(항공 채널·강아지 재업), GigglePaws&Tails(컴필레이션·2025-09 개설), Cat Jump(아케이드 게임 채널), Camping No Talking(캠핑·반려동물 0), Jepi Sun(재업 의심) — 검증 대상에서 제외",
-  "브라우저 실물 검증": "22편(측정 성공 18편 · 재생 실패 4편)",
+  "브라우저 실물 검증": "23편(측정 성공 19편 · 재생 실패 4편)",
   "신규 크롤(강아지 라인 보강 쿼리)": "미실시 — 브라우저 재생 품질 저하로 검증 처리량이 먼저 한계에 도달"
  },
- "delivered": [],
- "delivered_count": 0,
+ "delivered": [
+  {
+   "id": "Dx7qQdBfQlE",
+   "url": "https://www.youtube.com/shorts/Dx7qQdBfQlE",
+   "channel": "The Modern Ferret",
+   "chid": "UCtjIAjUUPrUemXCWA3n11iA",
+   "subs": "84K subscribers",
+   "published": "2023-04-02",
+   "views": 38959,
+   "likes": 1497,
+   "duration_s": 12,
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "title": "Playing Ferret : Happy National Ferret Day!",
+   "verdict": "delivered",
+   "motion": {
+    "mean": 31.22,
+    "median": 31.86,
+    "min": 15.09,
+    "max": 45.56,
+    "spikes_over_0.6": [
+     [
+      5.367,
+      0.618
+     ],
+     [
+      6.5,
+      0.615
+     ]
+    ],
+    "samples": 90,
+    "decode": "240~426p 브라우저 디코드(160x90 gray·mean abs diff·10fps 버킷)",
+    "note": "rVFC 10fps · 표본 90 · 스파이크 2회는 카메라 휙 팬으로 육안 확인"
+   },
+   "cuts8_checked": true,
+   "content": "갈색 페럿이 마른 잎·풀밭에서 몸을 낮추고 돌진·도약하다 렌즈 쪽으로 달려오는 12.1초 단일 숏(핸드헬드 추적).",
+   "reason": "8컷 요구 시점을 모두 덮는 14프레임(0.4·2.0·3.0·4.0·5.0·5.4·6.0·6.13·6.66·7.0·8.0·9.0·9.2·9.6초)을 재생 중 rVFC로 캡처해 육안 검수: 같은 마당·같은 돌담이 끊김 없이 이어지고 컷 전환 0 · 원작자 자막/브랜드 스트립 0 · 타 채널 워터마크 0 · 사람 얼굴·전신 0. 모션 31.22(중앙 31.86·최저 15.09, 정지 구간 없음) · 변화픽셀 0.6 초과 2회(5.37·6.5초)는 페럿이 렌즈로 돌진할 때 카메라가 휙 돌아간 것으로, 해당 구간 프레임(5.0·5.4·6.0·6.66초)이 같은 장면으로 연속돼 컷이 아님을 확인. AI 배지 0 · 게시 2023-04-02(3년 7개월) · 조회 38,959(1,000 이상) · 채널 The Modern Ferret(구독 8.4만·2017 개설·167편)는 Haley 본인 반려동물 계정(소개: ferret tips·education)으로 원작자 본인 계정 확인.",
+   "stills": "browser/cuts38_Dx7qQdBfQlE_play-...png · cuts38_Dx7q_mid-2026-11-19-143556.png · cuts38_Dx7q_tail-2026-11-19-143617.png · cuts38_Dx7q_tail2-2026-11-19-143643.png",
+   "edit_memo": "12.1초 통편 사용 가능. 0.4~2.0초 몸 낮추기→도약이 첫 1초 훅, 6.0~6.7초 렌즈 돌진이 후킹 구간."
+  }
+ ],
+ "delivered_count": 1,
  "holds": [
   {
    "id": "skKtiQssjm4",
@@ -40,46 +80,9 @@
    "content": "오렌지 고양이와 회색 아기고양이가 나무 바닥에서 서로 달려들며 몸싸움하는 16초 단일 무컷(고정 카메라).",
    "reason": "모션 평균 11.39로 절대기준 12.0에 0.61 미달 — 다만 8컷(0.3·1.0·1.5·2.0·2.5·3.0·4.5·6.0·8.0·9.2·10.1초) 육안상 0.5초부터 10.1초까지 두 고양이가 계속 격투·도약하며 정지 프레임이 없고, 무자막·무워터마크·사람 0. 플레이북 2장 '임계 근처는 자동 판정 금지, 육안·기획실장 병행'에 따라 보류로 올린다.",
    "stills": "browser/cuts38_skKtiQssjm4-2026-11-19-142348.png (8컷) · browser/cuts38_skKtiQssjm4_head-2026-11-19-142406.png (0.5·1.0·2.0·2.5초)"
-  },
-  {
-   "id": "Dx7qQdBfQlE",
-   "url": "https://www.youtube.com/shorts/Dx7qQdBfQlE",
-   "channel": "The Modern Ferret",
-   "chid": "UCtjIAjUUPrUemXCWA3n11iA",
-   "subs": "84K subscribers",
-   "published": "2023-04-02",
-   "views": 38959,
-   "likes": 1497,
-   "duration_s": 12,
-   "res_1080x1920_available": true,
-   "ai_badge": false,
-   "title": "Playing Ferret : Happy National Ferret Day!",
-   "verdict": "hold",
-   "motion": {
-    "mean": 31.22,
-    "median": 31.86,
-    "min": 15.09,
-    "max": 45.56,
-    "spikes_over_0.6": [
-     [
-      5.367,
-      0.618
-     ],
-     [
-      6.5,
-      0.615
-     ]
-    ],
-    "samples": 90,
-    "decode": "240~426p 브라우저 디코드(160x90 gray·mean abs diff·10fps 버킷)"
-   },
-   "cuts8_checked": false,
-   "content": "갈색 페럿이 마른 잎·풀밭에서 몸을 낮추고 돌진·도약하는 12초 단일 숏. 카메라가 페럿을 따라가며 프레이밍이 크게 흔들린다.",
-   "reason": "모션 31.22(최저 15.09)로 강하고 재생 프레임(0.4·2.0·6.13초)에서 몸 낮추기→돌진→카메라 쪽 질주가 확인된다. 다만 변화픽셀 0.6 초과가 5.37초(0.618)·6.5초(0.615) 두 번 잡혀 '컷'인지 '카메라 휙 팬'인지 확정할 수 없다. 이번 세션에서 8컷 스틸 경로가 seek 프레임 미반영(diff 0)으로 신뢰 불가여서 8컷 전수 육안을 완료하지 못했다 → 컷 아님을 확인하면 확정 가능한 1순위 후보.",
-   "stills": "browser/cuts38_Dx7qQdBfQlE_play-2026-11-19-143049.png (재생 프레임 0.4·2.0·6.13초)"
   }
  ],
- "holds_count": 2,
+ "holds_count": 1,
  "inconclusive": [
   {
    "id": "zpwLReQiALE",
@@ -661,11 +664,74 @@
    "cuts8_checked": true,
    "content": "스핑크스 다이애나가 그루밍하는 34초.",
    "reason": "모션 3.58(저모션 97표본) — 정지 구도."
+  },
+  {
+   "id": "aFeCyvowWGU",
+   "url": "https://www.youtube.com/shorts/aFeCyvowWGU",
+   "verdict": "rejected_after_review",
+   "channel": "Ranger the Corgi",
+   "chid": "UC8S4jzdVeGdt9EPsb9vFegQ",
+   "subs": "1.21K subscribers",
+   "published": "2021-01-25",
+   "views": 3924,
+   "likes": 118,
+   "duration_s": 18,
+   "res_1080x1920_available": true,
+   "ai_badge": false,
+   "title": "Corgi Zoomies #corgi #dogs #puppy #cute",
+   "motion": {
+    "mean": 28.32,
+    "median": 21.62,
+    "min": 6.4,
+    "max": 67.21,
+    "spikes_over_0.6": [
+     [
+      0.2,
+      0.636
+     ],
+     [
+      0.333,
+      0.673
+     ],
+     [
+      2.7,
+      0.675
+     ],
+     [
+      2.8,
+      0.741
+     ],
+     [
+      2.9,
+      0.677
+     ],
+     [
+      3,
+      0.615
+     ],
+     [
+      3.2,
+      0.672
+     ],
+     [
+      3.4,
+      0.602
+     ]
+    ],
+    "samples": 47,
+    "decode": "426p 브라우저 디코드",
+    "note": "재생 끊김으로 47/100 표본"
+   },
+   "cuts8_checked": true,
+   "content": "코기가 거실·카펫을 미친 듯이 뛰어다니는 18초(핸드헬드 추적).",
+   "reason": "재생 프레임 6컷(0.5·2·4·6·8·10초) 육안: 4.0초는 카펫만(개 없음), 10.0초는 개가 의자 밑 구석에 걸쳐 있어 주인공 유지 실패. 화면 흔들림·블러가 심해 원본 화질도 낮다(2015년 촬영 추정).",
+   "stills": "browser/cuts38_aFeCyvowWGU-2026-11-19-143522.png"
   }
  ],
- "rejected_count": 16,
- "judged": 22,
+ "rejected_count": 17,
+ "judged": 23,
  "notes": [
+  "확정 1편: Dx7qQdBfQlE(The Modern Ferret) — 재생 프레임 14컷으로 0.4~9.6초 연속 무컷 확인, 스파이크 2회는 카메라 팬으로 판정.",
   "목표 6~10편에 미달. 확정 0편 — 기준은 한 줄도 낮추지 않았다.",
   "37차 인계 71편 중 18편만 육안·실물 검증에 도달. 14:20 이후 브라우저 플레이어가 재생 정지·0:00 고착·캔버스 검정 프레임을 반복해 측정 처리량이 급락했다(37차 12:20과 같은 현상).",
   "이번 세션의 새 결함: seek 후 프레임이 갱신되지 않아 8컷 캔버스가 같은 프레임을 8번 그리는 경우가 있었다(Dx7qQdBfQlE에서 t=1초와 t=9초 캔버스 차분 0으로 확인). 8컷 판정 전에 'seek 후 프레임 갱신 확인'(연속 두 시점 캔버스 차분 > 0)을 반드시 넣어야 한다.",
