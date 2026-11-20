@@ -11,12 +11,12 @@
   "측정과 8컷 그리드 생성을 한 evaluate 호출에 합치고, 그리드를 DOM 캔버스로 올려 aria-label(ref)로 요소 스크린샷 1회만 찍는 방식으로 정착(후보당 호출 2회, 이미지 1장).",
   "이번 회차 후반(00:30 이후)에 /shorts/<id> HTML이 이 작업 환경 IP에서 'Sign in to confirm you're not a bot'(LOGIN_REQUIRED)으로 막혔다. 초반 수집분(1,315 ID)의 메타는 확보했고, 막힌 뒤에는 브라우저 실물 검증과 채널 페이지(/@handle/shorts, 차단 없음)만으로 진행했다. 좋아요 수는 확정 후보 6편만 shorts 페이지 UI에서 실측했다."
  ],
- "delivered": 6,
- "reserve_pool": 1,
+ "delivered": 7,
+ "reserve_pool": 2,
  "holds": 1,
- "rejected": 55,
+ "rejected": 69,
  "screened_out": 0,
- "processed_total": 63,
+ "processed_total": 79,
  "delivered_details": {
   "LARJ9zLVaJU": {
    "line": "강아지(호주 Shepherd)",
@@ -192,6 +192,32 @@
    "visual": "울타리 안에서 포메라니안이 제자리에서 빙글빙글 돌며 구르는 무컷 단일 숏(17초). 0.3~6초는 배변패드 옆에서 계속 회전, 8~10.1초는 몸을 낮추고 다시 돈다. 무자막·무워터마크·사람 0. 다만 프레임에 배변패드·케이지가 함께 잡힌다.",
    "note": "확정 6편 중 구도가 가장 아쉬운 편(배변패드 노출). 편수 채우기용이 아니라 게이트 전항 통과로 포함.",
    "status": "delivered"
+  },
+  "-cZuHgPVbi4": {
+   "line": "쪼꼬미(라쿤)",
+   "ch": "Marpleskee",
+   "ch_handle": "@Marpleskee",
+   "subs": "5.73K",
+   "videos": "79",
+   "title": "Raccoon Mom brings babies to play with daycare toys😊#shorts",
+   "secs": 20.0,
+   "publish": "2023-02-18",
+   "age": "3년 9개월 경과",
+   "views": 6604,
+   "likes": 545,
+   "low_view_checked": "해당 없음(조회 6,604 ≥ 1,000)",
+   "motion": 19.1,
+   "med": 19.74,
+   "min": 0.0,
+   "n": 92,
+   "spikes": [],
+   "spike_check": "스파이크 0.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "최대 480p (qualityLabel 240p~480p, 디코드 576x1024) — 이번 회차 확정 중 유일하게 720p 미만",
+   "visual": "라쿤 엄마와 새끼 3마리가 마당에 놓인 유아용 장난감 자동차·물통에서 노는 무컷 단일 숏(20초). 0.3초부터 새끼들이 장난감을 오르고, 6~10.1초는 엄마가 새끼들 사이를 지나며 물통 쪽으로 간다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "원작자 본인 계정(라쿤 데이케어 운영, 소개 'Raccoon Daycare'). 같은 영상을 TikTok·Instagram에도 올리는 계정이지만 이 YouTube 업로드본에는 타 플랫폼 워터마크가 없다(8컷 확인). 해상도 480p 상한이 감점.",
+   "status": "delivered"
   }
  },
  "reserve_details": {
@@ -208,6 +234,19 @@
    "spikes": [],
    "visual": "카펫 위에서 고양이와 페럿이 서로 쫓고 덮치는 무컷 단일 셋업(16초). 8컷 전 구간 무자막·무워터마크·사람 0.",
    "note": "게이트 ①이 12.0에 0.66 여유로 임계 근처(±30% 측정 편차). 플레이북 0장에 따라 자동 확정하지 않고 예비 재고로 둔다. 다음 회차 재측정 + 채널 원작자성(/shorts 동일 개체) 확인 후 편입 판단.",
+   "status": "reserve_pool"
+  },
+  "QznQabWzTz4": {
+   "line": "강아지(포메라니안)",
+   "ch": "POWDER PUFF POMERANIANS",
+   "secs": 22.0,
+   "publish": "2024-11-14",
+   "views": 765,
+   "motion": "16.13(1회) / 15.45(2회 재측정)",
+   "med": 14.52,
+   "spikes": [],
+   "visual": "포메라니안이 방 안에서 장난감 냄새를 맡고 카메라 앞을 지나가는 익스트림 클로즈업 무컷 단일 숏(22초). 무자막·무워터마크·사람 0.",
+   "note": "모션은 두 번 측정 모두 15 이상으로 안정적이나, 8컷 대부분이 흐릿한 털 클로즈업이라 인물·상황 식별이 어렵다. 게이트는 통과하지만 채널 톤(레전드형)에 맞지 않아 예비로 내렸다.",
    "status": "reserve_pool"
   }
  },
@@ -262,7 +301,18 @@
     "X3kio-iguuo:11.62",
     "JkmZSyD2SBw:9.73",
     "ePOkjxSC1_4:6.23",
-    "rF8eCEIPK_8:9.19"
+    "rF8eCEIPK_8:9.19",
+    "FXzRbgHOFXs:6.37",
+    "HkVOmner5W4:3.15",
+    "R79eNWlJg-0:8.74",
+    "7ZSIWCMpcBg:11.94",
+    "Skdo38lWD64:10.23",
+    "ubm0ul6sNho:10.34",
+    "x783vKA4X54:2.92",
+    "MDiGDAnRWtU:4.28",
+    "Giy67rSBH5Q:0.56",
+    "In0l28rVoZY:3.76",
+    "9TGIHuoZBu8:10.16"
    ]
   },
   "타 플랫폼 워터마크": {
@@ -279,13 +329,16 @@
     "GXYQaMGdbnQ:영어 자막",
     "cDF8t6FH4aQ:'Zoomies in the snow' 자막",
     "3XH6vrQAAY4:'ZOOMIES!!!' 자막",
-    "e8R9o3ftcrU:대형 자막+컴필레이션"
+    "e8R9o3ftcrU:대형 자막+컴필레이션",
+    "D3NZ_RUrBzY:'wat u in jail for?'/'Borkin' 자막",
+    "Gi9Mg7baFUw:'I can has meme too' 자막+밈 컷"
    ]
   },
   "사람(얼굴·전신·다리) 등장": {
    "ids": [
     "GJMxHINHvws:케이지 철망 차폐+사람 다리",
-    "oBufQg13fIw:보호자 다리 전 구간"
+    "oBufQg13fIw:보호자 다리 전 구간",
+    "apaeq0xQ1C0:보호자 크록스 발 전 구간"
    ]
   },
   "피사체 프레임 이탈·구도 붕괴": {
@@ -311,7 +364,8 @@
   },
   "정지 자세·손 위주": {
    "ids": [
-    "nl3W00xV3JY:배 위 쓰다듬기, 모션이 사람 손에서 발생"
+    "nl3W00xV3JY:배 위 쓰다듬기, 모션이 사람 손에서 발생",
+    "IzZZA89EBbQ:개가 카메라 반대편으로 걷는 뒷모습 위주(역동성 없음)"
    ]
   }
  },
@@ -320,14 +374,16 @@
   "쪼꼬미 라인은 페럿이 유일한 통과 축이었다(war dance 21.51). 햄스터·친칠라·다람쥐·토끼는 고정 카메라·원거리 구도가 대부분이라 5~11에 머물렀고, 움직임이 큰 클립은 TikTok 워터마크나 자막이 붙어 있었다.",
   "강아지 라인이 이번에도 가장 안정적이었다(측정 27편 중 4편 확정). 특히 '보호자가 카메라를 들고 개가 정면으로 달려오는' 구도가 유일하게 16~24 구간을 만든다.",
   "검색 결과 상위는 여전히 ViralHog·The Pet Collective·BVIRAL 같은 수집·컴필레이션 채널이 차지한다(1차 검색 상위 20곳 중 9곳). 발굴 단계에서 채널명 사전 배제가 필수.",
-  "00:30 이후 /shorts/<id> HTML이 봇 차단으로 막혀, 신규 채널 /shorts 수확분(642 ID)의 메타를 채우지 못했다. 다음 회차에서 이 풀을 재활용하려면 메타 재수집이 필요하다."
+  "00:30 이후 /shorts/<id> HTML이 봇 차단으로 막혀, 신규 채널 /shorts 수확분(642 ID)의 메타를 채우지 못했다. 다음 회차에서 이 풀을 재활용하려면 메타 재수집이 필요하다.",
+  "라쿤(Marpleskee)이 이번 회차 쪼꼬미 라인의 두 번째 통과였다. 야생·준야생 소형동물은 '장난감·물·먹이를 건드리는 능동 행동'이 붙을 때만 모션 12를 넘었고, 단순 이동·관찰 클립은 3~10에 머물렀다."
  ],
  "account_counts": {
   "Sir Alfred the Aussie": 2,
   "Catchii Cat": 1,
   "Chewy The Corgi": 1,
   "Super Ferret Friends": 1,
-  "POWDER PUFF POMERANIANS": 1
+  "POWDER PUFF POMERANIANS": 1,
+  "Marpleskee": 1
  },
  "next_round_handoff": {
   "확정": [
@@ -336,10 +392,12 @@
    "noaxmWcmMk4",
    "zRm9tP1bTOU",
    "1EgJwGlclYE",
-   "Mpo18kzepeU"
+   "Mpo18kzepeU",
+   "-cZuHgPVbi4"
   ],
   "예비 재고": [
-   "2gzjsV9kVnk"
+   "2gzjsV9kVnk",
+   "QznQabWzTz4"
   ],
   "보류(재측정·판정 대기)": [
    "XKMRqD4pBQo"
