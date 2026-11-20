@@ -13,20 +13,21 @@
   "그리드 생성을 별도 호출로 분리해 evaluate 25초 타임아웃을 회피했다(측정 1회 + 그리드 1회 + 스크린샷 1회).",
   "페이지 스냅샷이 큰 문제는 #secondary·#comments·#below·ytd-masthead를 숨겨 줄였다(플레이어는 유지)."
  ],
- "delivered": 5,
+ "delivered": 6,
  "delivered_ids": [
   "NIh9OxHOxvA",
   "lMQ7ZkGETzg",
   "Pz21EdbGxB8",
   "1UNDkV7V4FI",
-  "uyG3k_OYWjA"
+  "uyG3k_OYWjA",
+  "U8aRaJdQLj4"
  ],
  "line_mix": {
-  "강아지": 2,
+  "강아지": 3,
   "고양이": 1,
   "쪼꼬미": 2
  },
- "processed_total": 74,
+ "processed_total": 89,
  "delivered_details": {
   "NIh9OxHOxvA": {
    "line": "고양이",
@@ -185,6 +186,35 @@
    "cut_check": "스파이크 0 · 0~10.1초 동일 마당·동일 놀이대, 컷 없음",
    "still_check": "8컷 전부 무자막·무워터마크·사람 0. 라쿤들이 3초부터 놀이대를 타고 오르고 9.2~10.1초에 한 마리가 카메라 쪽으로 다가온다.",
    "verdict": "확정"
+  },
+  "U8aRaJdQLj4": {
+   "line": "강아지",
+   "subject": "새끼 강아지 8마리가 보호자가 부르자 복도에서 카메라를 향해 달려오는 클립",
+   "url": "https://www.youtube.com/shorts/U8aRaJdQLj4",
+   "duration_s": 12.9,
+   "resolution": "1080x1920",
+   "quality_levels": [
+    "hd1080 (강제 재생 디코드 1080x1920)"
+   ],
+   "hd1080": true,
+   "motion_mean": 20.11,
+   "motion_median": 18.24,
+   "motion_samples": 94,
+   "spikes": [],
+   "channel": "Free as a Dog",
+   "channel_id": "UCxJK-TEWc6LNQZ8EH-_WxEQ",
+   "subs": "197",
+   "channel_videos": 64,
+   "channel_note": "원작자 본인 계정 — 소개 \"Hey, I'm Letitia and on this channel I'll show you what it is like to live with a bunch of sweet dogs, cute cats and funny chicken\". /shorts 48편 전반이 같은 집의 강아지·고양이 1인칭 사육 영상.",
+   "views": 2606,
+   "likes": 101,
+   "published": "2022-03-12",
+   "age": "4년 8개월 경과",
+   "ai_badge": 0,
+   "songs": [],
+   "cut_check": "스파이크 0 · 8컷 전 구간 같은 복도, 카메라 고정, 컷 없음",
+   "still_check": "8컷 전부 무자막·무워터마크·사람 0. 0.3초엔 복도 멀리 있던 새끼들이 6~10.1초에 카메라 앞까지 몰려온다.",
+   "verdict": "확정"
   }
  },
  "reserve_pool": {
@@ -198,7 +228,7 @@
   "QznQabWzTz4": "POWDER PUFF POMERANIANS · 50차 예비 유지(모션 16.13/15.45, 흐릿한 털 클로즈업 구도). 이번 회차 재측정하지 않음."
  },
  "holds": {},
- "rejected": 69,
+ "rejected": 83,
  "rejected_reason_groups": {
   "모션 12.0 미달": [
    "yTr1l9C3ijg 11.07",
@@ -242,7 +272,8 @@
    "BtmUrOofyio 9.11",
    "hIOxTBIlHb8 11.43",
    "VxIoDr3xNjg 3.67",
-   "2gzjsV9kVnk 11.17/11.31(2회)"
+   "2gzjsV9kVnk 11.17/11.31(2회)",
+   "VKRoCIc2ZWs 4.87 · QzjRxvwEgO0 0.36 · VNyP5-mr4KI 6.48 · JC0tM5luk1E 10.51"
   ],
   "피사체 프레임 이탈·구도 붕괴": [
    "l3o2WkVFqbk 23.12(3~6초 빈 길)",
@@ -254,12 +285,15 @@
    "yaW-6_R3bpA 24.51(발·털 클로즈업)",
    "u4n6RnYvIAg 19.34(케이지 철망 차폐)",
    "VhC8TD73BxA 13.45(모션블러)",
-   "tkPF_GTsQpg 30.96(스파이크 10)"
+   "tkPF_GTsQpg 30.96(스파이크 10)",
+   "SSzRvg4b06Y 28.34(8.5~9.5초 개 이탈)"
   ],
   "원작자 자막·스티커·오버레이": [
    "S4bqJ_Q4sE4(TikTok UI·자막)",
    "gs8xN3Gog7E(영어 자막 4종)",
-   "vQZL4erokgg(상단 블러 오버레이 박스)"
+   "vQZL4erokgg(상단 블러 오버레이 박스)",
+   "xUL5TScLAfY(하단 고정 캡션 'Corgi zoomies are the cutest!')",
+   "Z-iXHqxQQv0 22.45(보호자 맨팔 0.3~4.5초)"
   ],
   "사람(얼굴·전신·다리) 등장": [
    "R1foHQoq8YQ 17.61(보호자 전신)",
@@ -268,7 +302,8 @@
   ],
   "컷 전환·스파이크": [
    "n7-jsbGb4_8 16.30(9.2초 컷)",
-   "VhWc46ckhso 21.13(스파이크 4·사람 팔목)"
+   "VhWc46ckhso 21.13(스파이크 4·사람 팔목)",
+   "faen0reuu78 29.86(0.1~1.0초 스파이크 6)"
   ],
   "길이·해상도 미달": [
    "qCm6vS5wsVc(9.6초)",
@@ -284,12 +319,14 @@
   "모션 12.0 초과인데 탈락한 클립이 10편(23~33 구간)이다. 전부 카메라가 피사체를 놓치거나 휘두르는 동안 생긴 수치로, 8컷에서 피사체가 프레임을 벗어난 것을 확인해 걸렀다. 게이트 ①의 수치만으로 확정하지 않은 이유다.",
   "3라인 균형은 강아지 2 · 고양이 1 · 쪼꼬미 2. 계정은 Catchii Cat 1 · POWDER PUFF 2 · Marpleskee 2로 회차 상한(2편) 이내다.",
   "화질: 확정 5편 중 3편이 hd1080 가용(디코드 1080x1920), 라쿤 2편은 qualityLabel 상한 large(480p)다. 50차 확정 라쿤 2편도 480p였고 이번에도 같은 채널이라 동일 조건이다.",
-  "/shorts HTML 메타 수집은 이번 회차 정상 동작했다(555 ID 1회 통과). 검색 결과 상위는 여전히 랭킹·컴필레이션 채널이라 채널명 사전 배제가 계속 필요하다."
+  "/shorts HTML 메타 수집은 이번 회차 정상 동작했다(555 ID 1회 통과). 검색 결과 상위는 여전히 랭킹·컴필레이션 채널이라 채널명 사전 배제가 계속 필요하다.",
+  "03:10 이후 검색어 8개를 추가 수확해 '8 Puppies running towards the Camera'(Free as a Dog)를 확정 6편으로 추가했다. 검색 상위는 여전히 랭킹·컴필레이션 채널이어서 채널명 사전 배제가 필수였다."
  ],
  "account_counts": {
   "Catchii Cat": 1,
   "POWDER PUFF POMERANIANS": 2,
-  "Marpleskee": 2
+  "Marpleskee": 2,
+  "Free as a Dog": 1
  },
  "next_round_handoff": {
   "확정": [
@@ -297,7 +334,8 @@
    "lMQ7ZkGETzg",
    "Pz21EdbGxB8",
    "1UNDkV7V4FI",
-   "uyG3k_OYWjA"
+   "uyG3k_OYWjA",
+   "U8aRaJdQLj4"
   ],
   "예비 재고": [
    "d8_vl5DCRU8",
@@ -318,11 +356,11 @@
    "강아지는 POWDER PUFF의 실내 펜 놀이가 안정적(14.7·17.76). Sir Alfred는 고정 카메라 마당 클립이 1.7~6.3으로 전부 미달 — 다음 회차에서 채널 우선순위를 낮출 것을 권한다.",
    "10~12초 클립은 측정 자체가 불안정하고(10.0초에서 루프 정지) 무컷 여유가 없어, 12초 이상 클립을 우선 검증하는 편이 효율적이다."
   ],
-  "회차 계정 상한": "확정 5편 = 계정 3곳(최대 2편)으로 상한 이내"
+  "회차 계정 상한": "확정 6편 = 계정 4곳(Catchii Cat 1 · POWDER PUFF 2 · Marpleskee 2 · Free as a Dog 1)으로 상한 이내"
  },
  "decision_points": [
   "기획실장 판정 요청: 확정 5편 중 3편(라쿤 2편·포메 1편)이 '피사체가 프레임을 크게 채우는 근접 구도'로 톤이 비슷하다. 회차 내 다양성이 부족하다고 보면 라쿤 1편을 예비(d8_vl5DCRU8 또는 KRuCmNqQFKo)로 교체 가능.",
   "Sir Alfred 계열(50차 확정 2편의 채널)이 이번 회차 39편 중 통과 0편이었다. 고정 카메라 클립 위주라 채널 자체를 예비 트랙으로 내릴지 결정 필요."
  ],
- "updated_at": "2026-11-21T03:00:00+09:00"
+ "updated_at": "2026-11-21T03:30:00+09:00"
 }
