@@ -24,7 +24,8 @@
 ## 2. 기준 클라이언트와 추출 방법
 
 - 버전: KMS 1.2.160 (2012-06-03 파일 날짜)
-- 파일: Skill.wz (311,039,146 B) · String.wz (3,717,336 B) (MD5 `a59db2f0bd6b3c355dbeda862f7763ab`)
+- 파일: Skill.wz (311,039,146 B) · String.wz (3,717,336 B) (Skill.wz MD5 `a59db2f0bd6b3c355dbeda862f7763ab` · String.wz MD5 `f2e28dbf2ccc754c9c94eaa4e0e5c573`)
+- 원본 아카이브: KMS 1.2.160 7z 분할본(part00~06.bin, 합계 2,797,136,045 B) — MD5 5c9608581a444b7bb84445fb3c4e34d1. 기존 ID 목록(justice_t2_skill_id_20261119)이 인용한 MD5가 이 아카이브 값이다(Skill.wz 자체 MD5와 다름).
 - 경로: `work/kms160/x/KMS_v2.160/` / 출처: archive.org kms-v1.2.160 배포본(11-19 확보)
 
 추출 방법:
