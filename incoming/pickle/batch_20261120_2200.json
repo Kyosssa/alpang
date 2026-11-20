@@ -15,9 +15,9 @@
  "delivered": 4,
  "reserve_pool": 1,
  "holds": 3,
- "rejected": 24,
+ "rejected": 25,
  "screened_out": 8,
- "processed_total": 32,
+ "processed_total": 33,
  "delivered_details": {
   "c9zjC6T1_-8": {
    "line": "강아지(호주 Shepherd)",
@@ -218,6 +218,9 @@
   },
   "측정 전 스킵": {
    "Vip9TEv2C8I": "햄스터 딸기 먹방(정지 예상)"
+  },
+  "카메라 이동만(피사체 정지)": {
+   "ow9x3UuQMNM": "허스키가 카펫에 엎드린 정지 자세 — 모션 22.01은 전부 카메라 팬·줌에서 나왔고 최저 차분 0.19(개체 무동작)"
   }
  },
  "structural_notes": [
