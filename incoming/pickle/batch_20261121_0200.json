@@ -27,7 +27,7 @@
   "고양이": 1,
   "쪼꼬미": 2
  },
- "processed_total": 93,
+ "processed_total": 95,
  "delivered_details": {
   "NIh9OxHOxvA": {
    "line": "고양이",
@@ -229,7 +229,7 @@
   "WievRaPvo8E": "Swisher&co · 15.1초 · 720x1280 · 모션 12.29(중앙 11.42) · 스파이크 0 · 2022-01-06 · 조회 1,847 · 720p 상한. 페럿이 노란 공을 굴리며 노는 무컷 15초, 8컷 전부 무자막·무워터마크·사람 0. 다만 모션 12.29로 임계 12.0에 0.29 여유뿐이라 측정 편차(±30%)를 감안해 자동 확정하지 않고 예비(임계 근처)로 둔다."
  },
  "holds": {},
- "rejected": 79,
+ "rejected": 81,
  "rejected_reason_groups": {
   "모션 12.0 미달": [
    "yTr1l9C3ijg 11.07",
@@ -275,7 +275,8 @@
    "VxIoDr3xNjg 3.67",
    "2gzjsV9kVnk 11.17/11.31(2회)",
    "VKRoCIc2ZWs 4.87 · QzjRxvwEgO0 0.36 · VNyP5-mr4KI 6.48 · JC0tM5luk1E 10.51",
-   "EXcf__TbLps 1.98 · KoL9ndvSnfg 4.18"
+   "EXcf__TbLps 1.98 · KoL9ndvSnfg 4.18",
+   "DxELkX7zWVs 3.39 · 6ojRBk8h0Jk 5.27 (친칠라 먹이·ASMR 클립)"
   ],
   "피사체 프레임 이탈·구도 붕괴": [
    "l3o2WkVFqbk 23.12(3~6초 빈 길)",
