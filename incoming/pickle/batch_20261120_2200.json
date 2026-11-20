@@ -12,12 +12,12 @@
   "모션 측정 종료 조건을 t>=10.25 에서 min(10.25, duration-0.05)로 수정. 10.2초 클립이 루프 재생되며 0초로 되감겨 표본이 2배(177개)로 잡히고 평균이 왜곡되던 문제 해결.",
   "8컷 그리드 캡처를 측정과 같은 evaluate 호출로 합쳐 패스 후보당 호출 3→2회."
  ],
- "delivered": 3,
+ "delivered": 4,
  "reserve_pool": 1,
  "holds": 3,
  "rejected": 24,
  "screened_out": 8,
- "processed_total": 31,
+ "processed_total": 32,
  "delivered_details": {
   "c9zjC6T1_-8": {
    "line": "강아지(호주 Shepherd)",
@@ -95,6 +95,29 @@
    "audio": "현장음(음원 표기 없음)",
    "quality": "미확인(측정 240x426 소품질 캡처)",
    "visual": "검은 래브라도가 새 잔디에서 공 옆을 몸으로 구르고 배를 보이며 버둥거리는 무컷 단일 숏. 0.3초부터 구르는 동작, 전 구간 피사체가 프레임 중앙. 무자막·무워터마크·사람 0.",
+   "status": "delivered"
+  },
+  "CvmaTDwDmHI": {
+   "line": "강아지(래브라도)",
+   "ch": "Freddie the zoomie Labrador",
+   "ch_handle": "@Freddiethelabrador",
+   "subs": "1.96K",
+   "videos": "555",
+   "title": "Saturday morning zoomies done woof woof be happy be kind be positive 🐶🐶",
+   "secs": 12.1,
+   "publish": "2024-05-25",
+   "age": "1년 6개월 경과",
+   "views": 5781,
+   "likes": 114,
+   "motion": 20.48,
+   "med": 22.39,
+   "min": 2.09,
+   "n": 91,
+   "spikes": [],
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "미확인(측정 240x426 소품질 캡처)",
+   "visual": "검은 래브라도가 숲길 잔디를 달리다 멈춰 서는 무컷 단일 숏. 0.3초부터 주행, 6~8초는 개가 크게 잡히며 잔디를 헤치고 달린다. 8컷 전 구간 무자막·무워터마크·사람 0.",
    "status": "delivered"
   }
  },
@@ -201,6 +224,7 @@
   "이번 회차 확정 3편은 전부 '카메라가 동물을 따라가는 야외 활동' 클립에서 나왔다. 모션 12.0은 고정 카메라 + 잔잔한 급여·휴식 영상에서 거의 나오지 않는다(측정 31편 중 12편이 5~11 구간). 반대로 음원 표기가 없는 클린 음원 클립은 소형 채널의 '일상·급여' 영상에 몰려 있어, 음원 필터를 먼저 걸면 활동량 큰 원석이 함께 걸러지는 역선택이 발생한다.",
   "상업 음원 사전 필터의 실효율: 3,105편 시도 중 음원 표기 1,086편(35%)이 탈락. 48차에서 문제였던 BGM 클립을 대량으로 걸러낸 것은 사실이지만, 남은 풀의 평균 모션이 낮아졌다.",
   "TikTok 재업로드 채널이 1년+ 소형 채널의 큰 비중을 차지한다. 코기(Rosie the Blue-Eyed Corgi)·닥스훈트(Doxierama) 채널 클립에서 TikTok 워터마크가 8컷에 잡혔다. 이 계열은 채널 단위로 사전 배제 목록에 넣는 것이 효율적이다.",
+  "확정 4편의 조회수는 247~5,781로 갈린다. 저조회 3편은 0장 (b) 저조회 확인을 표기했고, CvmaTDwDmHI는 5,781회로 저조회 조건에 해당하지 않는다.",
   "확정 3편 전부 조회 1,000회 미만(247~493) — 플레이북 0장 (b)에 따라 '저조회 확인'(원작자 본인 계정·게시일)을 각 항목에 표기했다. 채널 자체는 962~1.96K 구독의 1인칭 사육 계정이고 400~555편을 꾸준히 올린 계정이라 원작자성은 확실하다.",
   "해상도: c9zjC6T1_-8은 qualityLabel 실측 최대 720p(hd1080 없음). 8컷·모션 판정은 240x426 소품질 캡처로 했으므로, 확정 3편 중 2편은 hd1080 가용 여부가 미확인이다. 납품 전 hd1080 실측이 필요하다.",
   "브라우저 하네스 재현성: 48차 측정값 Bztt4lDyuEc 21.47 → 이번 재측정 18.93(-12%). 경계값(11.2~11.6) 3편은 보류로 두고 확정하지 않았다.",
@@ -208,7 +232,7 @@
  ],
  "account_counts": {
   "Sir Alfred the Aussie(@ALFRED-ADVENTURES)": "확정 2편(c9zjC6T1_-8·SaYbgsxZ41s — 상한 도달) · 예비 1편(aMAIZe0D3NU) · 후보 42편 미측정",
-  "Freddie the zoomie Labrador(@Freddiethelabrador)": "확정 1편(6nzDb4qzFCg) · 보류 2편 · 후보 40편 미측정",
+  "Freddie the zoomie Labrador(@Freddiethelabrador)": "확정 2편(6nzDb4qzFCg·CvmaTDwDmHI — 상한 도달) · 보류 2편 · 후보 38편 미측정",
   "Onyx The Husky": "보류 1편(QjKRRpuMCb0) · 후보 40편 미측정",
   "기타 25개 채널": "측정 20편 전량 탈락(모션·워터마크·자막·구도)"
  },
@@ -216,7 +240,8 @@
   "확정": [
    "c9zjC6T1_-8",
    "SaYbgsxZ41s",
-   "6nzDb4qzFCg"
+   "6nzDb4qzFCg",
+   "CvmaTDwDmHI"
   ],
   "예비 재고": [
    "aMAIZe0D3NU"
@@ -232,7 +257,7 @@
    "Freddie the zoomie Labrador — 야외 잔디 활동 40편 잔여",
    "Onyx The Husky — 2021~2023 산책 40편(모션 경계값 다수)"
   ],
-  "회차 계정 상한": "확정 3편이 계정 2곳(Sir Alfred 2, Freddie 1)으로 상한 이내"
+  "회차 계정 상한": "확정 4편이 계정 2곳(Sir Alfred 2, Freddie 2)으로 상한 이내"
  },
  "decision_points": [
   "모션 임계 12.0 유지 여부 — 10.9~11.6 구간에 보류 3편이 몰려 있다. 11.0으로 낮추면 확정이 3→6편이 된다.",
