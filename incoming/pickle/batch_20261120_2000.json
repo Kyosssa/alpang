@@ -14,8 +14,8 @@
  "pop_exception": 5,
  "reserve_pool": 3,
  "holds": 4,
- "rejected": 78,
- "processed_total": 90,
+ "rejected": 80,
+ "processed_total": 92,
  "details": {},
  "pop_exception_details": {
   "_vtHYyQLoHA": {
@@ -233,7 +233,9 @@
    "sFp6BuwtpQU(자막)",
    "bKTJV7Q-CIw(구도 붕괴+암부)",
    "ReNv_HQ2Vy4('Animallover_happiness' 워터마크+자막)",
-   "vSJ0xjTXbK0('Run for Fun Beagle Running' 자막 + @beaglomuffin 워터마크)"
+   "vSJ0xjTXbK0('Run for Fun Beagle Running' 자막 + @beaglomuffin 워터마크)",
+   "8Uj0TN96SQM('It's 1am. Why do you want to go out?' 자막 + @eliethehallwaycat 워터마크 + 6초 컷)",
+   "KY5peY-Oz7w('Why do we crop tails?' 빨간 자막 2줄 전 구간)"
   ],
   "TikTok 등 타 플랫폼 워터마크": [
    "ROJ8emB3uBk",
