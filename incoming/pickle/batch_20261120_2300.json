@@ -1,0 +1,360 @@
+{
+ "batch": "50차 정기 소싱 (2026-11-20 23:00)",
+ "date": "2026-11-20",
+ "slot": "23:00",
+ "title": "50차 3라인 정기 소싱 (강아지·고양이·쪼꼬미)",
+ "round": 50,
+ "gate_policy": "기획실장 5대 절대 게이트 + 플레이북 0장 (a)~(d) 그대로 적용. 모션 평균 12.0 완화 0, 10초 이상 무컷 단일 숏, 세로 9:16, 완전 무자막·무스티커·무워터마크, 사람 손 외 인물 0, AI 배지 0, 1년 이상 경과, 상업 음원 표기 0, 회차당 동일 계정 2편 상한. 기준 미달 편수는 줄여 제출.",
+ "method": "1) 발굴: 신규 숏츠 필터 검색 60쿼리(1차 30 + 2차 30, 고양이·쪼꼬미 활동 키워드 집중) 1,454 ID + 원작자 의심 채널 39곳 /shorts 실측 903 + 49차 인계 풀(p49_deep_clean.json 608편) → 중복 제외 후 449편 후보. 2) 메타 프리스크린: /shorts HTML 1회 호출 파싱(길이·게시일·조회·AI 배지·MUSIC_NOTE_SYMBOL 음원 표기)로 10~45초·2025-11-20 이전·AI 0·음원 0 → 261편 압축. 3) 브라우저 실물 검증(15차 하네스): watch 페이지 #movie_player.loadVideoById → hd1080 강제 → 0.02초 시크 → 재생하며 0.099초 버킷당 1프레임 160x90 gray 차분(0~10.35초) + 같은 호출에서 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 캔버스 그리드 생성 → 요소 스크린샷 1회로 육안 검수. 4) 스파이크 구간은 0.05초 간격 프레임 재캡처로 컷 여부 확인. 5) 채널: /shorts 실측(구독자·영상수·설명·동일 개체 상시 등장). 6) 좋아요·자막 트랙 유무는 shorts 페이지 UI 실측.",
+ "harness_changes": [
+  "모션 샘플링을 0.099초 버킷 1프레임(10fps 근사)으로 고정했다. 초기 구현이 45ms 폴링마다 샘플해 23fps로 잡히면서 같은 영상이 10fps 기준 18.86 → 23fps 기준 9.74로 나왔다(프레임 간 시간이 짧아 차분이 작아짐). 표준 정의와 어긋난 수치를 쓰면 게이트가 사실상 강화되므로, 버킷 샘플링으로 되돌린 뒤 재측정했다.",
+  "측정과 8컷 그리드 생성을 한 evaluate 호출에 합치고, 그리드를 DOM 캔버스로 올려 aria-label(ref)로 요소 스크린샷 1회만 찍는 방식으로 정착(후보당 호출 2회, 이미지 1장).",
+  "이번 회차 후반(00:30 이후)에 /shorts/<id> HTML이 이 작업 환경 IP에서 'Sign in to confirm you're not a bot'(LOGIN_REQUIRED)으로 막혔다. 초반 수집분(1,315 ID)의 메타는 확보했고, 막힌 뒤에는 브라우저 실물 검증과 채널 페이지(/@handle/shorts, 차단 없음)만으로 진행했다. 좋아요 수는 확정 후보 6편만 shorts 페이지 UI에서 실측했다."
+ ],
+ "delivered": 6,
+ "reserve_pool": 1,
+ "holds": 1,
+ "rejected": 55,
+ "screened_out": 0,
+ "processed_total": 63,
+ "delivered_details": {
+  "LARJ9zLVaJU": {
+   "line": "강아지(호주 Shepherd)",
+   "ch": "Sir Alfred the Aussie",
+   "ch_handle": "@ALFRED-ADVENTURES",
+   "subs": "962",
+   "videos": "414",
+   "title": "Zephyr and Alfred in the backyard                       #short #shorts #pet #pets #fyp #fypシ",
+   "secs": 13.0,
+   "publish": "2023-12-10",
+   "age": "2년 11개월 경과",
+   "views": 393,
+   "likes": 16,
+   "comments": 2,
+   "low_view_checked": "저조회 확인 — 조회 393 · 원작자 본인 계정(@ALFRED-ADVENTURES 962구독·414영상·소개 'Alfred the Australian Shepherd', /shorts 전반에 같은 호주 Shepherd 상시 등장) · 게시 2023-12-10(2년 11개월 경과)",
+   "motion": 19.82,
+   "med": 20.63,
+   "min": 0.0,
+   "n": 91,
+   "spikes": [
+    0.13
+   ],
+   "spike_check": "0.13초 1회는 재생 시작 직후 첫 프레임(시크 후 첫 표본) — 8컷 0.3초 프레임과 연속 확인, 컷 아님.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "사용 가능한 자막 트랙 없음(shorts 페이지 '동영상에 사용할 수 있는 자막이 없음')",
+   "quality": "최대 720p (qualityLabel 144p~720p, hd1080 미가용, 디코드 720x1280)",
+   "visual": "두 마리 호주 Shepherd가 마당에서 공을 두고 서로 달리고 몸싸움하는 무컷 단일 숏(13초). 0.3초부터 두 마리가 화면에 있고, 4.5~10.1초는 카메라를 든 보호자를 따라 개들이 정면으로 달려온다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "49차 확정 2편과 같은 계정이지만 회차 단위 상한(2편)이므로 이번 회차에서 2편까지 허용. 그중 1편.",
+   "status": "delivered"
+  },
+  "MENEX0zdjx4": {
+   "line": "강아지(호주 Shepherd)",
+   "ch": "Sir Alfred the Aussie",
+   "ch_handle": "@ALFRED-ADVENTURES",
+   "subs": "962",
+   "videos": "414",
+   "title": "It's squishy time!                                      #short #shorts #pet #pets #fyp #fypシ",
+   "secs": 29.0,
+   "publish": "2023-11-25",
+   "age": "2년 경과",
+   "views": 118,
+   "likes": 5,
+   "comments": 0,
+   "low_view_checked": "저조회 확인 — 조회 118 · 원작자 본인 계정(@ALFRED-ADVENTURES 962구독·414영상·동일 호주 Shepherd 상시 등장) · 게시 2023-11-25(2년 경과)",
+   "motion": 16.08,
+   "med": 15.78,
+   "min": 0.0,
+   "n": 89,
+   "spikes": [],
+   "spike_check": "스파이크 0.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "자막 트랙 있음·사용 중지 상태(shorts 페이지 '자막 사용 중지됨') — 화면에 burned-in 자막은 0",
+   "quality": "최대 720p (qualityLabel 144p~720p, hd1080 미가용, 디코드 720x1280)",
+   "visual": "눈 쌓인 마당에서 호주 Shepherd가 공을 물고 구르고 다시 달리는 무컷 단일 숏(29초). 0.3~4.5초는 마당을 배경으로 개가 프레임 안을 오가고, 6~10.1초는 공을 물고 정면으로 달려온다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "1번과 같은 계정 2편째(회차 상한 도달). 1번보다 0.0초 훅이 약하고 프레임이 넓다.",
+   "status": "delivered"
+  },
+  "noaxmWcmMk4": {
+   "line": "고양이(오렌지 태비 새끼 2마리)",
+   "ch": "Catchii Cat",
+   "ch_handle": "@CatchiiCat",
+   "subs": "1.66K",
+   "videos": "112",
+   "title": "kitten pouncing on kitten",
+   "secs": 17.0,
+   "publish": "2023-08-25",
+   "age": "3년 3개월 경과",
+   "views": 1456,
+   "likes": 54,
+   "comments": 3,
+   "low_view_checked": "해당 없음(조회 1,456 ≥ 1,000)",
+   "motion": 18.86,
+   "med": 17.52,
+   "min": 0.0,
+   "n": 92,
+   "spikes": [
+    0.14
+   ],
+   "spike_check": "0.14초 1회는 재생 시작 직후 첫 표본 — 연속 확인, 컷 아님.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "사용 가능한 자막 트랙 없음",
+   "quality": "hd1080 가용 (qualityLabel 144p~2160p60, hd1080 강제 시 디코드 608x1080)",
+   "visual": "마당에서 오렌지 태비 새끼 고양이 두 마리가 서로 덮치고 쫓고 구르는 무컷 단일 숏(17초). 0.3초부터 한 마리가 다른 한 마리를 향해 도약하고, 6~10.1초는 두 마리가 화면 중앙에서 맞붙어 구른다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "채널 소개 'Videos are mainly of Catchii Cat (a.k.a. Mia)'. 클립에는 새끼 두 마리가 나오며 한 마리가 Catchii. 다소 넓은 구도(마당)라 0.0초 훅은 중간.",
+   "status": "delivered"
+  },
+  "zRm9tP1bTOU": {
+   "line": "강아지(코기)",
+   "ch": "Chewy The Corgi",
+   "ch_handle": "@ChewyTheCorgi",
+   "subs": "637",
+   "videos": "89",
+   "title": "JUST THROW THE TREAT! #Shorts",
+   "secs": 16.0,
+   "publish": "2021-03-05",
+   "age": "5년 8개월 경과",
+   "views": 480,
+   "likes": 31,
+   "comments": 9,
+   "low_view_checked": "저조회 확인 — 조회 480 · 원작자 본인 계정(@ChewyTheCorgi 637구독·89영상·소개 'A day in the life of a Corgi ... from the Parks, Botanical Gardens, Chasing Birds ...') · 게시 2021-03-05(5년 8개월 경과)",
+   "motion": 23.73,
+   "med": 24.29,
+   "min": 0.0,
+   "n": 92,
+   "spikes": [],
+   "spike_check": "스파이크 0.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "사용 가능한 자막 트랙 없음",
+   "quality": "hd1080 가용 (qualityLabel 144p~1080p60, hd1080 강제 시 디코드 608x1080)",
+   "visual": "코기가 간식을 든 보호자 손을 보고 몸을 일으켜 따라오는 클로즈업 무컷 단일 숏(16초). 0.3~6초는 앉아 위를 올려다보다 8~10.1초에 일어나 카메라 쪽으로 다가온다. 간식을 든 손만 등장(플레이북 ⑤ 허용 범위). 무자막·무워터마크·얼굴 0.",
+   "note": "모션 대부분은 코기 몸놀림+핸드헬드 카메라. 역동성은 '달리기'보다 낮은 편이라 8컷에서 몸동작 지속 여부를 확인해 확정.",
+   "status": "delivered"
+  },
+  "1EgJwGlclYE": {
+   "line": "쪼꼬미(페럿)",
+   "ch": "Super Ferret Friends",
+   "ch_handle": "@superferretfriends",
+   "subs": "23",
+   "videos": "32",
+   "title": "CUTE FERRET practices her WAR DANCE.",
+   "secs": 12.0,
+   "publish": "2022-07-17",
+   "age": "4년 4개월 경과",
+   "views": 1526,
+   "likes": "0(표시 없음)",
+   "comments": 3,
+   "low_view_checked": "해당 없음(조회 1,526 ≥ 1,000)",
+   "motion": 21.51,
+   "med": 20.56,
+   "min": 0.0,
+   "n": 86,
+   "spikes": [],
+   "spike_check": "스파이크 0.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "사용 가능한 자막 트랙 없음",
+   "quality": "hd1080 가용 (qualityLabel 144p~1080p, hd1080 강제 시 디코드 1080x1920)",
+   "visual": "카펫 위에서 페럿이 weasel war dance(몸을 좌우로 튕기며 도는 동작)를 추는 무컷 단일 숏(12초). 0.3초부터 몸을 튕기고, 3~10.1초는 카메라 쪽으로 달려들었다가 다시 튕긴다. 무자막·무워터마크·사람 0.",
+   "note": "채널 소개글은 비어 있으나 /shorts 전반이 같은 페럿(가족 개체들)의 1인칭 사육 영상 32편. 23구독 소형 계정.",
+   "status": "delivered"
+  },
+  "Mpo18kzepeU": {
+   "line": "강아지(포메라니안)",
+   "ch": "POWDER PUFF POMERANIANS",
+   "ch_handle": "@POWDERPUFFPOMERANIANS",
+   "subs": "1.19K",
+   "videos": "216",
+   "title": "ADORABLE POWDER PUFF POMERANIAN IN NEW \" 1 BED 1 BATH CONDO \" 😉 #dog #pomeranian #condo #cute #funny",
+   "secs": 17.0,
+   "publish": "2023-08-23",
+   "age": "3년 3개월 경과",
+   "views": 978,
+   "likes": 27,
+   "comments": 0,
+   "low_view_checked": "저조회 확인 — 조회 978 · 원작자 본인 계정(@POWDERPUFFPOMERANIANS 1.19K구독·216영상·소개 'A POMERANIAN IS LIKE A LIVING HUG', /shorts 48편 전반에 같은 포메라니안) · 게시 2023-08-23(3년 3개월 경과)",
+   "motion": 18.76,
+   "med": 18.91,
+   "min": 0.0,
+   "n": 88,
+   "spikes": [
+    0.28,
+    7.96
+   ],
+   "spike_check": "7.96초 스파이크는 0.05초 간격(7.85·7.9·7.96·8.0·8.05·8.1초) 재캡처로 확인 — 같은 울타리·같은 개, 카메라 급회전이며 컷 아님.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "captions": "사용 가능한 자막 트랙 없음",
+   "quality": "hd1080 가용 (qualityLabel 144p~1080p, hd1080 강제 시 디코드 1080x1920)",
+   "visual": "울타리 안에서 포메라니안이 제자리에서 빙글빙글 돌며 구르는 무컷 단일 숏(17초). 0.3~6초는 배변패드 옆에서 계속 회전, 8~10.1초는 몸을 낮추고 다시 돈다. 무자막·무워터마크·사람 0. 다만 프레임에 배변패드·케이지가 함께 잡힌다.",
+   "note": "확정 6편 중 구도가 가장 아쉬운 편(배변패드 노출). 편수 채우기용이 아니라 게이트 전항 통과로 포함.",
+   "status": "delivered"
+  }
+ },
+ "reserve_details": {
+  "2gzjsV9kVnk": {
+   "line": "고양이+쪼꼬미(고양이·페럿)",
+   "ch": "ShaneTvHD",
+   "secs": 16.0,
+   "publish": "2023-08-19",
+   "views": 288295,
+   "motion": 12.66,
+   "med": 12.32,
+   "min": 1.69,
+   "n": 84,
+   "spikes": [],
+   "visual": "카펫 위에서 고양이와 페럿이 서로 쫓고 덮치는 무컷 단일 셋업(16초). 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "게이트 ①이 12.0에 0.66 여유로 임계 근처(±30% 측정 편차). 플레이북 0장에 따라 자동 확정하지 않고 예비 재고로 둔다. 다음 회차 재측정 + 채널 원작자성(/shorts 동일 개체) 확인 후 편입 판단.",
+   "status": "reserve_pool"
+  }
+ },
+ "holds_details": {
+  "XKMRqD4pBQo": {
+   "line": "고양이",
+   "ch": "Catchii Cat",
+   "secs": 14.0,
+   "publish": "2021-11-12",
+   "views": 15037,
+   "motion": 12.67,
+   "med": 11.31,
+   "min": 0.0,
+   "n": 91,
+   "spikes": [
+    0.15
+   ],
+   "visual": "방 안에서 고양이가 벽을 보고 울음(입 벌림)을 내는 장면. 무자막·무워터마크·사람 0.",
+   "note": "수치는 임계 근처이나 몸동작이 머리 들기·걷기 수준이고 클립의 값어치가 소리(야옹/짖는 소리)에 있어 시각 훅이 약하다. 기획실장 판정 대기로 보류.",
+   "status": "holds"
+  }
+ },
+ "rejected_reason_groups": {
+  "모션 12.0 미달(최저 1.33~11.62)": {
+   "note": "10fps 버킷 정의로 측정한 평균. 고양이·소형 설치류의 정지·급여·휴식 클립이 대부분 이 그룹.",
+   "ids": [
+    "eOqNx4Uo73Y:1.33",
+    "ga9XxVGxkZ8:3.79",
+    "AyJhzK7B_gU:1.89",
+    "JDieYzLbJ3s:4.93",
+    "yITfNpyOL1I:5.55",
+    "A3ul23FE-JM:3.32",
+    "LuuQbZU8rdk:8.29",
+    "c0BqvqOdaLI:10.17",
+    "bE-WLueUxdE:10.51",
+    "-6NQuxoknog:10.40",
+    "eKcwHf36PEo:10.23",
+    "TOdyRM0jbUA:8.61",
+    "n1FmbuwoYfI:1.55",
+    "HPFDnHo9zWU:9.82",
+    "f_XuGYvoXfQ:4.55",
+    "1GGTCYNyQhg:9.40",
+    "t4OUDkC5XI8:5.91",
+    "2vAbkIcHlac:8.42",
+    "sFCoWSccbeE:11.20",
+    "v1_2Cia9P5k:9.99",
+    "0xLyn0NCPi0:5.69",
+    "3-AOmn3cfQU:11.52",
+    "T7Kgzfdp1N4:6.32",
+    "8gzGiWnEe68:3.53",
+    "kuVPSDitwUk:10.38",
+    "X3kio-iguuo:11.62",
+    "JkmZSyD2SBw:9.73",
+    "ePOkjxSC1_4:6.23",
+    "rF8eCEIPK_8:9.19"
+   ]
+  },
+  "타 플랫폼 워터마크": {
+   "ids": [
+    "roXj1tT1emk:TikTok",
+    "LZfRTpoyToo:TikTok(@thecorgipack)",
+    "xjNMMUJPfOo:TikTok"
+   ]
+  },
+  "원작자 자막·스티커 오버레이": {
+   "ids": [
+    "CUapdcJERog:십자 조준선 그래픽",
+    "sOmpPq5xgt0:설명 배너 3개",
+    "GXYQaMGdbnQ:영어 자막",
+    "cDF8t6FH4aQ:'Zoomies in the snow' 자막",
+    "3XH6vrQAAY4:'ZOOMIES!!!' 자막",
+    "e8R9o3ftcrU:대형 자막+컴필레이션"
+   ]
+  },
+  "사람(얼굴·전신·다리) 등장": {
+   "ids": [
+    "GJMxHINHvws:케이지 철망 차폐+사람 다리",
+    "oBufQg13fIw:보호자 다리 전 구간"
+   ]
+  },
+  "피사체 프레임 이탈·구도 붕괴": {
+   "ids": [
+    "7u2S7ZS7ltk:6초 이후 이탈",
+    "Lz3nNxqDAnA:피사체 극소",
+    "tYhRbaAfOwM:4.5~9.2초 이탈",
+    "5WpP8Inv_Wg:카메라 요동",
+    "DJcDqwXQKJA:피사체 극소",
+    "Ip0cTbcz3KA:피사체 극소+구도 급변",
+    "nYvmZTeqIdo:피사체 극소",
+    "Lf5fRYRcO3s:피사체 극소",
+    "AxiHpuM73rQ:8초 이후 이탈+목줄"
+   ]
+  },
+  "컷 전환 의심(스파이크 3~4회·8컷 구도 급변)": {
+   "ids": [
+    "R0d_yJx0p0o:스파이크 4",
+    "oT6wEGKYFdU:10.0초 스파이크 2",
+    "YTbslHyrBdE:3.7~4.0초 스파이크 4",
+    "zkmK6h8SoJs:스파이크 4"
+   ]
+  },
+  "정지 자세·손 위주": {
+   "ids": [
+    "nl3W00xV3JY:배 위 쓰다듬기, 모션이 사람 손에서 발생"
+   ]
+  }
+ },
+ "structural_notes": [
+  "고양이 라인은 63편 중 18편을 측정했지만 확정 1편이었다. 10fps 12.0 게이트를 넘는 고양이 클립은 '카메라가 고양이를 따라가는 야외·복도 주행'뿐이었고, 실내 정지·급여·관찰 클립은 5~10 구간에 몰렸다.",
+  "쪼꼬미 라인은 페럿이 유일한 통과 축이었다(war dance 21.51). 햄스터·친칠라·다람쥐·토끼는 고정 카메라·원거리 구도가 대부분이라 5~11에 머물렀고, 움직임이 큰 클립은 TikTok 워터마크나 자막이 붙어 있었다.",
+  "강아지 라인이 이번에도 가장 안정적이었다(측정 27편 중 4편 확정). 특히 '보호자가 카메라를 들고 개가 정면으로 달려오는' 구도가 유일하게 16~24 구간을 만든다.",
+  "검색 결과 상위는 여전히 ViralHog·The Pet Collective·BVIRAL 같은 수집·컴필레이션 채널이 차지한다(1차 검색 상위 20곳 중 9곳). 발굴 단계에서 채널명 사전 배제가 필수.",
+  "00:30 이후 /shorts/<id> HTML이 봇 차단으로 막혀, 신규 채널 /shorts 수확분(642 ID)의 메타를 채우지 못했다. 다음 회차에서 이 풀을 재활용하려면 메타 재수집이 필요하다."
+ ],
+ "account_counts": {
+  "Sir Alfred the Aussie": 2,
+  "Catchii Cat": 1,
+  "Chewy The Corgi": 1,
+  "Super Ferret Friends": 1,
+  "POWDER PUFF POMERANIANS": 1
+ },
+ "next_round_handoff": {
+  "확정": [
+   "LARJ9zLVaJU",
+   "MENEX0zdjx4",
+   "noaxmWcmMk4",
+   "zRm9tP1bTOU",
+   "1EgJwGlclYE",
+   "Mpo18kzepeU"
+  ],
+  "예비 재고": [
+   "2gzjsV9kVnk"
+  ],
+  "보류(재측정·판정 대기)": [
+   "XKMRqD4pBQo"
+  ],
+  "미측정 잔여": "p50_candidates.json 261편 중 63편 측정, 198편 미측정. 신규 채널 수확 642편은 메타 미수집(/shorts HTML 차단).",
+  "유망 방향": [
+   "페럿 war dance·playing 계열(Super Ferret Friends 외 Mischief Ferrets·Kingsdown Ferrets·All About Ferrets 잔여 다수) — 단 자막·워터마크 비율 높음",
+   "Sir Alfred·Freddie 계열 '카메라 들고 개가 달려오는' 구도(두 계정 모두 다음 회차 2편까지 재사용 가능)",
+   "Catchii Cat 잔여 44편 — 새끼 시절 클립이 몰려 있어 재탐색 가치"
+  ],
+  "회차 계정 상한": "확정 6편 = 계정 5곳(최대 2편, Sir Alfred)으로 상한 이내"
+ },
+ "decision_points": [
+  "확정 6편은 목표 하한(6편)에 맞춘 결과다. 7편째부터는 게이트 근처(12.0~12.7) 클립뿐이어서 완화 없이 6편으로 마감했다.",
+  "Mpo18kzepeU는 게이트 전항 통과지만 프레임에 배변패드·케이지가 잡힌다. 채널 톤에 맞지 않는다고 보면 예비로 내려도 된다(대체 없음).",
+  "XKMRqD4pBQo(모션 12.67)는 수치상 통과, 시각 훅이 약해 보류로 뒀다. 기획실장 판정이 필요하면 1편 추가 가능."
+ ]
+}
