@@ -1,0 +1,1581 @@
+{
+  "문서": "2단 tier-2 스킬-ID 목록 (세트 B 기준)",
+  "기준": "v6_1 세트 B M 항목 + 2단 보강 수집 149건. 숫자 ID는 피클 확보본 (커밋 6df158a, KMS String.wz · 나무위키 아이콘 · maplestorydb · GMS v117 대조)과 건별 대조해 전건 채움 — 이름·직업 149/149 일치 · ID 중복 0.",
+  "ID_확보_경로": [
+    "maplestory.io 후대 버전 단건 (2026-11-19 실측: job 경로 503 · skill 단건 404 · 타임아웃 — 현 경로 불가)",
+    "KMS/후대 GMS 클라이언트 데이터 기반 대조 (피클 추가 수집 또는 별도 원천)",
+    "ID가 특정되면 이름·M과 교차 대조해 건별로 확정"
+  ],
+  "jobs": {
+    "캐논슈터": [
+      {
+        "skill": "캐논 스플래셔",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5011000,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "기간틱 백스탭",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5011002,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"기간틱 백스텝\". 목록의 \"백스탭\"은 표기차로 본다."
+      },
+      {
+        "skill": "빌드업 캐논",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 5010003,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5010003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "펀칭 캐논",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5011001,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 15(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "몽키 러쉬붐",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5301001,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 5300007(구 사본)도 존재 — 2차 액티브 슬롯 5301001 채택."
+      },
+      {
+        "skill": "몽키 매직",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5301003,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "캐논 마스터리",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5300005,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS String.wz·maplestorydb 모두 5300005=캐논 마스터리(Cannon Mastery). 나무위키 리마스터 이전 문서의 아이콘 표기가 5300004로 뒤바뀌어 있어 클라이언트 데이터 쪽을 채택. / 현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "캐논 부스터",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5301002,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "2013년 캐논 액셀레이션으로 대체된 구 스킬. 현행 클라이언트에 ID만 남고 KMS명은 비어 있음(MSEA명 Cannon Booster)."
+      },
+      {
+        "skill": "크리티컬 파이어",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5300004,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS String.wz·maplestorydb 모두 5300004=크리티컬 파이어(Critical Fire). 나무위키 아이콘 표기(5300005)와 반대여서 클라이언트 데이터 쪽 채택. / 현행 최대레벨 5(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "파이렛 트레이닝",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 5300008,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 5(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "슬러그 샷",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5301000,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "몽키 웨이브",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5311002,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 5310008(구 사본)도 존재 — 3차 액티브 5311002 채택."
+      },
+      {
+        "skill": "몽키 파워붐",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5311001,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "캐논 스파이크",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5311000,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "캐논 점프",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5311003,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "1차 이동기 5011008과 동명이지만 2012년 3차 슬롯은 5311003(나무위키 리마스터 이전 문서 일치)."
+      },
+      {
+        "skill": "오크통 룰렛",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 5311004,
+        "id_status": "정정(클라 대조)",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "현행 최대레벨 15(2012 M10) — 패치로 마스터레벨 변경 / 5310004는 클라이언트에 존재하지 않음. 531.img의 5311004가 오크통 룰렛(M10).",
+        "id_confirm": {
+          "img": "531.img",
+          "string_name": "오크통 룰렛",
+          "maxLevel": 10,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "럭키 다이스",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5311005,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "바이퍼 공용 5111007과 동명. 캐논 직업 이미지(531.img) 전용 사본 5311005 채택."
+      },
+      {
+        "skill": "리인포스 캐논",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5310006,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "바이탈 익스트림",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 5310007,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 영문명 Pirate Rush로 개칭(동일 ID). / 현행 최대레벨 9(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "반격의 슈터",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5310009,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "캐논 바주카",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5321000,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "캐논 버스터",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5321012,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321012.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "전함 노틸러스",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5321001,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "바이퍼 공용 5121013과 동명. 캐논 직업 이미지(532.img) 전용 사본 5321001 채택."
+      },
+      {
+        "skill": "파이렛 스피릿",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5321010,
+        "id_status": "정정(클라 대조)",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "최종 ID 5321010 — KMS 1.2.160 클라이언트 532.img·String.wz 직접 파싱으로 확인. 5320013은 클라이언트에 존재하지 않음(532.img 12개 스킬·String.wz 1,998건 어디에도 없음) — 나무위키 리마스터 이전 문서의 아이콘 표기(5320013.icon)를 근거로 한 기존 채택은 기각. 5321010이 '파이렛 스피릿' M30 단일 스킬로, MP 50+5d(x/5)·지속 10x·반격 u(x/2) 구조가 2012년 패시브(반격 확률·보공 증가)+액티브 문안과 일치.",
+        "id_confirm": {
+          "img": "532.img",
+          "string_name": "파이렛 스피릿",
+          "maxLevel": 30,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "마그네틱 앵커",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5321003,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 20(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "서포트 몽키 트윈스",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 5321004,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "리마스터에서 서포트 몽키로 개칭(동일 ID)."
+      },
+      {
+        "skill": "더블 럭키 다이스",
+        "M": 5,
+        "M_judge": "✅",
+        "skill_id": 5320007,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "바이퍼 공용 5120012와 동명. 캐논 전용 사본 5320007 채택."
+      },
+      {
+        "skill": "하이퍼 몽키 스펠",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5320008,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "오버버닝 캐논",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 5320009,
+        "id_status": "확보",
+        "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      }
+    ],
+    "메르세데스": [
+      {
+        "skill": "스피드 듀얼샷",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23001000,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23001000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "샤프 에이밍",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23000003,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23000003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "아크로바틱 점프",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 23001002,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23001002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 1.2.347에서 삭제되고 같은 ID가 스피릿 점프로 대체됨. 2012년 M10은 나무위키 삭제 스킬 항목과 일치."
+      },
+      {
+        "skill": "포텐셜 파워",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 23000001,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23000001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "피지컬 트레이닝",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 23100008,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23100008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 5(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "듀얼보우건 마스터리",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23100005,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23100005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "듀얼보우건 부스터",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23101002,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23101002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 1.2.347에서 같은 ID가 듀얼보우건 액셀레이션으로 개편됨."
+      },
+      {
+        "skill": "스피릿 인퓨전",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 23101003,
+        "id_status": "정정(클라 대조)",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "23100003은 클라이언트에 존재하지 않음. 23101003이 스피릿 인퓨젼(M15, 2차) — KMS 표기차(인퓨전/인퓨젼).",
+        "id_confirm": {
+          "img": "2310.img",
+          "string_name": "스피릿 인퓨젼",
+          "maxLevel": 15,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "차지 드라이브",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 23101001,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23101001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 23101007(추가 사본)도 존재 — 원본 슬롯 23101001 채택. / 현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "파이널 샷",
+        "M": 5,
+        "M_judge": "✅",
+        "skill_id": 23100004,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23100004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "파이널 어택",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23100006,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23100006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "정식 표기 \"파이널 어택 : 듀얼보우건\"."
+      },
+      {
+        "skill": "어드밴스드 파이널 어택",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23120012,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23120012.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "크로스 피어싱",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23101000,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23101000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "스트라이크 듀얼샷",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111000,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "리프 토네이도",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111001,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "거스트 다이브",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111003,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "하이킥 데몰리션",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 23110006,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23110006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 5(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "엘리멘탈 나이트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111008,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 ID가 23111008~23111011 네 개(정령 3종 분기) — 대표 23111008 채택. / 현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "이그니스 로어",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111004,
+        "id_status": "정정(클라 대조)",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "23110004는 클라이언트에 존재하지 않음. 2311.img의 23111004가 이그니스 로어(M20).",
+        "id_confirm": {
+          "img": "2311.img",
+          "string_name": "이그니스 로어",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "유니콘 스파이크",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111002,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "워터 실드",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23111005,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23111005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"워터실드\"(띄어쓰기 없음)."
+      },
+      {
+        "skill": "디펜스 브레이크",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23120010,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23120010.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "듀얼보우건 엑스퍼트",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23120009,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23120009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "이슈타르의 링",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23121000,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23121000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "레전드리 스피어",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23121002,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23121002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "라이트닝 엣지",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23121003,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23121003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "롤링 문썰트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 23120011,
+        "id_status": "정정(클라 대조)",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "23121011은 클라이언트에 존재하지 않음. 2312.img의 23120011이 롤링 문썰트(M20).",
+        "id_confirm": {
+          "img": "2312.img",
+          "string_name": "롤링 문썰트",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "앤시언트 스피릿",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23121004,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23121004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "메이플 용사",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 23121005,
+        "id_status": "확보",
+        "basis": "F5 + 본섭 독립 goodyear2012/157044286·okk9884/20159916085·memorialpark1/80160670484·tmdduf1313/130137700840·handecap/70137838381",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「메르세데스(메이플스토리)/스킬」(삭제 스킬 절 포함), 23121005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      }
+    ],
+    "데몬슬레이어": [
+      {
+        "skill": "데빌 윙즈",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 30011109,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 30011109.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 30011159는 대만 특화 사본 — 30011109 채택. / 현행 최대레벨 0(2012 M1) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "데몬 점프",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 30010110,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 30010110.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데스 커쓰",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 30010111,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 30010111.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"데스 커스\"."
+      },
+      {
+        "skill": "데모닉 블러드",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 30010185,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 30010185.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데몬스 퓨리",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 30010112,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 30010112.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 3(2012 M1) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "데빌 사이더",
+        "M": 15,
+        "M_judge": "✅ 공식",
+        "skill_id": 31001000,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31001000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데몬 부스터",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31001001,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31001001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "데몬 액셀레이션으로 대체된 구 스킬(삭제 항목 아이콘 31001001.icon). 현행 KMS명은 비어 있음."
+      },
+      {
+        "skill": "다크 어질리티",
+        "M": 10,
+        "M_judge": "✅ 공식",
+        "skill_id": 31000002,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31000002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "HP 증가",
+        "M": 10,
+        "M_judge": "✅ 공식",
+        "skill_id": 31000003,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31000003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"HP증가\"."
+      },
+      {
+        "skill": "데몬 슬래시",
+        "M": 10,
+        "M_judge": "✅ 공식",
+        "skill_id": 31000004,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31000004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "1차 본체. 강화 사본 31001006~31001008은 별도."
+      },
+      {
+        "skill": "소울 이터",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31101000,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31101000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "다크 쓰러스트",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31101001,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31101001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데몬 트레이스",
+        "M": 15,
+        "M_judge": "✅ 공식",
+        "skill_id": 31101002,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31101002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 영문명 Chaos Lock(동일 ID). / 현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "다크 리벤지",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31101003,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31101003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 영문명 Vengeance(동일 ID). / 현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "웨폰 마스터리",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31100004,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31100004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "피지컬 트레이닝",
+        "M": 10,
+        "M_judge": "✅ 공식",
+        "skill_id": 31100005,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31100005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 5(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "아웃레이지",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31100006,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31100006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 18(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "데몬 슬래시 1차 강화",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 31100007,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31100007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "다크 저지먼트",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31111000,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31111000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데쓰 드로우",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31111001,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31111001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "블러디 레이븐",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31111003,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31111003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "다크 인듀어",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31111004,
+        "id_status": "정정(클라 대조)",
+        "basis": "F8 (Update/196)",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경 / 31110004는 클라이언트에 존재하지 않음. 3111.img의 31111004가 다크 인듀어(M20).",
+        "id_confirm": {
+          "img": "3111.img",
+          "string_name": "다크 인듀어",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "데모닉 브레스",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31111005,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31111005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "이블 토쳐",
+        "M": 15,
+        "M_judge": "✅ 공식",
+        "skill_id": 31110006,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31110006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "컨센트레이션",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31110007,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31110007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 18(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "포스 가드",
+        "M": 15,
+        "M_judge": "✅ 공식",
+        "skill_id": 31110008,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31110008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "맥스포스",
+        "M": 5,
+        "M_judge": "✅ 공식",
+        "skill_id": 31110009,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31110009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"맥스 포스\"."
+      },
+      {
+        "skill": "데몬 슬래시 2차 강화",
+        "M": 1,
+        "M_judge": "✅ 공식",
+        "skill_id": 31110010,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31110010.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데몬 익스플로젼",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121000,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 31121010(추가 사본)도 존재 — 원본 슬롯 31121000 채택."
+      },
+      {
+        "skill": "데몬 임팩트",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121001,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "뱀피릭 터치",
+        "M": 10,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121002,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 영문명 Leech Aura(동일 ID). / 현행 최대레벨 9(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "데빌 크라이",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121003,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 30(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "메이플 용사",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121004,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "메타모포시스",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121005,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "다크 바인드",
+        "M": 20,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121006,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "인피니티 포스",
+        "M": 15,
+        "M_judge": "✅ 공식",
+        "skill_id": 31121007,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31121007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "어드밴스드 웨폰 마스터리",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31120008,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31120008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "하드 스킨",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 31120009,
+        "id_status": "확보",
+        "basis": "F8 (Update/196)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「데몬 슬레이어(메이플스토리)/스킬」, 31120009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      }
+    ],
+    "팬텀": [
+      {
+        "skill": "더블 피어싱",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24001000,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24001000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "스위프트 팬텀",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 24001002,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24001002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 24001005(추가 사본)도 존재 — 원본 슬롯 24001002 채택."
+      },
+      {
+        "skill": "콜 오브 페이트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24101000,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24101000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "브리즈 카르트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24101002,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24101002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 15(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "퀵 이베이전",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 24000003,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24000003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"퀵 이베이젼\"."
+      },
+      {
+        "skill": "블랑 카르트",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 24100003,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24100003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "케인 부스터",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24101005,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24101005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "케인 액셀레이션으로 대체된 구 스킬(삭제 항목 아이콘 24101005.icon)."
+      },
+      {
+        "skill": "플래시 앤 플리",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24110004,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24110004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "케인 마스터리",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24100004,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24100004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "럭 모노폴리",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 24100006,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24100006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 9(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "코트 오브 암즈",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111000,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24111000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "럭 오브 팬텀시프",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111002,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24111002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "미스 포츈 프로텍션",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111003,
+        "id_status": "정정(클라 대조)",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "KMS 표기는 \"미스포츈 프로텍션\". / 현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경 / 24110003은 클라이언트에 존재하지 않음. 2411.img의 24111003이 미스포츈 프로텍션(M20).",
+        "id_confirm": {
+          "img": "2411.img",
+          "string_name": "미스포츈 프로텍션",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "문 라이트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111005,
+        "id_status": "정정(클라 대조)",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "24110005는 클라이언트에 존재하지 않음. 2411.img의 24111005가 문 라이트(M20).",
+        "id_confirm": {
+          "img": "2411.img",
+          "string_name": "문 라이트",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "팬텀 차지",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111006,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24111006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 24111008(추가타 사본)도 존재 — 본체 24111006 채택."
+      },
+      {
+        "skill": "어큐트 센스",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24110007,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24110007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 14(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "느와르 카르트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24120002,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24120002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "얼티밋 드라이브",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24121000,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "트와일라이트",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24121003,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 24121010(추가타 사본)도 존재 — 본체 24121003 채택. / 현행 최대레벨 30(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "프레이 오브 아리아",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24121004,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "케인 엑스퍼트",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24120006,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24120006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "템페스트 오브 카드",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24121005,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "소울 스틸",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24121007,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 KMS명은 \"팬텀 오브 아리아\"(JMS명이 소울스틸로 남음). 삭제 항목 아이콘 24121007.icon 일치."
+      },
+      {
+        "skill": "메이플 용사",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24121008,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 maplestorn/20155675192·tjsgur456/40157289788 2곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "탤런트 오브 팬텀시프 Ⅰ",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24001001,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24001001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 로마자 \"I\"."
+      },
+      {
+        "skill": "탤런트 오브 팬텀시프 Ⅱ",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24101001,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24101001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"II\"."
+      },
+      {
+        "skill": "탤런트 오브 팬텀시프 Ⅲ",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 24111001,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24111001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"III\"."
+      },
+      {
+        "skill": "탤런트 오브 팬텀시프 Ⅳ",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 24121001,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 24121001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "KMS 표기는 \"IV\"."
+      },
+      {
+        "skill": "하이 덱스터러티",
+        "M": 1,
+        "M_judge": "✅",
+        "skill_id": 20030206,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 20030206.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": ""
+      },
+      {
+        "skill": "데들리 인스팅트",
+        "M": 1,
+        "M_judge": "✅",
+        "skill_id": 20030204,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 20030204.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "현행 최대레벨 3(2012 M1) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "저지먼트",
+        "M": 1,
+        "M_judge": "✅",
+        "skill_id": 20031210,
+        "id_status": "확보",
+        "basis": "F4 + nyjmma456/151370665 (메이플 용사는 본섭 독립 3곳)",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「팬텀(메이플스토리)/스킬」, 20031210.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+        "id_note": "동명 20031209(자동/수동 분리 사본)도 존재 — 나무위키 본문 아이콘과 일치하는 20031210 채택."
+      }
+    ],
+    "미하일": [
+      {
+        "skill": "HP 증가",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 51000000,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51000000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "소울 실드",
+        "M": 15,
+        "M_judge": "✅",
+        "skill_id": 51000001,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51000001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "소울 어질리티",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 51000002,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51000002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "소울 점프",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 51001003,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51001003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "동명 51001015(추가 사본)도 존재 — 원본 슬롯 51001003 채택."
+      },
+      {
+        "skill": "소울 블레이드",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51001004,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51001004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 KMS명은 샤이닝 피어스(동일 ID, 2021 리마스터 개칭. GMS v117 Soul Blade=51001004)."
+      },
+      {
+        "skill": "피지컬 트레이닝",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 51100000,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51100000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 최대레벨 5(2012 M10) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "소드 마스터리",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51100001,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51100001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "파이널 어택",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51100002,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51100002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "소드 부스터",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51101003,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51101003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 KMS명 소드 액셀레이션(동일 ID)."
+      },
+      {
+        "skill": "분노",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51101004,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51101004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 KMS명 인커리지(동일 ID, GMS v117 Rage=51101004)."
+      },
+      {
+        "skill": "소울 드라이버",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51101005,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51101005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 KMS명 소울 어썰트(동일 ID, GMS v117 Soul Driver=51101005)."
+      },
+      {
+        "skill": "샤이닝 체이스",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51101006,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51101006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "GMS v117 Radiant Driver=51101006. / 현행 최대레벨 9(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "셀프 리커버리",
+        "M": 30,
+        "M_judge": "✅",
+        "skill_id": 51110000,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51110000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 최대레벨 14(2012 M30) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "인텐션",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51110001,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51110001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 KMS명 로얄 오쓰(동일 ID, GMS v117 Intense Focus=51110001)."
+      },
+      {
+        "skill": "소울 어택",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51110002,
+        "id_status": "정정(클라 대조)",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+        "id_note": "현행 KMS명 소울 릴리즈(동일 ID, GMS v117 Trinity Attack=51111006). / 51111006은 다른 스킬(소울 슬래시). 5111.img의 51110002가 소울 어택(M20).",
+        "id_confirm": {
+          "img": "5111.img",
+          "string_name": "소울 어택",
+          "maxLevel": 20,
+          "판정": "정정",
+          "출처": "KMS 1.2.160 클라이언트 Skill.wz"
+        }
+      },
+      {
+        "skill": "샤이닝 차지",
+        "M": 10,
+        "M_judge": "✅",
+        "skill_id": 51111003,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51111003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 클라이언트는 51110003을 쓰고 51111003은 KMS명이 비어 있음 — GMS v117(2012-12) 목록이 51111003(Radiant Charge)이므로 2012 정본으로 51111003 채택."
+      },
+      {
+        "skill": "소울 인듀어",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51111004,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51111004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "매직 크래쉬",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51111005,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51111005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+      },
+      {
+        "skill": "샤이닝 버스터",
+        "M": 20,
+        "M_judge": "✅",
+        "skill_id": 51111007,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51111007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "어드밴스드 소드 마스터리",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 51120001,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51120001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      },
+      {
+        "skill": "소울 어썰트",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 51121007,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51121007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": "4차 슬롯. 2차 슬롯 51101005(구 소울 드라이버)와 이름이 겹치나 2012 4차 기술은 51121007."
+      },
+      {
+        "skill": "샤이닝 블라스트",
+        "M": 30,
+        "M_judge": "✅ 공식",
+        "skill_id": 51121008,
+        "id_status": "확보",
+        "basis": "세트 A와 같은 값. 세트 B 본섭 독립 v104v/90144324952·fastkang0/70137281752·syboyz/30137727326가 같은 M을 적는다",
+        "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「미하일(메이플스토리)/스킬」, 51121008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html) + S4 GMS v117 스킬ID 목록(레이지존 FuckMS v117 스레드, 2013-01 — 미하일 2012 사양)",
+        "id_note": ""
+      }
+    ]
+  },
+  "counts": {
+    "캐논슈터": 29,
+    "메르세데스": 29,
+    "데몬슬레이어": 38,
+    "팬텀": 31,
+    "미하일": 22
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "문서": "2단 신규 직업 JSON 샘플 — 캐논슈터 (세트 B 기준) · 판정 정정 반영 세대",
+  "형식": "정본 스킬 레코드와 같은 모양의 샘플. skill_id는 피클 확보본 대조로 전건 채움 (2026-11-19). 수치는 판정 상태를 status에 명시한다.",
+  "job": "캐논슈터",
+  "set": "B (1.2.157)",
+  "skills": [
+    {
+      "skill_id": 5011000,
+      "name_ko": "캐논 스플래셔",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5011002,
+      "name_ko": "기간틱 백스탭",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "KMS 표기는 \"기간틱 백스텝\". 목록의 \"백스탭\"은 표기차로 본다."
+    },
+    {
+      "skill_id": 5010003,
+      "name_ko": "빌드업 캐논",
+      "max_level": 10,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5010003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5011001,
+      "name_ko": "펀칭 캐논",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5011001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 최대레벨 15(2012 M20) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5301001,
+      "name_ko": "몽키 러쉬붐",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": "50% · 8명 3회 · 300% 폭발",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 28 소비, 50% 데미지로 최대 8명의 적을 3번 공격, 100% 확률로 넉백, 일정 거리 이동 후 300%의 데미지로 폭발'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "동명 5300007(구 사본)도 존재 — 2차 액티브 슬롯 5301001 채택."
+    },
+    {
+      "skill_id": 5301003,
+      "name_ko": "몽키 매직",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5300005,
+      "name_ko": "캐논 마스터리",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "KMS String.wz·maplestorydb 모두 5300005=캐논 마스터리(Cannon Mastery). 나무위키 리마스터 이전 문서의 아이콘 표기가 5300004로 뒤바뀌어 있어 클라이언트 데이터 쪽을 채택. / 현행 최대레벨 10(2012 M20) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5301002,
+      "name_ko": "캐논 부스터",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "2013년 캐논 액셀레이션으로 대체된 구 스킬. 현행 클라이언트에 ID만 남고 KMS명은 비어 있음(MSEA명 Cannon Booster)."
+    },
+    {
+      "skill_id": 5300004,
+      "name_ko": "크리티컬 파이어",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "KMS String.wz·maplestorydb 모두 5300004=크리티컬 파이어(Critical Fire). 나무위키 아이콘 표기(5300005)와 반대여서 클라이언트 데이터 쪽 채택. / 현행 최대레벨 5(2012 M15) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5300008,
+      "name_ko": "파이렛 트레이닝",
+      "max_level": 10,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5300008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 최대레벨 5(2012 M10) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5301000,
+      "name_ko": "슬러그 샷",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": "220%",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 24 소비, 220% 데미지로 최대 4명의 적을 2번 공격'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5301000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5311002,
+      "name_ko": "몽키 웨이브",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": "860%",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 55 소비, 최대 860% 데미지로 공격, 95% 확률로 기절, 크리티컬 시 20% 확률로 최고 출력'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311002.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "동명 5310008(구 사본)도 존재 — 3차 액티브 5311002 채택."
+    },
+    {
+      "skill_id": 5311001,
+      "name_ko": "몽키 파워붐",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5311000,
+      "name_ko": "캐논 스파이크",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": "240%",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 36 소비, 240% 데미지로 최대 6명의 적을 3번 공격'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5311003,
+      "name_ko": "캐논 점프",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "1차 이동기 5011008과 동명이지만 2012년 3차 슬롯은 5311003(나무위키 리마스터 이전 문서 일치)."
+    },
+    {
+      "skill_id": 5311004,
+      "name_ko": "오크통 룰렛",
+      "max_level": 10,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+      "id_note": "현행 최대레벨 15(2012 M10) — 패치로 마스터레벨 변경 / 5310004는 클라이언트에 존재하지 않음. 531.img의 5311004가 오크통 룰렛(M10)."
+    },
+    {
+      "skill_id": 5311005,
+      "name_ko": "럭키 다이스",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5311005.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "바이퍼 공용 5111007과 동명. 캐논 직업 이미지(531.img) 전용 사본 5311005 채택."
+    },
+    {
+      "skill_id": 5310006,
+      "name_ko": "리인포스 캐논",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310006.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5310007,
+      "name_ko": "바이탈 익스트림",
+      "max_level": 20,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 영문명 Pirate Rush로 개칭(동일 ID). / 현행 최대레벨 9(2012 M20) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5310009,
+      "name_ko": "반격의 슈터",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5310009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 최대레벨 10(2012 M15) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5321000,
+      "name_ko": "캐논 바주카",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": "500% · 6명 4회",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 75 소비, 500% 데미지로 최대 6명의 적을 4번 공격'",
+        "B5 leaf_first/90142521221 (2012-05-06) '600% 2번 6명 공격에서 500% 4번 6명 공격으로 상향'",
+        "B6 dltngus79/90142158845 (2012-04-30) '캐논 바주카가 500% 2대에서… 500% 4대로 바뀌었습니다'",
+        "B4 지식iN 150786878 답변 (2012-05-15) '캐논바주카 500% 4번때리고'",
+        "구간 밖 보강: dongbu603/20164792349 (2012-08-20) '마스터시에 500%로 4번때립니다'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321000.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5321012,
+      "name_ko": "캐논 버스터",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": "320% · 5회 · 추가 크리 15%",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 63 소비, 320% 데미지로 5번 공격, 추가 크리티컬 확률 15%'"
+      ],
+      "cast_delay_ms": null,
+      "cast_delay_status": "미확보 (값 칸에서 분리 — 판정 정정 2026-11-19)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321012.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5321001,
+      "name_ko": "전함 노틸러스",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321001.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "바이퍼 공용 5121013과 동명. 캐논 직업 이미지(532.img) 전용 사본 5321001 채택."
+    },
+    {
+      "skill_id": 5321010,
+      "name_ko": "파이렛 스피릿",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "C 1.2.160 KMS 정식 클라이언트 Skill.wz·String.wz 직접 파싱(archive.org kms-v1.2.160, MD5 5c9608581a444b7bb84445fb3c4e34d1)",
+      "id_note": "최종 ID 5321010 — KMS 1.2.160 클라이언트 532.img·String.wz 직접 파싱으로 확인. 5320013은 클라이언트에 존재하지 않음(532.img 12개 스킬·String.wz 1,998건 어디에도 없음) — 나무위키 리마스터 이전 문서의 아이콘 표기(5320013.icon)를 근거로 한 기존 채택은 기각. 5321010이 '파이렛 스피릿' M30 단일 스킬로, MP 50+5d(x/5)·지속 10x·반격 u(x/2) 구조가 2012년 패시브(반격 확률·보공 증가)+액티브 문안과 일치."
+    },
+    {
+      "skill_id": 5321003,
+      "name_ko": "마그네틱 앵커",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": "400% · 추가 520%",
+      "status": "승격 승인 (규칙 ⑤⑥ 조건부 채택 · Claude 판정 2026-11-19)",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "basis_mc": [
+        "F12 '변경 전 — MP 86 소비, 20초동안 소환, 주기적으로 400%의 데미지 … 지속시간 경과 시 520%의 추가 데미지'"
+      ],
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321003.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "현행 최대레벨 20(2012 M15) — 패치로 마스터레벨 변경"
+    },
+    {
+      "skill_id": 5321004,
+      "name_ko": "서포트 몽키 트윈스",
+      "max_level": 15,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5321004.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "리마스터에서 서포트 몽키로 개칭(동일 ID)."
+    },
+    {
+      "skill_id": 5320007,
+      "name_ko": "더블 럭키 다이스",
+      "max_level": 5,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320007.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": "바이퍼 공용 5120012와 동명. 캐논 전용 사본 5320007 채택."
+    },
+    {
+      "skill_id": 5320008,
+      "name_ko": "하이퍼 몽키 스펠",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320008.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    },
+    {
+      "skill_id": 5320009,
+      "name_ko": "오버버닝 캐논",
+      "max_level": 30,
+      "M_judge": "✅",
+      "value_setB": null,
+      "status": "M 확정 · 수치 판정 대기",
+      "basis": "F6 + nyjmma456/151448484([마스터레벨] 표)",
+      "id_source": "S2 나무위키 직업 스킬 문서의 아이콘 파일명(=스킬ID) 대조(나무위키 「캐논슈터/리마스터 이전 스킬」, 5320009.icon) + S1 KMS String.wz 스킬명·ID 대조표(전서버 스킬명 17,922건 — jancy-49.github.io/Papulatus-Daily/translate/Skill.html)",
+      "id_note": ""
+    }
+  ]
+}
