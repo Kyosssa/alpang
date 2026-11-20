@@ -1,0 +1,293 @@
+{
+ "batch": "44차 정기 소싱 (2026-11-20 08:00)",
+ "date": "2026-11-20",
+ "slot": "08:00",
+ "gate_policy": "기획실장 5대 절대 게이트 + 플레이북 0장 (a)~(d) 그대로 적용. 모션 12.0 완화 0.",
+ "method": "브라우저 실물 검증(BROWSER_VERIFY_15 변형): loadVideoById + video_id 일치 확인 → 0.02초 시크 → 160x90 gray 차분 10fps 버킷 샘플(0~10.35초) → 변화픽셀 0.6 초과 스파이크 카운트 → 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 캔버스 그리드 스틸 육안 검수(자막·워터마크·손·사람·컷) → AI 배지는 watch 페이지 메타데이터 블록 문자열 검사. 게시일·조회수는 /watch HTML 파싱 + playerResponse microformat(publishDate·viewCount) 교차.",
+ "delivered": [
+  "HMs-Uo110-Y",
+  "_9-CBEo5YhA"
+ ],
+ "reserve_pool": [
+  "N_aSEUw2hZc",
+  "UeBSo7wGtKA"
+ ],
+ "inconclusive": [
+  "Ka3MuszisaQ",
+  "LnrQeuUqDF0",
+  "NDuCPIRZTm0",
+  "45goEdzrMl0"
+ ],
+ "loadfail": [
+  "aK81t353rd4",
+  "urJA_T_D4Kw",
+  "zzYPOlBqcww",
+  "u1JGOWN69IQ",
+  "P2DghB-DUK4",
+  "LRFCN_a5KFI",
+  "DaKsFvyen8I",
+  "7c_R_qYTDGk",
+  "NTEaQKWtUkE",
+  "dUItf0elGN0",
+  "GNbn89wWL2k"
+ ],
+ "details": {
+  "HMs-Uo110-Y": {
+   "line": "강아지",
+   "ch": "Freddie the zoomie Labrador",
+   "subs": "1.96천",
+   "title": "Boy just look at me go woof woof be happy be kind be positive",
+   "secs": 11.0,
+   "publish": "2024-03-11",
+   "views": 4681,
+   "likes": null,
+   "motion": 19.24,
+   "med": 19.28,
+   "min": 0.0,
+   "max": 37.4,
+   "n": 104,
+   "spikes": 0,
+   "ai": 0,
+   "visual": "8컷: 마른 겨울 풀밭에서 같은 검은 래브라도가 달리는 단일 숏. 카메라 팬만 있고 컷 0. 자막·워터마크·브랜드 스트립 0, 사람·손 0. 0.3초에 이미 달리는 중(즉각 모션). 1.5초에 개가 카메라 앞으로 돌진해 훅 강함.",
+   "stills": "stills44/c44_HMs-U_8cut.png",
+   "note": "43차에서 재생 정지로 측정 불가였던 클립을 이번 회차에 재측정해 통과. 42차 확정 2편과 같은 개(다른 계절·다른 들판)."
+  },
+  "_9-CBEo5YhA": {
+   "line": "강아지",
+   "ch": "Freddie the zoomie Labrador",
+   "subs": "1.96천",
+   "title": "Hurry up Dad woof woof be happy be kind be positive",
+   "secs": 11.0,
+   "publish": "2024-05-26",
+   "views": 9074,
+   "likes": 133,
+   "motion": 22.24,
+   "med": 21.29,
+   "min": 9.4,
+   "max": null,
+   "n": 104,
+   "spikes": 0,
+   "ai": 0,
+   "visual": "8컷: 공원 산책로에서 같은 검은 래브라도가 달려오는 단일 숏. 컷 0, 자막·워터마크 0, 사람·손 0. 전 구간 모션 유지(최저 9.40).",
+   "stills": "stills44/c44__9-CB_8cut.png",
+   "note": "무컷·무자막·사람 0. 11초 통편."
+  },
+  "N_aSEUw2hZc": {
+   "line": "강아지",
+   "ch": "Freddie the zoomie Labrador",
+   "secs": 18.0,
+   "publish": "2024-04-11",
+   "views": 598,
+   "motion": 15.4,
+   "med": 13.98,
+   "min": 8.4,
+   "spikes": 0,
+   "ai": 0,
+   "visual": "8컷: 수선화밭을 달리는 같은 개, 단일 숏·컷 0·자막 0·사람 0. 다만 개가 화면에서 작게 잡혀 주제 피사체가 약함(43차 AeI3kWnqrJE와 같은 들판·같은 개).",
+   "stills": "stills44/c44_N_aSEU_clean.png",
+   "note": "회차 계정 상한(2편)으로 예비 재고. 다음 회차 편입 시 8컷 재검."
+  },
+  "UeBSo7wGtKA": {
+   "line": "강아지",
+   "ch": "Freddie the zoomie Labrador",
+   "secs": 10.4,
+   "publish": "2024-05-24",
+   "views": 3160,
+   "motion": 14.63,
+   "med": 14.8,
+   "min": 7.29,
+   "spikes": 0,
+   "ai": 0,
+   "visual": "8컷: 잔디에서 몸을 뒹구는 근접 컷. 0~4.5초 역동적, 6~10.1초는 누워서 거의 정지. 자막·사람 0.",
+   "stills": "stills44/c44_UeBSo_8cut.png",
+   "note": "후반 4초 정지에 가까워 '즉각 모션 원석' 기준에는 약함. 예비 재고로만 보관."
+  }
+ },
+ "rejected": [
+  {
+   "id": "W_6tjHrWzlM",
+   "ch": "Vanilla and Swirly - Guinea pigs",
+   "publish": "2023-04-15",
+   "views": 501,
+   "motion": 18.91,
+   "reason": "8컷 육안: 4.5→6.0초 구도 전환(케이지 각도 변경) + 화면 하단 손 등장 (게이트⑤·프레이밍 전환)"
+  },
+  {
+   "id": "fSC1t12tzmc",
+   "ch": "1st Hamster",
+   "publish": "2024-12-22",
+   "views": 46474,
+   "motion": 19.39,
+   "reason": "8컷 육안: 8.0→9.2초 배경·소품 전면 교체 = 컷 (게이트①). 스파이크 0이지만 시각 컷 확인"
+  },
+  {
+   "id": "IJE6MSy6xko",
+   "ch": "Marigold Loves You",
+   "publish": "2025-05-02",
+   "views": 1075,
+   "motion": 13.72,
+   "reason": "8컷 육안: 1.5·3.0·4.5초 보호자 손 등장 + 4.5→6.0초 프레이밍 전환 (게이트⑤·①)"
+  },
+  {
+   "id": "Q4PN8JJT91Q",
+   "ch": "1st Hamster",
+   "publish": "2024-12-29",
+   "views": 35292,
+   "motion": 15.88,
+   "reason": "변화픽셀 0.6 초과 스파이크 1회(1.59초) = 컷"
+  },
+  {
+   "id": "_UZ88SS42pc",
+   "ch": "Red Squirrel Studios",
+   "publish": "2025-04-05",
+   "views": 7161,
+   "motion": 17.54,
+   "reason": "8컷 육안: 'Stop Scrolling! and look at' 영어 캡션 오버레이 상시 (게이트④ 원작자 자막)"
+  },
+  {
+   "id": "6nzDb4qzFCg",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-04-17",
+   "views": 491,
+   "motion": 11.81,
+   "reason": "모션 12.0 미달(0.19차)"
+  },
+  {
+   "id": "NDuCPIRZTm0",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-03-25",
+   "views": 2828,
+   "motion": 14.19,
+   "reason": "10.1초 지점 재생 정지로 구간 일부 무효 — 재측정 대상으로 이월"
+  },
+  {
+   "id": "45goEdzrMl0",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-04-14",
+   "views": 4292,
+   "motion": 14.04,
+   "reason": "10초 지점 재생 정지로 구간 일부 무효 — 재측정 이월"
+  },
+  {
+   "id": "jjPcV-Jp85s",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-04-10",
+   "views": 5454,
+   "motion": 7.59,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "vS0slIWFjVc",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-04-01",
+   "views": 3452,
+   "motion": 10.65,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "eDS3_xDYp2s",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-03-13",
+   "views": 10498,
+   "motion": 11.78,
+   "reason": "모션 12.0 미달(0.22차)"
+  },
+  {
+   "id": "fhqeyP1m9VA",
+   "ch": "Freddie the zoomie Labrador",
+   "publish": "2024-03-15",
+   "views": 3523,
+   "motion": 9.92,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "iQ5e_AFz3e8",
+   "ch": "Fluffy Dog Vlog",
+   "motion": 9.86,
+   "reason": "재측정 결과 모션 9.86(5.5초 정지) — 모션 미달"
+  },
+  {
+   "id": "nFQZbk4y0iw",
+   "ch": "Rocky the husky",
+   "publish": "2025-09-06",
+   "views": 4356,
+   "motion": 9.25,
+   "reason": "모션 미달 + 스파이크 2회(3.28·8.23초)"
+  },
+  {
+   "id": "xaKrwx-DXyU",
+   "ch": "Rocky the husky",
+   "publish": "2025-07-11",
+   "views": 1410,
+   "motion": 3.74,
+   "reason": "모션 미달(4.6초 정지)"
+  },
+  {
+   "id": "mzMbxIRe26w",
+   "ch": "Fluffy Dog Vlog",
+   "publish": "2024-02-19",
+   "views": 2556,
+   "motion": 10.91,
+   "reason": "모션 미달 + 스파이크 2회"
+  },
+  {
+   "id": "Yh8Whx-fGXE",
+   "ch": "Tabby Cat Hiroshi",
+   "publish": "2014-09-29",
+   "views": 47793,
+   "motion": 6.8,
+   "reason": "모션 미달(고양이 정지 구도)"
+  },
+  {
+   "id": "iHujduYV6yw",
+   "ch": "Vanilla and Swirly - Guinea pigs",
+   "publish": "2023-04-05",
+   "views": 2636,
+   "motion": 9.88,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "xQZROM0NciA",
+   "ch": "otter kinaco",
+   "publish": "2024-07-22",
+   "views": 11648,
+   "motion": 2.86,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "5ReTKilZRAQ",
+   "ch": "otter kinaco",
+   "publish": "2024-07-18",
+   "views": 5700,
+   "motion": 3.32,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "tFIMATRU7QQ",
+   "ch": "Red Squirrel Studios",
+   "publish": "2023-12-11",
+   "views": 5899,
+   "motion": 2.62,
+   "reason": "모션 미달"
+  },
+  {
+   "id": "VD6n2kmnIyg",
+   "ch": "Rio:The Cockatiel",
+   "publish": "2023-06-01",
+   "views": 4120,
+   "motion": 0.0,
+   "reason": "재생 정지(10.1초) — 측정 불가(무효)"
+  }
+ ],
+ "short": [
+  "bjhgwhzFhG8",
+  "6C8CdF3LMmg",
+  "InFvWg85dPQ",
+  "DKnyeisg1-k",
+  "FWPNbJXZc8k",
+  "MkVy7Yq3yn8",
+  "sb7-OpSAvig",
+  "ZjexsZ0_huo"
+ ],
+ "measurement_log": "44차 총 47편 처리 — 모션 실측 26편(확정 2·예비 2·탈락 22 중 재생정지 무효 2 포함) · 10초 미만 8편 · 재생 불가(loadfail) 11편 · 미판정 2편. 8컷 육안 6편 검수(통과 4 / 탈락 4—_UZ88S 포함)."
+}
