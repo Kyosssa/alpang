@@ -11,7 +11,8 @@
 <link rel="alternate" hreflang="zh-TW" href="https://alpang.gg/taiwan/">
 <link rel="alternate" hreflang="vi" href="https://alpang.gg/vietnam/">
 <link rel="alternate" hreflang="x-default" href="https://alpang.gg/">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="알팡지지">
 <meta property="og:title" content="알팡지지 - 메이플스토리월드 알팡서버 몬스터·아이템·맵 정보 DB">
@@ -24,7 +25,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="/assets/hero-henesys-1280.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/motion.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
@@ -71,7 +71,8 @@
   [data-theme="light"] .theme-toggle .ic-sun{display:block}
 
   /* 히어로 — 월드 배경 + 오버레이 */
-  .hero-bleed{position:relative;overflow:hidden}
+  .hero-bleed{position:relative}
+  .hero-media{position:absolute;inset:0;overflow:hidden}
   .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;z-index:0}
   .hero-bleed::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,19,22,.74),rgba(18,19,22,.84) 55%,var(--bg));z-index:1}
   .hero{position:relative;z-index:2;padding:54px 0 34px;text-align:center}
@@ -191,7 +192,7 @@
 
 <!-- 히어로 -->
 <div class="hero-bleed">
-  <picture><source media="(max-width:768px)" srcset="/assets/hero-henesys-768.webp"><img class="hero-bg" src="/assets/hero-henesys-1280.webp" alt="" width="1920" height="355" fetchpriority="high"></picture>
+  <div class="hero-media"><picture><source media="(max-width:768px)" srcset="/assets/hero-henesys-768.webp" width="768" height="512"><img class="hero-bg" src="/assets/hero-henesys-1280.webp" alt="" width="1280" height="427" fetchpriority="high"></picture></div>
   <div class="wrap">
     <div class="hero">
       <span class="kicker">메이플스토리월드 알팡서버 정보 DB</span>
@@ -246,7 +247,7 @@
         <div class="stat">몬스터 <span data-count="mobs">188</span>종</div>
       </a>
       <a class="tool" href="/maps/">
-        <div class="ic"><img src="/assets/icon-worldmap-64.webp" alt="월드맵 아이콘" width="238" height="238" loading="lazy" decoding="async"></div>
+        <div class="ic"><img src="/assets/icon-worldmap-64.webp" alt="월드맵 아이콘" width="64" height="64" loading="lazy" decoding="async"></div>
         <h3>맵 정보</h3>
         <p>맵마다 출현 몬스터와 연결 지점을 한눈에 볼 수 있어요.</p>
         <div class="stat">맵 <span data-count="maps">419</span>곳</div>
@@ -328,7 +329,7 @@
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
     <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a> · <a href="/about/">사이트 소개</a> · <a href="mailto:alpangland@gmail.com">문의하기</a><br>
-    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-11-10<br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-11-20<br>
     <span style="font-size:12px">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
     메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
     <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/">繁體中文</a> · <a href="/vietnam/">Tiếng Việt</a></div>
