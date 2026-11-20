@@ -1,0 +1,370 @@
+{
+ "batch": "48차 정기 소싱 (2026-11-20 20:00)",
+ "date": "2026-11-20",
+ "slot": "20:00",
+ "gate_policy": "기획실장 5대 절대 게이트 + 플레이북 0장 (a)~(d) 그대로 적용. 모션 12.0 완화 0, 10초 이상 무컷, 세로 원본(9:16), 완전 무자막·워터마크 0, 사람 0, AI 배지 0, 1년 이상 경과, 회차당 동일 계정 2편 상한. 기준 미달 시 편수 축소.",
+ "method": "1) 발굴: 숏츠 필터 검색 32쿼리(신규 796 ID) + 과거 확정·유망 채널 5곳 /shorts 딥페이지네이션(innertube continuation, 236 ID) + 47차 인계 미측정 잔여 112편. 2) 메타: /shorts/<id> HTML 병렬 파싱으로 길이·게시일·조회수·AI 배지 수집(1,012 ID) → 10~60초·2025-11-20 이전·AI 0으로 602편 압축. 3) 음원: /shorts HTML의 MUSIC_NOTE_SYMBOL 버튼 titleFormatted('곡 · 아티스트')를 파싱해 상업 음원 여부를 사전 분류(835 ID). 4) 브라우저 실물 검증: 숏츠 플레이어에서 getVideoData().video_id 일치 확인 → small 품질 → 0.02초 시크 → 재생 → requestVideoFrameCallback로 0.099초 버킷당 1프레임 160x90 gray 차분(0~10.3초) → 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 캔버스 그리드를 같은 호출에서 생성해 스크린샷 1회로 육안 검수. 5) hd1080 가용성: setPlaybackQualityRange('hd1080') 후 videoWidth/Height 실측. 6) 채널: /about·/shorts 실측(구독자·설명·동일 개체 상시 등장)으로 원작자 본인 계정 확인.",
+ "harness_changes": [
+  "**음원 판별을 shorts HTML의 MUSIC_NOTE_SYMBOL 버튼으로 교체** — 47차의 /watch 'Music 카드' 파싱은 (a) 요청이 잦아지면 3KB 리다이렉트 페이지를 받아 전건 빈값이 되고 (b) 전체 HTML을 훑어 관련 영상 카드의 곡명을 오탐했다(실제로는 음원 표기가 없는 wbsLj0bUu-A에 'Unstoppable · Sia'를 잘못 붙였다). shorts HTML의 `\"titleFormatted\":{\"content\":\"곡 · 아티스트\"}` + `MUSIC_NOTE_SYMBOL` 조합은 835편에서 일관되게 동작했다.",
+  "측정과 8컷 그리드 캡처를 한 evaluate 호출로 합쳐 후보당 호출 수를 3→2로 줄였다(측정 10.3초 + 시크 8회).",
+  "숏츠 페이지에는 video 요소가 2개(#movie_player 숨김, #shorts-player 표시) 존재한다. `document.querySelectorAll('video')`로 잡으면 숨은 플레이어를 측정해 **직전 영상 수치를 그대로 재사용하는 사고**가 난다(이번 회차 초반 Bztt4lDyuEc·FxOPYHDSZEs 2편이 PddTPoEch1o 값으로 오측정됨 → #shorts-player 한정 + getVideoData().video_id 일치 확인으로 수정).",
+  "브라우저 세션이 40편 전후로 2회 사망(렌더러 크래시) → 새 탭 내비게이션 후 측정 함수 재정의로 회복."
+ ],
+ "delivered": 0,
+ "pop_exception": 5,
+ "reserve_pool": 3,
+ "holds": 4,
+ "rejected": 78,
+ "processed_total": 90,
+ "details": {},
+ "pop_exception_details": {
+  "_vtHYyQLoHA": {
+   "line": "쪼꼬미(페럿)",
+   "ch": "Follow My Ferrets",
+   "ch_handle": "@followmyferrets6709",
+   "subs": "105",
+   "title": "Ferret attacks toy #shorts#ferret",
+   "secs": 13.1,
+   "publish": "2021-12-25",
+   "views": 1938,
+   "motion": 14.09,
+   "med": 14.18,
+   "min": 2.86,
+   "n": 79,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "상업 음원 — 'You're A Mean One, Mr. Grinch' / Thurl Ravenscroft",
+   "hd1080": "가용(1080x1920, hd1080 선택 확인)",
+   "visual": "흰 페럿이 나무 바닥에서 장난감을 물고 흔드는 무컷 단일 숏. 8컷 전 구간 무자막·워터마크 0·사람 0. 채널 105구독 원작자 1인칭(같은 두 페럿 상시 등장).",
+   "status": "pop_exception"
+  },
+  "wbsLj0bUu-A": {
+   "line": "쪼꼬미(페럿)",
+   "ch": "Follow My Ferrets",
+   "ch_handle": "@followmyferrets6709",
+   "subs": "105",
+   "title": "Ferret Jumping to get toy #shorts#ferret",
+   "secs": 13.2,
+   "publish": "2022-01-01",
+   "views": 679,
+   "motion": 13.8,
+   "med": 11.51,
+   "min": 2.93,
+   "n": 82,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "상업 음원 — 'Unstoppable' / Sia",
+   "hd1080": "가용(1080x1920)",
+   "visual": "페럿이 침대 위에서 끈에 매달린 장난감을 향해 반복 점프하는 무컷 단일 숏. 무자막·워터마크 0·사람 0(끈만 등장).",
+   "status": "pop_exception"
+  },
+  "rBfynLd2UBw": {
+   "line": "쪼꼬미(토끼)",
+   "ch": "Rabbit \\",
+   "ch_handle": "@rabbit_mucka",
+   "subs": "67",
+   "title": "Rabbit jumping, amazing #shorts #rabbit #jumping",
+   "secs": 12.1,
+   "publish": "2022-02-12",
+   "views": 19574,
+   "motion": 23.2,
+   "med": 23.77,
+   "min": 15.57,
+   "n": 83,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "상업 음원 — 'The Hampster Dance Song' / Electric Slide Music Makers",
+   "hd1080": "미가용(최고 hd720)",
+   "visual": "토끼가 마당 잔디에서 사방으로 비inky(폭점프)를 반복하는 무컷 단일 숏. 무자막·워터마크 0·사람 0. 0.3초부터 점프 중, 최저 모션 15.57로 10초 내내 움직임이 끊기지 않음. 채널 67구독, 설명 'A short movie from the life of a rabbit called ...' 1인칭 사육 계정.",
+   "status": "pop_exception"
+  },
+  "THCYgkVTFGg": {
+   "line": "쪼꼬미(토끼)",
+   "ch": "Rabbit \\",
+   "ch_handle": "@rabbit_mucka",
+   "subs": "67",
+   "title": "Playing with a rabbit 😅. #rabbit #shorts #play #holiday",
+   "secs": 15.0,
+   "publish": "2022-07-08",
+   "views": 177,
+   "motion": 26.3,
+   "med": 25.46,
+   "min": 13.01,
+   "n": 83,
+   "spikes": 1,
+   "spike_check": "7.29초 1회 — 카메라 기울기 급변(같은 카펫·같은 토끼, 프레이밍 연속). 컷 아님.",
+   "ai": 0,
+   "audio": "상업 음원 — 'The Hampster Dance Song' / Electric Slide Music Makers",
+   "hd1080": "미가용(최고 hd720)",
+   "visual": "토끼가 카펫 위에서 라이트업 공을 굴리며 노는 무컷 단일 숏. 무자막·워터마크 0·사람 0.",
+   "status": "pop_exception"
+  },
+  "Bztt4lDyuEc": {
+   "line": "강아지(비글)",
+   "ch": "BASIL THE BEAGLE",
+   "ch_handle": "@basil_the_beagle",
+   "subs": "—",
+   "title": "Basil loves running #shorts #dogrun #beagle #beaglepuppy #doglover #cutedog #run #happydog #dogs",
+   "secs": 11.6,
+   "publish": "2022-07-07",
+   "views": 2091,
+   "motion": 21.47,
+   "med": 20.62,
+   "min": 6.27,
+   "n": 80,
+   "spikes": 1,
+   "spike_check": "1.88초 1회 — 비글이 카메라 쪽으로 방향을 바꾸는 순간. 같은 잔디·같은 개, 컷 아님.",
+   "ai": 0,
+   "audio": "상업 음원 — 'Run' / AWOLNATION",
+   "hd1080": "미확인",
+   "visual": "비글이 정원 잔디를 카메라 쪽으로 달려왔다가 다시 달아나는 무컷 단일 숏. 무자막·워터마크 0·사람 0. 다만 0.3초 프레임에서 개가 원거리라 0.0초 훅은 약한 편.",
+   "status": "pop_exception"
+  }
+ },
+ "reserve_details": {
+  "wQyE0P_O-u0": {
+   "line": "강아지",
+   "ch": "Belle the Dog",
+   "subs": "—",
+   "secs": 15.0,
+   "publish": "2022-10-02",
+   "views": 1080,
+   "motion": 22.45,
+   "med": 23.28,
+   "min": 8.83,
+   "n": 80,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "visual": "개가 잔디밭에서 몸을 뒹굴며 구르는 무컷 단일 숏. 무자막·워터마크·사람 0.",
+   "note": "게이트 ①③④⑤와 음원까지 통과. 다만 고정 광각 원거리라 0.3~6초 프레임에서 피사체가 작고 0.0초 훅이 약하다 — 47차 YwSMLA7lsEY와 같은 결로 예비 재고.",
+   "status": "reserve_pool"
+  },
+  "NraAmQHgQug": {
+   "line": "강아지(포메라니안)",
+   "ch": "Rocky-V Pomeranian",
+   "subs": "—",
+   "secs": 14.4,
+   "publish": "2022-07-15",
+   "views": 477,
+   "motion": 30.59,
+   "med": 30.85,
+   "min": 17.24,
+   "n": 82,
+   "spikes": 1,
+   "spike_check": "0.72초 1회 — 카메라가 개를 따라 급회전, 같은 잔디·같은 개.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "visual": "검은 포메라니안이 잔디에서 몸을 부비며 구르는 무컷 단일 숏. 무자막·사람 0.",
+   "note": "모션 30.59로 강하지만 카메라가 털에 극근접해 4.5~6초 프레임에서 구도가 무너진다(털이 화면 전체) — 편입 보류, 예비 재고.",
+   "status": "reserve_pool"
+  },
+  "hiWB20wCtVc": {
+   "line": "쪼꼬미(수달)",
+   "ch": "Rest and Relax",
+   "subs": "—",
+   "secs": 11.9,
+   "publish": "2023-04-28",
+   "views": 2132,
+   "motion": 14.25,
+   "med": 13.94,
+   "min": 10.43,
+   "n": 81,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "visual": "수달이 개울 통나무 위를 건너는 무컷 단일 숏(야생 촬영). 무자막·사람 0.",
+   "note": "게이트 ①④⑤·음원 통과. 다만 채널명·구성이 자연 다큐 재업로드 성격이라 **원작자 본인 계정(게이트②) 확증 불가** — 확정하지 않고 예비. 다음 회차 채널 실사 필요.",
+   "status": "reserve_pool"
+  }
+ },
+ "holds_details": {
+  "0qz524H-efg": {
+   "line": "쪼꼬미(기니피그)",
+   "ch": "Sweet Little Creatures",
+   "secs": 10.4,
+   "publish": "2022-02-09",
+   "motion": 11.95,
+   "motion_runs": [
+    11.95
+   ],
+   "spikes": 0,
+   "note": "2회 측정 예정이던 경계값(12.0에 0.05 미달) — 게이트 완화 금지 원칙에 따라 보류."
+  },
+  "sHu49OxqVbo": {
+   "line": "강아지",
+   "ch": "Ryan Fritsch",
+   "secs": 14.5,
+   "publish": "2022-05-31",
+   "motion": 11.65,
+   "spikes": 0,
+   "note": "해변을 뛰는 개, 무자막·사람 0. 모션 11.65로 0.35 미달 — 보류."
+  },
+  "JzIwNCiTBQI": {
+   "line": "쪼꼬미(기니피그)",
+   "ch": "BTS NIKHIL",
+   "secs": 15.0,
+   "publish": "2022-01-20",
+   "motion": 12.38,
+   "spikes": 0,
+   "note": "12.0은 넘었으나 여유 0.38 · 8컷 육안 검수 미완(세션 크래시) — 보류."
+  },
+  "vGDWgdGiPkI": {
+   "line": "강아지(말라뮤트)",
+   "ch": "PET TALK",
+   "secs": 13.4,
+   "publish": "2021-05-31",
+   "motion": 11.93,
+   "spikes": 0,
+   "note": "모션 11.93으로 0.07 미달 — 보류. 조회 635만으로 화제성은 높음."
+  }
+ },
+ "rejected_reason_groups": {
+  "원작자 자막·오버레이 박힘(완전 무자막 위반)": [
+   "FxOPYHDSZEs(전면 영어 자막 'scratching my human')",
+   "RiyZDqDI8HQ('Nice Video from Summer 2023')",
+   "IUPqURQU1Wg('Bunny zoomies hit differently')",
+   "-VcaoyU-EsE('HAPPY WEEKEND')",
+   "ngGBJMYPTu4('First time in the snow')",
+   "86c2jIuCt2w('ZOOMIES' 텍스트)",
+   "vrE0yL4eVKc('DID YOU KNOW?' 스티커)",
+   "XIBnm4h5Gdo(자막+사람)",
+   "U8wRZUS5O0Q(자막 2줄)",
+   "sFp6BuwtpQU(자막)",
+   "bKTJV7Q-CIw(구도 붕괴+암부)",
+   "ReNv_HQ2Vy4('Animallover_happiness' 워터마크+자막)",
+   "vSJ0xjTXbK0('Run for Fun Beagle Running' 자막 + @beaglomuffin 워터마크)"
+  ],
+  "TikTok 등 타 플랫폼 워터마크": [
+   "ROJ8emB3uBk",
+   "ZbS3V-DP8Wk(joey_the_beagle)"
+  ],
+  "사람·보호자 다리·얼굴 노출": [
+   "1UwdfOl82nA(보호자 전 구간)",
+   "wrZuByfY9MA(보호자 얼굴·전신)",
+   "k5YyqYdVfxc(보호자·자전거·프리스비 손)",
+   "n-YooPw8Kgw(보호자 팔·배경 사람)",
+   "oOpwOm8lU6E(보호자 다리)",
+   "DTxsMlFiiB4(보호자 손)",
+   "my0EcW-Vwq0(손·컷 다발)",
+   "ZbS3V-DP8Wk"
+  ],
+  "몽타주·컷 전환(스파이크 다발)": [
+   "6kg7TpfhDDU(스파이크 10)",
+   "qqa37ztLrrw(스파이크 16)",
+   "48rs4IRSWBU(스파이크 30)",
+   "i0YTPK-bfG8(스파이크 9 · 타 사용자 음원)",
+   "iIqR4xqNU7Q(3회 컷)",
+   "GfHzi6a0Uho(스파이크 9)",
+   "H5OZk7Ioe8A(스파이크 4)",
+   "fnxBBO3mHsE(스파이크 4)",
+   "MjIditiHLGA(스파이크 2·구도 급변)"
+  ],
+  "10초 무컷 미달(10.2초 지점 컷)": [
+   "uMZox2bd5jc(10.4초 프레임에서 다른 바닥·꼬리로 전환)"
+  ],
+  "모션 12.0 미달": [
+   "vY0uCy38_I8 8.64",
+   "RKlOZzNuk9E 11.38",
+   "FYYkkUhnMvo 10.31",
+   "lcgMI2huZwY 2.59",
+   "Sk7YcEN2Q-0 9.3",
+   "7Yg3B60lQ-Q 8.38",
+   "ZNbuwYaVkYw 8.78",
+   "r24nm0aiBxg 10.33",
+   "KXdFivSkwS0 10.99",
+   "NRHdzBu_G1g 5.15",
+   "vGDWgdGiPkI 11.93",
+   "3OmAQD5lDq4 6.34",
+   "PtoHZBqKPRY 8.78",
+   "6c4n1zRYZs8 4.55",
+   "yF4Xyc3N_Dg 5.74",
+   "LCY... n/a",
+   "JP_KWMMRNbU 9.02",
+   "HcC3k8CxJdY 9.82",
+   "6dBQWeu2b9g 24.65(카메라 팬·피사체 이탈)",
+   "9_YIEgKy-0o 10.89",
+   "oFU-ReZsP54 11.53",
+   "sT_eg7hOASg 6.89",
+   "FsC_0uePGzA 6.91",
+   "u1mQy8KY2o0 10.03",
+   "SKyetvQL1oM 9.32",
+   "QPyrIMrDgtI 4.71",
+   "fzh9hUUOuqI 3.32",
+   "OlAHxHSmzy0 2.19",
+   "KoMzwb851rQ 8.5",
+   "o8lX8BVPPSQ 10.19",
+   "oOpwOm8lU6E 12.67(사람 동반)",
+   "JzIwNCiTBQI 12.38(보류)",
+   "Ba8umfw_caM 21.01(자막·사람)",
+   "0qz524H-efg 11.95(보류)",
+   "sHu49OxqVbo 11.65(보류)"
+  ],
+  "구도 붕괴·카메라 이동 위주": [
+   "qYnYCB1VlXY 21.76",
+   "v34YtqATx1Y 21.57",
+   "8dDRAUwLfRo 28.96",
+   "rCCAqNVVVoQ 15.12(4:5 비율)",
+   "6dBQWeu2b9g",
+   "NraAmQHgQug 30.59(예비)",
+   "hiWB20wCtVc(원작자성 미확인·예비)"
+  ],
+  "세로 9:16 아님": [
+   "rCCAqNVVVoQ(240x300)",
+   "2C6gsxp3LSU(240x278)"
+  ],
+  "동영상 9.5초 등 10초 미만": [
+   "cNVd4er-o-E(9.5초)"
+  ],
+  "측정 불가(타임아웃)": [
+   "fT3uXVJFP4",
+   "9rFkO-h6aCc",
+   "1EIo-8Lu33U",
+   "A9NWaDthaLg"
+  ]
+ },
+ "pools": {
+  "신규 발굴": "숏츠 필터 검색 32쿼리 → 796 ID(중복 제외 777) → 메타 777건 확보",
+  "채널 딥페이지네이션": "@rabbit_mucka @followmyferrets6709 @nikaotter @SplashAndWakuWaku @kingsdownferrets8485 @Giegie_Millie 3페이지 → 236 ID(235 신규)",
+  "47차 인계 잔여": "112 ID 중 97건 메타 신규 수집 → 65편이 10~60초·1년 이상 조건 통과",
+  "음원 사전 분류": "835 ID 전수 shorts HTML 파싱 — 상업 음원 표기 클립이 다수, 무표기(현장음) 클립만 실측 우선순위로 올림"
+ },
+ "structural_notes": [
+  "**이번 회차 확정 0편의 직접 원인은 '음원 표기'다.** 실측 90편 중 8컷 육안까지 통과한 클립은 10편이었고, 그중 9편에 상업 음원(시·ROSÉ·AWOLNATION·Steppenwolf·Eminem·DJ Snake·Hampster Dance 등)이 붙어 있었다. 쇼츠 문법상 원작자가 BGM을 깔아 올린 영상이 대부분이라 '완전 무자막 + 현장음'을 동시에 만족하는 원석이 극히 드물다.",
+  "**가장 좋은 원석은 소형 원작자 채널의 2021~2022년 아카이브에 있었다.** Follow My Ferrets(105구독, 페럿 2마리)와 Rabbit \\(67구독)는 자막·워터마크가 전혀 없고 무컷 단일 숏이며 hd1080(페럿)까지 확보된다. 문제는 두 채널 모두 BGM을 깔았다는 점 — 이번 5편 예외 후보가 전부 여기서 나왔다.",
+  "**음원 판별 방식이 47차보다 정확해졌다.** 47차의 /watch Music 카드 파싱은 빈값/오탐이 섞였고, 이번에 shorts HTML의 MUSIC_NOTE_SYMBOL 버튼으로 바꾸면서 835편을 일관되게 분류했다. 이 분류를 실측 전에 걸어 헛측정을 줄였다.",
+  "브라우저 하네스 편차는 이번에도 관측됐다(같은 영상 재측정 PddTPoEch1o 22.08→23.13). 경계값은 2회 측정 또는 육안 확인으로만 판정했고, 확정 후보가 없었으므로 이번 회차 판정에는 영향이 없다.",
+  "**남은 갈림길(대표님·기획실장 결정 필요)**: (a) 10.0~11.9초 구간 허용 여부(0qz524H-efg 11.95 · sHu49OxqVbo 11.65 · vGDWgdGiPkI 11.93가 여기서 걸린다) (b) 모션 임계 12.0→11.0 완화 여부 (c) 상업 음원 예외 허용 범위 — 이번엔 예외 후보 5편으로 분리해 올린다. 어느 것도 임의로 바꾸지 않았다."
+ ],
+ "account_counts": {
+  "Follow My Ferrets": "20편 목록 확보 · 8편 실측(2 예외 후보, 나머지 모션 미달)",
+  "Rabbit \\": "12편 목록 확보 · 4편 실측(2 예외 후보)",
+  "BASIL THE BEAGLE": "1편 실측(1 예외 후보)",
+  "Belle the Dog": "1편 실측(예비)",
+  "Rocky-V Pomeranian": "1편 실측(예비)",
+  "Rest and Relax": "1편 실측(예비·원작자성 미확인)"
+ },
+ "next_round_handoff": {
+  "확정": [],
+  "팝송 예외 후보(판정 대기)": [
+   "_vtHYyQLoHA",
+   "wbsLj0bUu-A",
+   "rBfynLd2UBw",
+   "THCYgkVTFGg",
+   "Bztt4lDyuEc"
+  ],
+  "예비 재고": [
+   "wQyE0P_O-u0",
+   "NraAmQHgQug",
+   "hiWB20wCtVc"
+  ],
+  "보류": [
+   "0qz524H-efg",
+   "sHu49OxqVbo",
+   "JzIwNCiTBQI",
+   "vGDWgdGiPkI"
+  ],
+  "미측정 잔여": "음원 무표기 실측 대기 342편(정리 목록 p48_clean2.json 127편 포함) + Follow My Ferrets 12편 · Rabbit 8편 잔여",
+  "회차 계정 상한": "예외 후보 5편이 계정 3곳(Follow My Ferrets 2, Rabbit 2, BASIL 1)으로 상한 이내"
+ }
+}
