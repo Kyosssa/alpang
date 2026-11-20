@@ -1,0 +1,242 @@
+{
+ "batch": "49차 정기 소싱 (2026-11-20 22:00)",
+ "date": "2026-11-20",
+ "slot": "22:00",
+ "title": "49차 집중 소싱 (새벽 4시 스프린트)",
+ "gate_policy": "기획실장 5대 절대 게이트 + 플레이북 0장 (a)~(d) 그대로 적용. 모션 12.0 완화 0, 10초 이상 무컷, 세로 9:16, 완전 무자막·무스티커·무워터마크, 사람 0, AI 배지 0, 1년 이상 경과, 상업 음원 제외(현장음만), 회차당 동일 계정 2편 상한. 기준 미달 시 편수 축소.",
+ "method": "1) 발굴: 신규 숏츠 필터 검색 65쿼리(영·한·일) 1,649 ID(중복 제외 신규 1,585) + 개인 사육 채널 35곳 /shorts 딥페이지네이션 4페이지(innertube continuation) 1,520 ID(신규 1,464) + 48차 인계 클린 음원 잔여 113편. 2) 메타+음원: /shorts/<id> HTML 1회 호출로 길이·게시일·조회·AI 배지 + MUSIC_NOTE_SYMBOL(titleFormatted '곡 · 아티스트') 동시 파싱(3,105 ID 시도 · 게시일 실측 2,492 · 상업 음원 표기 1,086편 탈락). 3) 썸네일 프리스크린: oar 스토리보드 프레임 + RapidOCR로 원작자 자막(36편)·가로 영상(23편) 사전 탈락(175편 검사). 4) 브라우저 실물 검증: #shorts-player 한정 + getVideoData().video_id 일치 확인 → small 품질 → 0.02초 시크 → 재생 → requestVideoFrameCallback 0.099초 버킷 1프레임 160x90 gray 차분(0~10.25초) + 같은 호출에서 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1초) 캔버스 그리드 생성 → 스크린샷 1회로 육안 검수. 5) 스파이크 검증: 변화픽셀 0.6 초과 구간은 그 시각 프레임을 다시 캡처해 컷 여부를 눈으로 확인. 6) 채널: /shorts·/about 실측(구독자·영상수·설명)으로 원작자 본인 계정 확인.",
+ "harness_changes": [
+  "메타와 음원 판별을 /shorts HTML 한 번 호출로 통합(48차의 2단계 분리 → 호출 40% 절감). 곡 표기는 titleFormatted + MUSIC_NOTE_SYMBOL 조합으로 파싱.",
+  "HTML이 이스케이프된 형태로 오는 경우가 절반 이상이라 응답을 항상 unescape한 뒤 파싱하도록 수정(이 수정으로 48차에서 빈값이던 게시일 974건이 살아났다).",
+  "썸네일 프리스크린(tmp43_screen.py)을 발굴 단계에 재투입 — 175편 중 59편(34%)을 브라우저 측정 전에 걸러 측정 시간을 절약.",
+  "모션 측정 종료 조건을 t>=10.25 에서 min(10.25, duration-0.05)로 수정. 10.2초 클립이 루프 재생되며 0초로 되감겨 표본이 2배(177개)로 잡히고 평균이 왜곡되던 문제 해결.",
+  "8컷 그리드 캡처를 측정과 같은 evaluate 호출로 합쳐 패스 후보당 호출 3→2회."
+ ],
+ "delivered": 3,
+ "reserve_pool": 1,
+ "holds": 3,
+ "rejected": 24,
+ "screened_out": 8,
+ "processed_total": 31,
+ "delivered_details": {
+  "c9zjC6T1_-8": {
+   "line": "강아지(호주 Shepherd)",
+   "ch": "Sir Alfred the Aussie",
+   "ch_handle": "@ALFRED-ADVENTURES",
+   "subs": "962",
+   "videos": "414",
+   "title": "Alfred absolutely LOVES snow ❄️ ❤️ #short #shorts #pet #pets #fyp #fypシ",
+   "secs": 31.0,
+   "publish": "2023-11-24",
+   "age": "2년 경과",
+   "views": 395,
+   "likes": 13,
+   "low_view_checked": "저조회 확인 — 조회 395 · 원작자 본인 계정(@ALFRED-ADVENTURES 962구독·414영상·소개 'Alfred the Australian Shepherd', /shorts 전반에 같은 호주 Shepherd 상시 등장) · 게시 2023-11-24(2년 경과)",
+   "motion": 32.59,
+   "med": 33.42,
+   "min": 13.69,
+   "n": 91,
+   "spikes": [
+    6.75,
+    6.83,
+    6.99,
+    8.87
+   ],
+   "spike_check": "4회 모두 개가 카메라 옆을 스쳐 지나가며 화면이 급회전하는 지점 — 같은 눈밭·같은 개, 8컷과 스파이크 시각 프레임 대조로 연속 확인(컷 아님).",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "최대 720p (qualityLabel 실측 144p~720p, hd1080 미가용)",
+   "visual": "눈 쌓인 마당에서 호주 Shepherd가 장난감을 물고 달리는 무컷 단일 숏. 0.3초부터 주행 중, 3~10초는 개가 화면을 가득 채우며 눈을 차고 달린다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "status": "delivered"
+  },
+  "SaYbgsxZ41s": {
+   "line": "강아지(호주 Shepherd)",
+   "ch": "Sir Alfred the Aussie",
+   "ch_handle": "@ALFRED-ADVENTURES",
+   "subs": "962",
+   "videos": "414",
+   "title": "Alfred makes a good goalie 👏🏼 #short #shorts #pet #pets #fyp #fypシ",
+   "secs": 14.6,
+   "publish": "2023-11-17",
+   "age": "2년 경과",
+   "views": 247,
+   "likes": 9,
+   "low_view_checked": "저조회 확인 — 조회 247 · 원작자 본인 계정(@ALFRED-ADVENTURES 962구독·414영상, 같은 호주 Shepherd) · 게시 2023-11-17(2년 경과)",
+   "motion": 14.71,
+   "med": 13.37,
+   "min": 7.96,
+   "n": 91,
+   "spikes": [],
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "미확인(측정 240x426 소품질 캡처)",
+   "visual": "호주 Shepherd가 프리스비를 물고 마당 잔디를 질주하는 무컷 단일 숏. 0.3초 개가 카메라 정면, 3초 정면 돌진, 9~10초 우측으로 달아남. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "status": "delivered"
+  },
+  "6nzDb4qzFCg": {
+   "line": "강아지(래브라도)",
+   "ch": "Freddie the zoomie Labrador",
+   "ch_handle": "@Freddiethelabrador",
+   "subs": "1.96K",
+   "videos": "555",
+   "title": "Boy love my new garden woof woof be happy be kind be positive 🐶🐶",
+   "secs": 11.4,
+   "publish": "2024-04-17",
+   "age": "1년 7개월 경과",
+   "views": 493,
+   "likes": 24,
+   "low_view_checked": "저조회 확인 — 조회 493 · 원작자 본인 계정(@Freddiethelabrador 1.96K구독·555영상, 소개에 'Freddie a boy 1 year old Labrador … love nothing more than fetch zoomies rolling on grass') · 게시 2024-04-17(1년 7개월 경과)",
+   "motion": 13.51,
+   "med": 14.78,
+   "min": 3.16,
+   "n": 91,
+   "spikes": [],
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "미확인(측정 240x426 소품질 캡처)",
+   "visual": "검은 래브라도가 새 잔디에서 공 옆을 몸으로 구르고 배를 보이며 버둥거리는 무컷 단일 숏. 0.3초부터 구르는 동작, 전 구간 피사체가 프레임 중앙. 무자막·무워터마크·사람 0.",
+   "status": "delivered"
+  }
+ },
+ "reserve_details": {
+  "aMAIZe0D3NU": {
+   "line": "강아지(호주 Shepherd)",
+   "ch": "Sir Alfred the Aussie",
+   "ch_handle": "@ALFRED-ADVENTURES",
+   "secs": 14.4,
+   "publish": "2024-01-13",
+   "views": 2037,
+   "motion": 13.87,
+   "med": 14.75,
+   "min": 1.05,
+   "spikes": [],
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "visual": "두 마리 호주 Shepherd가 눈밭에서 장난감을 두고 달리는 무컷 단일 숏. 무자막·무워터마크 0. 다만 1.5초 프레임에 보호자 손·장난감이 크게 들어오고 3~8초는 피사체가 원거리라 0.0초 훅이 약하다.",
+   "note": "게이트 ①④⑤ 통과. 손·장난감 노출과 원거리 구간 때문에 예비. 같은 계정 확정 2편(상한)도 작용.",
+   "status": "reserve_pool"
+  }
+ },
+ "holds_details": {
+  "urJA_T_D4Kw": {
+   "line": "강아지(래브라도)",
+   "ch": "Freddie the zoomie Labrador",
+   "secs": 10.6,
+   "publish": "2024-05-29",
+   "motion": 11.23,
+   "med": 11.46,
+   "min": 3.03,
+   "spikes": 0,
+   "note": "12.0에 0.77 미달 — 완화 금지 원칙에 따라 보류(재측정 후보)."
+  },
+  "oj2uNSLekEU": {
+   "line": "강아지(래브라도)",
+   "ch": "Freddie the zoomie Labrador",
+   "secs": 10.0,
+   "publish": "2024-04-05",
+   "motion": 11.55,
+   "med": 10.0,
+   "min": 5.12,
+   "spikes": 0,
+   "note": "12.0에 0.45 미달 — 보류."
+  },
+  "QjKRRpuMCb0": {
+   "line": "강아지(허스키)",
+   "ch": "Onyx The Husky",
+   "secs": 23.4,
+   "publish": "2021-10-28",
+   "motion": 10.93,
+   "med": 11.08,
+   "min": 5.95,
+   "spikes": 0,
+   "note": "12.0에 1.07 미달 — 보류."
+  }
+ },
+ "rejected_reason_groups": {
+  "모션 12.0 미달": {
+   "XxjFS5nEbfI": 8.96,
+   "11vGZTmJ7x8": 10.78,
+   "_hJSq826WAA": 11.22,
+   "DQxhwLQYnzA": 5.33,
+   "G39WDqgjVEs": 3.19,
+   "XmLPbsnTzPk": 5.23,
+   "uNxIolOXKM4": 7.51,
+   "2wdiSsdYMuw": 1.24,
+   "f_XuGYvoXfQ": 4.03,
+   "FU8ko2ZrCsI": 6.62,
+   "d791nBMd2rQ": 10.76,
+   "pEnk7JJbZKQ": 6.25
+  },
+  "타 플랫폼 워터마크": {
+   "CW5XBJYq3po": "TikTok 워터마크(@rosietheblueeyedcorgi) — 모션 24.31·무자막이었으나 게이트 ⑤ 위반",
+   "uTTEg150k84": "제목에 'tiktok theminidachshundsx' 명시 — TikTok 재업로드 채널, 측정 전 스크리닝"
+  },
+  "원작자 자막·스티커 오버레이": {
+   "ITE8VzgY-mc": "'Zoomies by Gjördis pt 1' 흰 자막 박스 — 모션 17.34",
+   "gGrzgLxxi-I": "전 구간 좌하단 하트 스티커 — 모션 17.14",
+   "pEnk7JJbZKQ": "'SOUND ON FOR NOISY WEASELS' 자막(프리스크린 OCR 검출)"
+  },
+  "피사체 원거리·구도 붕괴": {
+   "eDS3_xDYp2s": "래브라도가 광각 필드에서 작게 달림 — 모션 13.35이나 0.0초 훅 없음",
+   "174ObJhctxE": "수달이 0.3~4.5초 화면에 없음(수중 배경만) — 모션 18.33의 출처가 물·카메라",
+   "VhWc46ckhso": "5·6·9.2초 프레임 피사체 이탈(카펫·바닥), 8초 스트라이프 천/보호자 추정 — 스파이크 5"
+  },
+  "소재 부적합": {
+   "BT7qgj0gGc0": "도쿄 신주쿠 3D 전광판(반려동물 아님)"
+  },
+  "길이 미달(10초 미만)": {
+   "OXJwn1Dz8OU": 9.7,
+   "qlvteu7ISB0": 9.6,
+   "XB-cEgdyjvA": 10.0,
+   "GnOy4Nt9lAY": 7.0
+  },
+  "상업 음원": {
+   "BXApw4PW8A4": "shorts HTML 파싱에선 무표기였으나 페이지에 음원 버튼 확인 — 사전 필터 오탐 1건"
+  },
+  "측정 전 스킵": {
+   "Vip9TEv2C8I": "햄스터 딸기 먹방(정지 예상)"
+  }
+ },
+ "structural_notes": [
+  "이번 회차 확정 3편은 전부 '카메라가 동물을 따라가는 야외 활동' 클립에서 나왔다. 모션 12.0은 고정 카메라 + 잔잔한 급여·휴식 영상에서 거의 나오지 않는다(측정 31편 중 12편이 5~11 구간). 반대로 음원 표기가 없는 클린 음원 클립은 소형 채널의 '일상·급여' 영상에 몰려 있어, 음원 필터를 먼저 걸면 활동량 큰 원석이 함께 걸러지는 역선택이 발생한다.",
+  "상업 음원 사전 필터의 실효율: 3,105편 시도 중 음원 표기 1,086편(35%)이 탈락. 48차에서 문제였던 BGM 클립을 대량으로 걸러낸 것은 사실이지만, 남은 풀의 평균 모션이 낮아졌다.",
+  "TikTok 재업로드 채널이 1년+ 소형 채널의 큰 비중을 차지한다. 코기(Rosie the Blue-Eyed Corgi)·닥스훈트(Doxierama) 채널 클립에서 TikTok 워터마크가 8컷에 잡혔다. 이 계열은 채널 단위로 사전 배제 목록에 넣는 것이 효율적이다.",
+  "확정 3편 전부 조회 1,000회 미만(247~493) — 플레이북 0장 (b)에 따라 '저조회 확인'(원작자 본인 계정·게시일)을 각 항목에 표기했다. 채널 자체는 962~1.96K 구독의 1인칭 사육 계정이고 400~555편을 꾸준히 올린 계정이라 원작자성은 확실하다.",
+  "해상도: c9zjC6T1_-8은 qualityLabel 실측 최대 720p(hd1080 없음). 8컷·모션 판정은 240x426 소품질 캡처로 했으므로, 확정 3편 중 2편은 hd1080 가용 여부가 미확인이다. 납품 전 hd1080 실측이 필요하다.",
+  "브라우저 하네스 재현성: 48차 측정값 Bztt4lDyuEc 21.47 → 이번 재측정 18.93(-12%). 경계값(11.2~11.6) 3편은 보류로 두고 확정하지 않았다.",
+  "메타 수집에서 /shorts HTML이 'Sign in to confirm you're not a bot'(LOGIN_REQUIRED)으로 응답하는 비율이 절반을 넘었다. 이 경우 길이·조회는 못 받고 게시일(화면 표기)만 파싱된다 — 다음 회차에는 브라우저 DOM 읽기로 보완하거나 요청 간격을 늘린 저속 수집이 필요하다."
+ ],
+ "account_counts": {
+  "Sir Alfred the Aussie(@ALFRED-ADVENTURES)": "확정 2편(c9zjC6T1_-8·SaYbgsxZ41s — 상한 도달) · 예비 1편(aMAIZe0D3NU) · 후보 42편 미측정",
+  "Freddie the zoomie Labrador(@Freddiethelabrador)": "확정 1편(6nzDb4qzFCg) · 보류 2편 · 후보 40편 미측정",
+  "Onyx The Husky": "보류 1편(QjKRRpuMCb0) · 후보 40편 미측정",
+  "기타 25개 채널": "측정 20편 전량 탈락(모션·워터마크·자막·구도)"
+ },
+ "next_round_handoff": {
+  "확정": [
+   "c9zjC6T1_-8",
+   "SaYbgsxZ41s",
+   "6nzDb4qzFCg"
+  ],
+  "예비 재고": [
+   "aMAIZe0D3NU"
+  ],
+  "보류(재측정·판정 대기)": [
+   "urJA_T_D4Kw",
+   "oj2uNSLekEU",
+   "QjKRRpuMCb0"
+  ],
+  "미측정 잔여": "클린 음원 후보 608편 중 583편 미측정(채널별 후보 목록 p49_deep_clean.json). 썸네일 프리스크린 미적용 433편.",
+  "유망 채널(다음 회차 우선)": [
+   "Sir Alfred the Aussie — 야외 눈·마당 활동 42편 잔여(다음 회차에서 같은 계정 다시 2편까지 가능)",
+   "Freddie the zoomie Labrador — 야외 잔디 활동 40편 잔여",
+   "Onyx The Husky — 2021~2023 산책 40편(모션 경계값 다수)"
+  ],
+  "회차 계정 상한": "확정 3편이 계정 2곳(Sir Alfred 2, Freddie 1)으로 상한 이내"
+ },
+ "decision_points": [
+  "모션 임계 12.0 유지 여부 — 10.9~11.6 구간에 보류 3편이 몰려 있다. 11.0으로 낮추면 확정이 3→6편이 된다.",
+  "1년 이상 경과 기준 유지 여부 — 2026년 신규 무음 원석(Nika Otter 수달 30초 무음 25편 등)이 전부 제외된다. '1개월 이상'을 실제 허용하면 쪼꼬미 라인이 즉시 채워진다.",
+  "720p 원본 허용 여부 — c9zjC6T1_-8은 720p 상한. 1080p를 강제하면 이 클립이 빠진다."
+ ]
+}
