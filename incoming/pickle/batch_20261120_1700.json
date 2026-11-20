@@ -1,0 +1,954 @@
+{
+ "batch": "47차 정기 소싱 (2026-11-20 17:00)",
+ "date": "2026-11-20",
+ "slot": "17:00",
+ "gate_policy": "기획실장 5대 절대 게이트 + 플레이북 0장 (a)~(d) 그대로 적용. 모션 12.0 완화 0, 10초 이상 무컷, 세로 원본, 완전 무자막·워터마크 0, 사람 0, AI 배지 0, 1년 이상 경과, 회차당 동일 계정 2편 상한. 기준 미달 시 편수 축소.",
+ "method": "1) 발굴: 숏츠 필터 검색 32쿼리 → 795 ID(마크업이 shortsLockupViewModel로 바뀌어 길이 라벨 없음) + 정상 검색 40쿼리(videoRenderer lengthText) + 과거 확정 채널 5곳 /shorts 페이지네이션. 2) 길이·게시일·조회수·AI 배지: /shorts/<id> HTML 병렬 파싱(p47_meta.py) → 10초 미만·AI 배지·1년 미만 사전 제외. 3) 음원(상업 라이선스) 사전 판별: /watch HTML의 'Music' 카드에서 곡명·아티스트 파싱 — 상업 음원이 깔린 클립은 확정 대신 [팝송 예외 후보]로 분리. 4) 브라우저 실물 검증(숏츠 플레이어, small 품질 고정): getVideoData().video_id 일치 확인 → muted → 0.02초 시크 → 재생 → requestVideoFrameCallback로 0.099초 버킷당 1프레임 160x90 gray 차분(0~10.3초, n≈95~118) → 8컷(0.3·1.5·3.0·4.5·6.0·8.0·9.2·10.1) 캔버스 그리드 동시 캡처 → 1회 스크린샷 육안 검수. 5) 스파이크(변화픽셀 0.6 초과) 발생 시 해당 초 전후 0.02~1.3초 간격 스틸을 다시 뽑아 컷 여부 확인.",
+ "harness_changes": [
+  "음원 사전 판별(상업 라이선스 곡) 단계를 파이프라인에 신규 편입 — 46차까지는 확정 후에야 음원 문제가 드러났다. 이번 회차에 고모션 후보 3편이 상업 곡(BONES·KORDHELL·Joe Satriani)으로 걸러졌다.",
+  "숏츠 검색 마크업 변경 대응: 숏츠 필터 검색이 lengthText를 더 이상 주지 않아 videoRenderer(일반 검색) 파싱과 /shorts/<id> 길이 파싱을 병행했다.",
+  "/shorts/<id> HTML이 요청에 따라 lengthSeconds를 포함하지 않는 축소 변형을 돌려주는 현상 확인(같은 URL도 요청마다 다름) — 길이 확보는 브라우저 v.duration 병행이 안정적.",
+  "세션 프리즈가 40편 부근에서 2회 발생 → browser_close 후 새 세션 + 숏츠 URL 직접 네비게이션으로 회복.",
+  "브라우저 하네스가 46차 대비 낮게 읽히는 경향(같은 영상 재측정: 4tTDeylKUCU 9.56→7.96, ScEcojMZK80 11.32→8.75, LnrQeuUqDF0 19.94→19.06) — ±30% 편차 문서 범위 안이지만 경계값은 2회 측정으로 판정했다."
+ ],
+ "delivered": 4,
+ "pop_exception": 3,
+ "reserve_pool": 1,
+ "holds": 3,
+ "not_eligible_age": 1,
+ "rejected": 84,
+ "processed_total": 96,
+ "details": {
+  "PddTPoEch1o": {
+   "line": "강아지(달마시안)",
+   "ch": "annolux",
+   "ch_handle": "@annolux",
+   "subs": "519",
+   "title": "Shake it (70% H2O in 4s) #dalmatiandog #waterdrops #shaking",
+   "secs": 21.1,
+   "publish": "2024-06-17",
+   "views": 3401,
+   "motion": 22.08,
+   "motion_runs": [
+    22.0,
+    22.08
+   ],
+   "med": 24.75,
+   "min": 4.15,
+   "n": 98,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음(상업 음원 카드 없음)",
+   "wh": "240x426",
+   "visual": "달마시안이 호숫가 자갈밭을 달려와 물을 털어내는 단일 숏. 8컷 전 구간 무자막·워터마크 0·사람 0. 4.5초 구간 슬로모션 전환(프레임 블러) 있으나 컷 아님.",
+   "status": "delivered"
+  },
+  "7Jk32qzu9Vk": {
+   "line": "쪼꼬미(페럿)",
+   "ch": "Becki Ferret",
+   "ch_handle": "@beckiferret",
+   "subs": "508",
+   "title": "Ferrets play fighting! Dooking and hissing are both common in play",
+   "secs": 11.1,
+   "publish": "2022-12-09",
+   "views": 87008,
+   "motion": 20.28,
+   "med": 20.52,
+   "min": 5.88,
+   "n": 110,
+   "spikes": 2,
+   "spike_check": "0.4·2.0·3.5·4.8·5.2·6.5·7.5·9.0·9.8·10.4·10.6·10.9초 스틸 12장 확인 — 같은 침대·같은 두 페럿, 프레이밍 연속. 컷 전환 아님(격한 몸싸움·카메라 흔들림).",
+   "ai": 0,
+   "audio": "현장음",
+   "wh": "240x426",
+   "visual": "두 페럿이 담요 위에서 뒹굴며 노는 단일 숏. 무자막·워터마크 0·사람 0. 0.3초부터 페럿 두 마리 프레임 안.",
+   "status": "delivered"
+  },
+  "MGm15JLPW38": {
+   "line": "쪼꼬미(페럿)",
+   "ch": "All About Ferrets",
+   "ch_handle": "@allaboutferrets",
+   "subs": "13.5천",
+   "title": "Dooking Happy Playful Ferret Noises 😊 Sassy",
+   "secs": 15.1,
+   "publish": "2022-05-02",
+   "views": 7936,
+   "motion": 18.31,
+   "med": 17.7,
+   "min": 5.18,
+   "n": 99,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음",
+   "wh": "240x426",
+   "visual": "페럿이 바닥에서 슬링키 장난감을 물고 흔드는 단일 숏. 무자막·워터마크 0·사람 0. 다소 어두운 실내 조명.",
+   "status": "delivered"
+  },
+  "ikt8iJzUw3w": {
+   "line": "강아지(시츄)",
+   "ch": "Ruby the Shih Tzu",
+   "ch_handle": "@rubydooshihtzu",
+   "subs": "410",
+   "title": "Have you ever seen a puppy running in slow motion? #shorts",
+   "secs": 16.6,
+   "publish": "2021-06-08",
+   "views": 4667,
+   "motion": 13.33,
+   "motion_runs": [
+    13.27,
+    13.34
+   ],
+   "med": 13.6,
+   "min": 7.27,
+   "n": 98,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음",
+   "wh": "270x480",
+   "visual": "시츄 강아지가 잔디밭을 카메라 쪽으로 달려오는 단일 숏. 무자막·워터마크 0·사람 0. 0.3초부터 질주 중.",
+   "status": "delivered"
+  }
+ },
+ "pop_exception_details": {
+  "4-LU_7f-A-8": {
+   "line": "강아지",
+   "ch": "BagheeraCinema",
+   "ch_handle": "@BagheeraCinema",
+   "subs": "1.03천",
+   "title": "Unbelievable! This Dog's Slow-Mo Run Will Leave You Speechless",
+   "secs": 15.1,
+   "publish": "2023-08-02",
+   "views": 1002,
+   "motion": 17.05,
+   "med": 20.23,
+   "min": 0.24,
+   "n": 97,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "상업 음원 — 'AirplaneMode' / BONES (IFeelLikeDirt)",
+   "visual": "개가 울타리 옆 잔디길을 달리는 단일 숏. 무자막·사람 0. 다만 피사체가 중~원거리이고 야간 저조도.",
+   "flag": "원작자성 확인 필요 — 채널 설명에 #viral/#reels 나열, 제목이 클릭베이트형. 채널 쇼츠 다수가 동일 카네코르소지만 이 클립의 개체가 같은 개인지 확증하지 못했다.",
+   "status": "pop_exception"
+  },
+  "uvlf3iZJW-A": {
+   "line": "쪼꼬미(토끼)",
+   "ch": "Fran Pidgeon",
+   "ch_handle": "@franpidgeon",
+   "subs": "1.48천",
+   "title": "Huge Bunny Binky (Happy Jump)! #shorts #short #rabbit #cuteanimals #bunnies",
+   "secs": 10.3,
+   "publish": "2022-10-18",
+   "views": 1028,
+   "motion": 12.4,
+   "motion_runs": [
+    12.38,
+    12.4
+   ],
+   "med": 11.27,
+   "min": 0.08,
+   "n": 118,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "상업 음원 — 'Crowd Chant' / Joe Satriani (Super Colossal)",
+   "visual": "더치 토끼가 거실 러그에서 비inky(폴짝 점프)를 반복하는 단일 숏. 무자막·워터마크 0·사람 0. 광각이라 피사체가 작다.",
+   "flag": "길이 10.3초로 하한 경계. 모션 12.4로 게이트 통과지만 여유가 0.4.",
+   "status": "pop_exception"
+  },
+  "kJmE_cRJadk": {
+   "line": "강아지",
+   "ch": "The Dogster",
+   "ch_handle": "@thedogsterpuppy",
+   "subs": "981",
+   "title": "puppy running in slow motion #puppy #dog #doglover #cute #animals",
+   "secs": 11.9,
+   "publish": "2024-04-26",
+   "views": 473,
+   "motion": 12.34,
+   "motion_runs": [
+    12.29,
+    12.34
+   ],
+   "med": 11.9,
+   "min": 5.5,
+   "n": 103,
+   "spikes": 1,
+   "spike_check": "스파이크 1회는 t=0 시크 직후 1프레임(측정 시작 아티팩트).",
+   "ai": 0,
+   "audio": "상업 음원 — 'Scopin' / KORDHELL (Scopin)",
+   "visual": "강아지가 담장 옆 흙길을 달리는 단일 숏. 무자막·워터마크 0·사람 0. 6초 이후 개가 멀어진다.",
+   "status": "pop_exception"
+  }
+ },
+ "reserve_details": {
+  "YwSMLA7lsEY": {
+   "line": "강아지(그레이트데인)",
+   "ch": "Aria the Great Dane",
+   "ch_handle": "@aria_the_greatdane",
+   "subs": "460",
+   "title": "GREAT DANE ZOOMIES #youtubeshorts #dogs #greatdane #tutorial",
+   "secs": 12.2,
+   "publish": "2023-07-16",
+   "views": 2499,
+   "motion": 18.42,
+   "motion_runs": [
+    18.38,
+    18.42
+   ],
+   "med": 17.95,
+   "min": 8.3,
+   "n": 98,
+   "spikes": 1,
+   "spike_check": "스파이크 1회는 t=0 시크 아티팩트.",
+   "ai": 0,
+   "audio": "현장음",
+   "visual": "그레이트데인이 마당을 가로질러 달리는 단일 숏. 무자막·워터마크 0·사람 0.",
+   "note": "모션·무컷·무자막은 전부 통과. 다만 0.3·4.5초 프레임에 피사체가 없고(개가 프레임 밖) 고정 광각이라 0.0초 훅이 약하다 — 46차 LnrQeuUqDF0와 같은 결로 예비 재고.",
+   "status": "reserve_pool"
+  }
+ },
+ "not_eligible_age_details": {
+  "JG9pgOAXwDo": {
+   "line": "강아지(달마시안+보더콜리)",
+   "ch": "annolux",
+   "ch_handle": "@annolux",
+   "subs": "519",
+   "title": "Dalmatian and Border Collie running together",
+   "secs": 36.7,
+   "publish": "2026-10-15",
+   "views": 1240,
+   "motion": 23.04,
+   "med": 22.26,
+   "min": 5.13,
+   "n": 98,
+   "spikes": 0,
+   "ai": 0,
+   "audio": "현장음",
+   "visual": "달마시안과 보더콜리가 강가 둔덕을 나란히 질주하는 단일 숏. 무자막·워터마크 0·사람 0. 0.3초부터 두 마리 달리는 중.",
+   "note": "5대 게이트 전부 통과 + 음원 클린 + 이번 회차 최고 모션(23.04)이나 게시 1개월(2026-10-15)로 '1년 이상 경과' 요건 미충족 → 확정 편수에서 제외. 대표님·기획실장 예외 판정용으로만 올린다.",
+   "status": "not_eligible_age"
+  }
+ },
+ "holds_details": {
+  "2NawaSm98tg": {
+   "line": "쪼꼬미(기니피그)",
+   "ch": "Vanilla and Swirly - Guinea pigs",
+   "subs": "—",
+   "secs": 12.7,
+   "publish": "2023-08-30",
+   "views": 17378,
+   "motion": 11.46,
+   "motion_runs": [
+    11.46,
+    11.35
+   ],
+   "med": 11.46,
+   "min": 4.18,
+   "spikes": 0,
+   "visual": "기니피그 여러 마리가 바닥에서 뛰어다니는 단일 숏·무자막·사람 0. 구도 양호.",
+   "note": "2회 측정 11.46/11.35 — 12.0에 0.55~0.65 미달. 게이트 완화 금지 원칙에 따라 확정하지 않고 보류."
+  },
+  "bJ8wts3_6nw": {
+   "line": "고양이",
+   "ch": "🐈Loving Street Cats🐈",
+   "secs": 10.5,
+   "publish": "2023-05-09",
+   "views": 17832776,
+   "motion": 11.03,
+   "med": 10.07,
+   "min": 1.72,
+   "spikes": 0,
+   "note": "모션 11.03으로 경계 미달. 소리 지르는 고양이 구도 — 보류."
+  },
+  "BPe32P2Y8dQ": {
+   "line": "강아지(그레이트데인)",
+   "ch": "Aria the Great Dane",
+   "secs": 24.3,
+   "publish": "2025-01-29",
+   "views": null,
+   "motion": 11.1,
+   "med": 10.45,
+   "min": 0.83,
+   "spikes": 0,
+   "note": "모션 11.1로 경계 미달 — 보류."
+  }
+ },
+ "rejected_reason_groups": {
+  "원작자 자막·오버레이 박힘": [
+   "01sRnFjFZ1c",
+   "N8OUA79sZLc",
+   "KSWcXirDJNk",
+   "2Rggcx3fB_M",
+   "NUCWqwBiVhI",
+   "iZQCkT-gwMI",
+   "0g7t-Ok217k",
+   "22C06LiZh8o",
+   "j5ICHFlKkOg",
+   "rB6-ECm2dZE",
+   "5JJfWdZLXcE",
+   "CMMtM1MAlkE",
+   "r3B0b6cbFvc",
+   "nJu-vV8wdw4",
+   "4tTDeylKUCU(Jlb_mkO1DsQ 대체)",
+   "qJF8nRy5n_o",
+   "X8d8-z_w5yA"
+  ],
+  "몽타주·컷 전환(스파이크 다발)": [
+   "5F5PvkPymjA",
+   "LW-VpkMWFFc",
+   "zHCA0kALewI",
+   "FqI-nq3C6ns",
+   "NkXPPJoZ-h8",
+   "X8d8-z_w5yA",
+   "7WYezVTH0RU",
+   "23mlc4m72eo",
+   "aWuRMLVjyo4",
+   "QZWu3-wQwO4",
+   "SoH_OrChFEI",
+   "OfRG_y2fisk",
+   "zDAG7FXN6Vc"
+  ],
+  "사람·손·보호자 다리 노출": [
+   "S1xVYhp_E5U",
+   "s5y9_Lj260o",
+   "GzMZkSq3L5Q",
+   "yJABZtaXARY",
+   "fx9rlAvIBJs",
+   "1lrlaSpH0ZA",
+   "xi3Vc9iyOtU",
+   "09Za_YsP3DA",
+   "5F5PvkPymjA"
+  ],
+  "TikTok 등 타 플랫폼 워터마크": [
+   "LW-VpkMWFFc",
+   "OfRG_y2fisk"
+  ],
+  "모션 12.0 미달": [
+   "47dzge53i7w",
+   "CPZ7DG16u0o",
+   "mHaLX3thDqs",
+   "_San4fpfSvk",
+   "bIH2I2oixFw",
+   "k9jYVKhqrgo",
+   "68h4VCwLbTg",
+   "Pv5hPbOco3o",
+   "3t0mQcCW9g8",
+   "G7eciwGksWw",
+   "KWmXcykYbEs",
+   "9XQNdTh4xXI",
+   "HVtABIlTZXU",
+   "VBF5uTBQPpE",
+   "6TCBf4_30X4",
+   "HhQrW7u35fI",
+   "m5nvi0-Axa0",
+   "IeJvfR0RbDs",
+   "Gt_3trNo8sc",
+   "KdQ3Y8Ouqyo",
+   "zSSKe-z7uEg",
+   "zDAG7FXN6Vc",
+   "tw0lsTAlm7g",
+   "mSDwMoq63RQ",
+   "dhOFdnr-5So",
+   "AIt99qiWWnM",
+   "c_D4Qep8ebc",
+   "H1-4hbx-0ek",
+   "8IMkY6NYfQ0",
+   "rqbIBRSbPcI",
+   "MmQWNjhC4EA",
+   "4vDprtXM6sQ",
+   "T1KavBPeEKk",
+   "qbeROGIJjSU",
+   "t4pkaFABNQc",
+   "sIR92mGFyA0"
+  ],
+  "카메라 이동·피사체 이탈·구도 붕괴": [
+   "g2vQyv27U9A",
+   "-StxugYQ4Vw",
+   "v0tndWFdHyY",
+   "sIR92mGFyA0",
+   "09Za_YsP3DA",
+   "Cv0nD761MqI"
+  ],
+  "길이 10초 미만": [
+   "hCRmKzqF8cM",
+   "OfRG_y2fisk",
+   "lHpNOzP41hc"
+  ],
+  "비반려동물 채널(원작자 게이트 미충족)": [
+   "G7oXXkPAS1k(@BeyondthePavement — 자동차·잔디관리 채널)",
+   "Cv0nD761MqI(@vivaaksha — 여행·피트니스 채널)"
+  ]
+ },
+ "rejected_details": {
+  "01sRnFjFZ1c": {
+   "ch": "trickyterriers",
+   "secs": 23.4,
+   "motion": 19.08,
+   "why": "전 구간 영어 자막 + 보호자 손·몸"
+  },
+  "5F5PvkPymjA": {
+   "ch": "TREEZY INC",
+   "secs": 15.2,
+   "motion": 18.18,
+   "spikes": 6,
+   "why": "6회 컷 몽타주 + 10.1초 사람 발"
+  },
+  "N8OUA79sZLc": {
+   "ch": "Funny How?",
+   "secs": 19.4,
+   "motion": 22.57,
+   "spikes": 3,
+   "why": "'Like, Sub & Comment' 자막 상단 고정"
+  },
+  "47dzge53i7w": {
+   "ch": "CanineKart",
+   "secs": 25.3,
+   "motion": 8.22,
+   "why": "러닝머신 정지 구도 — 모션 미달"
+  },
+  "CPZ7DG16u0o": {
+   "ch": "ITXINFO",
+   "secs": 30.1,
+   "motion": 5.01,
+   "why": "모션 미달"
+  },
+  "mHaLX3thDqs": {
+   "ch": "Jesus San Miguel",
+   "secs": 16.3,
+   "motion": 9.04,
+   "why": "모션 미달"
+  },
+  "_San4fpfSvk": {
+   "ch": "WhatDaDogDoin?",
+   "secs": 44.7,
+   "motion": 9.56,
+   "why": "모션 미달 + 스파이크 1"
+  },
+  "bIH2I2oixFw": {
+   "ch": "Discover Rescue",
+   "secs": 18.4,
+   "motion": 11.32,
+   "why": "모션 12.0 미달"
+  },
+  "g2vQyv27U9A": {
+   "ch": "Gittle Boys",
+   "secs": 21.3,
+   "motion": 15.23,
+   "why": "개가 화면에서 작고 카메라 팬이 모션 대부분"
+  },
+  "k9jYVKhqrgo": {
+   "ch": "Young Chronic",
+   "secs": 15.1,
+   "motion": 5.2,
+   "why": "모션 미달"
+  },
+  "LW-VpkMWFFc": {
+   "ch": "PAQ'D Farm",
+   "secs": 12.1,
+   "motion": 21.14,
+   "spikes": 2,
+   "why": "TikTok 재업로드 — 자막·워터마크"
+  },
+  "68h4VCwLbTg": {
+   "ch": "Nova baby",
+   "secs": 11.3,
+   "motion": 9.28,
+   "why": "360x640 세로·모션 미달"
+  },
+  "KSWcXirDJNk": {
+   "ch": "NinaTheLondonCityPittie2.0",
+   "secs": 15.1,
+   "motion": 21.46,
+   "spikes": 2,
+   "why": "'Pitbull puppy gets ZOOMIES' 자막 전 구간"
+  },
+  "2Rggcx3fB_M": {
+   "ch": "VenomizedYosh",
+   "secs": 16.1,
+   "motion": 19.64,
+   "spikes": 3,
+   "why": "자막 + 사람"
+  },
+  "s5y9_Lj260o": {
+   "ch": "Einsteins Backyard",
+   "secs": 15.0,
+   "motion": 14.33,
+   "why": "보호자 다리 8컷 전 구간"
+  },
+  "Pv5hPbOco3o": {
+   "ch": "Sampson & Nala",
+   "secs": 14.1,
+   "motion": 5.41,
+   "why": "모션 미달"
+  },
+  "NUCWqwBiVhI": {
+   "ch": "Sockie Great Dane",
+   "secs": 17.6,
+   "motion": 13.62,
+   "why": "'Her ears go crazy' 자막 전 구간"
+  },
+  "iZQCkT-gwMI": {
+   "ch": "Bosch The Doberman",
+   "secs": 30.1,
+   "motion": 18.61,
+   "why": "자막 + 채널 워터마크"
+  },
+  "G7oXXkPAS1k": {
+   "ch": "Beyond the Pavement(1.23천)",
+   "secs": 23.4,
+   "motion": 21.14,
+   "why": "오토바이·DIY 채널 — 반려동물 상시 채널 아님(게이트②)"
+  },
+  "4-LU_7f-A-8": {
+   "ch": "BagheeraCinema",
+   "secs": 15.1,
+   "motion": 17.05,
+   "why": "상업 음원(BONES) + 원작자성 확인 필요 → 팝송 예외 후보로 분리"
+  },
+  "hCRmKzqF8cM": {
+   "ch": "Big Eyed Bull Farm",
+   "secs": 9.8,
+   "motion": 14.47,
+   "why": "길이 10초 미만"
+  },
+  "v0tndWFdHyY": {
+   "ch": "Chaamp The Alaskan Malador",
+   "secs": 45.0,
+   "motion": 13.58,
+   "why": "0.3~3.0초 빈 잔디(피사체 없음)"
+  },
+  "3t0mQcCW9g8": {
+   "ch": "Bradbury",
+   "secs": 10.0,
+   "motion": 7.77,
+   "why": "모션 미달"
+  },
+  "zHCA0kALewI": {
+   "ch": "Raja and David",
+   "secs": 13.3,
+   "motion": 21.58,
+   "why": "여러 공간을 이어붙인 몽타주(프레임 점프 다수)"
+  },
+  "FqI-nq3C6ns": {
+   "ch": "Raja and David",
+   "secs": 18.5,
+   "motion": 18.48,
+   "spikes": 3,
+   "why": "몽타주 + 4.5초 사람 다리"
+  },
+  "G7eciwGksWw": {
+   "ch": "Shelby that peanut",
+   "secs": 15.1,
+   "motion": 9.76,
+   "why": "모션 미달"
+  },
+  "KWmXcykYbEs": {
+   "ch": "FurryFriends",
+   "secs": 17.2,
+   "motion": 2.61,
+   "why": "사실상 정지"
+  },
+  "sIR92mGFyA0": {
+   "ch": "Important Animal Video",
+   "secs": 29.7,
+   "motion": 18.12,
+   "why": "옥상 난간 원거리 + 손떨림"
+  },
+  "9XQNdTh4xXI": {
+   "ch": "Mei & Mimi",
+   "secs": 21.8,
+   "motion": 3.92,
+   "why": "야간 정지 구도"
+  },
+  "HVtABIlTZXU": {
+   "ch": "Kaden",
+   "secs": 10.5,
+   "motion": 4.09,
+   "why": "모션 미달"
+  },
+  "VBF5uTBQPpE": {
+   "ch": "Thumper the bunny",
+   "secs": 11.0,
+   "motion": 4.47,
+   "why": "모션 미달"
+  },
+  "6TCBf4_30X4": {
+   "ch": "Bobo Ellie Buns",
+   "secs": 28.2,
+   "motion": 1.98,
+   "why": "모션 미달"
+  },
+  "HhQrW7u35fI": {
+   "ch": "Bobo Ellie Buns",
+   "secs": 12.2,
+   "motion": 3.06,
+   "why": "모션 미달"
+  },
+  "m5nvi0-Axa0": {
+   "ch": "jeppoo1",
+   "secs": 16.3,
+   "motion": 3.97,
+   "why": "모션 미달"
+  },
+  "fx9rlAvIBJs": {
+   "ch": "WeeAnimalStudio",
+   "secs": 10.6,
+   "motion": 21.46,
+   "why": "카메라 팬 + 3.0~4.5초 손, 10.1초 빈 의자"
+  },
+  "0g7t-Ok217k": {
+   "ch": "TUNA_",
+   "secs": 22.6,
+   "motion": 21.87,
+   "why": "자막 박스 전 구간"
+  },
+  "IeJvfR0RbDs": {
+   "ch": "Brand New Animals 23",
+   "secs": 24.6,
+   "motion": 1.89,
+   "why": "정지 구도"
+  },
+  "Gt_3trNo8sc": {
+   "ch": "FuffyFerrets",
+   "secs": 10.1,
+   "motion": 10.54,
+   "why": "플레이북 중복 제외 채널 + 모션 미달"
+  },
+  "KdQ3Y8Ouqyo": {
+   "ch": "Miffy and Friends",
+   "secs": 12.2,
+   "motion": 8.59,
+   "why": "모션 미달"
+  },
+  "22C06LiZh8o": {
+   "ch": "Guinea Pig Cuteness",
+   "secs": 15.0,
+   "motion": 23.81,
+   "why": "핑크 자막 + 'FENCING DIRECT' 워터마크"
+  },
+  "1lrlaSpH0ZA": {
+   "ch": "Guinea Pig Chronicles",
+   "secs": 13.8,
+   "motion": 15.3,
+   "why": "구도 붕괴(피사체 이탈·손)·10.1초 자막"
+  },
+  "j5ICHFlKkOg": {
+   "ch": "Forever animals",
+   "secs": 15.1,
+   "motion": 21.61,
+   "why": "'The Guinea pigs!!' 헤더 오버레이"
+  },
+  "zSSKe-z7uEg": {
+   "ch": "Tammy Ascher",
+   "secs": 15.9,
+   "motion": 7.11,
+   "why": "모션 미달"
+  },
+  "rB6-ECm2dZE": {
+   "ch": "New Nature Adventures",
+   "secs": 20.1,
+   "motion": 12.27,
+   "why": "자막('Otter Playing at Gooseberry Falls')"
+  },
+  "GzMZkSq3L5Q": {
+   "ch": "Explorer's Diary",
+   "secs": 20.2,
+   "motion": 21.4,
+   "spikes": 3,
+   "why": "사람·아이 등장 + 컷 3회"
+  },
+  "zDAG7FXN6Vc": {
+   "ch": "Liza Jaworowski",
+   "secs": 15.9,
+   "motion": 6.64,
+   "why": "슬로모 강아지 털기 — 모션 미달"
+  },
+  "-StxugYQ4Vw": {
+   "ch": "Paws Perfect",
+   "secs": 24.9,
+   "motion": 13.94,
+   "why": "0~4.5초 정지(개 서 있음) → 0.0초 훅 없음"
+  },
+  "09Za_YsP3DA": {
+   "ch": "ZEUS",
+   "secs": 17.5,
+   "motion": 20.83,
+   "why": "구도 붕괴(빈 바닥·극블러)"
+  },
+  "tw0lsTAlm7g": {
+   "ch": "RM Videos",
+   "secs": 10.9,
+   "motion": 7.6,
+   "why": "모션 미달"
+  },
+  "mSDwMoq63RQ": {
+   "ch": "Cat and dog chaos",
+   "secs": 15.1,
+   "motion": 10.67,
+   "why": "모션 미달"
+  },
+  "lHpNOzP41hc": {
+   "ch": "M.I.N.I.L.E.O",
+   "secs": 9.6,
+   "motion": 11.27,
+   "why": "길이 10초 미만"
+  },
+  "NkXPPJoZ-h8": {
+   "ch": "FS Smash",
+   "secs": 13.6,
+   "motion": 21.72,
+   "spikes": 6,
+   "why": "컷 몽타주"
+  },
+  "dhOFdnr-5So": {
+   "ch": "Random thoughts",
+   "secs": 11.5,
+   "motion": 8.56,
+   "why": "모션 미달 + 스파이크 2"
+  },
+  "X8d8-z_w5yA": {
+   "ch": "AnimalJoyNest",
+   "secs": 12.4,
+   "motion": 19.93,
+   "why": "'CERO CAT Attack' 배너 + 몽타주"
+  },
+  "AIt99qiWWnM": {
+   "ch": "Pure Fails",
+   "secs": 14.0,
+   "motion": 1.49,
+   "why": "정지 구도"
+  },
+  "ysWiBcFVIws": {
+   "ch": "DGG Cat Vids",
+   "secs": 10.2,
+   "motion": 14.38,
+   "spikes": 2,
+   "why": "사람 팔 + 컷"
+  },
+  "Cv0nD761MqI": {
+   "ch": "vivaaksha(여행·피트니스, 668)",
+   "secs": 21.0,
+   "motion": 17.51,
+   "why": "반려동물 채널 아님(게이트②)"
+  },
+  "c_D4Qep8ebc": {
+   "ch": "Totoy Bibo Ng New Zealand",
+   "secs": 14.8,
+   "motion": 5.42,
+   "why": "모션 미달"
+  },
+  "H1-4hbx-0ek": {
+   "ch": "Explore & Discover",
+   "secs": 33.7,
+   "motion": 7.87,
+   "why": "모션 미달"
+  },
+  "8IMkY6NYfQ0": {
+   "ch": "Gonnim the Lop",
+   "secs": 10.7,
+   "motion": 8.31,
+   "why": "모션 미달"
+  },
+  "2NawaSm98tg": {
+   "ch": "Vanilla and Swirly",
+   "secs": 12.7,
+   "motion": 11.46,
+   "why": "보류(12.0 0.55 미달)"
+  },
+  "yJABZtaXARY": {
+   "ch": "Vanilla and Swirly",
+   "secs": 15.1,
+   "motion": 27.7,
+   "why": "손·먹이 봉투가 프레임 1/3 차지"
+  },
+  "uvlf3iZJW-A": {
+   "ch": "Fran Pidgeon",
+   "secs": 10.3,
+   "motion": 12.4,
+   "why": "상업 음원(Joe Satriani) → 팝송 예외 후보"
+  },
+  "5JJfWdZLXcE": {
+   "ch": "Whiskey Dents",
+   "secs": 10.9,
+   "motion": 20.29,
+   "spikes": 2,
+   "why": "빨간 자막 2줄 전 구간"
+  },
+  "rqbIBRSbPcI": {
+   "ch": "MacroWhisper",
+   "secs": 10.7,
+   "motion": 5.19,
+   "why": "모션 미달"
+  },
+  "MmQWNjhC4EA": {
+   "ch": "Pibbles & Bits",
+   "secs": 10.2,
+   "motion": 4.17,
+   "why": "모션 미달"
+  },
+  "4vDprtXM6sQ": {
+   "ch": "Rabbits Faiso",
+   "secs": 11.0,
+   "motion": 8.63,
+   "spikes": 3,
+   "why": "모션 미달 + 컷"
+  },
+  "7WYezVTH0RU": {
+   "ch": "H5 Ranch Animal Antics",
+   "secs": 11.8,
+   "motion": 36.68,
+   "spikes": 15,
+   "why": "몽타주"
+  },
+  "CMMtM1MAlkE": {
+   "ch": "W Hidden Hooves Farm",
+   "secs": 10.7,
+   "motion": 19.66,
+   "why": "자막 박스 전 구간"
+  },
+  "nJu-vV8wdw4": {
+   "ch": "yuceila",
+   "secs": 57.5,
+   "motion": 15.34,
+   "spikes": 2,
+   "why": "'Racoon core' 자막 + 몽타주"
+  },
+  "r3B0b6cbFvc": {
+   "ch": "Becki Ferret",
+   "secs": 21.6,
+   "motion": 20.31,
+   "why": "'SOUND ON' 스티커 전 구간"
+  },
+  "23mlc4m72eo": {
+   "ch": "Becki Ferret",
+   "secs": 11.2,
+   "motion": 18.44,
+   "spikes": 6,
+   "why": "자막 + 몽타주"
+  },
+  "aWuRMLVjyo4": {
+   "ch": "Becki Ferret",
+   "secs": 15.5,
+   "motion": 27.94,
+   "spikes": 6,
+   "why": "컷 다발(겨드랑이 긁기 장면 전환)"
+  },
+  "BPe32P2Y8dQ": {
+   "ch": "Aria the Great Dane",
+   "secs": 24.3,
+   "motion": 11.1,
+   "why": "보류(모션 미달)"
+  },
+  "QZWu3-wQwO4": {
+   "ch": "Ninja Ferret Aitaro",
+   "secs": 30.1,
+   "motion": 37.26,
+   "spikes": 8,
+   "why": "몽타주"
+  },
+  "SoH_OrChFEI": {
+   "ch": "ShaunnyD",
+   "secs": 50.9,
+   "motion": 22.76,
+   "spikes": 5,
+   "why": "몽타주"
+  },
+  "T1KavBPeEKk": {
+   "ch": "Maya",
+   "secs": 31.8,
+   "motion": 4.71,
+   "why": "모션 미달"
+  },
+  "qbeROGIJjSU": {
+   "ch": "VidXiv",
+   "secs": 24.0,
+   "motion": 7.84,
+   "why": "수중 정지 구도"
+  },
+  "t4pkaFABNQc": {
+   "ch": "Candid by Teneice",
+   "secs": 27.7,
+   "motion": 4.16,
+   "why": "모션 미달"
+  },
+  "OfRG_y2fisk": {
+   "ch": "NO BETTER VIBE PODCAST",
+   "secs": 9.6,
+   "motion": 26.83,
+   "spikes": 6,
+   "why": "길이 10초 미만 + TikTok 몽타주"
+  },
+  "qJF8nRy5n_o": {
+   "ch": "Lennon The Bunny",
+   "secs": 11.5,
+   "motion": 13.75,
+   "spikes": 2,
+   "why": "'Other rabbits/My rabbit' 자막 + 손 + 몽타주"
+  },
+  "hbk0maw-vL8": {
+   "ch": "Rat Mom Lena",
+   "secs": 11.4,
+   "motion": 10.2,
+   "spikes": 2,
+   "why": "모션 미달"
+  },
+  "xi3Vc9iyOtU": {
+   "ch": "Shelby The Macaw",
+   "secs": 20.7,
+   "motion": 18.95,
+   "why": "사람 얼굴 + 몽타주"
+  },
+  "JG9pgOAXwDo": {
+   "ch": "annolux",
+   "secs": 36.7,
+   "motion": 23.04,
+   "why": "게이트 전부 통과하나 게시 2026-10-15(1개월) — 1년 요건 미충족"
+  }
+ },
+ "pools": {
+  "신규 발굴(숏츠 필터 검색 32쿼리)": "795 ID 수집 → 미검증 794 → /shorts 메타 794건 확보(10초 이상 518) → 2022~2024 & 12~40초 147편으로 압축",
+  "일반 검색 40쿼리(videoRenderer lengthText)": "10~90초 0건 — 2026년 마크업에서 일반 검색도 숏츠를 별도 카드로만 노출",
+  "과거 확정 채널 재굴착(/shorts 페이지네이션 3페이지)": "5채널 195 ID — 이 중 10초 이상은 16편(Becki Ferret 중심)",
+  "46차 인계 잔여 풀(disc46·disc46b, 10초 이상 미측정 72편)": "이번 회차 12편 실측",
+  "46차 예비 재고·보류": "zcWgq396K6E·LnrQeuUqDF0(예비) 유지, nzjwMCvjFbM(재측정 8.75)·ScEcojMZK80 12.0 미달 유지 — 이번 회차 편입 없음"
+ },
+ "structural_notes": [
+  "2022~2024 아카이브는 10초 이상 클립이 실제로 많다(147편 확보) — 다만 절반 이상이 영어/한글 자막을 원본에 박아 둔 '쇼츠 문법' 영상이어서 자막·워터마크에서 대량 탈락했다.",
+  "고모션 후보의 상당수가 카메라 흔들림·급팬으로 수치를 만든 경우였고, 8컷 육안에서 구도 붕괴로 걸렸다.",
+  "브라우저 하네스 편차(46차 대비 -4~-23%) 때문에 경계값은 2회 측정으로만 판정했다. 이번 회차 확정 4편은 모두 2회 측정 또는 0스파이크·육안 확인을 마쳤다.",
+  "상업 음원이 깔린 고모션 원석이 많다(이번 3편) — 음원 사전 판별을 파이프라인 1단계에 넣어야 확정 후 음원 문제로 되돌리는 일이 준다."
+ ],
+ "account_counts": {
+  "annolux": "2편 측정(PddTPoEch1o 확정, JG9pgOAXwDo 연한 미충족)",
+  "Becki Ferret": "5편 측정(1 확정, 4 탈락)",
+  "All About Ferrets": "1편 측정(1 확정)",
+  "Aria the Great Dane": "3편 측정(1 예비, 2 보류/탈락)",
+  "Ruby the Shih Tzu": "1편 측정(1 확정)"
+ },
+ "next_round_handoff": {
+  "확정 4편": [
+   "PddTPoEch1o",
+   "7Jk32qzu9Vk",
+   "MGm15JLPW38",
+   "ikt8iJzUw3w"
+  ],
+  "팝송 예외 후보(판정 대기)": [
+   "4-LU_7f-A-8",
+   "uvlf3iZJW-A",
+   "kJmE_cRJadk"
+  ],
+  "예비 재고": [
+   "YwSMLA7lsEY",
+   "zcWgq396K6E",
+   "LnrQeuUqDF0"
+  ],
+  "보류": [
+   "2NawaSm98tg",
+   "bJ8wts3_6nw",
+   "BPe32P2Y8dQ"
+  ],
+  "연한 미충족(예외 판정 요청)": [
+   "JG9pgOAXwDo"
+  ],
+  "미측정 잔여": "신규 발굴 풀 중 2022~2024 12~40초 미측정 약 100편 + 46차 인계 잔여 60편"
+ }
+}
