@@ -24,7 +24,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="assets/hero-henesys.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/hero-henesys-1280.webp" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="/assets/motion.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://alpang.gg/#website","url":"https://alpang.gg/","name":"알팡지지","inLanguage":"ko"},{"@type":"Organization","@id":"https://alpang.gg/#organization","name":"알팡지지","url":"https://alpang.gg/","logo":"https://alpang.gg/assets/logo-global.png","sameAs":["https://t.me/alpang_gg","https://www.threads.net/@maplestoryworld_"]}]}
 </script>
@@ -70,9 +71,10 @@
   [data-theme="light"] .theme-toggle .ic-sun{display:block}
 
   /* 히어로 — 월드 배경 + 오버레이 */
-  .hero-bleed{background:url('assets/hero-henesys.webp') center 62%/cover no-repeat;position:relative}
-  .hero-bleed::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,19,22,.74),rgba(18,19,22,.84) 55%,var(--bg))}
-  .hero{position:relative;padding:54px 0 34px;text-align:center}
+  .hero-bleed{position:relative;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;z-index:0}
+  .hero-bleed::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,19,22,.74),rgba(18,19,22,.84) 55%,var(--bg));z-index:1}
+  .hero{position:relative;z-index:2;padding:54px 0 34px;text-align:center}
   .hero .kicker{display:inline-block;font-size:12.5px;font-weight:700;color:#E8B34B;border:1px solid rgba(232,179,75,.45);background:rgba(18,19,22,.72);border-radius:999px;padding:5px 12px;margin-bottom:16px}
   .hero h2{font-size:46px;font-weight:800;letter-spacing:-.01em;line-height:1.25;color:#F2F3F5;text-shadow:0 2px 14px rgba(0,0,0,.55)}
   .hero h2 .pt{color:var(--acc)}
@@ -88,6 +90,20 @@
   .sb-wrap input::placeholder{color:#7C8194}
   .sb-results{position:absolute;top:calc(100% + 14px);left:-40px;right:-8px;z-index:60;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35);max-height:420px;overflow-y:auto;display:none;text-align:left}
   .sb-more{display:block;width:100%;padding:11px;font-size:14px;font-weight:700;color:var(--acc-dk);background:transparent;border:none;border-top:1px solid var(--line);cursor:pointer;font-family:inherit;min-height:44px}
+.sb-results.open{display:block}
+  .sb-item{display:flex;align-items:center;gap:9px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--txt);border-bottom:1px solid var(--line)}
+  .sb-item:last-child{border-bottom:none}
+  .sb-item.sel,.sb-item:hover{background:rgba(242,118,46,.14)}
+  .sb-badge{flex:none;font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px;color:#fff;background:var(--acc)}
+  .sb-badge.map{background:#7A6A53}
+  .sb-badge.item{background:#4A6FA5}
+  .sb-badge.npc{background:#8A5AA5}
+  .sb-badge.quest{background:#B7791F}
+  .sb-icon{flex:none;width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+  .sb-nm{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-en{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sb-unv{flex:none;font-size:11px;font-weight:700;color:var(--dim);background:var(--card2);border-radius:4px;padding:2px 6px}
+  .sb-none{padding:14px;font-size:14px;color:var(--sub)}
   .sb-btn{flex:none;display:inline-block;background:var(--acc);color:#fff;font-weight:700;font-size:15px;padding:0 20px;height:40px;border-radius:10px;border:none;cursor:pointer;font-family:inherit;white-space:nowrap}
   .sb-btn:hover{background:#D9651F}
   .chips{margin:14px auto 0;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
@@ -165,9 +181,9 @@
 
 <header class="gnb">
   <div class="gnb-in">
-    <a class="logo" href="/"><img src="assets/logo.png" alt="알팡지지" width="807" height="237"></a>
+    <a class="logo" href="/"><img src="/assets/logo-small.webp" alt="알팡지지" width="807" height="237"></a>
     <nav>
-      <a href="/" class="on">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/guide/">가이드</a><a href="/calculator/onehit/">계산기</a>
+      <a href="/" class="on">홈</a><a href="/timeline/">타임라인<span class="new-dot" id="tlNewDot" aria-label="새 글 있음"></span></a><a href="/faq/">FAQ</a><a href="/mobs/">몬스터 도감</a><a href="/maps/">맵 탐색</a><a href="/items/">아이템</a><a href="/npcs/">NPC·퀘스트</a><a href="/jobs/">직업·스킬</a><a href="/guide/">가이드</a><a href="/calculator/cube/">큐브값 계산기</a><a href="/calculator/onehit/">한방컷 계산기</a>
     </nav>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
   </div>
@@ -175,6 +191,7 @@
 
 <!-- 히어로 -->
 <div class="hero-bleed">
+  <picture><source media="(max-width:768px)" srcset="/assets/hero-henesys-768.webp"><img class="hero-bg" src="/assets/hero-henesys-1280.webp" alt="" width="1920" height="355" fetchpriority="high"></picture>
   <div class="wrap">
     <div class="hero">
       <span class="kicker">메이플스토리월드 알팡서버 정보 DB</span>
@@ -217,28 +234,28 @@
     <div class="zone-head"><h2>핵심 도구</h2></div>
     <div class="tools">
       <a class="tool" href="/calculator/onehit/">
-        <div class="ic"><img class="px" src="assets/item-sword.png" alt="무기 아이콘" width="31" height="30"></div>
+        <div class="ic"><img class="px" src="/assets/item-sword.png" alt="무기 아이콘" width="31" height="30"></div>
         <h3>한방컷 계산기</h3>
         <p>내 스탯으로 몬스터를 한 방에 잡을 수 있는지 바로 판정해요.</p>
         <div class="stat">스킬 610종 기준</div>
       </a>
       <a class="tool" href="/mobs/">
-        <div class="ic"><img class="px" src="assets/mob-orange.png" alt="주황버섯" width="63" height="58"></div>
+        <div class="ic"><img class="px" src="/assets/mob-orange.png" alt="주황버섯" width="63" height="58"></div>
         <h3>몬스터 도감</h3>
         <p>레벨·HP·경험치와 출현 맵까지, 사냥 전에 확인하는 도감이에요.</p>
         <div class="stat">몬스터 <span data-count="mobs">188</span>종</div>
       </a>
       <a class="tool" href="/maps/">
-        <div class="ic"><img src="assets/icon-worldmap.png" alt="월드맵 아이콘" width="238" height="238"></div>
+        <div class="ic"><img src="/assets/icon-worldmap-64.webp" alt="월드맵 아이콘" width="238" height="238" loading="lazy" decoding="async"></div>
         <h3>맵 정보</h3>
         <p>맵마다 출현 몬스터와 연결 지점을 한눈에 볼 수 있어요.</p>
         <div class="stat">맵 <span data-count="maps">419</span>곳</div>
       </a>
       <a class="tool" href="/timeline/">
-        <div class="ic"><img class="px" src="assets/item-quest.png" alt="주문서 아이콘" width="30" height="29"></div>
-        <h3>저스티스 버전</h3>
-        <p>알팡서버 기준 버전인 저스티스 세트로 데이터를 미리 맞춰 두는 중이에요.</p>
-        <div class="stat">사전 셋팅 중</div>
+        <div class="ic"><img class="px" src="/assets/item-quest.png" alt="주문서 아이콘" width="30" height="29" loading="lazy" decoding="async"></div>
+        <h3>알팡서버 타임라인</h3>
+        <p>제작진 발언과 방송 소식을 날짜별로 기록해 두는 곳이에요.</p>
+        <div class="stat">기록 16건</div>
       </a>
     </div>
   </section>
@@ -248,7 +265,7 @@
     <div class="zone-head"><h2>인기 가이드</h2><a class="more" href="/guide/">가이드 전체 보기 →</a></div>
     <div class="guides">
       <a class="gcard" href="/guide/hunting/">
-        <div class="thumb"><img class="px" src="assets/mob-slime.png" alt="슬라임" width="64" height="49"></div>
+        <div class="thumb"><img class="px" src="/assets/mob-slime.png" loading="lazy" decoding="async" alt="슬라임" width="64" height="49"></div>
         <div class="body">
           <span class="badge">사냥</span>
           <h3>초반 사냥터 후보 비교</h3>
@@ -256,7 +273,7 @@
         </div>
       </a>
       <a class="gcard" href="/guide/quest-startpoints/">
-        <div class="thumb"><img class="px" src="assets/npc-guide.png" alt="NPC" width="51" height="73"></div>
+        <div class="thumb"><img class="px" src="/assets/npc-guide.png" loading="lazy" decoding="async" alt="NPC" width="51" height="73"></div>
         <div class="body">
           <span class="badge org">퀘스트</span>
           <h3>초반 퀘스트 동선</h3>
@@ -264,7 +281,7 @@
         </div>
       </a>
       <a class="gcard" href="/guide/mob-stats/">
-        <div class="thumb"><img class="px" src="assets/mob-green.png" alt="초록버섯" width="56" height="52"></div>
+        <div class="thumb"><img class="px" src="/assets/mob-green.png" loading="lazy" decoding="async" alt="초록버섯" width="56" height="52"></div>
         <div class="body">
           <span class="badge">몬스터</span>
           <h3>몬스터 스탯으로 사냥터 고르기</h3>
@@ -272,7 +289,7 @@
         </div>
       </a>
       <a class="gcard" href="/guide/town-npcs/">
-        <div class="thumb"><img class="px" src="assets/npc-shop.png" alt="NPC" width="60" height="71"></div>
+        <div class="thumb"><img class="px" src="/assets/npc-shop.png" loading="lazy" decoding="async" alt="NPC" width="60" height="71"></div>
         <div class="body">
           <span class="badge org">퀘스트</span>
           <h3>퀘스트 시작 NPC로 동선 짜기</h3>
@@ -280,7 +297,7 @@
         </div>
       </a>
       <a class="gcard" href="/guide/ludibrium/">
-        <div class="thumb"><img src="assets/minimap-ludi.png" alt="루디브리엄 미니맵" width="333" height="93"></div>
+        <div class="thumb"><img src="/assets/minimap-ludi-thumb.webp" loading="lazy" decoding="async" alt="루디브리엄 미니맵" width="333" height="93"></div>
         <div class="body">
           <span class="badge">지역</span>
           <h3>장난감 도시 루디브리엄 엿보기</h3>
@@ -288,7 +305,7 @@
         </div>
       </a>
       <a class="gcard" href="/guide/exp-curve/">
-        <div class="thumb"><img class="px" src="assets/mob-orange.png" alt="주황버섯" width="63" height="58"></div>
+        <div class="thumb"><img class="px" src="/assets/mob-orange.png" loading="lazy" decoding="async" alt="주황버섯" width="63" height="58"></div>
         <div class="body">
           <span class="badge">성장</span>
           <h3>레벨별 필요 경험치 곡선</h3>
@@ -310,7 +327,11 @@
 
   <footer>
     알팡지지는 팬이 운영하는 정보 사이트로, 넥슨 및 스트리머 측과 관계가 없습니다.<br>
-    <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a> · <a href="/about/">사이트 소개</a> · <a href="mailto:alpangland@gmail.com">문의하기</a>
+    <a href="/privacy/">개인정보처리방침</a> · <a href="/terms/">이용약관</a> · <a href="/about/">사이트 소개</a> · <a href="mailto:alpangland@gmail.com">문의하기</a><br>
+    데이터 기준: 본진 메이플스토리 빅뱅 직후 구간(GMS 95) · 페이지 갱신일: 2026-11-10<br>
+    <span style="font-size:12px">본 사이트의 게임 데이터는 본진 GMS 95 기준으로 maplestory.io를 참조해 정리했습니다.<br>
+    메이플스토리 및 관련 이미지·자료의 권리는 넥슨에 있으며, 알팡지지는 넥슨과 관계없는 비공식 팬 사이트입니다.</span>
+    <div class="lang-switch" style="margin-top:8px;font-size:13px"><strong aria-current="true">한국어</strong> · <a href="/taiwan/">繁體中文</a> · <a href="/vietnam/">Tiếng Việt</a></div>
   </footer>
 </div>
 
@@ -321,17 +342,7 @@ document.getElementById('themeToggle').addEventListener('click', function(){
   document.documentElement.setAttribute('data-theme', cur);
   try{ localStorage.setItem('alpang-theme', cur); }catch(e){}
 });
-/* 수치 주입 — 검색 인덱스 집계에서 채운다. 실패하면 본문 폴백 값을 유지한다. */
-(function(){
-  fetch('/assets/alpang-search-20261028-12.json').then(function(r){ return r.json(); }).then(function(idx){
-    var counts = {mobs:0, maps:0, items:0};
-    (idx.items || idx || []).forEach(function(it){ if(counts[it.type] !== undefined) counts[it.type]++; });
-    document.querySelectorAll('[data-count]').forEach(function(el){
-      var k = el.getAttribute('data-count');
-      if(counts[k]) el.textContent = counts[k].toLocaleString('ko-KR');
-    });
-  }).catch(function(){});
-})();
+/* 수치는 빌드 때 주입한다 (런타임 fetch 금지 — 클로드 점검 2026-11-20) */
 </script>
 <!-- 본 작업 이관: 아래 5종은 현행 홈과 같은 경로·세대를 그대로 계승한다 (시안 로컬에서는 로드되지 않는 것이 정상)
 <script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-12.json" defer></script>
