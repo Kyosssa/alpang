@@ -11,12 +11,12 @@
   "측정과 8컷 그리드 생성을 한 evaluate 호출에 합치고, 그리드를 DOM 캔버스로 올려 aria-label(ref)로 요소 스크린샷 1회만 찍는 방식으로 정착(후보당 호출 2회, 이미지 1장).",
   "이번 회차 후반(00:30 이후)에 /shorts/<id> HTML이 이 작업 환경 IP에서 'Sign in to confirm you're not a bot'(LOGIN_REQUIRED)으로 막혔다. 초반 수집분(1,315 ID)의 메타는 확보했고, 막힌 뒤에는 브라우저 실물 검증과 채널 페이지(/@handle/shorts, 차단 없음)만으로 진행했다. 좋아요 수는 확정 후보 6편만 shorts 페이지 UI에서 실측했다."
  ],
- "delivered": 7,
+ "delivered": 8,
  "reserve_pool": 2,
  "holds": 1,
- "rejected": 69,
+ "rejected": 76,
  "screened_out": 0,
- "processed_total": 79,
+ "processed_total": 87,
  "delivered_details": {
   "LARJ9zLVaJU": {
    "line": "강아지(호주 Shepherd)",
@@ -218,6 +218,32 @@
    "visual": "라쿤 엄마와 새끼 3마리가 마당에 놓인 유아용 장난감 자동차·물통에서 노는 무컷 단일 숏(20초). 0.3초부터 새끼들이 장난감을 오르고, 6~10.1초는 엄마가 새끼들 사이를 지나며 물통 쪽으로 간다. 8컷 전 구간 무자막·무워터마크·사람 0.",
    "note": "원작자 본인 계정(라쿤 데이케어 운영, 소개 'Raccoon Daycare'). 같은 영상을 TikTok·Instagram에도 올리는 계정이지만 이 YouTube 업로드본에는 타 플랫폼 워터마크가 없다(8컷 확인). 해상도 480p 상한이 감점.",
    "status": "delivered"
+  },
+  "qOBT3Tcu6NM": {
+   "line": "쪼꼬미(라쿤)",
+   "ch": "Marpleskee",
+   "ch_handle": "@Marpleskee",
+   "subs": "5.73K",
+   "videos": "79",
+   "title": "Little raccoon is ready to get the daycare party started!😊",
+   "secs": 21.0,
+   "publish": "2023-02-14",
+   "age": "3년 9개월 경과",
+   "views": 5657,
+   "likes": 636,
+   "low_view_checked": "해당 없음(조회 5,657 ≥ 1,000)",
+   "motion": 16.23,
+   "med": 13.37,
+   "min": 0.0,
+   "n": 78,
+   "spikes": [],
+   "spike_check": "스파이크 0.",
+   "ai": 0,
+   "audio": "현장음(음원 표기 없음)",
+   "quality": "최대 480p (qualityLabel 240p~480p, 디코드 576x1024)",
+   "visual": "콘크리트 마당에서 새끼 라쿤들이 장난감 자동차·양동이를 굴리며 노는 무컷 단일 숏(21초). 0.3~6초는 엄마·새끼들이 장난감을 두고 엎치락뒤치락하고, 8~10.1초는 한 마리가 카메라 정면으로 걸어와 얼굴이 화면을 채운다. 8컷 전 구간 무자막·무워터마크·사람 0.",
+   "note": "⑦과 같은 계정 2편째(회차 상한 도달). ⑦보다 '카메라로 다가오는 클로즈업' 훅이 강하다. 해상도 480p 상한은 동일.",
+   "status": "delivered"
   }
  },
  "reserve_details": {
@@ -312,7 +338,10 @@
     "MDiGDAnRWtU:4.28",
     "Giy67rSBH5Q:0.56",
     "In0l28rVoZY:3.76",
-    "9TGIHuoZBu8:10.16"
+    "9TGIHuoZBu8:10.16",
+    "ElloYr32xJI:6.64",
+    "vRQVqmx9OQE:4.00",
+    "VOy7LActcos:6.08"
    ]
   },
   "타 플랫폼 워터마크": {
@@ -351,7 +380,10 @@
     "Ip0cTbcz3KA:피사체 극소+구도 급변",
     "nYvmZTeqIdo:피사체 극소",
     "Lf5fRYRcO3s:피사체 극소",
-    "AxiHpuM73rQ:8초 이후 이탈+목줄"
+    "AxiHpuM73rQ:8초 이후 이탈+목줄",
+    "t6dqfx-Q4Fk:피사체 극소(광활 필드)",
+    "WTLoZgr-er8:피사체 극소(광활 필드)",
+    "ewtZkP6iRjQ:6초 이후 고양이 프레임 이탈(360p)"
    ]
   },
   "컷 전환 의심(스파이크 3~4회·8컷 구도 급변)": {
@@ -359,7 +391,8 @@
     "R0d_yJx0p0o:스파이크 4",
     "oT6wEGKYFdU:10.0초 스파이크 2",
     "YTbslHyrBdE:3.7~4.0초 스파이크 4",
-    "zkmK6h8SoJs:스파이크 4"
+    "zkmK6h8SoJs:스파이크 4",
+    "nYMqi3jA5Tw:스파이크 8회·4.5초 구도 급변"
    ]
   },
   "정지 자세·손 위주": {
@@ -383,7 +416,7 @@
   "Chewy The Corgi": 1,
   "Super Ferret Friends": 1,
   "POWDER PUFF POMERANIANS": 1,
-  "Marpleskee": 1
+  "Marpleskee": 2
  },
  "next_round_handoff": {
   "확정": [
@@ -393,7 +426,8 @@
    "zRm9tP1bTOU",
    "1EgJwGlclYE",
    "Mpo18kzepeU",
-   "-cZuHgPVbi4"
+   "-cZuHgPVbi4",
+   "qOBT3Tcu6NM"
   ],
   "예비 재고": [
    "2gzjsV9kVnk",
