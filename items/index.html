@@ -250,5 +250,5 @@ header nav a.on, .chips .chip.on, .tabs .tab.on, .fchip.on{background:linear-gra
 <script src="/assets/timeline-latest.js"></script><script src="/assets/timeline-signal.js"></script>
 <button type="button" class="topbtn" id="topBtn" aria-label="맨 위로 이동">↑ Top</button><script>(function(){var b=document.getElementById('topBtn');if(!b)return;addEventListener('scroll',function(){var nearBottom=scrollY+innerHeight>document.documentElement.scrollHeight-140;b.classList.toggle('lift',nearBottom&&scrollY>600);b.classList.toggle('on',scrollY>600)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});})();</script>
 <script>(function(){var tabs=document.querySelectorAll('.tabcard');var panels=document.querySelectorAll('.tabpanel');tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected','false')});t.setAttribute('aria-selected','true');var c=t.getAttribute('data-cat');panels.forEach(function(p){p.hidden=p.getAttribute('data-panel')!==c})})})})();</script>
-<script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-12.json" defer></script></body>
+<script src="/assets/search.js?v=4" data-index="/assets/alpang-search-20261028-13.json" defer></script></body>
 </html>
